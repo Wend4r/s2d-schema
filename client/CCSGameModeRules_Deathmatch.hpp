@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x48
+// Size: 0x40
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flDMBonusStartTime"
@@ -15,10 +15,10 @@ class CCSGameModeRules_Deathmatch : public CCSGameModeRules
 {
 public:
 	// MNetworkEnable
-	GameTime_t m_flDMBonusStartTime; // 0x38	
+	GameTime_t m_flDMBonusStartTime; // 0x30	
 	// MNetworkEnable
-	float m_flDMBonusTimeLength; // 0x3c	
+	float m_flDMBonusTimeLength; // 0x34	
 	// MNetworkEnable
-	CUtlString m_sDMBonusWeapon; // 0x40	
+	CUtlString m_sDMBonusWeapon; // 0x38	
 };
 

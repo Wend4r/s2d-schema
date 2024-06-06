@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x50
+// Size: 0x48
 // Has VTable
 // 
 // MNetworkVarNames "CUtlString m_WeaponSequence"
@@ -12,6 +12,6 @@ class CCSGameModeRules_ArmsRace : public CCSGameModeRules
 {
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CUtlString > m_WeaponSequence; // 0x38	
+	C_NetworkUtlVectorBase< CUtlString > m_WeaponSequence; // 0x30	
 };
 

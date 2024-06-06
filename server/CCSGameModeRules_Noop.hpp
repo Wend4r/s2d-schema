@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x38
+// Size: 0x30
 // Has VTable
 class CCSGameModeRules_Noop : public CCSGameModeRules
 {

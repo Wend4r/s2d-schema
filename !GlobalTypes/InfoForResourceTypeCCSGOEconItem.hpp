@@ -8,7 +8,7 @@
 // Has Trivial Constructor
 // Has Trivial Destructor
 // 
-// MResourceTypeForInfoType "econitemvents"
+// MResourceTypeForInfoType "econitemp"
 class InfoForResourceTypeCCSGOEconItem
 {
 private:

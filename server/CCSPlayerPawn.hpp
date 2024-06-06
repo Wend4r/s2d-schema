@@ -308,14 +308,16 @@ private:
 	[[maybe_unused]] uint8_t __pad18b1[0x3]; // 0x18b1
 public:
 	float m_ignoreLadderJumpTime; // 0x18b4	
-	int32_t m_NumEnemiesKilledThisRound; // 0x18b8	
 	// MNetworkEnable
-	bool m_bKilledByHeadshot; // 0x18bc	
+	bool m_bKilledByHeadshot; // 0x18b8	
 private:
-	[[maybe_unused]] uint8_t __pad18bd[0x3]; // 0x18bd
+	[[maybe_unused]] uint8_t __pad18b9[0x3]; // 0x18b9
 public:
-	int32_t m_LastHitBox; // 0x18c0	
-	int32_t m_LastHealth; // 0x18c4	
+	int32_t m_LastHitBox; // 0x18bc	
+	int32_t m_LastHealth; // 0x18c0	
+private:
+	[[maybe_unused]] uint8_t __pad18c4[0x4]; // 0x18c4
+public:
 	CCSBot* m_pBot; // 0x18c8	
 	bool m_bBotAllowActive; // 0x18d0	
 private:

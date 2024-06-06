@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 15
+// Enumerator count: 9
 // Alignment: 4
 // Size: 0x4
 enum class BloodType : uint32_t
@@ -12,16 +12,10 @@ enum class BloodType : uint32_t
 	ColorRed = 0x0,
 	ColorYellow = 0x1,
 	ColorGreen = 0x2,
-	ColorBrightGreen = 0x3,
-	EntityMech = 0x4,
-	EntityAntlion = 0x5,
-	EntityZombie = 0x6,
-	EntityBlob = 0x7,
-	EntityBlobFrozen = 0x8,
-	ColorRedLVL2 = 0x9,
-	ColorRedLVL3 = 0xa,
-	ColorRedLVL4 = 0xb,
-	ColorRedLVL5 = 0xc,
-	ColorRedLVL6 = 0xd,
+	ColorRedLVL2 = 0x3,
+	ColorRedLVL3 = 0x4,
+	ColorRedLVL4 = 0x5,
+	ColorRedLVL5 = 0x6,
+	ColorRedLVL6 = 0x7,
 };
 
