@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x6b8
+// Size: 0x748
 // Has VTable
 // 
 // MNetworkIncludeByName "m_pEntity"
@@ -65,27 +65,22 @@ public:
 	bool m_bIsLowViolence; // 0x5bf	
 	bool m_bGamePaused; // 0x5c0	
 private:
-	[[maybe_unused]] uint8_t __pad05c1[0x93]; // 0x5c1
+	[[maybe_unused]] uint8_t __pad05c1[0x12f]; // 0x5c1
 public:
-	int32_t m_nLastRealCommandNumberExecuted; // 0x654	
-	int32_t m_nLastLateCommandExecuted; // 0x658	
+	ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x6f0	
+	float m_flLastPlayerTalkTime; // 0x6f4	
+	float m_flLastEntitySteadyState; // 0x6f8	
+	int32_t m_nAvailableEntitySteadyState; // 0x6fc	
+	bool m_bHasAnySteadyStateEnts; // 0x700	
 private:
-	[[maybe_unused]] uint8_t __pad065c[0x14]; // 0x65c
-public:
-	ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x670	
-	float m_flLastPlayerTalkTime; // 0x674	
-	float m_flLastEntitySteadyState; // 0x678	
-	int32_t m_nAvailableEntitySteadyState; // 0x67c	
-	bool m_bHasAnySteadyStateEnts; // 0x680	
-private:
-	[[maybe_unused]] uint8_t __pad0681[0xf]; // 0x681
+	[[maybe_unused]] uint8_t __pad0701[0xf]; // 0x701
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "fixed64"
 	// MNetworkChangeCallback "OnSteamIDChanged"
-	uint64_t m_steamID; // 0x690	
+	uint64_t m_steamID; // 0x710	
 	// MNetworkEnable
-	uint32_t m_iDesiredFOV; // 0x698	
+	uint32_t m_iDesiredFOV; // 0x718	
 	
 	// Static fields:
 	static bool &Get_sm_bRunningPredictedClientStringCommands(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBasePlayerController")->m_static_fields[0]->m_instance);};
@@ -95,7 +90,9 @@ public:
 	// bool is_hltv; // 0x7fffffff
 	// const char * playername; // 0x7fffffff
 	// bool reserving; // 0x7fffffff
-	// void m_pCurrentCommand; // 0x688
+	// void m_pCurrentCommand; // 0x708
 	// void m_LastCmd; // 0x5c8
+	// void m_nLastRealCommandNumberExecuted; // 0x6d4
+	// void m_nLastLateCommandExecuted; // 0x6d8
 };
 
