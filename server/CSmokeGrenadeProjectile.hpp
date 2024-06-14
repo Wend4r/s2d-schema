@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2d70
+// Size: 0x2d78
 // Has VTable
 // 
 // MNetworkVarNames "int m_nSmokeEffectTickBegin"
@@ -39,6 +39,10 @@ public:
 	CUtlVector< uint8 > m_VoxelFrameData; // 0xad0	
 	GameTime_t m_flLastBounce; // 0xae8	
 	GameTime_t m_fllastSimulationTime; // 0xaec	
+private:
+	[[maybe_unused]] uint8_t __pad0af0[0x2280]; // 0xaf0
+public:
+	bool m_bExplodeFromInferno; // 0x2d70	
 	
 	// Datamap fields:
 	// void CSmokeGrenadeProjectileThink_Detonate; // 0x0
