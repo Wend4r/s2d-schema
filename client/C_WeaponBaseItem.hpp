@@ -5,7 +5,7 @@
 struct CountdownTimer;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1a80
+// Size: 0x1a90
 // Has VTable
 // 
 // MNetworkVarNames "CountdownTimer m_SequenceCompleteTimer"
@@ -14,8 +14,8 @@ class C_WeaponBaseItem : public C_CSWeaponBase
 {
 public:
 	// MNetworkEnable
-	CountdownTimer m_SequenceCompleteTimer; // 0x1a60	
+	CountdownTimer m_SequenceCompleteTimer; // 0x1a70	
 	// MNetworkEnable
-	bool m_bRedraw; // 0x1a78	
+	bool m_bRedraw; // 0x1a88	
 };
 

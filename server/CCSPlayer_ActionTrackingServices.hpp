@@ -5,7 +5,7 @@
 struct WeaponPurchaseTracker_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2f8
+// Size: 0x2f0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIsRescuing"
@@ -14,20 +14,20 @@ struct WeaponPurchaseTracker_t;
 class CCSPlayer_ActionTrackingServices : public CPlayerPawnComponent
 {
 private:
-	[[maybe_unused]] uint8_t __pad0040[0x1c8]; // 0x40
+	[[maybe_unused]] uint8_t __pad0040[0x1c0]; // 0x40
 public:
-	CHandle< CBasePlayerWeapon > m_hLastWeaponBeforeC4AutoSwitch; // 0x208	
+	CHandle< CBasePlayerWeapon > m_hLastWeaponBeforeC4AutoSwitch; // 0x200	
 private:
-	[[maybe_unused]] uint8_t __pad020c[0x30]; // 0x20c
+	[[maybe_unused]] uint8_t __pad0204[0x30]; // 0x204
 public:
 	// MNetworkEnable
-	bool m_bIsRescuing; // 0x23c	
+	bool m_bIsRescuing; // 0x234	
 private:
-	[[maybe_unused]] uint8_t __pad023d[0x3]; // 0x23d
+	[[maybe_unused]] uint8_t __pad0235[0x3]; // 0x235
 public:
 	// MNetworkEnable
-	WeaponPurchaseTracker_t m_weaponPurchasesThisMatch; // 0x240	
+	WeaponPurchaseTracker_t m_weaponPurchasesThisMatch; // 0x238	
 	// MNetworkEnable
-	WeaponPurchaseTracker_t m_weaponPurchasesThisRound; // 0x298	
+	WeaponPurchaseTracker_t m_weaponPurchasesThisRound; // 0x290	
 };
 

@@ -12,7 +12,7 @@ struct C_EconItemView;
 struct EntitySpottedState_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x2358
+// Size: 0x2368
 // Has VTable
 // 
 // MNetworkVarNames "CCSPlayer_BulletServices * m_pBulletServices"
@@ -169,214 +169,214 @@ public:
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	GameTime_t m_flNextSprayDecalTime; // 0x1520	
 private:
-	[[maybe_unused]] uint8_t __pad1524[0x11c]; // 0x1524
+	[[maybe_unused]] uint8_t __pad1524[0x12c]; // 0x1524
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRetakesOfferingChanged"
-	int32_t m_iRetakesOffering; // 0x1640	
+	int32_t m_iRetakesOffering; // 0x1650	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRetakesOfferingCardChanged"
-	int32_t m_iRetakesOfferingCard; // 0x1644	
+	int32_t m_iRetakesOfferingCard; // 0x1654	
 	// MNetworkEnable
-	bool m_bRetakesHasDefuseKit; // 0x1648	
+	bool m_bRetakesHasDefuseKit; // 0x1658	
 	// MNetworkEnable
-	bool m_bRetakesMVPLastRound; // 0x1649	
+	bool m_bRetakesMVPLastRound; // 0x1659	
 private:
-	[[maybe_unused]] uint8_t __pad164a[0x2]; // 0x164a
+	[[maybe_unused]] uint8_t __pad165a[0x2]; // 0x165a
 public:
 	// MNetworkEnable
-	int32_t m_iRetakesMVPBoostItem; // 0x164c	
+	int32_t m_iRetakesMVPBoostItem; // 0x165c	
 	// MNetworkEnable
-	loadout_slot_t m_RetakesMVPBoostExtraUtility; // 0x1650	
+	loadout_slot_t m_RetakesMVPBoostExtraUtility; // 0x1660	
 private:
-	[[maybe_unused]] uint8_t __pad1654[0x1c]; // 0x1654
+	[[maybe_unused]] uint8_t __pad1664[0x1c]; // 0x1664
 public:
-	bool m_bNeedToReApplyGloves; // 0x1670	
+	bool m_bNeedToReApplyGloves; // 0x1680	
 private:
-	[[maybe_unused]] uint8_t __pad1671[0x7]; // 0x1671
+	[[maybe_unused]] uint8_t __pad1681[0x7]; // 0x1681
 public:
 	// MNetworkEnable
-	C_EconItemView m_EconGloves; // 0x1678	
+	C_EconItemView m_EconGloves; // 0x1688	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnEconGlovesChanged"
-	uint8_t m_nEconGlovesChanged; // 0x1ac0	
-	bool m_bMustSyncRagdollState; // 0x1ac1	
+	uint8_t m_nEconGlovesChanged; // 0x1ad0	
+	bool m_bMustSyncRagdollState; // 0x1ad1	
 private:
-	[[maybe_unused]] uint8_t __pad1ac2[0x2]; // 0x1ac2
+	[[maybe_unused]] uint8_t __pad1ad2[0x2]; // 0x1ad2
 public:
 	// MNetworkEnable
-	int32_t m_nRagdollDamageBone; // 0x1ac4	
+	int32_t m_nRagdollDamageBone; // 0x1ad4	
 	// MNetworkEnable
-	Vector m_vRagdollDamageForce; // 0x1ac8	
+	Vector m_vRagdollDamageForce; // 0x1ad8	
 	// MNetworkEnable
-	Vector m_vRagdollDamagePosition; // 0x1ad4	
+	Vector m_vRagdollDamagePosition; // 0x1ae4	
 	// MNetworkEnable
-	char m_szRagdollDamageWeaponName[64]; // 0x1ae0	
+	char m_szRagdollDamageWeaponName[64]; // 0x1af0	
 	// MNetworkEnable
-	bool m_bRagdollDamageHeadshot; // 0x1b20	
+	bool m_bRagdollDamageHeadshot; // 0x1b30	
 private:
-	[[maybe_unused]] uint8_t __pad1b21[0x3]; // 0x1b21
+	[[maybe_unused]] uint8_t __pad1b31[0x3]; // 0x1b31
 public:
 	// MNetworkEnable
-	Vector m_vRagdollServerOrigin; // 0x1b24	
+	Vector m_vRagdollServerOrigin; // 0x1b34	
 private:
-	[[maybe_unused]] uint8_t __pad1b30[0x608]; // 0x1b30
+	[[maybe_unused]] uint8_t __pad1b40[0x608]; // 0x1b40
 public:
-	bool m_bLastHeadBoneTransformIsValid; // 0x2138	
+	bool m_bLastHeadBoneTransformIsValid; // 0x2148	
 private:
-	[[maybe_unused]] uint8_t __pad2139[0x3]; // 0x2139
+	[[maybe_unused]] uint8_t __pad2149[0x3]; // 0x2149
 public:
-	GameTime_t m_lastLandTime; // 0x213c	
-	bool m_bOnGroundLastTick; // 0x2140	
+	GameTime_t m_lastLandTime; // 0x214c	
+	bool m_bOnGroundLastTick; // 0x2150	
 private:
-	[[maybe_unused]] uint8_t __pad2141[0x1b]; // 0x2141
-public:
-	// MNetworkEnable
-	QAngle m_qDeathEyeAngles; // 0x215c	
-	bool m_bSkipOneHeadConstraintUpdate; // 0x2168	
-	// MNetworkEnable
-	bool m_bLeftHanded; // 0x2169	
-private:
-	[[maybe_unused]] uint8_t __pad216a[0x2]; // 0x216a
+	[[maybe_unused]] uint8_t __pad2151[0x1b]; // 0x2151
 public:
 	// MNetworkEnable
-	GameTime_t m_fSwitchedHandednessTime; // 0x216c	
+	QAngle m_qDeathEyeAngles; // 0x216c	
+	bool m_bSkipOneHeadConstraintUpdate; // 0x2178	
+	// MNetworkEnable
+	bool m_bLeftHanded; // 0x2179	
+private:
+	[[maybe_unused]] uint8_t __pad217a[0x2]; // 0x217a
+public:
+	// MNetworkEnable
+	GameTime_t m_fSwitchedHandednessTime; // 0x217c	
 	// MNetworkEnable
 	// MNetworkMinValue "-2.000000"
 	// MNetworkMaxValue "2.500000"
-	float m_flViewmodelOffsetX; // 0x2170	
+	float m_flViewmodelOffsetX; // 0x2180	
 	// MNetworkEnable
 	// MNetworkMinValue "-2.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flViewmodelOffsetY; // 0x2174	
+	float m_flViewmodelOffsetY; // 0x2184	
 	// MNetworkEnable
 	// MNetworkMinValue "-2.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flViewmodelOffsetZ; // 0x2178	
+	float m_flViewmodelOffsetZ; // 0x2188	
 	// MNetworkEnable
 	// MNetworkMinValue "60.000000"
 	// MNetworkMaxValue "68.000000"
-	float m_flViewmodelFOV; // 0x217c	
+	float m_flViewmodelFOV; // 0x218c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RecvProxy_PatchEconIndices"
-	uint32_t m_vecPlayerPatchEconIndices[5]; // 0x2180	
+	uint32_t m_vecPlayerPatchEconIndices[5]; // 0x2190	
 private:
-	[[maybe_unused]] uint8_t __pad2194[0x24]; // 0x2194
+	[[maybe_unused]] uint8_t __pad21a4[0x24]; // 0x21a4
 public:
 	// MNetworkEnable
-	Color m_GunGameImmunityColor; // 0x21b8	
+	Color m_GunGameImmunityColor; // 0x21c8	
 private:
-	[[maybe_unused]] uint8_t __pad21bc[0x4c]; // 0x21bc
+	[[maybe_unused]] uint8_t __pad21cc[0x4c]; // 0x21cc
 public:
-	CUtlVector< C_BulletHitModel* > m_vecBulletHitModels; // 0x2208	
+	CUtlVector< C_BulletHitModel* > m_vecBulletHitModels; // 0x2218	
 	// MNetworkEnable
-	bool m_bIsWalking; // 0x2220	
+	bool m_bIsWalking; // 0x2230	
 private:
-	[[maybe_unused]] uint8_t __pad2221[0x7]; // 0x2221
+	[[maybe_unused]] uint8_t __pad2231[0x7]; // 0x2231
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "qangle_precise"
 	// MNetworkChangeCallback "OnThirdPersonHeadingChanged"
 	// MNetworkPriority "32"
-	QAngle m_thirdPersonHeading; // 0x2228	
-private:
-	[[maybe_unused]] uint8_t __pad2234[0xc]; // 0x2234
-public:
-	// MNetworkEnable
-	// MNetworkChangeCallback "OnSlopeDropOffsetChanged"
-	// MNetworkPriority "32"
-	float m_flSlopeDropOffset; // 0x2240	
+	QAngle m_thirdPersonHeading; // 0x2238	
 private:
 	[[maybe_unused]] uint8_t __pad2244[0xc]; // 0x2244
 public:
 	// MNetworkEnable
-	// MNetworkChangeCallback "OnSlopeDropHeightChanged"
+	// MNetworkChangeCallback "OnSlopeDropOffsetChanged"
 	// MNetworkPriority "32"
-	float m_flSlopeDropHeight; // 0x2250	
+	float m_flSlopeDropOffset; // 0x2250	
 private:
 	[[maybe_unused]] uint8_t __pad2254[0xc]; // 0x2254
 public:
 	// MNetworkEnable
+	// MNetworkChangeCallback "OnSlopeDropHeightChanged"
+	// MNetworkPriority "32"
+	float m_flSlopeDropHeight; // 0x2260	
+private:
+	[[maybe_unused]] uint8_t __pad2264[0xc]; // 0x2264
+public:
+	// MNetworkEnable
 	// MNetworkChangeCallback "OnHeadConstraintChanged"
 	// MNetworkPriority "32"
-	Vector m_vHeadConstraintOffset; // 0x2260	
+	Vector m_vHeadConstraintOffset; // 0x2270	
 private:
-	[[maybe_unused]] uint8_t __pad226c[0xc]; // 0x226c
+	[[maybe_unused]] uint8_t __pad227c[0xc]; // 0x227c
 public:
 	// MNetworkEnable
-	EntitySpottedState_t m_entitySpottedState; // 0x2278	
+	EntitySpottedState_t m_entitySpottedState; // 0x2288	
 	// MNetworkEnable
-	bool m_bIsScoped; // 0x2290	
+	bool m_bIsScoped; // 0x22a0	
 	// MNetworkEnable
-	bool m_bResumeZoom; // 0x2291	
+	bool m_bResumeZoom; // 0x22a1	
 	// MNetworkEnable
-	bool m_bIsDefusing; // 0x2292	
+	bool m_bIsDefusing; // 0x22a2	
 	// MNetworkEnable
-	bool m_bIsGrabbingHostage; // 0x2293	
+	bool m_bIsGrabbingHostage; // 0x22a3	
 	// MNetworkEnable
-	CSPlayerBlockingUseAction_t m_iBlockingUseActionInProgress; // 0x2294	
+	CSPlayerBlockingUseAction_t m_iBlockingUseActionInProgress; // 0x22a4	
 	// MNetworkEnable
-	GameTime_t m_flEmitSoundTime; // 0x2298	
+	GameTime_t m_flEmitSoundTime; // 0x22a8	
 	// MNetworkEnable
-	bool m_bInNoDefuseArea; // 0x229c	
+	bool m_bInNoDefuseArea; // 0x22ac	
 private:
-	[[maybe_unused]] uint8_t __pad229d[0x3]; // 0x229d
+	[[maybe_unused]] uint8_t __pad22ad[0x3]; // 0x22ad
 public:
 	// MNetworkEnable
-	int32_t m_nWhichBombZone; // 0x22a0	
+	int32_t m_nWhichBombZone; // 0x22b0	
 	// MNetworkEnable
-	int32_t m_iShotsFired; // 0x22a4	
+	int32_t m_iShotsFired; // 0x22b4	
 	// MNetworkEnable
-	float m_flVelocityModifier; // 0x22a8	
+	float m_flVelocityModifier; // 0x22b8	
 	// MNetworkEnable
-	float m_flHitHeading; // 0x22ac	
+	float m_flHitHeading; // 0x22bc	
 	// MNetworkEnable
-	int32_t m_nHitBodyPart; // 0x22b0	
+	int32_t m_nHitBodyPart; // 0x22c0	
 	// MNetworkEnable
-	bool m_bWaitForNoAttack; // 0x22b4	
+	bool m_bWaitForNoAttack; // 0x22c4	
 private:
-	[[maybe_unused]] uint8_t __pad22b5[0x3]; // 0x22b5
+	[[maybe_unused]] uint8_t __pad22c5[0x3]; // 0x22c5
 public:
-	float m_ignoreLadderJumpTime; // 0x22b8	
+	float m_ignoreLadderJumpTime; // 0x22c8	
 private:
-	[[maybe_unused]] uint8_t __pad22bc[0x1]; // 0x22bc
-public:
-	// MNetworkEnable
-	bool m_bKilledByHeadshot; // 0x22bd	
-private:
-	[[maybe_unused]] uint8_t __pad22be[0x2]; // 0x22be
+	[[maybe_unused]] uint8_t __pad22cc[0x1]; // 0x22cc
 public:
 	// MNetworkEnable
-	int32_t m_ArmorValue; // 0x22c0	
-	// MNetworkEnable
-	uint16_t m_unCurrentEquipmentValue; // 0x22c4	
-	// MNetworkEnable
-	uint16_t m_unRoundStartEquipmentValue; // 0x22c6	
-	// MNetworkEnable
-	uint16_t m_unFreezetimeEndEquipmentValue; // 0x22c8	
+	bool m_bKilledByHeadshot; // 0x22cd	
 private:
-	[[maybe_unused]] uint8_t __pad22ca[0x2]; // 0x22ca
+	[[maybe_unused]] uint8_t __pad22ce[0x2]; // 0x22ce
 public:
 	// MNetworkEnable
-	CEntityIndex m_nLastKillerIndex; // 0x22cc	
-	bool m_bOldIsScoped; // 0x22d0	
-	bool m_bHasDeathInfo; // 0x22d1	
+	int32_t m_ArmorValue; // 0x22d0	
+	// MNetworkEnable
+	uint16_t m_unCurrentEquipmentValue; // 0x22d4	
+	// MNetworkEnable
+	uint16_t m_unRoundStartEquipmentValue; // 0x22d6	
+	// MNetworkEnable
+	uint16_t m_unFreezetimeEndEquipmentValue; // 0x22d8	
 private:
-	[[maybe_unused]] uint8_t __pad22d2[0x2]; // 0x22d2
+	[[maybe_unused]] uint8_t __pad22da[0x2]; // 0x22da
 public:
-	float m_flDeathInfoTime; // 0x22d4	
-	Vector m_vecDeathInfoOrigin; // 0x22d8	
-	GameTime_t m_grenadeParameterStashTime; // 0x22e4	
-	bool m_bGrenadeParametersStashed; // 0x22e8	
+	// MNetworkEnable
+	CEntityIndex m_nLastKillerIndex; // 0x22dc	
+	bool m_bOldIsScoped; // 0x22e0	
+	bool m_bHasDeathInfo; // 0x22e1	
 private:
-	[[maybe_unused]] uint8_t __pad22e9[0x3]; // 0x22e9
+	[[maybe_unused]] uint8_t __pad22e2[0x2]; // 0x22e2
 public:
-	QAngle m_angStashedShootAngles; // 0x22ec	
-	Vector m_vecStashedGrenadeThrowPosition; // 0x22f8	
-	Vector m_vecStashedVelocity; // 0x2304	
-	QAngle m_angShootAngleHistory[2]; // 0x2310	
-	Vector m_vecThrowPositionHistory[2]; // 0x2328	
-	Vector m_vecVelocityHistory[2]; // 0x2340	
+	float m_flDeathInfoTime; // 0x22e4	
+	Vector m_vecDeathInfoOrigin; // 0x22e8	
+	GameTime_t m_grenadeParameterStashTime; // 0x22f4	
+	bool m_bGrenadeParametersStashed; // 0x22f8	
+private:
+	[[maybe_unused]] uint8_t __pad22f9[0x3]; // 0x22f9
+public:
+	QAngle m_angStashedShootAngles; // 0x22fc	
+	Vector m_vecStashedGrenadeThrowPosition; // 0x2308	
+	Vector m_vecStashedVelocity; // 0x2314	
+	QAngle m_angShootAngleHistory[2]; // 0x2320	
+	Vector m_vecThrowPositionHistory[2]; // 0x2338	
+	Vector m_vecVelocityHistory[2]; // 0x2350	
 	
 	// Datamap fields:
 	// CCSPlayer_ItemServices m_pItemServices; // 0x1100

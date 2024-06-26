@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0x1aa0
+// Size: 0x1ab0
 // Has VTable
 class C_Flashbang : public C_BaseCSGrenade
 {

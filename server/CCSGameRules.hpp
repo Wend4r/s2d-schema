@@ -7,7 +7,7 @@ struct CCSGameModeRules;
 struct CRetakeGameRules;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x157d8
+// Size: 0x15808
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFreezePeriod"
@@ -409,141 +409,141 @@ public:
 	bool m_bBombDefused; // 0xee1	
 	bool m_bMapHasBombZone; // 0xee2	
 private:
-	[[maybe_unused]] uint8_t __pad0ee3[0x1d]; // 0xee3
+	[[maybe_unused]] uint8_t __pad0ee3[0x4d]; // 0xee3
 public:
-	Vector m_vecMainCTSpawnPos; // 0xf00	
+	Vector m_vecMainCTSpawnPos; // 0xf30	
 private:
-	[[maybe_unused]] uint8_t __pad0f0c[0x4]; // 0xf0c
+	[[maybe_unused]] uint8_t __pad0f3c[0x4]; // 0xf3c
 public:
-	CUtlVector< SpawnPoint* > m_CTSpawnPointsMasterList; // 0xf10	
-	CUtlVector< SpawnPoint* > m_TerroristSpawnPointsMasterList; // 0xf28	
-	bool m_bRespawningAllRespawnablePlayers; // 0xf40	
+	CUtlVector< SpawnPoint* > m_CTSpawnPointsMasterList; // 0xf40	
+	CUtlVector< SpawnPoint* > m_TerroristSpawnPointsMasterList; // 0xf58	
+	bool m_bRespawningAllRespawnablePlayers; // 0xf70	
 private:
-	[[maybe_unused]] uint8_t __pad0f41[0x3]; // 0xf41
+	[[maybe_unused]] uint8_t __pad0f71[0x3]; // 0xf71
 public:
-	int32_t m_iNextCTSpawnPoint; // 0xf44	
-	float m_flCTSpawnPointUsedTime; // 0xf48	
-	int32_t m_iNextTerroristSpawnPoint; // 0xf4c	
-	float m_flTerroristSpawnPointUsedTime; // 0xf50	
+	int32_t m_iNextCTSpawnPoint; // 0xf74	
+	float m_flCTSpawnPointUsedTime; // 0xf78	
+	int32_t m_iNextTerroristSpawnPoint; // 0xf7c	
+	float m_flTerroristSpawnPointUsedTime; // 0xf80	
 private:
-	[[maybe_unused]] uint8_t __pad0f54[0x4]; // 0xf54
+	[[maybe_unused]] uint8_t __pad0f84[0x4]; // 0xf84
 public:
-	CUtlVector< SpawnPoint* > m_CTSpawnPoints; // 0xf58	
-	CUtlVector< SpawnPoint* > m_TerroristSpawnPoints; // 0xf70	
-	bool m_bIsUnreservedGameServer; // 0xf88	
+	CUtlVector< SpawnPoint* > m_CTSpawnPoints; // 0xf88	
+	CUtlVector< SpawnPoint* > m_TerroristSpawnPoints; // 0xfa0	
+	bool m_bIsUnreservedGameServer; // 0xfb8	
 private:
-	[[maybe_unused]] uint8_t __pad0f89[0x3]; // 0xf89
+	[[maybe_unused]] uint8_t __pad0fb9[0x3]; // 0xfb9
 public:
-	float m_fAutobalanceDisplayTime; // 0xf8c	
+	float m_fAutobalanceDisplayTime; // 0xfbc	
 private:
-	[[maybe_unused]] uint8_t __pad0f90[0x268]; // 0xf90
+	[[maybe_unused]] uint8_t __pad0fc0[0x268]; // 0xfc0
 public:
-	bool m_bAllowWeaponSwitch; // 0x11f8	
-	bool m_bRoundTimeWarningTriggered; // 0x11f9	
+	bool m_bAllowWeaponSwitch; // 0x1228	
+	bool m_bRoundTimeWarningTriggered; // 0x1229	
 private:
-	[[maybe_unused]] uint8_t __pad11fa[0x2]; // 0x11fa
+	[[maybe_unused]] uint8_t __pad122a[0x2]; // 0x122a
 public:
-	GameTime_t m_phaseChangeAnnouncementTime; // 0x11fc	
-	float m_fNextUpdateTeamClanNamesTime; // 0x1200	
-	GameTime_t m_flLastThinkTime; // 0x1204	
-	float m_fAccumulatedRoundOffDamage; // 0x1208	
-	int32_t m_nShorthandedBonusLastEvalRound; // 0x120c	
+	GameTime_t m_phaseChangeAnnouncementTime; // 0x122c	
+	float m_fNextUpdateTeamClanNamesTime; // 0x1230	
+	GameTime_t m_flLastThinkTime; // 0x1234	
+	float m_fAccumulatedRoundOffDamage; // 0x1238	
+	int32_t m_nShorthandedBonusLastEvalRound; // 0x123c	
 private:
-	[[maybe_unused]] uint8_t __pad1210[0x278]; // 0x1210
+	[[maybe_unused]] uint8_t __pad1240[0x278]; // 0x1240
 public:
 	// MNetworkEnable
-	int32_t m_nMatchAbortedEarlyReason; // 0x1488	
-	bool m_bHasTriggeredRoundStartMusic; // 0x148c	
-	bool m_bSwitchingTeamsAtRoundReset; // 0x148d	
+	int32_t m_nMatchAbortedEarlyReason; // 0x14b8	
+	bool m_bHasTriggeredRoundStartMusic; // 0x14bc	
+	bool m_bSwitchingTeamsAtRoundReset; // 0x14bd	
 private:
-	[[maybe_unused]] uint8_t __pad148e[0x1a]; // 0x148e
+	[[maybe_unused]] uint8_t __pad14be[0x1a]; // 0x14be
 public:
 	// MNetworkEnable
 	// MNetworkPolymorphic
-	CCSGameModeRules* m_pGameModeRules; // 0x14a8	
-	KeyValues3 m_BtGlobalBlackboard; // 0x14b0	
+	CCSGameModeRules* m_pGameModeRules; // 0x14d8	
+	KeyValues3 m_BtGlobalBlackboard; // 0x14e0	
 private:
-	[[maybe_unused]] uint8_t __pad14c0[0x60]; // 0x14c0
+	[[maybe_unused]] uint8_t __pad14f0[0x60]; // 0x14f0
 public:
-	CHandle< CBaseEntity > m_hPlayerResource; // 0x1520	
+	CHandle< CBaseEntity > m_hPlayerResource; // 0x1550	
 private:
-	[[maybe_unused]] uint8_t __pad1524[0x4]; // 0x1524
+	[[maybe_unused]] uint8_t __pad1554[0x4]; // 0x1554
 public:
 	// MNetworkEnable
-	CRetakeGameRules m_RetakeRules; // 0x1528	
-	CUtlVector< int32 > m_arrTeamUniqueKillWeaponsMatch[4]; // 0x16c0	
-	bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; // 0x1720	
+	CRetakeGameRules m_RetakeRules; // 0x1558	
+	CUtlVector< int32 > m_arrTeamUniqueKillWeaponsMatch[4]; // 0x16f0	
+	bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; // 0x1750	
 private:
-	[[maybe_unused]] uint8_t __pad1724[0x24]; // 0x1724
+	[[maybe_unused]] uint8_t __pad1754[0x24]; // 0x1754
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnMatchEndCountChanged"
-	uint8_t m_nMatchEndCount; // 0x1748	
+	uint8_t m_nMatchEndCount; // 0x1778	
 private:
-	[[maybe_unused]] uint8_t __pad1749[0x3]; // 0x1749
+	[[maybe_unused]] uint8_t __pad1779[0x3]; // 0x1779
 public:
 	// MNetworkEnable
-	int32_t m_nTTeamIntroVariant; // 0x174c	
+	int32_t m_nTTeamIntroVariant; // 0x177c	
 	// MNetworkEnable
-	int32_t m_nCTTeamIntroVariant; // 0x1750	
+	int32_t m_nCTTeamIntroVariant; // 0x1780	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnTeamIntroPeriodChanged"
-	bool m_bTeamIntroPeriod; // 0x1754	
+	bool m_bTeamIntroPeriod; // 0x1784	
 private:
-	[[maybe_unused]] uint8_t __pad1755[0x3]; // 0x1755
+	[[maybe_unused]] uint8_t __pad1785[0x3]; // 0x1785
 public:
-	GameTime_t m_fTeamIntroPeriodEnd; // 0x1758	
-	bool m_bPlayedTeamIntroVO; // 0x175c	
+	GameTime_t m_fTeamIntroPeriodEnd; // 0x1788	
+	bool m_bPlayedTeamIntroVO; // 0x178c	
 private:
-	[[maybe_unused]] uint8_t __pad175d[0x3]; // 0x175d
-public:
-	// MNetworkEnable
-	int32_t m_iRoundEndWinnerTeam; // 0x1760	
-	// MNetworkEnable
-	int32_t m_eRoundEndReason; // 0x1764	
-	// MNetworkEnable
-	bool m_bRoundEndShowTimerDefend; // 0x1768	
-private:
-	[[maybe_unused]] uint8_t __pad1769[0x3]; // 0x1769
+	[[maybe_unused]] uint8_t __pad178d[0x3]; // 0x178d
 public:
 	// MNetworkEnable
-	int32_t m_iRoundEndTimerTime; // 0x176c	
+	int32_t m_iRoundEndWinnerTeam; // 0x1790	
 	// MNetworkEnable
-	CUtlString m_sRoundEndFunFactToken; // 0x1770	
+	int32_t m_eRoundEndReason; // 0x1794	
 	// MNetworkEnable
-	CPlayerSlot m_iRoundEndFunFactPlayerSlot; // 0x1778	
-	// MNetworkEnable
-	int32_t m_iRoundEndFunFactData1; // 0x177c	
-	// MNetworkEnable
-	int32_t m_iRoundEndFunFactData2; // 0x1780	
-	// MNetworkEnable
-	int32_t m_iRoundEndFunFactData3; // 0x1784	
-	// MNetworkEnable
-	CUtlString m_sRoundEndMessage; // 0x1788	
-	// MNetworkEnable
-	int32_t m_iRoundEndPlayerCount; // 0x1790	
-	// MNetworkEnable
-	bool m_bRoundEndNoMusic; // 0x1794	
+	bool m_bRoundEndShowTimerDefend; // 0x1798	
 private:
-	[[maybe_unused]] uint8_t __pad1795[0x3]; // 0x1795
+	[[maybe_unused]] uint8_t __pad1799[0x3]; // 0x1799
 public:
 	// MNetworkEnable
-	int32_t m_iRoundEndLegacy; // 0x1798	
+	int32_t m_iRoundEndTimerTime; // 0x179c	
+	// MNetworkEnable
+	CUtlString m_sRoundEndFunFactToken; // 0x17a0	
+	// MNetworkEnable
+	CPlayerSlot m_iRoundEndFunFactPlayerSlot; // 0x17a8	
+	// MNetworkEnable
+	int32_t m_iRoundEndFunFactData1; // 0x17ac	
+	// MNetworkEnable
+	int32_t m_iRoundEndFunFactData2; // 0x17b0	
+	// MNetworkEnable
+	int32_t m_iRoundEndFunFactData3; // 0x17b4	
+	// MNetworkEnable
+	CUtlString m_sRoundEndMessage; // 0x17b8	
+	// MNetworkEnable
+	int32_t m_iRoundEndPlayerCount; // 0x17c0	
+	// MNetworkEnable
+	bool m_bRoundEndNoMusic; // 0x17c4	
+private:
+	[[maybe_unused]] uint8_t __pad17c5[0x3]; // 0x17c5
+public:
+	// MNetworkEnable
+	int32_t m_iRoundEndLegacy; // 0x17c8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRoundEndCountChanged"
-	uint8_t m_nRoundEndCount; // 0x179c	
+	uint8_t m_nRoundEndCount; // 0x17cc	
 private:
-	[[maybe_unused]] uint8_t __pad179d[0x3]; // 0x179d
+	[[maybe_unused]] uint8_t __pad17cd[0x3]; // 0x17cd
 public:
 	// MNetworkEnable
-	int32_t m_iRoundStartRoundNumber; // 0x17a0	
+	int32_t m_iRoundStartRoundNumber; // 0x17d0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRoundStartCountChanged"
-	uint8_t m_nRoundStartCount; // 0x17a4	
+	uint8_t m_nRoundStartCount; // 0x17d4	
 private:
-	[[maybe_unused]] uint8_t __pad17a5[0x400b]; // 0x17a5
+	[[maybe_unused]] uint8_t __pad17d5[0x400b]; // 0x17d5
 public:
-	double m_flLastPerfSampleTime; // 0x57b0	
+	double m_flLastPerfSampleTime; // 0x57e0	
 	
 	// Static fields:
 	static int64_t &Get_m_nMapCycleTimeStamp(){return *reinterpret_cast<int64_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCSGameRules")->m_static_fields[0]->m_instance);};

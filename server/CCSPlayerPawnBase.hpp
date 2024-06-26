@@ -8,7 +8,7 @@ struct CPlayer_ViewModelServices;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd18
+// Size: 0xd10
 // Has VTable
 // 
 // MNetworkVarNames "CTouchExpansionComponent::Storage_t m_CTouchExpansionComponent"
@@ -87,14 +87,13 @@ public:
 	// MNetworkEncoder "qangle_precise"
 	// MNetworkPriority "32"
 	QAngle m_angEyeAngles; // 0xcfc	
-	int32_t m_NumEnemiesAtRoundStart; // 0xd08	
-	bool m_wasNotKilledNaturally; // 0xd0c	
-	bool m_bCommittingSuicideOnTeamChange; // 0xd0d	
+	bool m_wasNotKilledNaturally; // 0xd08	
+	bool m_bCommittingSuicideOnTeamChange; // 0xd09	
 private:
-	[[maybe_unused]] uint8_t __pad0d0e[0x2]; // 0xd0e
+	[[maybe_unused]] uint8_t __pad0d0a[0x2]; // 0xd0a
 public:
 	// MNetworkEnable
-	CHandle< CCSPlayerController > m_hOriginalController; // 0xd10	
+	CHandle< CCSPlayerController > m_hOriginalController; // 0xd0c	
 	
 	// Datamap fields:
 	// CHandle< CBaseEntity > original_controller; // 0x7fffffff

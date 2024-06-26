@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 9
+// Enumerator count: 10
 // Alignment: 4
 // Size: 0x4
 enum class PreviewCharacterMode : uint32_t
@@ -17,5 +17,6 @@ enum class PreviewCharacterMode : uint32_t
 	WALKING = 0x6,
 	TEAM_INTRO = 0x7,
 	WINGMAN_INTRO = 0x8,
+	BANNER = 0x9,
 };
 

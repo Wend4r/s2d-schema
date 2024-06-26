@@ -9,7 +9,7 @@ struct GameTick_t;
 struct C_IronSightController;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1a60
+// Size: 0x1a70
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flTimeWeaponIdle"
@@ -149,55 +149,55 @@ private:
 public:
 	float m_flNextAttackRenderTimeOffset; // 0x175c	
 private:
-	[[maybe_unused]] uint8_t __pad1760[0x88]; // 0x1760
+	[[maybe_unused]] uint8_t __pad1760[0x98]; // 0x1760
 public:
-	bool m_bClearWeaponIdentifyingUGC; // 0x17e8	
-	bool m_bVisualsDataSet; // 0x17e9	
-	bool m_bOldFirstPersonSpectatedState; // 0x17ea	
-	bool m_bUIWeapon; // 0x17eb	
-	int32_t m_nCustomEconReloadEventId; // 0x17ec	
+	bool m_bClearWeaponIdentifyingUGC; // 0x17f8	
+	bool m_bVisualsDataSet; // 0x17f9	
+	bool m_bOldFirstPersonSpectatedState; // 0x17fa	
+	bool m_bUIWeapon; // 0x17fb	
+	int32_t m_nCustomEconReloadEventId; // 0x17fc	
 private:
-	[[maybe_unused]] uint8_t __pad17f0[0x8]; // 0x17f0
+	[[maybe_unused]] uint8_t __pad1800[0x8]; // 0x1800
 public:
 	// MNetworkEnable
-	CHandle< C_CSPlayerPawn > m_hPrevOwner; // 0x17f8	
+	CHandle< C_CSPlayerPawn > m_hPrevOwner; // 0x1808	
 	// MNetworkEnable
-	GameTick_t m_nDropTick; // 0x17fc	
+	GameTick_t m_nDropTick; // 0x180c	
 private:
-	[[maybe_unused]] uint8_t __pad1800[0x1c]; // 0x1800
+	[[maybe_unused]] uint8_t __pad1810[0x1c]; // 0x1810
 public:
-	bool m_donated; // 0x181c	
+	bool m_donated; // 0x182c	
 private:
-	[[maybe_unused]] uint8_t __pad181d[0x3]; // 0x181d
+	[[maybe_unused]] uint8_t __pad182d[0x3]; // 0x182d
 public:
 	// MNetworkEnable
-	GameTime_t m_fLastShotTime; // 0x1820	
-	bool m_bWasOwnedByCT; // 0x1824	
-	bool m_bWasOwnedByTerrorist; // 0x1825	
+	GameTime_t m_fLastShotTime; // 0x1830	
+	bool m_bWasOwnedByCT; // 0x1834	
+	bool m_bWasOwnedByTerrorist; // 0x1835	
 private:
-	[[maybe_unused]] uint8_t __pad1826[0x2]; // 0x1826
+	[[maybe_unused]] uint8_t __pad1836[0x2]; // 0x1836
 public:
-	float m_gunHeat; // 0x1828	
-	uint32_t m_smokeAttachments; // 0x182c	
-	GameTime_t m_lastSmokeTime; // 0x1830	
-	float m_flNextClientFireBulletTime; // 0x1834	
-	float m_flNextClientFireBulletTime_Repredict; // 0x1838	
+	float m_gunHeat; // 0x1838	
+	uint32_t m_smokeAttachments; // 0x183c	
+	GameTime_t m_lastSmokeTime; // 0x1840	
+	float m_flNextClientFireBulletTime; // 0x1844	
+	float m_flNextClientFireBulletTime_Repredict; // 0x1848	
 private:
-	[[maybe_unused]] uint8_t __pad183c[0xd4]; // 0x183c
+	[[maybe_unused]] uint8_t __pad184c[0xd4]; // 0x184c
 public:
-	C_IronSightController m_IronSightController; // 0x1910	
+	C_IronSightController m_IronSightController; // 0x1920	
 	// MNetworkEnable
-	int32_t m_iIronSightMode; // 0x19c0	
+	int32_t m_iIronSightMode; // 0x19d0	
 private:
-	[[maybe_unused]] uint8_t __pad19c4[0xc]; // 0x19c4
+	[[maybe_unused]] uint8_t __pad19d4[0xc]; // 0x19d4
 public:
-	GameTime_t m_flLastLOSTraceFailureTime; // 0x19d0	
+	GameTime_t m_flLastLOSTraceFailureTime; // 0x19e0	
 	// MNetworkEnable
-	int32_t m_iNumEmptyAttacks; // 0x19d4	
+	int32_t m_iNumEmptyAttacks; // 0x19e4	
 private:
-	[[maybe_unused]] uint8_t __pad19d8[0x78]; // 0x19d8
+	[[maybe_unused]] uint8_t __pad19e8[0x78]; // 0x19e8
 public:
-	GameTime_t m_flLastMagDropRequestTime; // 0x1a50	
-	float m_flWatTickOffset; // 0x1a54	
+	GameTime_t m_flLastMagDropRequestTime; // 0x1a60	
+	float m_flWatTickOffset; // 0x1a64	
 };
 
