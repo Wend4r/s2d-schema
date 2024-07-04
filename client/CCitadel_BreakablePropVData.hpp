@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1c0
+// Size: 0x1c8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -94,5 +94,7 @@ private:
 	[[maybe_unused]] uint8_t __pad01a4[0x4]; // 0x1a4
 public:
 	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPickups_lv2; // 0x1a8	
+	// MPropertyDescription "How many times each entry should be in the 'card deck'"
+	int32_t m_iLootListDeckSize; // 0x1c0	
 };
 
