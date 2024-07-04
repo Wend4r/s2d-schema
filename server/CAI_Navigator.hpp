@@ -32,26 +32,27 @@ public:
 	GameTime_t m_flLastSuccessfulSimplifyTime; // 0x90	
 	GameTime_t m_flTimeLastAvoidanceTriangulate; // 0x94	
 	GameTime_t m_flLastMoveTime; // 0x98	
-	bool m_bPeerMoveWait; // 0x9c	
+	GameTime_t m_flStartWaitingForFacingTime; // 0x9c	
+	bool m_bPeerMoveWait; // 0xa0	
 private:
-	[[maybe_unused]] uint8_t __pad009d[0x3]; // 0x9d
+	[[maybe_unused]] uint8_t __pad00a1[0x3]; // 0xa1
 public:
-	CHandle< CBaseEntity > m_hPeerWaitingOn; // 0xa0	
-	CSimTimer m_PeerWaitMoveTimer; // 0xa4	
-	CSimTimer m_PeerWaitClearTimer; // 0xb0	
-	CSimTimer m_NextSidestepTimer; // 0xbc	
-	CHandle< CBaseEntity > m_hBigStepGroundEnt; // 0xc8	
-	CHandle< CBaseEntity > m_hLastBlockingEnt; // 0xcc	
-	Vector m_vPosBeginFailedSteer; // 0xd0	
-	GameTime_t m_timeBeginFailedSteer; // 0xdc	
-	int32_t m_nNavFailCounter; // 0xe0	
-	GameTime_t m_flLastNavFailTime; // 0xe4	
-	bool m_bShouldBruteForceFailedNav; // 0xe8	
-	bool m_bNavChangedAlongPath; // 0xe9	
+	CHandle< CBaseEntity > m_hPeerWaitingOn; // 0xa4	
+	CSimTimer m_PeerWaitMoveTimer; // 0xa8	
+	CSimTimer m_PeerWaitClearTimer; // 0xb4	
+	CSimTimer m_NextSidestepTimer; // 0xc0	
+	CHandle< CBaseEntity > m_hBigStepGroundEnt; // 0xcc	
+	CHandle< CBaseEntity > m_hLastBlockingEnt; // 0xd0	
+	Vector m_vPosBeginFailedSteer; // 0xd4	
+	GameTime_t m_timeBeginFailedSteer; // 0xe0	
+	int32_t m_nNavFailCounter; // 0xe4	
+	GameTime_t m_flLastNavFailTime; // 0xe8	
+	bool m_bShouldBruteForceFailedNav; // 0xec	
+	bool m_bNavChangedAlongPath; // 0xed	
 private:
-	[[maybe_unused]] uint8_t __pad00ea[0x2]; // 0xea
+	[[maybe_unused]] uint8_t __pad00ee[0x2]; // 0xee
 public:
-	int32_t m_nPreviousCollisionGroup; // 0xec	
-	GameTime_t m_flLastNpcOverlapTime; // 0xf0	
+	int32_t m_nPreviousCollisionGroup; // 0xf0	
+	GameTime_t m_flLastNpcOverlapTime; // 0xf4	
 };
 

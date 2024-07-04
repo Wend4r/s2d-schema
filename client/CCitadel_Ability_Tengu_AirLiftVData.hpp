@@ -23,7 +23,7 @@ public:
 	float m_flDecceleration; // 0x1514	
 	float m_flAirSideSpeedPercent; // 0x1518	
 	float m_flBoostTime; // 0x151c	
-	float m_flBoostSpeed; // 0x1520	
+	float m_flBoostSpeedUp; // 0x1520	
 	float m_flChannelingAirDrag; // 0x1524	
 	float m_flChannelingMaxFallSpeed; // 0x1528	
 };

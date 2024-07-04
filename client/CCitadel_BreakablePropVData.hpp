@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1b0
+// Size: 0x1c0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -42,20 +42,17 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad002f[0x1]; // 0x2f
 public:
-	// MPropertyGroupName "Visuals"
+	// MPropertyStartGroup "Visuals"
 	// MPropertyDescription "Model"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_hModel; // 0x30	
-	// MPropertyGroupName "Visuals"
 	// MPropertyFriendlyName "Damage Received AnimGraph Parameter"
 	// MPropertyDescription "The animgraph parameter that's  describes how much damage the breakable has received. From 0 to 1 (no damage to dead)."
 	// MPropertyAttributeEditor "VDataAnimGraphParam( m_hModel )"
 	CGlobalSymbol m_sAnimgraphParamDamageReceived; // 0x110	
-	// MPropertyGroupName "Visuals"
 	// MPropertyFriendlyName "On Hit AnimGraph Parameter"
 	// MPropertyDescription "The animgraph parameter that is set to true when damage the breakable was hit."
 	// MPropertyAttributeEditor "VDataAnimGraphParam( m_hModel )"
 	CGlobalSymbol m_sAnimgraphParamOnHit; // 0x118	
-	// MPropertyGroupName "Visuals"
 	// MPropertyFriendlyName "On Respawn AnimGraph Parameter"
 	// MPropertyDescription "The animgraph parameter that is set to true the brekable is respawned."
 	// MPropertyAttributeEditor "VDataAnimGraphParam( m_hModel )"
@@ -73,26 +70,29 @@ public:
 	// MPropertyGroupName "Attributes"
 	// MPropertyDescription "Health"
 	int32_t m_iHealth; // 0x168	
-	// MPropertyGroupName "Attributes"
+	// MPropertyStartGroup "Attributes"
 	// MPropertyDescription "Respawn time"
-	float m_flRespawnTime; // 0x16c	
-	// MPropertyGroupName "Attributes"
+	float m_flInitialSpawnTime; // 0x16c	
+	float m_flRespawnTime; // 0x170	
+	float m_flInitialSpawnTimeTest; // 0x174	
+	float m_flRespawnTimeTest; // 0x178	
 	// MPropertyDescription "Can be mantled?"
-	bool m_bIsMantleable; // 0x170	
+	bool m_bIsMantleable; // 0x17c	
 private:
-	[[maybe_unused]] uint8_t __pad0171[0x3]; // 0x171
+	[[maybe_unused]] uint8_t __pad017d[0x3]; // 0x17d
 public:
-	// MPropertyStartGroup "Pickup rewards"
-	// MPropertyDescription "Lockout Period. Don't spawn any pickups until match time is past this time."
-	float m_flPickupLockoutPeriod; // 0x174	
 	// MPropertyDescription "Chance for this to drop a primary reward, 0 - 100%, this rolls first"
-	float m_flPrimaryDropChance; // 0x178	
-	// MPropertyDescription "Chance for this to drop alternate reward, 0 - 100%, this only rolls if a primary didn't drop"
-	float m_flSecondaryDropChance; // 0x17c	
+	float m_flPrimaryDropChance; // 0x180	
+	// MPropertyDescription "Category for the random roller"
+	ECitadelRandomRollTypes m_eRollType; // 0x184	
 	// MPropertyStartGroup "Pickup rewards"
 	// MPropertyDescription "Primary Pickups are rolled first."
-	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPrimaryPickups; // 0x180	
-	// MPropertyDescription "Secondary Pickups are only rolled if the primary didn't roll a drop."
-	CUtlVector< BreakablePowerupDropDefinition_t > m_vecSecondaryPickups; // 0x198	
+	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPrimaryPickups; // 0x188	
+	// MPropertyDescription "Level 2 Rewards"
+	int32_t m_iMatchTimeMinsForLevel2Pickups; // 0x1a0	
+private:
+	[[maybe_unused]] uint8_t __pad01a4[0x4]; // 0x1a4
+public:
+	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPickups_lv2; // 0x1a8	
 };
 

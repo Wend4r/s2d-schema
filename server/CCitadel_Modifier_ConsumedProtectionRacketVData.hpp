@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5f0
+// Size: 0x600
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_ConsumedProtectionRacketVData : public CCitadelModifierV
 {
 public:
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_strShieldBreakSound; // 0x5e0	
+	CSoundEventName m_strShieldBreakSound; // 0x5f0	
 };
 

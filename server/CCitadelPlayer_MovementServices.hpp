@@ -23,7 +23,6 @@ public:
 	Vector m_vecSupport; // 0x264	
 	bool m_bColliding; // 0x270	
 	bool m_bLandedOnGround; // 0x271	
-	bool m_bInExtraInfo; // 0x272	
-	bool m_bInShowScoreboard; // 0x273	
+	bool m_bHasFreeCursor; // 0x272	
 };
 

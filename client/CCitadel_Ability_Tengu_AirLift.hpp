@@ -8,6 +8,7 @@
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFlying"
+// MNetworkVarNames "bool m_bFlyingStarted"
 // MNetworkVarNames "bool m_bIsGrabbing"
 // MNetworkVarNames "bool m_bFirstMovementTick"
 // MNetworkVarNames "float m_flCurrentSpeed"
@@ -20,12 +21,11 @@ public:
 	// MNetworkEnable
 	bool m_bFlying; // 0xcd0	
 	// MNetworkEnable
-	bool m_bIsGrabbing; // 0xcd1	
+	bool m_bFlyingStarted; // 0xcd1	
 	// MNetworkEnable
-	bool m_bFirstMovementTick; // 0xcd2	
-private:
-	[[maybe_unused]] uint8_t __pad0cd3[0x1]; // 0xcd3
-public:
+	bool m_bIsGrabbing; // 0xcd2	
+	// MNetworkEnable
+	bool m_bFirstMovementTick; // 0xcd3	
 	// MNetworkEnable
 	float m_flCurrentSpeed; // 0xcd4	
 	// MNetworkEnable

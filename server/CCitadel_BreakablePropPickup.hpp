@@ -11,6 +11,7 @@ struct CCitadelMinimapComponent;
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
 // MNetworkVarNames "bool m_bActive"
 // MNetworkVarNames "CUtlString m_sPickupName"
+// MNetworkVarNames "int m_nNameOffset"
 class CCitadel_BreakablePropPickup : public CBaseAnimGraph
 {
 public:
@@ -26,6 +27,8 @@ private:
 public:
 	// MNetworkEnable
 	CUtlString m_sPickupName; // 0x978	
+	// MNetworkEnable
+	int32_t m_nNameOffset; // 0x980	
 	
 	// Datamap fields:
 	// Vector spawn_position; // 0x7fffffff

@@ -9,7 +9,7 @@ struct CitadelCameraOperationsSequence_t;
 struct CFootstepTableHandle;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x11b0
+// Size: 0x11c0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -75,75 +75,76 @@ public:
 	CitadelCameraOperationsSequence_t m_cameraSequenceClear; // 0xbd0	
 	// MPropertyStartGroup "Sounds"
 	CSoundEventName m_strDeathSound; // 0xc50	
-	CSoundEventName m_strRosterSelectedSound; // 0xc60	
-	CSoundEventName m_strRosterRemovedSound; // 0xc70	
-	CSoundEventName m_strFootstepSoundEventDefault; // 0xc80	
-	CSoundEventName m_strLowHealthSound; // 0xc90	
-	CSoundEventName m_strHeroSpecificLowHealthSound; // 0xca0	
-	CSoundEventName m_strMovementLoop; // 0xcb0	
+	CSoundEventName m_strLastHitSound; // 0xc60	
+	CSoundEventName m_strRosterSelectedSound; // 0xc70	
+	CSoundEventName m_strRosterRemovedSound; // 0xc80	
+	CSoundEventName m_strFootstepSoundEventDefault; // 0xc90	
+	CSoundEventName m_strLowHealthSound; // 0xca0	
+	CSoundEventName m_strHeroSpecificLowHealthSound; // 0xcb0	
+	CSoundEventName m_strMovementLoop; // 0xcc0	
 	// MPropertyDescription "Teammate footstep sounds are relative to whoever we're spectating."
-	CFootstepTableHandle m_hFootstepSounds; // 0xcc0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGameSoundEventScript; // 0xcc8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hVOEventScript; // 0xda8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGeneratedVOEventScript; // 0xe88	
-	float m_flFootstepSoundTravelDistanceMeters; // 0xf68	
-	float m_flStealthSpeedMetersPerSecond; // 0xf6c	
-	float m_flStepSoundTime; // 0xf70	
-	float m_flStepSoundTimeSprinting; // 0xf74	
+	CFootstepTableHandle m_hFootstepSounds; // 0xcd0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGameSoundEventScript; // 0xcd8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hVOEventScript; // 0xdb8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGeneratedVOEventScript; // 0xe98	
+	float m_flFootstepSoundTravelDistanceMeters; // 0xf78	
+	float m_flStealthSpeedMetersPerSecond; // 0xf7c	
+	float m_flStepSoundTime; // 0xf80	
+	float m_flStepSoundTimeSprinting; // 0xf84	
 	// MPropertyStartGroup
-	float m_flCollisionRadius; // 0xf78	
-	float m_flCollisionHeight; // 0xf7c	
-	float m_flStepHeight; // 0xf80	
-	bool m_bInDevelopment; // 0xf84	
-	bool m_bAssignedPlayersOnly; // 0xf85	
-	bool m_bBotSelectable; // 0xf86	
-	bool m_bNewPlayerRecommended; // 0xf87	
-	bool m_bLaneTestingRecommended; // 0xf88	
-	bool m_bNeedsTesting; // 0xf89	
-	bool m_bLimitedTesting; // 0xf8a	
-	bool m_bDisabled; // 0xf8b	
-	bool m_bPlayerSelectable; // 0xf8c	
+	float m_flCollisionRadius; // 0xf88	
+	float m_flCollisionHeight; // 0xf8c	
+	float m_flStepHeight; // 0xf90	
+	bool m_bInDevelopment; // 0xf94	
+	bool m_bAssignedPlayersOnly; // 0xf95	
+	bool m_bBotSelectable; // 0xf96	
+	bool m_bNewPlayerRecommended; // 0xf97	
+	bool m_bLaneTestingRecommended; // 0xf98	
+	bool m_bNeedsTesting; // 0xf99	
+	bool m_bLimitedTesting; // 0xf9a	
+	bool m_bDisabled; // 0xf9b	
+	bool m_bPlayerSelectable; // 0xf9c	
 private:
-	[[maybe_unused]] uint8_t __pad0f8d[0x3]; // 0xf8d
+	[[maybe_unused]] uint8_t __pad0f9d[0x3]; // 0xf9d
 public:
-	int32_t m_nComplexity; // 0xf90	
-	int32_t m_nReadability; // 0xf94	
+	int32_t m_nComplexity; // 0xfa0	
+	int32_t m_nReadability; // 0xfa4	
 	// MPropertyStartGroup "Low Health Settings"
 	// MPropertyDescription "Percentage of health to be considered low health"
 	// MPropertyAttributeRange "0 1"
-	float m_flMinLowHealthPercentage; // 0xf98	
+	float m_flMinLowHealthPercentage; // 0xfa8	
 	// MPropertyDescription "Percentage of health to be considered low health when you have high max health."
 	// MPropertyAttributeRange "0 1"
-	float m_flMaxLowHealthPercentage; // 0xf9c	
+	float m_flMaxLowHealthPercentage; // 0xfac	
 	// MPropertyDescription "Percentage of health to be considered mid health"
 	// MPropertyAttributeRange "0 1"
-	float m_flMinMidHealthPercentage; // 0xfa0	
+	float m_flMinMidHealthPercentage; // 0xfb0	
 	// MPropertyDescription "Percentage of health to be considered mid health when you have high max health."
 	// MPropertyAttributeRange "0 1"
-	float m_flMaxMidHealthPercentage; // 0xfa4	
+	float m_flMaxMidHealthPercentage; // 0xfb4	
 	// MPropertyDescription "Min Max Health for Remapped Value"
-	float m_flMinHealthForThreshold; // 0xfa8	
+	float m_flMinHealthForThreshold; // 0xfb8	
 	// MPropertyDescription "Max Max Health for remapped value"
-	float m_flMaxHealthForThreshold; // 0xfac	
+	float m_flMaxHealthForThreshold; // 0xfbc	
 	// MPropertyStartGroup
-	CUtlOrderedMap< EStatsType, float32 > m_mapStartingStats; // 0xfb0	
-	CUtlOrderedMap< EStatsType, HeroScalingStat_t > m_mapScalingStats; // 0xfd8	
+	CUtlOrderedMap< EStatsType, float32 > m_mapStartingStats; // 0xfc0	
+	CUtlOrderedMap< EStatsType, HeroScalingStat_t > m_mapScalingStats; // 0xfe8	
 private:
-	[[maybe_unused]] uint8_t __pad1000[0x18]; // 0x1000
+	[[maybe_unused]] uint8_t __pad1010[0x18]; // 0x1010
 public:
-	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0x1018	
-	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapWIPAbilities; // 0x1040	
-	CUtlOrderedMap< EItemSlotTypes_t, ItemSlotInfo_t > m_mapItemSlotInfo; // 0x1068	
-	CUtlVector< CSubclassName< 4 > > m_RecommendedUpgrades; // 0x1090	
+	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0x1028	
+	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapWIPAbilities; // 0x1050	
+	CUtlOrderedMap< EItemSlotTypes_t, ItemSlotInfo_t > m_mapItemSlotInfo; // 0x1078	
+	CUtlVector< CSubclassName< 4 > > m_RecommendedUpgrades; // 0x10a0	
 private:
-	[[maybe_unused]] uint8_t __pad10a8[0x70]; // 0x10a8
+	[[maybe_unused]] uint8_t __pad10b8[0x70]; // 0x10b8
 public:
-	EAbilityResourceType m_eAbilityResourceType; // 0x1118	
+	EAbilityResourceType m_eAbilityResourceType; // 0x1128	
 private:
-	[[maybe_unused]] uint8_t __pad111c[0x1c]; // 0x111c
+	[[maybe_unused]] uint8_t __pad112c[0x1c]; // 0x112c
 public:
-	CUtlOrderedMap< EModifierValue, float32 > m_mapStandardLevelUpUpgrades; // 0x1138	
-	CUtlOrderedMap< int32, HeroLevel_t > m_mapLevelInfo; // 0x1160	
-	CUtlOrderedMap< EItemSlotTypes_t, CUtlVector< HeroPurchaseBonus_t > > m_mapPurchaseBonuses; // 0x1188	
+	CUtlOrderedMap< EModifierValue, float32 > m_mapStandardLevelUpUpgrades; // 0x1148	
+	CUtlOrderedMap< int32, HeroLevel_t > m_mapLevelInfo; // 0x1170	
+	CUtlOrderedMap< EItemSlotTypes_t, CUtlVector< HeroPurchaseBonus_t > > m_mapPurchaseBonuses; // 0x1198	
 };
 

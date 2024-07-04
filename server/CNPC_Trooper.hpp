@@ -30,20 +30,20 @@ private:
 public:
 	CModifierHandleTyped< CCitadelModifier > m_hNearDeathModifier; // 0x15a0	
 private:
-	[[maybe_unused]] uint8_t __pad15b8[0x4]; // 0x15b8
+	[[maybe_unused]] uint8_t __pad15b8[0x8]; // 0x15b8
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x15bc	
+	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x15c0	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
-	float m_flHealingChargeParticlePct; // 0x15c0	
+	float m_flHealingChargeParticlePct; // 0x15c4	
 private:
-	[[maybe_unused]] uint8_t __pad15c4[0x1c]; // 0x15c4
+	[[maybe_unused]] uint8_t __pad15c8[0x1c]; // 0x15c8
 public:
 	// MNetworkEnable
-	GameTime_t m_flVulnerableTime; // 0x15e0	
+	GameTime_t m_flVulnerableTime; // 0x15e4	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_TROOPER_MOVE_OUT(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[0]->m_instance);};

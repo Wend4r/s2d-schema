@@ -2,13 +2,16 @@
 
 #include <cstdint>
 
+struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd30
+// Size: 0xd40
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecStartPos"
 // MNetworkVarNames "Vector m_vecPosition"
+// MNetworkVarNames "Vector m_vecInitialPosition"
+// MNetworkVarNames "GameTime_t m_CastTime"
 // MNetworkVarNames "Vector m_vecDirection"
 // MNetworkVarNames "Vector m_vecLeft"
 // MNetworkVarNames "float m_Length"
@@ -28,16 +31,20 @@ public:
 	// MNetworkEnable
 	Vector m_vecPosition; // 0xd04	
 	// MNetworkEnable
-	Vector m_vecDirection; // 0xd10	
+	Vector m_vecInitialPosition; // 0xd10	
 	// MNetworkEnable
-	Vector m_vecLeft; // 0xd1c	
+	GameTime_t m_CastTime; // 0xd1c	
 	// MNetworkEnable
-	float m_Length; // 0xd28	
+	Vector m_vecDirection; // 0xd20	
+	// MNetworkEnable
+	Vector m_vecLeft; // 0xd2c	
+	// MNetworkEnable
+	float m_Length; // 0xd38	
 	// MNetworkEnable
 	// MNetworkChangeCallback "PreviewModeChanged"
-	bool m_bTraveling; // 0xd2c	
+	bool m_bTraveling; // 0xd3c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "PreviewModeChanged"
-	bool m_bPreview; // 0xd2d	
+	bool m_bPreview; // 0xd3d	
 };
 

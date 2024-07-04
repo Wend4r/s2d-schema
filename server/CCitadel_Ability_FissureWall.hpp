@@ -2,13 +2,16 @@
 
 #include <cstdint>
 
+struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xba8
+// Size: 0xbb0
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecStartPos"
 // MNetworkVarNames "Vector m_vecPosition"
+// MNetworkVarNames "Vector m_vecInitialPosition"
+// MNetworkVarNames "GameTime_t m_CastTime"
 // MNetworkVarNames "Vector m_vecDirection"
 // MNetworkVarNames "Vector m_vecLeft"
 // MNetworkVarNames "float m_Length"
@@ -24,17 +27,21 @@ public:
 	// MNetworkEnable
 	Vector m_vecPosition; // 0xb6c	
 	// MNetworkEnable
-	Vector m_vecDirection; // 0xb78	
+	Vector m_vecInitialPosition; // 0xb78	
 	// MNetworkEnable
-	Vector m_vecLeft; // 0xb84	
+	GameTime_t m_CastTime; // 0xb84	
 	// MNetworkEnable
-	float m_Length; // 0xb90	
+	Vector m_vecDirection; // 0xb88	
+	// MNetworkEnable
+	Vector m_vecLeft; // 0xb94	
+	// MNetworkEnable
+	float m_Length; // 0xba0	
 private:
-	[[maybe_unused]] uint8_t __pad0b94[0xa]; // 0xb94
+	[[maybe_unused]] uint8_t __pad0ba4[0xa]; // 0xba4
 public:
 	// MNetworkEnable
-	bool m_bTraveling; // 0xb9e	
+	bool m_bTraveling; // 0xbae	
 	// MNetworkEnable
-	bool m_bPreview; // 0xb9f	
+	bool m_bPreview; // 0xbaf	
 };
 

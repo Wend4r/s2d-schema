@@ -5,7 +5,7 @@
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x668
+// Size: 0x678
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,9 +13,9 @@ class CCitadel_Modifier_ZiplineBoostVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Gameplay"
-	float m_flRampUpTime; // 0x5e0	
-	float m_flPercentageSpeedIncrease; // 0x5e4	
+	float m_flRampUpTime; // 0x5f0	
+	float m_flPercentageSpeedIncrease; // 0x5f4	
 	// MPropertyStartGroup "Camera"
-	CitadelCameraOperationsSequence_t m_cameraSequenceStartBoost; // 0x5e8	
+	CitadelCameraOperationsSequence_t m_cameraSequenceStartBoost; // 0x5f8	
 };
 

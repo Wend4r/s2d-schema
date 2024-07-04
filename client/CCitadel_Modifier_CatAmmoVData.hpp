@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x720
+// Size: 0x730
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_CatAmmoVData : public CCitadel_Modifier_BaseEventProcVDa
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x610	
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x620	
-	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x630	
+	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x620	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x630	
+	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x640	
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x640	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x650	
 };
 

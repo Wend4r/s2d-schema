@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5f0
+// Size: 0x600
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_Nano_PredatoryStatueTargetVData : public CCitadelModifie
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strLaserHitSound; // 0x5e0	
+	CSoundEventName m_strLaserHitSound; // 0x5f0	
 };
 

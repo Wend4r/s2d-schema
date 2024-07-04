@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x610
+// Size: 0x620
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_Siphon_Bullets_WatcherVData : public CCitadel_Modifier_S
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_HealModifier; // 0x600	
+	CEmbeddedSubclass< CCitadelModifier > m_HealModifier; // 0x610	
 };
 

@@ -41,27 +41,29 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0071[0x3]; // 0x71
 public:
-	int32_t m_nParentPanelsNthShard; // 0x74	
-	int32_t m_nSubShardGeneration; // 0x78	
-	Vector2D m_vecAverageVertPosition; // 0x7c	
-	bool m_bAverageVertPositionIsValid; // 0x84	
+	int32_t m_nSubShardGeneration; // 0x74	
+	Vector2D m_vecAverageVertPosition; // 0x78	
+	bool m_bAverageVertPositionIsValid; // 0x80	
 private:
-	[[maybe_unused]] uint8_t __pad0085[0x3]; // 0x85
+	[[maybe_unused]] uint8_t __pad0081[0x3]; // 0x81
 public:
-	Vector2D m_vecPanelSpaceStressPositionA; // 0x88	
-	Vector2D m_vecPanelSpaceStressPositionB; // 0x90	
-	bool m_bStressPositionAIsValid; // 0x98	
-	bool m_bStressPositionBIsValid; // 0x99	
-	bool m_bFlaggedForRemoval; // 0x9a	
+	Vector2D m_vecPanelSpaceStressPositionA; // 0x84	
+	Vector2D m_vecPanelSpaceStressPositionB; // 0x8c	
+	bool m_bStressPositionAIsValid; // 0x94	
+	bool m_bStressPositionBIsValid; // 0x95	
+	bool m_bFlaggedForRemoval; // 0x96	
 private:
-	[[maybe_unused]] uint8_t __pad009b[0x1]; // 0x9b
+	[[maybe_unused]] uint8_t __pad0097[0x1]; // 0x97
 public:
-	GameTime_t m_flPhysicsEntitySpawnedAtTime; // 0x9c	
-	bool m_bShatterRateLimited; // 0xa0	
+	GameTime_t m_flPhysicsEntitySpawnedAtTime; // 0x98	
+	bool m_bShatterRateLimited; // 0x9c	
 private:
-	[[maybe_unused]] uint8_t __pad00a1[0x3]; // 0xa1
+	[[maybe_unused]] uint8_t __pad009d[0x3]; // 0x9d
 public:
-	CHandle< CBaseEntity > m_hEntityHittingMe; // 0xa4	
+	CHandle< CBaseEntity > m_hEntityHittingMe; // 0xa0	
+private:
+	[[maybe_unused]] uint8_t __pad00a4[0x4]; // 0xa4
+public:
 	CUtlVector< uint32 > m_vecNeighbors; // 0xa8	
 };
 

@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5d0
+// Size: 0x5d8
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -16,6 +16,8 @@ struct GameTime_t;
 // MNetworkVarNames "float m_flFadeInStart"
 // MNetworkVarNames "float m_flFadeInEnd"
 // MNetworkVarNames "float m_flIndirectStrength"
+// MNetworkVarNames "int m_nVolumeDepth"
+// MNetworkVarNames "float m_fFirstVolumeSliceThickness"
 // MNetworkVarNames "int m_nIndirectTextureDimX"
 // MNetworkVarNames "int m_nIndirectTextureDimY"
 // MNetworkVarNames "int m_nIndirectTextureDimZ"
@@ -58,60 +60,64 @@ public:
 	// MNetworkEnable
 	float m_flIndirectStrength; // 0x550	
 	// MNetworkEnable
-	int32_t m_nIndirectTextureDimX; // 0x554	
+	int32_t m_nVolumeDepth; // 0x554	
 	// MNetworkEnable
-	int32_t m_nIndirectTextureDimY; // 0x558	
+	float m_fFirstVolumeSliceThickness; // 0x558	
 	// MNetworkEnable
-	int32_t m_nIndirectTextureDimZ; // 0x55c	
+	int32_t m_nIndirectTextureDimX; // 0x55c	
 	// MNetworkEnable
-	Vector m_vBoxMins; // 0x560	
+	int32_t m_nIndirectTextureDimY; // 0x560	
 	// MNetworkEnable
-	Vector m_vBoxMaxs; // 0x56c	
+	int32_t m_nIndirectTextureDimZ; // 0x564	
 	// MNetworkEnable
-	bool m_bActive; // 0x578	
+	Vector m_vBoxMins; // 0x568	
+	// MNetworkEnable
+	Vector m_vBoxMaxs; // 0x574	
+	// MNetworkEnable
+	bool m_bActive; // 0x580	
 private:
-	[[maybe_unused]] uint8_t __pad0579[0x3]; // 0x579
+	[[maybe_unused]] uint8_t __pad0581[0x3]; // 0x581
 public:
 	// MNetworkEnable
-	GameTime_t m_flStartAnisoTime; // 0x57c	
+	GameTime_t m_flStartAnisoTime; // 0x584	
 	// MNetworkEnable
-	GameTime_t m_flStartScatterTime; // 0x580	
+	GameTime_t m_flStartScatterTime; // 0x588	
 	// MNetworkEnable
-	GameTime_t m_flStartDrawDistanceTime; // 0x584	
+	GameTime_t m_flStartDrawDistanceTime; // 0x58c	
 	// MNetworkEnable
-	float m_flStartAnisotropy; // 0x588	
+	float m_flStartAnisotropy; // 0x590	
 	// MNetworkEnable
-	float m_flStartScattering; // 0x58c	
+	float m_flStartScattering; // 0x594	
 	// MNetworkEnable
-	float m_flStartDrawDistance; // 0x590	
+	float m_flStartDrawDistance; // 0x598	
 	// MNetworkEnable
-	float m_flDefaultAnisotropy; // 0x594	
+	float m_flDefaultAnisotropy; // 0x59c	
 	// MNetworkEnable
-	float m_flDefaultScattering; // 0x598	
+	float m_flDefaultScattering; // 0x5a0	
 	// MNetworkEnable
-	float m_flDefaultDrawDistance; // 0x59c	
+	float m_flDefaultDrawDistance; // 0x5a4	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x5a0	
+	bool m_bStartDisabled; // 0x5a8	
 	// MNetworkEnable
-	bool m_bEnableIndirect; // 0x5a1	
+	bool m_bEnableIndirect; // 0x5a9	
 	// MNetworkEnable
-	bool m_bIndirectUseLPVs; // 0x5a2	
+	bool m_bIndirectUseLPVs; // 0x5aa	
 	// MNetworkEnable
-	bool m_bIsMaster; // 0x5a3	
+	bool m_bIsMaster; // 0x5ab	
 private:
-	[[maybe_unused]] uint8_t __pad05a4[0x4]; // 0x5a4
+	[[maybe_unused]] uint8_t __pad05ac[0x4]; // 0x5ac
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hFogIndirectTexture; // 0x5a8	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hFogIndirectTexture; // 0x5b0	
 	// MNetworkEnable
-	int32_t m_nForceRefreshCount; // 0x5b0	
+	int32_t m_nForceRefreshCount; // 0x5b8	
 	// MNetworkEnable
-	float m_fNoiseSpeed; // 0x5b4	
+	float m_fNoiseSpeed; // 0x5bc	
 	// MNetworkEnable
-	float m_fNoiseStrength; // 0x5b8	
+	float m_fNoiseStrength; // 0x5c0	
 	// MNetworkEnable
-	Vector m_vNoiseScale; // 0x5bc	
-	bool m_bFirstTime; // 0x5c8	
+	Vector m_vNoiseScale; // 0x5c4	
+	bool m_bFirstTime; // 0x5d0	
 	
 	// Datamap fields:
 	// void InputSetToDefaults; // 0x0

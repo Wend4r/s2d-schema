@@ -4,73 +4,73 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1168
+// Size: 0x1180
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CNPC_TrooperNeutralVData : public CAI_CitadelNPCVData
 {
 public:
-	ENeutralTrooperType m_eTrooperType; // 0xe00	
-	float m_flGoldReward; // 0xe04	
-	float m_flGoldRewardBonusPercentPerMinute; // 0xe08	
-	bool m_bGiveGoldOnHit; // 0xe0c	
-	bool m_bOrbDropper; // 0xe0d	
-	bool m_bCapSimultanousAttackers; // 0xe0e	
+	ENeutralTrooperType m_eTrooperType; // 0xe18	
+	float m_flGoldReward; // 0xe1c	
+	float m_flGoldRewardBonusPercentPerMinute; // 0xe20	
+	bool m_bGiveGoldOnHit; // 0xe24	
+	bool m_bOrbDropper; // 0xe25	
+	bool m_bCapSimultanousAttackers; // 0xe26	
 private:
-	[[maybe_unused]] uint8_t __pad0e0f[0x1]; // 0xe0f
+	[[maybe_unused]] uint8_t __pad0e27[0x1]; // 0xe27
 public:
-	float m_flShieldReactivateDelay; // 0xe10	
-	float m_flDyingDuration; // 0xe14	
+	float m_flShieldReactivateDelay; // 0xe28	
+	float m_flDyingDuration; // 0xe2c	
 	// MPropertyStartGroup "Behavior"
 	// MPropertyFriendlyName "Damaged by Bullets?"
-	bool m_bDamagedByBullets; // 0xe18	
+	bool m_bDamagedByBullets; // 0xe30	
 	// MPropertyFriendlyName "Damaged by Melee?"
-	bool m_bDamagedByMelee; // 0xe19	
+	bool m_bDamagedByMelee; // 0xe31	
 	// MPropertyFriendlyName "Damaged by Abilities?"
-	bool m_bDamagedByAbilities; // 0xe1a	
+	bool m_bDamagedByAbilities; // 0xe32	
 	// MPropertyFriendlyName "Fixed Melee Damage?"
-	bool m_bFixedMeleeDamage; // 0xe1b	
+	bool m_bFixedMeleeDamage; // 0xe33	
 private:
-	[[maybe_unused]] uint8_t __pad0e1c[0x4]; // 0xe1c
+	[[maybe_unused]] uint8_t __pad0e34[0x4]; // 0xe34
 public:
 	// MPropertyStartGroup "Shield FX"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShieldParticle; // 0xe20	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShieldParticle; // 0xe38	
 	// MPropertyStartGroup "Retaliation Attack"
 	// MPropertyDescription "How much damage to deal on retaliate the attacker when this is hit."
-	float m_flRetaliateDamage; // 0xf00	
-	float m_flRetaliateCooldown; // 0xf04	
+	float m_flRetaliateDamage; // 0xf18	
+	float m_flRetaliateCooldown; // 0xf1c	
 	// MPropertyDescription "Particle to play when dealing retaliate damage"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_retaliateParticle; // 0xf08	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_retaliateParticle; // 0xf20	
 	// MPropertyStartGroup "AOE Attack"
-	bool m_bHasAOEAttack; // 0xfe8	
+	bool m_bHasAOEAttack; // 0x1000	
 private:
-	[[maybe_unused]] uint8_t __pad0fe9[0x3]; // 0xfe9
+	[[maybe_unused]] uint8_t __pad1001[0x3]; // 0x1001
 public:
-	float m_flAOERadius; // 0xfec	
-	float m_flAOEDamage; // 0xff0	
-	float m_flAOEAttackCooldown; // 0xff4	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AOEParticle; // 0xff8	
-	CEmbeddedSubclass< CCitadelModifier > m_AOEDebuffToApply; // 0x10d8	
-	CSoundEventName m_AOEInitiateSound; // 0x10e8	
-	CSoundEventName m_AOESound; // 0x10f8	
-	float m_AOEDebuffDuration; // 0x1108	
+	float m_flAOERadius; // 0x1004	
+	float m_flAOEDamage; // 0x1008	
+	float m_flAOEAttackCooldown; // 0x100c	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AOEParticle; // 0x1010	
+	CEmbeddedSubclass< CCitadelModifier > m_AOEDebuffToApply; // 0x10f0	
+	CSoundEventName m_AOEInitiateSound; // 0x1100	
+	CSoundEventName m_AOESound; // 0x1110	
+	float m_AOEDebuffDuration; // 0x1120	
 private:
-	[[maybe_unused]] uint8_t __pad110c[0x4]; // 0x110c
+	[[maybe_unused]] uint8_t __pad1124[0x4]; // 0x1124
 public:
 	// MPropertyStartGroup "Body"
-	CUtlVector< CUtlString > m_vecRandomBodyGroup; // 0x1110	
-	CUtlVector< CUtlString > m_vecRandomSkin; // 0x1128	
+	CUtlVector< CUtlString > m_vecRandomBodyGroup; // 0x1128	
+	CUtlVector< CUtlString > m_vecRandomSkin; // 0x1140	
 	// MPropertyStartGroup "Visuals"
-	float m_flHullCapsuleRadius; // 0x1140	
-	float m_flHullCapsuleHeight; // 0x1144	
+	float m_flHullCapsuleRadius; // 0x1158	
+	float m_flHullCapsuleHeight; // 0x115c	
 	// MPropertyStartGroup "Idles"
-	bool m_bFaceEnemyWhileIdle; // 0x1148	
+	bool m_bFaceEnemyWhileIdle; // 0x1160	
 private:
-	[[maybe_unused]] uint8_t __pad1149[0x7]; // 0x1149
+	[[maybe_unused]] uint8_t __pad1161[0x7]; // 0x1161
 public:
-	CSoundEventName m_IdleLoopSound; // 0x1150	
+	CSoundEventName m_IdleLoopSound; // 0x1168	
 	// MPropertyStartGroup "Movement"
-	MoveType_t m_MoveType; // 0x1160	
+	MoveType_t m_MoveType; // 0x1178	
 };
 

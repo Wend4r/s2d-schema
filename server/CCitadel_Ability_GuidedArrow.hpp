@@ -5,12 +5,13 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc8
+// Size: 0xc08
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_hProjectile"
 // MNetworkVarNames "float m_flArrowSpeed"
 // MNetworkVarNames "GameTime_t m_flSnapAnglesBackTime"
+// MNetworkVarNames "int m_nBonusTechPower"
 class CCitadel_Ability_GuidedArrow : public CCitadelBaseAbility
 {
 private:
@@ -22,15 +23,21 @@ public:
 	float m_flArrowSpeed; // 0xab4	
 	// MNetworkEnable
 	GameTime_t m_flSnapAnglesBackTime; // 0xab8	
-	CHandle< CCitadelAnimatingModelEntity > m_hOwl; // 0xabc	
-	GameTime_t m_flCastTime; // 0xac0	
-	bool m_bNeedsExplosion; // 0xac4	
+	// MNetworkEnable
+	int32_t m_nBonusTechPower; // 0xabc	
+	CHandle< CCitadelAnimatingModelEntity > m_hOwl; // 0xac0	
+	GameTime_t m_flCastTime; // 0xac4	
+	bool m_bNeedsExplosion; // 0xac8	
 private:
-	[[maybe_unused]] uint8_t __pad0ac5[0x3]; // 0xac5
+	[[maybe_unused]] uint8_t __pad0ac9[0x3]; // 0xac9
 public:
-	Vector m_vProjectileRemovedOrigin; // 0xac8	
-	QAngle m_angCasterAnglesAtCastTime; // 0xad4	
-	float m_flTravelDistance; // 0xae0	
-	bool m_bInKillFlow; // 0xae4	
+	Vector m_vProjectileRemovedOrigin; // 0xacc	
+	QAngle m_angCasterAnglesAtCastTime; // 0xad8	
+	float m_flTravelDistance; // 0xae4	
+	bool m_bInKillFlow; // 0xae8	
+private:
+	[[maybe_unused]] uint8_t __pad0ae9[0x3]; // 0xae9
+public:
+	float m_flProjectileTurnVel; // 0xaec	
 };
 

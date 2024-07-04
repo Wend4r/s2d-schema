@@ -5,7 +5,7 @@
 struct CCitadelWeaponInfo;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe00
+// Size: 0xe18
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -44,44 +44,49 @@ public:
 	CSoundEventName m_BeamPointClosestLoopSound; // 0x2a0	
 	CSoundEventName m_strAmbientLoopSound; // 0x2b0	
 	CSoundEventName m_DeathSound; // 0x2c0	
-	CSoundEventName m_MeleeHitSound; // 0x2d0	
-	CSoundEventName m_MeleeHitPlayerSound; // 0x2e0	
+	CSoundEventName m_strLastHitSound; // 0x2d0	
+	bool m_bPlayLastHitSound; // 0x2e0	
+private:
+	[[maybe_unused]] uint8_t __pad02e1[0x7]; // 0x2e1
+public:
+	CSoundEventName m_MeleeHitSound; // 0x2e8	
+	CSoundEventName m_MeleeHitPlayerSound; // 0x2f8	
 	// MPropertyStartGroup "Visuals"
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sDefaultMaterialGroupName; // 0x2f0	
+	CUtlString m_sDefaultMaterialGroupName; // 0x308	
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sEnemyMaterialGroupName; // 0x2f8	
+	CUtlString m_sEnemyMaterialGroupName; // 0x310	
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sTeam1MaterialGroupName; // 0x300	
+	CUtlString m_sTeam1MaterialGroupName; // 0x318	
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sTeam2MaterialGroupName; // 0x308	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeSwingParticle; // 0x310	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeActivateParticle; // 0x3f0	
-	float m_flModelScale; // 0x4d0	
+	CUtlString m_sTeam2MaterialGroupName; // 0x320	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeSwingParticle; // 0x328	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeActivateParticle; // 0x408	
+	float m_flModelScale; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04d4[0x4]; // 0x4d4
+	[[maybe_unused]] uint8_t __pad04ec[0x4]; // 0x4ec
 public:
 	// MPropertyDescription "Particle to play instead of doing a ragdoll"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathParticle; // 0x4d8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathParticle; // 0x4f0	
 	// MPropertyStartGroup "Health Bar"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealthBarParticle; // 0x5b8	
-	CUtlString m_sHealthBarAttachment; // 0x698	
-	Color m_HealthBarColorFriend; // 0x6a0	
-	Color m_HealthBarColorEnemy; // 0x6a4	
-	Color m_HealthBarColorTeam1; // 0x6a8	
-	Color m_HealthBarColorTeam2; // 0x6ac	
-	Color m_HealthBarColorTeamNeutral; // 0x6b0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealthBarParticle; // 0x5d0	
+	CUtlString m_sHealthBarAttachment; // 0x6b0	
+	Color m_HealthBarColorFriend; // 0x6b8	
+	Color m_HealthBarColorEnemy; // 0x6bc	
+	Color m_HealthBarColorTeam1; // 0x6c0	
+	Color m_HealthBarColorTeam2; // 0x6c4	
+	Color m_HealthBarColorTeamNeutral; // 0x6c8	
 	// MPropertyStartGroup "Misc"
-	float m_flHealthBarOffset; // 0x6b4	
+	float m_flHealthBarOffset; // 0x6cc	
 	// MPropertyStartGroup "Beam Weapon"
-	float m_flBeamWeaponWidth; // 0x6b8	
-	float m_flBeamTurnRate; // 0x6bc	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BeamWeaponParticle; // 0x6c0	
+	float m_flBeamWeaponWidth; // 0x6d0	
+	float m_flBeamTurnRate; // 0x6d4	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BeamWeaponParticle; // 0x6d8	
 	// MPropertyDescription "Modifier for physics impulses applied to this NPC (0 == unmoveable)"
-	float m_flPhysicsImpulseMultiplier; // 0x7a0	
+	float m_flPhysicsImpulseMultiplier; // 0x7b8	
 private:
-	[[maybe_unused]] uint8_t __pad07a4[0x4]; // 0x7a4
+	[[maybe_unused]] uint8_t __pad07bc[0x4]; // 0x7bc
 public:
-	CCitadelWeaponInfo m_WeaponInfo; // 0x7a8	
+	CCitadelWeaponInfo m_WeaponInfo; // 0x7c0	
 };
 

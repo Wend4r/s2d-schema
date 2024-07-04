@@ -4,16 +4,18 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x60
+// Size: 0x80
 // Has VTable
 // 
 // MNetworkVarNames "int32 m_nModelID"
-// MNetworkVarNames "HMaterialStrong m_hMaterial"
+// MNetworkVarNames "HMaterialStrong m_hMaterialUndamaged"
+// MNetworkVarNames "HMaterialStrong m_hMaterialDamaged"
 // MNetworkVarNames "ShardSolid_t m_solid"
 // MNetworkVarNames "Vector2D m_vecPanelSize"
 // MNetworkVarNames "Vector2D m_vecStressPositionA"
 // MNetworkVarNames "Vector2D m_vecStressPositionB"
 // MNetworkVarNames "Vector2D m_vecPanelVertices"
+// MNetworkVarNames "Vector4D m_vInitialPanelVertices"
 // MNetworkVarNames "float m_flGlassHalfThickness"
 // MNetworkVarNames "bool m_bHasParent"
 // MNetworkVarNames "bool m_bParentFrozen"
@@ -29,33 +31,37 @@ private:
 	[[maybe_unused]] uint8_t __pad000c[0x4]; // 0xc
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x10	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialUndamaged; // 0x10	
 	// MNetworkEnable
-	ShardSolid_t m_solid; // 0x18	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialDamaged; // 0x18	
+	// MNetworkEnable
+	ShardSolid_t m_solid; // 0x20	
 private:
-	[[maybe_unused]] uint8_t __pad0019[0x3]; // 0x19
+	[[maybe_unused]] uint8_t __pad0021[0x3]; // 0x21
 public:
 	// MNetworkEnable
-	Vector2D m_vecPanelSize; // 0x1c	
+	Vector2D m_vecPanelSize; // 0x24	
 	// MNetworkEnable
-	Vector2D m_vecStressPositionA; // 0x24	
+	Vector2D m_vecStressPositionA; // 0x2c	
 	// MNetworkEnable
-	Vector2D m_vecStressPositionB; // 0x2c	
+	Vector2D m_vecStressPositionB; // 0x34	
 private:
-	[[maybe_unused]] uint8_t __pad0034[0x4]; // 0x34
+	[[maybe_unused]] uint8_t __pad003c[0x4]; // 0x3c
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< Vector2D > m_vecPanelVertices; // 0x38	
+	C_NetworkUtlVectorBase< Vector2D > m_vecPanelVertices; // 0x40	
 	// MNetworkEnable
-	float m_flGlassHalfThickness; // 0x50	
+	C_NetworkUtlVectorBase< Vector4D > m_vInitialPanelVertices; // 0x58	
 	// MNetworkEnable
-	bool m_bHasParent; // 0x54	
+	float m_flGlassHalfThickness; // 0x70	
 	// MNetworkEnable
-	bool m_bParentFrozen; // 0x55	
+	bool m_bHasParent; // 0x74	
+	// MNetworkEnable
+	bool m_bParentFrozen; // 0x75	
 private:
-	[[maybe_unused]] uint8_t __pad0056[0x2]; // 0x56
+	[[maybe_unused]] uint8_t __pad0076[0x2]; // 0x76
 public:
 	// MNetworkEnable
-	CUtlStringToken m_SurfacePropStringToken; // 0x58	
+	CUtlStringToken m_SurfacePropStringToken; // 0x78	
 };
 

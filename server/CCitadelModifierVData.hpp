@@ -6,7 +6,7 @@ struct CCitadelModifierResponseRules_t;
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5e0
+// Size: 0x5f0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -55,30 +55,31 @@ private:
 public:
 	CUtlString m_strSmallIconCssClass; // 0x450	
 	CUtlString m_strHintText; // 0x458	
-	HudDisplayLocation_t m_eHudDisplayLocation; // 0x460	
+	CPanoramaImageName m_strHudIcon; // 0x460	
+	HudDisplayLocation_t m_eHudDisplayLocation; // 0x470	
 private:
-	[[maybe_unused]] uint8_t __pad0464[0x4]; // 0x464
+	[[maybe_unused]] uint8_t __pad0474[0x4]; // 0x474
 public:
 	// MPropertyDescription "When set, the message will appear in the middle of the HUD for the target player."
-	CUtlString m_strHudMessageText; // 0x468	
+	CUtlString m_strHudMessageText; // 0x478	
 	// MPropertyDescription "When set, the modifier will not be visible overhead of the casting player for the other players"
-	bool m_bIsHiddenOverhead; // 0x470	
+	bool m_bIsHiddenOverhead; // 0x480	
 private:
-	[[maybe_unused]] uint8_t __pad0471[0x7]; // 0x471
+	[[maybe_unused]] uint8_t __pad0481[0x7]; // 0x481
 public:
 	// MPropertyDescription "A set of modifier values that will be forced tp show in the UI if they have a value (normally requires a limited duration set)"
-	CUtlVector< EModifierValue > m_vecAlwaysShowInStatModifierUI; // 0x478	
+	CUtlVector< EModifierValue > m_vecAlwaysShowInStatModifierUI; // 0x488	
 	// MPropertyStartGroup "Responses"
-	CCitadelModifierResponseRules_t m_OnCreateResponse; // 0x490	
+	CCitadelModifierResponseRules_t m_OnCreateResponse; // 0x4a0	
 	// MPropertyStartGroup "Camera"
-	CitadelCameraOperationsSequence_t m_cameraSequenceCreated; // 0x4c8	
+	CitadelCameraOperationsSequence_t m_cameraSequenceCreated; // 0x4d8	
 	// MPropertyDescription "By default, we stop the sequence from 'Sequence Created' once the modifier is removed.  Un-check this to allow it to continue past the modifier's lifetime."
-	bool m_bEndCreatedSequenceOnRemove; // 0x548	
+	bool m_bEndCreatedSequenceOnRemove; // 0x558	
 private:
-	[[maybe_unused]] uint8_t __pad0549[0x7]; // 0x549
+	[[maybe_unused]] uint8_t __pad0559[0x7]; // 0x559
 public:
-	CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x550	
+	CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x560	
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_sExpiredSound; // 0x5d0	
+	CSoundEventName m_sExpiredSound; // 0x5e0	
 };
 

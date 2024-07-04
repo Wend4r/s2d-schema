@@ -3,10 +3,11 @@
 #include <cstdint>
 
 struct CParticleModelInput;
+struct CParticleCollectionFloatInput;
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x298
+// Size: 0x3e8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -25,19 +26,20 @@ public:
 	CStrongHandle< InfoForResourceTypeCModel > m_hModel; // 0x210	
 	// MPropertyFriendlyName "input model override"
 	CParticleModelInput m_modelInput; // 0x218	
-	// MPropertyFriendlyName "model LOD"
-	int32_t m_nLOD; // 0x278	
+	// MPropertyStartGroup "Rendering"
+	// MPropertyFriendlyName "size cull scale"
+	CParticleCollectionFloatInput m_fSizeCullScale; // 0x278	
 	// MPropertyFriendlyName "disable shadows"
-	bool m_bDisableShadows; // 0x27c	
+	bool m_bDisableShadows; // 0x3d0	
 	// MPropertyFriendlyName "disable motion blur"
-	bool m_bDisableMotionBlur; // 0x27d	
+	bool m_bDisableMotionBlur; // 0x3d1	
 	// MPropertyFriendlyName "accept decals"
-	bool m_bAcceptsDecals; // 0x27e	
+	bool m_bAcceptsDecals; // 0x3d2	
 private:
-	[[maybe_unused]] uint8_t __pad027f[0x1]; // 0x27f
+	[[maybe_unused]] uint8_t __pad03d3[0x1]; // 0x3d3
 public:
 	// MPropertyFriendlyName "angular velocity attribute (improves motion blur)"
 	// MPropertyAttributeChoiceName "particlefield_vector"
-	ParticleAttributeIndex_t m_nAngularVelocityField; // 0x280	
+	ParticleAttributeIndex_t m_nAngularVelocityField; // 0x3d4	
 };
 

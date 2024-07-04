@@ -37,5 +37,6 @@ public:
 	float m_flSpeedDeccel; // 0x19b0	
 	float m_flBaseProjectileSpeed; // 0x19b4	
 	float m_flMaxProjectileSpeed; // 0x19b8	
+	float m_flArrowModelTurnSpringStrength; // 0x19bc	
 };
 

@@ -10,7 +10,6 @@ class CCitadelObserver_MovementServices : public CPlayer_MovementServices
 {
 public:
 	float m_flRoamingSpeed; // 0x1d8	
-	bool m_bInExtraInfo; // 0x1dc	
-	bool m_bInShowScoreboard; // 0x1dd	
+	bool m_bHasFreeCursor; // 0x1dc	
 };
 

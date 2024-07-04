@@ -5,7 +5,7 @@
 struct CRangeFloat;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1190
+// Size: 0x11a8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,15 +13,15 @@ class CNPC_TrooperNeutralNodeMoverVData : public CNPC_TrooperNeutralVData
 {
 public:
 	// MPropertyStartGroup "Node Movement"
-	bool m_bEnableMovementToNodes; // 0x1168	
+	bool m_bEnableMovementToNodes; // 0x1180	
 private:
-	[[maybe_unused]] uint8_t __pad1169[0x3]; // 0x1169
+	[[maybe_unused]] uint8_t __pad1181[0x3]; // 0x1181
 public:
-	CRangeFloat m_flExposedDuration; // 0x116c	
-	CRangeFloat m_flHideDuration; // 0x1174	
+	CRangeFloat m_flExposedDuration; // 0x1184	
+	CRangeFloat m_flHideDuration; // 0x118c	
 private:
-	[[maybe_unused]] uint8_t __pad117c[0x4]; // 0x117c
+	[[maybe_unused]] uint8_t __pad1194[0x4]; // 0x1194
 public:
-	CEmbeddedSubclass< CCitadelModifier > m_HidingModifier; // 0x1180	
+	CEmbeddedSubclass< CCitadelModifier > m_HidingModifier; // 0x1198	
 };
 

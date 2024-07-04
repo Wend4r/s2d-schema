@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2f0
+// Size: 0x2f8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -24,6 +24,8 @@ public:
 	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPrimaryPickups; // 0x2d0	
 	// MPropertyStartGroup "Gameplay"
 	float m_flInitialSpawnTime; // 0x2e8	
-	float m_flSpawnInterval; // 0x2ec	
+	float m_flRespawnTime; // 0x2ec	
+	float m_flInitialSpawnTimeTest; // 0x2f0	
+	float m_flRespawnTimeTest; // 0x2f4	
 };
 

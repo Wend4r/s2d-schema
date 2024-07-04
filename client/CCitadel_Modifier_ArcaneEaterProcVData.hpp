@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x620
+// Size: 0x630
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_ArcaneEaterProcVData : public CCitadel_Modifier_BaseEven
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_StealWatcherModifier; // 0x610	
+	CEmbeddedSubclass< CCitadelModifier > m_StealWatcherModifier; // 0x620	
 };
 

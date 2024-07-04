@@ -6,7 +6,7 @@
 // Alignment: 8
 // Size: 0xc0
 // Has VTable
-class CCitadel_Modifier_Superior_Stamina_Watcher : public CCitadelModifier
+class CCitadel_Modifier_IdolReturnTimer : public CCitadelModifier
 {
 public:
 	// No schema binary for binding

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x7c0
+// Size: 0x7d0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_Chrono_KineticCarbineVData : public CCitadelModifierVDat
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x5e0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FullyChargedParticle; // 0x6c0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x5f0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FullyChargedParticle; // 0x6d0	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strFullyCharged; // 0x7a0	
-	CSoundEventName m_strShotSound; // 0x7b0	
+	CSoundEventName m_strFullyCharged; // 0x7b0	
+	CSoundEventName m_strShotSound; // 0x7c0	
 };
 

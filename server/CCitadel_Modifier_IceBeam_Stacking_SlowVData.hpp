@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x608
+// Size: 0x618
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_IceBeam_Stacking_SlowVData : public CCitadel_Modifier_Ba
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DisarmModifier; // 0x5f8	
+	CEmbeddedSubclass< CCitadelModifier > m_DisarmModifier; // 0x608	
 };
 

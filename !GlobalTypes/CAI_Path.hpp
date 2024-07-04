@@ -51,8 +51,9 @@ public:
 	float m_flDistAdvancedToCurWaypoint; // 0xc8	
 	Vector m_vGoalDirection; // 0xcc	
 	CHandle< CBaseEntity > m_hGoalDirectionTarget; // 0xd8	
+	float m_flGoalDirectionToleranceDot; // 0xdc	
 private:
-	[[maybe_unused]] uint8_t __pad00dc[0xc]; // 0xdc
+	[[maybe_unused]] uint8_t __pad00e0[0x8]; // 0xe0
 public:
 	uint32_t m_nConstrainedToMovableMeshId; // 0xe8	
 };

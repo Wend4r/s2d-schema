@@ -9,6 +9,7 @@
 // 
 // MNetworkVarNames "bool m_bActive"
 // MNetworkVarNames "CUtlString m_sPickupName"
+// MNetworkVarNames "int m_nNameOffset"
 class C_Citadel_BreakblePropPickup : public CBaseAnimGraph
 {
 public:
@@ -20,5 +21,7 @@ private:
 public:
 	// MNetworkEnable
 	CUtlString m_sPickupName; // 0xa78	
+	// MNetworkEnable
+	int32_t m_nNameOffset; // 0xa80	
 };
 
