@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x880
+// Size: 0x888
 // Has VTable
 class CFuncShatterglass : public CBaseModelEntity
 {
@@ -40,6 +40,10 @@ public:
 	CUtlVector< Vector4D > m_vInitialPanelVertices; // 0x838	
 	CEntityIOOutput m_OnBroken; // 0x850	
 	uint8_t m_iSurfaceType; // 0x878	
+private:
+	[[maybe_unused]] uint8_t __pad0879[0x7]; // 0x879
+public:
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialDamageBase; // 0x880	
 	
 	// Datamap fields:
 	// void CFuncShatterglassGlassThink; // 0x0

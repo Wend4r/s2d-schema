@@ -4,11 +4,12 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd78
+// Size: 0xce8
 // Has VTable
 class CCitadel_Ability_Tengu_Urn : public C_CitadelBaseAbility
 {
 public:
-	// No schema binary for binding
+	Vector m_vLaunchPosition; // 0xc28	
+	QAngle m_qLaunchAngle; // 0xc34	
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 147
+// Enumerator count: 149
 // Alignment: 4
 // Size: 0x4
 enum class EModifierState : uint32_t
@@ -153,8 +153,10 @@ enum class EModifierState : uint32_t
 	MODIFIER_STATE_DIGGER_BURROW_CHANNEL = 0x8e,
 	MODIFIER_STATE_DIGGER_SPIN = 0x8f,
 	MODIFIER_STATE_NEAR_REJUVINATOR = 0x90,
+	MODIFIER_STATE_IN_TIER3_PHASE2_BOSS_PIT = 0x91,
+	MODIFIER_STATE_TAKES_FULLDAMAGE_NO_FALLOFF = 0x92,
 	// MPropertySuppressEnumerator
-	MODIFIER_STATE_COUNT = 0x91,
+	MODIFIER_STATE_COUNT = 0x93,
 	// MPropertySuppressEnumerator
 	MODIFIER_STATE_INVALID = 0xff,
 };

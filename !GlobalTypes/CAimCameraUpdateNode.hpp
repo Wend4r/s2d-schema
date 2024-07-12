@@ -18,11 +18,9 @@ public:
 	CAnimParamHandle m_hParameterSpineRotationWeight; // 0x6c	
 	CAnimParamHandle m_hParameterPelvisOffset; // 0x6e	
 	CAnimParamHandle m_hParameterUseIK; // 0x70	
-	CAnimParamHandle m_hParameterWeaponDepenetrationDistance; // 0x72	
-	CAnimParamHandle m_hParameterCameraClearanceDistance; // 0x74	
-private:
-	[[maybe_unused]] uint8_t __pad0076[0x2]; // 0x76
-public:
+	CAnimParamHandle m_hParameterCameraOnly; // 0x72	
+	CAnimParamHandle m_hParameterWeaponDepenetrationDistance; // 0x74	
+	CAnimParamHandle m_hParameterCameraClearanceDistance; // 0x76	
 	AimCameraOpFixedSettings_t m_opFixedSettings; // 0x78	
 };
 

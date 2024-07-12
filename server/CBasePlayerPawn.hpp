@@ -97,7 +97,6 @@ public:
 	sky3dparams_t m_skybox3d; // 0xb38	
 	GameTime_t m_fTimeLastHurt; // 0xbc8	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerExclusive"
 	GameTime_t m_flDeathTime; // 0xbcc	
 	GameTime_t m_fNextSuicideTime; // 0xbd0	
 	bool m_fInitHUD; // 0xbd4	

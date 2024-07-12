@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1718
+// Size: 0x1720
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -19,5 +19,7 @@ public:
 	// MPropertyStartGroup "Visuals"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SuccessParticle; // 0x1558	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FailureParticle; // 0x1638	
+	// MPropertyStartGroup "Gameplay"
+	float m_flGraceTime; // 0x1718	
 };
 

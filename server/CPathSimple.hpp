@@ -8,11 +8,13 @@
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
+// MNetworkVarNames "CUtlString m_pathString"
 class CPathSimple : public CBaseEntity
 {
 private:
 	[[maybe_unused]] uint8_t __pad04b8[0x50]; // 0x4b8
 public:
+	// MNetworkEnable
 	CUtlString m_pathString; // 0x508	
 };
 

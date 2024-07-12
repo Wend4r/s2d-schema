@@ -6,7 +6,7 @@ struct CParticleCollectionVecInput;
 struct CPerParticleFloatInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x11f8
+// Size: 0x1350
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -33,22 +33,27 @@ public:
 	// MPropertyFriendlyName "Shadows"
 	// MPropertySuppressExpr "mod == csgo"
 	bool m_bCastShadows; // 0xb20	
+	// MPropertyFriendlyName "Fog"
+	bool m_bFog; // 0xb21	
 private:
-	[[maybe_unused]] uint8_t __pad0b21[0x7]; // 0xb21
+	[[maybe_unused]] uint8_t __pad0b22[0x6]; // 0xb22
 public:
+	// MPropertyFriendlyName "Fog Scale"
+	// MPropertySuppressExpr "!m_bFog"
+	CPerParticleFloatInput m_flFogScale; // 0xb28	
 	// MPropertyFriendlyName "Light Radius"
-	CPerParticleFloatInput m_flLuminaireRadius; // 0xb28	
+	CPerParticleFloatInput m_flLuminaireRadius; // 0xc80	
 	// MPropertyFriendlyName "Skirt"
-	CPerParticleFloatInput m_flSkirt; // 0xc80	
+	CPerParticleFloatInput m_flSkirt; // 0xdd8	
 	// MPropertyFriendlyName "Range"
-	CPerParticleFloatInput m_flRange; // 0xdd8	
+	CPerParticleFloatInput m_flRange; // 0xf30	
 	// MPropertyFriendlyName "Inner Cone Angle"
-	CPerParticleFloatInput m_flInnerConeAngle; // 0xf30	
+	CPerParticleFloatInput m_flInnerConeAngle; // 0x1088	
 	// MPropertyFriendlyName "Outer Cone Angle"
-	CPerParticleFloatInput m_flOuterConeAngle; // 0x1088	
+	CPerParticleFloatInput m_flOuterConeAngle; // 0x11e0	
 	// MPropertyFriendlyName "Cookie"
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x11e0	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x1338	
 	// MPropertyFriendlyName "Cookie is Spherically Mapped"
-	bool m_bSphericalCookie; // 0x11e8	
+	bool m_bSphericalCookie; // 0x1340	
 };
 

@@ -2,18 +2,20 @@
 
 #include <cstdint>
 
+struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x780
+// Size: 0x798
 // Has VTable
 // 
-// MNetworkVarNames "int m_iParticleParity"
+// MNetworkVarNames "GameTime_t m_timeLaunch"
 class CItemXP : public CBaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0748[0x34]; // 0x748
+	[[maybe_unused]] uint8_t __pad0748[0x48]; // 0x748
 public:
 	// MNetworkEnable
-	int32_t m_iParticleParity; // 0x77c	
+	// MNetworkChangeCallback "OnLaunchTimeChanged"
+	GameTime_t m_timeLaunch; // 0x790	
 };
 

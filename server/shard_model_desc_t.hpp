@@ -8,8 +8,8 @@
 // Has VTable
 // 
 // MNetworkVarNames "int32 m_nModelID"
-// MNetworkVarNames "HMaterialStrong m_hMaterialUndamaged"
-// MNetworkVarNames "HMaterialStrong m_hMaterialDamaged"
+// MNetworkVarNames "HMaterialStrong m_hMaterialBase"
+// MNetworkVarNames "HMaterialStrong m_hMaterialDamageOverlay"
 // MNetworkVarNames "ShardSolid_t m_solid"
 // MNetworkVarNames "Vector2D m_vecPanelSize"
 // MNetworkVarNames "Vector2D m_vecStressPositionA"
@@ -31,9 +31,9 @@ private:
 	[[maybe_unused]] uint8_t __pad000c[0x4]; // 0xc
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialUndamaged; // 0x10	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialBase; // 0x10	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialDamaged; // 0x18	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterialDamageOverlay; // 0x18	
 	// MNetworkEnable
 	ShardSolid_t m_solid; // 0x20	
 private:

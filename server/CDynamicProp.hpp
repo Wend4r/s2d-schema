@@ -17,12 +17,13 @@ private:
 	[[maybe_unused]] uint8_t __pad0b08[0x8]; // 0xb08
 public:
 	bool m_bCreateNavObstacle; // 0xb10	
+	bool m_bNavObstacleUpdatesOverridden; // 0xb11	
 	// MNetworkEnable
-	bool m_bUseHitboxesForRenderBox; // 0xb11	
+	bool m_bUseHitboxesForRenderBox; // 0xb12	
 	// MNetworkEnable
-	bool m_bUseAnimGraph; // 0xb12	
+	bool m_bUseAnimGraph; // 0xb13	
 private:
-	[[maybe_unused]] uint8_t __pad0b13[0x5]; // 0xb13
+	[[maybe_unused]] uint8_t __pad0b14[0x4]; // 0xb14
 public:
 	CEntityIOOutput m_pOutputAnimBegun; // 0xb18	
 	CEntityIOOutput m_pOutputAnimOver; // 0xb40	

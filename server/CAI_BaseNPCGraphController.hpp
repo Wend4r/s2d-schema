@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x3a0
+// Size: 0x420
 // Has VTable
 class CAI_BaseNPCGraphController : public CAnimGraphControllerBase
 {
@@ -42,6 +42,11 @@ public:
 	CAnimGraphTagOptionalRef m_sFacingModeUsePath; // 0x358	
 	CAnimGraphTagOptionalRef m_sAllowMovementOffPath; // 0x370	
 	CAnimGraphTagOptionalRef m_sKeepPathActiveStop; // 0x388	
+	CAnimGraphParamOptionalRef< bool > m_bMoveSolveNudgeActive; // 0x3a0	
+	CAnimGraphParamOptionalRef< float32 > m_flMoveSolveNudgeYaw; // 0x3b8	
+	CAnimGraphParamOptionalRef< char* > m_pszDoorOpenAction; // 0x3d0	
+	CAnimGraphParamOptionalRef< float32 > m_flDistanceToDoor; // 0x3f0	
+	CAnimGraphParamOptionalRef< bool > m_bDoorLeft; // 0x408	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_BaseNPCGraphController")->m_static_fields[0]->m_instance);};

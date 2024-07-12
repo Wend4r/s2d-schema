@@ -2,13 +2,14 @@
 
 #include <cstdint>
 
+struct CitadelAbilityProjectileCreateInfo_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xb50
 // Has VTable
 class CCitadel_Item_BaseProjectileAOEModifier : public CCitadel_Item
 {
 public:
-	// No schema binary for binding
+	CitadelAbilityProjectileCreateInfo_t m_projInfo; // 0xac8	
 };
 

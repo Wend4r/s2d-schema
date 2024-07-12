@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x180
+// Size: 0x148
 // Has VTable
 class CCitadel_Modifier_Hornet_Chain_Connection : public CCitadelModifier
 {

@@ -11,6 +11,7 @@
 // MNetworkVarNames "Vector m_vTargetCameraPos"
 // MNetworkVarNames "CHandle< CBaseEntity> m_hOverrideObserverTarget"
 // MNetworkVarNames "ObserverMode_t m_iOverrideObserverMode"
+// MNetworkVarNames "int32 m_iSecondsAfterDeathToAllowObserving"
 class CCitadelPlayer_ObserverServices : public CPlayer_ObserverServices
 {
 public:
@@ -36,5 +37,7 @@ public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "LocalPlayerExclusive"
 	ObserverMode_t m_iOverrideObserverMode; // 0x88	
+	// MNetworkEnable
+	int32_t m_iSecondsAfterDeathToAllowObserving; // 0x8c	
 };
 

@@ -94,7 +94,6 @@ public:
 	// -> m_nWorldGroupID - 0xdd8
 	sky3dparams_t m_skybox3d; // 0xd50	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerExclusive"
 	GameTime_t m_flDeathTime; // 0xde0	
 	Vector m_vecPredictionError; // 0xde4	
 	GameTime_t m_flPredictionErrorTime; // 0xdf0	

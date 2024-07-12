@@ -5,7 +5,7 @@
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15a0
+// Size: 0x15b0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -19,5 +19,7 @@ public:
 	CEmbeddedSubclass< CBaseModifier > m_ModifierWeaponPowerIncrease; // 0x1570	
 	CEmbeddedSubclass< CBaseModifier > m_ModifierChargeDragEnemy; // 0x1580	
 	CEmbeddedSubclass< CBaseModifier > m_ModifierBullCharging; // 0x1590	
+	// MPropertyStartGroup "Sounds"
+	CSoundEventName m_strWallSlamSound; // 0x15a0	
 };
 

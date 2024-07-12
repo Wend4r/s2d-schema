@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x140
+// Size: 0x818
 // Has VTable
-class CCitadel_Modifier_Hornet_Chain_Connection : public CCitadelModifier
+class C_CitadelIdolReturnTrigger : public C_BaseTrigger
 {
 public:
-	Vector m_vecOrigin; // 0xc0	
+	// No schema binary for binding
 };
 

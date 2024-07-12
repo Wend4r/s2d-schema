@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x108
+// Size: 0x948
 // Has VTable
-class CAI_CitadelPlayerBotNavigator : public CAI_Navigator
+class CTriggerTier3Phase2Shield : public CTriggerNeutralShield
 {
 public:
-	bool m_bBlocked; // 0x100	
+	// No schema binary for binding
 };
 

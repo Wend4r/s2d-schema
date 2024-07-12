@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc8
+// Size: 0xd8
 // Has VTable
 class CCitadel_Modifier_IdolReturnTimer : public CCitadelModifier
 {
 public:
-	// No schema binary for binding
+	Vector m_vGroundOrigin; // 0xc8	
 };
 

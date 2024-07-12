@@ -4,13 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x80
+// Size: 0x88
 // Has VTable
 // 
 // MNetworkVarNames "QAngle m_angTargetCamera"
 // MNetworkVarNames "Vector m_vTargetCameraPos"
 // MNetworkVarNames "CHandle< CBaseEntity> m_hOverrideObserverTarget"
 // MNetworkVarNames "ObserverMode_t m_iOverrideObserverMode"
+// MNetworkVarNames "int32 m_iSecondsAfterDeathToAllowObserving"
 class CCitadelPlayer_ObserverServices : public CPlayer_ObserverServices
 {
 public:
@@ -35,5 +36,7 @@ public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "LocalPlayerExclusive"
 	ObserverMode_t m_iOverrideObserverMode; // 0x7c	
+	// MNetworkEnable
+	int32_t m_iSecondsAfterDeathToAllowObserving; // 0x80	
 };
 

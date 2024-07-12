@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x350
+// Size: 0x360
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -21,18 +21,19 @@ public:
 	// MPropertyGroupName "Modifiers"
 	CEmbeddedSubclass< CCitadelModifier > m_DeployProgressModifier; // 0x2d0	
 	CEmbeddedSubclass< CCitadelModifier > m_NearDeathModifier; // 0x2e0	
+	CEmbeddedSubclass< CCitadelModifier > m_IntrinsicModifier; // 0x2f0	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_sSpawnSound; // 0x2f0	
-	CSoundEventName m_sKillExplosionSound; // 0x300	
-	CSoundEventName m_sTargetAcquiredLocalSound; // 0x310	
-	CSoundEventName m_sTargetAcquiredSound; // 0x320	
+	CSoundEventName m_sSpawnSound; // 0x300	
+	CSoundEventName m_sKillExplosionSound; // 0x310	
+	CSoundEventName m_sTargetAcquiredLocalSound; // 0x320	
+	CSoundEventName m_sTargetAcquiredSound; // 0x330	
 	// MPropertyStartGroup "Stats"
-	float m_flIdleTurnSpeed; // 0x330	
-	float m_flIdleTurnAngles; // 0x334	
-	float m_flTrooperTakeDamageMult; // 0x338	
-	float m_flNeutralTakeDamageMulti; // 0x33c	
-	float m_flNotifyEventTime; // 0x340	
-	float m_flNearDeathDuration; // 0x344	
-	float m_flMinimapRevealTime; // 0x348	
+	float m_flIdleTurnSpeed; // 0x340	
+	float m_flIdleTurnAngles; // 0x344	
+	float m_flTrooperTakeDamageMult; // 0x348	
+	float m_flNeutralTakeDamageMulti; // 0x34c	
+	float m_flNotifyEventTime; // 0x350	
+	float m_flNearDeathDuration; // 0x354	
+	float m_flMinimapRevealTime; // 0x358	
 };
 

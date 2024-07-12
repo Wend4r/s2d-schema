@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc98
+// Size: 0xcd0
 // Has VTable
 class CAbility_Synth_Pulse : public C_CitadelBaseAbility
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1500
+// Size: 0x1508
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -14,5 +14,7 @@ public:
 	// MPropertyStartGroup "Modifiers"
 	CEmbeddedSubclass< CBaseModifier > m_InnateModifier; // 0x14e0	
 	CEmbeddedSubclass< CBaseModifier > m_DebuffModifier; // 0x14f0	
+	// MPropertyStartGroup "Gameplay"
+	float m_flDamageFalloffEndScale; // 0x1500	
 };
 

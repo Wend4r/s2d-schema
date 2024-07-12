@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x18e8
+// Size: 0x18f0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -20,5 +20,7 @@ public:
 	CSoundEventName m_LandingSound; // 0x18c8	
 	// MPropertyStartGroup "Modifiers"
 	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x18d8	
+	// MPropertyStartGroup "Gameplay"
+	float m_flSlamEnabledTime; // 0x18e8	
 };
 

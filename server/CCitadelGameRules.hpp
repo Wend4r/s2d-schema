@@ -7,7 +7,7 @@ struct CountdownTimer;
 struct MatchID_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2718
+// Size: 0x2720
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFreezePeriod"
@@ -30,6 +30,7 @@ struct MatchID_t;
 // MNetworkVarNames "bool m_bInfiniteResourcesEnabled"
 // MNetworkVarNames "bool m_bFlexSlotsForcedUnlocked"
 // MNetworkVarNames "ECitadelMatchMode m_eMatchMode"
+// MNetworkVarNames "ECitadelGameMode m_eGameMode"
 // MNetworkVarNames "CHandle<CCitadelTrooperMinimap> m_hTrooperMinimap"
 // MNetworkVarNames "EHANDLE m_hCurrentHeroDrafterRebels"
 // MNetworkVarNames "EHANDLE m_hCurrentHeroDrafterCombine"
@@ -96,82 +97,84 @@ public:
 	// MNetworkEnable
 	ECitadelMatchMode m_eMatchMode; // 0x118	
 	// MNetworkEnable
-	CHandle< CCitadelTrooperMinimap > m_hTrooperMinimap; // 0x11c	
+	ECitadelGameMode m_eGameMode; // 0x11c	
+	// MNetworkEnable
+	CHandle< CCitadelTrooperMinimap > m_hTrooperMinimap; // 0x120	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	CHandle< CBaseEntity > m_hCurrentHeroDrafterRebels; // 0x120	
+	CHandle< CBaseEntity > m_hCurrentHeroDrafterRebels; // 0x124	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	CHandle< CBaseEntity > m_hCurrentHeroDrafterCombine; // 0x124	
-	bool m_bDontUploadStats; // 0x128	
+	CHandle< CBaseEntity > m_hCurrentHeroDrafterCombine; // 0x128	
+	bool m_bDontUploadStats; // 0x12c	
 private:
-	[[maybe_unused]] uint8_t __pad0129[0x3]; // 0x129
+	[[maybe_unused]] uint8_t __pad012d[0x3]; // 0x12d
 public:
-	int32_t m_iWinningTeam; // 0x12c	
+	int32_t m_iWinningTeam; // 0x130	
 private:
-	[[maybe_unused]] uint8_t __pad0130[0x70]; // 0x130
+	[[maybe_unused]] uint8_t __pad0134[0x74]; // 0x134
 public:
-	bool m_bSpawnedBots; // 0x1a0	
-	bool m_bGuideBotAssigned; // 0x1a1	
+	bool m_bSpawnedBots; // 0x1a8	
+	bool m_bGuideBotAssigned; // 0x1a9	
 private:
-	[[maybe_unused]] uint8_t __pad01a2[0x2]; // 0x1a2
+	[[maybe_unused]] uint8_t __pad01aa[0x2]; // 0x1aa
 public:
-	float m_timeLastSpawnCrates; // 0x1a4	
-	bool m_bNotifiedClientsOfNextCrateSpawn; // 0x1a8	
-	bool m_bEarlyCratesSpawned; // 0x1a9	
-	bool m_bIsEarlyCrateGamestate; // 0x1aa	
+	float m_timeLastSpawnCrates; // 0x1ac	
+	bool m_bNotifiedClientsOfNextCrateSpawn; // 0x1b0	
+	bool m_bEarlyCratesSpawned; // 0x1b1	
+	bool m_bIsEarlyCrateGamestate; // 0x1b2	
 private:
-	[[maybe_unused]] uint8_t __pad01ab[0x2a5]; // 0x1ab
+	[[maybe_unused]] uint8_t __pad01b3[0x2a5]; // 0x1b3
 public:
-	GameTime_t m_flGameTimeAllPlayersDisconnected; // 0x450	
-	int32_t m_nNextHeroDraftPosition; // 0x454	
+	GameTime_t m_flGameTimeAllPlayersDisconnected; // 0x458	
+	int32_t m_nNextHeroDraftPosition; // 0x45c	
 private:
-	[[maybe_unused]] uint8_t __pad0458[0x11e0]; // 0x458
+	[[maybe_unused]] uint8_t __pad0460[0x11e0]; // 0x460
 public:
-	CountdownTimer m_CheckIdleTimer; // 0x1638	
+	CountdownTimer m_CheckIdleTimer; // 0x1640	
 private:
-	[[maybe_unused]] uint8_t __pad1650[0x1020]; // 0x1650
-public:
-	// MNetworkEnable
-	bool m_bServerPaused; // 0x2670	
-private:
-	[[maybe_unused]] uint8_t __pad2671[0x3]; // 0x2671
+	[[maybe_unused]] uint8_t __pad1658[0x1020]; // 0x1658
 public:
 	// MNetworkEnable
-	int32_t m_iPauseTeam; // 0x2674	
-	double m_flPauseTime; // 0x2678	
-	CPlayerSlot m_pausingPlayerId; // 0x2680	
-	CPlayerSlot m_unpausingPlayerId; // 0x2684	
-	float m_fPauseRawTime; // 0x2688	
-	float m_fPauseCurTime; // 0x268c	
-	float m_fUnpauseRawTime; // 0x2690	
-	float m_fUnpauseCurTime; // 0x2694	
+	bool m_bServerPaused; // 0x2678	
 private:
-	[[maybe_unused]] uint8_t __pad2698[0x28]; // 0x2698
+	[[maybe_unused]] uint8_t __pad2679[0x3]; // 0x2679
 public:
 	// MNetworkEnable
-	bool m_bRequiresReportCardDismissal; // 0x26c0	
+	int32_t m_iPauseTeam; // 0x267c	
+	double m_flPauseTime; // 0x2680	
+	CPlayerSlot m_pausingPlayerId; // 0x2688	
+	CPlayerSlot m_unpausingPlayerId; // 0x268c	
+	float m_fPauseRawTime; // 0x2690	
+	float m_fPauseCurTime; // 0x2694	
+	float m_fUnpauseRawTime; // 0x2698	
+	float m_fUnpauseCurTime; // 0x269c	
 private:
-	[[maybe_unused]] uint8_t __pad26c1[0x3]; // 0x26c1
-public:
-	GameTime_t m_flPreGameWaitEndTime; // 0x26c4	
-	GameTime_t m_flReportCardDismissalWaitStart; // 0x26c8	
-	int32_t m_nLastPreGameCount; // 0x26cc	
-	// MNetworkEnable
-	int32_t m_eGGTeam; // 0x26d0	
-	// MNetworkEnable
-	GameTime_t m_flGGEndsAtTime; // 0x26d4	
-	// MNetworkEnable
-	MatchID_t m_unMatchID; // 0x26d8	
-	// MNetworkEnable
-	int32_t m_nExperimentalGameplayState; // 0x26e0	
-	int32_t m_nPlayerDeathEventID; // 0x26e4	
-	int32_t m_nReplayChangedEvent; // 0x26e8	
-	int32_t m_nGameOverEvent; // 0x26ec	
-private:
-	[[maybe_unused]] uint8_t __pad26f0[0x20]; // 0x26f0
+	[[maybe_unused]] uint8_t __pad26a0[0x28]; // 0x26a0
 public:
 	// MNetworkEnable
-	GameTime_t m_flHeroDiedTime; // 0x2710	
+	bool m_bRequiresReportCardDismissal; // 0x26c8	
+private:
+	[[maybe_unused]] uint8_t __pad26c9[0x3]; // 0x26c9
+public:
+	GameTime_t m_flPreGameWaitEndTime; // 0x26cc	
+	GameTime_t m_flReportCardDismissalWaitStart; // 0x26d0	
+	int32_t m_nLastPreGameCount; // 0x26d4	
+	// MNetworkEnable
+	int32_t m_eGGTeam; // 0x26d8	
+	// MNetworkEnable
+	GameTime_t m_flGGEndsAtTime; // 0x26dc	
+	// MNetworkEnable
+	MatchID_t m_unMatchID; // 0x26e0	
+	// MNetworkEnable
+	int32_t m_nExperimentalGameplayState; // 0x26e8	
+	int32_t m_nPlayerDeathEventID; // 0x26ec	
+	int32_t m_nReplayChangedEvent; // 0x26f0	
+	int32_t m_nGameOverEvent; // 0x26f4	
+private:
+	[[maybe_unused]] uint8_t __pad26f8[0x20]; // 0x26f8
+public:
+	// MNetworkEnable
+	GameTime_t m_flHeroDiedTime; // 0x2718	
 };
 

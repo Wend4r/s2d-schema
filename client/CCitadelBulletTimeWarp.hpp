@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x820
+// Size: 0x838
 // Has VTable
 // 
 // MNetworkVarNames "float m_flBulletTimeScale"
