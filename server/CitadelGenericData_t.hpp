@@ -42,35 +42,31 @@ public:
 	HealingReceivedSounds_t m_HealingReceivedSounds; // 0x108	
 	DamageIndicatorSounds_t m_DamageIndicatorSounds; // 0x138	
 	CSoundEventName m_strExitCombatSound; // 0x198	
-	CSoundEventName m_strRejuvPickupSound; // 0x1a8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShoppingEffect; // 0x1b8	
-	LaneDesc_t m_LaneInfo[6]; // 0x298	
-	Color m_MinimapTeamRebelsColor; // 0x328	
-	Color m_MinimapTeamCombineColor; // 0x32c	
-	// -> m_strSkillTierName - 0x330
-	// -> m_NetWorth - 0x338
-	// -> m_DamageTaken - 0x33c
-	// -> m_BossDamage - 0x340
-	// -> m_PlayerDamage - 0x344
-	// -> m_LastHits - 0x348
-	// -> m_OrbsSecured - 0x34c
-	// -> m_OrbsDenied - 0x350
-	// -> m_AbilitiesUpgraded - 0x354
-	// -> m_ModsPurchased - 0x358
-	NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x330	
-	int32_t m_nItemPricePerTier[5]; // 0x3f0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShoppingEffect; // 0x1a8	
+	LaneDesc_t m_LaneInfo[6]; // 0x288	
+	Color m_MinimapTeamRebelsColor; // 0x318	
+	Color m_MinimapTeamCombineColor; // 0x31c	
+	// -> m_strSkillTierName - 0x320
+	// -> m_NetWorth - 0x328
+	// -> m_DamageTaken - 0x32c
+	// -> m_BossDamage - 0x330
+	// -> m_PlayerDamage - 0x334
+	// -> m_LastHits - 0x338
+	// -> m_OrbsSecured - 0x33c
+	// -> m_OrbsDenied - 0x340
+	// -> m_AbilitiesUpgraded - 0x344
+	// -> m_ModsPurchased - 0x348
+	NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x320	
+	int32_t m_nItemPricePerTier[5]; // 0x3e0	
 private:
-	[[maybe_unused]] uint8_t __pad0404[0x4]; // 0x404
+	[[maybe_unused]] uint8_t __pad03f4[0x4]; // 0x3f4
 public:
-	CUtlVector< CSubclassName< 4 > > m_HeroTestingTargetDummyUpgrades; // 0x408	
+	CUtlVector< CSubclassName< 4 > > m_HeroTestingTargetDummyUpgrades; // 0x3f8	
 private:
-	[[maybe_unused]] uint8_t __pad0420[0x58]; // 0x420
+	[[maybe_unused]] uint8_t __pad0410[0x58]; // 0x410
 public:
-	DOFDesc_t m_DefaultDOF; // 0x478	
-	RejuvinatorParams_t m_RejuvParams; // 0x488	
-private:
-	[[maybe_unused]] uint8_t __pad0494[0x4]; // 0x494
-public:
+	DOFDesc_t m_DefaultDOF; // 0x468	
+	RejuvinatorParams_t m_RejuvParams; // 0x478	
 	IdolParams_t m_IdolParams; // 0x498	
 	CUtlOrderedMap< EStatsType, CUtlString > m_mapStatTypeImages; // 0x828	
 	// MPropertyDescription "Remap camera angle delta to aim spring strength"

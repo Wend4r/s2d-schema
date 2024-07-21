@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16e0
+// Size: 0x16e8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -20,5 +20,8 @@ public:
 	// MPropertyStartGroup "Sounds"
 	CSoundEventName m_GrenadeHitImpactSound; // 0x16c0	
 	CSoundEventName m_GrenadeMissImpactSound; // 0x16d0	
+	// MPropertyStartGroup "BounceSettings"
+	float m_flMinRestitution; // 0x16e0	
+	float m_flMaxRestitution; // 0x16e4	
 };
 

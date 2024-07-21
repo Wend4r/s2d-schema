@@ -11,6 +11,7 @@ struct CitadelCameraOperationsSequence_t;
 // 
 // MGetKV3ClassDefaults
 // MPropertySuppressBaseClassField
+// MPropertySuppressBaseClassField
 class CCitadelModifierVData : public CModifierVData
 {
 public:

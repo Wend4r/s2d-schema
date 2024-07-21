@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x168
+// Size: 0x1a0
 // Has VTable
 class CCitadel_Modifier_AcolytesGlove : public CCitadel_Modifier_BaseEventProc
 {

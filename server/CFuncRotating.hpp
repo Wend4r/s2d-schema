@@ -42,6 +42,7 @@ public:
 	QAngle m_vecClientAngles; // 0x824	
 	
 	// Datamap fields:
+	// bool movewithoutpushingblockers; // 0x7fffffff
 	// void CFuncRotatingSpinUpMove; // 0x0
 	// void CFuncRotatingSpinDownMove; // 0x0
 	// void CFuncRotatingHurtTouch; // 0x0

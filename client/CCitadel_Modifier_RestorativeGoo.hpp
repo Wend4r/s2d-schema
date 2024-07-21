@@ -2,15 +2,19 @@
 
 #include <cstdint>
 
+struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x330
+// Size: 0x378
 // Has VTable
 class CCitadel_Modifier_RestorativeGoo : public CCitadelModifier
 {
-private:
-	[[maybe_unused]] uint8_t __pad00c0[0x268]; // 0xc0
 public:
-	CHandle< C_Citadel_RestorativeGooCube > m_hGooCube; // 0x328	
+	GameTime_t m_flEarliestBreakoutTime; // 0xc0	
+private:
+	[[maybe_unused]] uint8_t __pad00c4[0x2a4]; // 0xc4
+public:
+	CHandle< C_Citadel_RestorativeGooCube > m_hGooCube; // 0x368	
+	float m_flBreakoutPercentage; // 0x36c	
 };
 

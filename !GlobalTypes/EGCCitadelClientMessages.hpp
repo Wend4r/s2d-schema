@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: client.dll (project 'client')
-// Enumerator count: 99
+// Enumerator count: 101
 // Alignment: 4
 // Size: 0x4
 enum class EGCCitadelClientMessages : uint32_t
@@ -107,5 +107,7 @@ enum class EGCCitadelClientMessages : uint32_t
 	k_EMsgClientToGCPartySetModeResponse = 0x23f8,
 	k_EMsgClientToGCGrantForumAccess = 0x23f9,
 	k_EMsgClientToGCGrantForumAccessResponse = 0x23fa,
+	k_EMsgClientToGCModeratorRequest = 0x23fb,
+	k_EMsgClientToGCModeratorRequestResponse = 0x23fc,
 };
 

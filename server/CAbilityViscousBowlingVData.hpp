@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1710
+// Size: 0x1718
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -29,5 +29,8 @@ public:
 	CEmbeddedSubclass< CCitadelModifier > m_ImpactModifier; // 0x16e0	
 	CEmbeddedSubclass< CCitadelModifier > m_HitTrackerModifier; // 0x16f0	
 	CEmbeddedSubclass< CCitadelModifier > m_RollingModifier; // 0x1700	
+	// MPropertyStartGroup "+Ball Parameters"
+	float m_flTransformToBallTime; // 0x1710	
+	float m_flTransformFromBallTime; // 0x1714	
 };
 

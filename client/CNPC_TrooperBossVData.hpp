@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1548
+// Size: 0x1550
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -17,13 +17,17 @@ private:
 	[[maybe_unused]] uint8_t __pad14e2[0x2]; // 0x14e2
 public:
 	float m_flPlayerAutoAttackRange; // 0x14e4	
+	float m_flMinMeleeAttackTime; // 0x14e8	
+private:
+	[[maybe_unused]] uint8_t __pad14ec[0x4]; // 0x14ec
+public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BackdoorProtectionModifier; // 0x14e8	
-	CEmbeddedSubclass< CCitadelModifier > m_BackdoorBulletResistModifier; // 0x14f8	
-	CEmbeddedSubclass< CCitadelModifier > m_ObjectiveRegen; // 0x1508	
+	CEmbeddedSubclass< CCitadelModifier > m_BackdoorProtectionModifier; // 0x14f0	
+	CEmbeddedSubclass< CCitadelModifier > m_BackdoorBulletResistModifier; // 0x1500	
+	CEmbeddedSubclass< CCitadelModifier > m_ObjectiveRegen; // 0x1510	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_sAngryStart; // 0x1518	
-	CSoundEventName m_sAngryLoop; // 0x1528	
-	CSoundEventName m_sAngryStop; // 0x1538	
+	CSoundEventName m_sAngryStart; // 0x1520	
+	CSoundEventName m_sAngryLoop; // 0x1530	
+	CSoundEventName m_sAngryStop; // 0x1540	
 };
 

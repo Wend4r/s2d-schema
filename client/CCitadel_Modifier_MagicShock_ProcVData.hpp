@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x720
+// Size: 0x710
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -15,6 +15,5 @@ public:
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ProcParticle; // 0x620	
 	// MPropertyGroupName "Modifiers"
 	CEmbeddedSubclass< CBaseModifier > m_hDamageTrackModifier; // 0x700	
-	CEmbeddedSubclass< CBaseModifier > m_hSlowModifier; // 0x710	
 };
 

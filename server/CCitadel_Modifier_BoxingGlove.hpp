@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x218
+// Size: 0x250
 // Has VTable
 class CCitadel_Modifier_BoxingGlove : public CCitadel_Modifier_BaseEventProc
 {

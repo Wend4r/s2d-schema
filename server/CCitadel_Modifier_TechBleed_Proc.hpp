@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x228
+// Size: 0x260
 // Has VTable
 class CCitadel_Modifier_TechBleed_Proc : public CCitadel_Modifier_BaseEventProc
 {

@@ -30,7 +30,6 @@ struct GameTime_t;
 // MNetworkVarNames "bool m_bSwapCastModeAbility3"
 // MNetworkVarNames "bool m_bSwapCastModeAbility4"
 // MNetworkVarNames "bool m_bIsKingPanda"
-// MNetworkVarNames "bool m_bIsDevTeamMember"
 // MNetworkVarNames "bool m_bBotDisconnectTakeover"
 // MNetworkVarNames "bool m_bInTeamChat"
 // MNetworkVarNames "bool m_bInPartyChat"
@@ -83,17 +82,15 @@ public:
 	// MNetworkEnable
 	bool m_bIsKingPanda; // 0x782	
 	// MNetworkEnable
-	bool m_bIsDevTeamMember; // 0x783	
-	// MNetworkEnable
-	bool m_bBotDisconnectTakeover; // 0x784	
+	bool m_bBotDisconnectTakeover; // 0x783	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInTeamChat; // 0x785	
+	bool m_bInTeamChat; // 0x784	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInPartyChat; // 0x786	
+	bool m_bInPartyChat; // 0x785	
 private:
-	[[maybe_unused]] uint8_t __pad0787[0xc1]; // 0x787
+	[[maybe_unused]] uint8_t __pad0786[0xc2]; // 0x786
 public:
 	// MNetworkEnable
 	CHandle< CCitadelPlayerPawn > m_hHeroPawn; // 0x848	

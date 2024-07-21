@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb40
+// Size: 0xb78
 // Has VTable
 class CCitadel_ArmorUpgrade_PersonalRejuvenator : public CCitadel_Item
 {

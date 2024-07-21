@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 79
+// Enumerator count: 81
 // Alignment: 4
 // Size: 0x4
 enum class Class_T : uint32_t
@@ -86,6 +86,8 @@ enum class Class_T : uint32_t
 	CLASS_FIELD_SENTRY = 0x4b,
 	CLASS_RIPTIDE_PROJECTILE = 0x4c,
 	CLASS_ZAP_TRIGGER = 0x4d,
-	NUM_CLASSIFY_CLASSES = 0x4e,
+	CLASS_VISCOUS_CUBE = 0x4e,
+	CLASS_FISSURE_WALL_SEGMENT = 0x4f,
+	NUM_CLASSIFY_CLASSES = 0x50,
 };
 

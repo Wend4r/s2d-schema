@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1128
+// Size: 0x1148
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vBeamAimPos"
@@ -19,14 +19,12 @@ public:
 	Vector m_vStart; // 0x10c4	
 	Vector m_vEnd; // 0x10d0	
 private:
-	[[maybe_unused]] uint8_t __pad10dc[0x4]; // 0x10dc
+	[[maybe_unused]] uint8_t __pad10dc[0x3c]; // 0x10dc
 public:
-	Vector m_vSplitStart; // 0x10e0	
-	Vector m_vSplitEnd; // 0x10ec	
-	CUtlVector< CHandle< CBaseEntity > > m_vecEntitiesHit; // 0x10f8	
+	CUtlVector< CHandle< CBaseEntity > > m_vecEntitiesHit; // 0x1118	
 	// MNetworkEnable
-	Vector m_vBeamAimPos; // 0x1110	
+	Vector m_vBeamAimPos; // 0x1130	
 	// MNetworkEnable
-	QAngle m_angBeamAngles; // 0x111c	
+	QAngle m_angBeamAngles; // 0x113c	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8d8
+// Size: 0x9b8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -15,12 +15,13 @@ public:
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BombAttachedParticle; // 0x5f0	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_StunAttachedParticle; // 0x6d0	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x7b0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BombAttachedVictimTeamParticle; // 0x890	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strExplodeSound; // 0x890	
-	CSoundEventName m_strTickTockSound; // 0x8a0	
-	CSoundEventName m_strTickTockFastSound; // 0x8b0	
+	CSoundEventName m_strExplodeSound; // 0x970	
+	CSoundEventName m_strTickTockSound; // 0x980	
+	CSoundEventName m_strTickTockFastSound; // 0x990	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x8c0	
-	float m_DetonateWarningTime; // 0x8d0	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x9a0	
+	float m_DetonateWarningTime; // 0x9b0	
 };
 

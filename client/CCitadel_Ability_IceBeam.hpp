@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x12c0
+// Size: 0x12e0
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vBeamAimPos"
@@ -18,23 +18,21 @@ public:
 	Vector m_vStart; // 0x1244	
 	Vector m_vEnd; // 0x1250	
 private:
-	[[maybe_unused]] uint8_t __pad125c[0x4]; // 0x125c
+	[[maybe_unused]] uint8_t __pad125c[0x3c]; // 0x125c
 public:
-	Vector m_vSplitStart; // 0x1260	
-	Vector m_vSplitEnd; // 0x126c	
-	CUtlVector< CHandle< C_BaseEntity > > m_vecEntitiesHit; // 0x1278	
+	CUtlVector< CHandle< C_BaseEntity > > m_vecEntitiesHit; // 0x1298	
 	// MNetworkEnable
-	Vector m_vBeamAimPos; // 0x1290	
+	Vector m_vBeamAimPos; // 0x12b0	
 private:
-	[[maybe_unused]] uint8_t __pad129c[0x4]; // 0x129c
+	[[maybe_unused]] uint8_t __pad12bc[0x4]; // 0x12bc
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
 	// MNetworkChangeCallback "OnBeamAnglesChanged"
-	QAngle m_angBeamAngles; // 0x12a0	
+	QAngle m_angBeamAngles; // 0x12c0	
 private:
-	[[maybe_unused]] uint8_t __pad12ac[0xc]; // 0x12ac
+	[[maybe_unused]] uint8_t __pad12cc[0xc]; // 0x12cc
 public:
-	bool m_bNeedsBeamReset; // 0x12b8	
+	bool m_bNeedsBeamReset; // 0x12d8	
 };
 

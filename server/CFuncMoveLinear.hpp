@@ -35,6 +35,7 @@ public:
 	
 	// Datamap fields:
 	// float m_flMoveDistance; // 0x74c
+	// bool movewithoutpushingblockers; // 0x7fffffff
 	// void CFuncMoveLinearNavObstacleThink; // 0x0
 	// void CFuncMoveLinearNavMovableThink; // 0x0
 	// void InputOpen; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x460
+// Size: 0x470
 // Has VTable
 class CBodyComponentBaseModelEntity : public CBodyComponentSkeletonInstance
 {

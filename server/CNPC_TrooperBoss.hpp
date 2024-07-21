@@ -3,12 +3,15 @@
 #include <cstdint>
 
 struct CCitadelPlayerClipComponent;
+struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1830
+// Size: 0x1838
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
+// MNetworkVarNames "GameTime_t m_flFadeOutStart"
+// MNetworkVarNames "GameTime_t m_flFadeOutEnd"
 class CNPC_TrooperBoss : public CNPC_Trooper
 {
 public:
@@ -25,6 +28,13 @@ private:
 	[[maybe_unused]] uint8_t __pad1639[0x1e7]; // 0x1639
 public:
 	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1820	
+private:
+	[[maybe_unused]] uint8_t __pad1828[0x4]; // 0x1828
+public:
+	// MNetworkEnable
+	GameTime_t m_flFadeOutStart; // 0x182c	
+	// MNetworkEnable
+	GameTime_t m_flFadeOutEnd; // 0x1830	
 	
 	// Static fields:
 	static CUtlSymbolLarge &Get_SCHED_TROOPERBOSS_RANGE_ATTACK(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperBoss")->m_static_fields[0]->m_instance);};

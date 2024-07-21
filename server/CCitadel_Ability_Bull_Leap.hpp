@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CCitadelAutoScaledTime;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc30
+// Size: 0xc68
 // Has VTable
 // 
 // MNetworkVarNames "float m_flBoostYaw"
@@ -41,8 +41,8 @@ public:
 	// MNetworkEnable
 	CCitadelAutoScaledTime m_flBoostEndTime; // 0xae8	
 private:
-	[[maybe_unused]] uint8_t __pad0b00[0x120]; // 0xb00
+	[[maybe_unused]] uint8_t __pad0b00[0x158]; // 0xb00
 public:
-	Vector m_vecLastVel; // 0xc20	
+	Vector m_vecLastVel; // 0xc58	
 };
 

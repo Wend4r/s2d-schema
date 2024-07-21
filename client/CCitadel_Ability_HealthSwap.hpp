@@ -9,7 +9,6 @@ struct GameTime_t;
 // Size: 0xd90
 // Has VTable
 // 
-// MNetworkVarNames "float m_flHealthStolenValue"
 // MNetworkVarNames "GameTime_t m_flPostCastHoldEndTime"
 class CCitadel_Ability_HealthSwap : public C_CitadelBaseAbility
 {
@@ -21,8 +20,6 @@ private:
 	[[maybe_unused]] uint8_t __pad0c34[0x11c]; // 0xc34
 public:
 	// MNetworkEnable
-	float m_flHealthStolenValue; // 0xd50	
-	// MNetworkEnable
-	GameTime_t m_flPostCastHoldEndTime; // 0xd54	
+	GameTime_t m_flPostCastHoldEndTime; // 0xd50	
 };
 

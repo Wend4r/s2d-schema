@@ -29,7 +29,6 @@ struct CitadelLobbyPlayerSlot_t;
 // MNetworkVarNames "bool m_bSwapCastModeAbility3"
 // MNetworkVarNames "bool m_bSwapCastModeAbility4"
 // MNetworkVarNames "bool m_bIsKingPanda"
-// MNetworkVarNames "bool m_bIsDevTeamMember"
 // MNetworkVarNames "bool m_bBotDisconnectTakeover"
 // MNetworkVarNames "bool m_bInTeamChat"
 // MNetworkVarNames "bool m_bInPartyChat"
@@ -82,17 +81,15 @@ public:
 	// MNetworkEnable
 	bool m_bIsKingPanda; // 0x712	
 	// MNetworkEnable
-	bool m_bIsDevTeamMember; // 0x713	
-	// MNetworkEnable
-	bool m_bBotDisconnectTakeover; // 0x714	
+	bool m_bBotDisconnectTakeover; // 0x713	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInTeamChat; // 0x715	
+	bool m_bInTeamChat; // 0x714	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInPartyChat; // 0x716	
+	bool m_bInPartyChat; // 0x715	
 private:
-	[[maybe_unused]] uint8_t __pad0717[0x1]; // 0x717
+	[[maybe_unused]] uint8_t __pad0716[0x2]; // 0x716
 public:
 	// MNetworkEnable
 	CHandle< C_CitadelPlayerPawn > m_hHeroPawn; // 0x718	
