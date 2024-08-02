@@ -4,9 +4,9 @@
 
 // Registered binary: server.dll (project 'server')
 // Enumerator count: 4
-// Alignment: 4
-// Size: 0x4
-enum class EViscousBowlingBallState_t : uint32_t
+// Alignment: 1
+// Size: 0x1
+enum class EViscousBowlingBallState_t : uint8_t
 {
 	EViscousBowlingBallState_None = 0x0,
 	EViscousBowlingBallState_TransformToBall = 0x1,

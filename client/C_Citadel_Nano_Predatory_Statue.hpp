@@ -4,11 +4,10 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa90
+// Size: 0xa88
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
-// MNetworkVarNames "CHandle< CBaseEntity> m_hTarget"
 class C_Citadel_Nano_Predatory_Statue : public CCitadelAnimatingModelEntity
 {
 private:
@@ -16,8 +15,6 @@ private:
 public:
 	// MNetworkEnable
 	CHandle< C_CitadelBaseAbility > m_hAbility; // 0xa80	
-	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTarget; // 0xa84	
-	float m_flLifetime; // 0xa88	
+	float m_flLifetime; // 0xa84	
 };
 

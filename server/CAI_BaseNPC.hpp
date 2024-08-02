@@ -17,7 +17,7 @@ struct CTakeDamageResult;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1000
+// Size: 0x1010
 // Has VTable
 // 
 // MNetworkIncludeByName "m_lifeState"
@@ -164,7 +164,12 @@ public:
 	CEntityIOOutput m_OnLostPlayerLOS; // 0xfc0	
 	uint64_t m_nAITraceMask; // 0xfe8	
 	float m_flThinkTime; // 0xff0	
-	int32_t m_nDebugCurIndex; // 0xff4	
+private:
+	[[maybe_unused]] uint8_t __pad0ff4[0x4]; // 0xff4
+public:
+	CUtlSymbolLarge m_iTaskRunDuringThink; // 0xff8	
+	CUtlSymbolLarge m_iScheduleRunDuringThink; // 0x1000	
+	int32_t m_nDebugCurIndex; // 0x1008	
 	struct 
 	{
 		uint8_t m_bInvokingBehaviorIsValidEnemy: 1; 		

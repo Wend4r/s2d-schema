@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd08
+// Size: 0xd00
 // Has VTable
 class CCitadel_Ability_PrimaryWeapon_Cadence : public CCitadel_Ability_PrimaryWeapon
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd08
+// Size: 0xd00
 // Has VTable
 // Is Abstract
 class CCitadel_Ability_PrimaryWeapon_BeamWeapon : public CCitadel_Ability_PrimaryWeapon

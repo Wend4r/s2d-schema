@@ -2,13 +2,15 @@
 
 #include <cstdint>
 
+struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd10
+// Size: 0xd18
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bInGround"
+// MNetworkVarNames "GameTime_t m_SpinEndTime"
 class CCitadel_Ability_Burrow : public C_CitadelBaseAbility
 {
 private:
@@ -20,6 +22,9 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0d09[0x3]; // 0xd09
 public:
-	ParticleIndex_t m_nBurrowEffect; // 0xd0c	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
+	GameTime_t m_SpinEndTime; // 0xd0c	
+	ParticleIndex_t m_nBurrowEffect; // 0xd10	
 };
 

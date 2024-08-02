@@ -36,5 +36,11 @@ public:
 	// MPropertyFriendlyName "output maximum"
 	// MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME"
 	float m_flOutputMax; // 0x1e0	
+	// MPropertyFriendlyName "check full bbox only"
+	// MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME"
+	bool m_bBBoxOnly; // 0x1e4	
+	// MPropertyFriendlyName "cube root of volume"
+	// MPropertySuppressExpr "m_nBBoxType != BBOX_VOLUME"
+	bool m_bCubeRoot; // 0x1e5	
 };
 

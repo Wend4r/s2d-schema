@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 13
+// Enumerator count: 14
 // Alignment: 2
 // Size: 0x2
 enum class SoundTypes_t : uint16_t
@@ -20,6 +20,7 @@ enum class SoundTypes_t : uint16_t
 	SOUND_GLASS_BREAK = 0x9,
 	SOUND_PHYSICS_OBJECT = 0xa,
 	SOUND_WARN_FRIENDS = 0xb,
-	NUM_AI_SOUND_TYPES = 0xc,
+	SOUND_FOOD = 0xc,
+	NUM_AI_SOUND_TYPES = 0xd,
 };
 

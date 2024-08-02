@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x538
+// Size: 0x5f8
 // Has VTable
 class C_SoundEventEntityAlias_snd_event_point : public C_SoundEventEntity
 {

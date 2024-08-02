@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0x18
+// Size: 0x20
 // Has Trivial Destructor
 // 
 // MGetKV3ClassDefaults

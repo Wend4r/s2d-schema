@@ -7,7 +7,7 @@ struct CCitadelAbilityComponent;
 struct CCitadelHeroComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1328
+// Size: 0x1348
 // Has VTable
 // 
 // MNetworkVarTypeOverride "CCitadelPlayer_CameraServices m_pCameraServices"
@@ -178,6 +178,9 @@ public:
 	// MNetworkEnable
 	GameTime_t m_flSprintAnimSuppressEndTime; // 0x1300	
 	int32_t m_iCurSlowSlot; // 0x1304	
+	Vector m_vShootTestOffsetStanding; // 0x1308	
+	Vector m_vShootTestOffsetCrouching; // 0x1314	
+	GameTime_t m_leanStartTime; // 0x1320	
 	
 	// Datamap fields:
 	// CCitadelPlayer_CameraServices m_pCameraServices; // 0xcc8

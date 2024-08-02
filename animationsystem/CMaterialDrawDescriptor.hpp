@@ -5,7 +5,7 @@
 struct CRenderBufferBinding;
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0xe8
+// Size: 0x110
 // 
 // MGetKV3ClassDefaults
 class CMaterialDrawDescriptor
@@ -28,12 +28,12 @@ public:
 	int32_t m_nStartIndex; // 0x2c	
 	int32_t m_nIndexCount; // 0x30	
 private:
-	[[maybe_unused]] uint8_t __pad0034[0x84]; // 0x34
+	[[maybe_unused]] uint8_t __pad0034[0xa4]; // 0x34
 public:
-	CRenderBufferBinding m_indexBuffer; // 0xb8	
+	CRenderBufferBinding m_indexBuffer; // 0xd8	
 private:
-	[[maybe_unused]] uint8_t __pad00d0[0x8]; // 0xd0
+	[[maybe_unused]] uint8_t __pad00f8[0x8]; // 0xf8
 public:
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_material; // 0xd8	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_material; // 0x100	
 };
 

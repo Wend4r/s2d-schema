@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7a8
+// Size: 0x7c8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -41,12 +41,22 @@ public:
 	float m_flGravityScale; // 0x780	
 	float m_flLateralSpeedMin; // 0x784	
 	float m_flLateralSpeedMax; // 0x788	
-	float m_flUpSpeedMin; // 0x78c	
-	float m_flUpSpeedMax; // 0x790	
-	float m_flBurstSpeedMultiplier; // 0x794	
-	float m_flBurstSpeedDuration; // 0x798	
-	float m_flOscillateFrequency; // 0x79c	
-	float m_flLifeTime; // 0x7a0	
-	float m_flCollisionRadius; // 0x7a4	
+	float m_flLateralMoveDuration; // 0x78c	
+	float m_flUpSpeedMin; // 0x790	
+	float m_flUpSpeedMax; // 0x794	
+	float m_flBurstSpeedMultiplier; // 0x798	
+	float m_flBurstSpeedDuration; // 0x79c	
+	float m_flOscillateFrequency; // 0x7a0	
+	float m_flLifeTime; // 0x7a4	
+	float m_flCollisionRadius; // 0x7a8	
+	bool m_bUseKillerPlaneOffsets; // 0x7ac	
+private:
+	[[maybe_unused]] uint8_t __pad07ad[0x3]; // 0x7ad
+public:
+	float m_flKillerPlaneOffset; // 0x7b0	
+	float m_flKillerPlaneHorizontalDecayRate; // 0x7b4	
+	float m_flKillerPlaneHorizontalSpeed; // 0x7b8	
+	float m_flKillerPlaneVerticalSpeed; // 0x7bc	
+	float m_flKillerPlaneSpeedNoise; // 0x7c0	
 };
 

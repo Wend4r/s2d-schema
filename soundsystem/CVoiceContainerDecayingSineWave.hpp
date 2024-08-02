@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xd8
+// Size: 0xc0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -15,9 +15,9 @@ class CVoiceContainerDecayingSineWave : public CVoiceContainerBase
 public:
 	// MPropertyFriendlyName "Frequency (Hz)"
 	// MPropertyDescription "The frequency of this sine tone."
-	float m_flFrequency; // 0xd0	
+	float m_flFrequency; // 0xb8	
 	// MPropertyFriendlyName "Decay Time (Seconds)"
 	// MPropertyDescription "The frequency of this sine tone."
-	float m_flDecayTime; // 0xd4	
+	float m_flDecayTime; // 0xbc	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xd0
+// Size: 0xb8
 // Has VTable
 // 
 // MGetKV3ClassDefaults

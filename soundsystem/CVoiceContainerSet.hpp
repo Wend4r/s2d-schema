@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xe8
+// Size: 0xd0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -14,6 +14,6 @@ class CVoiceContainerSet : public CVoiceContainerBase
 {
 public:
 	// MPropertyFriendlyName "Container List"
-	CUtlVector< CVoiceContainerSetElement > m_soundsToPlay; // 0xd0	
+	CUtlVector< CVoiceContainerSetElement > m_soundsToPlay; // 0xb8	
 };
 

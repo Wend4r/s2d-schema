@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 75
+// Enumerator count: 76
 // Alignment: 4
 // Size: 0x4
 enum class EStatsType : uint32_t
@@ -81,7 +81,8 @@ enum class EStatsType : uint32_t
 	ECycleTime = 0x46,
 	EMeleeTravelDistanceScale = 0x47,
 	EAirMoveDistanceScale = 0x48,
-	EStatsCount = 0x49,
-	EStatsInvalid = 0x49,
+	ECritDamageReceivedScale = 0x49,
+	EStatsCount = 0x4a,
+	EStatsInvalid = 0x4a,
 };
 

@@ -5,7 +5,7 @@
 struct CSoundContainerReference;
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0x108
+// Size: 0xf0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -14,8 +14,8 @@ struct CSoundContainerReference;
 class CVoiceContainerBlender : public CVoiceContainerBase
 {
 public:
-	CSoundContainerReference m_firstSound; // 0xd0	
-	CSoundContainerReference m_secondSound; // 0xe8	
-	float m_flBlendFactor; // 0x100	
+	CSoundContainerReference m_firstSound; // 0xb8	
+	CSoundContainerReference m_secondSound; // 0xd0	
+	float m_flBlendFactor; // 0xe8	
 };
 

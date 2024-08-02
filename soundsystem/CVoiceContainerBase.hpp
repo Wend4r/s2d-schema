@@ -5,7 +5,7 @@
 struct CVSound;
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xd0
+// Size: 0xb8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -18,21 +18,21 @@ struct CVSound;
 class CVoiceContainerBase
 {
 private:
-	[[maybe_unused]] uint8_t __pad0000[0x20]; // 0x0
+	[[maybe_unused]] uint8_t __pad0000[0x38]; // 0x0
 public:
 	// MPropertySuppressField
-	// -> m_nRate - 0x20
-	// -> m_nFormat - 0x24
-	// -> m_nChannels - 0x28
-	// -> m_nLoopStart - 0x2c
-	// -> m_nSampleCount - 0x30
-	// -> m_flDuration - 0x34
-	// -> m_Sentences - 0x38
-	// -> m_nStreamingSize - 0x50
-	// -> m_nSeekTable - 0x58
-	// -> m_nLoopEnd - 0x70
-	// -> m_encodedHeader - 0x78
-	CVSound m_vSound; // 0x20	
+	// -> m_nRate - 0x38
+	// -> m_nFormat - 0x3c
+	// -> m_nChannels - 0x40
+	// -> m_nLoopStart - 0x44
+	// -> m_nSampleCount - 0x48
+	// -> m_flDuration - 0x4c
+	// -> m_Sentences - 0x50
+	// -> m_nStreamingSize - 0x68
+	// -> m_nSeekTable - 0x70
+	// -> m_nLoopEnd - 0x88
+	// -> m_encodedHeader - 0x90
+	CVSound m_vSound; // 0x38	
 	
 	// Static fields:
 	static bool &Get_bAudioFinishedPlaying(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("soundsystem.dll")->FindDeclaredClass("CVoiceContainerBase")->m_static_fields[0]->m_instance);};

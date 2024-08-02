@@ -7,7 +7,7 @@ struct CNetworkVelocityVector;
 struct AttachmentHandle_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1188
+// Size: 0x1190
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flTimeStartZipping"
@@ -24,6 +24,7 @@ struct AttachmentHandle_t;
 // MNetworkVarNames "EAttachState_t m_eAttachState"
 // MNetworkVarNames "int m_iAttachedZipLineLane"
 // MNetworkVarNames "bool m_bDroppedFromZipline"
+// MNetworkVarNames "Vector m_vAttachZipLineOffset"
 class CCitadel_Ability_ZipLine : public C_CitadelBaseAbility
 {
 private:
@@ -76,5 +77,11 @@ public:
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
 	bool m_bDroppedFromZipline; // 0x1180	
 	AttachmentHandle_t m_hAttachZipLine; // 0x1181	
+private:
+	[[maybe_unused]] uint8_t __pad1182[0x2]; // 0x1182
+public:
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
+	Vector m_vAttachZipLineOffset; // 0x1184	
 };
 

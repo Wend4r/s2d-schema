@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x19a0
+// Size: 0x19b8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -24,10 +24,13 @@ public:
 	CSoundEventName m_PunchSound; // 0x1970	
 	// MPropertyStartGroup "Modifiers"
 	CEmbeddedSubclass< CCitadelModifier > m_PunchRollSlowModifier; // 0x1980	
+	CEmbeddedSubclass< CCitadelModifier > m_ImpactModifier; // 0x1990	
 	// MPropertyStartGroup "+Telepunch Parameters"
-	float m_flEnemyPortalTelegraphTime; // 0x1990	
-	float m_flSelfPortalTelegraphTime; // 0x1994	
-	float m_flWindupTime; // 0x1998	
-	float m_flAttackTime; // 0x199c	
+	float m_flEnemyPortalTelegraphTime; // 0x19a0	
+	float m_flSelfPortalTelegraphTime; // 0x19a4	
+	float m_flWindupTime; // 0x19a8	
+	float m_flAttackTime; // 0x19ac	
+	float m_flGroundTraceOnPlayerHitDistance; // 0x19b0	
+	float m_flPlayerCheckSphereRadius; // 0x19b4	
 };
 

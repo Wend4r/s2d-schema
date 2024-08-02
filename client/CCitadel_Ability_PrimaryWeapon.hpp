@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd08
+// Size: 0xd00
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flNextPrimaryAttack"
@@ -136,26 +136,25 @@ public:
 	GameTime_t m_flRecoilStartTime; // 0xca4	
 	float m_flRecoilRecoverySpeed; // 0xca8	
 	float m_flAddApproachSpeed; // 0xcac	
-	float m_flLastAnglesUpdateTime; // 0xcb0	
-	bool m_bFireBackwards; // 0xcb4	
+	bool m_bFireBackwards; // 0xcb0	
 private:
-	[[maybe_unused]] uint8_t __pad0cb5[0x3]; // 0xcb5
+	[[maybe_unused]] uint8_t __pad0cb1[0x3]; // 0xcb1
 public:
-	float m_currentSpread; // 0xcb8	
-	float m_currentMaxSpread; // 0xcbc	
-	float m_currentFireSpread; // 0xcc0	
-	float m_flCurrentSpinRate; // 0xcc4	
+	float m_currentSpread; // 0xcb4	
+	float m_currentMaxSpread; // 0xcb8	
+	float m_currentFireSpread; // 0xcbc	
+	float m_flCurrentSpinRate; // 0xcc0	
 private:
-	[[maybe_unused]] uint8_t __pad0cc8[0x4]; // 0xcc8
+	[[maybe_unused]] uint8_t __pad0cc4[0x4]; // 0xcc4
 public:
-	float m_fFireDuration; // 0xccc	
+	float m_fFireDuration; // 0xcc8	
 private:
-	[[maybe_unused]] uint8_t __pad0cd0[0x1]; // 0xcd0
+	[[maybe_unused]] uint8_t __pad0ccc[0x1]; // 0xccc
 public:
-	bool m_bFireOnEmpty; // 0xcd1	
+	bool m_bFireOnEmpty; // 0xccd	
 private:
-	[[maybe_unused]] uint8_t __pad0cd2[0x2]; // 0xcd2
+	[[maybe_unused]] uint8_t __pad0cce[0x2]; // 0xcce
 public:
-	GameTime_t m_flNextDisarmSound; // 0xcd4	
+	GameTime_t m_flNextDisarmSound; // 0xcd0	
 };
 

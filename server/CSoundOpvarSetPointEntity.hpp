@@ -25,8 +25,9 @@ public:
 	float m_flOcclusionMax; // 0x5dc	
 	float m_flValSetOnDisable; // 0x5e0	
 	bool m_bSetValueOnDisable; // 0x5e4	
+	bool m_bReloading; // 0x5e5	
 private:
-	[[maybe_unused]] uint8_t __pad05e5[0x3]; // 0x5e5
+	[[maybe_unused]] uint8_t __pad05e6[0x2]; // 0x5e6
 public:
 	int32_t m_nSimulationMode; // 0x5e8	
 	int32_t m_nVisibilitySamples; // 0x5ec	

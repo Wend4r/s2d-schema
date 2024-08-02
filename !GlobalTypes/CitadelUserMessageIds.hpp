@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 35
+// Enumerator count: 34
 // Alignment: 4
 // Size: 0x4
 enum class CitadelUserMessageIds : uint32_t
@@ -32,7 +32,6 @@ enum class CitadelUserMessageIds : uint32_t
 	k_EUserMsg_ModifierApplied = 0x145,
 	k_EUserMsg_CameraController = 0x146,
 	k_EUserMsg_AuraModifierApplied = 0x147,
-	k_EUserMsg_SpeechBubble = 0x148,
 	k_EUserMsg_ObstructedShotFired = 0x149,
 	k_EUserMsg_AbilityLateFailure = 0x14a,
 	k_EUserMsg_AbilityPing = 0x14b,

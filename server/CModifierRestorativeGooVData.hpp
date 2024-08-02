@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x720
+// Size: 0x740
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -25,5 +25,7 @@ public:
 	// MPropertyStartGroup "Sounds"
 	CSoundEventName m_NonTargetLoopingSound; // 0x700	
 	CSoundEventName m_TargetLoopingSound; // 0x710	
+	CSoundEventName m_LightMeleeImpact; // 0x720	
+	CSoundEventName m_HeavyMeleeImpact; // 0x730	
 };
 

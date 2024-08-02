@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x19b0
+// Size: 0x19b8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -39,5 +39,7 @@ public:
 	float m_flInitialDamageRadiusInMeters; // 0x19a4	
 	int32_t m_nGroundCrackGap; // 0x19a8	
 	float m_flGroupLengthTolerance; // 0x19ac	
+	float m_flDamageEffectScaleMin; // 0x19b0	
+	float m_flDamageEffectScaleMax; // 0x19b4	
 };
 

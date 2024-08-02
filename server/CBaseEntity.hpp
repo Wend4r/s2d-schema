@@ -285,6 +285,7 @@ public:
 	// int32_t InputSetTeam; // 0x0
 	// void InputKill; // 0x0
 	// void InputKillHierarchy; // 0x0
+	// void InputKillConstrained; // 0x0
 	// int32_t InputUse; // 0x0
 	// bool InputAlternativeSorting; // 0x0
 	// CUtlSymbolLarge InputSetParent; // 0x0

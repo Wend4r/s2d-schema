@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xaa8
+// Size: 0xab0
 // Has VTable
 // 
 // MNetworkVarNames "int32 m_eLootType"
@@ -16,24 +16,26 @@
 // MNetworkVarNames "float m_flFallRate"
 class C_CitadelItemPickup : public CCitadelAnimatingModelEntity
 {
-public:
-	// MNetworkEnable
-	int32_t m_eLootType; // 0xa78	
-	// MNetworkEnable
-	int32_t m_nCurrencyValue; // 0xa7c	
-	// MNetworkEnable
-	int32_t m_nCurrencyType; // 0xa80	
 private:
-	[[maybe_unused]] uint8_t __pad0a84[0x4]; // 0xa84
+	[[maybe_unused]] uint8_t __pad0a78[0x8]; // 0xa78
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszModelName; // 0xa88	
+	int32_t m_eLootType; // 0xa80	
 	// MNetworkEnable
-	float m_flModelScale; // 0xa90	
+	int32_t m_nCurrencyValue; // 0xa84	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTargetPlayer; // 0xa94	
+	int32_t m_nCurrencyType; // 0xa88	
+private:
+	[[maybe_unused]] uint8_t __pad0a8c[0x4]; // 0xa8c
+public:
 	// MNetworkEnable
-	float m_flFallRate; // 0xa98	
+	CUtlSymbolLarge m_iszModelName; // 0xa90	
+	// MNetworkEnable
+	float m_flModelScale; // 0xa98	
+	// MNetworkEnable
+	CHandle< C_BaseEntity > m_hTargetPlayer; // 0xa9c	
+	// MNetworkEnable
+	float m_flFallRate; // 0xaa0	
 	
 	// Datamap fields:
 	// bool from_crate; // 0x7fffffff

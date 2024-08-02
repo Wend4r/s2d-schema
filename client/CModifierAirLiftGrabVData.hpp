@@ -19,5 +19,6 @@ public:
 	float m_flFollowDampingFactor; // 0x6d8	
 	float m_flFollowDistance; // 0x6dc	
 	float m_flAllyGrabCancelTime; // 0x6e0	
+	float m_flAllyPossibleStuckDistance; // 0x6e4	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15b0
+// Size: 0x15c0
 // Has VTable
 class CNPC_PestilenceDrone : public CAI_CitadelNPC
 {

@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1630
+// Size: 0x1640
 // Has VTable
 // 
 // MNetworkVarNames "int m_iLane"
@@ -15,28 +15,28 @@ struct CEntityIOOutput;
 class CNPC_Boss_Tier2 : public CAI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1550[0x8]; // 0x1550
+	[[maybe_unused]] uint8_t __pad1560[0x8]; // 0x1560
 public:
-	Vector m_vecStartingPosition; // 0x1558	
+	Vector m_vecStartingPosition; // 0x1568	
 	// MNetworkEnable
-	int32_t m_iLane; // 0x1564	
+	int32_t m_iLane; // 0x1574	
 private:
-	[[maybe_unused]] uint8_t __pad1568[0x8]; // 0x1568
+	[[maybe_unused]] uint8_t __pad1578[0x8]; // 0x1578
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x1570	
+	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x1580	
 private:
-	[[maybe_unused]] uint8_t __pad1574[0x24]; // 0x1574
+	[[maybe_unused]] uint8_t __pad1584[0x24]; // 0x1584
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecElectricBeamLookTarget; // 0x1598	
+	Vector m_vecElectricBeamLookTarget; // 0x15a8	
 	// MNetworkEnable
-	int32_t m_nElectricBeamCasts; // 0x15a4	
+	int32_t m_nElectricBeamCasts; // 0x15b4	
 private:
-	[[maybe_unused]] uint8_t __pad15a8[0x28]; // 0x15a8
+	[[maybe_unused]] uint8_t __pad15b8[0x28]; // 0x15b8
 public:
-	CEntityIOOutput m_eventOnBossKilled; // 0x15d0	
+	CEntityIOOutput m_eventOnBossKilled; // 0x15e0	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_STAGGERED(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->m_static_fields[0]->m_instance);};
@@ -73,6 +73,6 @@ public:
 	static CUtlSymbolLarge &Get_TASK_T2BOSS_STOMP_ACTIVATE(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->m_static_fields[31]->m_instance);};
 	
 	// Datamap fields:
-	// CUtlSymbolLarge m_strBossEntityName; // 0x1600
+	// CUtlSymbolLarge m_strBossEntityName; // 0x1610
 };
 

@@ -34,74 +34,79 @@ struct CitadelLobbyPlayerSlot_t;
 // MNetworkVarNames "bool m_bInPartyChat"
 // MNetworkVarNames "CHandle< CCitadelPlayerPawn> m_hHeroPawn"
 // MNetworkVarNames "PlayerDataGlobal_t m_PlayerDataGlobal"
-// MNetworkVarNames "bool m_bDeathReplayAvailable"
+// MNetworkVarNames "int8 m_nDeathReplayAvailable"
 // MNetworkVarNames "CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot"
 class CCitadelPlayerController : public CBasePlayerController
 {
 public:
 	// MNetworkEnable
-	EPlayerPlayState m_ePlayState; // 0x6d8	
+	EPlayerPlayState m_ePlayState; // 0x6d0	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchLastHits; // 0x6dc	
+	int32_t m_iGuidedBotMatchLastHits; // 0x6d4	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchOrbsSecured; // 0x6e0	
+	int32_t m_iGuidedBotMatchOrbsSecured; // 0x6d8	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchOrbsDenied; // 0x6e4	
+	int32_t m_iGuidedBotMatchOrbsDenied; // 0x6dc	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageToGuardians; // 0x6e8	
+	int32_t m_iGuidedBotMatchDamageToGuardians; // 0x6e0	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageToPlayers; // 0x6ec	
+	int32_t m_iGuidedBotMatchDamageToPlayers; // 0x6e4	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageTaken; // 0x6f0	
+	int32_t m_iGuidedBotMatchDamageTaken; // 0x6e8	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchNetWorth; // 0x6f4	
+	int32_t m_iGuidedBotMatchNetWorth; // 0x6ec	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchModsPurchased; // 0x6f8	
+	int32_t m_iGuidedBotMatchModsPurchased; // 0x6f0	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchAbilityUpgrades; // 0x6fc	
+	int32_t m_iGuidedBotMatchAbilityUpgrades; // 0x6f4	
 	// MNetworkEnable
-	float m_flGuideBotMatchLastTaskNagVO; // 0x700	
+	float m_flGuideBotMatchLastTaskNagVO; // 0x6f8	
 	// MNetworkEnable
-	float m_flGuideBotLastTimeTaskCompleted; // 0x704	
+	float m_flGuideBotLastTimeTaskCompleted; // 0x6fc	
 	// MNetworkEnable
-	EGuidedBotMatchObjective m_eGuidedBotMatchObjective; // 0x708	
+	EGuidedBotMatchObjective m_eGuidedBotMatchObjective; // 0x700	
 	// MNetworkEnable
 	// MNetworkChangeCallback "AssignedLaneChanged"
-	int8_t m_nAssignedLane; // 0x70c	
+	int8_t m_nAssignedLane; // 0x704	
 	// MNetworkEnable
-	int8_t m_nOriginalLaneAssignment; // 0x70d	
+	int8_t m_nOriginalLaneAssignment; // 0x705	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility1; // 0x70e	
+	bool m_bSwapCastModeAbility1; // 0x706	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility2; // 0x70f	
+	bool m_bSwapCastModeAbility2; // 0x707	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility3; // 0x710	
+	bool m_bSwapCastModeAbility3; // 0x708	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility4; // 0x711	
+	bool m_bSwapCastModeAbility4; // 0x709	
 	// MNetworkEnable
-	bool m_bIsKingPanda; // 0x712	
+	bool m_bIsKingPanda; // 0x70a	
 	// MNetworkEnable
-	bool m_bBotDisconnectTakeover; // 0x713	
-	// MNetworkEnable
-	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInTeamChat; // 0x714	
+	bool m_bBotDisconnectTakeover; // 0x70b	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInPartyChat; // 0x715	
+	bool m_bInTeamChat; // 0x70c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "ChatGroupsChanged"
+	bool m_bInPartyChat; // 0x70d	
 private:
-	[[maybe_unused]] uint8_t __pad0716[0x2]; // 0x716
+	[[maybe_unused]] uint8_t __pad070e[0x2]; // 0x70e
 public:
 	// MNetworkEnable
-	CHandle< C_CitadelPlayerPawn > m_hHeroPawn; // 0x718	
+	CHandle< C_CitadelPlayerPawn > m_hHeroPawn; // 0x710	
 private:
-	[[maybe_unused]] uint8_t __pad071c[0x14]; // 0x71c
+	[[maybe_unused]] uint8_t __pad0714[0x14]; // 0x714
 public:
 	// MNetworkEnable
-	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x730	
+	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x728	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bDeathReplayAvailable; // 0x908	
+	int8_t m_nDeathReplayAvailable; // 0x900	
 	// MNetworkEnable
-	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x909	
+	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x901	
+	bool m_bHasCheckedFriendName; // 0x902	
+private:
+	[[maybe_unused]] uint8_t __pad0903[0x5]; // 0x903
+public:
+	CUtlString m_sFriendName; // 0x908	
 };
 

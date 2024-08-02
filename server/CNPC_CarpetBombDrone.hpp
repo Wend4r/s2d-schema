@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1590
+// Size: 0x15a0
 // Has VTable
 class CNPC_CarpetBombDrone : public CAI_CitadelNPC
 {

@@ -2,7 +2,6 @@
 
 #include <cstdint>
 
-struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
 // Size: 0x1408
@@ -11,7 +10,6 @@ struct GameTime_t;
 // MNetworkVarNames "int m_iLane"
 // MNetworkVarNames "EHANDLE m_hTargetedEnemy"
 // MNetworkVarNames "float m_flHealingChargeParticlePct"
-// MNetworkVarNames "GameTime_t m_flVulnerableTime"
 class C_NPC_Trooper : public C_AI_CitadelNPC
 {
 public:
@@ -26,7 +24,5 @@ public:
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
 	float m_flHealingChargeParticlePct; // 0x13c8	
-	// MNetworkEnable
-	GameTime_t m_flVulnerableTime; // 0x13cc	
 };
 

@@ -88,6 +88,9 @@ public:
 	// void InputStopEndCap; // 0x0
 	// void InputDestroy; // 0x0
 	// CUtlSymbolLarge InputSetControlPoint; // 0x0
+	// float InputSetDataControlPointX; // 0x0
+	// float InputSetDataControlPointY; // 0x0
+	// float InputSetDataControlPointZ; // 0x0
 	// void C_ParticleSystemStartParticleSystemThink; // 0x0
 	// CUtlString cpoint%d_value[64]; // 0x7fffffff
 	// void m_pEffect; // 0xd88

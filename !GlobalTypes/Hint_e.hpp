@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 85
+// Enumerator count: 86
 // Alignment: 4
 // Size: 0x4
 enum class Hint_e : uint32_t
@@ -81,6 +81,7 @@ enum class Hint_e : uint32_t
 	HINT_PHYSPROP_PICKUP = 0x76e,
 	HINT_PHYSPROP_DROPOFF = 0x76f,
 	HINT_XENAMBIENT_FOOD_DIG = 0x7d0,
+	HINT_HOWLER_THROW_TARGET = 0x7d1,
 	HINT_OFFWORLD_WORKER_WORK = 0x834,
 	HINT_OFFWORLD_WORKER_RETURN = 0x835,
 	HINT_XENSWOOPER_CIRCLING_CENTER = 0x898,

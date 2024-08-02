@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16c0
+// Size: 0x16d8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -18,5 +18,8 @@ public:
 	CSoundEventName m_strExplodeSound; // 0x16a0	
 	// MPropertyStartGroup "Modifiers"
 	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x16b0	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x16c0	
+	// MPropertyStartGroup "Gameplay"
+	float m_flWarpDistanceFromTarget; // 0x16d0	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x16d8
+// Size: 0x16d0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -22,7 +22,5 @@ public:
 	float m_flAirSpeedMax; // 0x16c0	
 	float m_flFallSpeedMax; // 0x16c4	
 	float m_flAirDrag; // 0x16c8	
-	float m_flOnDamageDrainSuppressTime; // 0x16cc	
-	float m_flOnFullDrainSuppressTime; // 0x16d0	
 };
 

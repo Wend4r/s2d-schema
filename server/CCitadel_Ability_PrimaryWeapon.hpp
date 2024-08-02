@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb60
+// Size: 0xb58
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flNextPrimaryAttack"
@@ -136,27 +136,26 @@ public:
 	GameTime_t m_flRecoilStartTime; // 0xb24	
 	float m_flRecoilRecoverySpeed; // 0xb28	
 	float m_flAddApproachSpeed; // 0xb2c	
-	float m_flLastAnglesUpdateTime; // 0xb30	
-	bool m_bFireBackwards; // 0xb34	
+	bool m_bFireBackwards; // 0xb30	
 private:
-	[[maybe_unused]] uint8_t __pad0b35[0x3]; // 0xb35
+	[[maybe_unused]] uint8_t __pad0b31[0x3]; // 0xb31
 public:
-	float m_currentSpread; // 0xb38	
-	float m_currentMaxSpread; // 0xb3c	
-	float m_currentFireSpread; // 0xb40	
-	float m_flCurrentSpinRate; // 0xb44	
+	float m_currentSpread; // 0xb34	
+	float m_currentMaxSpread; // 0xb38	
+	float m_currentFireSpread; // 0xb3c	
+	float m_flCurrentSpinRate; // 0xb40	
 private:
-	[[maybe_unused]] uint8_t __pad0b48[0x4]; // 0xb48
+	[[maybe_unused]] uint8_t __pad0b44[0x4]; // 0xb44
 public:
-	float m_fFireDuration; // 0xb4c	
+	float m_fFireDuration; // 0xb48	
 private:
-	[[maybe_unused]] uint8_t __pad0b50[0x1]; // 0xb50
+	[[maybe_unused]] uint8_t __pad0b4c[0x1]; // 0xb4c
 public:
-	bool m_bFireOnEmpty; // 0xb51	
+	bool m_bFireOnEmpty; // 0xb4d	
 private:
-	[[maybe_unused]] uint8_t __pad0b52[0x2]; // 0xb52
+	[[maybe_unused]] uint8_t __pad0b4e[0x2]; // 0xb4e
 public:
-	GameTime_t m_flNextDisarmSound; // 0xb54	
-	int32_t m_nClipSizeBeforeSwap; // 0xb58	
+	GameTime_t m_flNextDisarmSound; // 0xb50	
+	int32_t m_nClipSizeBeforeSwap; // 0xb54	
 };
 

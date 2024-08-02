@@ -6,7 +6,7 @@ struct CCitadelPlayerClipComponent;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1838
+// Size: 0x1848
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
@@ -19,22 +19,22 @@ public:
 	// MNetworkUserGroup "CCitadelPlayerClipComponent"
 	// MNetworkAlias "CCitadelPlayerClipComponent"
 	// MNetworkTypeAlias "CCitadelPlayerClipComponent"
-	CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1610	
+	CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1620	
 private:
-	[[maybe_unused]] uint8_t __pad1630[0x8]; // 0x1630
+	[[maybe_unused]] uint8_t __pad1640[0x8]; // 0x1640
 public:
-	LaneSide_t m_LaneSide; // 0x1638	
+	LaneSide_t m_LaneSide; // 0x1648	
 private:
-	[[maybe_unused]] uint8_t __pad1639[0x1e7]; // 0x1639
+	[[maybe_unused]] uint8_t __pad1649[0x1e7]; // 0x1649
 public:
-	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1820	
+	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1830	
 private:
-	[[maybe_unused]] uint8_t __pad1828[0x4]; // 0x1828
+	[[maybe_unused]] uint8_t __pad1838[0x4]; // 0x1838
 public:
 	// MNetworkEnable
-	GameTime_t m_flFadeOutStart; // 0x182c	
+	GameTime_t m_flFadeOutStart; // 0x183c	
 	// MNetworkEnable
-	GameTime_t m_flFadeOutEnd; // 0x1830	
+	GameTime_t m_flFadeOutEnd; // 0x1840	
 	
 	// Static fields:
 	static CUtlSymbolLarge &Get_SCHED_TROOPERBOSS_RANGE_ATTACK(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperBoss")->m_static_fields[0]->m_instance);};

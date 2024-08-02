@@ -8,11 +8,9 @@
 // Has VTable
 class CCitadel_Modifier_Nano_PredatoryStatueTarget : public CCitadelModifier
 {
-public:
-	Vector m_vecStatuePos; // 0xc0	
 private:
-	[[maybe_unused]] uint8_t __pad00cc[0xe4]; // 0xcc
+	[[maybe_unused]] uint8_t __pad00c0[0xc]; // 0xc0
 public:
-	CHandle< C_BaseEntity > m_hStatue; // 0x1b0	
+	int32_t m_iStatueID; // 0xcc	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1888
+// Size: 0x1898
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -19,8 +19,10 @@ public:
 	// MPropertyStartGroup "Modifiers"
 	CEmbeddedSubclass< CCitadelModifier > m_BurrowModifier; // 0x1860	
 	CEmbeddedSubclass< CCitadelModifier > m_SpinModifier; // 0x1870	
+	// MPropertyStartGroup "Sounds"
+	CSoundEventName m_strBurrowEndSound; // 0x1880	
 	// MPropertyStartGroup "+Burrow Properties"
-	float m_flChannelEndEnemyPopUpForce; // 0x1880	
-	float m_flChannelEndEnemyPopUpCylinderHeight; // 0x1884	
+	float m_flChannelEndEnemyPopUpForce; // 0x1890	
+	float m_flChannelEndEnemyPopUpCylinderHeight; // 0x1894	
 };
 

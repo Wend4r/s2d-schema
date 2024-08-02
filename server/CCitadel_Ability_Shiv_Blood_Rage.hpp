@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcc0
+// Size: 0xcf8
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flDrainSuppressEndTime"

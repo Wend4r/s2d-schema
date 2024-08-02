@@ -23,6 +23,7 @@
 // MNetworkVarNames "bool m_bOverrideIndirectLightStrength"
 // MNetworkVarNames "bool m_bOverrideSunLightStrength"
 // MNetworkVarNames "bool m_bOverrideNoiseStrength"
+// MNetworkVarNames "bool m_bAllowLPVIndirect"
 class CEnvVolumetricFogVolume : public CBaseEntity
 {
 public:
@@ -62,6 +63,8 @@ public:
 	bool m_bOverrideSunLightStrength; // 0x4f9	
 	// MNetworkEnable
 	bool m_bOverrideNoiseStrength; // 0x4fa	
+	// MNetworkEnable
+	bool m_bAllowLPVIndirect; // 0x4fb	
 	
 	// Datamap fields:
 	// bool InputEnable; // 0x0

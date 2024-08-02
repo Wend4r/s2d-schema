@@ -23,5 +23,6 @@ public:
 	CitadelCameraOperationsSequence_t m_cameraSequenceSelected; // 0x15f0	
 	// MPropertyStartGroup "+Rocket Barrage Properties"
 	float m_flMoveSpeedReductionPct; // 0x1670	
+	float m_flHeightTestDistance; // 0x1674	
 };
 

@@ -31,13 +31,16 @@ private:
 public:
 	// MPropertyFriendlyName "max particle count"
 	int32_t m_nMaxParticleCount; // 0x4cc	
+	// MPropertyFriendlyName "prevent spawning in exclusion volumes"
+	// MPropertySuppressExpr "m_bKillParticles == true"
+	bool m_bRespectExclusionVolumes; // 0x4d0	
 	// MPropertyFriendlyName "kill physics particles"
-	bool m_bKillParticles; // 0x4d0	
+	bool m_bKillParticles; // 0x4d1	
 	// MPropertyFriendlyName "delete physics sim when stopped"
 	// MPropertySuppressExpr "m_bKillParticles == false"
-	bool m_bDeleteSim; // 0x4d1	
+	bool m_bDeleteSim; // 0x4d2	
 private:
-	[[maybe_unused]] uint8_t __pad04d2[0x2]; // 0x4d2
+	[[maybe_unused]] uint8_t __pad04d3[0x1]; // 0x4d3
 public:
 	// MPropertyFriendlyName "control point (for finding nearest sim)"
 	// MPropertySuppressExpr "m_bKillParticles == true"

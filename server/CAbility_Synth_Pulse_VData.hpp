@@ -14,7 +14,7 @@ class CAbility_Synth_Pulse_VData : public CitadelAbilityVData
 public:
 	// MPropertyStartGroup "Modifiers"
 	CEmbeddedSubclass< CCitadelModifier > m_EscapeModifier; // 0x14e0	
-	CEmbeddedSubclass< CCitadelModifier > m_DisarmModifier; // 0x14f0	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x14f0	
 	// MPropertyStartGroup "Visuals"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEParticle; // 0x1500	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EffectParticle; // 0x15e0	
