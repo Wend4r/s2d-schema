@@ -35,9 +35,7 @@ private:
 public:
 	TakeDamageFlags_t m_nDamageFlags; // 0x70	
 	int32_t m_nNumObjectsPenetrated; // 0x78	
-private:
-	[[maybe_unused]] uint8_t __pad007c[0x4]; // 0x7c
-public:
+	float m_flFriendlyFireDamageReductionRatio; // 0x7c	
 	HSCRIPT m_hScriptInstance; // 0x80	
 private:
 	[[maybe_unused]] uint8_t __pad0088[0x14]; // 0x88

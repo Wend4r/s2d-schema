@@ -33,7 +33,7 @@ public:
 	// MNetworkChangeAccessorFieldPathIndex
 	ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x40	
 private:
-	[[maybe_unused]] uint8_t __pad0042[0x16]; // 0x42
+	[[maybe_unused]] uint8_t __pad0044[0x14]; // 0x44
 public:
 	CEntityIdentity* m_pPrev; // 0x58	
 	CEntityIdentity* m_pNext; // 0x60	

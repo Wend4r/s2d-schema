@@ -6,7 +6,7 @@ struct CCSPlayerController;
 struct CCSPlayerPawn;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf0
+// Size: 0x100
 // Has VTable
 // Is Abstract
 class CBot
@@ -22,22 +22,22 @@ private:
 public:
 	uint32_t m_id; // 0x24	
 private:
-	[[maybe_unused]] uint8_t __pad0028[0x88]; // 0x28
+	[[maybe_unused]] uint8_t __pad0028[0x98]; // 0x28
 public:
-	bool m_isRunning; // 0xb0	
-	bool m_isCrouching; // 0xb1	
+	bool m_isRunning; // 0xc0	
+	bool m_isCrouching; // 0xc1	
 private:
-	[[maybe_unused]] uint8_t __pad00b2[0x2]; // 0xb2
+	[[maybe_unused]] uint8_t __pad00c2[0x2]; // 0xc2
 public:
-	float m_forwardSpeed; // 0xb4	
-	float m_leftSpeed; // 0xb8	
-	float m_verticalSpeed; // 0xbc	
-	uint64_t m_buttonFlags; // 0xc0	
-	float m_jumpTimestamp; // 0xc8	
-	Vector m_viewForward; // 0xcc	
+	float m_forwardSpeed; // 0xc4	
+	float m_leftSpeed; // 0xc8	
+	float m_verticalSpeed; // 0xcc	
+	uint64_t m_buttonFlags; // 0xd0	
+	float m_jumpTimestamp; // 0xd8	
+	Vector m_viewForward; // 0xdc	
 private:
-	[[maybe_unused]] uint8_t __pad00d8[0x10]; // 0xd8
+	[[maybe_unused]] uint8_t __pad00e8[0x10]; // 0xe8
 public:
-	int32_t m_postureStackIndex; // 0xe8	
+	int32_t m_postureStackIndex; // 0xf8	
 };
 

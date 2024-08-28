@@ -14,7 +14,7 @@ struct EntitySpottedState_t;
 struct CCSBot;
 // Registered binary: server.dll (project 'server')
 // Alignment: 16
-// Size: 0x19c0
+// Size: 0x1a10
 // Has VTable
 // 
 // MNetworkVarTypeOverride "CCSPlayer_WeaponServices m_pWeaponServices"
@@ -81,6 +81,7 @@ struct CCSBot;
 // MNetworkVarNames "bool m_bInNoDefuseArea"
 // MNetworkVarNames "int m_nWhichBombZone"
 // MNetworkVarNames "int m_iShotsFired"
+// MNetworkVarNames "float m_flFlinchStack"
 // MNetworkVarNames "float m_flVelocityModifier"
 // MNetworkVarNames "float m_flHitHeading"
 // MNetworkVarNames "int m_nHitBodyPart"
@@ -96,6 +97,7 @@ struct CCSBot;
 // MNetworkVarNames "uint16 m_unFreezetimeEndEquipmentValue"
 // MNetworkVarNames "uint32 m_vecPlayerPatchEconIndices"
 // MNetworkVarNames "Color m_GunGameImmunityColor"
+// MNetworkVarNames "PredictedDamageTag_t m_PredictedDamageTags"
 class CCSPlayerPawn : public CCSPlayerPawnBase
 {
 private:
@@ -294,6 +296,8 @@ private:
 public:
 	// MNetworkEnable
 	int32_t m_iShotsFired; // 0x1880	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerExclusive"
 	float m_flFlinchStack; // 0x1884	
 	// MNetworkEnable
 	float m_flVelocityModifier; // 0x1888	
@@ -350,33 +354,39 @@ private:
 	[[maybe_unused]] uint8_t __pad18f6[0x2]; // 0x18f6
 public:
 	int32_t m_iLastWeaponFireUsercmd; // 0x18f8	
-	float m_flLastFriendlyFireDamageReductionRatio; // 0x18fc	
-	bool m_bIsSpawning; // 0x1900	
+	bool m_bIsSpawning; // 0x18fc	
 private:
-	[[maybe_unused]] uint8_t __pad1901[0xf]; // 0x1901
+	[[maybe_unused]] uint8_t __pad18fd[0xb]; // 0x18fd
 public:
-	int32_t m_iDeathFlags; // 0x1910	
-	bool m_bHasDeathInfo; // 0x1914	
+	int32_t m_iDeathFlags; // 0x1908	
+	bool m_bHasDeathInfo; // 0x190c	
 private:
-	[[maybe_unused]] uint8_t __pad1915[0x3]; // 0x1915
+	[[maybe_unused]] uint8_t __pad190d[0x3]; // 0x190d
 public:
-	float m_flDeathInfoTime; // 0x1918	
-	Vector m_vecDeathInfoOrigin; // 0x191c	
+	float m_flDeathInfoTime; // 0x1910	
+	Vector m_vecDeathInfoOrigin; // 0x1914	
 	// MNetworkEnable
-	uint32_t m_vecPlayerPatchEconIndices[5]; // 0x1928	
+	uint32_t m_vecPlayerPatchEconIndices[5]; // 0x1920	
 	// MNetworkEnable
-	Color m_GunGameImmunityColor; // 0x193c	
-	GameTime_t m_grenadeParameterStashTime; // 0x1940	
-	bool m_bGrenadeParametersStashed; // 0x1944	
+	Color m_GunGameImmunityColor; // 0x1934	
+	GameTime_t m_grenadeParameterStashTime; // 0x1938	
+	bool m_bGrenadeParametersStashed; // 0x193c	
 private:
-	[[maybe_unused]] uint8_t __pad1945[0x3]; // 0x1945
+	[[maybe_unused]] uint8_t __pad193d[0x3]; // 0x193d
 public:
-	QAngle m_angStashedShootAngles; // 0x1948	
-	Vector m_vecStashedGrenadeThrowPosition; // 0x1954	
-	Vector m_vecStashedVelocity; // 0x1960	
-	QAngle m_angShootAngleHistory[2]; // 0x196c	
-	Vector m_vecThrowPositionHistory[2]; // 0x1984	
-	Vector m_vecVelocityHistory[2]; // 0x199c	
+	QAngle m_angStashedShootAngles; // 0x1940	
+	Vector m_vecStashedGrenadeThrowPosition; // 0x194c	
+	Vector m_vecStashedVelocity; // 0x1958	
+	QAngle m_angShootAngleHistory[2]; // 0x1964	
+	Vector m_vecThrowPositionHistory[2]; // 0x197c	
+	Vector m_vecVelocityHistory[2]; // 0x1994	
+private:
+	[[maybe_unused]] uint8_t __pad19ac[0x4]; // 0x19ac
+public:
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerExclusive"
+	CUtlVectorEmbeddedNetworkVar< PredictedDamageTag_t > m_PredictedDamageTags; // 0x19b0	
+	int32_t m_nHighestAppliedDamageTagTick; // 0x1a00	
 	
 	// Datamap fields:
 	// CCSPlayer_WeaponServices m_pWeaponServices; // 0xa08

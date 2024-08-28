@@ -5,7 +5,7 @@
 struct CDecalInfo;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb8
+// Size: 0xd8
 class CDecalInfo
 {
 public:
@@ -27,9 +27,9 @@ public:
 	CDecalInfo* m_pNext; // 0x40	
 	CDecalInfo* m_pPrev; // 0x48	
 private:
-	[[maybe_unused]] uint8_t __pad0050[0x60]; // 0x50
+	[[maybe_unused]] uint8_t __pad0050[0x80]; // 0x50
 public:
-	int32_t m_nDecalMaterialIndex; // 0xb0	
+	int32_t m_nDecalMaterialIndex; // 0xd0	
 	
 	// Datamap fields:
 	// void m_decalEvent; // 0x50
