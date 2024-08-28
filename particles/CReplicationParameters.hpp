@@ -6,7 +6,7 @@ struct CParticleCollectionFloatInput;
 struct CParticleCollectionVecInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x10c0
+// Size: 0x1118
 // 
 // MGetKV3ClassDefaults
 class CReplicationParameters
@@ -22,12 +22,12 @@ public:
 	// MPropertyFriendlyName "Minimum random scale for radius"
 	CParticleCollectionFloatInput m_flMinRandomRadiusScale; // 0x8	
 	// MPropertyFriendlyName "Maximum random scale for radius"
-	CParticleCollectionFloatInput m_flMaxRandomRadiusScale; // 0x160	
+	CParticleCollectionFloatInput m_flMaxRandomRadiusScale; // 0x168	
 	// MPropertyFriendlyName "min random displacement for child particles"
-	CParticleCollectionVecInput m_vMinRandomDisplacement; // 0x2b8	
+	CParticleCollectionVecInput m_vMinRandomDisplacement; // 0x2c8	
 	// MPropertyFriendlyName "max random displacement for child particles"
-	CParticleCollectionVecInput m_vMaxRandomDisplacement; // 0x910	
+	CParticleCollectionVecInput m_vMaxRandomDisplacement; // 0x940	
 	// MPropertyFriendlyName "Modelling scale"
-	CParticleCollectionFloatInput m_flModellingScale; // 0xf68	
+	CParticleCollectionFloatInput m_flModellingScale; // 0xfb8	
 };
 

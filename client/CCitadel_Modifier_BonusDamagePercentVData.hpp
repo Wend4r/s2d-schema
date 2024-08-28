@@ -4,13 +4,13 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5f8
+// Size: 0x600
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_BonusDamagePercentVData : public CCitadelModifierVData
 {
 public:
-	bool m_bSelfish; // 0x5f0	
+	bool m_bSelfish; // 0x5f8	
 };
 

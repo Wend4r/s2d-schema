@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 39
+// Enumerator count: 40
 // Alignment: 8
 // Size: 0x8
 enum class InputBitMask_t : uint64_t
@@ -50,5 +50,6 @@ enum class InputBitMask_t : uint64_t
 	IN_ALT_CAST = 0x20000000000000,
 	IN_REPLAY_DEATH = 0x40000000000000,
 	IN_TELEPORT = 0x80000000000000,
+	IN_CANCEL_ABILITY = 0x100000000000000,
 };
 

@@ -8,7 +8,7 @@ struct GameTime_t;
 struct CCitadelAbilityComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xef8
+// Size: 0xf00
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bTakesDamage"
@@ -57,13 +57,13 @@ public:
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
 	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xca0	
 	// MNetworkEnable
-	CUtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0xea0	
+	CUtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0xea8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "DestroyedChanged"
-	bool m_bDestroyed; // 0xef0	
+	bool m_bDestroyed; // 0xef8	
 	// MNetworkEnable
-	bool m_bActive; // 0xef1	
+	bool m_bActive; // 0xef9	
 	// MNetworkEnable
-	bool m_bFinal; // 0xef2	
+	bool m_bFinal; // 0xefa	
 };
 

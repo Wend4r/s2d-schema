@@ -2,7 +2,7 @@
 
 #include <cstdint>
 
-// Registered binary: server.dll (project 'server')
+// Registered binary: engine2.dll (project 'entity2')
 // Alignment: 8
 // Size: 0x4
 // Has Trivial Destructor

@@ -6,7 +6,7 @@ struct ParticleIndex_t;
 struct HeroID_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe88
+// Size: 0xe90
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -47,6 +47,7 @@ public:
 	int32_t m_nCourierType; // 0xe78	
 	HeroID_t m_heroID; // 0xe7c	
 	CUtlSymbolLarge m_heroAnimGraphEnumName; // 0xe80	
+	CUtlSymbolLarge m_heroShopAnimGraphEnumName; // 0xe88	
 	
 	// Datamap fields:
 	// uint32_t heroid; // 0x7fffffff

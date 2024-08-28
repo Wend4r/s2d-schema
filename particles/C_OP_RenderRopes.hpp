@@ -6,7 +6,7 @@ struct CParticleCollectionRendererFloatInput;
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x2b88
+// Size: 0x2c70
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,106 +16,106 @@ public:
 	// MPropertyStartGroup "Screenspace Fading and culling"
 	// MPropertyFriendlyName "enable fading and clamping"
 	// MPropertySortPriority "1000"
-	bool m_bEnableFadingAndClamping; // 0x2718	
+	bool m_bEnableFadingAndClamping; // 0x27e8	
 private:
-	[[maybe_unused]] uint8_t __pad2719[0x3]; // 0x2719
+	[[maybe_unused]] uint8_t __pad27e9[0x3]; // 0x27e9
 public:
 	// MPropertyFriendlyName "minimum visual screen-size"
 	// MPropertySuppressExpr "!m_bEnableFadingAndClamping"
-	float m_flMinSize; // 0x271c	
+	float m_flMinSize; // 0x27ec	
 	// MPropertyFriendlyName "maximum visual screen-size"
 	// MPropertySuppressExpr "!m_bEnableFadingAndClamping"
-	float m_flMaxSize; // 0x2720	
+	float m_flMaxSize; // 0x27f0	
 	// MPropertyFriendlyName "start fade screen-size"
 	// MPropertySuppressExpr "!m_bEnableFadingAndClamping"
-	float m_flStartFadeSize; // 0x2724	
+	float m_flStartFadeSize; // 0x27f4	
 	// MPropertyFriendlyName "end fade and cull screen-size"
 	// MPropertySuppressExpr "!m_bEnableFadingAndClamping"
-	float m_flEndFadeSize; // 0x2728	
+	float m_flEndFadeSize; // 0x27f8	
 	// MPropertyFriendlyName "start fade dot product of normal vs view"
 	// MPropertySortPriority "1000"
-	float m_flStartFadeDot; // 0x272c	
+	float m_flStartFadeDot; // 0x27fc	
 	// MPropertyFriendlyName "end fade dot product of normal vs view"
 	// MPropertySortPriority "1000"
-	float m_flEndFadeDot; // 0x2730	
+	float m_flEndFadeDot; // 0x2800	
 	// MPropertyStartGroup "Rope Tesselation"
 	// MPropertyFriendlyName "amount to taper the width of the trail end by"
-	float m_flRadiusTaper; // 0x2734	
+	float m_flRadiusTaper; // 0x2804	
 	// MPropertyFriendlyName "minium number of quads per render segment"
 	// MPropertySortPriority "850"
-	int32_t m_nMinTesselation; // 0x2738	
+	int32_t m_nMinTesselation; // 0x2808	
 	// MPropertyFriendlyName "maximum number of quads per render segment"
-	int32_t m_nMaxTesselation; // 0x273c	
+	int32_t m_nMaxTesselation; // 0x280c	
 	// MPropertyFriendlyName "tesselation resolution scale factor"
-	float m_flTessScale; // 0x2740	
+	float m_flTessScale; // 0x2810	
 private:
-	[[maybe_unused]] uint8_t __pad2744[0x4]; // 0x2744
+	[[maybe_unused]] uint8_t __pad2814[0x4]; // 0x2814
 public:
 	// MPropertyStartGroup "+Rope Global UV Controls"
 	// MPropertyFriendlyName "global texture V World Size"
 	// MPropertySortPriority "800"
-	CParticleCollectionRendererFloatInput m_flTextureVWorldSize; // 0x2748	
+	CParticleCollectionRendererFloatInput m_flTextureVWorldSize; // 0x2818	
 	// MPropertyFriendlyName "global texture V Scroll Rate"
-	CParticleCollectionRendererFloatInput m_flTextureVScrollRate; // 0x28a0	
+	CParticleCollectionRendererFloatInput m_flTextureVScrollRate; // 0x2978	
 	// MPropertyFriendlyName "global texture V Offset"
-	CParticleCollectionRendererFloatInput m_flTextureVOffset; // 0x29f8	
+	CParticleCollectionRendererFloatInput m_flTextureVOffset; // 0x2ad8	
 	// MPropertyFriendlyName "global texture V Params CP"
-	int32_t m_nTextureVParamsCP; // 0x2b50	
+	int32_t m_nTextureVParamsCP; // 0x2c38	
 	// MPropertyFriendlyName "Clamp Non-Sheet texture V coords"
-	bool m_bClampV; // 0x2b54	
+	bool m_bClampV; // 0x2c3c	
 private:
-	[[maybe_unused]] uint8_t __pad2b55[0x3]; // 0x2b55
+	[[maybe_unused]] uint8_t __pad2c3d[0x3]; // 0x2c3d
 public:
 	// MPropertyStartGroup "Rope Global UV Controls/CP Scaling"
 	// MPropertyFriendlyName "scale CP start"
-	int32_t m_nScaleCP1; // 0x2b58	
+	int32_t m_nScaleCP1; // 0x2c40	
 	// MPropertyFriendlyName "scale CP end"
-	int32_t m_nScaleCP2; // 0x2b5c	
+	int32_t m_nScaleCP2; // 0x2c44	
 	// MPropertyFriendlyName "scale V world size by CP distance"
-	float m_flScaleVSizeByControlPointDistance; // 0x2b60	
+	float m_flScaleVSizeByControlPointDistance; // 0x2c48	
 	// MPropertyFriendlyName "scale V scroll rate by CP distance"
-	float m_flScaleVScrollByControlPointDistance; // 0x2b64	
+	float m_flScaleVScrollByControlPointDistance; // 0x2c4c	
 	// MPropertyFriendlyName "scale V offset by CP distance"
-	float m_flScaleVOffsetByControlPointDistance; // 0x2b68	
+	float m_flScaleVOffsetByControlPointDistance; // 0x2c50	
 private:
-	[[maybe_unused]] uint8_t __pad2b6c[0x1]; // 0x2b6c
+	[[maybe_unused]] uint8_t __pad2c54[0x1]; // 0x2c54
 public:
 	// MPropertyStartGroup "Rope Global UV Controls"
 	// MPropertyFriendlyName "Use scalar attribute for texture coordinate"
-	bool m_bUseScalarForTextureCoordinate; // 0x2b6d	
+	bool m_bUseScalarForTextureCoordinate; // 0x2c55	
 private:
-	[[maybe_unused]] uint8_t __pad2b6e[0x2]; // 0x2b6e
+	[[maybe_unused]] uint8_t __pad2c56[0x2]; // 0x2c56
 public:
 	// MPropertyFriendlyName "scalar to use for texture coordinate"
 	// MPropertyAttributeChoiceName "particlefield_scalar"
 	// MPropertySuppressExpr "!m_bUseScalarForTextureCoordinate"
-	ParticleAttributeIndex_t m_nScalarFieldForTextureCoordinate; // 0x2b70	
+	ParticleAttributeIndex_t m_nScalarFieldForTextureCoordinate; // 0x2c58	
 	// MPropertyFriendlyName "scale value to map attribute to texture coordinate"
 	// MPropertySuppressExpr "!m_bUseScalarForTextureCoordinate"
-	float m_flScalarAttributeTextureCoordScale; // 0x2b74	
+	float m_flScalarAttributeTextureCoordScale; // 0x2c5c	
 	// MPropertyStartGroup "Rope Order Controls"
 	// MPropertyFriendlyName "reverse point order"
 	// MPropertySortPriority "800"
-	bool m_bReverseOrder; // 0x2b78	
+	bool m_bReverseOrder; // 0x2c60	
 	// MPropertyFriendlyName "Closed loop"
-	bool m_bClosedLoop; // 0x2b79	
+	bool m_bClosedLoop; // 0x2c61	
 private:
-	[[maybe_unused]] uint8_t __pad2b7a[0x2]; // 0x2b7a
+	[[maybe_unused]] uint8_t __pad2c62[0x2]; // 0x2c62
 public:
 	// MPropertyStartGroup "Orientation"
 	// MPropertyFriendlyName "orientation_type"
 	// MPropertySortPriority "750"
-	ParticleOrientationChoiceList_t m_nOrientationType; // 0x2b7c	
+	ParticleOrientationChoiceList_t m_nOrientationType; // 0x2c64	
 	// MPropertyFriendlyName "attribute to use for normal"
 	// MPropertyAttributeChoiceName "particlefield_vector"
 	// MPropertySortPriority "750"
 	// MPropertySuppressExpr "m_nOrientationType != PARTICLE_ORIENTATION_ALIGN_TO_PARTICLE_NORMAL && m_nOrientationType != PARTICLE_ORIENTATION_SCREENALIGN_TO_PARTICLE_NORMAL"
-	ParticleAttributeIndex_t m_nVectorFieldForOrientation; // 0x2b80	
+	ParticleAttributeIndex_t m_nVectorFieldForOrientation; // 0x2c68	
 	// MPropertyStartGroup "Material"
 	// MPropertyFriendlyName "draw as opaque"
-	bool m_bDrawAsOpaque; // 0x2b84	
+	bool m_bDrawAsOpaque; // 0x2c6c	
 	// MPropertyStartGroup "Orientation"
 	// MPropertyFriendlyName "generate normals for cylinder"
-	bool m_bGenerateNormals; // 0x2b85	
+	bool m_bGenerateNormals; // 0x2c6d	
 };
 

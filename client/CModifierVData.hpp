@@ -5,7 +5,7 @@
 struct CModifierLevelFloat;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x3e0
+// Size: 0x3e8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -60,39 +60,39 @@ public:
 	// MPropertyGroupName "Scripted Settings"
 	CBitVecEnum< EModifierState > m_nEnabledStateMask; // 0x350	
 	// MPropertyGroupName "Scripted Settings"
-	CBitVecEnum< EModifierState > m_nDisabledStateMask; // 0x364	
+	CBitVecEnum< EModifierState > m_nDisabledStateMask; // 0x368	
 	// MPropertyGroupName "Scripted Settings"
-	ModifierAttribute_t m_nAttributes; // 0x378	
+	ModifierAttribute_t m_nAttributes; // 0x380	
 private:
-	[[maybe_unused]] uint8_t __pad037c[0x4]; // 0x37c
+	[[maybe_unused]] uint8_t __pad0384[0x4]; // 0x384
 public:
 	// MPropertyGroupName "Scripted Settings"
 	// MPropertyDescription "Scripted Modifier Values"
-	CUtlVector< ModifierScriptValue_t > m_vecScriptValues; // 0x380	
+	CUtlVector< ModifierScriptValue_t > m_vecScriptValues; // 0x388	
 	// MPropertyGroupName "Scripted Settings"
 	// MPropertyDescription "Scripted Event Handlers"
-	CUtlVector< ModifierScriptedEventHandler_t > m_vecScriptEventHandlers; // 0x398	
-	ModifierDisableGroup_t m_nDisableGroupsMask; // 0x3b0	
+	CUtlVector< ModifierScriptedEventHandler_t > m_vecScriptEventHandlers; // 0x3a0	
+	ModifierDisableGroup_t m_nDisableGroupsMask; // 0x3b8	
 	// MPropertyDescription "When set, the modifier only provides data to requests made directly to the attached entity and not to other modifier properties that the owner provides to."
-	bool m_bPrivateAccess; // 0x3b4	
+	bool m_bPrivateAccess; // 0x3bc	
 	// MPropertyGroupName "UI"
 	// MPropertyDescription "When set, the modifier will not be visible to UI or visible modifier list."
-	bool m_bIsHidden; // 0x3b5	
+	bool m_bIsHidden; // 0x3bd	
 private:
-	[[maybe_unused]] uint8_t __pad03b6[0x2]; // 0x3b6
+	[[maybe_unused]] uint8_t __pad03be[0x2]; // 0x3be
 public:
 	// MPropertyGroupName "UI"
 	// MPropertySuppressExpr "m_bIsHidden != true"
-	ModifierHiddenType_t m_eHiddenType; // 0x3b8	
+	ModifierHiddenType_t m_eHiddenType; // 0x3c0	
 private:
-	[[maybe_unused]] uint8_t __pad03bc[0x4]; // 0x3bc
+	[[maybe_unused]] uint8_t __pad03c4[0x4]; // 0x3c4
 public:
 	// MPropertyGroupName "UI"
 	// MPropertyDescription "When set, use the value as localization key."
-	CUtlString m_sLocalizationName; // 0x3c0	
+	CUtlString m_sLocalizationName; // 0x3c8	
 	// MPropertyDescription "When to consider the modifier a debuff."
-	ModifierDebuffType_t m_eDebuffType; // 0x3c8	
+	ModifierDebuffType_t m_eDebuffType; // 0x3d0	
 	// MPropertyDescription "When set, stacks will automatically be decayed after a duration's worth of time has passed.  Only makes sense if adding a stack refreshed the modifier."
-	bool m_bAutomaticallyDecayStacks; // 0x3cc	
+	bool m_bAutomaticallyDecayStacks; // 0x3d4	
 };
 

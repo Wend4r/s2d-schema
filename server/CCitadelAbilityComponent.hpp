@@ -5,7 +5,7 @@
 struct AbilityResource_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x200
+// Size: 0x208
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_vecAbilities"

@@ -14,16 +14,13 @@ class C_OP_ConstrainDistanceToPath : public CParticleFunctionConstraint
 {
 public:
 	// MPropertyFriendlyName "minimum distance"
-	float m_fMinDistance; // 0x1b8	
+	float m_fMinDistance; // 0x1c0	
 	// MPropertyFriendlyName "maximum distance"
-	float m_flMaxDistance0; // 0x1bc	
+	float m_flMaxDistance0; // 0x1c4	
 	// MPropertyFriendlyName "maximum distance middle"
-	float m_flMaxDistanceMid; // 0x1c0	
+	float m_flMaxDistanceMid; // 0x1c8	
 	// MPropertyFriendlyName "maximum distance end"
-	float m_flMaxDistance1; // 0x1c4	
-private:
-	[[maybe_unused]] uint8_t __pad01c8[0x8]; // 0x1c8
-public:
+	float m_flMaxDistance1; // 0x1cc	
 	CPathParameters m_PathParameters; // 0x1d0	
 	// MPropertyFriendlyName "travel time"
 	float m_flTravelTime; // 0x210	

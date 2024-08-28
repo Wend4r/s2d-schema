@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x260
+// Size: 0x268
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,23 +13,23 @@ class C_OP_RtEnvCull : public CParticleFunctionOperator
 public:
 	// MPropertyFriendlyName "test direction"
 	// MVectorIsCoordinate
-	Vector m_vecTestDir; // 0x1b8	
+	Vector m_vecTestDir; // 0x1c0	
 	// MPropertyFriendlyName "cull normal"
 	// MVectorIsCoordinate
-	Vector m_vecTestNormal; // 0x1c4	
+	Vector m_vecTestNormal; // 0x1cc	
 	// MPropertyFriendlyName "cull on miss"
-	bool m_bCullOnMiss; // 0x1d0	
+	bool m_bCullOnMiss; // 0x1d8	
 	// MPropertyFriendlyName "stick instead of cull"
-	bool m_bStickInsteadOfCull; // 0x1d1	
+	bool m_bStickInsteadOfCull; // 0x1d9	
 	// MPropertyFriendlyName "ray trace environment name"
-	char m_RtEnvName[128]; // 0x1d2	
+	char m_RtEnvName[128]; // 0x1da	
 private:
-	[[maybe_unused]] uint8_t __pad0252[0x2]; // 0x252
+	[[maybe_unused]] uint8_t __pad025a[0x2]; // 0x25a
 public:
 	// MPropertyFriendlyName "ray trace environment cp"
-	int32_t m_nRTEnvCP; // 0x254	
+	int32_t m_nRTEnvCP; // 0x25c	
 	// MPropertyFriendlyName "rt env control point component"
 	// MPropertyAttributeChoiceName "vector_component"
-	int32_t m_nComponent; // 0x258	
+	int32_t m_nComponent; // 0x260	
 };
 

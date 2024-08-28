@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x860
+// Size: 0x868
 // Has VTable
 class CItemExplosiveBarrel : public CCitadelProjectile
 {

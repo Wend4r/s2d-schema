@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xba8
+// Size: 0xbb0
 // Has VTable
 class CCitadel_UtilityUpgrade_HealthNova : public CCitadel_Item
 {

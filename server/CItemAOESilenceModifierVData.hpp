@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x610
+// Size: 0x618
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CItemAOESilenceModifierVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_strSilenceTargetSound; // 0x5f0	
+	CSoundEventName m_strSilenceTargetSound; // 0x5f8	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SilenceModifier; // 0x600	
+	CEmbeddedSubclass< CCitadelModifier > m_SilenceModifier; // 0x608	
 };
 

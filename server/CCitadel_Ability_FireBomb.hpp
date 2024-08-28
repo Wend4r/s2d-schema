@@ -3,21 +3,24 @@
 #include <cstdint>
 
 struct CCitadelAutoScaledTime;
+struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc20
+// Size: 0xc28
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAutoScaledTime m_flDetonateTime"
-// MNetworkVarNames "bool m_bIsCasting"
+// MNetworkVarNames "GameTime_t m_flStartTime"
 class CCitadel_Ability_FireBomb : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0aa8[0x158]; // 0xaa8
+	[[maybe_unused]] uint8_t __pad0ab0[0x158]; // 0xab0
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flDetonateTime; // 0xc00	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	CCitadelAutoScaledTime m_flDetonateTime; // 0xc08	
 	// MNetworkEnable
-	bool m_bIsCasting; // 0xc18	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flStartTime; // 0xc20	
 };
 

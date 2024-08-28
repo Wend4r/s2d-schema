@@ -17,7 +17,7 @@ public:
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x5bd8	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x5bd0	
 private:
 	[[maybe_unused]] uint8_t __pad5dd8[0x4]; // 0x5dd8
 public:

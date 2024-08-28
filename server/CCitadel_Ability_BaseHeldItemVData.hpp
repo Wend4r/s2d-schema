@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15c0
+// Size: 0x15c8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Ability_BaseHeldItemVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_ItemModel; // 0x14e0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_ItemModel; // 0x14e8	
 };
 

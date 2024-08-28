@@ -79,6 +79,6 @@ private:
 public:
 	float m_flWindAngleVariation; // 0x88	
 	float m_flWindSpeedVariation; // 0x8c	
-	CEntityIndex m_iEntIndex; // 0x90	
+	CHandle< C_BaseEntity > m_hEntOwner; // 0x90	
 };
 

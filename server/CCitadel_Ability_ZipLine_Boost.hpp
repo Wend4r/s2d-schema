@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xaa8
+// Size: 0xab0
 // Has VTable
 class CCitadel_Ability_ZipLine_Boost : public CCitadelBaseAbility
 {

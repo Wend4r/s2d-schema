@@ -5,7 +5,7 @@
 struct CParticleCollectionVecInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x830
+// Size: 0x858
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,23 +13,23 @@ class C_OP_SetControlPointToCPVelocity : public CParticleFunctionPreEmission
 {
 public:
 	// MPropertyFriendlyName "control point input"
-	int32_t m_nCPInput; // 0x1c0	
+	int32_t m_nCPInput; // 0x1c8	
 	// MPropertyFriendlyName "control point number to set velocity"
-	int32_t m_nCPOutputVel; // 0x1c4	
+	int32_t m_nCPOutputVel; // 0x1cc	
 	// MPropertyFriendlyName "normalize output"
-	bool m_bNormalize; // 0x1c8	
+	bool m_bNormalize; // 0x1d0	
 private:
-	[[maybe_unused]] uint8_t __pad01c9[0x3]; // 0x1c9
+	[[maybe_unused]] uint8_t __pad01d1[0x3]; // 0x1d1
 public:
 	// MPropertyFriendlyName "control point number to set magnitude"
-	int32_t m_nCPOutputMag; // 0x1cc	
+	int32_t m_nCPOutputMag; // 0x1d4	
 	// MPropertyFriendlyName "control point field for magnitude"
 	// MPropertyAttributeChoiceName "vector_component"
-	int32_t m_nCPField; // 0x1d0	
+	int32_t m_nCPField; // 0x1d8	
 private:
-	[[maybe_unused]] uint8_t __pad01d4[0x4]; // 0x1d4
+	[[maybe_unused]] uint8_t __pad01dc[0x4]; // 0x1dc
 public:
 	// MPropertyFriendlyName "comparison velocity"
-	CParticleCollectionVecInput m_vecComparisonVelocity; // 0x1d8	
+	CParticleCollectionVecInput m_vecComparisonVelocity; // 0x1e0	
 };
 

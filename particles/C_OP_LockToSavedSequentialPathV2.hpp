@@ -14,13 +14,13 @@ class C_OP_LockToSavedSequentialPathV2 : public CParticleFunctionOperator
 {
 public:
 	// MPropertyFriendlyName "start fade time"
-	float m_flFadeStart; // 0x1b8	
+	float m_flFadeStart; // 0x1c0	
 	// MPropertyFriendlyName "end fade time"
-	float m_flFadeEnd; // 0x1bc	
+	float m_flFadeEnd; // 0x1c4	
 	// MPropertyFriendlyName "Use sequential CP pairs between start and end point"
-	bool m_bCPPairs; // 0x1c0	
+	bool m_bCPPairs; // 0x1c8	
 private:
-	[[maybe_unused]] uint8_t __pad01c1[0xf]; // 0x1c1
+	[[maybe_unused]] uint8_t __pad01c9[0x7]; // 0x1c9
 public:
 	CPathParameters m_PathParams; // 0x1d0	
 };

@@ -12,7 +12,7 @@ struct AdditionalAbilities_t;
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x14e0
+// Size: 0x14e8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -64,105 +64,108 @@ private:
 	[[maybe_unused]] uint8_t __pad0081[0x3]; // 0x81
 public:
 	CBitVecEnum< EModifierState > m_bitsInterruptingStates; // 0x84	
-	IncompatibleFilter_t m_IncompatibleFilter; // 0x98	
-	CITADEL_UNIT_TARGET_TYPE m_nAbilityTargetTypes; // 0xa8	
-	CITADEL_UNIT_TARGET_FLAGS m_nAbilityTargetFlags; // 0xac	
-	// MPropertyDescription "During post-cast, what modifier states are set."
-	CBitVecEnum< EModifierState > m_bitsPostCastEnabledStateMask; // 0xb0	
-	// MPropertyDescription "This ability provides these types of ability target effects."
-	ECitadelTargetAbilityEffects m_TargetAbilityEffectsToApply; // 0xc4	
-	bool m_bShowTargetingPreviewWhileChanneling; // 0xc8	
-	bool m_bShowTargetingPreviewWhileCasting; // 0xc9	
 private:
-	[[maybe_unused]] uint8_t __pad00ca[0x6]; // 0xca
+	[[maybe_unused]] uint8_t __pad009c[0x4]; // 0x9c
+public:
+	IncompatibleFilter_t m_IncompatibleFilter; // 0xa0	
+	CITADEL_UNIT_TARGET_TYPE m_nAbilityTargetTypes; // 0xb0	
+	CITADEL_UNIT_TARGET_FLAGS m_nAbilityTargetFlags; // 0xb4	
+	// MPropertyDescription "During post-cast, what modifier states are set."
+	CBitVecEnum< EModifierState > m_bitsPostCastEnabledStateMask; // 0xb8	
+	// MPropertyDescription "This ability provides these types of ability target effects."
+	ECitadelTargetAbilityEffects m_TargetAbilityEffectsToApply; // 0xd0	
+	bool m_bShowTargetingPreviewWhileChanneling; // 0xd4	
+	bool m_bShowTargetingPreviewWhileCasting; // 0xd5	
+private:
+	[[maybe_unused]] uint8_t __pad00d6[0x2]; // 0xd6
 public:
 	// MPropertyStartGroup
 	// MPropertyFriendlyName "Weapon Info"
-	CCitadelWeaponInfo m_WeaponInfo; // 0xd0	
+	CCitadelWeaponInfo m_WeaponInfo; // 0xd8	
 	// MPropertyFriendlyName "Projectile Info"
-	ProjectileInfo_t m_projectileInfo; // 0x728	
+	ProjectileInfo_t m_projectileInfo; // 0x730	
 	// MPropertyFriendlyName "Deployment Info"
-	DeploymentInfo_t m_deploymentInfo; // 0xa98	
+	DeploymentInfo_t m_deploymentInfo; // 0xaa0	
 	// MPropertyStartGroup
-	CUtlOrderedMap< CUtlString, CitadelAbilityProperty_t > m_mapAbilityProperties; // 0xc78	
-	CUtlVector< CSubclassName< 4 > > m_vecDependentAbilities; // 0xca0	
-	CUtlVector< AbilityUpgrade_t > m_vecAbilityUpgrades; // 0xcb8	
+	CUtlOrderedMap< CUtlString, CitadelAbilityProperty_t > m_mapAbilityProperties; // 0xc80	
+	CUtlVector< CSubclassName< 4 > > m_vecDependentAbilities; // 0xca8	
+	CUtlVector< AbilityUpgrade_t > m_vecAbilityUpgrades; // 0xcc0	
 private:
-	[[maybe_unused]] uint8_t __pad0cd0[0x20]; // 0xcd0
+	[[maybe_unused]] uint8_t __pad0cd8[0x20]; // 0xcd8
 public:
 	// MPropertyStartGroup "AnimGraph"
 	// MPropertyLeafSuggestionProviderFn
-	CGlobalSymbol m_strCastAnimGraphParam; // 0xcf0	
+	CGlobalSymbol m_strCastAnimGraphParam; // 0xcf8	
 	// MPropertyDescription "If set, this will be the value passed to the animgraph when this ability is selected instead of the ability name."
-	CUtlString m_strSelectionNameOverride; // 0xcf8	
-	CUtlString m_strCastAnimSequenceName; // 0xd00	
+	CUtlString m_strSelectionNameOverride; // 0xd00	
+	CUtlString m_strCastAnimSequenceName; // 0xd08	
 	// MPropertyStartGroup "UI"
 	// MPropertySuppressExpr "m_bIsSignatureAbility == false"
-	AbilityTooltipDetails_t m_AbilityTooltipDetails; // 0xd08	
-	CUtlString m_strCSSClass; // 0xd38	
-	CPanoramaImageName m_strAbilityImage; // 0xd40	
-	CUtlString m_strMoviePreviewPath; // 0xd50	
-	CitadelAbilityHUDPanel_t m_HUDPanel; // 0xd58	
-	bool m_bShowInPassiveItemsArea; // 0xd90	
-	bool m_bForceShowHUDPanel; // 0xd91	
+	AbilityTooltipDetails_t m_AbilityTooltipDetails; // 0xd10	
+	CUtlString m_strCSSClass; // 0xd40	
+	CPanoramaImageName m_strAbilityImage; // 0xd48	
+	CUtlString m_strMoviePreviewPath; // 0xd58	
+	CitadelAbilityHUDPanel_t m_HUDPanel; // 0xd60	
+	bool m_bShowInPassiveItemsArea; // 0xd98	
+	bool m_bForceShowHUDPanel; // 0xd99	
 private:
-	[[maybe_unused]] uint8_t __pad0d92[0x6]; // 0xd92
+	[[maybe_unused]] uint8_t __pad0d9a[0x6]; // 0xd9a
 public:
 	// MPropertyFriendlyName "Additional Abilities"
-	AdditionalAbilities_t m_additionalAbilities; // 0xd98	
-	CUtlString m_strCancelAbilityKey; // 0xdb8	
-	CUtlString m_strSecondaryStatName; // 0xdc0	
+	AdditionalAbilities_t m_additionalAbilities; // 0xda0	
+	CUtlString m_strCancelAbilityKey; // 0xdc0	
+	CUtlString m_strSecondaryStatName; // 0xdc8	
 	// MPropertyStartGroup "Camera"
 	// MPropertyDescription "Camera sequence that plays when casting starts and stops when casting completes, unless the bool below is un-checked"
-	CitadelCameraOperationsSequence_t m_cameraSequenceCastStart; // 0xdc8	
+	CitadelCameraOperationsSequence_t m_cameraSequenceCastStart; // 0xdd0	
 	// MPropertyDescription "By default, we stop the sequence from 'Sequence Cast Start' once the cast completes successfully.  Un-check this to allow it to continue past the cast."
-	bool m_bEndCastStartSequenceOnCastComplete; // 0xe48	
+	bool m_bEndCastStartSequenceOnCastComplete; // 0xe50	
 private:
-	[[maybe_unused]] uint8_t __pad0e49[0x7]; // 0xe49
+	[[maybe_unused]] uint8_t __pad0e51[0x7]; // 0xe51
 public:
 	// MPropertyDescription "Camera sequence that plays when casting completes."
-	CitadelCameraOperationsSequence_t m_cameraSequenceCastComplete; // 0xe50	
+	CitadelCameraOperationsSequence_t m_cameraSequenceCastComplete; // 0xe58	
 	// MPropertyDescription "Camera sequence that plays when channeling starts and is stopped when channeling ends, unless the bool below is un-checked."
-	CitadelCameraOperationsSequence_t m_cameraSequenceChannelStart; // 0xed0	
+	CitadelCameraOperationsSequence_t m_cameraSequenceChannelStart; // 0xed8	
 	// MPropertyDescription "By default, we stop the sequence from 'Sequence Channel Start' once the channel completes successfully.  Un-check this to allow it to continue past the channel duration."
-	bool m_bEndChannelStartSequenceOnChannelComplete; // 0xf50	
+	bool m_bEndChannelStartSequenceOnChannelComplete; // 0xf58	
 private:
-	[[maybe_unused]] uint8_t __pad0f51[0x3]; // 0xf51
+	[[maybe_unused]] uint8_t __pad0f59[0x3]; // 0xf59
 public:
-	float m_flCameraPreviewOffset; // 0xf54	
-	float m_flCameraPreviewDistance; // 0xf58	
-	float m_flCameraPreviewSpeed; // 0xf5c	
+	float m_flCameraPreviewOffset; // 0xf5c	
+	float m_flCameraPreviewDistance; // 0xf60	
+	float m_flCameraPreviewSpeed; // 0xf64	
 	// MPropertyStartGroup "Visuals"
 	// MPropertyDescription "Preview particle attaching to the caster before cast"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_previewParticle; // 0xf60	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_previewParticle; // 0xf68	
 	// MPropertyDescription "Preview path particle shows ability's custom path"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PreviewPathParticle; // 0x1040	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PreviewPathParticle; // 0x1048	
 	// MPropertyDescription "Particle attaching to the caster on cast event"
-	CUtlOrderedMap< AbilityCastEvent_t, CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > > m_mapCastEventParticles; // 0x1120	
+	CUtlOrderedMap< AbilityCastEvent_t, CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > > m_mapCastEventParticles; // 0x1128	
 	// MPropertyDescription "Trace particle when hit an enemy with targeted ability"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_skillshotHitParticle; // 0x1148	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_skillshotHitParticle; // 0x1150	
 	// MPropertyDescription "Trace particle when missed an enemy with targeted ability"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_skillshotMissParticle; // 0x1228	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_skillshotMissParticle; // 0x1230	
 	// MPropertyDescription "Preview particle on attaching to targets of this ability"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TargetingPreviewParticle; // 0x1308	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TargetingPreviewParticle; // 0x1310	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strSelectedSound; // 0x13e8	
-	CSoundEventName m_strUnselectedSound; // 0x13f8	
-	CSoundEventName m_strSelectedLoopSound; // 0x1408	
-	CSoundEventName m_strCastSound; // 0x1418	
-	CSoundEventName m_strChannelSound; // 0x1428	
-	CSoundEventName m_strChannelLoopSound; // 0x1438	
-	CSoundEventName m_strCastDelaySound; // 0x1448	
-	CSoundEventName m_strCastDelayLoopSound; // 0x1458	
+	CSoundEventName m_strSelectedSound; // 0x13f0	
+	CSoundEventName m_strUnselectedSound; // 0x1400	
+	CSoundEventName m_strSelectedLoopSound; // 0x1410	
+	CSoundEventName m_strCastSound; // 0x1420	
+	CSoundEventName m_strChannelSound; // 0x1430	
+	CSoundEventName m_strChannelLoopSound; // 0x1440	
+	CSoundEventName m_strCastDelaySound; // 0x1450	
+	CSoundEventName m_strCastDelayLoopSound; // 0x1460	
 	// MPropertyDescription "plays for local player attacker dealing damage with this ability"
-	CSoundEventName m_strHitConfirmationSound; // 0x1468	
+	CSoundEventName m_strHitConfirmationSound; // 0x1470	
 	// MPropertyDescription "plays for local player victim taking damage from this ability"
-	CSoundEventName m_strDamageTakenSound; // 0x1478	
-	CSoundEventName m_strAbilityOffCooldownSound; // 0x1488	
-	CSoundEventName m_strAbilityChargeReadySound; // 0x1498	
+	CSoundEventName m_strDamageTakenSound; // 0x1480	
+	CSoundEventName m_strAbilityOffCooldownSound; // 0x1490	
+	CSoundEventName m_strAbilityChargeReadySound; // 0x14a0	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_AutoChannelModifier; // 0x14a8	
-	CEmbeddedSubclass< CBaseModifier > m_AutoCastDelayModifier; // 0x14b8	
-	CUtlVector< CEmbeddedSubclass< CBaseModifier > > m_AutoIntrinsicModifiers; // 0x14c8	
+	CEmbeddedSubclass< CBaseModifier > m_AutoChannelModifier; // 0x14b0	
+	CEmbeddedSubclass< CBaseModifier > m_AutoCastDelayModifier; // 0x14c0	
+	CUtlVector< CEmbeddedSubclass< CBaseModifier > > m_AutoIntrinsicModifiers; // 0x14d0	
 };
 

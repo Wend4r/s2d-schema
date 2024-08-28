@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x12e0
+// Size: 0x12f8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -40,7 +40,10 @@ public:
 	// MPropertyStartGroup "Gun"
 	float m_flBurstDuration; // 0x12c8	
 	float m_flBurstCooldown; // 0x12cc	
+	// MPropertyStartGroup "Modifiers"
 	// MPropertyDescription "Backdoor Protection Modifier"
 	CEmbeddedSubclass< CCitadelModifier > m_BackdoorProtectionModifier; // 0x12d0	
+	CEmbeddedSubclass< CCitadelModifier > m_InvulModifier; // 0x12e0	
+	float m_flInvulModifierRange; // 0x12f0	
 };
 

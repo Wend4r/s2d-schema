@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xae8
+// Size: 0xaf0
 // Has VTable
 class CCitadel_Ability_Running_Decoy : public CCitadelBaseAbility
 {

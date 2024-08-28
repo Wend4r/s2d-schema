@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 54
+// Enumerator count: 55
 // Alignment: 4
 // Size: 0x4
 enum class ECitadelAbilityOrders : uint32_t
@@ -61,6 +61,7 @@ enum class ECitadelAbilityOrders : uint32_t
 	ECitadelAbilityOrder_DebugCommand_RequiresHeroTarget = 0x32,
 	ECitadelAbilityOrder_Invalid_NotEnoughAbilityResource = 0x33,
 	ECitadelAbilityOrder_Invalid_NotEnoughHeadRoom = 0x34,
-	ECitadelAbilityOrder_Max = 0x35,
+	ECitadelAbilityOrder_Invalid_NoDamageToClear = 0x35,
+	ECitadelAbilityOrder_Max = 0x36,
 };
 

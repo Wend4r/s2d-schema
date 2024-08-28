@@ -5,12 +5,10 @@
 struct CSimpleSimTimer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1c8
+// Size: 0x158
 // Has VTable
-class CAI_LocalNavigator : public CAI_Component
+class CAI_LocalNavigator : public CAI_LocalNavigatorBase
 {
-private:
-	[[maybe_unused]] uint8_t __pad0040[0x10]; // 0x40
 public:
 	bool m_bLastWasClear; // 0x50	
 private:

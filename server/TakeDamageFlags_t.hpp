@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 39
+// Enumerator count: 42
 // Alignment: 8
 // Size: 0x8
 enum class TakeDamageFlags_t : uint64_t
@@ -49,5 +49,8 @@ enum class TakeDamageFlags_t : uint64_t
 	DFLAG_DO_NOT_RICOCHET = 0x400000000,
 	DFLAG_NOT_IN_MIDBOSS_PIT = 0x800000000,
 	DFLAG_NOT_IN_TIER3_PIT = 0x1000000000,
+	DFLAG_DO_NOT_TRIGGER_DAMAGE_FLASH = 0x2000000000,
+	DFLAG_TOO_FAR = 0x4000000000,
+	DFLAG_DO_NOT_DISRUPT_HEALING_RITE = 0x8000000000,
 };
 

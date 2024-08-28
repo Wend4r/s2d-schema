@@ -6,7 +6,7 @@ struct CParticleCollectionVecInput;
 struct CParticleCollectionFloatInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0xa10
+// Size: 0xa40
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -14,31 +14,31 @@ class C_INIT_SetHitboxToModel : public CParticleFunctionInitializer
 {
 public:
 	// MPropertyFriendlyName "control point number"
-	int32_t m_nControlPointNumber; // 0x1c0	
+	int32_t m_nControlPointNumber; // 0x1c8	
 	// MPropertyFriendlyName "force to be inside model"
-	int32_t m_nForceInModel; // 0x1c4	
+	int32_t m_nForceInModel; // 0x1cc	
 	// MPropertyFriendlyName "even distribution"
-	bool m_bEvenDistribution; // 0x1c8	
+	bool m_bEvenDistribution; // 0x1d0	
 private:
-	[[maybe_unused]] uint8_t __pad01c9[0x3]; // 0x1c9
+	[[maybe_unused]] uint8_t __pad01d1[0x3]; // 0x1d1
 public:
 	// MPropertyFriendlyName "desired hitbox"
-	int32_t m_nDesiredHitbox; // 0x1cc	
+	int32_t m_nDesiredHitbox; // 0x1d4	
 	// MPropertyFriendlyName "model hitbox scale"
-	CParticleCollectionVecInput m_vecHitBoxScale; // 0x1d0	
+	CParticleCollectionVecInput m_vecHitBoxScale; // 0x1d8	
 	// MPropertyFriendlyName "direction bias"
 	// MVectorIsCoordinate
-	Vector m_vecDirectionBias; // 0x828	
+	Vector m_vecDirectionBias; // 0x850	
 	// MPropertyFriendlyName "maintain existing hitbox"
-	bool m_bMaintainHitbox; // 0x834	
+	bool m_bMaintainHitbox; // 0x85c	
 	// MPropertyFriendlyName "use bones instead of hitboxes"
-	bool m_bUseBones; // 0x835	
+	bool m_bUseBones; // 0x85d	
 	// MPropertyFriendlyName "hitbox set"
-	char m_HitboxSetName[128]; // 0x836	
+	char m_HitboxSetName[128]; // 0x85e	
 private:
-	[[maybe_unused]] uint8_t __pad08b6[0x2]; // 0x8b6
+	[[maybe_unused]] uint8_t __pad08de[0x2]; // 0x8de
 public:
 	// MPropertyFriendlyName "hitbox shell thickness"
-	CParticleCollectionFloatInput m_flShellSize; // 0x8b8	
+	CParticleCollectionFloatInput m_flShellSize; // 0x8e0	
 };
 

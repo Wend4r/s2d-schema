@@ -5,7 +5,7 @@
 struct CCitadelAutoScaledTime;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc70
+// Size: 0xc78
 // Has VTable
 // 
 // MNetworkVarNames "int m_nFastFireBulletsLeft"
@@ -13,17 +13,17 @@ struct CCitadelAutoScaledTime;
 class CAbility_Synth_Blitz : public CCitadelBaseAbility
 {
 public:
-	CUtlVector< ShotID_t > m_vecSpecialShots; // 0xaa8	
+	CUtlVector< ShotID_t > m_vecSpecialShots; // 0xab0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int32_t m_nFastFireBulletsLeft; // 0xac0	
+	int32_t m_nFastFireBulletsLeft; // 0xac8	
 private:
-	[[maybe_unused]] uint8_t __pad0ac4[0x4]; // 0xac4
+	[[maybe_unused]] uint8_t __pad0acc[0x4]; // 0xacc
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	CCitadelAutoScaledTime m_flBlitzEndTime; // 0xac8	
-	bool m_bCanApplyTechAmp; // 0xae0	
-	bool m_bCanLifesteal; // 0xae1	
+	CCitadelAutoScaledTime m_flBlitzEndTime; // 0xad0	
+	bool m_bCanApplyTechAmp; // 0xae8	
+	bool m_bCanLifesteal; // 0xae9	
 };
 

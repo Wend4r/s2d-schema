@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8b8
+// Size: 0x8e0
 // Has VTable
 class C_Citadel_Projectile_Viscous_GooGrenade : public C_CitadelProjectile
 {

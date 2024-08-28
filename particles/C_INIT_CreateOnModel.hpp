@@ -8,7 +8,7 @@ struct CParticleCollectionFloatInput;
 struct CParticleCollectionVecInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1288
+// Size: 0x12e0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,47 +16,47 @@ class C_INIT_CreateOnModel : public CParticleFunctionInitializer
 {
 public:
 	// MPropertyFriendlyName "input model"
-	CParticleModelInput m_modelInput; // 0x1c0	
+	CParticleModelInput m_modelInput; // 0x1c8	
 	// MPropertyFriendlyName "input transform for transforming local space bias vector"
 	// MParticleInputOptional
-	CParticleTransformInput m_transformInput; // 0x220	
+	CParticleTransformInput m_transformInput; // 0x228	
 	// MPropertyFriendlyName "force to be inside model"
-	int32_t m_nForceInModel; // 0x288	
+	int32_t m_nForceInModel; // 0x290	
 	// MPropertyFriendlyName "bias box distribution by volume"
-	bool m_bScaleToVolume; // 0x28c	
+	bool m_bScaleToVolume; // 0x294	
 	// MPropertyFriendlyName "even distribution within boxes"
-	bool m_bEvenDistribution; // 0x28d	
+	bool m_bEvenDistribution; // 0x295	
 private:
-	[[maybe_unused]] uint8_t __pad028e[0x2]; // 0x28e
+	[[maybe_unused]] uint8_t __pad0296[0x2]; // 0x296
 public:
 	// MPropertyFriendlyName "desired hitbox"
-	CParticleCollectionFloatInput m_nDesiredHitbox; // 0x290	
+	CParticleCollectionFloatInput m_nDesiredHitbox; // 0x298	
 	// MPropertyFriendlyName "Control Point Providing Hitbox index"
-	int32_t m_nHitboxValueFromControlPointIndex; // 0x3e8	
+	int32_t m_nHitboxValueFromControlPointIndex; // 0x3f8	
 private:
-	[[maybe_unused]] uint8_t __pad03ec[0x4]; // 0x3ec
+	[[maybe_unused]] uint8_t __pad03fc[0x4]; // 0x3fc
 public:
 	// MPropertyFriendlyName "hitbox scale"
-	CParticleCollectionVecInput m_vecHitBoxScale; // 0x3f0	
+	CParticleCollectionVecInput m_vecHitBoxScale; // 0x400	
 	// MPropertyFriendlyName "inherited velocity scale"
-	float m_flBoneVelocity; // 0xa48	
+	float m_flBoneVelocity; // 0xa78	
 	// MPropertyFriendlyName "maximum inherited velocity"
-	float m_flMaxBoneVelocity; // 0xa4c	
+	float m_flMaxBoneVelocity; // 0xa7c	
 	// MPropertyFriendlyName "direction bias"
 	// MVectorIsCoordinate
-	CParticleCollectionVecInput m_vecDirectionBias; // 0xa50	
+	CParticleCollectionVecInput m_vecDirectionBias; // 0xa80	
 	// MPropertyFriendlyName "hitbox set"
-	char m_HitboxSetName[128]; // 0x10a8	
+	char m_HitboxSetName[128]; // 0x10f8	
 	// MPropertyFriendlyName "bias in local space"
-	bool m_bLocalCoords; // 0x1128	
+	bool m_bLocalCoords; // 0x1178	
 	// MPropertyFriendlyName "use bones instead of hitboxes"
-	bool m_bUseBones; // 0x1129	
+	bool m_bUseBones; // 0x1179	
 	// MPropertyFriendlyName "Use renderable meshes instead of hitboxes"
-	bool m_bUseMesh; // 0x112a	
+	bool m_bUseMesh; // 0x117a	
 private:
-	[[maybe_unused]] uint8_t __pad112b[0x5]; // 0x112b
+	[[maybe_unused]] uint8_t __pad117b[0x5]; // 0x117b
 public:
 	// MPropertyFriendlyName "hitbox shell thickness"
-	CParticleCollectionFloatInput m_flShellSize; // 0x1130	
+	CParticleCollectionFloatInput m_flShellSize; // 0x1180	
 };
 

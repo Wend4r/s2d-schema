@@ -5,7 +5,7 @@
 struct CParticleCollectionFloatInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x160
+// Size: 0x168
 // 
 // MGetKV3ClassDefaults
 struct FloatInputMaterialVariable_t

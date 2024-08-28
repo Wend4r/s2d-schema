@@ -10,7 +10,7 @@ enum class EAbilityResourceType : uint32_t
 {
 	// MPropertyFriendlyName "None"
 	EResourceType_None = 0x0,
-	// MPropertyFriendlyName "Blood"
-	EResourceType_Blood = 0x1,
+	// MPropertyFriendlyName "Rage"
+	EResourceType_Rage = 0x1,
 };
 

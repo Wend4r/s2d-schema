@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xaa8
+// Size: 0xab0
 // Has VTable
 // Is Abstract
 // 
@@ -144,6 +144,7 @@ private:
 	[[maybe_unused]] uint8_t __pad065c[0x4]; // 0x65c
 public:
 	CUtlVector< CHandle< CBaseEntity > > m_vecEnemyHeroesDamaged; // 0x660	
+	float m_flPreviousEffectiveCooldown; // 0x678	
 	
 	// Datamap fields:
 	// int32_t slot; // 0x7fffffff

@@ -22,9 +22,9 @@ public:
 	// MPropertyAttributeEditor "TextBlock()"
 	// MPropertySortPriority "-100"
 	CUtlString m_sComment; // 0x20	
-	// MPropertyHideField
+	// MPropertyReadOnly
 	CUtlString m_group; // 0x28	
-	// MPropertyHideField
+	// MPropertyReadOnly
 	AnimParamID m_id; // 0x30	
 private:
 	[[maybe_unused]] uint8_t __pad0034[0x14]; // 0x34

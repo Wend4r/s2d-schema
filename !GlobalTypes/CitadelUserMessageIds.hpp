@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 34
+// Enumerator count: 41
 // Alignment: 4
 // Size: 0x4
 enum class CitadelUserMessageIds : uint32_t
@@ -42,5 +42,12 @@ enum class CitadelUserMessageIds : uint32_t
 	k_EUserMsg_StaminaDrained = 0x151,
 	k_EUserMsg_AbilityNotify = 0x152,
 	k_EUserMsg_GetDamageStatsResponse = 0x153,
+	k_EUserMsg_ParticipantStartSoundEvent = 0x154,
+	k_EUserMsg_ParticipantStopSoundEvent = 0x155,
+	k_EUserMsg_ParticipantStopSoundEventHash = 0x156,
+	k_EUserMsg_ParticipantSetSoundEventParams = 0x157,
+	k_EUserMsg_ParticipantSetLibraryStackFields = 0x158,
+	k_EUserMsg_CurrencyChanged = 0x159,
+	k_EUserMsg_GameOver = 0x15a,
 };
 

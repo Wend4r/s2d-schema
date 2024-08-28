@@ -6,7 +6,7 @@ struct CPerParticleVecInput;
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0xe70
+// Size: 0xeb8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -14,13 +14,13 @@ class C_OP_RemapCrossProductOfTwoVectorsToVector : public CParticleFunctionOpera
 {
 public:
 	// MPropertyFriendlyName "input vector 1"
-	CPerParticleVecInput m_InputVec1; // 0x1b8	
+	CPerParticleVecInput m_InputVec1; // 0x1c0	
 	// MPropertyFriendlyName "input vector 2"
-	CPerParticleVecInput m_InputVec2; // 0x810	
+	CPerParticleVecInput m_InputVec2; // 0x838	
 	// MPropertyFriendlyName "output field"
 	// MPropertyAttributeChoiceName "particlefield_vector"
-	ParticleAttributeIndex_t m_nFieldOutput; // 0xe68	
+	ParticleAttributeIndex_t m_nFieldOutput; // 0xeb0	
 	// MPropertyFriendlyName "normalize output"
-	bool m_bNormalize; // 0xe6c	
+	bool m_bNormalize; // 0xeb4	
 };
 

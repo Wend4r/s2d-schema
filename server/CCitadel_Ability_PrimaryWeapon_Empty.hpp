@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb58
+// Size: 0xb60
 // Has VTable
 class CCitadel_Ability_PrimaryWeapon_Empty : public CCitadel_Ability_PrimaryWeapon
 {

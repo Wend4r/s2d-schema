@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb30
+// Size: 0xb38
 // Has VTable
 // Is Abstract
 // 
@@ -18,27 +18,27 @@ struct GameTime_t;
 class CCitadel_Ability_Melee_Base : public CCitadelBaseAbility
 {
 public:
-	int32_t m_nHitNumber; // 0xaa8	
+	int32_t m_nHitNumber; // 0xab0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bUsingThisMelee; // 0xaac	
+	bool m_bUsingThisMelee; // 0xab4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bUsingMeleeTagActive; // 0xaad	
+	bool m_bUsingMeleeTagActive; // 0xab5	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bHitWithThisAttack; // 0xaae	
+	bool m_bHitWithThisAttack; // 0xab6	
 private:
-	[[maybe_unused]] uint8_t __pad0aaf[0x1]; // 0xaaf
+	[[maybe_unused]] uint8_t __pad0ab7[0x1]; // 0xab7
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flLastActivateTime; // 0xab0	
+	GameTime_t m_flLastActivateTime; // 0xab8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextAttackAllowedTime; // 0xab4	
+	GameTime_t m_flNextAttackAllowedTime; // 0xabc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flAttackTriggeredTime; // 0xab8	
+	GameTime_t m_flAttackTriggeredTime; // 0xac0	
 };
 

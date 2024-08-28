@@ -13,6 +13,8 @@
 // MNetworkVarNames "int16 m_nRopesParity"
 // MNetworkVarNames "bool m_bCornerNode"
 // MNetworkVarNames "bool m_bCapturable"
+// MNetworkVarNames "bool m_bAlwaysUsable"
+// MNetworkVarNames "bool m_bOneWay"
 // MNetworkVarNames "bool m_bDisableZippingToByPlayers"
 // MNetworkVarNames "EHANDLE m_hGuardingBoss"
 // MNetworkVarNames "float m_flRopeRadius"
@@ -36,9 +38,13 @@ public:
 	// MNetworkEnable
 	bool m_bCapturable; // 0x86f	
 	// MNetworkEnable
-	bool m_bDisableZippingToByPlayers; // 0x870	
+	bool m_bAlwaysUsable; // 0x870	
+	// MNetworkEnable
+	bool m_bOneWay; // 0x871	
+	// MNetworkEnable
+	bool m_bDisableZippingToByPlayers; // 0x872	
 private:
-	[[maybe_unused]] uint8_t __pad0871[0x3]; // 0x871
+	[[maybe_unused]] uint8_t __pad0873[0x1]; // 0x873
 public:
 	// MNetworkEnable
 	CHandle< C_BaseEntity > m_hGuardingBoss; // 0x874	

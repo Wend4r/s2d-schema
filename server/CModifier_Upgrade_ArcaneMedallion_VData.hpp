@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x630
+// Size: 0x638
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CModifier_Upgrade_ArcaneMedallion_VData : public CCitadel_Modifier_BaseEve
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_TriggeredModifier; // 0x620	
+	CEmbeddedSubclass< CBaseModifier > m_TriggeredModifier; // 0x628	
 };
 

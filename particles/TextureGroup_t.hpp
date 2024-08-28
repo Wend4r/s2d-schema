@@ -6,7 +6,7 @@ struct CParticleCollectionRendererFloatInput;
 struct TextureControls_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0xb18
+// Size: 0xb58
 // 
 // MGetKV3ClassDefaults
 struct TextureGroup_t
@@ -43,6 +43,6 @@ public:
 	CParticleCollectionRendererFloatInput m_flTextureBlend; // 0x38	
 	// MPropertyFriendlyName "Texture Controls"
 	// MPropertySuppressExpr "( m_nTextureType == SPRITECARD_TEXTURE_NORMALMAP || m_nTextureType == SPRITECARD_TEXTURE_ANIMMOTIONVEC || m_nTextureType == SPRITECARD_TEXTURE_6POINT_XYZ_A || m_nTextureType == SPRITECARD_TEXTURE_6POINT_NEGXYZ_E )"
-	TextureControls_t m_TextureControls; // 0x190	
+	TextureControls_t m_TextureControls; // 0x198	
 };
 

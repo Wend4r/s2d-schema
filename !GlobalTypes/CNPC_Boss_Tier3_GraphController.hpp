@@ -4,12 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4a8
+// Size: 0x600
 // Has VTable
 class CNPC_Boss_Tier3_GraphController : public CAI_CitadelNPC_GraphController
 {
 public:
-	CAnimGraphParamRef< char* > m_pszActivity; // 0x488	
+	CAnimGraphParamRef< char* > m_pszActivity; // 0x5c0	
+	CAnimGraphTagOptionalRef m_sDeathExplode; // 0x5e8	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CNPC_Boss_Tier3_GraphController")->m_static_fields[0]->m_instance);};

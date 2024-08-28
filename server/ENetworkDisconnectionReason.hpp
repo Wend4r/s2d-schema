@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 118
+// Enumerator count: 119
 // Alignment: 4
 // Size: 0x4
 enum class ENetworkDisconnectionReason : uint32_t
@@ -126,5 +126,6 @@ enum class ENetworkDisconnectionReason : uint32_t
 	NETWORK_DISCONNECT_KICKED_SUICIDE = 0x9f,
 	NETWORK_DISCONNECT_KICKED_NOSTEAMLOGIN = 0xa0,
 	NETWORK_DISCONNECT_KICKED_NOSTEAMTICKET = 0xa1,
+	NETWORK_DISCONNECT_KICKED_INPUTAUTOMATION = 0xa2,
 };
 

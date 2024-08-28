@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x948
+// Size: 0x968
 // Has VTable
 class CProjectile_Perched_Predator : public CCitadelProjectile
 {
 public:
-	// No schema binary for binding
+	CUtlVector< CHandle< CBaseEntity > > m_vecHitEntities; // 0x800	
 };
 

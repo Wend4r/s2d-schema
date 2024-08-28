@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x730
+// Size: 0x738
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_CritShotVData : public CCitadel_Modifier_BaseBulletPreRo
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x710	
+	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x718	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_CritSound; // 0x720	
+	CSoundEventName m_CritSound; // 0x728	
 };
 

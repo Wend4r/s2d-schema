@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 35
+// Enumerator count: 36
 // Alignment: 4
 // Size: 0x4
 enum class PARTICLE_MESSAGE : uint32_t
@@ -43,5 +43,6 @@ enum class PARTICLE_MESSAGE : uint32_t
 	GAME_PARTICLE_MANAGER_EVENT_CREATE_PHYSICS_SIM = 0x20,
 	GAME_PARTICLE_MANAGER_EVENT_DESTROY_PHYSICS_SIM = 0x21,
 	GAME_PARTICLE_MANAGER_EVENT_SET_VDATA = 0x22,
+	GAME_PARTICLE_MANAGER_EVENT_SET_MATERIAL_OVERRIDE = 0x23,
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc8
+// Size: 0xbd0
 // Has VTable
 class CCitadel_Ability_Astro_Rifle : public CCitadelBaseAbility
 {

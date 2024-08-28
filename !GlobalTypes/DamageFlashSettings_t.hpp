@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 4
-// Size: 0x14
+// Size: 0x18
 // Has Trivial Destructor
 // 
 // MGetKV3ClassDefaults
@@ -15,6 +15,7 @@ public:
 	float m_flCoverage; // 0x4	
 	float m_flHardness; // 0x8	
 	float m_flBrightness; // 0xc	
-	Color m_Color; // 0x10	
+	float m_flBrightnessInLightSensitivityMode; // 0x10	
+	Color m_Color; // 0x14	
 };
 

@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x978
+// Size: 0xa50
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -60,6 +60,25 @@ struct GameTime_t;
 // MNetworkVarNames "Vector m_vPrecomputedOBBOrigin"
 // MNetworkVarNames "QAngle m_vPrecomputedOBBAngles"
 // MNetworkVarNames "Vector m_vPrecomputedOBBExtent"
+// MNetworkVarNames "int m_nPrecomputedSubFrusta"
+// MNetworkVarNames "Vector m_vPrecomputedOBBOrigin0"
+// MNetworkVarNames "QAngle m_vPrecomputedOBBAngles0"
+// MNetworkVarNames "Vector m_vPrecomputedOBBExtent0"
+// MNetworkVarNames "Vector m_vPrecomputedOBBOrigin1"
+// MNetworkVarNames "QAngle m_vPrecomputedOBBAngles1"
+// MNetworkVarNames "Vector m_vPrecomputedOBBExtent1"
+// MNetworkVarNames "Vector m_vPrecomputedOBBOrigin2"
+// MNetworkVarNames "QAngle m_vPrecomputedOBBAngles2"
+// MNetworkVarNames "Vector m_vPrecomputedOBBExtent2"
+// MNetworkVarNames "Vector m_vPrecomputedOBBOrigin3"
+// MNetworkVarNames "QAngle m_vPrecomputedOBBAngles3"
+// MNetworkVarNames "Vector m_vPrecomputedOBBExtent3"
+// MNetworkVarNames "Vector m_vPrecomputedOBBOrigin4"
+// MNetworkVarNames "QAngle m_vPrecomputedOBBAngles4"
+// MNetworkVarNames "Vector m_vPrecomputedOBBExtent4"
+// MNetworkVarNames "Vector m_vPrecomputedOBBOrigin5"
+// MNetworkVarNames "QAngle m_vPrecomputedOBBAngles5"
+// MNetworkVarNames "Vector m_vPrecomputedOBBExtent5"
 class CBarnLight : public CBaseModelEntity
 {
 public:
@@ -236,7 +255,64 @@ public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
 	Vector m_vPrecomputedOBBExtent; // 0x95c	
-	bool m_bPvsModifyEntity; // 0x968	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	int32_t m_nPrecomputedSubFrusta; // 0x968	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin0; // 0x96c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles0; // 0x978	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent0; // 0x984	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin1; // 0x990	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles1; // 0x99c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent1; // 0x9a8	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin2; // 0x9b4	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles2; // 0x9c0	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent2; // 0x9cc	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin3; // 0x9d8	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles3; // 0x9e4	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent3; // 0x9f0	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin4; // 0x9fc	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles4; // 0xa08	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent4; // 0xa14	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin5; // 0xa20	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles5; // 0xa2c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent5; // 0xa38	
+	bool m_bPvsModifyEntity; // 0xa44	
 	
 	// Datamap fields:
 	// void m_StyleEvent[0]; // 0x7d0

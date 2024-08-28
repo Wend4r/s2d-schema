@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x620
+// Size: 0x628
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_BeltFed_MagazineVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_SpinUpSound; // 0x5f0	
-	CSoundEventName m_SpinDownSound; // 0x600	
-	CSoundEventName m_SpinLoopSound; // 0x610	
+	CSoundEventName m_SpinUpSound; // 0x5f8	
+	CSoundEventName m_SpinDownSound; // 0x608	
+	CSoundEventName m_SpinLoopSound; // 0x618	
 };
 

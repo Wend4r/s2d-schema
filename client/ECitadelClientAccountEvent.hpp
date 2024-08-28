@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: client.dll (project 'client')
-// Enumerator count: 54
+// Enumerator count: 55
 // Alignment: 4
 // Size: 0x4
 enum class ECitadelClientAccountEvent : uint32_t
@@ -62,5 +62,6 @@ enum class ECitadelClientAccountEvent : uint32_t
 	k_eViewedGuidePage_30s = 0x34,
 	k_eViewedGuidePage_60s = 0x35,
 	k_eOpenedBookTest = 0x36,
+	k_eSandboxViaHeroPage = 0x37,
 };
 

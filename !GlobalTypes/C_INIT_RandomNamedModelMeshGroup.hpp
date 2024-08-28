@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1e8
+// Size: 0x1f0
 // Has VTable
 // 
 // MGetKV3ClassDefaults

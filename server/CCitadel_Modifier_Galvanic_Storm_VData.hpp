@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x810
+// Size: 0x818
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_Galvanic_Storm_VData : public CCitadel_Modifier_ChainLig
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_TechShieldModifier; // 0x800	
+	CEmbeddedSubclass< CCitadelModifier > m_TechShieldModifier; // 0x808	
 };
 

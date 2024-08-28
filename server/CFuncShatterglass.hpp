@@ -23,13 +23,12 @@ public:
 	bool m_bBreakSilent; // 0x7dc	
 	bool m_bBreakShardless; // 0x7dd	
 	bool m_bBroken; // 0x7de	
-	bool m_bHasRateLimitedShards; // 0x7df	
-	bool m_bGlassNavIgnore; // 0x7e0	
-	bool m_bGlassInFrame; // 0x7e1	
-	bool m_bStartBroken; // 0x7e2	
-	uint8_t m_iInitialDamageType; // 0x7e3	
+	bool m_bGlassNavIgnore; // 0x7df	
+	bool m_bGlassInFrame; // 0x7e0	
+	bool m_bStartBroken; // 0x7e1	
+	uint8_t m_iInitialDamageType; // 0x7e2	
 private:
-	[[maybe_unused]] uint8_t __pad07e4[0x4]; // 0x7e4
+	[[maybe_unused]] uint8_t __pad07e3[0x5]; // 0x7e3
 public:
 	CUtlSymbolLarge m_szDamagePositioningEntityName01; // 0x7e8	
 	CUtlSymbolLarge m_szDamagePositioningEntityName02; // 0x7f0	

@@ -7,7 +7,7 @@ struct CitadelStatsVitalityDisplay_t;
 struct CitadelStatsSpiritDisplay_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x98
+// Size: 0xa8
 // 
 // MGetKV3ClassDefaults
 struct CitadelStatsDisplay_t
@@ -16,10 +16,10 @@ public:
 	// MPropertyDescription "What information do we want to display for Weapon?"
 	CitadelStatsWeaponDisplay_t m_eWeaponStatsDisplay; // 0x0	
 	// MPropertyDescription "What information do we want to display for Vitality?"
-	// -> m_vecDisplayStats - 0x50
-	// -> m_vecOtherDisplayStats - 0x68
-	CitadelStatsVitalityDisplay_t m_eVitalityStatsDisplay; // 0x50	
+	// -> m_vecDisplayStats - 0x60
+	// -> m_vecOtherDisplayStats - 0x78
+	CitadelStatsVitalityDisplay_t m_eVitalityStatsDisplay; // 0x60	
 	// MPropertyDescription "What information do we want to display for Spirit?"
-	CitadelStatsSpiritDisplay_t m_eSpiritStatsDisplay; // 0x80	
+	CitadelStatsSpiritDisplay_t m_eSpiritStatsDisplay; // 0x90	
 };
 

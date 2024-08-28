@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbf8
+// Size: 0xc00
 // Has VTable
 class CCitadel_Ability_TrooperBossGrenade : public CCitadel_Ability_TrooperGrenade
 {

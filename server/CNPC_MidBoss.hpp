@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1660
+// Size: 0x1678
 // Has VTable
 class CNPC_MidBoss : public CAI_CitadelNPC
 {

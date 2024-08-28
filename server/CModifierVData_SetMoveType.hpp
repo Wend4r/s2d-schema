@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5f8
+// Size: 0x600
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CModifierVData_SetMoveType : public CCitadelModifierVData
 {
 public:
 	// MPropertyDescription "The move type to switch to.  Some move types will have weird behaviors when swapped to, ie: MOVETYPE_SYNC"
-	MoveType_t m_nMoveType; // 0x5f0	
+	MoveType_t m_nMoveType; // 0x5f8	
 };
 

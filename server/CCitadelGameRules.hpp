@@ -7,7 +7,7 @@ struct CountdownTimer;
 struct MatchID_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2720
+// Size: 0x2728
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFreezePeriod"
@@ -36,6 +36,8 @@ struct MatchID_t;
 // MNetworkVarNames "EHANDLE m_hCurrentHeroDrafterCombine"
 // MNetworkVarNames "bool m_bServerPaused"
 // MNetworkVarNames "int m_iPauseTeam"
+// MNetworkVarNames "int m_nMatchClockUpdateTick"
+// MNetworkVarNames "float m_flMatchClockAtLastUpdate"
 // MNetworkVarNames "bool m_bRequiresReportCardDismissal"
 // MNetworkVarNames "int m_eGGTeam"
 // MNetworkVarNames "GameTime_t m_flGGEndsAtTime"
@@ -142,39 +144,43 @@ private:
 public:
 	// MNetworkEnable
 	int32_t m_iPauseTeam; // 0x267c	
-	double m_flPauseTime; // 0x2680	
-	CPlayerSlot m_pausingPlayerId; // 0x2688	
-	CPlayerSlot m_unpausingPlayerId; // 0x268c	
-	float m_fPauseRawTime; // 0x2690	
-	float m_fPauseCurTime; // 0x2694	
-	float m_fUnpauseRawTime; // 0x2698	
-	float m_fUnpauseCurTime; // 0x269c	
+	// MNetworkEnable
+	int32_t m_nMatchClockUpdateTick; // 0x2680	
+	// MNetworkEnable
+	float m_flMatchClockAtLastUpdate; // 0x2684	
+	double m_flPauseTime; // 0x2688	
+	CPlayerSlot m_pausingPlayerId; // 0x2690	
+	CPlayerSlot m_unpausingPlayerId; // 0x2694	
+	float m_fPauseRawTime; // 0x2698	
+	float m_fPauseCurTime; // 0x269c	
+	float m_fUnpauseRawTime; // 0x26a0	
+	float m_fUnpauseCurTime; // 0x26a4	
 private:
-	[[maybe_unused]] uint8_t __pad26a0[0x28]; // 0x26a0
+	[[maybe_unused]] uint8_t __pad26a8[0x28]; // 0x26a8
 public:
 	// MNetworkEnable
-	bool m_bRequiresReportCardDismissal; // 0x26c8	
+	bool m_bRequiresReportCardDismissal; // 0x26d0	
 private:
-	[[maybe_unused]] uint8_t __pad26c9[0x3]; // 0x26c9
+	[[maybe_unused]] uint8_t __pad26d1[0x3]; // 0x26d1
 public:
-	GameTime_t m_flPreGameWaitEndTime; // 0x26cc	
-	GameTime_t m_flReportCardDismissalWaitStart; // 0x26d0	
-	int32_t m_nLastPreGameCount; // 0x26d4	
+	GameTime_t m_flPreGameWaitEndTime; // 0x26d4	
+	GameTime_t m_flReportCardDismissalWaitStart; // 0x26d8	
+	int32_t m_nLastPreGameCount; // 0x26dc	
 	// MNetworkEnable
-	int32_t m_eGGTeam; // 0x26d8	
+	int32_t m_eGGTeam; // 0x26e0	
 	// MNetworkEnable
-	GameTime_t m_flGGEndsAtTime; // 0x26dc	
+	GameTime_t m_flGGEndsAtTime; // 0x26e4	
 	// MNetworkEnable
-	MatchID_t m_unMatchID; // 0x26e0	
+	MatchID_t m_unMatchID; // 0x26e8	
 	// MNetworkEnable
-	int32_t m_nExperimentalGameplayState; // 0x26e8	
-	int32_t m_nPlayerDeathEventID; // 0x26ec	
-	int32_t m_nReplayChangedEvent; // 0x26f0	
-	int32_t m_nGameOverEvent; // 0x26f4	
+	int32_t m_nExperimentalGameplayState; // 0x26f0	
+	int32_t m_nPlayerDeathEventID; // 0x26f4	
+	int32_t m_nReplayChangedEvent; // 0x26f8	
+	int32_t m_nGameOverEvent; // 0x26fc	
 private:
-	[[maybe_unused]] uint8_t __pad26f8[0x20]; // 0x26f8
+	[[maybe_unused]] uint8_t __pad2700[0x20]; // 0x2700
 public:
 	// MNetworkEnable
-	GameTime_t m_flHeroDiedTime; // 0x2718	
+	GameTime_t m_flHeroDiedTime; // 0x2720	
 };
 

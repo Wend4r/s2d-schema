@@ -6,7 +6,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd40
+// Size: 0xd48
 // Has VTable
 // 
 // MNetworkVarNames "QAngle m_angFlyingAngles"
@@ -20,25 +20,25 @@ class CCitadel_Ability_Tengu_LightningCrash : public CCitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	QAngle m_angFlyingAngles; // 0xaa8	
+	QAngle m_angFlyingAngles; // 0xab0	
 private:
-	[[maybe_unused]] uint8_t __pad0ab4[0x270]; // 0xab4
+	[[maybe_unused]] uint8_t __pad0abc[0x270]; // 0xabc
 public:
 	// MNetworkEnable
-	GameTime_t m_flFlyingStartTime; // 0xd24	
+	GameTime_t m_flFlyingStartTime; // 0xd2c	
 	// MNetworkEnable
-	GameTime_t m_flFlyingEndTime; // 0xd28	
+	GameTime_t m_flFlyingEndTime; // 0xd30	
 	// MNetworkEnable
-	float m_flDiveStart; // 0xd2c	
+	float m_flDiveStart; // 0xd34	
 	// MNetworkEnable
-	float m_flFlyingSpeed; // 0xd30	
+	float m_flFlyingSpeed; // 0xd38	
 	// MNetworkEnable
-	bool m_bFlying; // 0xd34	
+	bool m_bFlying; // 0xd3c	
 	// MNetworkEnable
-	bool m_bDiving; // 0xd35	
+	bool m_bDiving; // 0xd3d	
 private:
-	[[maybe_unused]] uint8_t __pad0d36[0x2]; // 0xd36
+	[[maybe_unused]] uint8_t __pad0d3e[0x2]; // 0xd3e
 public:
-	ParticleIndex_t m_nTargetingParticleIndex; // 0xd38	
+	ParticleIndex_t m_nTargetingParticleIndex; // 0xd40	
 };
 

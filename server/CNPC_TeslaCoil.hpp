@@ -5,7 +5,7 @@
 struct CCitadelAbilityComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd08
+// Size: 0xd10
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
@@ -18,12 +18,12 @@ public:
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
 	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xaf0	
 private:
-	[[maybe_unused]] uint8_t __pad0cf0[0x4]; // 0xcf0
+	[[maybe_unused]] uint8_t __pad0cf8[0x4]; // 0xcf8
 public:
-	float m_flDeployTime; // 0xcf4	
+	float m_flDeployTime; // 0xcfc	
 	
 	// Datamap fields:
-	// float m_flLifeTime; // 0xcfc
-	// void m_flSpawnTime; // 0xcf8
+	// float m_flLifeTime; // 0xd04
+	// void m_flSpawnTime; // 0xd00
 };
 

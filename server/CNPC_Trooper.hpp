@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1620
+// Size: 0x1638
 // Has VTable
 // 
 // MNetworkVarNames "int m_iLane"
@@ -13,30 +13,30 @@
 class CNPC_Trooper : public CAI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1560[0x8]; // 0x1560
+	[[maybe_unused]] uint8_t __pad1578[0x8]; // 0x1578
 public:
 	// MNetworkEnable
-	int32_t m_iLane; // 0x1568	
-	int32_t m_iLaneSlot; // 0x156c	
+	int32_t m_iLane; // 0x1580	
+	int32_t m_iLaneSlot; // 0x1584	
 private:
-	[[maybe_unused]] uint8_t __pad1570[0x1c]; // 0x1570
+	[[maybe_unused]] uint8_t __pad1588[0x1c]; // 0x1588
 public:
-	CHandle< CInfoTrooperBossSpawn > m_hSpawnWaveController; // 0x158c	
-	CHandle< CBaseEntity > m_hTrooperSpawnPoint; // 0x1590	
+	CHandle< CInfoTrooperBossSpawn > m_hSpawnWaveController; // 0x15a4	
+	CHandle< CBaseEntity > m_hTrooperSpawnPoint; // 0x15a8	
 private:
-	[[maybe_unused]] uint8_t __pad1594[0x1c]; // 0x1594
+	[[maybe_unused]] uint8_t __pad15ac[0x1c]; // 0x15ac
 public:
-	CModifierHandleTyped< CCitadelModifier > m_hNearDeathModifier; // 0x15b0	
+	CModifierHandleTyped< CCitadelModifier > m_hNearDeathModifier; // 0x15c8	
 private:
-	[[maybe_unused]] uint8_t __pad15c8[0x8]; // 0x15c8
+	[[maybe_unused]] uint8_t __pad15e0[0x8]; // 0x15e0
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x15d0	
+	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x15e8	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
-	float m_flHealingChargeParticlePct; // 0x15d4	
+	float m_flHealingChargeParticlePct; // 0x15ec	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_TROOPER_MOVE_OUT(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[0]->m_instance);};
@@ -94,6 +94,6 @@ public:
 	static CUtlSymbolLarge &Get_TASK_TROOPER_DEPLOY_SHIELD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[52]->m_instance);};
 	
 	// Datamap fields:
-	// int32_t m_iCoverGroupID; // 0x14c0
+	// int32_t m_iCoverGroupID; // 0x14d8
 };
 

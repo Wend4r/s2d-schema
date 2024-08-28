@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 76
+// Enumerator count: 82
 // Alignment: 4
 // Size: 0x4
 enum class EStatsType : uint32_t
@@ -82,7 +82,13 @@ enum class EStatsType : uint32_t
 	EMeleeTravelDistanceScale = 0x47,
 	EAirMoveDistanceScale = 0x48,
 	ECritDamageReceivedScale = 0x49,
-	EStatsCount = 0x4a,
-	EStatsInvalid = 0x4a,
+	EWeaponFalloffMinRange = 0x4a,
+	EWeaponFalloffMaxRange = 0x4b,
+	EBulletSpeed = 0x4c,
+	EBulletSpeedIncrease = 0x4d,
+	EStaminaRegenIncrease = 0x4e,
+	EStaminaCooldown = 0x4f,
+	EStatsCount = 0x50,
+	EStatsInvalid = 0x50,
 };
 

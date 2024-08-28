@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1828
+// Size: 0x1830
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,17 +12,17 @@ class CCitadel_Ability_PrimaryWeapon_SlorkVData : public CCitadel_Ability_Primar
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HitParticle; // 0x1530	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_WeaponShapeParticle; // 0x1610	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_WeaponRangeAssistParticle; // 0x16f0	
-	int32_t m_nNumConePoints; // 0x17d0	
-	float m_flRoundPerSecond; // 0x17d4	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HitParticle; // 0x1538	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_WeaponShapeParticle; // 0x1618	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_WeaponRangeAssistParticle; // 0x16f8	
+	int32_t m_nNumConePoints; // 0x17d8	
+	float m_flRoundPerSecond; // 0x17dc	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x17d8	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x17e0	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_PoisonSprayerHitSound; // 0x17e8	
-	CSoundEventName m_WeaponLoopStartSound; // 0x17f8	
-	CSoundEventName m_WeaponLoopSound; // 0x1808	
-	CSoundEventName m_WeaponLoopEndSound; // 0x1818	
+	CSoundEventName m_PoisonSprayerHitSound; // 0x17f0	
+	CSoundEventName m_WeaponLoopStartSound; // 0x1800	
+	CSoundEventName m_WeaponLoopSound; // 0x1810	
+	CSoundEventName m_WeaponLoopEndSound; // 0x1820	
 };
 

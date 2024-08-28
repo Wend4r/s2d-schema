@@ -6,13 +6,15 @@ struct GlitchSettings_t;
 struct DamageReceivedSounds_t;
 struct HealingReceivedSounds_t;
 struct DamageIndicatorSounds_t;
+struct LaneDesc_t;
 struct DOFDesc_t;
 struct RejuvinatorParams_t;
 struct IdolParams_t;
+struct TeleporterParams_t;
 struct CRemapFloat;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x898
+// Size: 0xc58
 // 
 // MVDataRoot
 // MVDataSingleton
@@ -44,35 +46,37 @@ public:
 	CSoundEventName m_strExitCombatSound; // 0x198	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShoppingEffect; // 0x1a8	
 	LaneDesc_t m_LaneInfo[6]; // 0x288	
-	Color m_MinimapTeamRebelsColor; // 0x318	
-	Color m_MinimapTeamCombineColor; // 0x31c	
-	// -> m_strSkillTierName - 0x320
-	// -> m_NetWorth - 0x328
-	// -> m_DamageTaken - 0x32c
-	// -> m_BossDamage - 0x330
-	// -> m_PlayerDamage - 0x334
-	// -> m_LastHits - 0x338
-	// -> m_OrbsSecured - 0x33c
-	// -> m_OrbsDenied - 0x340
-	// -> m_AbilitiesUpgraded - 0x344
-	// -> m_ModsPurchased - 0x348
-	NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x320	
-	int32_t m_nItemPricePerTier[5]; // 0x3e0	
+	LaneDesc_t m_NoLaneZip; // 0x318	
+	Color m_MinimapTeamRebelsColor; // 0x330	
+	Color m_MinimapTeamCombineColor; // 0x334	
+	// -> m_strSkillTierName - 0x338
+	// -> m_NetWorth - 0x340
+	// -> m_DamageTaken - 0x344
+	// -> m_BossDamage - 0x348
+	// -> m_PlayerDamage - 0x34c
+	// -> m_LastHits - 0x350
+	// -> m_OrbsSecured - 0x354
+	// -> m_OrbsDenied - 0x358
+	// -> m_AbilitiesUpgraded - 0x35c
+	// -> m_ModsPurchased - 0x360
+	NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x338	
+	int32_t m_nItemPricePerTier[5]; // 0x3f8	
 private:
-	[[maybe_unused]] uint8_t __pad03f4[0x4]; // 0x3f4
+	[[maybe_unused]] uint8_t __pad040c[0x4]; // 0x40c
 public:
-	CUtlVector< CSubclassName< 4 > > m_HeroTestingTargetDummyUpgrades; // 0x3f8	
+	CUtlVector< CSubclassName< 4 > > m_HeroTestingTargetDummyUpgrades; // 0x410	
 private:
-	[[maybe_unused]] uint8_t __pad0410[0x58]; // 0x410
+	[[maybe_unused]] uint8_t __pad0428[0x58]; // 0x428
 public:
-	DOFDesc_t m_DefaultDOF; // 0x468	
-	RejuvinatorParams_t m_RejuvParams; // 0x478	
-	IdolParams_t m_IdolParams; // 0x498	
-	CUtlOrderedMap< EStatsType, CUtlString > m_mapStatTypeImages; // 0x828	
+	DOFDesc_t m_DefaultDOF; // 0x480	
+	RejuvinatorParams_t m_RejuvParams; // 0x490	
+	IdolParams_t m_IdolParams; // 0x4b0	
+	TeleporterParams_t m_TeleporterParams; // 0xa08	
+	CUtlOrderedMap< EStatsType, CUtlString > m_mapStatTypeImages; // 0xbe8	
 	// MPropertyDescription "Remap camera angle delta to aim spring strength"
-	CRemapFloat m_AimSpringStrength; // 0x850	
+	CRemapFloat m_AimSpringStrength; // 0xc10	
 	// MPropertyDescription "Remap camera angle delta to ability targeting spring strength"
-	CRemapFloat m_TargetingSpringStrength; // 0x860	
-	CUtlOrderedMap< EAbilityResourceType, HeroAbilityResourceDef_t > m_mapResourceTypes; // 0x870	
+	CRemapFloat m_TargetingSpringStrength; // 0xc20	
+	CUtlOrderedMap< EAbilityResourceType, HeroAbilityResourceDef_t > m_mapResourceTypes; // 0xc30	
 };
 

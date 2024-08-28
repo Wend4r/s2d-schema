@@ -8,7 +8,7 @@ struct CParticleCollectionFloatInput;
 struct CParticleCollectionVecInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0xad0
+// Size: 0xb08
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,21 +16,21 @@ class C_OP_LerpToInitialPosition : public CParticleFunctionOperator
 {
 public:
 	// MPropertyFriendlyName "control point number"
-	int32_t m_nControlPointNumber; // 0x1b8	
+	int32_t m_nControlPointNumber; // 0x1c0	
 private:
-	[[maybe_unused]] uint8_t __pad01bc[0x4]; // 0x1bc
+	[[maybe_unused]] uint8_t __pad01c4[0x4]; // 0x1c4
 public:
 	// MPropertyFriendlyName "Interpolation"
-	CPerParticleFloatInput m_flInterpolation; // 0x1c0	
+	CPerParticleFloatInput m_flInterpolation; // 0x1c8	
 	// MPropertyFriendlyName "position cache attribute"
 	// MPropertyAttributeChoiceName "particlefield_vector"
-	ParticleAttributeIndex_t m_nCacheField; // 0x318	
+	ParticleAttributeIndex_t m_nCacheField; // 0x328	
 private:
-	[[maybe_unused]] uint8_t __pad031c[0x4]; // 0x31c
+	[[maybe_unused]] uint8_t __pad032c[0x4]; // 0x32c
 public:
 	// MPropertyFriendlyName "scale"
-	CParticleCollectionFloatInput m_flScale; // 0x320	
+	CParticleCollectionFloatInput m_flScale; // 0x330	
 	// MPropertyFriendlyName "component scale"
-	CParticleCollectionVecInput m_vecScale; // 0x478	
+	CParticleCollectionVecInput m_vecScale; // 0x490	
 };
 

@@ -24,6 +24,5 @@ public:
 	int32_t m_nAttachMeshIdx; // 0x5c	
 	int32_t m_nAttachMeshDrawCallIdx; // 0x60	
 	bool m_bEnableSimulation; // 0x64	
-	bool m_bHasHairPositionOffsets; // 0x65	
 };
 

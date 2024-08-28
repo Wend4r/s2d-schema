@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc0
+// Size: 0xb8
 // Has VTable
 class CShatterGlassShard
 {
@@ -56,14 +56,7 @@ private:
 	[[maybe_unused]] uint8_t __pad0097[0x1]; // 0x97
 public:
 	GameTime_t m_flPhysicsEntitySpawnedAtTime; // 0x98	
-	bool m_bShatterRateLimited; // 0x9c	
-private:
-	[[maybe_unused]] uint8_t __pad009d[0x3]; // 0x9d
-public:
-	CHandle< CBaseEntity > m_hEntityHittingMe; // 0xa0	
-private:
-	[[maybe_unused]] uint8_t __pad00a4[0x4]; // 0xa4
-public:
-	CUtlVector< uint32 > m_vecNeighbors; // 0xa8	
+	CHandle< CBaseEntity > m_hEntityHittingMe; // 0x9c	
+	CUtlVector< uint32 > m_vecNeighbors; // 0xa0	
 };
 

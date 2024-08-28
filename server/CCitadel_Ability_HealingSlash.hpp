@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbe8
+// Size: 0xbf0
 // Has VTable
 class CCitadel_Ability_HealingSlash : public CCitadelBaseYamatoAbility
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb18
+// Size: 0xb20
 // Has VTable
 class CCitadel_Ability_ImmobilizeTrap : public CCitadelBaseAbility
 {

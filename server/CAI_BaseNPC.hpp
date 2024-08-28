@@ -17,7 +17,7 @@ struct CTakeDamageResult;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1010
+// Size: 0x1020
 // Has VTable
 // 
 // MNetworkIncludeByName "m_lifeState"
@@ -41,10 +41,11 @@ public:
 	CUtlVector< CHandle< CAI_BaseNPC > > m_vecSynchronizedSecondaryNPCs; // 0xaa0	
 	// MNetworkEnable
 	NPC_STATE m_NPCState; // 0xab8	
-	NPC_STATE m_IdealNPCState; // 0xabc	
-	GameTime_t m_flLastStateChangeTime; // 0xac0	
+	NPC_STATE m_nPreModifierNPCState; // 0xabc	
+	NPC_STATE m_IdealNPCState; // 0xac0	
+	GameTime_t m_flLastStateChangeTime; // 0xac4	
 private:
-	[[maybe_unused]] uint8_t __pad0ac4[0xc]; // 0xac4
+	[[maybe_unused]] uint8_t __pad0ac8[0x8]; // 0xac8
 public:
 	CAI_ScheduleBits m_Conditions; // 0xad0	
 	CAI_ScheduleBits m_NonGatherConditions; // 0xaf4	
@@ -86,9 +87,8 @@ public:
 	float m_flGroundSpeed; // 0xba0	
 	GameTime_t m_flMoveWaitFinished; // 0xba4	
 	CHandle< CBaseEntity > m_hOpeningDoor; // 0xba8	
-	bool m_bUseAltNpcAvoid; // 0xbac	
 private:
-	[[maybe_unused]] uint8_t __pad0bad[0x3]; // 0xbad
+	[[maybe_unused]] uint8_t __pad0bac[0x4]; // 0xbac
 public:
 	CUnreachableTargetList m_UnreachableTargets; // 0xbb0	
 	CHandle< CBaseEntity > m_hPathObstructor; // 0xbd0	
@@ -167,9 +167,9 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0ff4[0x4]; // 0xff4
 public:
-	CUtlSymbolLarge m_iTaskRunDuringThink; // 0xff8	
-	CUtlSymbolLarge m_iScheduleRunDuringThink; // 0x1000	
-	int32_t m_nDebugCurIndex; // 0x1008	
+	CUtlVector< TaskThinkTime_t > m_vecTaskThinkTime; // 0xff8	
+	CUtlSymbolLarge m_iScheduleRunDuringThink; // 0x1010	
+	int32_t m_nDebugCurIndex; // 0x1018	
 	struct 
 	{
 		uint8_t m_bInvokingBehaviorIsValidEnemy: 1; 		

@@ -21,7 +21,7 @@ public:
 	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0x200	
 	float m_flSightRangePlayers; // 0x228	
 	float m_flSightRangeNPCs; // 0x22c	
-	CUtlString m_MeleeAnimName; // 0x230	
+	CGlobalSymbol m_MeleeAnimName; // 0x230	
 	float m_flMeleeAttemptRange; // 0x238	
 	float m_flMeleeHitRange; // 0x23c	
 	float m_flMaxHealthBarDrawDistance; // 0x240	

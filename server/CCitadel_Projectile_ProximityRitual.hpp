@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7f8
+// Size: 0x800
 // Has VTable
 class CCitadel_Projectile_ProximityRitual : public CCitadelProjectile
 {

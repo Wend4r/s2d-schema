@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xb08
 // Has VTable
 class CCitadel_ArmorUpgrade_Stimpak : public CCitadel_Item
 {

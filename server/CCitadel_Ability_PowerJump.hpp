@@ -5,15 +5,15 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb58
+// Size: 0xb60
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bAirRaiding"
 class CCitadel_Ability_PowerJump : public CCitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_nTargetingParticleIndex; // 0xaa8	
+	ParticleIndex_t m_nTargetingParticleIndex; // 0xab0	
 	// MNetworkEnable
-	bool m_bAirRaiding; // 0xaac	
+	bool m_bAirRaiding; // 0xab4	
 };
 

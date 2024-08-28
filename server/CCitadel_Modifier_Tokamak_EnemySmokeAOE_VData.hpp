@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x630
+// Size: 0x638
 // Has VTable
 // 
 // MGetKV3ClassDefaults

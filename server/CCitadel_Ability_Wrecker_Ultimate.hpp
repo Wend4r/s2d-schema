@@ -4,16 +4,16 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbb8
+// Size: 0xbc0
 // Has VTable
 // 
 // MNetworkVarNames "QAngle m_angBeamAngles"
 class CCitadel_Ability_Wrecker_Ultimate : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0aa8[0x20]; // 0xaa8
+	[[maybe_unused]] uint8_t __pad0ab0[0x20]; // 0xab0
 public:
 	// MNetworkEnable
-	QAngle m_angBeamAngles; // 0xac8	
+	QAngle m_angBeamAngles; // 0xad0	
 };
 

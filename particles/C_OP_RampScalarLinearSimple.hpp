@@ -13,13 +13,13 @@ class C_OP_RampScalarLinearSimple : public CParticleFunctionOperator
 {
 public:
 	// MPropertyFriendlyName "ramp rate"
-	float m_Rate; // 0x1b8	
+	float m_Rate; // 0x1c0	
 	// MPropertyFriendlyName "start time"
-	float m_flStartTime; // 0x1bc	
+	float m_flStartTime; // 0x1c4	
 	// MPropertyFriendlyName "end time"
-	float m_flEndTime; // 0x1c0	
+	float m_flEndTime; // 0x1c8	
 private:
-	[[maybe_unused]] uint8_t __pad01c4[0x2c]; // 0x1c4
+	[[maybe_unused]] uint8_t __pad01cc[0x24]; // 0x1cc
 public:
 	// MPropertyFriendlyName "ramp field"
 	// MPropertyAttributeChoiceName "particlefield_scalar"

@@ -5,8 +5,8 @@
 struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
-// Alignment: 8
-// Size: 0x838
+// Alignment: 16
+// Size: 0x860
 // Has VTable
 class CFuncMover : public CBaseModelEntity
 {
@@ -41,28 +41,36 @@ public:
 	CHandle< CMoverPathNode > m_hStopAtNode; // 0x7a4	
 	float m_flPathLocationToBeginStop; // 0x7a8	
 	bool m_bMatchPathNodeUp; // 0x7ac	
-	bool m_bFacePlayer; // 0x7ad	
+	bool m_bMatchPathNodeOrientation; // 0x7ad	
+	bool m_bFacePlayer; // 0x7ae	
 private:
-	[[maybe_unused]] uint8_t __pad07ae[0x2]; // 0x7ae
+	[[maybe_unused]] uint8_t __pad07af[0x1]; // 0x7af
 public:
 	GameTime_t m_flTimeStartRoll; // 0x7b0	
-	Vector m_vOriginalUp; // 0x7b4	
-	float m_flTimeToRollToNewUp; // 0x7c0	
+	GameTime_t m_flTimeStartMatchNodeOrientation; // 0x7b4	
+	Vector m_vOriginalUp; // 0x7b8	
 private:
-	[[maybe_unused]] uint8_t __pad07c4[0x4]; // 0x7c4
+	[[maybe_unused]] uint8_t __pad07c4[0xc]; // 0x7c4
 public:
-	CUtlSymbolLarge m_iszStartForwardSound; // 0x7c8	
-	CUtlSymbolLarge m_iszLoopForwardSound; // 0x7d0	
-	CUtlSymbolLarge m_iszStopForwardSound; // 0x7d8	
-	CUtlSymbolLarge m_iszStartReverseSound; // 0x7e0	
-	CUtlSymbolLarge m_iszLoopReverseSound; // 0x7e8	
-	CUtlSymbolLarge m_iszStopReverseSound; // 0x7f0	
-	CUtlSymbolLarge m_iszArriveAtDestinationSound; // 0x7f8	
+	Quaternion m_qOriginalOrientation; // 0x7d0	
+	float m_flTimeToRollToNewUp; // 0x7e0	
+	float m_flTimeToMatchNodeOrientation; // 0x7e4	
+	float m_flDurationMatchNodeOrientationRan; // 0x7e8	
 private:
-	[[maybe_unused]] uint8_t __pad0800[0x8]; // 0x800
+	[[maybe_unused]] uint8_t __pad07ec[0x4]; // 0x7ec
 public:
-	CEntityIOOutput m_OnMovementEnd; // 0x808	
-	bool m_bStartAtEnd; // 0x830	
+	CUtlSymbolLarge m_iszStartForwardSound; // 0x7f0	
+	CUtlSymbolLarge m_iszLoopForwardSound; // 0x7f8	
+	CUtlSymbolLarge m_iszStopForwardSound; // 0x800	
+	CUtlSymbolLarge m_iszStartReverseSound; // 0x808	
+	CUtlSymbolLarge m_iszLoopReverseSound; // 0x810	
+	CUtlSymbolLarge m_iszStopReverseSound; // 0x818	
+	CUtlSymbolLarge m_iszArriveAtDestinationSound; // 0x820	
+private:
+	[[maybe_unused]] uint8_t __pad0828[0x8]; // 0x828
+public:
+	CEntityIOOutput m_OnMovementEnd; // 0x830	
+	bool m_bStartAtEnd; // 0x858	
 	
 	// Datamap fields:
 	// void InputStartForward; // 0x0

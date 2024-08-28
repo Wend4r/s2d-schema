@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7c8
+// Size: 0x7d0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -55,8 +55,11 @@ private:
 public:
 	float m_flKillerPlaneOffset; // 0x7b0	
 	float m_flKillerPlaneHorizontalDecayRate; // 0x7b4	
-	float m_flKillerPlaneHorizontalSpeed; // 0x7b8	
-	float m_flKillerPlaneVerticalSpeed; // 0x7bc	
-	float m_flKillerPlaneSpeedNoise; // 0x7c0	
+	float m_flKillerPlaneHorizontalSpeedX; // 0x7b8	
+	float m_flKillerPlaneHorizontalSpeedY; // 0x7bc	
+	float m_flKillerPlaneVerticalSpeed; // 0x7c0	
+	float m_flKillerPlaneSpeedNoise; // 0x7c4	
+	float m_flKillerPlaneLaunchOffset; // 0x7c8	
+	float m_flKillerPlaneLaunchDelay; // 0x7cc	
 };
 

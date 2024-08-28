@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb68
+// Size: 0xb70
 // Has VTable
 class CCitadel_Ability_Tengu_Urn : public CCitadelBaseAbility
 {
 public:
-	Vector m_vLaunchPosition; // 0xaa8	
-	QAngle m_qLaunchAngle; // 0xab4	
+	Vector m_vLaunchPosition; // 0xab0	
+	QAngle m_qLaunchAngle; // 0xabc	
 };
 

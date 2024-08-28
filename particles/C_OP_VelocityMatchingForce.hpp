@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1d0
+// Size: 0x1d8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,20 +12,20 @@ class C_OP_VelocityMatchingForce : public CParticleFunctionOperator
 {
 public:
 	// MPropertyFriendlyName "direction matching strength"
-	float m_flDirScale; // 0x1b8	
+	float m_flDirScale; // 0x1c0	
 	// MPropertyFriendlyName "speed matching strength"
-	float m_flSpdScale; // 0x1bc	
+	float m_flSpdScale; // 0x1c4	
 	// MPropertyFriendlyName "neighbor distance"
-	float m_flNeighborDistance; // 0x1c0	
+	float m_flNeighborDistance; // 0x1c8	
 	// MPropertyFriendlyName "facing strength falloff"
-	float m_flFacingStrength; // 0x1c4	
+	float m_flFacingStrength; // 0x1cc	
 	// MPropertyFriendlyName "use AABB"
 	// MPropertySuppressExpr "m_flNeighborDistance > 0"
-	bool m_bUseAABB; // 0x1c8	
+	bool m_bUseAABB; // 0x1d0	
 private:
-	[[maybe_unused]] uint8_t __pad01c9[0x3]; // 0x1c9
+	[[maybe_unused]] uint8_t __pad01d1[0x3]; // 0x1d1
 public:
 	// MPropertyFriendlyName "control point to broadcast speed and direction to"
-	int32_t m_nCPBroadcast; // 0x1cc	
+	int32_t m_nCPBroadcast; // 0x1d4	
 };
 

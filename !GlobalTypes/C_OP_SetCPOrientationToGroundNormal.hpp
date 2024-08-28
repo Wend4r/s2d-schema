@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x268
+// Size: 0x270
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,25 +12,25 @@ class C_OP_SetCPOrientationToGroundNormal : public CParticleFunctionOperator
 {
 public:
 	// MPropertyFriendlyName "interpolation rate"
-	float m_flInterpRate; // 0x1b8	
+	float m_flInterpRate; // 0x1c0	
 	// MPropertyFriendlyName "max trace length"
-	float m_flMaxTraceLength; // 0x1bc	
+	float m_flMaxTraceLength; // 0x1c4	
 	// MPropertyFriendlyName "CP movement tolerance"
-	float m_flTolerance; // 0x1c0	
+	float m_flTolerance; // 0x1c8	
 	// MPropertyFriendlyName "trace offset"
-	float m_flTraceOffset; // 0x1c4	
+	float m_flTraceOffset; // 0x1cc	
 	// MPropertyFriendlyName "collision group"
-	char m_CollisionGroupName[128]; // 0x1c8	
+	char m_CollisionGroupName[128]; // 0x1d0	
 	// MPropertyFriendlyName "Trace Set"
-	ParticleTraceSet_t m_nTraceSet; // 0x248	
+	ParticleTraceSet_t m_nTraceSet; // 0x250	
 	// MPropertyFriendlyName "CP to trace from"
-	int32_t m_nInputCP; // 0x24c	
+	int32_t m_nInputCP; // 0x254	
 	// MPropertyFriendlyName "CP to set"
-	int32_t m_nOutputCP; // 0x250	
+	int32_t m_nOutputCP; // 0x258	
 private:
-	[[maybe_unused]] uint8_t __pad0254[0xc]; // 0x254
+	[[maybe_unused]] uint8_t __pad025c[0xc]; // 0x25c
 public:
 	// MPropertyFriendlyName "include water"
-	bool m_bIncludeWater; // 0x260	
+	bool m_bIncludeWater; // 0x268	
 };
 

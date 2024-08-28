@@ -5,7 +5,7 @@
 struct AttackData_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1a50
+// Size: 0x1a58
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -17,5 +17,7 @@ public:
 	CEmbeddedSubclass< CCitadelModifier > m_UppercutModifier; // 0x1a20	
 	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x1a30	
 	CEmbeddedSubclass< CCitadelModifier > m_ClipModifier; // 0x1a40	
+	// MPropertyStartGroup "Gameplay"
+	float m_flMaxPitchUp; // 0x1a50	
 };
 

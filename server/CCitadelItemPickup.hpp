@@ -5,13 +5,12 @@
 struct CCitadelMinimapComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5bd8
+// Size: 0x5bd0
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
 // MNetworkVarNames "int32 m_eLootType"
 // MNetworkVarNames "int32 m_nCurrencyValue"
-// MNetworkVarNames "int32 m_nCurrencyType"
 // MNetworkVarNames "string_t m_iszModelName"
 // MNetworkVarNames "float m_flModelScale"
 // MNetworkVarNames "EHANDLE m_hTargetPlayer"
@@ -31,28 +30,23 @@ public:
 	// MNetworkEnable
 	int32_t m_nCurrencyValue; // 0xafc	
 	// MNetworkEnable
-	int32_t m_nCurrencyType; // 0xb00	
+	CUtlSymbolLarge m_iszModelName; // 0xb00	
+	// MNetworkEnable
+	float m_flModelScale; // 0xb08	
+	// MNetworkEnable
+	CHandle< CBaseEntity > m_hTargetPlayer; // 0xb0c	
+	// MNetworkEnable
+	float m_flFallRate; // 0xb10	
 private:
-	[[maybe_unused]] uint8_t __pad0b04[0x4]; // 0xb04
+	[[maybe_unused]] uint8_t __pad0b14[0xc]; // 0xb14
 public:
-	// MNetworkEnable
-	CUtlSymbolLarge m_iszModelName; // 0xb08	
-	// MNetworkEnable
-	float m_flModelScale; // 0xb10	
-	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetPlayer; // 0xb14	
-	// MNetworkEnable
-	float m_flFallRate; // 0xb18	
-private:
-	[[maybe_unused]] uint8_t __pad0b1c[0xc]; // 0xb1c
-public:
-	Vector m_vHomePosition; // 0xb28	
-	Vector m_vDropPosition; // 0xb34	
+	Vector m_vHomePosition; // 0xb20	
+	Vector m_vDropPosition; // 0xb2c	
 	
 	// Datamap fields:
-	// bool m_bRequireGroundForPickup; // 0xb20
+	// bool m_bRequireGroundForPickup; // 0xb18
 	// bool from_crate; // 0x7fffffff
-	// int32_t m_eObjectivePosition; // 0xb1c
-	// int32_t m_nKillingTeamNumber; // 0xb24
+	// int32_t m_eObjectivePosition; // 0xb14
+	// int32_t m_nKillingTeamNumber; // 0xb1c
 };
 

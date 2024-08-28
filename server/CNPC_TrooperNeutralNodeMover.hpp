@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1608
+// Size: 0x1638
 // Has VTable
 class CNPC_TrooperNeutralNodeMover : public CNPC_TrooperNeutral
 {

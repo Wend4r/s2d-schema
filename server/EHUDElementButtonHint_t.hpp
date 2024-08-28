@@ -13,6 +13,6 @@ enum class EHUDElementButtonHint_t : uint32_t
 	EButtonHint_DashKey = 0x2,
 	EButtonHint_CrouchKey = 0x3,
 	EButtonHint_Parry = 0x4,
-	EButtonHint_Jump = 0x5,
+	EButtonHint_Cancel = 0x5,
 };
 
