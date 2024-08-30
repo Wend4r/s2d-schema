@@ -5,11 +5,11 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x940
+// Size: 0x960
 // Has VTable
 class CTriggerRemove : public CBaseTrigger
 {
 public:
-	CEntityIOOutput m_OnRemove; // 0x918	
+	CEntityIOOutput m_OnRemove; // 0x938	
 };
 

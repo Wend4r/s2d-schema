@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x928
+// Size: 0x948
 // Has VTable
 class CCitadelSpeedBoostTrigger : public CTriggerModifier
 {

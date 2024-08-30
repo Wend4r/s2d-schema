@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4e8
+// Size: 0x508
 // Has VTable
 class CPathCornerCrash : public CPathCorner
 {

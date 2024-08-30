@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1e0
+// Size: 0x1f0
 // 
 // MGetKV3ClassDefaults
 struct TeleporterParams_t
@@ -14,5 +14,6 @@ public:
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EndEffect; // 0xe0	
 	CSoundEventName m_strEnterSound; // 0x1c0	
 	CSoundEventName m_strStartSound; // 0x1d0	
+	CSoundEventName m_strTeleportedSound; // 0x1e0	
 };
 

@@ -5,7 +5,7 @@
 struct CSkeletonInstance;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x470
+// Size: 0x490
 // Has VTable
 // 
 // MNetworkVarNames "CSkeletonInstance m_skeletonInstance"

@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x870
+// Size: 0x890
 // Has VTable
 // 
 // MNetworkIncludeByName "m_clrRender"
@@ -31,56 +31,56 @@ struct ParticleIndex_t;
 class C_Sun : public C_BaseModelEntity
 {
 public:
-	ParticleIndex_t m_fxSSSunFlareEffectIndex; // 0x810	
-	ParticleIndex_t m_fxSunFlareEffectIndex; // 0x814	
-	float m_fdistNormalize; // 0x818	
-	Vector m_vSunPos; // 0x81c	
+	ParticleIndex_t m_fxSSSunFlareEffectIndex; // 0x830	
+	ParticleIndex_t m_fxSunFlareEffectIndex; // 0x834	
+	float m_fdistNormalize; // 0x838	
+	Vector m_vSunPos; // 0x83c	
 	// MNetworkEnable
-	Vector m_vDirection; // 0x828	
+	Vector m_vDirection; // 0x848	
 private:
-	[[maybe_unused]] uint8_t __pad0834[0x4]; // 0x834
+	[[maybe_unused]] uint8_t __pad0854[0x4]; // 0x854
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszEffectName; // 0x838	
+	CUtlSymbolLarge m_iszEffectName; // 0x858	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszSSEffectName; // 0x840	
+	CUtlSymbolLarge m_iszSSEffectName; // 0x860	
 	// MNetworkEnable
-	Color m_clrOverlay; // 0x848	
+	Color m_clrOverlay; // 0x868	
 	// MNetworkEnable
-	bool m_bOn; // 0x84c	
+	bool m_bOn; // 0x86c	
 	// MNetworkEnable
-	bool m_bmaxColor; // 0x84d	
+	bool m_bmaxColor; // 0x86d	
 private:
-	[[maybe_unused]] uint8_t __pad084e[0x2]; // 0x84e
+	[[maybe_unused]] uint8_t __pad086e[0x2]; // 0x86e
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "10"
-	float m_flSize; // 0x850	
+	float m_flSize; // 0x870	
 	// MNetworkEnable
 	// MNetworkBitCount "10"
-	float m_flHazeScale; // 0x854	
+	float m_flHazeScale; // 0x874	
 	// MNetworkEnable
 	// MNetworkMinValue "-360.000000"
 	// MNetworkMaxValue "360.000000"
-	float m_flRotation; // 0x858	
+	float m_flRotation; // 0x878	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnHDRScaleChanged"
-	float m_flHDRColorScale; // 0x85c	
+	float m_flHDRColorScale; // 0x87c	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flAlphaHaze; // 0x860	
+	float m_flAlphaHaze; // 0x880	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flAlphaScale; // 0x864	
+	float m_flAlphaScale; // 0x884	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flAlphaHdr; // 0x868	
+	float m_flAlphaHdr; // 0x888	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
-	float m_flFarZScale; // 0x86c	
+	float m_flFarZScale; // 0x88c	
 };
 

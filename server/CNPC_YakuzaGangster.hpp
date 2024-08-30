@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1578
+// Size: 0x15a8
 // Has VTable
 class CNPC_YakuzaGangster : public CAI_CitadelNPC
 {

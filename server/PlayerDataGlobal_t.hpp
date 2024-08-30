@@ -40,6 +40,7 @@ struct HeroID_t;
 // MNetworkVarNames "bool m_bHasRebirth"
 // MNetworkVarNames "int32 m_iHeroDamage"
 // MNetworkVarNames "int32 m_iHeroHealing"
+// MNetworkVarNames "int32 m_iSelfHealing"
 // MNetworkVarNames "int32 m_iObjectiveDamage"
 // MNetworkVarNames "int32 m_nHeroAbilityUpgradeBits"
 // MNetworkVarNames "EntitySubclassID_t m_vecUpgrades"
@@ -127,14 +128,13 @@ public:
 	// MNetworkEnable
 	int32_t m_iHeroHealing; // 0x7c	
 	// MNetworkEnable
-	int32_t m_iObjectiveDamage; // 0x80	
+	int32_t m_iSelfHealing; // 0x80	
+	// MNetworkEnable
+	int32_t m_iObjectiveDamage; // 0x84	
 	// MNetworkEnable
 	// MNetworkUserGroup "Abilities"
 	// MNetworkChangeCallback "pdgAbilitiesChanged"
-	int32_t m_nHeroAbilityUpgradeBits[4]; // 0x84	
-private:
-	[[maybe_unused]] uint8_t __pad0094[0x4]; // 0x94
-public:
+	int32_t m_nHeroAbilityUpgradeBits[4]; // 0x88	
 	// MNetworkEnable
 	// MNetworkUserGroup "Abilities"
 	// MNetworkChangeCallback "pdgUpgradesChanged"

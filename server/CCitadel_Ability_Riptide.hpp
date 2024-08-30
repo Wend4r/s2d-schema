@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xba8
+// Size: 0xbd0
 // Has VTable
 class CCitadel_Ability_Riptide : public CCitadelBaseAbility
 {
 public:
-	CUtlVector< CHandle< CBaseEntity > > m_vTargets; // 0xab0	
+	CUtlVector< CHandle< CBaseEntity > > m_vTargets; // 0xad8	
 };
 

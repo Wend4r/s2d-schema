@@ -6,7 +6,7 @@ struct ParticleIndex_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd28
+// Size: 0xd50
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flCastTime"
@@ -17,27 +17,27 @@ struct GameTime_t;
 class CCitadel_UtilityUpgrade_RocketBooster : public CCitadel_UtilityUpgrade_RocketBoots
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b40[0x4]; // 0xb40
+	[[maybe_unused]] uint8_t __pad0b68[0x4]; // 0xb68
 public:
-	ParticleIndex_t m_nTargetingParticleIndex; // 0xb44	
+	ParticleIndex_t m_nTargetingParticleIndex; // 0xb6c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnCanSlamDownChanged"
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flCastTime; // 0xb48	
+	GameTime_t m_flCastTime; // 0xb70	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bCrashingDown; // 0xb4c	
+	bool m_bCrashingDown; // 0xb74	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bImpulseApplied; // 0xb4d	
+	bool m_bImpulseApplied; // 0xb75	
 private:
-	[[maybe_unused]] uint8_t __pad0b4e[0x2]; // 0xb4e
+	[[maybe_unused]] uint8_t __pad0b76[0x2]; // 0xb76
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecCrashPosition; // 0xb50	
+	Vector m_vecCrashPosition; // 0xb78	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecCrashDirection; // 0xb5c	
+	Vector m_vecCrashDirection; // 0xb84	
 };
 

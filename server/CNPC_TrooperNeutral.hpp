@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15e0
+// Size: 0x1610
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bShieldActive"
@@ -12,12 +12,12 @@
 class CNPC_TrooperNeutral : public CAI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1578[0x63]; // 0x1578
+	[[maybe_unused]] uint8_t __pad15a8[0x63]; // 0x15a8
 public:
 	// MNetworkEnable
-	bool m_bShieldActive; // 0x15db	
+	bool m_bShieldActive; // 0x160b	
 	// MNetworkEnable
-	bool m_bPlayingIdle; // 0x15dc	
+	bool m_bPlayingIdle; // 0x160c	
 	
 	// Static fields:
 	static CUtlSymbolLarge &Get_SCHED_TROOPERNEUTRAL_MOVE_TO_COVER(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperNeutral")->m_static_fields[0]->m_instance);};

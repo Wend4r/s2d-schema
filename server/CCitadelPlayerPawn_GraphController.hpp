@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x128
+// Size: 0x148
 // Has VTable
 class CCitadelPlayerPawn_GraphController : public CAnimGraphControllerBase
 {
@@ -17,6 +17,7 @@ public:
 	CAnimGraphTagRef m_sAnimClippedMovement; // 0xe0	
 	CAnimGraphTagRef m_sDisableGravity; // 0xf8	
 	CAnimGraphTagRef m_sDirectAirControl; // 0x110	
+	CAnimGraphParamOptionalRef< bool > m_bHardLanding; // 0x128	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadelPlayerPawn_GraphController")->m_static_fields[0]->m_instance);};

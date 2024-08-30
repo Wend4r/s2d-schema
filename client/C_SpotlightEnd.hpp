@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x820
+// Size: 0x840
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flLightScale"
@@ -13,8 +13,8 @@ class C_SpotlightEnd : public C_BaseModelEntity
 {
 public:
 	// MNetworkEnable
-	float m_flLightScale; // 0x810	
+	float m_flLightScale; // 0x830	
 	// MNetworkEnable
-	float m_Radius; // 0x814	
+	float m_Radius; // 0x834	
 };
 

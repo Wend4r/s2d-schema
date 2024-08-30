@@ -4,12 +4,12 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0xa80
+// Size: 0xaa0
 // Has VTable
 class CInWorldItemPanel : public C_PointClientUIWorldPanel
 {
 public:
-	CHandle< C_BaseEntity > m_hTrackedEntity; // 0xa70	
-	int32_t m_nTrackedEntity; // 0xa74	
+	CHandle< C_BaseEntity > m_hTrackedEntity; // 0xa90	
+	int32_t m_nTrackedEntity; // 0xa94	
 };
 

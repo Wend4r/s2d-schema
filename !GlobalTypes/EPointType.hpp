@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 7
+// Enumerator count: 8
 // Alignment: 4
 // Size: 0x4
 enum class EPointType : uint32_t
@@ -15,5 +15,6 @@ enum class EPointType : uint32_t
 	EPointType_FriendlyTrooper = 0x4,
 	EPointType_DamageZone = 0x5,
 	EPointType_MovingEnemyBot = 0x6,
+	EPointType_MeleeTrainer = 0x7,
 };
 

@@ -4,32 +4,32 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7c8
+// Size: 0x7e8
 // Has VTable
 class CBaseToggle : public CBaseModelEntity
 {
 public:
-	TOGGLE_STATE m_toggle_state; // 0x748	
-	float m_flMoveDistance; // 0x74c	
-	float m_flWait; // 0x750	
-	float m_flLip; // 0x754	
-	bool m_bAlwaysFireBlockedOutputs; // 0x758	
+	TOGGLE_STATE m_toggle_state; // 0x768	
+	float m_flMoveDistance; // 0x76c	
+	float m_flWait; // 0x770	
+	float m_flLip; // 0x774	
+	bool m_bAlwaysFireBlockedOutputs; // 0x778	
 private:
-	[[maybe_unused]] uint8_t __pad0759[0x3]; // 0x759
+	[[maybe_unused]] uint8_t __pad0779[0x3]; // 0x779
 public:
-	Vector m_vecPosition1; // 0x75c	
-	Vector m_vecPosition2; // 0x768	
-	QAngle m_vecMoveAng; // 0x774	
-	QAngle m_vecAngle1; // 0x780	
-	QAngle m_vecAngle2; // 0x78c	
-	float m_flHeight; // 0x798	
-	CHandle< CBaseEntity > m_hActivator; // 0x79c	
-	Vector m_vecFinalDest; // 0x7a0	
-	QAngle m_vecFinalAngle; // 0x7ac	
-	int32_t m_movementType; // 0x7b8	
+	Vector m_vecPosition1; // 0x77c	
+	Vector m_vecPosition2; // 0x788	
+	QAngle m_vecMoveAng; // 0x794	
+	QAngle m_vecAngle1; // 0x7a0	
+	QAngle m_vecAngle2; // 0x7ac	
+	float m_flHeight; // 0x7b8	
+	CHandle< CBaseEntity > m_hActivator; // 0x7bc	
+	Vector m_vecFinalDest; // 0x7c0	
+	QAngle m_vecFinalAngle; // 0x7cc	
+	int32_t m_movementType; // 0x7d8	
 private:
-	[[maybe_unused]] uint8_t __pad07bc[0x4]; // 0x7bc
+	[[maybe_unused]] uint8_t __pad07dc[0x4]; // 0x7dc
 public:
-	CUtlSymbolLarge m_sMaster; // 0x7c0	
+	CUtlSymbolLarge m_sMaster; // 0x7e0	
 };
 

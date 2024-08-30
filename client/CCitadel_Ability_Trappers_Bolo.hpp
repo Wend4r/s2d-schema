@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd40
+// Size: 0xd68
 // Has VTable
 class CCitadel_Ability_Trappers_Bolo : public C_CitadelBaseAbility
 {

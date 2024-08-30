@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd18
+// Size: 0xd78
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vStartPosition"
@@ -17,28 +17,28 @@ class CCitadel_Ability_ShivDash : public CCitadelBaseShivAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vStartPosition; // 0xab0	
+	Vector m_vStartPosition; // 0xad8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vDashDirection; // 0xabc	
+	Vector m_vDashDirection; // 0xae4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bIsDashing; // 0xac8	
+	bool m_bIsDashing; // 0xaf0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bStartedInAir; // 0xac9	
+	bool m_bStartedInAir; // 0xaf1	
 private:
-	[[maybe_unused]] uint8_t __pad0aca[0x6]; // 0xaca
+	[[maybe_unused]] uint8_t __pad0af2[0x6]; // 0xaf2
 public:
-	CUtlVector< CEntityIndex > m_vecHitEnemies; // 0xad0	
-	Vector m_vecLastPosition; // 0xae8	
-	int32_t m_nReductionsLeft; // 0xaf4	
+	CUtlVector< CEntityIndex > m_vecHitEnemies; // 0xaf8	
+	Vector m_vecLastPosition; // 0xb10	
+	int32_t m_nReductionsLeft; // 0xb1c	
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x1f8]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b20[0x230]; // 0xb20
 public:
-	GameTime_t m_flStuckTime; // 0xcf0	
-	CHandle< CPointModifierThinker > m_hEchoThinker; // 0xcf4	
-	GameTime_t m_EchoStartTime; // 0xcf8	
-	bool m_bLetEchoPlay; // 0xcfc	
+	GameTime_t m_flStuckTime; // 0xd50	
+	CHandle< CPointModifierThinker > m_hEchoThinker; // 0xd54	
+	GameTime_t m_EchoStartTime; // 0xd58	
+	bool m_bLetEchoPlay; // 0xd5c	
 };
 

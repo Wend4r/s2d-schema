@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x588
+// Size: 0x5a8
 // Has VTable
 class CSplineConstraint : public CPhysConstraint
 {
 private:
-	[[maybe_unused]] uint8_t __pad0530[0x48]; // 0x530
+	[[maybe_unused]] uint8_t __pad0550[0x48]; // 0x550
 public:
-	Vector m_vAnchorOffsetRestore; // 0x578	
+	Vector m_vAnchorOffsetRestore; // 0x598	
 	
 	// Datamap fields:
 	// void CSplineConstraintUpdateThink; // 0x0

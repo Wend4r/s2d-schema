@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15a0
+// Size: 0x15d0
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_hOwner"
 class CNPC_HeroCloneTrooper : public CAI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1578[0x4]; // 0x1578
+	[[maybe_unused]] uint8_t __pad15a8[0x4]; // 0x15a8
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hOwner; // 0x157c	
+	CHandle< CBaseEntity > m_hOwner; // 0x15ac	
 	
 	// Static fields:
 	static CUtlSymbolLarge &Get_SCHED_CLONE_TROOPER_RELOAD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_HeroCloneTrooper")->m_static_fields[0]->m_instance);};

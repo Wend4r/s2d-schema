@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x838
+// Size: 0x858
 // Has VTable
 // 
 // MNetworkVarNames "uint8 m_Flags"
@@ -18,27 +18,27 @@ class C_DynamicLight : public C_BaseModelEntity
 {
 public:
 	// MNetworkEnable
-	uint8_t m_Flags; // 0x810	
+	uint8_t m_Flags; // 0x830	
 	// MNetworkEnable
-	uint8_t m_LightStyle; // 0x811	
+	uint8_t m_LightStyle; // 0x831	
 private:
-	[[maybe_unused]] uint8_t __pad0812[0x2]; // 0x812
+	[[maybe_unused]] uint8_t __pad0832[0x2]; // 0x832
 public:
 	// MNetworkEnable
-	float m_Radius; // 0x814	
+	float m_Radius; // 0x834	
 	// MNetworkEnable
-	int32_t m_Exponent; // 0x818	
-	// MNetworkEnable
-	// MNetworkBitCount "8"
-	// MNetworkMinValue "0.000000"
-	// MNetworkMaxValue "360.000000"
-	float m_InnerAngle; // 0x81c	
+	int32_t m_Exponent; // 0x838	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "360.000000"
-	float m_OuterAngle; // 0x820	
+	float m_InnerAngle; // 0x83c	
 	// MNetworkEnable
-	float m_SpotRadius; // 0x824	
+	// MNetworkBitCount "8"
+	// MNetworkMinValue "0.000000"
+	// MNetworkMaxValue "360.000000"
+	float m_OuterAngle; // 0x840	
+	// MNetworkEnable
+	float m_SpotRadius; // 0x844	
 };
 

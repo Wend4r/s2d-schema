@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CCitadelAutoScaledTime;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc78
+// Size: 0xca0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flDashAngle"
@@ -23,34 +23,34 @@ class CCitadel_Ability_Dash : public CCitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flDashAngle; // 0xab0	
-	GameTime_t m_GroundDashExecuteTime; // 0xab4	
+	float m_flDashAngle; // 0xad8	
+	GameTime_t m_GroundDashExecuteTime; // 0xadc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int32_t m_nLastGroundDashTick; // 0xab8	
+	int32_t m_nLastGroundDashTick; // 0xae0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flGroundDashCastTime; // 0xabc	
-	bool m_bTagCanActivateGroundDash; // 0xac0	
+	GameTime_t m_flGroundDashCastTime; // 0xae4	
+	bool m_bTagCanActivateGroundDash; // 0xae8	
 private:
-	[[maybe_unused]] uint8_t __pad0ac1[0x7]; // 0xac1
+	[[maybe_unused]] uint8_t __pad0ae9[0x7]; // 0xae9
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xac8	
+	CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xaf0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flAirDashCastTime; // 0xae0	
+	GameTime_t m_flAirDashCastTime; // 0xb08	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flAirDashDragStartTime; // 0xae4	
+	GameTime_t m_flAirDashDragStartTime; // 0xb0c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int8_t m_nConsecutiveAirDashes; // 0xae8	
+	int8_t m_nConsecutiveAirDashes; // 0xb10	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int8_t m_nConsecutiveDownDashes; // 0xae9	
+	int8_t m_nConsecutiveDownDashes; // 0xb11	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bDownAirDash; // 0xaea	
+	bool m_bDownAirDash; // 0xb12	
 };
 

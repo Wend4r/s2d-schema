@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa18
+// Size: 0xa38
 // Has VTable
 class CSceneEntityAlias_logic_choreographed_scene : public CSceneEntity
 {

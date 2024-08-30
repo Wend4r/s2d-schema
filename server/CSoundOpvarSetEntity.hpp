@@ -4,24 +4,24 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x520
 // Has VTable
 class CSoundOpvarSetEntity : public CBaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04b8[0x8]; // 0x4b8
+	[[maybe_unused]] uint8_t __pad04d8[0x8]; // 0x4d8
 public:
-	CUtlSymbolLarge m_iszStackName; // 0x4c0	
-	CUtlSymbolLarge m_iszOperatorName; // 0x4c8	
-	CUtlSymbolLarge m_iszOpvarName; // 0x4d0	
-	int32_t m_nOpvarType; // 0x4d8	
-	int32_t m_nOpvarIndex; // 0x4dc	
-	float m_flOpvarValue; // 0x4e0	
+	CUtlSymbolLarge m_iszStackName; // 0x4e0	
+	CUtlSymbolLarge m_iszOperatorName; // 0x4e8	
+	CUtlSymbolLarge m_iszOpvarName; // 0x4f0	
+	int32_t m_nOpvarType; // 0x4f8	
+	int32_t m_nOpvarIndex; // 0x4fc	
+	float m_flOpvarValue; // 0x500	
 private:
-	[[maybe_unused]] uint8_t __pad04e4[0x4]; // 0x4e4
+	[[maybe_unused]] uint8_t __pad0504[0x4]; // 0x504
 public:
-	CUtlSymbolLarge m_OpvarValueString; // 0x4e8	
-	bool m_bSetOnSpawn; // 0x4f0	
+	CUtlSymbolLarge m_OpvarValueString; // 0x508	
+	bool m_bSetOnSpawn; // 0x510	
 	
 	// Datamap fields:
 	// uint64_t InputSetEventGuid; // 0x0
@@ -32,7 +32,7 @@ public:
 	// void InputSetOpvar; // 0x0
 	// float InputChangeOpvarValue; // 0x0
 	// float InputChangeOpvarValueAndSet; // 0x0
-	// void m_nGUID; // 0x4b8
-	// void m_LastOpvarValueString; // 0x4f8
+	// void m_nGUID; // 0x4d8
+	// void m_LastOpvarValueString; // 0x518
 };
 

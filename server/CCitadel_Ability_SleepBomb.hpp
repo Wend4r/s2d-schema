@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xae8
+// Size: 0xb10
 // Has VTable
 class CCitadel_Ability_SleepBomb : public CCitadelBaseAbility
 {

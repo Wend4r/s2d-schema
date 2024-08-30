@@ -7,7 +7,7 @@ struct CitadelLobbyPlayerSlot_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa48
+// Size: 0xa68
 // Has VTable
 // 
 // MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -41,79 +41,79 @@ class CCitadelPlayerController : public CBasePlayerController
 {
 public:
 	// MNetworkEnable
-	EPlayerPlayState m_ePlayState; // 0x740	
+	EPlayerPlayState m_ePlayState; // 0x760	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchLastHits; // 0x744	
+	int32_t m_iGuidedBotMatchLastHits; // 0x764	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchOrbsSecured; // 0x748	
+	int32_t m_iGuidedBotMatchOrbsSecured; // 0x768	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchOrbsDenied; // 0x74c	
+	int32_t m_iGuidedBotMatchOrbsDenied; // 0x76c	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageToGuardians; // 0x750	
+	int32_t m_iGuidedBotMatchDamageToGuardians; // 0x770	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageToPlayers; // 0x754	
+	int32_t m_iGuidedBotMatchDamageToPlayers; // 0x774	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageTaken; // 0x758	
+	int32_t m_iGuidedBotMatchDamageTaken; // 0x778	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchNetWorth; // 0x75c	
+	int32_t m_iGuidedBotMatchNetWorth; // 0x77c	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchModsPurchased; // 0x760	
+	int32_t m_iGuidedBotMatchModsPurchased; // 0x780	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchAbilityUpgrades; // 0x764	
+	int32_t m_iGuidedBotMatchAbilityUpgrades; // 0x784	
 	// MNetworkEnable
-	float m_flGuideBotMatchLastTaskNagVO; // 0x768	
+	float m_flGuideBotMatchLastTaskNagVO; // 0x788	
 	// MNetworkEnable
-	float m_flGuideBotLastTimeTaskCompleted; // 0x76c	
+	float m_flGuideBotLastTimeTaskCompleted; // 0x78c	
 	// MNetworkEnable
-	EGuidedBotMatchObjective m_eGuidedBotMatchObjective; // 0x770	
+	EGuidedBotMatchObjective m_eGuidedBotMatchObjective; // 0x790	
 	// MNetworkEnable
 	// MNetworkChangeCallback "AssignedLaneChanged"
-	int8_t m_nAssignedLane; // 0x774	
+	int8_t m_nAssignedLane; // 0x794	
 	// MNetworkEnable
-	int8_t m_nOriginalLaneAssignment; // 0x775	
+	int8_t m_nOriginalLaneAssignment; // 0x795	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility1; // 0x776	
+	bool m_bSwapCastModeAbility1; // 0x796	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility2; // 0x777	
+	bool m_bSwapCastModeAbility2; // 0x797	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility3; // 0x778	
+	bool m_bSwapCastModeAbility3; // 0x798	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility4; // 0x779	
+	bool m_bSwapCastModeAbility4; // 0x799	
 	// MNetworkEnable
-	bool m_bIsKingPanda; // 0x77a	
+	bool m_bIsKingPanda; // 0x79a	
 	// MNetworkEnable
-	bool m_bBotDisconnectTakeover; // 0x77b	
-	// MNetworkEnable
-	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInTeamChat; // 0x77c	
+	bool m_bBotDisconnectTakeover; // 0x79b	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInPartyChat; // 0x77d	
+	bool m_bInTeamChat; // 0x79c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "ChatGroupsChanged"
+	bool m_bInPartyChat; // 0x79d	
 private:
-	[[maybe_unused]] uint8_t __pad077e[0xc2]; // 0x77e
+	[[maybe_unused]] uint8_t __pad079e[0xc2]; // 0x79e
 public:
 	// MNetworkEnable
-	CHandle< CCitadelPlayerPawn > m_hHeroPawn; // 0x840	
+	CHandle< CCitadelPlayerPawn > m_hHeroPawn; // 0x860	
 private:
-	[[maybe_unused]] uint8_t __pad0844[0x14]; // 0x844
+	[[maybe_unused]] uint8_t __pad0864[0x14]; // 0x864
 public:
 	// MNetworkEnable
-	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x858	
+	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x878	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int8_t m_nDeathReplayAvailable; // 0xa30	
+	int8_t m_nDeathReplayAvailable; // 0xa50	
 	// MNetworkEnable
-	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa31	
+	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa51	
 private:
-	[[maybe_unused]] uint8_t __pad0a32[0x2]; // 0xa32
+	[[maybe_unused]] uint8_t __pad0a52[0x2]; // 0xa52
 public:
-	GameTime_t m_flLastCommsTime; // 0xa34	
-	GameTime_t m_flLastFailedCommsTime; // 0xa38	
-	bool m_bLastCommsWasDoublePing; // 0xa3c	
+	GameTime_t m_flLastCommsTime; // 0xa54	
+	GameTime_t m_flLastFailedCommsTime; // 0xa58	
+	bool m_bLastCommsWasDoublePing; // 0xa5c	
 private:
-	[[maybe_unused]] uint8_t __pad0a3d[0x3]; // 0xa3d
+	[[maybe_unused]] uint8_t __pad0a5d[0x3]; // 0xa5d
 public:
-	int32_t m_nGuideBotNumTasksComplete; // 0xa40	
+	int32_t m_nGuideBotNumTasksComplete; // 0xa60	
 	
 	// Datamap fields:
 	// void CCitadelPlayerControllerResourceDataThink; // 0x0

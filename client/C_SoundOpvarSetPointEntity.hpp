@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x558
+// Size: 0x578
 // Has VTable
 class C_SoundOpvarSetPointEntity : public C_SoundOpvarSetPointBase
 {

@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xca0
+// Size: 0xcc8
 // Has VTable
 // 
 // MNetworkVarNames "float m_flVertOffset"
@@ -20,24 +20,24 @@ class CCitadel_Ability_Mantle : public C_CitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flVertOffset; // 0xc28	
+	float m_flVertOffset; // 0xc50	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flHorizGap; // 0xc2c	
+	float m_flHorizGap; // 0xc54	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vStartPos; // 0xc30	
+	Vector m_vStartPos; // 0xc58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vTargetPos; // 0xc3c	
+	Vector m_vTargetPos; // 0xc64	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	QAngle m_angFacing; // 0xc48	
+	QAngle m_angFacing; // 0xc70	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int32_t m_nMantleTypeIndex; // 0xc54	
+	int32_t m_nMantleTypeIndex; // 0xc7c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flStartTime; // 0xc58	
+	GameTime_t m_flStartTime; // 0xc80	
 };
 

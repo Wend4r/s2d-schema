@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x940
+// Size: 0x960
 // Has VTable
 class CCitadelPushTrigger : public CTriggerModifier
 {
 public:
-	Vector m_vPush; // 0x928	
-	QAngle m_angPushEntitySpace; // 0x934	
+	Vector m_vPush; // 0x948	
+	QAngle m_angPushEntitySpace; // 0x954	
 };
 

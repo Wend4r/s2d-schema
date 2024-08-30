@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4e0
+// Size: 0x500
 // Has VTable
 class COrbSpawner : public CBaseEntity
 {

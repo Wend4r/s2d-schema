@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 26
+// Enumerator count: 27
 // Alignment: 2
 // Size: 0x2
 enum class EAbilitySlots_t : uint16_t
@@ -22,17 +22,18 @@ enum class EAbilitySlots_t : uint16_t
 	ESlot_Ability_Held = 0x8,
 	ESlot_Ability_ZipLine = 0x9,
 	ESlot_Ability_Mantle = 0xa,
-	ESlot_Ability_Jump = 0xb,
-	ESlot_Ability_Slide = 0xc,
-	ESlot_Ability_Teleport = 0xd,
-	ESlot_Ability_ZipLineBoost = 0xe,
-	ESlot_Ability_Innate_1 = 0xf,
-	ESlot_Ability_Innate_2 = 0x10,
-	ESlot_Ability_Innate_3 = 0x11,
-	ESlot_Weapon_Secondary = 0x12,
-	ESlot_Weapon_Primary = 0x13,
-	ESlot_Weapon_Melee = 0x14,
-	ESlot_None = 0x15,
-	EMaxAbilitySlots = 0x15,
+	ESlot_Ability_ClimbRope = 0xb,
+	ESlot_Ability_Jump = 0xc,
+	ESlot_Ability_Slide = 0xd,
+	ESlot_Ability_Teleport = 0xe,
+	ESlot_Ability_ZipLineBoost = 0xf,
+	ESlot_Ability_Innate_1 = 0x10,
+	ESlot_Ability_Innate_2 = 0x11,
+	ESlot_Ability_Innate_3 = 0x12,
+	ESlot_Weapon_Secondary = 0x13,
+	ESlot_Weapon_Primary = 0x14,
+	ESlot_Weapon_Melee = 0x15,
+	ESlot_None = 0x16,
+	EMaxAbilitySlots = 0x16,
 };
 

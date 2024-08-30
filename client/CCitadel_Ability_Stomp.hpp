@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcd0
+// Size: 0xcf8
 // Has VTable
 class CCitadel_Ability_Stomp : public C_CitadelBaseAbility
 {

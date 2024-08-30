@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x9e8
+// Size: 0xa08
 // Has VTable
 class C_Projectile_Perched_Predator : public C_CitadelProjectile
 {

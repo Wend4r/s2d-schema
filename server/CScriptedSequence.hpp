@@ -6,101 +6,101 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 16
-// Size: 0x7d0
+// Size: 0x7f0
 // Has VTable
 class CScriptedSequence : public CBaseEntity
 {
 public:
-	CUtlSymbolLarge m_iszEntry; // 0x4b8	
-	CUtlSymbolLarge m_iszPreIdle; // 0x4c0	
-	CUtlSymbolLarge m_iszPlay; // 0x4c8	
-	CUtlSymbolLarge m_iszPostIdle; // 0x4d0	
-	CUtlSymbolLarge m_iszModifierToAddOnPlay; // 0x4d8	
-	CUtlSymbolLarge m_iszNextScript; // 0x4e0	
-	CUtlSymbolLarge m_iszEntity; // 0x4e8	
-	CUtlSymbolLarge m_iszSyncGroup; // 0x4f0	
-	ScriptedMoveTo_t m_nMoveTo; // 0x4f8	
-	MovementGait_t m_nMoveToGait; // 0x4fc	
+	CUtlSymbolLarge m_iszEntry; // 0x4d8	
+	CUtlSymbolLarge m_iszPreIdle; // 0x4e0	
+	CUtlSymbolLarge m_iszPlay; // 0x4e8	
+	CUtlSymbolLarge m_iszPostIdle; // 0x4f0	
+	CUtlSymbolLarge m_iszModifierToAddOnPlay; // 0x4f8	
+	CUtlSymbolLarge m_iszNextScript; // 0x500	
+	CUtlSymbolLarge m_iszEntity; // 0x508	
+	CUtlSymbolLarge m_iszSyncGroup; // 0x510	
+	ScriptedMoveTo_t m_nMoveTo; // 0x518	
+	MovementGait_t m_nMoveToGait; // 0x51c	
 private:
-	[[maybe_unused]] uint8_t __pad04fd[0x3]; // 0x4fd
+	[[maybe_unused]] uint8_t __pad051d[0x3]; // 0x51d
 public:
-	ScriptedHeldWeaponBehavior_t m_nHeldWeaponBehavior; // 0x500	
-	bool m_bIsPlayingPreIdle; // 0x504	
-	bool m_bIsPlayingEntry; // 0x505	
-	bool m_bIsPlayingAction; // 0x506	
-	bool m_bIsPlayingPostIdle; // 0x507	
-	bool m_bDontRotateOther; // 0x508	
-	bool m_bIsRepeatable; // 0x509	
-	bool m_bShouldLeaveCorpse; // 0x50a	
-	bool m_bStartOnSpawn; // 0x50b	
-	bool m_bDisallowInterrupts; // 0x50c	
-	bool m_bCanOverrideNPCState; // 0x50d	
-	bool m_bDontTeleportAtEnd; // 0x50e	
-	bool m_bHighPriority; // 0x50f	
-	bool m_bHideDebugComplaints; // 0x510	
-	bool m_bContinueOnDeath; // 0x511	
-	bool m_bLoopPreIdleSequence; // 0x512	
-	bool m_bLoopActionSequence; // 0x513	
-	bool m_bLoopPostIdleSequence; // 0x514	
-	bool m_bSynchPostIdles; // 0x515	
-	bool m_bIgnoreLookAt; // 0x516	
-	bool m_bIgnoreGravity; // 0x517	
-	bool m_bDisableNPCCollisions; // 0x518	
-	bool m_bKeepAnimgraphLockedPost; // 0x519	
-	bool m_bDontAddModifiers; // 0x51a	
+	ScriptedHeldWeaponBehavior_t m_nHeldWeaponBehavior; // 0x520	
+	bool m_bIsPlayingPreIdle; // 0x524	
+	bool m_bIsPlayingEntry; // 0x525	
+	bool m_bIsPlayingAction; // 0x526	
+	bool m_bIsPlayingPostIdle; // 0x527	
+	bool m_bDontRotateOther; // 0x528	
+	bool m_bIsRepeatable; // 0x529	
+	bool m_bShouldLeaveCorpse; // 0x52a	
+	bool m_bStartOnSpawn; // 0x52b	
+	bool m_bDisallowInterrupts; // 0x52c	
+	bool m_bCanOverrideNPCState; // 0x52d	
+	bool m_bDontTeleportAtEnd; // 0x52e	
+	bool m_bHighPriority; // 0x52f	
+	bool m_bHideDebugComplaints; // 0x530	
+	bool m_bContinueOnDeath; // 0x531	
+	bool m_bLoopPreIdleSequence; // 0x532	
+	bool m_bLoopActionSequence; // 0x533	
+	bool m_bLoopPostIdleSequence; // 0x534	
+	bool m_bSynchPostIdles; // 0x535	
+	bool m_bIgnoreLookAt; // 0x536	
+	bool m_bIgnoreGravity; // 0x537	
+	bool m_bDisableNPCCollisions; // 0x538	
+	bool m_bKeepAnimgraphLockedPost; // 0x539	
+	bool m_bDontAddModifiers; // 0x53a	
 private:
-	[[maybe_unused]] uint8_t __pad051b[0x1]; // 0x51b
+	[[maybe_unused]] uint8_t __pad053b[0x1]; // 0x53b
 public:
-	float m_flRadius; // 0x51c	
-	float m_flRepeat; // 0x520	
-	float m_flPlayAnimFadeInTime; // 0x524	
-	float m_flMoveInterpTime; // 0x528	
-	float m_flAngRate; // 0x52c	
-	bool m_bWaitUntilMoveCompletesToStartAnimation; // 0x530	
+	float m_flRadius; // 0x53c	
+	float m_flRepeat; // 0x540	
+	float m_flPlayAnimFadeInTime; // 0x544	
+	float m_flMoveInterpTime; // 0x548	
+	float m_flAngRate; // 0x54c	
+	bool m_bWaitUntilMoveCompletesToStartAnimation; // 0x550	
 private:
-	[[maybe_unused]] uint8_t __pad0531[0x3]; // 0x531
+	[[maybe_unused]] uint8_t __pad0551[0x3]; // 0x551
 public:
-	int32_t m_nNotReadySequenceCount; // 0x534	
-	GameTime_t m_startTime; // 0x538	
-	bool m_bWaitForBeginSequence; // 0x53c	
+	int32_t m_nNotReadySequenceCount; // 0x554	
+	GameTime_t m_startTime; // 0x558	
+	bool m_bWaitForBeginSequence; // 0x55c	
 private:
-	[[maybe_unused]] uint8_t __pad053d[0x3]; // 0x53d
+	[[maybe_unused]] uint8_t __pad055d[0x3]; // 0x55d
 public:
-	int32_t m_saved_effects; // 0x540	
-	int32_t m_savedFlags; // 0x544	
-	int32_t m_savedCollisionGroup; // 0x548	
-	bool m_bInterruptable; // 0x54c	
-	bool m_sequenceStarted; // 0x54d	
-	bool m_bPositionRelativeToOtherEntity; // 0x54e	
+	int32_t m_saved_effects; // 0x560	
+	int32_t m_savedFlags; // 0x564	
+	int32_t m_savedCollisionGroup; // 0x568	
+	bool m_bInterruptable; // 0x56c	
+	bool m_sequenceStarted; // 0x56d	
+	bool m_bPositionRelativeToOtherEntity; // 0x56e	
 private:
-	[[maybe_unused]] uint8_t __pad054f[0x1]; // 0x54f
+	[[maybe_unused]] uint8_t __pad056f[0x1]; // 0x56f
 public:
-	CHandle< CBaseEntity > m_hTargetEnt; // 0x550	
-	CHandle< CScriptedSequence > m_hNextCine; // 0x554	
-	bool m_bThinking; // 0x558	
-	bool m_bInitiatedSelfDelete; // 0x559	
-	bool m_bIsTeleportingDueToMoveTo; // 0x55a	
-	bool m_bAllowCustomInterruptConditions; // 0x55b	
-	CHandle< CBaseAnimGraph > m_hForcedTarget; // 0x55c	
-	bool m_bDontCancelOtherSequences; // 0x560	
-	bool m_bForceSynch; // 0x561	
-	bool m_bPreventUpdateYawOnFinish; // 0x562	
-	bool m_bEnsureOnNavmeshOnFinish; // 0x563	
-	ScriptedOnDeath_t m_onDeathBehavior; // 0x564	
-	ScriptedConflictResponse_t m_ConflictResponse; // 0x568	
+	CHandle< CBaseEntity > m_hTargetEnt; // 0x570	
+	CHandle< CScriptedSequence > m_hNextCine; // 0x574	
+	bool m_bThinking; // 0x578	
+	bool m_bInitiatedSelfDelete; // 0x579	
+	bool m_bIsTeleportingDueToMoveTo; // 0x57a	
+	bool m_bAllowCustomInterruptConditions; // 0x57b	
+	CHandle< CBaseAnimGraph > m_hForcedTarget; // 0x57c	
+	bool m_bDontCancelOtherSequences; // 0x580	
+	bool m_bForceSynch; // 0x581	
+	bool m_bPreventUpdateYawOnFinish; // 0x582	
+	bool m_bEnsureOnNavmeshOnFinish; // 0x583	
+	ScriptedOnDeath_t m_onDeathBehavior; // 0x584	
+	ScriptedConflictResponse_t m_ConflictResponse; // 0x588	
 private:
-	[[maybe_unused]] uint8_t __pad056c[0x4]; // 0x56c
+	[[maybe_unused]] uint8_t __pad058c[0x4]; // 0x58c
 public:
-	CEntityIOOutput m_OnBeginSequence; // 0x570	
-	CEntityIOOutput m_OnActionStartOrLoop; // 0x598	
-	CEntityIOOutput m_OnEndSequence; // 0x5c0	
-	CEntityIOOutput m_OnPostIdleEndSequence; // 0x5e8	
-	CEntityIOOutput m_OnCancelSequence; // 0x610	
-	CEntityIOOutput m_OnCancelFailedSequence; // 0x638	
-	CEntityIOOutput m_OnScriptEvent[8]; // 0x660	
-	CTransform m_matOtherToMain; // 0x7a0	
-	CHandle< CBaseEntity > m_hInteractionMainEntity; // 0x7c0	
-	int32_t m_iPlayerDeathBehavior; // 0x7c4	
+	CEntityIOOutput m_OnBeginSequence; // 0x590	
+	CEntityIOOutput m_OnActionStartOrLoop; // 0x5b8	
+	CEntityIOOutput m_OnEndSequence; // 0x5e0	
+	CEntityIOOutput m_OnPostIdleEndSequence; // 0x608	
+	CEntityIOOutput m_OnCancelSequence; // 0x630	
+	CEntityIOOutput m_OnCancelFailedSequence; // 0x658	
+	CEntityIOOutput m_OnScriptEvent[8]; // 0x680	
+	CTransform m_matOtherToMain; // 0x7c0	
+	CHandle< CBaseEntity > m_hInteractionMainEntity; // 0x7e0	
+	int32_t m_iPlayerDeathBehavior; // 0x7e4	
 	
 	// Datamap fields:
 	// void CScriptedSequenceScriptThink; // 0x0

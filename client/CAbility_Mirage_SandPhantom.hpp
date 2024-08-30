@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc60
+// Size: 0xc88
 // Has VTable
 class CAbility_Mirage_SandPhantom : public C_CitadelBaseAbility
 {

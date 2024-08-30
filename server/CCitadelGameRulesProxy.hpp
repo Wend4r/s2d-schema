@@ -5,7 +5,7 @@
 struct CCitadelGameRules;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4c0
+// Size: 0x4e0
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelGameRules * m_pGameRules"
@@ -15,6 +15,6 @@ public:
 	// MNetworkEnable
 	// MNetworkTypeAlias "CCitadelGamerules*"
 	// MNetworkPriority "32"
-	CCitadelGameRules* m_pGameRules; // 0x4b8	
+	CCitadelGameRules* m_pGameRules; // 0x4d8	
 };
 

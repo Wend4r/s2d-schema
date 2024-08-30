@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe50
+// Size: 0xe78
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecTeleportPosition"
@@ -15,18 +15,18 @@ struct GameTime_t;
 class CCitadel_Ability_Viscous_Telepunch : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0c28[0x1f8]; // 0xc28
+	[[maybe_unused]] uint8_t __pad0c50[0x1f8]; // 0xc50
 public:
 	// MNetworkEnable
-	Vector m_vecTeleportPosition; // 0xe20	
+	Vector m_vecTeleportPosition; // 0xe48	
 	// MNetworkEnable
-	Vector m_vecTeleportPositionNormal; // 0xe2c	
+	Vector m_vecTeleportPositionNormal; // 0xe54	
 	// MNetworkEnable
-	ETelepunchState_t m_eTelepunchState; // 0xe38	
+	ETelepunchState_t m_eTelepunchState; // 0xe60	
 private:
-	[[maybe_unused]] uint8_t __pad0e39[0x3]; // 0xe39
+	[[maybe_unused]] uint8_t __pad0e61[0x3]; // 0xe61
 public:
 	// MNetworkEnable
-	GameTime_t m_flNextStateTime; // 0xe3c	
+	GameTime_t m_flNextStateTime; // 0xe64	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem')
 // Alignment: 8
-// Size: 0xc8
+// Size: 0xd0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,7 +13,7 @@
 class CTestBlendContainer : public CVoiceContainerBase
 {
 public:
-	CStrongHandle< InfoForResourceTypeCVoiceContainerBase > m_firstSound; // 0xb8	
-	CStrongHandle< InfoForResourceTypeCVoiceContainerBase > m_secondSound; // 0xc0	
+	CStrongHandle< InfoForResourceTypeCVoiceContainerBase > m_firstSound; // 0xc0	
+	CStrongHandle< InfoForResourceTypeCVoiceContainerBase > m_secondSound; // 0xc8	
 };
 

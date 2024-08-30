@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc60
+// Size: 0xcc0
 // Has VTable
 class CCitadel_Ability_SleepDagger : public C_CitadelBaseAbility
 {

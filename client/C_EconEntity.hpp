@@ -6,36 +6,36 @@ struct CAttributeContainer;
 struct style_index_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xda8
+// Size: 0xdc8
 // Has VTable
 // 
 // MNetworkVarNames "CAttributeContainer m_AttributeManager"
 class C_EconEntity : public C_BaseFlex
 {
 private:
-	[[maybe_unused]] uint8_t __pad0c08[0x10]; // 0xc08
+	[[maybe_unused]] uint8_t __pad0c28[0x10]; // 0xc28
 public:
 	// MNetworkEnable
-	CAttributeContainer m_AttributeManager; // 0xc18	
-	bool m_bClientside; // 0xd58	
+	CAttributeContainer m_AttributeManager; // 0xc38	
+	bool m_bClientside; // 0xd78	
 private:
-	[[maybe_unused]] uint8_t __pad0d59[0x3]; // 0xd59
+	[[maybe_unused]] uint8_t __pad0d79[0x3]; // 0xd79
 public:
-	EconEntityParticleDisableMode_t m_nDisableMode; // 0xd5c	
-	bool m_bParticleSystemsCreated; // 0xd60	
-	bool m_bForceDestroyAttachedParticlesImmediately; // 0xd61	
+	EconEntityParticleDisableMode_t m_nDisableMode; // 0xd7c	
+	bool m_bParticleSystemsCreated; // 0xd80	
+	bool m_bForceDestroyAttachedParticlesImmediately; // 0xd81	
 private:
-	[[maybe_unused]] uint8_t __pad0d62[0x6]; // 0xd62
+	[[maybe_unused]] uint8_t __pad0d82[0x6]; // 0xd82
 public:
-	CUtlVector< C_EconEntity::AttachedParticleInfo_t > m_vecAttachedParticles; // 0xd68	
-	CHandle< CBaseAnimGraph > m_hViewmodelAttachment; // 0xd80	
-	int32_t m_iOldTeam; // 0xd84	
-	bool m_bAttachmentDirty; // 0xd88	
-	style_index_t m_iOldStyle; // 0xd89	
+	CUtlVector< C_EconEntity::AttachedParticleInfo_t > m_vecAttachedParticles; // 0xd88	
+	CHandle< CBaseAnimGraph > m_hViewmodelAttachment; // 0xda0	
+	int32_t m_iOldTeam; // 0xda4	
+	bool m_bAttachmentDirty; // 0xda8	
+	style_index_t m_iOldStyle; // 0xda9	
 private:
-	[[maybe_unused]] uint8_t __pad0d8a[0x2]; // 0xd8a
+	[[maybe_unused]] uint8_t __pad0daa[0x2]; // 0xdaa
 public:
-	CHandle< C_BaseEntity > m_hOldProvidee; // 0xd8c	
-	CUtlVector< C_EconEntity::AttachedModelData_t > m_vecAttachedModels; // 0xd90	
+	CHandle< C_BaseEntity > m_hOldProvidee; // 0xdac	
+	CUtlVector< C_EconEntity::AttachedModelData_t > m_vecAttachedModels; // 0xdb0	
 };
 

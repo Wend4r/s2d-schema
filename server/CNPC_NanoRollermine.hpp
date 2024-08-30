@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1600
+// Size: 0x1630
 // Has VTable
 // 
 // MNetworkVarNames "float m_flForwardSpeed"
@@ -12,15 +12,15 @@
 class CNPC_NanoRollermine : public CAI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1578[0x38]; // 0x1578
+	[[maybe_unused]] uint8_t __pad15a8[0x38]; // 0x15a8
 public:
 	// MNetworkEnable
-	float m_flForwardSpeed; // 0x15b0	
+	float m_flForwardSpeed; // 0x15e0	
 private:
-	[[maybe_unused]] uint8_t __pad15b4[0x44]; // 0x15b4
+	[[maybe_unused]] uint8_t __pad15e4[0x44]; // 0x15e4
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hOwnerPawn; // 0x15f8	
+	CHandle< CBaseEntity > m_hOwnerPawn; // 0x1628	
 	
 	// Static fields:
 	static CUtlSymbolLarge &Get_SCHED_NANO_ROLLERMINE_ROLL_FORWARD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_NanoRollermine")->m_static_fields[0]->m_instance);};

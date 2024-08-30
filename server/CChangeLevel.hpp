@@ -5,18 +5,18 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x958
+// Size: 0x978
 // Has VTable
 class CChangeLevel : public CBaseTrigger
 {
 public:
-	CUtlString m_sMapName; // 0x918	
-	CUtlString m_sLandmarkName; // 0x920	
-	CEntityIOOutput m_OnChangeLevel; // 0x928	
-	bool m_bTouched; // 0x950	
-	bool m_bNoTouch; // 0x951	
-	bool m_bNewChapter; // 0x952	
-	bool m_bOnChangeLevelFired; // 0x953	
+	CUtlString m_sMapName; // 0x938	
+	CUtlString m_sLandmarkName; // 0x940	
+	CEntityIOOutput m_OnChangeLevel; // 0x948	
+	bool m_bTouched; // 0x970	
+	bool m_bNoTouch; // 0x971	
+	bool m_bNewChapter; // 0x972	
+	bool m_bOnChangeLevelFired; // 0x973	
 	
 	// Datamap fields:
 	// void InputChangeLevel; // 0x0

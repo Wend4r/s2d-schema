@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc08
+// Size: 0xc28
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iHealth"
@@ -14,6 +14,6 @@ class C_ItemCrate : public C_PhysicsProp
 {
 public:
 	// MNetworkEnable
-	int32_t m_eLootType; // 0xc00	
+	int32_t m_eLootType; // 0xc20	
 };
 

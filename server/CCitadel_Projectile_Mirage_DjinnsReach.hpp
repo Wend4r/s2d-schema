@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x800
+// Size: 0x820
 // Has VTable
 class CCitadel_Projectile_Mirage_DjinnsReach : public CCitadelProjectile
 {

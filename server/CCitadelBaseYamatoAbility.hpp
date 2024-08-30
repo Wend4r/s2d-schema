@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xab8
+// Size: 0xae0
 // Has VTable
 // Is Abstract
 class CCitadelBaseYamatoAbility : public CCitadelBaseAbility

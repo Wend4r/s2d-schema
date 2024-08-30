@@ -14,7 +14,7 @@ struct TeleporterParams_t;
 struct CRemapFloat;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc58
+// Size: 0xc68
 // 
 // MVDataRoot
 // MVDataSingleton
@@ -86,11 +86,11 @@ public:
 	RejuvinatorParams_t m_RejuvParams; // 0x490	
 	IdolParams_t m_IdolParams; // 0x4b0	
 	TeleporterParams_t m_TeleporterParams; // 0xa08	
-	CUtlOrderedMap< EStatsType, CUtlString > m_mapStatTypeImages; // 0xbe8	
+	CUtlOrderedMap< EStatsType, CUtlString > m_mapStatTypeImages; // 0xbf8	
 	// MPropertyDescription "Remap camera angle delta to aim spring strength"
-	CRemapFloat m_AimSpringStrength; // 0xc10	
+	CRemapFloat m_AimSpringStrength; // 0xc20	
 	// MPropertyDescription "Remap camera angle delta to ability targeting spring strength"
-	CRemapFloat m_TargetingSpringStrength; // 0xc20	
-	CUtlOrderedMap< EAbilityResourceType, HeroAbilityResourceDef_t > m_mapResourceTypes; // 0xc30	
+	CRemapFloat m_TargetingSpringStrength; // 0xc30	
+	CUtlOrderedMap< EAbilityResourceType, HeroAbilityResourceDef_t > m_mapResourceTypes; // 0xc40	
 };
 

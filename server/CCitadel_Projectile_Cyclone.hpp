@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x920
+// Size: 0x940
 // Has VTable
 class CCitadel_Projectile_Cyclone : public CCitadelProjectile
 {
 public:
-	CHandle< CCitadel_Ability_Thumper_4 > m_CycloneAbility; // 0x800	
+	CHandle< CCitadel_Ability_Thumper_4 > m_CycloneAbility; // 0x820	
 };
 

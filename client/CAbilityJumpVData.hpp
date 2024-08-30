@@ -4,38 +4,49 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1700
+// Size: 0x1840
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CAbilityJumpVData : public CitadelAbilityVData
 {
 public:
-	float m_flShootingLockoutAfterJump; // 0x14e8	
+	float m_flShootingLockoutAfterJump; // 0x14f0	
 private:
-	[[maybe_unused]] uint8_t __pad14ec[0x4]; // 0x14ec
+	[[maybe_unused]] uint8_t __pad14f4[0x4]; // 0x14f4
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashJumpParticle; // 0x14f0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AirJumpParticle; // 0x15d0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashJumpParticle; // 0x14f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AirJumpParticle; // 0x15d8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_WallJumpParticle; // 0x16b8	
 	// MPropertyStartGroup "Air Jump"
-	CSoundEventName m_AirJumpExecutedSound; // 0x16b0	
-	float m_flMantleRefundWindow; // 0x16c0	
-	float m_flZiplineRefundWindow; // 0x16c4	
-	float m_flLateJumpGraceWindow; // 0x16c8	
+	CSoundEventName m_AirJumpExecutedSound; // 0x1798	
+	float m_flMantleRefundWindow; // 0x17a8	
+	float m_flZiplineRefundWindow; // 0x17ac	
+	float m_flLateJumpGraceWindow; // 0x17b0	
 	// MPropertyDescription "The most we'll adjust your speed in the input direction when performing an air jump"
-	float m_flMaxSpeedDelta; // 0x16cc	
+	float m_flMaxSpeedDelta; // 0x17b4	
 	// MPropertyStartGroup "Roll Jump"
-	CSoundEventName m_strDashJumpActivate; // 0x16d0	
-	float m_flDashJumpStartTime; // 0x16e0	
-	float m_flDashJumpEndTime; // 0x16e4	
+	CSoundEventName m_strDashJumpActivate; // 0x17b8	
+	float m_flDashJumpStartTime; // 0x17c8	
+	float m_flDashJumpEndTime; // 0x17cc	
 	// MPropertyDescription "How far a dash jump will send you forward.  This is on top of the ~8m already traveled by the dash."
-	float m_flDashJumpDistanceInMeters; // 0x16e8	
+	float m_flDashJumpDistanceInMeters; // 0x17d0	
 private:
-	[[maybe_unused]] uint8_t __pad16ec[0x4]; // 0x16ec
+	[[maybe_unused]] uint8_t __pad17d4[0x4]; // 0x17d4
 public:
-	float m_flDashJumpVerticalSpeed; // 0x16f0	
-	float m_flDashJumpMissMaxSpeed; // 0x16f4	
-	float m_flDashJumpMantleDisableTime; // 0x16f8	
+	float m_flDashJumpVerticalSpeed; // 0x17d8	
+	float m_flDashJumpMissMaxSpeed; // 0x17dc	
+	float m_flDashJumpMantleDisableTime; // 0x17e0	
+private:
+	[[maybe_unused]] uint8_t __pad17e4[0x4]; // 0x17e4
+public:
+	// MPropertyStartGroup "Wall Jump"
+	CSoundEventName m_WallJumpExecutedSound; // 0x17e8	
+	// MPropertyDescription "How far we'll trace to see if the wall we collided with is close enough to trigger a wall jump"
+	float m_flCollidedWallMaxDist; // 0x17f8	
+	// MPropertyStartGroup "Speed to apply away from the wall"
+	float m_flWallJumpNormalSpeed; // 0x17fc	
+	CPiecewiseCurve m_WallJumpAirDragCurve; // 0x1800	
 };
 

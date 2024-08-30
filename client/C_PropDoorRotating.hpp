@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd50
+// Size: 0xd70
 // Has VTable
 class C_PropDoorRotating : public C_BasePropDoor
 {

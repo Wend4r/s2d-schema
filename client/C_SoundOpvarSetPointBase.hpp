@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x558
+// Size: 0x578
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_iszStackName"
@@ -16,14 +16,14 @@ class C_SoundOpvarSetPointBase : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszStackName; // 0x538	
+	CUtlSymbolLarge m_iszStackName; // 0x558	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOperatorName; // 0x540	
+	CUtlSymbolLarge m_iszOperatorName; // 0x560	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOpvarName; // 0x548	
+	CUtlSymbolLarge m_iszOpvarName; // 0x568	
 	// MNetworkEnable
-	int32_t m_iOpvarIndex; // 0x550	
+	int32_t m_iOpvarIndex; // 0x570	
 	// MNetworkEnable
-	bool m_bUseAutoCompare; // 0x554	
+	bool m_bUseAutoCompare; // 0x574	
 };
 

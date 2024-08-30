@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x880
+// Size: 0x8a0
 // Has VTable
 // 
 // MNetworkVarNames "CHandle<CCitadelZipLineNode> m_vecConnections"
@@ -22,35 +22,35 @@
 class CCitadelZipLineNode : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0810[0x40]; // 0x810
+	[[maybe_unused]] uint8_t __pad0830[0x40]; // 0x830
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "connectionsChanged"
-	C_NetworkUtlVectorBase< CHandle< CCitadelZipLineNode > > m_vecConnections; // 0x850	
+	C_NetworkUtlVectorBase< CHandle< CCitadelZipLineNode > > m_vecConnections; // 0x870	
 	// MNetworkEnable
-	int16_t m_eCaptureState; // 0x868	
+	int16_t m_eCaptureState; // 0x888	
 	// MNetworkEnable
-	int16_t m_iPrimaryLane; // 0x86a	
+	int16_t m_iPrimaryLane; // 0x88a	
 	// MNetworkEnable
-	int16_t m_nRopesParity; // 0x86c	
+	int16_t m_nRopesParity; // 0x88c	
 	// MNetworkEnable
-	bool m_bCornerNode; // 0x86e	
+	bool m_bCornerNode; // 0x88e	
 	// MNetworkEnable
-	bool m_bCapturable; // 0x86f	
+	bool m_bCapturable; // 0x88f	
 	// MNetworkEnable
-	bool m_bAlwaysUsable; // 0x870	
+	bool m_bAlwaysUsable; // 0x890	
 	// MNetworkEnable
-	bool m_bOneWay; // 0x871	
+	bool m_bOneWay; // 0x891	
 	// MNetworkEnable
-	bool m_bDisableZippingToByPlayers; // 0x872	
+	bool m_bDisableZippingToByPlayers; // 0x892	
 private:
-	[[maybe_unused]] uint8_t __pad0873[0x1]; // 0x873
+	[[maybe_unused]] uint8_t __pad0893[0x1]; // 0x893
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hGuardingBoss; // 0x874	
+	CHandle< C_BaseEntity > m_hGuardingBoss; // 0x894	
 	// MNetworkEnable
-	float m_flRopeRadius; // 0x878	
+	float m_flRopeRadius; // 0x898	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x87c	
+	bool m_bEnabled; // 0x89c	
 };
 

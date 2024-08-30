@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x510
+// Size: 0x530
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_timeLastUpdate"
@@ -15,12 +15,12 @@ class CCitadelTrooperMinimap : public CBaseEntity
 public:
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_timeLastUpdate; // 0x4b8	
+	GameTime_t m_timeLastUpdate; // 0x4d8	
 private:
-	[[maybe_unused]] uint8_t __pad04bc[0x4]; // 0x4bc
+	[[maybe_unused]] uint8_t __pad04dc[0x4]; // 0x4dc
 public:
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	CUtlVectorEmbeddedNetworkVar< STrooperFOWEntity > m_vecFOWEntities; // 0x4c0	
+	CUtlVectorEmbeddedNetworkVar< STrooperFOWEntity > m_vecFOWEntities; // 0x4e0	
 };
 

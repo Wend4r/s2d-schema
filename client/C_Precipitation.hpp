@@ -4,30 +4,30 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x868
+// Size: 0x888
 // Has VTable
 class C_Precipitation : public C_BaseTrigger
 {
 public:
-	float m_flDensity; // 0x818	
+	float m_flDensity; // 0x838	
 private:
-	[[maybe_unused]] uint8_t __pad081c[0xc]; // 0x81c
+	[[maybe_unused]] uint8_t __pad083c[0xc]; // 0x83c
 public:
-	float m_flParticleInnerDist; // 0x828	
+	float m_flParticleInnerDist; // 0x848	
 private:
-	[[maybe_unused]] uint8_t __pad082c[0x4]; // 0x82c
+	[[maybe_unused]] uint8_t __pad084c[0x4]; // 0x84c
 public:
-	char* m_pParticleDef; // 0x830	
+	char* m_pParticleDef; // 0x850	
 private:
-	[[maybe_unused]] uint8_t __pad0838[0x20]; // 0x838
+	[[maybe_unused]] uint8_t __pad0858[0x20]; // 0x858
 public:
-	TimedEvent m_tParticlePrecipTraceTimer[1]; // 0x858	
-	bool m_bActiveParticlePrecipEmitter[1]; // 0x860	
-	bool m_bParticlePrecipInitialized; // 0x861	
-	bool m_bHasSimulatedSinceLastSceneObjectUpdate; // 0x862	
+	TimedEvent m_tParticlePrecipTraceTimer[1]; // 0x878	
+	bool m_bActiveParticlePrecipEmitter[1]; // 0x880	
+	bool m_bParticlePrecipInitialized; // 0x881	
+	bool m_bHasSimulatedSinceLastSceneObjectUpdate; // 0x882	
 private:
-	[[maybe_unused]] uint8_t __pad0863[0x1]; // 0x863
+	[[maybe_unused]] uint8_t __pad0883[0x1]; // 0x883
 public:
-	int32_t m_nAvailableSheetSequencesMaxIndex; // 0x864	
+	int32_t m_nAvailableSheetSequencesMaxIndex; // 0x884	
 };
 

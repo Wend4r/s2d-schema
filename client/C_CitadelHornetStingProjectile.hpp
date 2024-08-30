@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x898
+// Size: 0x8b8
 // Has VTable
 class C_CitadelHornetStingProjectile : public C_CitadelProjectile
 {

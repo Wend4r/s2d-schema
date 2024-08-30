@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9a0
+// Size: 0x9c0
 // Has VTable
 class CInfoTrooperNeutralMovementNode : public CBaseProp
 {

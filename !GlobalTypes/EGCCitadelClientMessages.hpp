@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: client.dll (project 'client')
-// Enumerator count: 108
+// Enumerator count: 104
 // Alignment: 4
 // Size: 0x4
 enum class EGCCitadelClientMessages : uint32_t
@@ -39,8 +39,6 @@ enum class EGCCitadelClientMessages : uint32_t
 	k_EMsgClientToGCGetMatchHistoryResponse = 0x2399,
 	k_EMsgClientToGCSpectateUser = 0x239c,
 	k_EMsgClientToGCSpectateUserResponse = 0x239d,
-	k_EMsgClientToGCGetGlobalMatchHistory = 0x239e,
-	k_EMsgClientToGCGetGlobalMatchHistoryResponse = 0x239f,
 	k_EMsgClientToGCPartyCreate = 0x23a3,
 	k_EMsgClientToGCPartyCreateResponse = 0x23a4,
 	k_EMsgClientToGCPartyLeave = 0x23a5,
@@ -87,8 +85,6 @@ enum class EGCCitadelClientMessages : uint32_t
 	k_EMsgGCToClientBookUpdated = 0x23e4,
 	k_EMsgClientToGCSubmitPlaytestUser = 0x23e5,
 	k_EMsgClientToGCSubmitPlaytestUserResponse = 0x23e6,
-	k_EMsgClientToGCGetDevMatchInfo = 0x23e7,
-	k_EMsgClientToGCGetDevMatchInfoResponse = 0x23e8,
 	k_EMsgClientToGCUpdateHeroBuild = 0x23e9,
 	k_EMsgClientToGCUpdateHeroBuildResponse = 0x23ea,
 	k_EMsgClientToGCFindHeroBuilds = 0x23eb,

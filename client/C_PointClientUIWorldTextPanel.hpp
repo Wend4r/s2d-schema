@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0xc70
+// Size: 0xc90
 // Has VTable
 // 
 // MNetworkVarNames "char m_messageText"
@@ -12,7 +12,7 @@ class C_PointClientUIWorldTextPanel : public C_PointClientUIWorldPanel
 {
 public:
 	// MNetworkEnable
-	char m_messageText[512]; // 0xa70	
+	char m_messageText[512]; // 0xa90	
 	
 	// Datamap fields:
 	// void InputToggle; // 0x0

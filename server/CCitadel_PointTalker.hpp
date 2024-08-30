@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa88
+// Size: 0xaa8
 // Has VTable
 class CCitadel_PointTalker : public CCitadel_PointTalker_Base
 {

@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xba8
+// Size: 0xbd0
 // Has VTable
 class CCitadel_Ability_Slork_Scald : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ab0[0xe0]; // 0xab0
+	[[maybe_unused]] uint8_t __pad0ad8[0xe0]; // 0xad8
 public:
-	CUtlVector< CHandle< CBaseEntity > > m_vecDamagedTargets; // 0xb90	
+	CUtlVector< CHandle< CBaseEntity > > m_vecDamagedTargets; // 0xbb8	
 };
 

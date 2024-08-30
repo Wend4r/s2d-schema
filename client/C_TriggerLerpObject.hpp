@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x818
+// Size: 0x838
 // Has VTable
 class C_TriggerLerpObject : public C_BaseTrigger
 {

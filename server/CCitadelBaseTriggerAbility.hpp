@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xac0
+// Size: 0xae8
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbilityToTrigger"
@@ -15,9 +15,9 @@ class CCitadelBaseTriggerAbility : public CCitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	CHandle< CCitadelBaseAbility > m_hAbilityToTrigger; // 0xab0	
+	CHandle< CCitadelBaseAbility > m_hAbilityToTrigger; // 0xad8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_SwappedToTime; // 0xab4	
+	GameTime_t m_SwappedToTime; // 0xadc	
 };
 

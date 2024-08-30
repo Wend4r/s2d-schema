@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1540
+// Size: 0x1548
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_UtilityUpgrade_DebuffImmunityVData : public CitadelItemVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffImmunityModifier; // 0x1530	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffImmunityModifier; // 0x1538	
 };
 

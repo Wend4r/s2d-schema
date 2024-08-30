@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xca0
+// Size: 0xcc8
 // Has VTable
 class CCitadel_Ability_StormCloud : public C_CitadelBaseAbility
 {
 public:
-	bool m_bApplyingVerticalAirDrag; // 0xc28	
+	bool m_bApplyingVerticalAirDrag; // 0xc50	
 };
 

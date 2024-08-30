@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc30
+// Size: 0xc58
 // Has VTable
 class CCitadel_Ability_Yakuza_Shakedown : public C_CitadelBaseAbility
 {
 public:
-	int32_t m_IgnoreChannelSlow; // 0xc28	
+	int32_t m_IgnoreChannelSlow; // 0xc50	
 };
 

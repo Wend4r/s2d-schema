@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16c8
+// Size: 0x16d0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CAbilityIntimidateVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_EnemyModifier; // 0x14e8	
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x14f8	
+	CEmbeddedSubclass< CCitadelModifier > m_EnemyModifier; // 0x14f0	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1500	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEPlayerParticle; // 0x1508	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEParticle; // 0x15e8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEPlayerParticle; // 0x1510	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEParticle; // 0x15f0	
 };
 

@@ -4,13 +4,13 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xee0
+// Size: 0xf08
 // Has VTable
 class CCitadel_Ability_Uppercut : public CCitadel_Ability_Melee_Base
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca8[0x230]; // 0xca8
+	[[maybe_unused]] uint8_t __pad0cd0[0x230]; // 0xcd0
 public:
-	bool m_bShouldUseResources; // 0xed8	
+	bool m_bShouldUseResources; // 0xf00	
 };
 

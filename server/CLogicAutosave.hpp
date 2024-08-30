@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4c8
+// Size: 0x4e8
 // Has VTable
 class CLogicAutosave : public CLogicalEntity
 {
 public:
-	bool m_bForceNewLevelUnit; // 0x4b8	
+	bool m_bForceNewLevelUnit; // 0x4d8	
 private:
-	[[maybe_unused]] uint8_t __pad04b9[0x3]; // 0x4b9
+	[[maybe_unused]] uint8_t __pad04d9[0x3]; // 0x4d9
 public:
-	int32_t m_minHitPoints; // 0x4bc	
-	int32_t m_minHitPointsToCommit; // 0x4c0	
+	int32_t m_minHitPoints; // 0x4dc	
+	int32_t m_minHitPointsToCommit; // 0x4e0	
 	
 	// Datamap fields:
 	// void InputSave; // 0x0

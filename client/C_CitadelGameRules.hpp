@@ -6,7 +6,7 @@ struct GameTime_t;
 struct MatchID_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x9ec0
+// Size: 0x9ee0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFreezePeriod"
@@ -18,8 +18,6 @@ struct MatchID_t;
 // MNetworkVarNames "EHANDLE m_hTowerSapphire"
 // MNetworkVarNames "bool m_bEnemyInAmberBase"
 // MNetworkVarNames "bool m_bEnemyInSapphireBase"
-// MNetworkVarNames "float m_flCombineZiplineSpeedMultiplier"
-// MNetworkVarNames "float m_flRebelZiplineSpeedMultiplier"
 // MNetworkVarNames "Vector m_vMinimapMins"
 // MNetworkVarNames "Vector m_vMinimapMaxs"
 // MNetworkVarNames "bool m_bMatchSafeToAbandon"
@@ -30,6 +28,7 @@ struct MatchID_t;
 // MNetworkVarNames "bool m_bFlexSlotsForcedUnlocked"
 // MNetworkVarNames "ECitadelMatchMode m_eMatchMode"
 // MNetworkVarNames "ECitadelGameMode m_eGameMode"
+// MNetworkVarNames "uint32 m_unSpectatorCount"
 // MNetworkVarNames "CHandle<CCitadelTrooperMinimap> m_hTrooperMinimap"
 // MNetworkVarNames "EHANDLE m_hCurrentHeroDrafterRebels"
 // MNetworkVarNames "EHANDLE m_hCurrentHeroDrafterCombine"
@@ -73,90 +72,88 @@ private:
 	[[maybe_unused]] uint8_t __pad0076[0x2]; // 0x76
 public:
 	// MNetworkEnable
-	float m_flCombineZiplineSpeedMultiplier; // 0x78	
+	Vector m_vMinimapMins; // 0x78	
 	// MNetworkEnable
-	float m_flRebelZiplineSpeedMultiplier; // 0x7c	
+	Vector m_vMinimapMaxs; // 0x84	
 	// MNetworkEnable
-	Vector m_vMinimapMins; // 0x80	
+	bool m_bMatchSafeToAbandon; // 0x90	
 	// MNetworkEnable
-	Vector m_vMinimapMaxs; // 0x8c	
+	bool m_bNoDeathEnabled; // 0x91	
 	// MNetworkEnable
-	bool m_bMatchSafeToAbandon; // 0x98	
+	bool m_bFastCooldownsEnabled; // 0x92	
 	// MNetworkEnable
-	bool m_bNoDeathEnabled; // 0x99	
+	bool m_bStaminaCooldownsEnabled; // 0x93	
 	// MNetworkEnable
-	bool m_bFastCooldownsEnabled; // 0x9a	
+	bool m_bInfiniteResourcesEnabled; // 0x94	
 	// MNetworkEnable
-	bool m_bStaminaCooldownsEnabled; // 0x9b	
-	// MNetworkEnable
-	bool m_bInfiniteResourcesEnabled; // 0x9c	
-	// MNetworkEnable
-	bool m_bFlexSlotsForcedUnlocked; // 0x9d	
+	bool m_bFlexSlotsForcedUnlocked; // 0x95	
 private:
-	[[maybe_unused]] uint8_t __pad009e[0x2]; // 0x9e
+	[[maybe_unused]] uint8_t __pad0096[0x2]; // 0x96
 public:
 	// MNetworkEnable
-	ECitadelMatchMode m_eMatchMode; // 0xa0	
+	ECitadelMatchMode m_eMatchMode; // 0x98	
 	// MNetworkEnable
-	ECitadelGameMode m_eGameMode; // 0xa4	
+	ECitadelGameMode m_eGameMode; // 0x9c	
 	// MNetworkEnable
-	CHandle< CCitadelTrooperMinimap > m_hTrooperMinimap; // 0xa8	
+	uint32_t m_unSpectatorCount; // 0xa0	
+	// MNetworkEnable
+	CHandle< CCitadelTrooperMinimap > m_hTrooperMinimap; // 0xa4	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkChangeCallback "playerDraftingChanged"
-	CHandle< C_BaseEntity > m_hCurrentHeroDrafterRebels; // 0xac	
+	CHandle< C_BaseEntity > m_hCurrentHeroDrafterRebels; // 0xa8	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkChangeCallback "playerDraftingChanged"
-	CHandle< C_BaseEntity > m_hCurrentHeroDrafterCombine; // 0xb0	
-	bool m_bDontUploadStats; // 0xb4	
+	CHandle< C_BaseEntity > m_hCurrentHeroDrafterCombine; // 0xac	
+	bool m_bDontUploadStats; // 0xb0	
 private:
-	[[maybe_unused]] uint8_t __pad00b5[0x9d5b]; // 0xb5
+	[[maybe_unused]] uint8_t __pad00b1[0x9d57]; // 0xb1
 public:
 	// MNetworkEnable
-	bool m_bServerPaused; // 0x9e10	
+	bool m_bServerPaused; // 0x9e08	
 private:
-	[[maybe_unused]] uint8_t __pad9e11[0x3]; // 0x9e11
+	[[maybe_unused]] uint8_t __pad9e09[0x3]; // 0x9e09
 public:
 	// MNetworkEnable
-	int32_t m_iPauseTeam; // 0x9e14	
+	int32_t m_iPauseTeam; // 0x9e0c	
 	// MNetworkEnable
-	int32_t m_nMatchClockUpdateTick; // 0x9e18	
+	int32_t m_nMatchClockUpdateTick; // 0x9e10	
 	// MNetworkEnable
-	float m_flMatchClockAtLastUpdate; // 0x9e1c	
-	double m_flPauseTime; // 0x9e20	
-	CPlayerSlot m_pausingPlayerId; // 0x9e28	
-	CPlayerSlot m_unpausingPlayerId; // 0x9e2c	
-	float m_fPauseRawTime; // 0x9e30	
-	float m_fPauseCurTime; // 0x9e34	
-	float m_fUnpauseRawTime; // 0x9e38	
-	float m_fUnpauseCurTime; // 0x9e3c	
+	float m_flMatchClockAtLastUpdate; // 0x9e14	
+	double m_flPauseTime; // 0x9e18	
+	CPlayerSlot m_pausingPlayerId; // 0x9e20	
+	CPlayerSlot m_unpausingPlayerId; // 0x9e24	
+	float m_fPauseRawTime; // 0x9e28	
+	float m_fPauseCurTime; // 0x9e2c	
+	float m_fUnpauseRawTime; // 0x9e30	
+	float m_fUnpauseCurTime; // 0x9e34	
 private:
-	[[maybe_unused]] uint8_t __pad9e40[0x28]; // 0x9e40
+	[[maybe_unused]] uint8_t __pad9e38[0x50]; // 0x9e38
 public:
 	// MNetworkEnable
-	bool m_bRequiresReportCardDismissal; // 0x9e68	
+	bool m_bRequiresReportCardDismissal; // 0x9e88	
 private:
-	[[maybe_unused]] uint8_t __pad9e69[0x3]; // 0x9e69
+	[[maybe_unused]] uint8_t __pad9e89[0x3]; // 0x9e89
 public:
-	GameTime_t m_flPreGameWaitEndTime; // 0x9e6c	
-	GameTime_t m_flReportCardDismissalWaitStart; // 0x9e70	
-	int32_t m_nLastPreGameCount; // 0x9e74	
+	GameTime_t m_flPreGameWaitEndTime; // 0x9e8c	
+	GameTime_t m_flReportCardDismissalWaitStart; // 0x9e90	
+	int32_t m_nLastPreGameCount; // 0x9e94	
 	// MNetworkEnable
-	int32_t m_eGGTeam; // 0x9e78	
+	int32_t m_eGGTeam; // 0x9e98	
 	// MNetworkEnable
-	GameTime_t m_flGGEndsAtTime; // 0x9e7c	
+	GameTime_t m_flGGEndsAtTime; // 0x9e9c	
 	// MNetworkEnable
-	MatchID_t m_unMatchID; // 0x9e80	
+	MatchID_t m_unMatchID; // 0x9ea0	
 	// MNetworkEnable
-	int32_t m_nExperimentalGameplayState; // 0x9e88	
-	int32_t m_nPlayerDeathEventID; // 0x9e8c	
-	int32_t m_nReplayChangedEvent; // 0x9e90	
-	int32_t m_nGameOverEvent; // 0x9e94	
+	int32_t m_nExperimentalGameplayState; // 0x9ea8	
+	int32_t m_nPlayerDeathEventID; // 0x9eac	
+	int32_t m_nReplayChangedEvent; // 0x9eb0	
+	int32_t m_nGameOverEvent; // 0x9eb4	
 private:
-	[[maybe_unused]] uint8_t __pad9e98[0x20]; // 0x9e98
+	[[maybe_unused]] uint8_t __pad9eb8[0x20]; // 0x9eb8
 public:
 	// MNetworkEnable
-	GameTime_t m_flHeroDiedTime; // 0x9eb8	
+	GameTime_t m_flHeroDiedTime; // 0x9ed8	
 };
 

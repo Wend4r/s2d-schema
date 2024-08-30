@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4c8
+// Size: 0x4e8
 // Has VTable
 class CAITestPath : public CPointEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04b8[0x8]; // 0x4b8
+	[[maybe_unused]] uint8_t __pad04d8[0x8]; // 0x4d8
 public:
-	CUtlSymbolLarge m_strNextPath; // 0x4c0	
+	CUtlSymbolLarge m_strNextPath; // 0x4e0	
 };
 

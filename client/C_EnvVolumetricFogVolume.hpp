@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x580
+// Size: 0x5a0
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -28,43 +28,43 @@ class C_EnvVolumetricFogVolume : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bActive; // 0x538	
+	bool m_bActive; // 0x558	
 private:
-	[[maybe_unused]] uint8_t __pad0539[0x3]; // 0x539
+	[[maybe_unused]] uint8_t __pad0559[0x3]; // 0x559
 public:
 	// MNetworkEnable
-	Vector m_vBoxMins; // 0x53c	
+	Vector m_vBoxMins; // 0x55c	
 	// MNetworkEnable
-	Vector m_vBoxMaxs; // 0x548	
+	Vector m_vBoxMaxs; // 0x568	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x554	
+	bool m_bStartDisabled; // 0x574	
 private:
-	[[maybe_unused]] uint8_t __pad0555[0x3]; // 0x555
+	[[maybe_unused]] uint8_t __pad0575[0x3]; // 0x575
 public:
 	// MNetworkEnable
-	float m_flStrength; // 0x558	
+	float m_flStrength; // 0x578	
 	// MNetworkEnable
-	int32_t m_nFalloffShape; // 0x55c	
+	int32_t m_nFalloffShape; // 0x57c	
 	// MNetworkEnable
-	float m_flFalloffExponent; // 0x560	
+	float m_flFalloffExponent; // 0x580	
 	// MNetworkEnable
-	float m_flHeightFogDepth; // 0x564	
+	float m_flHeightFogDepth; // 0x584	
 	// MNetworkEnable
-	float m_fHeightFogEdgeWidth; // 0x568	
+	float m_fHeightFogEdgeWidth; // 0x588	
 	// MNetworkEnable
-	float m_fIndirectLightStrength; // 0x56c	
+	float m_fIndirectLightStrength; // 0x58c	
 	// MNetworkEnable
-	float m_fSunLightStrength; // 0x570	
+	float m_fSunLightStrength; // 0x590	
 	// MNetworkEnable
-	float m_fNoiseStrength; // 0x574	
+	float m_fNoiseStrength; // 0x594	
 	// MNetworkEnable
-	bool m_bOverrideIndirectLightStrength; // 0x578	
+	bool m_bOverrideIndirectLightStrength; // 0x598	
 	// MNetworkEnable
-	bool m_bOverrideSunLightStrength; // 0x579	
+	bool m_bOverrideSunLightStrength; // 0x599	
 	// MNetworkEnable
-	bool m_bOverrideNoiseStrength; // 0x57a	
+	bool m_bOverrideNoiseStrength; // 0x59a	
 	// MNetworkEnable
-	bool m_bAllowLPVIndirect; // 0x57b	
+	bool m_bAllowLPVIndirect; // 0x59b	
 	
 	// Datamap fields:
 	// bool InputEnable; // 0x0

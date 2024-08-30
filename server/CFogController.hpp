@@ -5,7 +5,7 @@
 struct fogparams_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x528
+// Size: 0x548
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -14,12 +14,12 @@ class CFogController : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	fogparams_t m_fog; // 0x4b8	
-	bool m_bUseAngles; // 0x520	
+	fogparams_t m_fog; // 0x4d8	
+	bool m_bUseAngles; // 0x540	
 private:
-	[[maybe_unused]] uint8_t __pad0521[0x3]; // 0x521
+	[[maybe_unused]] uint8_t __pad0541[0x3]; // 0x541
 public:
-	int32_t m_iChangedVariables; // 0x524	
+	int32_t m_iChangedVariables; // 0x544	
 	
 	// Datamap fields:
 	// float InputSetStartDist; // 0x0

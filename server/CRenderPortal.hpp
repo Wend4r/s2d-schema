@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x780
+// Size: 0x7a0
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_hLocalPortalLink"
@@ -18,23 +18,23 @@
 class CRenderPortal : public CBaseModelEntity
 {
 public:
-	CUtlSymbolLarge m_szLocalPortalLink; // 0x748	
-	CUtlSymbolLarge m_szRemotePortalLink; // 0x750	
+	CUtlSymbolLarge m_szLocalPortalLink; // 0x768	
+	CUtlSymbolLarge m_szRemotePortalLink; // 0x770	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hLocalPortalLink; // 0x758	
+	CHandle< CBaseEntity > m_hLocalPortalLink; // 0x778	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hRemotePortalLink; // 0x75c	
+	CHandle< CBaseEntity > m_hRemotePortalLink; // 0x77c	
 	// MNetworkEnable
-	CUtlString m_brushModelName; // 0x760	
+	CUtlString m_brushModelName; // 0x780	
 	// MNetworkEnable
-	float m_flFadeStartDist; // 0x768	
+	float m_flFadeStartDist; // 0x788	
 	// MNetworkEnable
-	float m_flFadeEndDist; // 0x76c	
+	float m_flFadeEndDist; // 0x78c	
 	// MNetworkEnable
-	float m_flFadeStartAngle; // 0x770	
+	float m_flFadeStartAngle; // 0x790	
 	// MNetworkEnable
-	float m_flFadeEndAngle; // 0x774	
+	float m_flFadeEndAngle; // 0x794	
 	// MNetworkEnable
-	Color m_fadeToColor; // 0x778	
+	Color m_fadeToColor; // 0x798	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd78
+// Size: 0xda0
 // Has VTable
 class CAbility_Mirage_Tornado : public C_CitadelBaseAbility
 {

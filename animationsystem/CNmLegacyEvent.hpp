@@ -4,14 +4,14 @@
 
 // Registered binary: animationsystem.dll (project 'animlib')
 // Alignment: 8
-// Size: 0x40
+// Size: 0x30
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CNmLegacyEvent : public CNmEvent
 {
-private:
-	[[maybe_unused]] uint8_t __pad0018[0x10]; // 0x18
 public:
+	CUtlString m_animEventClassName; // 0x18	
+	KeyValues3 m_KV; // 0x20	
 };
 

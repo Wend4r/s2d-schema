@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcc8
+// Size: 0xcf0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIsFriendlyTarget"
@@ -16,22 +16,22 @@ struct GameTime_t;
 class CCitadel_Ability_Nano_Pounce : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ab0[0x1f8]; // 0xab0
+	[[maybe_unused]] uint8_t __pad0ad8[0x1f8]; // 0xad8
 public:
 	// MNetworkEnable
-	bool m_bIsFriendlyTarget; // 0xca8	
+	bool m_bIsFriendlyTarget; // 0xcd0	
 private:
-	[[maybe_unused]] uint8_t __pad0ca9[0x3]; // 0xca9
+	[[maybe_unused]] uint8_t __pad0cd1[0x3]; // 0xcd1
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTarget; // 0xcac	
+	CHandle< CBaseEntity > m_hTarget; // 0xcd4	
 	// MNetworkEnable
-	Vector m_vAttackTarget; // 0xcb0	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flPounceStartTime; // 0xcbc	
+	Vector m_vAttackTarget; // 0xcd8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flToTargetStartTime; // 0xcc0	
+	GameTime_t m_flPounceStartTime; // 0xce4	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
+	GameTime_t m_flToTargetStartTime; // 0xce8	
 };
 

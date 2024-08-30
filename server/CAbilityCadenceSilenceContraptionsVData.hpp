@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1580
+// Size: 0x1588
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CAbilityCadenceSilenceContraptionsVData : public CBaseDashCastAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SilenceContraptionsModifier; // 0x1570	
+	CEmbeddedSubclass< CCitadelModifier > m_SilenceContraptionsModifier; // 0x1578	
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 55
+// Enumerator count: 56
 // Alignment: 4
 // Size: 0x4
 enum class ECitadelAbilityOrders : uint32_t
@@ -53,15 +53,16 @@ enum class ECitadelAbilityOrders : uint32_t
 	ECitadelAbilityOrder_Invalid_OnlyTwoAirDashes = 0x2a,
 	ECitadelAbilityOrder_Invalid_OnlyOneDownDash = 0x2b,
 	ECitadelAbilityOrder_Invalid_OnlyTwoDownDashes = 0x2c,
-	ECitadelAbilityOrder_Invalid_SlideTakingPriority = 0x2d,
-	ECitadelAbilityOrder_Invalid_NothingToRefresh = 0x2e,
-	ECitadelAbilityOrder_Invalid_BeetleTarget = 0x2f,
-	ECitadelAbilityOrder_Invalid_ClipIsFull = 0x30,
-	ECitadelAbilityOrder_Invalid_DashJumpFailed = 0x31,
-	ECitadelAbilityOrder_DebugCommand_RequiresHeroTarget = 0x32,
-	ECitadelAbilityOrder_Invalid_NotEnoughAbilityResource = 0x33,
-	ECitadelAbilityOrder_Invalid_NotEnoughHeadRoom = 0x34,
-	ECitadelAbilityOrder_Invalid_NoDamageToClear = 0x35,
-	ECitadelAbilityOrder_Max = 0x36,
+	ECitadelAbilityOrder_Invalid_OnlyOneWallJump = 0x2d,
+	ECitadelAbilityOrder_Invalid_SlideTakingPriority = 0x2e,
+	ECitadelAbilityOrder_Invalid_NothingToRefresh = 0x2f,
+	ECitadelAbilityOrder_Invalid_BeetleTarget = 0x30,
+	ECitadelAbilityOrder_Invalid_ClipIsFull = 0x31,
+	ECitadelAbilityOrder_Invalid_DashJumpFailed = 0x32,
+	ECitadelAbilityOrder_DebugCommand_RequiresHeroTarget = 0x33,
+	ECitadelAbilityOrder_Invalid_NotEnoughAbilityResource = 0x34,
+	ECitadelAbilityOrder_Invalid_NotEnoughHeadRoom = 0x35,
+	ECitadelAbilityOrder_Invalid_NoDamageToClear = 0x36,
+	ECitadelAbilityOrder_Max = 0x37,
 };
 

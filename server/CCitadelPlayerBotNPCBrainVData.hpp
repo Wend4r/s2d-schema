@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe88
+// Size: 0xfa0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,32 +12,32 @@ class CCitadelPlayerBotNPCBrainVData : public CAI_CitadelNPCVData
 {
 public:
 	// MPropertyStartGroup "Movement"
-	float m_flJumpMaxRise; // 0xe18	
-	float m_flAirJumpMin; // 0xe1c	
-	float m_flJumpMaxDrop; // 0xe20	
-	float m_flJumpMaxDist; // 0xe24	
-	float m_flJumpMinDist; // 0xe28	
-	float m_flClimbUpCostBase; // 0xe2c	
-	float m_flClimbUpCostScalar; // 0xe30	
-	float m_flFaceTargetDistance; // 0xe34	
-	float m_flNavGoalTolerance; // 0xe38	
-	float m_flVerticalAttachOffset; // 0xe3c	
-	float m_flStuckTime; // 0xe40	
-	float m_flStuckTimeAir; // 0xe44	
-	float m_flMajorStuckTime; // 0xe48	
-	float m_flStuckDistance; // 0xe4c	
-	float m_flMaxPathDistance; // 0xe50	
-	float m_flMinLanePathDistance; // 0xe54	
-	float m_flEnemyDistanceForReload; // 0xe58	
-	float m_flReloadEnemyFarPct; // 0xe5c	
-	float m_flReloadEnemyLoSPct; // 0xe60	
-	float m_flReloadEnemyLosTime; // 0xe64	
-	float m_flMinShootTimeToReload; // 0xe68	
-	float m_flDashDamageThreshold; // 0xe6c	
-	float m_flDashDamageTickDown; // 0xe70	
-	float m_flMinDesiredDashDist; // 0xe74	
-	float m_flMinAbilityAimTime; // 0xe78	
-	float m_flDisengageFromEnemyToLaneDist; // 0xe7c	
-	float m_flDefendBaseSearchRadius; // 0xe80	
+	float m_flJumpMaxRise; // 0xf30	
+	float m_flAirJumpMin; // 0xf34	
+	float m_flJumpMaxDrop; // 0xf38	
+	float m_flJumpMaxDist; // 0xf3c	
+	float m_flJumpMinDist; // 0xf40	
+	float m_flClimbUpCostBase; // 0xf44	
+	float m_flClimbUpCostScalar; // 0xf48	
+	float m_flFaceTargetDistance; // 0xf4c	
+	float m_flNavGoalTolerance; // 0xf50	
+	float m_flVerticalAttachOffset; // 0xf54	
+	float m_flStuckTime; // 0xf58	
+	float m_flStuckTimeAir; // 0xf5c	
+	float m_flMajorStuckTime; // 0xf60	
+	float m_flStuckDistance; // 0xf64	
+	float m_flMaxPathDistance; // 0xf68	
+	float m_flMinLanePathDistance; // 0xf6c	
+	float m_flEnemyDistanceForReload; // 0xf70	
+	float m_flReloadEnemyFarPct; // 0xf74	
+	float m_flReloadEnemyLoSPct; // 0xf78	
+	float m_flReloadEnemyLosTime; // 0xf7c	
+	float m_flMinShootTimeToReload; // 0xf80	
+	float m_flDashDamageThreshold; // 0xf84	
+	float m_flDashDamageTickDown; // 0xf88	
+	float m_flMinDesiredDashDist; // 0xf8c	
+	float m_flMinAbilityAimTime; // 0xf90	
+	float m_flDisengageFromEnemyToLaneDist; // 0xf94	
+	float m_flDefendBaseSearchRadius; // 0xf98	
 };
 

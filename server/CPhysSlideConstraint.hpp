@@ -5,29 +5,29 @@
 struct ConstraintSoundInfo;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5e8
+// Size: 0x608
 // Has VTable
 class CPhysSlideConstraint : public CPhysConstraint
 {
 private:
-	[[maybe_unused]] uint8_t __pad0530[0x8]; // 0x530
+	[[maybe_unused]] uint8_t __pad0550[0x8]; // 0x550
 public:
-	Vector m_axisEnd; // 0x538	
-	float m_slideFriction; // 0x544	
-	float m_systemLoadScale; // 0x548	
-	float m_initialOffset; // 0x54c	
-	bool m_bEnableLinearConstraint; // 0x550	
-	bool m_bEnableAngularConstraint; // 0x551	
+	Vector m_axisEnd; // 0x558	
+	float m_slideFriction; // 0x564	
+	float m_systemLoadScale; // 0x568	
+	float m_initialOffset; // 0x56c	
+	bool m_bEnableLinearConstraint; // 0x570	
+	bool m_bEnableAngularConstraint; // 0x571	
 private:
-	[[maybe_unused]] uint8_t __pad0552[0x2]; // 0x552
+	[[maybe_unused]] uint8_t __pad0572[0x2]; // 0x572
 public:
-	float m_flMotorFrequency; // 0x554	
-	float m_flMotorDampingRatio; // 0x558	
-	bool m_bUseEntityPivot; // 0x55c	
+	float m_flMotorFrequency; // 0x574	
+	float m_flMotorDampingRatio; // 0x578	
+	bool m_bUseEntityPivot; // 0x57c	
 private:
-	[[maybe_unused]] uint8_t __pad055d[0x3]; // 0x55d
+	[[maybe_unused]] uint8_t __pad057d[0x3]; // 0x57d
 public:
-	ConstraintSoundInfo m_soundInfo; // 0x560	
+	ConstraintSoundInfo m_soundInfo; // 0x580	
 	
 	// Datamap fields:
 	// float InputSetOffset; // 0x0

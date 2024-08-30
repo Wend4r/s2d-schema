@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa40
+// Size: 0xa60
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bEnabled"
@@ -15,22 +15,22 @@
 class C_ColorCorrectionVolume : public C_BaseTrigger
 {
 public:
-	float m_LastEnterWeight; // 0x818	
-	float m_LastEnterTime; // 0x81c	
-	float m_LastExitWeight; // 0x820	
-	float m_LastExitTime; // 0x824	
+	float m_LastEnterWeight; // 0x838	
+	float m_LastEnterTime; // 0x83c	
+	float m_LastExitWeight; // 0x840	
+	float m_LastExitTime; // 0x844	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x828	
+	bool m_bEnabled; // 0x848	
 private:
-	[[maybe_unused]] uint8_t __pad0829[0x3]; // 0x829
+	[[maybe_unused]] uint8_t __pad0849[0x3]; // 0x849
 public:
 	// MNetworkEnable
-	float m_MaxWeight; // 0x82c	
+	float m_MaxWeight; // 0x84c	
 	// MNetworkEnable
-	float m_FadeDuration; // 0x830	
+	float m_FadeDuration; // 0x850	
 	// MNetworkEnable
-	float m_Weight; // 0x834	
+	float m_Weight; // 0x854	
 	// MNetworkEnable
-	char m_lookupFilename[512]; // 0x838	
+	char m_lookupFilename[512]; // 0x858	
 };
 

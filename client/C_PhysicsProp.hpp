@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc00
+// Size: 0xc20
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flAnimTime"
@@ -19,6 +19,6 @@ class C_PhysicsProp : public C_BreakableProp
 {
 public:
 	// MNetworkEnable
-	bool m_bAwake; // 0xbf8	
+	bool m_bAwake; // 0xc18	
 };
 

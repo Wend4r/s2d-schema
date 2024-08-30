@@ -5,23 +5,23 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x810
+// Size: 0x830
 // Has VTable
 class CFuncTrain : public CBasePlatTrain
 {
 public:
-	CHandle< CBaseEntity > m_hCurrentTarget; // 0x7f0	
-	bool m_activated; // 0x7f4	
+	CHandle< CBaseEntity > m_hCurrentTarget; // 0x810	
+	bool m_activated; // 0x814	
 private:
-	[[maybe_unused]] uint8_t __pad07f5[0x3]; // 0x7f5
+	[[maybe_unused]] uint8_t __pad0815[0x3]; // 0x815
 public:
-	CHandle< CBaseEntity > m_hEnemy; // 0x7f8	
-	float m_flBlockDamage; // 0x7fc	
-	GameTime_t m_flNextBlockTime; // 0x800	
+	CHandle< CBaseEntity > m_hEnemy; // 0x818	
+	float m_flBlockDamage; // 0x81c	
+	GameTime_t m_flNextBlockTime; // 0x820	
 private:
-	[[maybe_unused]] uint8_t __pad0804[0x4]; // 0x804
+	[[maybe_unused]] uint8_t __pad0824[0x4]; // 0x824
 public:
-	CUtlSymbolLarge m_iszLastTarget; // 0x808	
+	CUtlSymbolLarge m_iszLastTarget; // 0x828	
 	
 	// Datamap fields:
 	// void CFuncTrainWait; // 0x0

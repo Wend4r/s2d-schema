@@ -7,7 +7,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe80
+// Size: 0xea8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bShadowFormCast"
@@ -25,53 +25,53 @@ struct ParticleIndex_t;
 class CCitadel_Ability_FlyingStrike : public CCitadelBaseYamatoAbility
 {
 public:
-	SatVolumeIndex_t m_desatVolIdx; // 0xc30	
+	SatVolumeIndex_t m_desatVolIdx; // 0xc58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bShadowFormCast; // 0xc34	
+	bool m_bShadowFormCast; // 0xc5c	
 private:
-	[[maybe_unused]] uint8_t __pad0c35[0x3]; // 0xc35
+	[[maybe_unused]] uint8_t __pad0c5d[0x3]; // 0xc5d
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecCastStartPos; // 0xc38	
+	Vector m_vecCastStartPos; // 0xc60	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecDashStartPos; // 0xc44	
+	Vector m_vecDashStartPos; // 0xc6c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	QAngle m_angDashStartAng; // 0xc50	
+	QAngle m_angDashStartAng; // 0xc78	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flDashStartTime; // 0xc5c	
+	GameTime_t m_flDashStartTime; // 0xc84	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flEndAttackTime; // 0xc60	
+	GameTime_t m_flEndAttackTime; // 0xc88	
 	// MNetworkEnable
-	GameTime_t m_flGrappleStartTime; // 0xc64	
+	GameTime_t m_flGrappleStartTime; // 0xc8c	
 	// MNetworkEnable
-	GameTime_t m_flGrappleArriveTime; // 0xc68	
+	GameTime_t m_flGrappleArriveTime; // 0xc90	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTarget; // 0xc6c	
+	CHandle< C_BaseEntity > m_hTarget; // 0xc94	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flGrappleShotAttackTime; // 0xc70	
-	float m_flVelSpring; // 0xc74	
-	int32_t m_nTicksNotMoving; // 0xc78	
-	Vector m_vecPrevPos; // 0xc7c	
+	GameTime_t m_flGrappleShotAttackTime; // 0xc98	
+	float m_flVelSpring; // 0xc9c	
+	int32_t m_nTicksNotMoving; // 0xca0	
+	Vector m_vecPrevPos; // 0xca4	
 private:
-	[[maybe_unused]] uint8_t __pad0c88[0x4]; // 0xc88
+	[[maybe_unused]] uint8_t __pad0cb0[0x4]; // 0xcb0
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
 	// MNetworkEncoder "coord"
-	Vector m_rgTargetPos[20]; // 0xc8c	
+	Vector m_rgTargetPos[20]; // 0xcb4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_rgTargetPosTime[20]; // 0xd7c	
+	GameTime_t m_rgTargetPosTime[20]; // 0xda4	
 private:
-	[[maybe_unused]] uint8_t __pad0dcc[0xac]; // 0xdcc
+	[[maybe_unused]] uint8_t __pad0df4[0xac]; // 0xdf4
 public:
-	ParticleIndex_t m_nGrappleTravelEffect; // 0xe78	
+	ParticleIndex_t m_nGrappleTravelEffect; // 0xea0	
 };
 

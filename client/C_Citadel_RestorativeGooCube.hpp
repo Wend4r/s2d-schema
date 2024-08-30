@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa80
+// Size: 0xaa0
 // Has VTable
 class C_Citadel_RestorativeGooCube : public CCitadelAnimatingModelEntity
 {

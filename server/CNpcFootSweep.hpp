@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x938
+// Size: 0x958
 // Has VTable
 class CNpcFootSweep : public CBaseTrigger
 {
 public:
-	CUtlVector< FootSweepPusher_t > m_vecPushers; // 0x918	
-	bool m_bUseCenterPusher; // 0x930	
-	bool m_bUseForwardPusher; // 0x931	
+	CUtlVector< FootSweepPusher_t > m_vecPushers; // 0x938	
+	bool m_bUseCenterPusher; // 0x950	
+	bool m_bUseForwardPusher; // 0x951	
 };
 

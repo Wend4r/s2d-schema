@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x540
+// Size: 0x560
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flFadeStartDist"
@@ -13,8 +13,8 @@ class C_EnvDetailController : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_flFadeStartDist; // 0x538	
+	float m_flFadeStartDist; // 0x558	
 	// MNetworkEnable
-	float m_flFadeEndDist; // 0x53c	
+	float m_flFadeEndDist; // 0x55c	
 };
 

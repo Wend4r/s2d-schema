@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcf0
+// Size: 0xd18
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flParryWindowEndTime"
@@ -20,29 +20,29 @@ class CCitadel_Ability_HoldMelee : public CCitadel_Ability_Melee_Base
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flParryWindowEndTime; // 0xca8	
+	GameTime_t m_flParryWindowEndTime; // 0xcd0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextParryTime; // 0xcac	
+	GameTime_t m_flNextParryTime; // 0xcd4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flStateStartTime; // 0xcb0	
+	GameTime_t m_flStateStartTime; // 0xcd8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flDashStartTime; // 0xcb4	
+	GameTime_t m_flDashStartTime; // 0xcdc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	EMeleeHold_AttackState m_eCurrentAttackState; // 0xcb8	
+	EMeleeHold_AttackState m_eCurrentAttackState; // 0xce0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	EMeleeHold_AttackType m_eCurrentAttackType; // 0xcbc	
+	EMeleeHold_AttackType m_eCurrentAttackType; // 0xce4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vAirDashDir; // 0xcc0	
-	bool m_bCreatedChargeEffects; // 0xccc	
+	Vector m_vAirDashDir; // 0xce8	
+	bool m_bCreatedChargeEffects; // 0xcf4	
 private:
-	[[maybe_unused]] uint8_t __pad0ccd[0x3]; // 0xccd
+	[[maybe_unused]] uint8_t __pad0cf5[0x3]; // 0xcf5
 public:
-	QAngle m_angForced; // 0xcd0	
+	QAngle m_angForced; // 0xcf8	
 };
 

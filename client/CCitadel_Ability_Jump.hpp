@@ -6,62 +6,69 @@ struct GameTime_t;
 struct CCitadelAutoScaledTime;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdb0
+// Size: 0xdd8
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAutoScaledTime m_flGroundDashJumpStartTime"
 // MNetworkVarNames "CCitadelAutoScaledTime m_flGroundDashJumpEndTime"
-// MNetworkVarNames "Vector m_vecLeapVelocity"
 // MNetworkVarNames "bool m_bJumped"
 // MNetworkVarNames "bool m_bCanDashJump"
 // MNetworkVarNames "int m_nDesiredAirJumpCount"
 // MNetworkVarNames "int m_nExecutedAirJumpCount"
 // MNetworkVarNames "bool m_bInSlideJump"
 // MNetworkVarNames "int8 m_nConsecutiveAirJumps"
+// MNetworkVarNames "int8 m_nConsecutiveWallJumps"
+// MNetworkVarNames "Vector m_vWallJumpNormal"
 class CCitadel_Ability_Jump : public C_CitadelBaseAbility
 {
 public:
-	GameTime_t m_flLastTimeOnZipLine; // 0xc28	
-	GameTime_t m_flLastOnGroundTime; // 0xc2c	
-	GameTime_t m_flPhaseStartTime; // 0xc30	
-	GameTime_t m_flJumpTime; // 0xc34	
-	bool m_bLastJumpWasDashJump; // 0xc38	
-	bool m_bShouldCreateAirJumpEffects; // 0xc39	
+	GameTime_t m_flLastTimeOnZipLine; // 0xc50	
+	GameTime_t m_flLastOnGroundTime; // 0xc54	
+	GameTime_t m_flPhaseStartTime; // 0xc58	
+	GameTime_t m_flJumpTime; // 0xc5c	
+	EJumpType_t m_LastJumpType; // 0xc60	
+	bool m_bShouldCreateAirJumpEffects; // 0xc61	
 private:
-	[[maybe_unused]] uint8_t __pad0c3a[0x2]; // 0xc3a
+	[[maybe_unused]] uint8_t __pad0c62[0x2]; // 0xc62
 public:
-	GameTime_t m_flDoubleJumpFailTime; // 0xc3c	
-	ECitadelAbilityOrders m_eDoubleJumpFailReason; // 0xc40	
+	GameTime_t m_flDoubleJumpFailTime; // 0xc64	
+	ECitadelAbilityOrders m_eDoubleJumpFailReason; // 0xc68	
 private:
-	[[maybe_unused]] uint8_t __pad0c44[0x11c]; // 0xc44
+	[[maybe_unused]] uint8_t __pad0c6c[0x11c]; // 0xc6c
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flGroundDashJumpStartTime; // 0xd60	
+	CCitadelAutoScaledTime m_flGroundDashJumpStartTime; // 0xd88	
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flGroundDashJumpEndTime; // 0xd78	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecLeapVelocity; // 0xd90	
+	CCitadelAutoScaledTime m_flGroundDashJumpEndTime; // 0xda0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bJumped; // 0xd9c	
+	bool m_bJumped; // 0xdb8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bCanDashJump; // 0xd9d	
+	bool m_bCanDashJump; // 0xdb9	
 private:
-	[[maybe_unused]] uint8_t __pad0d9e[0x2]; // 0xd9e
+	[[maybe_unused]] uint8_t __pad0dba[0x2]; // 0xdba
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int32_t m_nDesiredAirJumpCount; // 0xda0	
+	int32_t m_nDesiredAirJumpCount; // 0xdbc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int32_t m_nExecutedAirJumpCount; // 0xda4	
+	int32_t m_nExecutedAirJumpCount; // 0xdc0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bInSlideJump; // 0xda8	
+	bool m_bInSlideJump; // 0xdc4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int8_t m_nConsecutiveAirJumps; // 0xda9	
+	int8_t m_nConsecutiveAirJumps; // 0xdc5	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
+	int8_t m_nConsecutiveWallJumps; // 0xdc6	
+private:
+	[[maybe_unused]] uint8_t __pad0dc7[0x1]; // 0xdc7
+public:
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
+	Vector m_vWallJumpNormal; // 0xdc8	
 };
 

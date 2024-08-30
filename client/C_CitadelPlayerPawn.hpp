@@ -7,7 +7,7 @@ struct CCitadelAbilityComponent;
 struct CCitadelHeroComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1348
+// Size: 0x1368
 // Has VTable
 // 
 // MNetworkVarTypeOverride "CCitadelPlayer_CameraServices m_pCameraServices"
@@ -53,137 +53,137 @@ struct CCitadelHeroComponent;
 class C_CitadelPlayerPawn : public CCitadelPlayerPawnBase
 {
 private:
-	[[maybe_unused]] uint8_t __pad0e48[0x60]; // 0xe48
+	[[maybe_unused]] uint8_t __pad0e68[0x60]; // 0xe68
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
 	// MNetworkBitCount "11"
 	// MNetworkChangeCallback "playerEyeAnglesChanged"
 	// MNetworkPriority "32"
-	QAngle m_angEyeAngles; // 0xea8	
+	QAngle m_angEyeAngles; // 0xec8	
 private:
-	[[maybe_unused]] uint8_t __pad0eb4[0xc]; // 0xeb4
+	[[maybe_unused]] uint8_t __pad0ed4[0xc]; // 0xed4
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
 	// MNetworkBitCount "11"
 	// MNetworkPriority "32"
-	QAngle m_angClientCamera; // 0xec0	
+	QAngle m_angClientCamera; // 0xee0	
 	// MNetworkEnable
-	CMsgLaneColor m_eZipLineLaneColor; // 0xecc	
+	CMsgLaneColor m_eZipLineLaneColor; // 0xeec	
 	// MNetworkEnable
 	// MNetworkChangeCallback "LevelChanged"
-	int32_t m_nLevel; // 0xed0	
+	int32_t m_nLevel; // 0xef0	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkChangeCallback "CurrenciesChanged"
-	int32_t m_nCurrencies[4]; // 0xed4	
+	int32_t m_nCurrencies[4]; // 0xef4	
 	// MNetworkEnable
-	int32_t m_nSpentCurrencies[4]; // 0xee4	
+	int32_t m_nSpentCurrencies[4]; // 0xf04	
 	// MNetworkEnable
-	GameTime_t m_flLastSpawnTime; // 0xef4	
+	GameTime_t m_flLastSpawnTime; // 0xf14	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RespawnTimeChanged"
-	GameTime_t m_flRespawnTime; // 0xef8	
+	GameTime_t m_flRespawnTime; // 0xf18	
 	// MNetworkEnable
 	// MNetworkChangeCallback "InRegenZoneChanged"
-	bool m_bInRegenerationZone; // 0xefc	
+	bool m_bInRegenerationZone; // 0xf1c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "InItemShopZoneChanged"
-	bool m_bInItemShopZone; // 0xefd	
+	bool m_bInItemShopZone; // 0xf1d	
 private:
-	[[maybe_unused]] uint8_t __pad0efe[0x2]; // 0xefe
+	[[maybe_unused]] uint8_t __pad0f1e[0x2]; // 0xf1e
 public:
 	// MNetworkEnable
-	GameTime_t m_timeRevealedOnMinimapByNPC; // 0xf00	
+	GameTime_t m_timeRevealedOnMinimapByNPC; // 0xf20	
 private:
-	[[maybe_unused]] uint8_t __pad0f04[0x4]; // 0xf04
+	[[maybe_unused]] uint8_t __pad0f24[0x4]; // 0xf24
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "ItemSellPriceChanged"
-	C_NetworkUtlVectorBase< CUtlStringToken > m_vecFullSellPriceItems; // 0xf08	
+	C_NetworkUtlVectorBase< CUtlStringToken > m_vecFullSellPriceItems; // 0xf28	
 	// MNetworkEnable
 	// MNetworkChangeCallback "AbilityUpgradeSellPriceChanged"
-	C_NetworkUtlVectorBase< FullSellPriceAbilityUpgrades_t > m_vecFullSellPriceAbilityUpgrades; // 0xf20	
+	C_NetworkUtlVectorBase< FullSellPriceAbilityUpgrades_t > m_vecFullSellPriceAbilityUpgrades; // 0xf40	
 	// MNetworkEnable
-	bool m_bNetworkDisconnected; // 0xf38	
+	bool m_bNetworkDisconnected; // 0xf58	
 	// MNetworkEnable
-	bool m_bHasIncomingThreats; // 0xf39	
+	bool m_bHasIncomingThreats; // 0xf59	
 	// MNetworkEnable
-	bool m_bLearningAbility; // 0xf3a	
+	bool m_bLearningAbility; // 0xf5a	
 private:
-	[[maybe_unused]] uint8_t __pad0f3b[0x1]; // 0xf3b
+	[[maybe_unused]] uint8_t __pad0f5b[0x1]; // 0xf5b
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnFlashStartChanged"
-	int32_t m_nFlashStartTick; // 0xf3c	
+	int32_t m_nFlashStartTick; // 0xf5c	
 	// MNetworkEnable
-	int32_t m_nFlashMaxStartTick; // 0xf40	
+	int32_t m_nFlashMaxStartTick; // 0xf60	
 	// MNetworkEnable
-	int32_t m_nFlashFadeStartTick; // 0xf44	
+	int32_t m_nFlashFadeStartTick; // 0xf64	
 	// MNetworkEnable
-	int32_t m_nFlashEndTick; // 0xf48	
+	int32_t m_nFlashEndTick; // 0xf68	
 	// MNetworkEnable
-	int8_t m_nFlashMaxAlpha; // 0xf4c	
+	int8_t m_nFlashMaxAlpha; // 0xf6c	
 private:
-	[[maybe_unused]] uint8_t __pad0f4d[0x3]; // 0xf4d
+	[[maybe_unused]] uint8_t __pad0f6d[0x3]; // 0xf6d
 public:
 	// MNetworkEnable
-	int32_t m_nDeducedLane; // 0xf50	
+	int32_t m_nDeducedLane; // 0xf70	
 	// MNetworkEnable
-	bool m_bDismissedReportCard; // 0xf54	
+	bool m_bDismissedReportCard; // 0xf74	
 private:
-	[[maybe_unused]] uint8_t __pad0f55[0x3]; // 0xf55
+	[[maybe_unused]] uint8_t __pad0f75[0x3]; // 0xf75
 public:
 	// MNetworkEnable
-	float m_flCurrentHealingAmount; // 0xf58	
+	float m_flCurrentHealingAmount; // 0xf78	
 	// MNetworkEnable
-	QAngle m_angLockedEyeAngles; // 0xf5c	
+	QAngle m_angLockedEyeAngles; // 0xf7c	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xf68	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xf88	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelHeroComponent"
 	// MNetworkAlias "CCitadelHeroComponent"
 	// MNetworkTypeAlias "CCitadelHeroComponent"
-	CCitadelHeroComponent m_CCitadelHeroComponent; // 0x1108	
+	CCitadelHeroComponent m_CCitadelHeroComponent; // 0x1128	
 private:
-	[[maybe_unused]] uint8_t __pad1128[0xa0]; // 0x1128
+	[[maybe_unused]] uint8_t __pad1148[0xa0]; // 0x1148
 public:
-	float m_flRichPresenceUpdateInterval; // 0x11c8	
+	float m_flRichPresenceUpdateInterval; // 0x11e8	
 private:
-	[[maybe_unused]] uint8_t __pad11cc[0xf4]; // 0x11cc
+	[[maybe_unused]] uint8_t __pad11ec[0xf4]; // 0x11ec
 public:
 	// MNetworkEnable
-	bool m_bAnimGraphMovementClipped; // 0x12c0	
+	bool m_bAnimGraphMovementClipped; // 0x12e0	
 	// MNetworkEnable
-	bool m_bAnimGraphMovementDisableGravity; // 0x12c1	
+	bool m_bAnimGraphMovementDisableGravity; // 0x12e1	
 	// MNetworkEnable
-	bool m_bAnimGraphMovementDirectAirControl; // 0x12c2	
-	bool m_bLastMoveWasAnimGraph; // 0x12c3	
+	bool m_bAnimGraphMovementDirectAirControl; // 0x12e2	
+	bool m_bLastMoveWasAnimGraph; // 0x12e3	
 	// MNetworkEnable
-	GameTime_t m_flPredTimeSlowedStart; // 0x12c4	
+	GameTime_t m_flPredTimeSlowedStart; // 0x12e4	
 	// MNetworkEnable
-	GameTime_t m_flPredTimeSlowedEnd; // 0x12c8	
+	GameTime_t m_flPredTimeSlowedEnd; // 0x12e8	
 	// MNetworkEnable
-	float m_flPredSlowSpeed; // 0x12cc	
+	float m_flPredSlowSpeed; // 0x12ec	
 	// MNetworkEnable
-	GameTime_t m_flTimeSlowedStart[4]; // 0x12d0	
+	GameTime_t m_flTimeSlowedStart[4]; // 0x12f0	
 	// MNetworkEnable
-	GameTime_t m_flTimeSlowedEnd[4]; // 0x12e0	
+	GameTime_t m_flTimeSlowedEnd[4]; // 0x1300	
 	// MNetworkEnable
-	float m_flSlowSpeed[4]; // 0x12f0	
+	float m_flSlowSpeed[4]; // 0x1310	
 	// MNetworkEnable
-	GameTime_t m_flSprintAnimSuppressEndTime; // 0x1300	
-	int32_t m_iCurSlowSlot; // 0x1304	
-	Vector m_vShootTestOffsetStanding; // 0x1308	
-	Vector m_vShootTestOffsetCrouching; // 0x1314	
-	GameTime_t m_leanStartTime; // 0x1320	
+	GameTime_t m_flSprintAnimSuppressEndTime; // 0x1320	
+	int32_t m_iCurSlowSlot; // 0x1324	
+	Vector m_vShootTestOffsetStanding; // 0x1328	
+	Vector m_vShootTestOffsetCrouching; // 0x1334	
+	GameTime_t m_leanStartTime; // 0x1340	
 	
 	// Datamap fields:
-	// CCitadelPlayer_CameraServices m_pCameraServices; // 0xcc8
-	// CCitadelPlayer_MovementServices m_pMovementServices; // 0xcd0
+	// CCitadelPlayer_CameraServices m_pCameraServices; // 0xce8
+	// CCitadelPlayer_MovementServices m_pMovementServices; // 0xcf0
 };
 

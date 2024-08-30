@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x648
+// Size: 0x688
 // Has VTable
 class CNPC_Boss_Tier1_GraphController : public CNPC_Trooper_GraphController
 {
 public:
-	CAnimGraphParamRef< char* > m_pszActivity; // 0x5d8	
-	CAnimGraphParamRef< char* > m_pszLaneSide; // 0x600	
-	CAnimGraphParamRef< bool > m_bShieldMode; // 0x628	
+	CAnimGraphParamRef< char* > m_pszActivity; // 0x618	
+	CAnimGraphParamRef< char* > m_pszLaneSide; // 0x640	
+	CAnimGraphParamRef< bool > m_bShieldMode; // 0x668	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier1_GraphController")->m_static_fields[0]->m_instance);};

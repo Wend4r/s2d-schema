@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x590
+// Size: 0x5b8
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -12,9 +12,9 @@
 class CPathSimple : public C_BaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0538[0x50]; // 0x538
+	[[maybe_unused]] uint8_t __pad0558[0x58]; // 0x558
 public:
 	// MNetworkEnable
-	CUtlString m_pathString; // 0x588	
+	CUtlString m_pathString; // 0x5b0	
 };
 

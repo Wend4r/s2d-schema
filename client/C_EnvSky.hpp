@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x870
+// Size: 0x890
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -25,42 +25,42 @@ class C_EnvSky : public C_BaseModelEntity
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0x810	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0x830	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterialLightingOnly; // 0x818	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterialLightingOnly; // 0x838	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	bool m_bStartDisabled; // 0x820	
+	bool m_bStartDisabled; // 0x840	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	Color m_vTintColor; // 0x821	
+	Color m_vTintColor; // 0x841	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	Color m_vTintColorLightingOnly; // 0x825	
+	Color m_vTintColorLightingOnly; // 0x845	
 private:
-	[[maybe_unused]] uint8_t __pad0829[0x3]; // 0x829
+	[[maybe_unused]] uint8_t __pad0849[0x3]; // 0x849
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	float m_flBrightnessScale; // 0x82c	
+	float m_flBrightnessScale; // 0x84c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	int32_t m_nFogType; // 0x830	
+	int32_t m_nFogType; // 0x850	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	float m_flFogMinStart; // 0x834	
+	float m_flFogMinStart; // 0x854	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	float m_flFogMinEnd; // 0x838	
+	float m_flFogMinEnd; // 0x858	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	float m_flFogMaxStart; // 0x83c	
+	float m_flFogMaxStart; // 0x85c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	float m_flFogMaxEnd; // 0x840	
+	float m_flFogMaxEnd; // 0x860	
 	// MNetworkEnable
 	// MNetworkChangeCallback "SkyStateChanged"
-	bool m_bEnabled; // 0x844	
+	bool m_bEnabled; // 0x864	
 };
 

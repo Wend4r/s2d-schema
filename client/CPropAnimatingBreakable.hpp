@@ -6,7 +6,7 @@ struct CBreakableStageHelper;
 struct CEntityIOOutput;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xb20
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -14,10 +14,10 @@ struct CEntityIOOutput;
 class CPropAnimatingBreakable : public CBaseAnimGraph
 {
 public:
-	CBreakableStageHelper m_stages; // 0xa70	
-	CEntityIOOutput m_OnTakeDamage; // 0xa88	
-	CEntityIOOutput m_OnFinalBreak; // 0xab0	
-	CEntityIOOutput m_OnStageAdvanced; // 0xad8	
+	CBreakableStageHelper m_stages; // 0xa90	
+	CEntityIOOutput m_OnTakeDamage; // 0xaa8	
+	CEntityIOOutput m_OnFinalBreak; // 0xad0	
+	CEntityIOOutput m_OnStageAdvanced; // 0xaf8	
 	
 	// Datamap fields:
 	// void InputNextBreakStage; // 0x0

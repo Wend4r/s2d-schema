@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa88
+// Size: 0xaa8
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bTakesDamage"
@@ -14,6 +14,6 @@ class C_NPC_BaseDefenseSentry : public C_NPC_SimpleAnimatingAI
 {
 public:
 	// MNetworkEnable
-	Vector m_vecUnitStatusOffset; // 0xa78	
+	Vector m_vecUnitStatusOffset; // 0xa98	
 };
 

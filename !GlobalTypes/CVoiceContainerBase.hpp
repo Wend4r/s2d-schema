@@ -3,9 +3,10 @@
 #include <cstdint>
 
 struct CVSound;
+struct CVoiceContainerAnalysisBase;
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xb8
+// Size: 0xc0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -33,6 +34,8 @@ public:
 	// -> m_nLoopEnd - 0x88
 	// -> m_encodedHeader - 0x90
 	CVSound m_vSound; // 0x38	
+	// MPropertySuppressExpr "true"
+	CVoiceContainerAnalysisBase* m_pEnvelopeAnalyzer; // 0xb8	
 	
 	// Static fields:
 	static bool &Get_bAudioFinishedPlaying(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CVoiceContainerBase")->m_static_fields[0]->m_instance);};

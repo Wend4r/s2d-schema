@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x848
+// Size: 0x868
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -21,28 +21,28 @@ class C_EnvDecal : public C_BaseModelEntity
 {
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0x810	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0x830	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnDecalDimensionsChanged"
-	float m_flWidth; // 0x818	
+	float m_flWidth; // 0x838	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnDecalDimensionsChanged"
-	float m_flHeight; // 0x81c	
+	float m_flHeight; // 0x83c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnDecalDimensionsChanged"
-	float m_flDepth; // 0x820	
+	float m_flDepth; // 0x840	
 	// MNetworkEnable
-	uint32_t m_nRenderOrder; // 0x824	
+	uint32_t m_nRenderOrder; // 0x844	
 	// MNetworkEnable
-	bool m_bProjectOnWorld; // 0x828	
+	bool m_bProjectOnWorld; // 0x848	
 	// MNetworkEnable
-	bool m_bProjectOnCharacters; // 0x829	
+	bool m_bProjectOnCharacters; // 0x849	
 	// MNetworkEnable
-	bool m_bProjectOnWater; // 0x82a	
+	bool m_bProjectOnWater; // 0x84a	
 private:
-	[[maybe_unused]] uint8_t __pad082b[0x1]; // 0x82b
+	[[maybe_unused]] uint8_t __pad084b[0x1]; // 0x84b
 public:
 	// MNetworkEnable
-	float m_flDepthSortBias; // 0x82c	
+	float m_flDepthSortBias; // 0x84c	
 };
 

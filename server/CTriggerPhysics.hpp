@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x978
+// Size: 0x998
 // Has VTable
 // 
 // MNetworkVarNames "float m_gravityScale"
@@ -23,40 +23,40 @@
 class CTriggerPhysics : public CBaseTrigger
 {
 private:
-	[[maybe_unused]] uint8_t __pad0918[0x10]; // 0x918
+	[[maybe_unused]] uint8_t __pad0938[0x10]; // 0x938
 public:
 	// MNetworkEnable
-	float m_gravityScale; // 0x928	
+	float m_gravityScale; // 0x948	
 	// MNetworkEnable
-	float m_linearLimit; // 0x92c	
+	float m_linearLimit; // 0x94c	
 	// MNetworkEnable
-	float m_linearDamping; // 0x930	
+	float m_linearDamping; // 0x950	
 	// MNetworkEnable
-	float m_angularLimit; // 0x934	
+	float m_angularLimit; // 0x954	
 	// MNetworkEnable
-	float m_angularDamping; // 0x938	
+	float m_angularDamping; // 0x958	
 	// MNetworkEnable
-	float m_linearForce; // 0x93c	
+	float m_linearForce; // 0x95c	
 	// MNetworkEnable
-	float m_flFrequency; // 0x940	
+	float m_flFrequency; // 0x960	
 	// MNetworkEnable
-	float m_flDampingRatio; // 0x944	
+	float m_flDampingRatio; // 0x964	
 	// MNetworkEnable
-	Vector m_vecLinearForcePointAt; // 0x948	
+	Vector m_vecLinearForcePointAt; // 0x968	
 	// MNetworkEnable
-	bool m_bCollapseToForcePoint; // 0x954	
+	bool m_bCollapseToForcePoint; // 0x974	
 private:
-	[[maybe_unused]] uint8_t __pad0955[0x3]; // 0x955
+	[[maybe_unused]] uint8_t __pad0975[0x3]; // 0x975
 public:
 	// MNetworkEnable
-	Vector m_vecLinearForcePointAtWorld; // 0x958	
+	Vector m_vecLinearForcePointAtWorld; // 0x978	
 	// MNetworkEnable
-	Vector m_vecLinearForceDirection; // 0x964	
+	Vector m_vecLinearForceDirection; // 0x984	
 	// MNetworkEnable
-	bool m_bConvertToDebrisWhenPossible; // 0x970	
+	bool m_bConvertToDebrisWhenPossible; // 0x990	
 	
 	// Datamap fields:
-	// void m_pController; // 0x920
+	// void m_pController; // 0x940
 	// CUtlSymbolLarge InputSetLinearForcePointAt; // 0x0
 };
 

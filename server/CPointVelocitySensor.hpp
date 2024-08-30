@@ -4,23 +4,23 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x520
 // Has VTable
 class CPointVelocitySensor : public CPointEntity
 {
 public:
-	CHandle< CBaseEntity > m_hTargetEntity; // 0x4b8	
-	Vector m_vecAxis; // 0x4bc	
-	bool m_bEnabled; // 0x4c8	
+	CHandle< CBaseEntity > m_hTargetEntity; // 0x4d8	
+	Vector m_vecAxis; // 0x4dc	
+	bool m_bEnabled; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04c9[0x3]; // 0x4c9
+	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
 public:
-	float m_fPrevVelocity; // 0x4cc	
-	float m_flAvgInterval; // 0x4d0	
+	float m_fPrevVelocity; // 0x4ec	
+	float m_flAvgInterval; // 0x4f0	
 private:
-	[[maybe_unused]] uint8_t __pad04d4[0x4]; // 0x4d4
+	[[maybe_unused]] uint8_t __pad04f4[0x4]; // 0x4f4
 public:
-	CEntityOutputTemplate< float32 > m_Velocity; // 0x4d8	
+	CEntityOutputTemplate< float32 > m_Velocity; // 0x4f8	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

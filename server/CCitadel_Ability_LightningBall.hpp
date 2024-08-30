@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc40
+// Size: 0xc68
 // Has VTable
 class CCitadel_Ability_LightningBall : public CCitadelBaseAbility
 {
 public:
-	float m_flInitialSpeed; // 0xab0	
+	float m_flInitialSpeed; // 0xad8	
 };
 

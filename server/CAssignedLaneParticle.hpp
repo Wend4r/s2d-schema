@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x750
+// Size: 0x770
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iTeamNum"
@@ -13,6 +13,6 @@ class CAssignedLaneParticle : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	int32_t m_iLane; // 0x748	
+	int32_t m_iLane; // 0x768	
 };
 

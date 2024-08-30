@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc90
+// Size: 0xcb8
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_hHookVictim"
@@ -15,16 +15,17 @@ class CCitadel_Ability_Hook : public CCitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "HookVictimChanged"
-	CHandle< CBaseEntity > m_hHookVictim; // 0xab0	
+	CHandle< CBaseEntity > m_hHookVictim; // 0xad8	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hProjectile; // 0xab4	
+	CHandle< CBaseEntity > m_hProjectile; // 0xadc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecHookTargetStartPos; // 0xab8	
-	bool m_bProjectileHit; // 0xac4	
+	Vector m_vecHookTargetStartPos; // 0xae0	
+	bool m_bIsAltCast; // 0xaec	
+	bool m_bProjectileHit; // 0xaed	
 private:
-	[[maybe_unused]] uint8_t __pad0ac5[0x3]; // 0xac5
+	[[maybe_unused]] uint8_t __pad0aee[0x2]; // 0xaee
 public:
-	float m_flLastUppercutRestoreTime; // 0xac8	
+	float m_flLastUppercutRestoreTime; // 0xaf0	
 };
 

@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd68
+// Size: 0xd90
 // Has VTable
 // 
 // MNetworkVarNames "ELashGrappleState m_EGrappleState"
@@ -16,15 +16,15 @@ class CCitadel_Ability_Lash_Ultimate : public CCitadelBaseLockonAbility
 {
 public:
 	// MNetworkEnable
-	ELashGrappleState m_EGrappleState; // 0xc20	
+	ELashGrappleState m_EGrappleState; // 0xc48	
 private:
-	[[maybe_unused]] uint8_t __pad0c21[0x3]; // 0xc21
+	[[maybe_unused]] uint8_t __pad0c49[0x3]; // 0xc49
 public:
 	// MNetworkEnable
-	GameTime_t m_flStateEnterTime; // 0xc24	
+	GameTime_t m_flStateEnterTime; // 0xc4c	
 	// MNetworkEnable
-	GameTime_t m_flNextStateTime; // 0xc28	
+	GameTime_t m_flNextStateTime; // 0xc50	
 	// MNetworkEnable
-	GameTime_t m_flBoostEndTime; // 0xc2c	
+	GameTime_t m_flBoostEndTime; // 0xc54	
 };
 

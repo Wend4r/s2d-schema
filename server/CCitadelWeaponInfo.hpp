@@ -48,73 +48,72 @@ public:
 	int32_t m_iAmmoConsumedPerShot; // 0x30	
 	// MPropertyDescription "The maximum distance bullets will travel"
 	float m_flRange; // 0x34	
+	// MPropertyDescription "The maximum distance bullets will travel while zoomed. If 0, uses Range."
+	float m_flRangeWhileZoomed; // 0x38	
 	// MPropertyDescription "The distance where damage falloff begins. Damage scale before this is clamped to 'Damage Falooff Start Scale'."
-	float m_flDamageFalloffStartRange; // 0x38	
+	float m_flDamageFalloffStartRange; // 0x3c	
 	// MPropertyDescription "The distance where damage falloff ends.  Beyond this range, damage scale is clamped to 'Damage Falloff End Scale'"
-	float m_flDamageFalloffEndRange; // 0x3c	
+	float m_flDamageFalloffEndRange; // 0x40	
 	// MPropertyDescription "The bias in the damage falloff range"
 	// MPropertyAttributeRange "0 1"
-	float m_flDamageFalloffBias; // 0x40	
+	float m_flDamageFalloffBias; // 0x44	
 	// MPropertyDescription "Damage falloff start range."
-	float m_flDamageFalloffStartScale; // 0x44	
+	float m_flDamageFalloffStartScale; // 0x48	
 	// MPropertyDescription "Damage falloff end range"
-	float m_flDamageFalloffEndScale; // 0x48	
+	float m_flDamageFalloffEndScale; // 0x4c	
 	// MPropertyDescription "If > 0, bullets will continue through thin surfaces with their damage scaled by this amount"
-	float m_flPenetrationPercent; // 0x4c	
+	float m_flPenetrationPercent; // 0x50	
 	// MPropertyDescription "How long does it takes to aim down sights. "
-	float m_flIronSightsTime; // 0x50	
+	float m_flIronSightsTime; // 0x54	
 	// MPropertyStartGroup "Firing Behavior/+Reload"
 	// MPropertyDescription "How long a reload takes"
 	// MPropertyFriendlyName "Reload Duration"
-	float m_reloadDuration; // 0x54	
+	float m_reloadDuration; // 0x58	
 	// MPropertyDescription "Reload a single bullet when the reload duration completes rather than the entire clip"
-	bool m_bReloadSingleBullets; // 0x58	
+	bool m_bReloadSingleBullets; // 0x5c	
 	// MPropertyDescription "Allows canceling out of the reload at any time by firing your gun."
-	bool m_bReloadSingleBulletsAllowCancel; // 0x59	
+	bool m_bReloadSingleBulletsAllowCancel; // 0x5d	
 private:
-	[[maybe_unused]] uint8_t __pad005a[0x2]; // 0x5a
+	[[maybe_unused]] uint8_t __pad005e[0x2]; // 0x5e
 public:
 	// MPropertyDescription "Initial Delay before starting to reload bullets when using single bullet reload."
-	float m_flReloadSingleBulletsInitialDelay; // 0x5c	
+	float m_flReloadSingleBulletsInitialDelay; // 0x60	
 	// MPropertyStartGroup "Firing Behavior/Crits"
 	// MPropertyDescription "Are we allowed to crit via headshots and weakpoints"
-	bool m_bCanCrit; // 0x60	
+	bool m_bCanCrit; // 0x64	
 private:
-	[[maybe_unused]] uint8_t __pad0061[0x3]; // 0x61
+	[[maybe_unused]] uint8_t __pad0065[0x3]; // 0x65
 public:
 	// MPropertyDescription "The distance where crit bonus damage begins to change"
 	// MPropertySuppressExpr "m_bCanCrit == false"
-	float m_flCritBonusStartRange; // 0x64	
+	float m_flCritBonusStartRange; // 0x68	
 	// MPropertyDescription "The distance where crit bonus damage ends its change"
 	// MPropertySuppressExpr "m_bCanCrit == false"
-	float m_flCritBonusEndRange; // 0x68	
+	float m_flCritBonusEndRange; // 0x6c	
 	// MPropertyDescription "Crit multiplier up to the 'Crit Bonus Start Range'"
 	// MPropertySuppressExpr "m_bCanCrit == false"
-	float m_flCritBonusStart; // 0x6c	
+	float m_flCritBonusStart; // 0x70	
 	// MPropertyDescription "Crit multiplier at and beyond  'Crit Bonus End Range'"
 	// MPropertySuppressExpr "m_bCanCrit == false"
-	float m_flCritBonusEnd; // 0x70	
+	float m_flCritBonusEnd; // 0x74	
 	// MPropertyDescription "Bonus on top of the multiplier when critting NPCs"
 	// MPropertySuppressExpr "m_bCanCrit == false"
-	float m_flCritBonusAgainstNPCs; // 0x74	
+	float m_flCritBonusAgainstNPCs; // 0x78	
 	// MPropertyStartGroup "Firing Behavior/Spinup"
 	// MPropertyDescription "Does the cycle time of this weapon change the more you fire it?"
-	bool m_bSpinsUp; // 0x78	
+	bool m_bSpinsUp; // 0x7c	
 private:
-	[[maybe_unused]] uint8_t __pad0079[0x3]; // 0x79
+	[[maybe_unused]] uint8_t __pad007d[0x3]; // 0x7d
 public:
 	// MPropertyDescription "-1 means use m_flCycleTime"
 	// MPropertySuppressExpr "m_bSpinsUp == false"
-	float m_flMaxSpinCycleTime; // 0x7c	
+	float m_flMaxSpinCycleTime; // 0x80	
 	// MPropertySuppressExpr "m_bSpinsUp == false"
-	float m_flSpinIncreaseRate; // 0x80	
+	float m_flSpinIncreaseRate; // 0x84	
 	// MPropertySuppressExpr "m_bSpinsUp == false"
-	float m_flSpinDecayRate; // 0x84	
+	float m_flSpinDecayRate; // 0x88	
 	// MPropertySuppressExpr "m_bSpinsUp == false"
-	float m_flBuildUpRate; // 0x88	
-private:
-	[[maybe_unused]] uint8_t __pad008c[0x4]; // 0x8c
-public:
+	float m_flBuildUpRate; // 0x8c	
 	// MPropertyStartGroup "Bullet Travel"
 	CPiecewiseCurve m_BulletSpeedCurve; // 0x90	
 	float m_flBulletSpeedRandomFactor; // 0xd0	

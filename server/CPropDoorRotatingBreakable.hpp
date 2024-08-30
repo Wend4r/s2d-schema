@@ -4,18 +4,18 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf50
+// Size: 0xf70
 // Has VTable
 class CPropDoorRotatingBreakable : public CPropDoorRotating
 {
 public:
-	bool m_bBreakable; // 0xf30	
-	bool m_isAbleToCloseAreaPortals; // 0xf31	
+	bool m_bBreakable; // 0xf50	
+	bool m_isAbleToCloseAreaPortals; // 0xf51	
 private:
-	[[maybe_unused]] uint8_t __pad0f32[0x2]; // 0xf32
+	[[maybe_unused]] uint8_t __pad0f52[0x2]; // 0xf52
 public:
-	int32_t m_currentDamageState; // 0xf34	
-	CUtlVector< CUtlSymbolLarge > m_damageStates; // 0xf38	
+	int32_t m_currentDamageState; // 0xf54	
+	CUtlVector< CUtlSymbolLarge > m_damageStates; // 0xf58	
 	
 	// Datamap fields:
 	// void InputSetUnbreakable; // 0x0

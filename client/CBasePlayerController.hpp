@@ -5,7 +5,7 @@
 struct C_CommandContext;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x6d0
+// Size: 0x6f0
 // Has VTable
 // 
 // MNetworkIncludeByName "m_pEntity"
@@ -28,53 +28,53 @@ struct C_CommandContext;
 class CBasePlayerController : public C_BaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0538[0x8]; // 0x538
+	[[maybe_unused]] uint8_t __pad0558[0x8]; // 0x558
 public:
-	int32_t m_nFinalPredictedTick; // 0x540	
+	int32_t m_nFinalPredictedTick; // 0x560	
 private:
-	[[maybe_unused]] uint8_t __pad0544[0x4]; // 0x544
+	[[maybe_unused]] uint8_t __pad0564[0x4]; // 0x564
 public:
-	C_CommandContext m_CommandContext; // 0x548	
-	uint64_t m_nInButtonsWhichAreToggles; // 0x5e0	
+	C_CommandContext m_CommandContext; // 0x568	
+	uint64_t m_nInButtonsWhichAreToggles; // 0x600	
 	// MNetworkEnable
 	// MNetworkPriority "1"
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	uint32_t m_nTickBase; // 0x5e8	
+	uint32_t m_nTickBase; // 0x608	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnPawnChanged"
-	CHandle< C_BasePlayerPawn > m_hPawn; // 0x5ec	
+	CHandle< C_BasePlayerPawn > m_hPawn; // 0x60c	
 	// MNetworkEnable
-	bool m_bKnownTeamMismatch; // 0x5f0	
+	bool m_bKnownTeamMismatch; // 0x610	
 private:
-	[[maybe_unused]] uint8_t __pad05f1[0x3]; // 0x5f1
+	[[maybe_unused]] uint8_t __pad0611[0x3]; // 0x611
 public:
-	CHandle< C_BasePlayerPawn > m_hPredictedPawn; // 0x5f4	
-	CSplitScreenSlot m_nSplitScreenSlot; // 0x5f8	
-	CHandle< CBasePlayerController > m_hSplitOwner; // 0x5fc	
-	CUtlVector< CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x600	
-	bool m_bIsHLTV; // 0x618	
+	CHandle< C_BasePlayerPawn > m_hPredictedPawn; // 0x614	
+	CSplitScreenSlot m_nSplitScreenSlot; // 0x618	
+	CHandle< CBasePlayerController > m_hSplitOwner; // 0x61c	
+	CUtlVector< CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x620	
+	bool m_bIsHLTV; // 0x638	
 private:
-	[[maybe_unused]] uint8_t __pad0619[0x3]; // 0x619
+	[[maybe_unused]] uint8_t __pad0639[0x3]; // 0x639
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnConnectionStateChanged"
-	PlayerConnectedState m_iConnected; // 0x61c	
+	PlayerConnectedState m_iConnected; // 0x63c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnPlayerControllerNameChanged"
-	char m_iszPlayerName[128]; // 0x620	
+	char m_iszPlayerName[128]; // 0x640	
 private:
-	[[maybe_unused]] uint8_t __pad06a0[0x8]; // 0x6a0
+	[[maybe_unused]] uint8_t __pad06c0[0x8]; // 0x6c0
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "fixed64"
 	// MNetworkChangeCallback "OnSteamIDChanged"
-	uint64_t m_steamID; // 0x6a8	
-	bool m_bIsLocalPlayerController; // 0x6b0	
+	uint64_t m_steamID; // 0x6c8	
+	bool m_bIsLocalPlayerController; // 0x6d0	
 private:
-	[[maybe_unused]] uint8_t __pad06b1[0x3]; // 0x6b1
+	[[maybe_unused]] uint8_t __pad06d1[0x3]; // 0x6d1
 public:
 	// MNetworkEnable
-	uint32_t m_iDesiredFOV; // 0x6b4	
+	uint32_t m_iDesiredFOV; // 0x6d4	
 	
 	// Static fields:
 	static bool &Get_sm_bRunningPredictedClientStringCommands(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CBasePlayerController")->m_static_fields[0]->m_instance);};
@@ -84,6 +84,6 @@ public:
 	// bool is_hltv; // 0x7fffffff
 	// const char * playername; // 0x7fffffff
 	// bool reserving; // 0x7fffffff
-	// void m_pCurrentCommand; // 0x6a0
+	// void m_pCurrentCommand; // 0x6c0
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x930
+// Size: 0x950
 // Has VTable
 // 
 // MNetworkVarNames "CUtlString m_strStartTouchEventName"
@@ -14,11 +14,11 @@ class CTriggerGameEvent : public CBaseTrigger
 {
 public:
 	// MNetworkEnable
-	CUtlString m_strStartTouchEventName; // 0x918	
+	CUtlString m_strStartTouchEventName; // 0x938	
 	// MNetworkEnable
-	CUtlString m_strEndTouchEventName; // 0x920	
+	CUtlString m_strEndTouchEventName; // 0x940	
 	// MNetworkEnable
-	CUtlString m_strTriggerID; // 0x928	
+	CUtlString m_strTriggerID; // 0x948	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge InputSetStartTouchEvent; // 0x0

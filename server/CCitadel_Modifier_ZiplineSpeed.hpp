@@ -10,6 +10,5 @@ class CCitadel_Modifier_ZiplineSpeed : public CCitadelModifier
 {
 public:
 	int32_t m_iLane; // 0xc8	
-	float m_flStartTime; // 0xcc	
 };
 

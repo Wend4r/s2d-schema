@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc98
+// Size: 0xcb8
 // Has VTable
 // 
 // MNetworkIncludeByName "m_lifeState"
@@ -16,10 +16,10 @@ class C_AI_BaseNPC : public C_BaseCombatCharacter
 {
 public:
 	// MNetworkEnable
-	NPC_STATE m_NPCState; // 0xc90	
+	NPC_STATE m_NPCState; // 0xcb0	
 	// MNetworkEnable
-	bool m_bFadeCorpse; // 0xc94	
+	bool m_bFadeCorpse; // 0xcb4	
 	// MNetworkEnable
-	bool m_bImportantRagdoll; // 0xc95	
+	bool m_bImportantRagdoll; // 0xcb5	
 };
 

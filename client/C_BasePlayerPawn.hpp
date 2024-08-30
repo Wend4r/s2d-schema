@@ -15,7 +15,7 @@ struct sky3dparams_t;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe30
+// Size: 0xe50
 // Has VTable
 // 
 // MNetworkUserGroupProxy "C_BasePlayerPawn"
@@ -54,63 +54,63 @@ class C_BasePlayerPawn : public C_BaseCombatCharacter
 {
 public:
 	// MNetworkEnable
-	CPlayer_WeaponServices* m_pWeaponServices; // 0xc90	
+	CPlayer_WeaponServices* m_pWeaponServices; // 0xcb0	
 	// MNetworkEnable
-	CPlayer_ItemServices* m_pItemServices; // 0xc98	
+	CPlayer_ItemServices* m_pItemServices; // 0xcb8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	CPlayer_AutoaimServices* m_pAutoaimServices; // 0xca0	
+	CPlayer_AutoaimServices* m_pAutoaimServices; // 0xcc0	
 	// MNetworkEnable
-	CPlayer_ObserverServices* m_pObserverServices; // 0xca8	
+	CPlayer_ObserverServices* m_pObserverServices; // 0xcc8	
 	// MNetworkEnable
-	CPlayer_WaterServices* m_pWaterServices; // 0xcb0	
+	CPlayer_WaterServices* m_pWaterServices; // 0xcd0	
 	// MNetworkEnable
-	CPlayer_UseServices* m_pUseServices; // 0xcb8	
+	CPlayer_UseServices* m_pUseServices; // 0xcd8	
 	// MNetworkEnable
-	CPlayer_FlashlightServices* m_pFlashlightServices; // 0xcc0	
+	CPlayer_FlashlightServices* m_pFlashlightServices; // 0xce0	
 	// MNetworkEnable
-	CPlayer_CameraServices* m_pCameraServices; // 0xcc8	
+	CPlayer_CameraServices* m_pCameraServices; // 0xce8	
 	// MNetworkEnable
-	CPlayer_MovementServices* m_pMovementServices; // 0xcd0	
+	CPlayer_MovementServices* m_pMovementServices; // 0xcf0	
 private:
-	[[maybe_unused]] uint8_t __pad0cd8[0x8]; // 0xcd8
+	[[maybe_unused]] uint8_t __pad0cf8[0x8]; // 0xcf8
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	C_UtlVectorEmbeddedNetworkVar< ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0xce0	
-	uint32_t m_nHighestConsumedServerViewAngleChangeIndex; // 0xd30	
-	QAngle v_angle; // 0xd34	
-	QAngle v_anglePrevious; // 0xd40	
+	C_UtlVectorEmbeddedNetworkVar< ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0xd00	
+	uint32_t m_nHighestConsumedServerViewAngleChangeIndex; // 0xd50	
+	QAngle v_angle; // 0xd54	
+	QAngle v_anglePrevious; // 0xd60	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	uint32_t m_iHideHUD; // 0xd4c	
+	uint32_t m_iHideHUD; // 0xd6c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	// -> scale - 0xd58
-	// -> origin - 0xd5c
-	// -> bClip3DSkyBoxNearToWorldFar - 0xd68
-	// -> flClip3DSkyBoxNearToWorldFarOffset - 0xd6c
-	// -> fog - 0xd70
-	// -> m_nWorldGroupID - 0xdd8
-	sky3dparams_t m_skybox3d; // 0xd50	
+	// -> scale - 0xd78
+	// -> origin - 0xd7c
+	// -> bClip3DSkyBoxNearToWorldFar - 0xd88
+	// -> flClip3DSkyBoxNearToWorldFarOffset - 0xd8c
+	// -> fog - 0xd90
+	// -> m_nWorldGroupID - 0xdf8
+	sky3dparams_t m_skybox3d; // 0xd70	
 	// MNetworkEnable
-	GameTime_t m_flDeathTime; // 0xde0	
-	Vector m_vecPredictionError; // 0xde4	
-	GameTime_t m_flPredictionErrorTime; // 0xdf0	
-	Vector m_vecLastCameraSetupLocalOrigin; // 0xdf4	
-	GameTime_t m_flLastCameraSetupTime; // 0xe00	
-	float m_flFOVSensitivityAdjust; // 0xe04	
-	float m_flMouseSensitivity; // 0xe08	
-	Vector m_vOldOrigin; // 0xe0c	
-	float m_flOldSimulationTime; // 0xe18	
-	int32_t m_nLastExecutedCommandNumber; // 0xe1c	
-	int32_t m_nLastExecutedCommandTick; // 0xe20	
+	GameTime_t m_flDeathTime; // 0xe00	
+	Vector m_vecPredictionError; // 0xe04	
+	GameTime_t m_flPredictionErrorTime; // 0xe10	
+	Vector m_vecLastCameraSetupLocalOrigin; // 0xe14	
+	GameTime_t m_flLastCameraSetupTime; // 0xe20	
+	float m_flFOVSensitivityAdjust; // 0xe24	
+	float m_flMouseSensitivity; // 0xe28	
+	Vector m_vOldOrigin; // 0xe2c	
+	float m_flOldSimulationTime; // 0xe38	
+	int32_t m_nLastExecutedCommandNumber; // 0xe3c	
+	int32_t m_nLastExecutedCommandTick; // 0xe40	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnControllerChanged"
-	CHandle< CBasePlayerController > m_hController; // 0xe24	
-	bool m_bIsSwappingToPredictableController; // 0xe28	
+	CHandle< CBasePlayerController > m_hController; // 0xe44	
+	bool m_bIsSwappingToPredictableController; // 0xe48	
 	
 	// Datamap fields:
-	// void m_hPawnListEntry; // 0xe2a
+	// void m_hPawnListEntry; // 0xe4a
 };
 

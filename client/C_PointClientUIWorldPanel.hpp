@@ -5,7 +5,7 @@
 struct CPointOffScreenIndicatorUi;
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0xa70
+// Size: 0xa90
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -35,76 +35,76 @@ struct CPointOffScreenIndicatorUi;
 class C_PointClientUIWorldPanel : public C_BaseClientUIEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0840[0x8]; // 0x840
+	[[maybe_unused]] uint8_t __pad0860[0x8]; // 0x860
 public:
-	bool m_bForceRecreateNextUpdate; // 0x848	
-	bool m_bMoveViewToPlayerNextThink; // 0x849	
-	bool m_bCheckCSSClasses; // 0x84a	
+	bool m_bForceRecreateNextUpdate; // 0x868	
+	bool m_bMoveViewToPlayerNextThink; // 0x869	
+	bool m_bCheckCSSClasses; // 0x86a	
 private:
-	[[maybe_unused]] uint8_t __pad084b[0x5]; // 0x84b
+	[[maybe_unused]] uint8_t __pad086b[0x5]; // 0x86b
 public:
-	CTransform m_anchorDeltaTransform; // 0x850	
+	CTransform m_anchorDeltaTransform; // 0x870	
 private:
-	[[maybe_unused]] uint8_t __pad0870[0x178]; // 0x870
+	[[maybe_unused]] uint8_t __pad0890[0x178]; // 0x890
 public:
-	CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // 0x9e8	
+	CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // 0xa08	
 private:
-	[[maybe_unused]] uint8_t __pad09f0[0x20]; // 0x9f0
+	[[maybe_unused]] uint8_t __pad0a10[0x20]; // 0xa10
 public:
 	// MNetworkEnable
-	bool m_bIgnoreInput; // 0xa10	
+	bool m_bIgnoreInput; // 0xa30	
 	// MNetworkEnable
-	bool m_bLit; // 0xa11	
+	bool m_bLit; // 0xa31	
 	// MNetworkEnable
-	bool m_bFollowPlayerAcrossTeleport; // 0xa12	
+	bool m_bFollowPlayerAcrossTeleport; // 0xa32	
 private:
-	[[maybe_unused]] uint8_t __pad0a13[0x1]; // 0xa13
+	[[maybe_unused]] uint8_t __pad0a33[0x1]; // 0xa33
 public:
 	// MNetworkEnable
-	float m_flWidth; // 0xa14	
+	float m_flWidth; // 0xa34	
 	// MNetworkEnable
-	float m_flHeight; // 0xa18	
+	float m_flHeight; // 0xa38	
 	// MNetworkEnable
-	float m_flDPI; // 0xa1c	
+	float m_flDPI; // 0xa3c	
 	// MNetworkEnable
-	float m_flInteractDistance; // 0xa20	
+	float m_flInteractDistance; // 0xa40	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0xa24	
+	float m_flDepthOffset; // 0xa44	
 	// MNetworkEnable
-	uint32_t m_unOwnerContext; // 0xa28	
+	uint32_t m_unOwnerContext; // 0xa48	
 	// MNetworkEnable
-	uint32_t m_unHorizontalAlign; // 0xa2c	
+	uint32_t m_unHorizontalAlign; // 0xa4c	
 	// MNetworkEnable
-	uint32_t m_unVerticalAlign; // 0xa30	
+	uint32_t m_unVerticalAlign; // 0xa50	
 	// MNetworkEnable
-	uint32_t m_unOrientation; // 0xa34	
+	uint32_t m_unOrientation; // 0xa54	
 	// MNetworkEnable
-	bool m_bAllowInteractionFromAllSceneWorlds; // 0xa38	
+	bool m_bAllowInteractionFromAllSceneWorlds; // 0xa58	
 private:
-	[[maybe_unused]] uint8_t __pad0a39[0x7]; // 0xa39
+	[[maybe_unused]] uint8_t __pad0a59[0x7]; // 0xa59
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0xa40	
+	C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0xa60	
 	// MNetworkEnable
-	bool m_bOpaque; // 0xa58	
+	bool m_bOpaque; // 0xa78	
 	// MNetworkEnable
-	bool m_bNoDepth; // 0xa59	
+	bool m_bNoDepth; // 0xa79	
 	// MNetworkEnable
-	bool m_bRenderBackface; // 0xa5a	
+	bool m_bRenderBackface; // 0xa7a	
 	// MNetworkEnable
-	bool m_bUseOffScreenIndicator; // 0xa5b	
+	bool m_bUseOffScreenIndicator; // 0xa7b	
 	// MNetworkEnable
-	bool m_bExcludeFromSaveGames; // 0xa5c	
+	bool m_bExcludeFromSaveGames; // 0xa7c	
 	// MNetworkEnable
-	bool m_bGrabbable; // 0xa5d	
+	bool m_bGrabbable; // 0xa7d	
 	// MNetworkEnable
-	bool m_bOnlyRenderToTexture; // 0xa5e	
+	bool m_bOnlyRenderToTexture; // 0xa7e	
 	// MNetworkEnable
-	bool m_bDisableMipGen; // 0xa5f	
+	bool m_bDisableMipGen; // 0xa7f	
 	// MNetworkEnable
-	int32_t m_nExplicitImageLayout; // 0xa60	
+	int32_t m_nExplicitImageLayout; // 0xa80	
 	
 	// Datamap fields:
-	// CStrongHandle< InfoForResourceTypeIMaterial2 > m_hPanelOverrideMaterial; // 0x9e0
+	// CStrongHandle< InfoForResourceTypeIMaterial2 > m_hPanelOverrideMaterial; // 0xa00
 };
 

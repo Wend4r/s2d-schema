@@ -6,63 +6,63 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x898
+// Size: 0x8b8
 // Has VTable
 class CFuncTrackTrain : public CBaseModelEntity
 {
 public:
-	CHandle< CPathTrack > m_ppath; // 0x748	
-	float m_length; // 0x74c	
-	Vector m_vPosPrev; // 0x750	
-	QAngle m_angPrev; // 0x75c	
-	Vector m_controlMins; // 0x768	
-	Vector m_controlMaxs; // 0x774	
-	Vector m_lastBlockPos; // 0x780	
-	int32_t m_lastBlockTick; // 0x78c	
-	float m_flVolume; // 0x790	
-	float m_flBank; // 0x794	
-	float m_oldSpeed; // 0x798	
-	float m_flBlockDamage; // 0x79c	
-	float m_height; // 0x7a0	
-	float m_maxSpeed; // 0x7a4	
-	float m_dir; // 0x7a8	
+	CHandle< CPathTrack > m_ppath; // 0x768	
+	float m_length; // 0x76c	
+	Vector m_vPosPrev; // 0x770	
+	QAngle m_angPrev; // 0x77c	
+	Vector m_controlMins; // 0x788	
+	Vector m_controlMaxs; // 0x794	
+	Vector m_lastBlockPos; // 0x7a0	
+	int32_t m_lastBlockTick; // 0x7ac	
+	float m_flVolume; // 0x7b0	
+	float m_flBank; // 0x7b4	
+	float m_oldSpeed; // 0x7b8	
+	float m_flBlockDamage; // 0x7bc	
+	float m_height; // 0x7c0	
+	float m_maxSpeed; // 0x7c4	
+	float m_dir; // 0x7c8	
 private:
-	[[maybe_unused]] uint8_t __pad07ac[0x4]; // 0x7ac
+	[[maybe_unused]] uint8_t __pad07cc[0x4]; // 0x7cc
 public:
-	CUtlSymbolLarge m_iszSoundMove; // 0x7b0	
-	CUtlSymbolLarge m_iszSoundMovePing; // 0x7b8	
-	CUtlSymbolLarge m_iszSoundStart; // 0x7c0	
-	CUtlSymbolLarge m_iszSoundStop; // 0x7c8	
-	CUtlSymbolLarge m_strPathTarget; // 0x7d0	
-	float m_flMoveSoundMinDuration; // 0x7d8	
-	float m_flMoveSoundMaxDuration; // 0x7dc	
-	GameTime_t m_flNextMoveSoundTime; // 0x7e0	
-	float m_flMoveSoundMinPitch; // 0x7e4	
-	float m_flMoveSoundMaxPitch; // 0x7e8	
-	TrainOrientationType_t m_eOrientationType; // 0x7ec	
-	TrainVelocityType_t m_eVelocityType; // 0x7f0	
+	CUtlSymbolLarge m_iszSoundMove; // 0x7d0	
+	CUtlSymbolLarge m_iszSoundMovePing; // 0x7d8	
+	CUtlSymbolLarge m_iszSoundStart; // 0x7e0	
+	CUtlSymbolLarge m_iszSoundStop; // 0x7e8	
+	CUtlSymbolLarge m_strPathTarget; // 0x7f0	
+	float m_flMoveSoundMinDuration; // 0x7f8	
+	float m_flMoveSoundMaxDuration; // 0x7fc	
+	GameTime_t m_flNextMoveSoundTime; // 0x800	
+	float m_flMoveSoundMinPitch; // 0x804	
+	float m_flMoveSoundMaxPitch; // 0x808	
+	TrainOrientationType_t m_eOrientationType; // 0x80c	
+	TrainVelocityType_t m_eVelocityType; // 0x810	
 private:
-	[[maybe_unused]] uint8_t __pad07f4[0xc]; // 0x7f4
+	[[maybe_unused]] uint8_t __pad0814[0xc]; // 0x814
 public:
-	CEntityIOOutput m_OnStart; // 0x800	
-	CEntityIOOutput m_OnNext; // 0x828	
-	CEntityIOOutput m_OnArrivedAtDestinationNode; // 0x850	
-	bool m_bManualSpeedChanges; // 0x878	
+	CEntityIOOutput m_OnStart; // 0x820	
+	CEntityIOOutput m_OnNext; // 0x848	
+	CEntityIOOutput m_OnArrivedAtDestinationNode; // 0x870	
+	bool m_bManualSpeedChanges; // 0x898	
 private:
-	[[maybe_unused]] uint8_t __pad0879[0x3]; // 0x879
+	[[maybe_unused]] uint8_t __pad0899[0x3]; // 0x899
 public:
-	float m_flDesiredSpeed; // 0x87c	
-	GameTime_t m_flSpeedChangeTime; // 0x880	
-	float m_flAccelSpeed; // 0x884	
-	float m_flDecelSpeed; // 0x888	
-	bool m_bAccelToSpeed; // 0x88c	
+	float m_flDesiredSpeed; // 0x89c	
+	GameTime_t m_flSpeedChangeTime; // 0x8a0	
+	float m_flAccelSpeed; // 0x8a4	
+	float m_flDecelSpeed; // 0x8a8	
+	bool m_bAccelToSpeed; // 0x8ac	
 private:
-	[[maybe_unused]] uint8_t __pad088d[0x3]; // 0x88d
+	[[maybe_unused]] uint8_t __pad08ad[0x3]; // 0x8ad
 public:
-	GameTime_t m_flNextMPSoundTime; // 0x890	
+	GameTime_t m_flNextMPSoundTime; // 0x8b0	
 	
 	// Datamap fields:
-	// int64_t m_soundMoveGuid; // 0x7f4
+	// int64_t m_soundMoveGuid; // 0x814
 	// void InputStop; // 0x0
 	// void InputStartForward; // 0x0
 	// void InputStartBackward; // 0x0

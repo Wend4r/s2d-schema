@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x950
+// Size: 0x970
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -35,57 +35,57 @@ class CPointClientUIWorldPanel : public CBaseClientUIEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bIgnoreInput; // 0x8f8	
+	bool m_bIgnoreInput; // 0x918	
 	// MNetworkEnable
-	bool m_bLit; // 0x8f9	
+	bool m_bLit; // 0x919	
 	// MNetworkEnable
-	bool m_bFollowPlayerAcrossTeleport; // 0x8fa	
+	bool m_bFollowPlayerAcrossTeleport; // 0x91a	
 private:
-	[[maybe_unused]] uint8_t __pad08fb[0x1]; // 0x8fb
+	[[maybe_unused]] uint8_t __pad091b[0x1]; // 0x91b
 public:
 	// MNetworkEnable
-	float m_flWidth; // 0x8fc	
+	float m_flWidth; // 0x91c	
 	// MNetworkEnable
-	float m_flHeight; // 0x900	
+	float m_flHeight; // 0x920	
 	// MNetworkEnable
-	float m_flDPI; // 0x904	
+	float m_flDPI; // 0x924	
 	// MNetworkEnable
-	float m_flInteractDistance; // 0x908	
+	float m_flInteractDistance; // 0x928	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0x90c	
+	float m_flDepthOffset; // 0x92c	
 	// MNetworkEnable
-	uint32_t m_unOwnerContext; // 0x910	
+	uint32_t m_unOwnerContext; // 0x930	
 	// MNetworkEnable
-	uint32_t m_unHorizontalAlign; // 0x914	
+	uint32_t m_unHorizontalAlign; // 0x934	
 	// MNetworkEnable
-	uint32_t m_unVerticalAlign; // 0x918	
+	uint32_t m_unVerticalAlign; // 0x938	
 	// MNetworkEnable
-	uint32_t m_unOrientation; // 0x91c	
+	uint32_t m_unOrientation; // 0x93c	
 	// MNetworkEnable
-	bool m_bAllowInteractionFromAllSceneWorlds; // 0x920	
+	bool m_bAllowInteractionFromAllSceneWorlds; // 0x940	
 private:
-	[[maybe_unused]] uint8_t __pad0921[0x7]; // 0x921
+	[[maybe_unused]] uint8_t __pad0941[0x7]; // 0x941
 public:
 	// MNetworkEnable
-	CNetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0x928	
+	CNetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0x948	
 	// MNetworkEnable
-	bool m_bOpaque; // 0x940	
+	bool m_bOpaque; // 0x960	
 	// MNetworkEnable
-	bool m_bNoDepth; // 0x941	
+	bool m_bNoDepth; // 0x961	
 	// MNetworkEnable
-	bool m_bRenderBackface; // 0x942	
+	bool m_bRenderBackface; // 0x962	
 	// MNetworkEnable
-	bool m_bUseOffScreenIndicator; // 0x943	
+	bool m_bUseOffScreenIndicator; // 0x963	
 	// MNetworkEnable
-	bool m_bExcludeFromSaveGames; // 0x944	
+	bool m_bExcludeFromSaveGames; // 0x964	
 	// MNetworkEnable
-	bool m_bGrabbable; // 0x945	
+	bool m_bGrabbable; // 0x965	
 	// MNetworkEnable
-	bool m_bOnlyRenderToTexture; // 0x946	
+	bool m_bOnlyRenderToTexture; // 0x966	
 	// MNetworkEnable
-	bool m_bDisableMipGen; // 0x947	
+	bool m_bDisableMipGen; // 0x967	
 	// MNetworkEnable
-	int32_t m_nExplicitImageLayout; // 0x948	
+	int32_t m_nExplicitImageLayout; // 0x968	
 	
 	// Datamap fields:
 	// void InputIgnoreUserInput; // 0x0

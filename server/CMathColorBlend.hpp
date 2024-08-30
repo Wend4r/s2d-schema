@@ -4,16 +4,16 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4f0
+// Size: 0x510
 // Has VTable
 class CMathColorBlend : public CLogicalEntity
 {
 public:
-	float m_flInMin; // 0x4b8	
-	float m_flInMax; // 0x4bc	
-	Color m_OutColor1; // 0x4c0	
-	Color m_OutColor2; // 0x4c4	
-	CEntityOutputTemplate< Color > m_OutValue; // 0x4c8	
+	float m_flInMin; // 0x4d8	
+	float m_flInMax; // 0x4dc	
+	Color m_OutColor1; // 0x4e0	
+	Color m_OutColor2; // 0x4e4	
+	CEntityOutputTemplate< Color > m_OutValue; // 0x4e8	
 	
 	// Datamap fields:
 	// float InputValue; // 0x0

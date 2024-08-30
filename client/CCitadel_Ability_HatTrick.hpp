@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcd8
+// Size: 0xd00
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CCitadelProjectile> m_hProjectile"
@@ -12,6 +12,6 @@ class CCitadel_Ability_HatTrick : public C_CitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	CHandle< C_CitadelProjectile > m_hProjectile; // 0xc28	
+	CHandle< C_CitadelProjectile > m_hProjectile; // 0xc50	
 };
 

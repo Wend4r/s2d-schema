@@ -7,7 +7,7 @@ struct NavGravity_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x108
+// Size: 0xc8
 // Has VTable
 class CAI_Path
 {
@@ -22,41 +22,32 @@ private:
 	[[maybe_unused]] uint8_t __pad0030[0x8]; // 0x30
 public:
 	uint32_t m_nLocalPathHash; // 0x38	
-	float m_flGoalTolerance; // 0x3c	
-	float m_flWaypointTolerance; // 0x40	
-	CHandle< CBaseEntity > m_hTarget; // 0x44	
-	Vector m_vTargetOffset; // 0x48	
-	bool m_bArrivalRequiresCrouch; // 0x54	
-	bool m_bGoalPosSet; // 0x55	
+	CHandle< CBaseEntity > m_hTarget; // 0x3c	
+	Vector m_vTargetOffset; // 0x40	
+	bool m_bGoalPosSet; // 0x4c	
 private:
-	[[maybe_unused]] uint8_t __pad0056[0x2]; // 0x56
+	[[maybe_unused]] uint8_t __pad004d[0x3]; // 0x4d
 public:
-	Vector m_vGoalActualPos; // 0x58	
-	Vector m_vGoalBasePos; // 0x64	
-	Vector m_vGoalActualPos_EntityInitial; // 0x70	
-	Vector m_vGoalBasePos_EntityInitial; // 0x7c	
-	Vector m_vGoalPosBlocked; // 0x88	
-	// -> m_vGravity - 0x94
-	// -> m_bDefault - 0xa0
-	NavGravity_t m_GravityAtGoalPos; // 0x94	
-	bool m_bGoalTypeSet; // 0xa4	
+	Vector m_vGoalActualPos; // 0x50	
+	Vector m_vGoalBasePos; // 0x5c	
+	Vector m_vGoalActualPos_EntityInitial; // 0x68	
+	Vector m_vGoalBasePos_EntityInitial; // 0x74	
+	Vector m_vGoalPosBlocked; // 0x80	
+	// -> m_vGravity - 0x8c
+	// -> m_bDefault - 0x98
+	NavGravity_t m_GravityAtGoalPos; // 0x8c	
+	bool m_bGoalTypeSet; // 0x9c	
 private:
-	[[maybe_unused]] uint8_t __pad00a5[0x3]; // 0xa5
+	[[maybe_unused]] uint8_t __pad009d[0x3]; // 0x9d
 public:
-	GoalType_t m_goalType; // 0xa8	
-	AI_NavGoalFlags_t m_goalFlags; // 0xac	
-	CUtlString m_pathRestrictionTag; // 0xb0	
-	float m_flGoalMaxPathLength; // 0xb8	
-	float m_flGoalMaxTravelDist; // 0xbc	
-	GameTime_t m_flGoalChangeTime; // 0xc0	
-	GameTime_t m_flPathChangeTime; // 0xc4	
-	float m_flDistAdvancedToCurWaypoint; // 0xc8	
-	Vector m_vGoalDirection; // 0xcc	
-	CHandle< CBaseEntity > m_hGoalDirectionTarget; // 0xd8	
-	float m_flGoalDirectionToleranceDot; // 0xdc	
+	GoalType_t m_goalType; // 0xa0	
+	AI_NavGoalFlags_t m_goalFlags; // 0xa4	
+	GameTime_t m_flGoalChangeTime; // 0xa8	
+	GameTime_t m_flPathChangeTime; // 0xac	
+	float m_flDistAdvancedToCurWaypoint; // 0xb0	
 private:
-	[[maybe_unused]] uint8_t __pad00e0[0x8]; // 0xe0
+	[[maybe_unused]] uint8_t __pad00b4[0xc]; // 0xb4
 public:
-	uint32_t m_nConstrainedToMovableMeshId; // 0xe8	
+	uint32_t m_nConstrainedToMovableMeshId; // 0xc0	
 };
 

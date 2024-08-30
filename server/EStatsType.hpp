@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 82
+// Enumerator count: 83
 // Alignment: 4
 // Size: 0x4
 enum class EStatsType : uint32_t
@@ -88,7 +88,8 @@ enum class EStatsType : uint32_t
 	EBulletSpeedIncrease = 0x4d,
 	EStaminaRegenIncrease = 0x4e,
 	EStaminaCooldown = 0x4f,
-	EStatsCount = 0x50,
-	EStatsInvalid = 0x50,
+	EDebuffResist = 0x50,
+	EStatsCount = 0x51,
+	EStatsInvalid = 0x51,
 };
 

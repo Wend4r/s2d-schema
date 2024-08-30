@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xaf8
+// Size: 0xb18
 // Has VTable
 class CRagdollPropAlias_physics_prop_ragdoll : public CRagdollProp
 {

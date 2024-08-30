@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x850
+// Size: 0x870
 // Has VTable
 class CCitadel_Projectile_WreckingBall : public CCitadelProjectile
 {
 private:
-	[[maybe_unused]] uint8_t __pad0800[0x10]; // 0x800
+	[[maybe_unused]] uint8_t __pad0820[0x10]; // 0x820
 public:
-	bool m_bBroken; // 0x810	
+	bool m_bBroken; // 0x830	
 };
 

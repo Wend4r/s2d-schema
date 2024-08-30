@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x748
+// Size: 0x768
 // Has VTable
 class CFuncIllusionary : public CBaseModelEntity
 {

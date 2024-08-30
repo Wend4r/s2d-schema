@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x910
+// Size: 0x930
 // Has VTable
 class CCitadelPreviewPlayerController : public CCitadelPlayerController
 {

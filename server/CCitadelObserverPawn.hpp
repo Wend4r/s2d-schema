@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc28
+// Size: 0xc48
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -24,8 +24,8 @@ class CCitadelObserverPawn : public CCitadelPlayerPawnBase
 {
 public:
 	// Datamap fields:
-	// CCitadelPlayer_ObserverServices m_pObserverServices; // 0xa90
-	// CCitadelPlayer_CameraServices m_pCameraServices; // 0xab0
-	// CCitadelObserver_MovementServices m_pMovementServices; // 0xab8
+	// CCitadelPlayer_ObserverServices m_pObserverServices; // 0xab0
+	// CCitadelPlayer_CameraServices m_pCameraServices; // 0xad0
+	// CCitadelObserver_MovementServices m_pMovementServices; // 0xad8
 };
 

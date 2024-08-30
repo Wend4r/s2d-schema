@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa78
+// Size: 0xa98
 // Has VTable
 // 
 // MNetworkExcludeByUserGroup "LocalPlayerExclusive"
@@ -12,26 +12,26 @@
 class CBaseCombatCharacter : public CBaseFlex
 {
 public:
-	bool m_bForceServerRagdoll; // 0x9e8	
+	bool m_bForceServerRagdoll; // 0xa08	
 private:
-	[[maybe_unused]] uint8_t __pad09e9[0x7]; // 0x9e9
+	[[maybe_unused]] uint8_t __pad0a09[0x7]; // 0xa09
 public:
 	// MNetworkEnable
-	CNetworkUtlVectorBase< CHandle< CEconWearable > > m_hMyWearables; // 0x9f0	
-	float m_impactEnergyScale; // 0xa08	
-	HitGroup_t m_LastHitGroup; // 0xa0c	
-	bool m_bApplyStressDamage; // 0xa10	
+	CNetworkUtlVectorBase< CHandle< CEconWearable > > m_hMyWearables; // 0xa10	
+	float m_impactEnergyScale; // 0xa28	
+	HitGroup_t m_LastHitGroup; // 0xa2c	
+	bool m_bApplyStressDamage; // 0xa30	
 private:
-	[[maybe_unused]] uint8_t __pad0a11[0x47]; // 0xa11
+	[[maybe_unused]] uint8_t __pad0a31[0x47]; // 0xa31
 public:
-	int32_t m_iDamageCount; // 0xa58	
+	int32_t m_iDamageCount; // 0xa78	
 private:
-	[[maybe_unused]] uint8_t __pad0a5c[0x4]; // 0xa5c
+	[[maybe_unused]] uint8_t __pad0a7c[0x4]; // 0xa7c
 public:
-	CUtlVector< RelationshipOverride_t >* m_pVecRelationships; // 0xa60	
-	CUtlSymbolLarge m_strRelationships; // 0xa68	
-	Hull_t m_eHull; // 0xa70	
-	uint32_t m_nNavHullIdx; // 0xa74	
+	CUtlVector< RelationshipOverride_t >* m_pVecRelationships; // 0xa80	
+	CUtlSymbolLarge m_strRelationships; // 0xa88	
+	Hull_t m_eHull; // 0xa90	
+	uint32_t m_nNavHullIdx; // 0xa94	
 	
 	// Static fields:
 	static int32_t &Get_sm_lastInteraction(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseCombatCharacter")->m_static_fields[0]->m_instance);};

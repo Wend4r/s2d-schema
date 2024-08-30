@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa58
+// Size: 0xa78
 // Has VTable
 class C_Citadel_Projectile_DustStorm : public C_CitadelProjectile
 {

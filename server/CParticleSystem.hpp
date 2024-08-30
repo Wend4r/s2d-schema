@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcc0
+// Size: 0xce0
 // Has VTable
 // 
 // MNetworkIncludeByUserGroup "Origin"
@@ -34,48 +34,48 @@ class CParticleSystem : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	char m_szSnapshotFileName[512]; // 0x748	
+	char m_szSnapshotFileName[512]; // 0x768	
 	// MNetworkEnable
-	bool m_bActive; // 0x948	
+	bool m_bActive; // 0x968	
 	// MNetworkEnable
-	bool m_bFrozen; // 0x949	
+	bool m_bFrozen; // 0x969	
 private:
-	[[maybe_unused]] uint8_t __pad094a[0x2]; // 0x94a
+	[[maybe_unused]] uint8_t __pad096a[0x2]; // 0x96a
 public:
 	// MNetworkEnable
-	float m_flFreezeTransitionDuration; // 0x94c	
+	float m_flFreezeTransitionDuration; // 0x96c	
 	// MNetworkEnable
-	int32_t m_nStopType; // 0x950	
+	int32_t m_nStopType; // 0x970	
 	// MNetworkEnable
-	bool m_bAnimateDuringGameplayPause; // 0x954	
+	bool m_bAnimateDuringGameplayPause; // 0x974	
 private:
-	[[maybe_unused]] uint8_t __pad0955[0x3]; // 0x955
+	[[maybe_unused]] uint8_t __pad0975[0x3]; // 0x975
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x958	
+	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x978	
 	// MNetworkEnable
-	GameTime_t m_flStartTime; // 0x960	
+	GameTime_t m_flStartTime; // 0x980	
 	// MNetworkEnable
-	float m_flPreSimTime; // 0x964	
+	float m_flPreSimTime; // 0x984	
 	// MNetworkEnable
-	Vector m_vServerControlPoints[4]; // 0x968	
+	Vector m_vServerControlPoints[4]; // 0x988	
 	// MNetworkEnable
-	uint8_t m_iServerControlPointAssignments[4]; // 0x998	
+	uint8_t m_iServerControlPointAssignments[4]; // 0x9b8	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hControlPointEnts[64]; // 0x99c	
+	CHandle< CBaseEntity > m_hControlPointEnts[64]; // 0x9bc	
 	// MNetworkEnable
-	bool m_bNoSave; // 0xa9c	
+	bool m_bNoSave; // 0xabc	
 	// MNetworkEnable
-	bool m_bNoFreeze; // 0xa9d	
+	bool m_bNoFreeze; // 0xabd	
 	// MNetworkEnable
-	bool m_bNoRamp; // 0xa9e	
-	bool m_bStartActive; // 0xa9f	
-	CUtlSymbolLarge m_iszEffectName; // 0xaa0	
-	CUtlSymbolLarge m_iszControlPointNames[64]; // 0xaa8	
-	int32_t m_nDataCP; // 0xca8	
-	Vector m_vecDataCPValue; // 0xcac	
-	int32_t m_nTintCP; // 0xcb8	
-	Color m_clrTint; // 0xcbc	
+	bool m_bNoRamp; // 0xabe	
+	bool m_bStartActive; // 0xabf	
+	CUtlSymbolLarge m_iszEffectName; // 0xac0	
+	CUtlSymbolLarge m_iszControlPointNames[64]; // 0xac8	
+	int32_t m_nDataCP; // 0xcc8	
+	Vector m_vecDataCPValue; // 0xccc	
+	int32_t m_nTintCP; // 0xcd8	
+	Color m_clrTint; // 0xcdc	
 	
 	// Datamap fields:
 	// void InputStart; // 0x0

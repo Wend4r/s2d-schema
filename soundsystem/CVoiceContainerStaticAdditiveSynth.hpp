@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xe8
+// Size: 0xf0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,6 +13,6 @@
 class CVoiceContainerStaticAdditiveSynth : public CVoiceContainerBase
 {
 public:
-	CUtlVector< CVoiceContainerStaticAdditiveSynth::CTone > m_tones; // 0xb8	
+	CUtlVector< CVoiceContainerStaticAdditiveSynth::CTone > m_tones; // 0xc0	
 };
 

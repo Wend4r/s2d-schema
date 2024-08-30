@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdf8
+// Size: 0xe18
 // Has VTable
 // 
 // MNetworkExcludeByName "m_iEffectIndex"
@@ -14,13 +14,13 @@
 class C_TeamRelativeParticleSystem : public C_ParticleSystem
 {
 private:
-	[[maybe_unused]] uint8_t __pad0dc0[0x18]; // 0xdc0
+	[[maybe_unused]] uint8_t __pad0de0[0x18]; // 0xde0
 public:
-	CUtlSymbolLarge m_iszFriendlyEffectName; // 0xdd8	
-	CUtlSymbolLarge m_iszEnemyEffectName; // 0xde0	
+	CUtlSymbolLarge m_iszFriendlyEffectName; // 0xdf8	
+	CUtlSymbolLarge m_iszEnemyEffectName; // 0xe00	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iFriendlyEffectIndex; // 0xde8	
+	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iFriendlyEffectIndex; // 0xe08	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEnemyEffectIndex; // 0xdf0	
+	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEnemyEffectIndex; // 0xe10	
 };
 

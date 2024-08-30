@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0x190
+// Size: 0x198
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,32 +13,32 @@
 class CVoiceContainerShapedNoise : public CVoiceContainerBase
 {
 public:
-	bool m_bUseCurveForFrequency; // 0xb8	
+	bool m_bUseCurveForFrequency; // 0xc0	
 private:
-	[[maybe_unused]] uint8_t __pad00b9[0x3]; // 0xb9
+	[[maybe_unused]] uint8_t __pad00c1[0x3]; // 0xc1
 public:
 	// MPropertySuppressExpr "m_bUseCurveForFrequency == 1"
-	float m_flFrequency; // 0xbc	
+	float m_flFrequency; // 0xc4	
 	// MPropertySuppressExpr "m_bUseCurveForFrequency == 0"
 	// MPropertyFriendlyName "Frequency Sweep"
-	CPiecewiseCurve m_frequencySweep; // 0xc0	
-	bool m_bUseCurveForResonance; // 0x100	
+	CPiecewiseCurve m_frequencySweep; // 0xc8	
+	bool m_bUseCurveForResonance; // 0x108	
 private:
-	[[maybe_unused]] uint8_t __pad0101[0x3]; // 0x101
+	[[maybe_unused]] uint8_t __pad0109[0x3]; // 0x109
 public:
 	// MPropertySuppressExpr "m_bUseCurveForResonance == 1"
-	float m_flResonance; // 0x104	
+	float m_flResonance; // 0x10c	
 	// MPropertySuppressExpr "m_bUseCurveForResonance == 0"
 	// MPropertyFriendlyName "Resonance Sweep"
-	CPiecewiseCurve m_resonanceSweep; // 0x108	
-	bool m_bUseCurveForAmplitude; // 0x148	
+	CPiecewiseCurve m_resonanceSweep; // 0x110	
+	bool m_bUseCurveForAmplitude; // 0x150	
 private:
-	[[maybe_unused]] uint8_t __pad0149[0x3]; // 0x149
+	[[maybe_unused]] uint8_t __pad0151[0x3]; // 0x151
 public:
 	// MPropertySuppressExpr "m_bUseCurveForAmplitude == 1"
-	float m_flGainInDecibels; // 0x14c	
+	float m_flGainInDecibels; // 0x154	
 	// MPropertySuppressExpr "m_bUseCurveForAmplitude == 0"
 	// MPropertyFriendlyName "Gain Sweep (in Decibels)"
-	CPiecewiseCurve m_gainSweep; // 0x150	
+	CPiecewiseCurve m_gainSweep; // 0x158	
 };
 

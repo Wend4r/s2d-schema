@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 61
+// Enumerator count: 62
 // Alignment: 8
 // Size: 0x8
 enum class EAbilityBehavior_t : uint64_t
@@ -14,6 +14,7 @@ enum class EAbilityBehavior_t : uint64_t
 	CITADEL_ABILITY_BEHAVIOR_IS_PRIMARY_WEAPON = 0x8,
 	CITADEL_ABILITY_BEHAVIOR_SILENT_CAST_FAILURE_FEEDBACK = 0x10,
 	CITADEL_ABILITY_BEHAVIOR_DONT_INTERRUPT_SPRINT = 0x20,
+	CITADEL_ABILITY_BEHAVIOR_CAST_EVEN_IF_BUSY_AND_EXCLUSIVE = 0x40,
 	CITADEL_ABILITY_BEHAVIOR_CHANNELLED = 0x80,
 	CITADEL_ABILITY_BEHAVIOR_EXCLUSIVE_USE = 0x100,
 	CITADEL_ABILITY_BEHAVIOR_PROJECTILE = 0x200,

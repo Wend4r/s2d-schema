@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x768
+// Size: 0x788
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -21,28 +21,28 @@ class CEnvDecal : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0x748	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0x768	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnDecalDimensionsChanged"
-	float m_flWidth; // 0x750	
+	float m_flWidth; // 0x770	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnDecalDimensionsChanged"
-	float m_flHeight; // 0x754	
+	float m_flHeight; // 0x774	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnDecalDimensionsChanged"
-	float m_flDepth; // 0x758	
+	float m_flDepth; // 0x778	
 	// MNetworkEnable
-	uint32_t m_nRenderOrder; // 0x75c	
+	uint32_t m_nRenderOrder; // 0x77c	
 	// MNetworkEnable
-	bool m_bProjectOnWorld; // 0x760	
+	bool m_bProjectOnWorld; // 0x780	
 	// MNetworkEnable
-	bool m_bProjectOnCharacters; // 0x761	
+	bool m_bProjectOnCharacters; // 0x781	
 	// MNetworkEnable
-	bool m_bProjectOnWater; // 0x762	
+	bool m_bProjectOnWater; // 0x782	
 private:
-	[[maybe_unused]] uint8_t __pad0763[0x1]; // 0x763
+	[[maybe_unused]] uint8_t __pad0783[0x1]; // 0x783
 public:
 	// MNetworkEnable
-	float m_flDepthSortBias; // 0x764	
+	float m_flDepthSortBias; // 0x784	
 };
 

@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc40
+// Size: 0xc68
 // Has VTable
 class CCitadel_Ability_Tier2Boss_RocketBarrage : public CCitadelBaseAbilityServerOnly
 {
 public:
-	int32_t m_nGrenadesLeft; // 0xab0	
+	int32_t m_nGrenadesLeft; // 0xad8	
 };
 

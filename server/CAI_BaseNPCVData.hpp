@@ -8,7 +8,7 @@ struct CSkillFloat;
 struct CSkillInt;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x200
+// Size: 0x220
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -43,27 +43,32 @@ public:
 	CSkillFloat m_flLegDamageMultiplier; // 0x1a8	
 	CSkillInt m_nMaxAdditionalAmmoBalancingShots; // 0x1b8	
 	bool m_bTakesDamage; // 0x1c8	
-	// MPropertyStartGroup "Navigation"
-	bool m_bAllowNonZUpMovement; // 0x1c9	
-	// MPropertyDescription "If true, this NPC will use the capsule collision.  Capsule collision will also be used if m_bAllowNonZUpMovement is set."
-	bool m_bRequestCapsuleCollision; // 0x1ca	
 private:
-	[[maybe_unused]] uint8_t __pad01cb[0x1]; // 0x1cb
+	[[maybe_unused]] uint8_t __pad01c9[0x7]; // 0x1c9
+public:
+	// MPropertyDescription "Destructible Parts"
+	CUtlVector< CAI_BaseNPC_DestructiblePartData > m_DestructiblePartsData; // 0x1d0	
+	// MPropertyStartGroup "Navigation"
+	bool m_bAllowNonZUpMovement; // 0x1e8	
+	// MPropertyDescription "If true, this NPC will use the capsule collision.  Capsule collision will also be used if m_bAllowNonZUpMovement is set."
+	bool m_bRequestCapsuleCollision; // 0x1e9	
+private:
+	[[maybe_unused]] uint8_t __pad01ea[0x2]; // 0x1ea
 public:
 	// MPropertyDescription "Override the radius of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop OBB"
-	float m_flCapsuleRadiusOverride; // 0x1cc	
+	float m_flCapsuleRadiusOverride; // 0x1ec	
 	// MPropertyDescription "Override the height of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop height."
-	float m_flCapsuleHeightOverride; // 0x1d0	
+	float m_flCapsuleHeightOverride; // 0x1f0	
 private:
-	[[maybe_unused]] uint8_t __pad01d4[0x4]; // 0x1d4
+	[[maybe_unused]] uint8_t __pad01f4[0x4]; // 0x1f4
 public:
 	// MPropertyStartGroup "Animation"
 	// MPropertyFriendlyName "Enabled Shared Actions"
 	// MPropertyDescription "List of the shared BaseNPC actions this NPC supports"
 	// MPropertyAttributeEditor "VDataAnimGraphParamEnumValue( m_sModelName; literal; e_action_desired_shared )"
-	CUtlVector< CGlobalSymbol > m_vecActionDesiredShared; // 0x1d8	
+	CUtlVector< CGlobalSymbol > m_vecActionDesiredShared; // 0x1f8	
 	// MPropertyStartGroup "Sounds"
 	// MPropertyDescription "Player Killed NPC Sound"
-	CSoundEventName m_sPlayerKilledNpcSound; // 0x1f0	
+	CSoundEventName m_sPlayerKilledNpcSound; // 0x210	
 };
 

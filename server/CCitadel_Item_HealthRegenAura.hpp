@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb78
+// Size: 0xba0
 // Has VTable
 class CCitadel_Item_HealthRegenAura : public CCitadel_Item
 {

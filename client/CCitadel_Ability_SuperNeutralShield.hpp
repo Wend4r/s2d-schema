@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc60
+// Size: 0xc88
 // Has VTable
 class CCitadel_Ability_SuperNeutralShield : public CCitadelBaseAbilityServerOnly
 {

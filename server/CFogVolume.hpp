@@ -4,24 +4,24 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x770
+// Size: 0x790
 // Has VTable
 class CFogVolume : public CServerOnlyModelEntity
 {
 public:
-	CUtlSymbolLarge m_fogName; // 0x748	
-	CUtlSymbolLarge m_postProcessName; // 0x750	
-	CUtlSymbolLarge m_colorCorrectionName; // 0x758	
+	CUtlSymbolLarge m_fogName; // 0x768	
+	CUtlSymbolLarge m_postProcessName; // 0x770	
+	CUtlSymbolLarge m_colorCorrectionName; // 0x778	
 private:
-	[[maybe_unused]] uint8_t __pad0760[0x8]; // 0x760
+	[[maybe_unused]] uint8_t __pad0780[0x8]; // 0x780
 public:
-	bool m_bDisabled; // 0x768	
-	bool m_bInFogVolumesList; // 0x769	
+	bool m_bDisabled; // 0x788	
+	bool m_bInFogVolumesList; // 0x789	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0
 	// void InputDisable; // 0x0
-	// CHandle< CBaseEntity > m_hFogController; // 0x760
-	// CHandle< CBaseEntity > m_hColorCorrectionController; // 0x764
+	// CHandle< CBaseEntity > m_hFogController; // 0x780
+	// CHandle< CBaseEntity > m_hColorCorrectionController; // 0x784
 };
 

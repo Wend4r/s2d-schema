@@ -5,7 +5,7 @@
 struct CCitadelMinimapComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x988
+// Size: 0x9a8
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -19,16 +19,16 @@ public:
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x958	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x978	
 	// MNetworkEnable
-	bool m_bActive; // 0x970	
+	bool m_bActive; // 0x990	
 private:
-	[[maybe_unused]] uint8_t __pad0971[0x7]; // 0x971
+	[[maybe_unused]] uint8_t __pad0991[0x7]; // 0x991
 public:
 	// MNetworkEnable
-	CUtlString m_sPickupName; // 0x978	
+	CUtlString m_sPickupName; // 0x998	
 	// MNetworkEnable
-	int32_t m_nNameOffset; // 0x980	
+	int32_t m_nNameOffset; // 0x9a0	
 	
 	// Datamap fields:
 	// Vector spawn_position; // 0x7fffffff

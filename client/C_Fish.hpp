@@ -5,7 +5,7 @@
 struct CountdownTimer;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb60
+// Size: 0xb80
 // Has VTable
 // 
 // MNetworkIncludeByName "m_nModelIndex"
@@ -19,46 +19,46 @@ struct CountdownTimer;
 class C_Fish : public CBaseAnimGraph
 {
 public:
-	Vector m_pos; // 0xa70	
-	Vector m_vel; // 0xa7c	
-	QAngle m_angles; // 0xa88	
-	int32_t m_localLifeState; // 0xa94	
-	float m_deathDepth; // 0xa98	
-	float m_deathAngle; // 0xa9c	
-	float m_buoyancy; // 0xaa0	
+	Vector m_pos; // 0xa90	
+	Vector m_vel; // 0xa9c	
+	QAngle m_angles; // 0xaa8	
+	int32_t m_localLifeState; // 0xab4	
+	float m_deathDepth; // 0xab8	
+	float m_deathAngle; // 0xabc	
+	float m_buoyancy; // 0xac0	
 private:
-	[[maybe_unused]] uint8_t __pad0aa4[0x4]; // 0xaa4
+	[[maybe_unused]] uint8_t __pad0ac4[0x4]; // 0xac4
 public:
-	// -> m_duration - 0xab0
-	// -> m_timestamp - 0xab4
-	// -> m_timescale - 0xab8
-	// -> m_nWorldGroupId - 0xabc
-	CountdownTimer m_wiggleTimer; // 0xaa8	
-	float m_wigglePhase; // 0xac0	
-	float m_wiggleRate; // 0xac4	
-	Vector m_actualPos; // 0xac8	
-	QAngle m_actualAngles; // 0xad4	
+	// -> m_duration - 0xad0
+	// -> m_timestamp - 0xad4
+	// -> m_timescale - 0xad8
+	// -> m_nWorldGroupId - 0xadc
+	CountdownTimer m_wiggleTimer; // 0xac8	
+	float m_wigglePhase; // 0xae0	
+	float m_wiggleRate; // 0xae4	
+	Vector m_actualPos; // 0xae8	
+	QAngle m_actualAngles; // 0xaf4	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_poolOrigin; // 0xae0	
+	Vector m_poolOrigin; // 0xb00	
 	// MNetworkEnable
-	float m_waterLevel; // 0xaec	
-	bool m_gotUpdate; // 0xaf0	
+	float m_waterLevel; // 0xb0c	
+	bool m_gotUpdate; // 0xb10	
 private:
-	[[maybe_unused]] uint8_t __pad0af1[0x3]; // 0xaf1
+	[[maybe_unused]] uint8_t __pad0b11[0x3]; // 0xb11
 public:
 	// MNetworkEnable
 	// MNetworkSerializer "fish_pos_x"
 	// MNetworkChangeCallback "OnPosChanged"
-	float m_x; // 0xaf4	
+	float m_x; // 0xb14	
 	// MNetworkEnable
 	// MNetworkSerializer "fish_pos_y"
 	// MNetworkChangeCallback "OnPosChanged"
-	float m_y; // 0xaf8	
+	float m_y; // 0xb18	
 	// MNetworkEnable
 	// MNetworkSerializer "fish_pos_z"
 	// MNetworkChangeCallback "OnPosChanged"
-	float m_z; // 0xafc	
+	float m_z; // 0xb1c	
 	// MNetworkEnable
 	// MNetworkSerializer "angle_normalize_positive"
 	// MNetworkBitCount "7"
@@ -66,10 +66,10 @@ public:
 	// MNetworkMaxValue "360.000000"
 	// MNetworkEncodeFlags "1"
 	// MNetworkChangeCallback "OnAngChanged"
-	float m_angle; // 0xb00	
-	float m_errorHistory[20]; // 0xb04	
-	int32_t m_errorHistoryIndex; // 0xb54	
-	int32_t m_errorHistoryCount; // 0xb58	
-	float m_averageError; // 0xb5c	
+	float m_angle; // 0xb20	
+	float m_errorHistory[20]; // 0xb24	
+	int32_t m_errorHistoryIndex; // 0xb74	
+	int32_t m_errorHistoryCount; // 0xb78	
+	float m_averageError; // 0xb7c	
 };
 

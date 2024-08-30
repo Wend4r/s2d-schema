@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x538
+// Size: 0x558
 // Has VTable
 class C_InfoPortalLink : public C_PointEntity
 {

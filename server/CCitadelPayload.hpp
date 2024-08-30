@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb40
+// Size: 0xb60
 // Has VTable
 // 
 // MNetworkVarNames "float m_flProgress"
@@ -12,16 +12,16 @@
 class CCitadelPayload : public CCitadelAnimatingModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x18]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0af8[0x18]; // 0xaf8
 public:
-	CModifierHandleTyped< CCitadelModifierAura > m_hPusherAura; // 0xaf0	
-	CModifierHandleTyped< CCitadelModifierAura > m_hBlockerAura; // 0xb08	
+	CModifierHandleTyped< CCitadelModifierAura > m_hPusherAura; // 0xb10	
+	CModifierHandleTyped< CCitadelModifierAura > m_hBlockerAura; // 0xb28	
 private:
-	[[maybe_unused]] uint8_t __pad0b20[0x18]; // 0xb20
+	[[maybe_unused]] uint8_t __pad0b40[0x18]; // 0xb40
 public:
 	// MNetworkEnable
-	float m_flProgress; // 0xb38	
+	float m_flProgress; // 0xb58	
 	// MNetworkEnable
-	int32_t m_nNumPushers; // 0xb3c	
+	int32_t m_nNumPushers; // 0xb5c	
 };
 

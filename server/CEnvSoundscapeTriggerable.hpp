@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x550
+// Size: 0x570
 // Has VTable
 class CEnvSoundscapeTriggerable : public CEnvSoundscape
 {

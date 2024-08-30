@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x548
+// Size: 0x568
 // Has VTable
 class CPhysFixed : public CPhysConstraint
 {
 public:
-	float m_flLinearFrequency; // 0x530	
-	float m_flLinearDampingRatio; // 0x534	
-	float m_flAngularFrequency; // 0x538	
-	float m_flAngularDampingRatio; // 0x53c	
-	bool m_bEnableLinearConstraint; // 0x540	
-	bool m_bEnableAngularConstraint; // 0x541	
+	float m_flLinearFrequency; // 0x550	
+	float m_flLinearDampingRatio; // 0x554	
+	float m_flAngularFrequency; // 0x558	
+	float m_flAngularDampingRatio; // 0x55c	
+	bool m_bEnableLinearConstraint; // 0x560	
+	bool m_bEnableAngularConstraint; // 0x561	
 	
 	// Datamap fields:
 	// float InputSetLinearFrequency; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xad0
+// Size: 0xaf8
 // Has VTable
 class CCitadel_ArmorUpgrade_AbilityLifeSteal : public CCitadel_Item
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcf0
+// Size: 0xd18
 // Has VTable
 class CCitadel_Ability_VoidSphere : public C_CitadelBaseAbility
 {

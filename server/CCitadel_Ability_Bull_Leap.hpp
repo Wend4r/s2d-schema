@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CCitadelAutoScaledTime;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc70
+// Size: 0xc98
 // Has VTable
 // 
 // MNetworkVarNames "float m_flBoostYaw"
@@ -20,29 +20,29 @@ class CCitadel_Ability_Bull_Leap : public CCitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	float m_flBoostYaw; // 0xab0	
+	float m_flBoostYaw; // 0xad8	
 	// MNetworkEnable
-	Vector m_vecCrashPosition; // 0xab4	
+	Vector m_vecCrashPosition; // 0xadc	
 	// MNetworkEnable
-	Vector m_vecCrashDirection; // 0xac0	
+	Vector m_vecCrashDirection; // 0xae8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnLeapStateChanged"
-	ELeapState_t m_eLeapState; // 0xacc	
+	ELeapState_t m_eLeapState; // 0xaf4	
 private:
-	[[maybe_unused]] uint8_t __pad0acd[0x3]; // 0xacd
+	[[maybe_unused]] uint8_t __pad0af5[0x3]; // 0xaf5
 public:
 	// MNetworkEnable
-	GameTime_t m_flStateEnterTime; // 0xad0	
+	GameTime_t m_flStateEnterTime; // 0xaf8	
 private:
-	[[maybe_unused]] uint8_t __pad0ad4[0x4]; // 0xad4
+	[[maybe_unused]] uint8_t __pad0afc[0x4]; // 0xafc
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flNextStateTime; // 0xad8	
+	CCitadelAutoScaledTime m_flNextStateTime; // 0xb00	
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flBoostEndTime; // 0xaf0	
+	CCitadelAutoScaledTime m_flBoostEndTime; // 0xb18	
 private:
-	[[maybe_unused]] uint8_t __pad0b08[0x158]; // 0xb08
+	[[maybe_unused]] uint8_t __pad0b30[0x158]; // 0xb30
 public:
-	Vector m_vecLastVel; // 0xc60	
+	Vector m_vecLastVel; // 0xc88	
 };
 

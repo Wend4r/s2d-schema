@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7e8
+// Size: 0x808
 // Has VTable
 // 
 // MNetworkIncludeByUserGroup "Origin"
@@ -43,83 +43,83 @@ public:
 	// MNetworkMinValue "-25.000000"
 	// MNetworkMaxValue "25.000000"
 	// MNetworkEncodeFlags "2"
-	float m_flFrameRate; // 0x748	
+	float m_flFrameRate; // 0x768	
 	// MNetworkEnable
-	float m_flHDRColorScale; // 0x74c	
-	GameTime_t m_flFireTime; // 0x750	
-	float m_flDamage; // 0x754	
+	float m_flHDRColorScale; // 0x76c	
+	GameTime_t m_flFireTime; // 0x770	
+	float m_flDamage; // 0x774	
 	// MNetworkEnable
-	uint8_t m_nNumBeamEnts; // 0x758	
+	uint8_t m_nNumBeamEnts; // 0x778	
 private:
-	[[maybe_unused]] uint8_t __pad0759[0x7]; // 0x759
+	[[maybe_unused]] uint8_t __pad0779[0x7]; // 0x779
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hBaseMaterial; // 0x760	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hBaseMaterial; // 0x780	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_nHaloIndex; // 0x768	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_nHaloIndex; // 0x788	
 	// MNetworkEnable
-	BeamType_t m_nBeamType; // 0x770	
+	BeamType_t m_nBeamType; // 0x790	
 	// MNetworkEnable
-	uint32_t m_nBeamFlags; // 0x774	
+	uint32_t m_nBeamFlags; // 0x794	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hAttachEntity[10]; // 0x778	
+	CHandle< CBaseEntity > m_hAttachEntity[10]; // 0x798	
 	// MNetworkEnable
-	AttachmentHandle_t m_nAttachIndex[10]; // 0x7a0	
+	AttachmentHandle_t m_nAttachIndex[10]; // 0x7c0	
 private:
-	[[maybe_unused]] uint8_t __pad07aa[0x2]; // 0x7aa
+	[[maybe_unused]] uint8_t __pad07ca[0x2]; // 0x7ca
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "102.300003"
 	// MNetworkEncodeFlags "2"
-	float m_fWidth; // 0x7ac	
+	float m_fWidth; // 0x7cc	
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "102.300003"
 	// MNetworkEncodeFlags "2"
-	float m_fEndWidth; // 0x7b0	
+	float m_fEndWidth; // 0x7d0	
 	// MNetworkEnable
-	float m_fFadeLength; // 0x7b4	
+	float m_fFadeLength; // 0x7d4	
 	// MNetworkEnable
-	float m_fHaloScale; // 0x7b8	
+	float m_fHaloScale; // 0x7d8	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "64.000000"
 	// MNetworkEncodeFlags "1"
-	float m_fAmplitude; // 0x7bc	
+	float m_fAmplitude; // 0x7dc	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "256.000000"
 	// MNetworkEncodeFlags "1"
-	float m_fStartFrame; // 0x7c0	
+	float m_fStartFrame; // 0x7e0	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "100.000000"
-	float m_fSpeed; // 0x7c4	
+	float m_fSpeed; // 0x7e4	
 	// MNetworkEnable
 	// MNetworkBitCount "20"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "256.000000"
 	// MNetworkEncodeFlags "1"
 	// MNetworkPriority "32"
-	float m_flFrame; // 0x7c8	
+	float m_flFrame; // 0x7e8	
 	// MNetworkEnable
-	BeamClipStyle_t m_nClipStyle; // 0x7cc	
+	BeamClipStyle_t m_nClipStyle; // 0x7ec	
 	// MNetworkEnable
-	bool m_bTurnedOff; // 0x7d0	
+	bool m_bTurnedOff; // 0x7f0	
 private:
-	[[maybe_unused]] uint8_t __pad07d1[0x3]; // 0x7d1
+	[[maybe_unused]] uint8_t __pad07f1[0x3]; // 0x7f1
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecEndPos; // 0x7d4	
-	CHandle< CBaseEntity > m_hEndEntity; // 0x7e0	
-	int32_t m_nDissolveType; // 0x7e4	
+	Vector m_vecEndPos; // 0x7f4	
+	CHandle< CBaseEntity > m_hEndEntity; // 0x800	
+	int32_t m_nDissolveType; // 0x804	
 	
 	// Datamap fields:
 	// float InputWidth; // 0x0

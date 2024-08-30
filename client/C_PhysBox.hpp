@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x810
+// Size: 0x830
 // Has VTable
 class C_PhysBox : public C_Breakable
 {

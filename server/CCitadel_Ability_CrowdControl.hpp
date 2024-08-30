@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc00
+// Size: 0xc28
 // Has VTable
 class CCitadel_Ability_CrowdControl : public CCitadelBaseAbility
 {

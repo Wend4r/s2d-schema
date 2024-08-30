@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5b0
+// Size: 0x5d0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bDisabled"
@@ -29,58 +29,58 @@ class C_PointValueRemapper : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bDisabled; // 0x538	
-	bool m_bDisabledOld; // 0x539	
+	bool m_bDisabled; // 0x558	
+	bool m_bDisabledOld; // 0x559	
 	// MNetworkEnable
-	bool m_bUpdateOnClient; // 0x53a	
+	bool m_bUpdateOnClient; // 0x55a	
 private:
-	[[maybe_unused]] uint8_t __pad053b[0x1]; // 0x53b
+	[[maybe_unused]] uint8_t __pad055b[0x1]; // 0x55b
 public:
 	// MNetworkEnable
-	ValueRemapperInputType_t m_nInputType; // 0x53c	
+	ValueRemapperInputType_t m_nInputType; // 0x55c	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hRemapLineStart; // 0x540	
+	CHandle< C_BaseEntity > m_hRemapLineStart; // 0x560	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hRemapLineEnd; // 0x544	
+	CHandle< C_BaseEntity > m_hRemapLineEnd; // 0x564	
 	// MNetworkEnable
-	float m_flMaximumChangePerSecond; // 0x548	
+	float m_flMaximumChangePerSecond; // 0x568	
 	// MNetworkEnable
-	float m_flDisengageDistance; // 0x54c	
+	float m_flDisengageDistance; // 0x56c	
 	// MNetworkEnable
-	float m_flEngageDistance; // 0x550	
+	float m_flEngageDistance; // 0x570	
 	// MNetworkEnable
-	bool m_bRequiresUseKey; // 0x554	
+	bool m_bRequiresUseKey; // 0x574	
 private:
-	[[maybe_unused]] uint8_t __pad0555[0x3]; // 0x555
+	[[maybe_unused]] uint8_t __pad0575[0x3]; // 0x575
 public:
 	// MNetworkEnable
-	ValueRemapperOutputType_t m_nOutputType; // 0x558	
+	ValueRemapperOutputType_t m_nOutputType; // 0x578	
 private:
-	[[maybe_unused]] uint8_t __pad055c[0x4]; // 0x55c
+	[[maybe_unused]] uint8_t __pad057c[0x4]; // 0x57c
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_hOutputEntities; // 0x560	
+	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_hOutputEntities; // 0x580	
 	// MNetworkEnable
-	ValueRemapperHapticsType_t m_nHapticsType; // 0x578	
+	ValueRemapperHapticsType_t m_nHapticsType; // 0x598	
 	// MNetworkEnable
-	ValueRemapperMomentumType_t m_nMomentumType; // 0x57c	
+	ValueRemapperMomentumType_t m_nMomentumType; // 0x59c	
 	// MNetworkEnable
-	float m_flMomentumModifier; // 0x580	
+	float m_flMomentumModifier; // 0x5a0	
 	// MNetworkEnable
-	float m_flSnapValue; // 0x584	
-	float m_flCurrentMomentum; // 0x588	
+	float m_flSnapValue; // 0x5a4	
+	float m_flCurrentMomentum; // 0x5a8	
 	// MNetworkEnable
-	ValueRemapperRatchetType_t m_nRatchetType; // 0x58c	
-	float m_flRatchetOffset; // 0x590	
+	ValueRemapperRatchetType_t m_nRatchetType; // 0x5ac	
+	float m_flRatchetOffset; // 0x5b0	
 	// MNetworkEnable
-	float m_flInputOffset; // 0x594	
-	bool m_bEngaged; // 0x598	
-	bool m_bFirstUpdate; // 0x599	
+	float m_flInputOffset; // 0x5b4	
+	bool m_bEngaged; // 0x5b8	
+	bool m_bFirstUpdate; // 0x5b9	
 private:
-	[[maybe_unused]] uint8_t __pad059a[0x2]; // 0x59a
+	[[maybe_unused]] uint8_t __pad05ba[0x2]; // 0x5ba
 public:
-	float m_flPreviousValue; // 0x59c	
-	GameTime_t m_flPreviousUpdateTickTime; // 0x5a0	
-	Vector m_vecPreviousTestPoint; // 0x5a4	
+	float m_flPreviousValue; // 0x5bc	
+	GameTime_t m_flPreviousUpdateTickTime; // 0x5c0	
+	Vector m_vecPreviousTestPoint; // 0x5c4	
 };
 

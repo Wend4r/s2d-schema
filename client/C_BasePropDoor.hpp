@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd50
+// Size: 0xd70
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flAnimTime"
@@ -22,22 +22,22 @@
 class C_BasePropDoor : public C_DynamicProp
 {
 private:
-	[[maybe_unused]] uint8_t __pad0d10[0x10]; // 0xd10
+	[[maybe_unused]] uint8_t __pad0d30[0x10]; // 0xd30
 public:
 	// MNetworkEnable
-	DoorState_t m_eDoorState; // 0xd20	
-	bool m_modelChanged; // 0xd24	
+	DoorState_t m_eDoorState; // 0xd40	
+	bool m_modelChanged; // 0xd44	
 	// MNetworkEnable
-	bool m_bLocked; // 0xd25	
+	bool m_bLocked; // 0xd45	
 private:
-	[[maybe_unused]] uint8_t __pad0d26[0x2]; // 0xd26
+	[[maybe_unused]] uint8_t __pad0d46[0x2]; // 0xd46
 public:
 	// MNetworkEnable
-	Vector m_closedPosition; // 0xd28	
+	Vector m_closedPosition; // 0xd48	
 	// MNetworkEnable
-	QAngle m_closedAngles; // 0xd34	
+	QAngle m_closedAngles; // 0xd54	
 	// MNetworkEnable
-	CHandle< C_BasePropDoor > m_hMaster; // 0xd40	
-	Vector m_vWhereToSetLightingOrigin; // 0xd44	
+	CHandle< C_BasePropDoor > m_hMaster; // 0xd60	
+	Vector m_vWhereToSetLightingOrigin; // 0xd64	
 };
 

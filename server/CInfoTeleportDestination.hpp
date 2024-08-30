@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4b8
+// Size: 0x4d8
 // Has VTable
 class CInfoTeleportDestination : public CPointEntity
 {

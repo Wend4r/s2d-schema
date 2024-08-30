@@ -3,10 +3,9 @@
 #include <cstdint>
 
 struct GameTime_t;
-struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf98
+// Size: 0xfb8
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CCitadelViscousBall > m_hBall"
@@ -19,41 +18,37 @@ struct ParticleIndex_t;
 class CCitadel_Ability_GooBowlingBall : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ab0[0x348]; // 0xab0
+	[[maybe_unused]] uint8_t __pad0ad8[0x348]; // 0xad8
 public:
-	bool m_bHasAirJumped; // 0xdf8	
-	bool m_bIsFollowingBall; // 0xdf9	
-	bool m_bIsShowingBall; // 0xdfa	
+	bool m_bHasAirJumped; // 0xe20	
+	bool m_bIsFollowingBall; // 0xe21	
+	bool m_bIsShowingBall; // 0xe22	
 private:
-	[[maybe_unused]] uint8_t __pad0dfb[0x1]; // 0xdfb
+	[[maybe_unused]] uint8_t __pad0e23[0x1]; // 0xe23
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	CHandle< CCitadelViscousBall > m_hBall; // 0xdfc	
+	CHandle< CCitadelViscousBall > m_hBall; // 0xe24	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	EViscousBowlingBallState_t m_eRollingState; // 0xe00	
+	EViscousBowlingBallState_t m_eRollingState; // 0xe28	
 private:
-	[[maybe_unused]] uint8_t __pad0e01[0x3]; // 0xe01
+	[[maybe_unused]] uint8_t __pad0e29[0x3]; // 0xe29
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextStateTime; // 0xe04	
+	GameTime_t m_flNextStateTime; // 0xe2c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextWallCheck; // 0xe08	
+	GameTime_t m_flNextWallCheck; // 0xe30	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flRollStartTime; // 0xe0c	
+	GameTime_t m_flRollStartTime; // 0xe34	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flWallExitTime; // 0xe10	
+	GameTime_t m_flWallExitTime; // 0xe38	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	Vector m_vecWallExitVelocity; // 0xe14	
-private:
-	[[maybe_unused]] uint8_t __pad0e20[0x8]; // 0xe20
-public:
-	ParticleIndex_t m_nTrailParticleIndex; // 0xe28	
+	Vector m_vecWallExitVelocity; // 0xe3c	
 };
 

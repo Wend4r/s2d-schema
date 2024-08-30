@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcd8
+// Size: 0xcf8
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flAlphaScale"
@@ -16,15 +16,15 @@ class CEnvParticleGlow : public CParticleSystem
 {
 public:
 	// MNetworkEnable
-	float m_flAlphaScale; // 0xcc0	
+	float m_flAlphaScale; // 0xce0	
 	// MNetworkEnable
-	float m_flRadiusScale; // 0xcc4	
+	float m_flRadiusScale; // 0xce4	
 	// MNetworkEnable
-	float m_flSelfIllumScale; // 0xcc8	
+	float m_flSelfIllumScale; // 0xce8	
 	// MNetworkEnable
-	Color m_ColorTint; // 0xccc	
+	Color m_ColorTint; // 0xcec	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hTextureOverride; // 0xcd0	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hTextureOverride; // 0xcf0	
 	
 	// Datamap fields:
 	// float InputSetScale; // 0x0

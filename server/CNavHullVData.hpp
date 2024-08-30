@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'navlib')
 // Alignment: 4
-// Size: 0x2c
+// Size: 0x34
 // Has Trivial Destructor
 // 
 // MVDataRoot
@@ -48,5 +48,14 @@ public:
 	// MPropertyFriendlyName "Border Erosion"
 	// MPropertyDescription "Border erosion in voxel units ( -1 to use default value based on agent radius )."
 	int32_t m_agentBorderErosion; // 0x28	
+	// MPropertyFriendlyName "Hierarchical Nav"
+	// MPropertyDescription "Enables super node nav information to be generated"
+	bool m_flowMapGenerationEnabled; // 0x2c	
+private:
+	[[maybe_unused]] uint8_t __pad002d[0x3]; // 0x2d
+public:
+	// MPropertyFriendlyName "Hierarchical Nav Max Super Node radius"
+	// MPropertyDescription "Maximum radius of a super node - larger means lower resolution"
+	float m_flowMapNodeMaxRadius; // 0x30	
 };
 

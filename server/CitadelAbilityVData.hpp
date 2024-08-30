@@ -12,7 +12,7 @@ struct AdditionalAbilities_t;
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x14e8
+// Size: 0x14f0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -163,9 +163,13 @@ public:
 	CSoundEventName m_strDamageTakenSound; // 0x1480	
 	CSoundEventName m_strAbilityOffCooldownSound; // 0x1490	
 	CSoundEventName m_strAbilityChargeReadySound; // 0x14a0	
+	bool m_bPlayMeepMop; // 0x14b0	
+private:
+	[[maybe_unused]] uint8_t __pad14b1[0x7]; // 0x14b1
+public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_AutoChannelModifier; // 0x14b0	
-	CEmbeddedSubclass< CBaseModifier > m_AutoCastDelayModifier; // 0x14c0	
-	CUtlVector< CEmbeddedSubclass< CBaseModifier > > m_AutoIntrinsicModifiers; // 0x14d0	
+	CEmbeddedSubclass< CBaseModifier > m_AutoChannelModifier; // 0x14b8	
+	CEmbeddedSubclass< CBaseModifier > m_AutoCastDelayModifier; // 0x14c8	
+	CUtlVector< CEmbeddedSubclass< CBaseModifier > > m_AutoIntrinsicModifiers; // 0x14d8	
 };
 

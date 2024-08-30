@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4d8
+// Size: 0x4f8
 // Has VTable
 class CInfoTrooperSpawn : public CServerOnlyPointEntity
 {
 public:
-	int32_t m_iLane; // 0x4b8	
+	int32_t m_iLane; // 0x4d8	
 };
 

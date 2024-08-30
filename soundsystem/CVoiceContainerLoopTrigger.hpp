@@ -5,7 +5,7 @@
 struct CSoundContainerReference;
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xe0
+// Size: 0xe8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -15,10 +15,10 @@ class CVoiceContainerLoopTrigger : public CVoiceContainerBase
 {
 public:
 	// MPropertyFriendlyName "Vsnd Reference"
-	CSoundContainerReference m_sound; // 0xb8	
-	float m_flRetriggerTimeMin; // 0xd0	
-	float m_flRetriggerTimeMax; // 0xd4	
-	float m_flFadeTime; // 0xd8	
-	bool m_bCrossFade; // 0xdc	
+	CSoundContainerReference m_sound; // 0xc0	
+	float m_flRetriggerTimeMin; // 0xd8	
+	float m_flRetriggerTimeMax; // 0xdc	
+	float m_flFadeTime; // 0xe0	
+	bool m_bCrossFade; // 0xe4	
 };
 

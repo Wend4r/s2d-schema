@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcd0
+// Size: 0xcf8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bAirCast"
 class CCitadel_Ability_Tokamak_CrimsonCannon : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ab0[0x20]; // 0xab0
+	[[maybe_unused]] uint8_t __pad0ad8[0x20]; // 0xad8
 public:
-	CUtlVector< ParticleIndex_t > m_TargetPreviews; // 0xad0	
+	CUtlVector< ParticleIndex_t > m_TargetPreviews; // 0xaf8	
 	// MNetworkEnable
-	bool m_bAirCast; // 0xae8	
+	bool m_bAirCast; // 0xb10	
 };
 

@@ -5,7 +5,7 @@
 struct CBaseAnimGraphController;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9f0
+// Size: 0xa10
 // Has VTable
 // 
 // MNetworkVarNames "CBaseAnimGraphController m_animationController"
@@ -13,7 +13,7 @@ class CBodyComponentBaseAnimGraph : public CBodyComponentSkeletonInstance
 {
 public:
 	// MNetworkEnable
-	CBaseAnimGraphController m_animationController; // 0x470	
+	CBaseAnimGraphController m_animationController; // 0x490	
 	
 	// Static fields:
 	static EntComponentInfo_t &Get_s_EntComponentInfo(){return *reinterpret_cast<EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBodyComponentBaseAnimGraph")->m_static_fields[0]->m_instance);};

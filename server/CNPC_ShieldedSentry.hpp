@@ -6,7 +6,7 @@ struct CCitadelMinimapComponent;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb68
+// Size: 0xb88
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -19,31 +19,31 @@ public:
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xaf0	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xb10	
 private:
-	[[maybe_unused]] uint8_t __pad0b08[0xc]; // 0xb08
+	[[maybe_unused]] uint8_t __pad0b28[0xc]; // 0xb28
 public:
 	// MNetworkEnable
-	float m_flAimPitch; // 0xb14	
-	GameTime_t m_flNextAttackTime; // 0xb18	
-	float m_flAttackCone; // 0xb1c	
-	float m_flAttackDelay; // 0xb20	
-	GameTime_t m_flLastAlertSound; // 0xb24	
-	float m_flTrackingSpeed; // 0xb28	
-	float m_flDeployTime; // 0xb2c	
+	float m_flAimPitch; // 0xb34	
+	GameTime_t m_flNextAttackTime; // 0xb38	
+	float m_flAttackCone; // 0xb3c	
+	float m_flAttackDelay; // 0xb40	
+	GameTime_t m_flLastAlertSound; // 0xb44	
+	float m_flTrackingSpeed; // 0xb48	
+	float m_flDeployTime; // 0xb4c	
 private:
-	[[maybe_unused]] uint8_t __pad0b30[0xa]; // 0xb30
+	[[maybe_unused]] uint8_t __pad0b50[0xa]; // 0xb50
 public:
-	bool m_bHadEnemy; // 0xb3a	
-	bool m_bLockedOn; // 0xb3b	
+	bool m_bHadEnemy; // 0xb5a	
+	bool m_bLockedOn; // 0xb5b	
 private:
-	[[maybe_unused]] uint8_t __pad0b3c[0x8]; // 0xb3c
+	[[maybe_unused]] uint8_t __pad0b5c[0x8]; // 0xb5c
 public:
 	// MNetworkEnable
-	float m_flAttackRange; // 0xb44	
+	float m_flAttackRange; // 0xb64	
 	
 	// Datamap fields:
-	// float m_flLifeTime; // 0xb34
-	// void m_flSpawnTime; // 0xb30
+	// float m_flLifeTime; // 0xb54
+	// void m_flSpawnTime; // 0xb50
 };
 

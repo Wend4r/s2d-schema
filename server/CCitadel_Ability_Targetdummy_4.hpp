@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xab0
+// Size: 0xad8
 // Has VTable
 class CCitadel_Ability_Targetdummy_4 : public CCitadelBaseAbility
 {

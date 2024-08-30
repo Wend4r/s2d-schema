@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x6d0
+// Size: 0x6f0
 // Has VTable
 class CPhysHingeAlias_phys_hinge_local : public CPhysHinge
 {

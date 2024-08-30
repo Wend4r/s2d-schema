@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xac8
+// Size: 0xaf0
 // Has VTable
 class CCitadel_Ability_TangoTether_Trigger : public CCitadelBaseTriggerAbility
 {
 public:
-	CHandle< CCitadelBaseAbility > m_hBaseAbility; // 0xac0	
+	CHandle< CCitadelBaseAbility > m_hBaseAbility; // 0xae8	
 };
 

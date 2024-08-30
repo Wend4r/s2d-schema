@@ -5,16 +5,16 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4f0
+// Size: 0x510
 // Has VTable
 class CEnvSpark : public CPointEntity
 {
 public:
-	float m_flDelay; // 0x4b8	
-	int32_t m_nMagnitude; // 0x4bc	
-	int32_t m_nTrailLength; // 0x4c0	
-	int32_t m_nType; // 0x4c4	
-	CEntityIOOutput m_OnSpark; // 0x4c8	
+	float m_flDelay; // 0x4d8	
+	int32_t m_nMagnitude; // 0x4dc	
+	int32_t m_nTrailLength; // 0x4e0	
+	int32_t m_nType; // 0x4e4	
+	CEntityIOOutput m_OnSpark; // 0x4e8	
 	
 	// Datamap fields:
 	// void CEnvSparkSparkThink; // 0x0

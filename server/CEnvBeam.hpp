@@ -5,45 +5,45 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x890
+// Size: 0x8b0
 // Has VTable
 class CEnvBeam : public CBeam
 {
 public:
-	int32_t m_active; // 0x7e8	
+	int32_t m_active; // 0x808	
 private:
-	[[maybe_unused]] uint8_t __pad07ec[0x4]; // 0x7ec
+	[[maybe_unused]] uint8_t __pad080c[0x4]; // 0x80c
 public:
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_spriteTexture; // 0x7f0	
-	CUtlSymbolLarge m_iszStartEntity; // 0x7f8	
-	CUtlSymbolLarge m_iszEndEntity; // 0x800	
-	float m_life; // 0x808	
-	float m_boltWidth; // 0x80c	
-	float m_noiseAmplitude; // 0x810	
-	int32_t m_speed; // 0x814	
-	float m_restrike; // 0x818	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_spriteTexture; // 0x810	
+	CUtlSymbolLarge m_iszStartEntity; // 0x818	
+	CUtlSymbolLarge m_iszEndEntity; // 0x820	
+	float m_life; // 0x828	
+	float m_boltWidth; // 0x82c	
+	float m_noiseAmplitude; // 0x830	
+	int32_t m_speed; // 0x834	
+	float m_restrike; // 0x838	
 private:
-	[[maybe_unused]] uint8_t __pad081c[0x4]; // 0x81c
+	[[maybe_unused]] uint8_t __pad083c[0x4]; // 0x83c
 public:
-	CUtlSymbolLarge m_iszSpriteName; // 0x820	
-	int32_t m_frameStart; // 0x828	
-	Vector m_vEndPointWorld; // 0x82c	
-	Vector m_vEndPointRelative; // 0x838	
-	float m_radius; // 0x844	
-	Touch_t m_TouchType; // 0x848	
+	CUtlSymbolLarge m_iszSpriteName; // 0x840	
+	int32_t m_frameStart; // 0x848	
+	Vector m_vEndPointWorld; // 0x84c	
+	Vector m_vEndPointRelative; // 0x858	
+	float m_radius; // 0x864	
+	Touch_t m_TouchType; // 0x868	
 private:
-	[[maybe_unused]] uint8_t __pad084c[0x4]; // 0x84c
+	[[maybe_unused]] uint8_t __pad086c[0x4]; // 0x86c
 public:
-	CUtlSymbolLarge m_iFilterName; // 0x850	
-	CHandle< CBaseEntity > m_hFilter; // 0x858	
+	CUtlSymbolLarge m_iFilterName; // 0x870	
+	CHandle< CBaseEntity > m_hFilter; // 0x878	
 private:
-	[[maybe_unused]] uint8_t __pad085c[0x4]; // 0x85c
+	[[maybe_unused]] uint8_t __pad087c[0x4]; // 0x87c
 public:
-	CUtlSymbolLarge m_iszDecal; // 0x860	
-	CEntityIOOutput m_OnTouchedByEntity; // 0x868	
+	CUtlSymbolLarge m_iszDecal; // 0x880	
+	CEntityIOOutput m_OnTouchedByEntity; // 0x888	
 	
 	// Datamap fields:
-	// int32_t m_nClipStyle; // 0x7cc
+	// int32_t m_nClipStyle; // 0x7ec
 	// void CEnvBeamStrikeThink; // 0x0
 	// void CEnvBeamUpdateThink; // 0x0
 	// void InputTurnOn; // 0x0

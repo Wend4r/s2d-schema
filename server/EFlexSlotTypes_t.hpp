@@ -12,8 +12,8 @@ enum class EFlexSlotTypes_t : uint16_t
 	EFlexSlot_Invalid = 0x0,
 	// MPropertyFriendlyName "Tier 2"
 	EFlexSlot_Tier2 = 0x1,
-	// MPropertyFriendlyName "Base Guardian"
-	EFlexSlot_BaseGuardian = 0x2,
+	// MPropertyFriendlyName "All Tier 1"
+	EFlexSlot_AllTier1 = 0x2,
 	// MPropertyFriendlyName "Generator"
 	EFlexSlot_Generator = 0x4,
 	// MPropertyFriendlyName "All Tier 2"

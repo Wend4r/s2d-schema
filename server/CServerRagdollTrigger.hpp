@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x918
+// Size: 0x938
 // Has VTable
 class CServerRagdollTrigger : public CBaseTrigger
 {

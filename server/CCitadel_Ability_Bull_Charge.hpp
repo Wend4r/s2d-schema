@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd50
+// Size: 0xd78
 // Has VTable
 // 
 // MNetworkVarNames "QAngle m_anglesCharging"
@@ -14,17 +14,17 @@ struct GameTime_t;
 class CCitadel_Ability_Bull_Charge : public CCitadelBaseAbility
 {
 public:
-	CUtlVector< CHandle< CBaseEntity > > m_vecHitEntities; // 0xab0	
-	bool m_bGainedWeaponPowerBuff; // 0xac8	
+	CUtlVector< CHandle< CBaseEntity > > m_vecHitEntities; // 0xad8	
+	bool m_bGainedWeaponPowerBuff; // 0xaf0	
 private:
-	[[maybe_unused]] uint8_t __pad0ac9[0x26f]; // 0xac9
+	[[maybe_unused]] uint8_t __pad0af1[0x26f]; // 0xaf1
 public:
 	// MNetworkEnable
-	QAngle m_anglesCharging; // 0xd38	
+	QAngle m_anglesCharging; // 0xd60	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnChargingStateChanged"
-	GameTime_t m_flChargeStartTime; // 0xd44	
+	GameTime_t m_flChargeStartTime; // 0xd6c	
 	// MNetworkEnable
-	GameTime_t m_flFastChargeEndTime; // 0xd48	
+	GameTime_t m_flFastChargeEndTime; // 0xd70	
 };
 

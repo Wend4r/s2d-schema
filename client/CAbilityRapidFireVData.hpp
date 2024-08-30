@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x14e8
+// Size: 0x14f0
 // Has VTable
 // 
 // MGetKV3ClassDefaults

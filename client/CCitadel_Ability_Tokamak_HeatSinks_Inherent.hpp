@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd88
+// Size: 0xdb0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flDissipationRate"
@@ -16,22 +16,22 @@ struct GameTime_t;
 class CCitadel_Ability_Tokamak_HeatSinks_Inherent : public C_CitadelBaseAbility
 {
 public:
-	int32_t m_nIntervalsElapsed; // 0xc28	
-	GameTime_t m_NextShotTime; // 0xc2c	
+	int32_t m_nIntervalsElapsed; // 0xc50	
+	GameTime_t m_NextShotTime; // 0xc54	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flDissipationRate; // 0xc30	
+	float m_flDissipationRate; // 0xc58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flDissipationTime; // 0xc34	
+	GameTime_t m_flDissipationTime; // 0xc5c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flHeatTime; // 0xc38	
+	GameTime_t m_flHeatTime; // 0xc60	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flOverheatSoundTime; // 0xc3c	
+	GameTime_t m_flOverheatSoundTime; // 0xc64	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bOverheating; // 0xc40	
+	bool m_bOverheating; // 0xc68	
 };
 

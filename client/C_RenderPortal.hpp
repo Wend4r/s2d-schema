@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x840
+// Size: 0x860
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_hLocalPortalLink"
@@ -19,20 +19,20 @@ class C_RenderPortal : public C_BaseModelEntity
 {
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hLocalPortalLink; // 0x810	
+	CHandle< C_BaseEntity > m_hLocalPortalLink; // 0x830	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hRemotePortalLink; // 0x814	
+	CHandle< C_BaseEntity > m_hRemotePortalLink; // 0x834	
 	// MNetworkEnable
-	CUtlString m_brushModelName; // 0x818	
+	CUtlString m_brushModelName; // 0x838	
 	// MNetworkEnable
-	float m_flFadeStartDist; // 0x820	
+	float m_flFadeStartDist; // 0x840	
 	// MNetworkEnable
-	float m_flFadeEndDist; // 0x824	
+	float m_flFadeEndDist; // 0x844	
 	// MNetworkEnable
-	float m_flFadeStartAngle; // 0x828	
+	float m_flFadeStartAngle; // 0x848	
 	// MNetworkEnable
-	float m_flFadeEndAngle; // 0x82c	
+	float m_flFadeEndAngle; // 0x84c	
 	// MNetworkEnable
-	Color m_fadeToColor; // 0x830	
+	Color m_fadeToColor; // 0x850	
 };
 

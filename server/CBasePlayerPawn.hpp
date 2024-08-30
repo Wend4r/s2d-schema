@@ -16,7 +16,7 @@ struct GameTime_t;
 struct CAI_Expresser;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc10
+// Size: 0xc30
 // Has VTable
 // 
 // MNetworkUserGroupProxy "CBasePlayerPawn"
@@ -56,72 +56,72 @@ class CBasePlayerPawn : public CBaseCombatCharacter
 {
 public:
 	// MNetworkEnable
-	CPlayer_WeaponServices* m_pWeaponServices; // 0xa78	
+	CPlayer_WeaponServices* m_pWeaponServices; // 0xa98	
 	// MNetworkEnable
-	CPlayer_ItemServices* m_pItemServices; // 0xa80	
+	CPlayer_ItemServices* m_pItemServices; // 0xaa0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	CPlayer_AutoaimServices* m_pAutoaimServices; // 0xa88	
+	CPlayer_AutoaimServices* m_pAutoaimServices; // 0xaa8	
 	// MNetworkEnable
-	CPlayer_ObserverServices* m_pObserverServices; // 0xa90	
+	CPlayer_ObserverServices* m_pObserverServices; // 0xab0	
 	// MNetworkEnable
-	CPlayer_WaterServices* m_pWaterServices; // 0xa98	
+	CPlayer_WaterServices* m_pWaterServices; // 0xab8	
 	// MNetworkEnable
-	CPlayer_UseServices* m_pUseServices; // 0xaa0	
+	CPlayer_UseServices* m_pUseServices; // 0xac0	
 	// MNetworkEnable
-	CPlayer_FlashlightServices* m_pFlashlightServices; // 0xaa8	
+	CPlayer_FlashlightServices* m_pFlashlightServices; // 0xac8	
 	// MNetworkEnable
-	CPlayer_CameraServices* m_pCameraServices; // 0xab0	
+	CPlayer_CameraServices* m_pCameraServices; // 0xad0	
 	// MNetworkEnable
-	CPlayer_MovementServices* m_pMovementServices; // 0xab8	
+	CPlayer_MovementServices* m_pMovementServices; // 0xad8	
 private:
-	[[maybe_unused]] uint8_t __pad0ac0[0x8]; // 0xac0
+	[[maybe_unused]] uint8_t __pad0ae0[0x8]; // 0xae0
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	CUtlVectorEmbeddedNetworkVar< ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0xac8	
-	uint32_t m_nHighestGeneratedServerViewAngleChangeIndex; // 0xb18	
-	QAngle v_angle; // 0xb1c	
-	QAngle v_anglePrevious; // 0xb28	
+	CUtlVectorEmbeddedNetworkVar< ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0xae8	
+	uint32_t m_nHighestGeneratedServerViewAngleChangeIndex; // 0xb38	
+	QAngle v_angle; // 0xb3c	
+	QAngle v_anglePrevious; // 0xb48	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	uint32_t m_iHideHUD; // 0xb34	
+	uint32_t m_iHideHUD; // 0xb54	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	// -> scale - 0xb40
-	// -> origin - 0xb44
-	// -> bClip3DSkyBoxNearToWorldFar - 0xb50
-	// -> flClip3DSkyBoxNearToWorldFarOffset - 0xb54
-	// -> fog - 0xb58
-	// -> m_nWorldGroupID - 0xbc0
-	sky3dparams_t m_skybox3d; // 0xb38	
-	GameTime_t m_fTimeLastHurt; // 0xbc8	
+	// -> scale - 0xb60
+	// -> origin - 0xb64
+	// -> bClip3DSkyBoxNearToWorldFar - 0xb70
+	// -> flClip3DSkyBoxNearToWorldFarOffset - 0xb74
+	// -> fog - 0xb78
+	// -> m_nWorldGroupID - 0xbe0
+	sky3dparams_t m_skybox3d; // 0xb58	
+	GameTime_t m_fTimeLastHurt; // 0xbe8	
 	// MNetworkEnable
-	GameTime_t m_flDeathTime; // 0xbcc	
-	GameTime_t m_fNextSuicideTime; // 0xbd0	
-	bool m_fInitHUD; // 0xbd4	
+	GameTime_t m_flDeathTime; // 0xbec	
+	GameTime_t m_fNextSuicideTime; // 0xbf0	
+	bool m_fInitHUD; // 0xbf4	
 private:
-	[[maybe_unused]] uint8_t __pad0bd5[0x3]; // 0xbd5
+	[[maybe_unused]] uint8_t __pad0bf5[0x3]; // 0xbf5
 public:
-	CAI_Expresser* m_pExpresser; // 0xbd8	
+	CAI_Expresser* m_pExpresser; // 0xbf8	
 	// MNetworkEnable
-	CHandle< CBasePlayerController > m_hController; // 0xbe0	
+	CHandle< CBasePlayerController > m_hController; // 0xc00	
 private:
-	[[maybe_unused]] uint8_t __pad0be4[0x4]; // 0xbe4
+	[[maybe_unused]] uint8_t __pad0c04[0x4]; // 0xc04
 public:
-	float m_fHltvReplayDelay; // 0xbe8	
-	float m_fHltvReplayEnd; // 0xbec	
-	CEntityIndex m_iHltvReplayEntity; // 0xbf0	
+	float m_fHltvReplayDelay; // 0xc08	
+	float m_fHltvReplayEnd; // 0xc0c	
+	CEntityIndex m_iHltvReplayEntity; // 0xc10	
 private:
-	[[maybe_unused]] uint8_t __pad0bf4[0x4]; // 0xbf4
+	[[maybe_unused]] uint8_t __pad0c14[0x4]; // 0xc14
 public:
-	CUtlVector< sndopvarlatchdata_t > m_sndOpvarLatchData; // 0xbf8	
+	CUtlVector< sndopvarlatchdata_t > m_sndOpvarLatchData; // 0xc18	
 	
 	// Datamap fields:
-	// void m_hPawnListEntry; // 0xbe4
-	// void m_hLastValidNavArea; // 0xa28
-	// void m_hCurrentNavArea; // 0xa18
-	// void m_hCurrentNavAreaBlocked; // 0xa38
+	// void m_hPawnListEntry; // 0xc04
+	// void m_hLastValidNavArea; // 0xa48
+	// void m_hCurrentNavArea; // 0xa38
+	// void m_hCurrentNavAreaBlocked; // 0xa58
 	// CHandle< CBaseEntity > controller; // 0x7fffffff
 	// int32_t InputSetHealth; // 0x0
 	// bool InputSetHUDVisibility; // 0x0

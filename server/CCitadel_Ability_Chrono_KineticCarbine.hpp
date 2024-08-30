@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc90
+// Size: 0xcb8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bWantsSlow"
@@ -18,25 +18,25 @@ class CCitadel_Ability_Chrono_KineticCarbine : public CCitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bWantsSlow; // 0xab0	
+	bool m_bWantsSlow; // 0xad8	
 private:
-	[[maybe_unused]] uint8_t __pad0ab1[0x3]; // 0xab1
+	[[maybe_unused]] uint8_t __pad0ad9[0x3]; // 0xad9
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flLatchedTimeScaleFracChangeTime; // 0xab4	
+	GameTime_t m_flLatchedTimeScaleFracChangeTime; // 0xadc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flLatchedTimeScaleFrac; // 0xab8	
+	float m_flLatchedTimeScaleFrac; // 0xae0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flSpeedBoostEndTime; // 0xabc	
+	GameTime_t m_flSpeedBoostEndTime; // 0xae4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flShotTimeScaleEndTime; // 0xac0	
+	GameTime_t m_flShotTimeScaleEndTime; // 0xae8	
 private:
-	[[maybe_unused]] uint8_t __pad0ac4[0x4]; // 0xac4
+	[[maybe_unused]] uint8_t __pad0aec[0x4]; // 0xaec
 public:
-	float m_flStoredPowerPct; // 0xac8	
+	float m_flStoredPowerPct; // 0xaf0	
 };
 

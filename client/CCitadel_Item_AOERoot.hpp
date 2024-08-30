@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd20
+// Size: 0xd48
 // Has VTable
 class CCitadel_Item_AOERoot : public CCitadel_Item
 {

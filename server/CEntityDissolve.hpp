@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x778
+// Size: 0x798
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flFadeInStart"
@@ -22,25 +22,25 @@ class CEntityDissolve : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	float m_flFadeInStart; // 0x748	
+	float m_flFadeInStart; // 0x768	
 	// MNetworkEnable
-	float m_flFadeInLength; // 0x74c	
+	float m_flFadeInLength; // 0x76c	
 	// MNetworkEnable
-	float m_flFadeOutModelStart; // 0x750	
+	float m_flFadeOutModelStart; // 0x770	
 	// MNetworkEnable
-	float m_flFadeOutModelLength; // 0x754	
+	float m_flFadeOutModelLength; // 0x774	
 	// MNetworkEnable
-	float m_flFadeOutStart; // 0x758	
+	float m_flFadeOutStart; // 0x778	
 	// MNetworkEnable
-	float m_flFadeOutLength; // 0x75c	
+	float m_flFadeOutLength; // 0x77c	
 	// MNetworkEnable
-	GameTime_t m_flStartTime; // 0x760	
+	GameTime_t m_flStartTime; // 0x780	
 	// MNetworkEnable
-	EntityDisolveType_t m_nDissolveType; // 0x764	
+	EntityDisolveType_t m_nDissolveType; // 0x784	
 	// MNetworkEnable
-	Vector m_vDissolverOrigin; // 0x768	
+	Vector m_vDissolverOrigin; // 0x788	
 	// MNetworkEnable
-	uint32_t m_nMagnitude; // 0x774	
+	uint32_t m_nMagnitude; // 0x794	
 	
 	// Datamap fields:
 	// void CEntityDissolveDissolveThink; // 0x0
