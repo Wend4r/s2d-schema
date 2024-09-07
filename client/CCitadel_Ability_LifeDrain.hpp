@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc58
+// Size: 0xc68
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_tDrainLifeStopTime"
@@ -13,6 +13,6 @@ class CCitadel_Ability_LifeDrain : public C_CitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	GameTime_t m_tDrainLifeStopTime; // 0xc50	
+	GameTime_t m_tDrainLifeStopTime; // 0xc60	
 };
 

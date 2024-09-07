@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcd0
+// Size: 0xce0
 // Has VTable
 // Is Abstract
 // 
@@ -20,24 +20,24 @@ class CCitadel_Ability_Melee_Base : public C_CitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bUsingThisMelee; // 0xc50	
+	bool m_bUsingThisMelee; // 0xc60	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bUsingMeleeTagActive; // 0xc51	
+	bool m_bUsingMeleeTagActive; // 0xc61	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bHitWithThisAttack; // 0xc52	
+	bool m_bHitWithThisAttack; // 0xc62	
 private:
-	[[maybe_unused]] uint8_t __pad0c53[0x1]; // 0xc53
+	[[maybe_unused]] uint8_t __pad0c63[0x1]; // 0xc63
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flLastActivateTime; // 0xc54	
+	GameTime_t m_flLastActivateTime; // 0xc64	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextAttackAllowedTime; // 0xc58	
+	GameTime_t m_flNextAttackAllowedTime; // 0xc68	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flAttackTriggeredTime; // 0xc5c	
+	GameTime_t m_flAttackTriggeredTime; // 0xc6c	
 };
 

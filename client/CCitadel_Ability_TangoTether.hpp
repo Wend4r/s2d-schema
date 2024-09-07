@@ -7,7 +7,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdf0
+// Size: 0xe00
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecCastStartPos"
@@ -24,41 +24,41 @@ struct ParticleIndex_t;
 class CCitadel_Ability_TangoTether : public C_CitadelBaseAbility
 {
 public:
-	SatVolumeIndex_t m_desatVolIdx; // 0xc50	
+	SatVolumeIndex_t m_desatVolIdx; // 0xc60	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecCastStartPos; // 0xc54	
+	Vector m_vecCastStartPos; // 0xc64	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecDashStartPos; // 0xc60	
+	Vector m_vecDashStartPos; // 0xc70	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecDashEndPos; // 0xc6c	
+	Vector m_vecDashEndPos; // 0xc7c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	QAngle m_angDashStartAng; // 0xc78	
+	QAngle m_angDashStartAng; // 0xc88	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flDashStartTime; // 0xc84	
+	GameTime_t m_flDashStartTime; // 0xc94	
 	// MNetworkEnable
-	GameTime_t m_flGrappleStartTime; // 0xc88	
+	GameTime_t m_flGrappleStartTime; // 0xc98	
 	// MNetworkEnable
-	GameTime_t m_flGrappleArriveTime; // 0xc8c	
+	GameTime_t m_flGrappleArriveTime; // 0xc9c	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTarget; // 0xc90	
-	float m_flVelSpring; // 0xc94	
+	CHandle< C_BaseEntity > m_hTarget; // 0xca0	
+	float m_flVelSpring; // 0xca4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flGrappleShotAttackTime; // 0xc98	
-	int32_t m_nTicksNotMoving; // 0xc9c	
-	Vector m_vecPrevPos; // 0xca0	
+	GameTime_t m_flGrappleShotAttackTime; // 0xca8	
+	int32_t m_nTicksNotMoving; // 0xcac	
+	Vector m_vecPrevPos; // 0xcb0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
 	// MNetworkEncoder "coord"
-	Vector m_rgTargetPos[20]; // 0xcac	
+	Vector m_rgTargetPos[20]; // 0xcbc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_rgTargetPosTime[20]; // 0xd9c	
-	ParticleIndex_t m_nGrappleTravelEffect; // 0xdec	
+	GameTime_t m_rgTargetPosTime[20]; // 0xdac	
+	ParticleIndex_t m_nGrappleTravelEffect; // 0xdfc	
 };
 

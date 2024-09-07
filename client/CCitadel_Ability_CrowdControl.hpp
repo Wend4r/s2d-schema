@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xda0
+// Size: 0xdb0
 // Has VTable
 class CCitadel_Ability_CrowdControl : public C_CitadelBaseAbility
 {
