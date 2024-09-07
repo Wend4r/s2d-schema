@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc58
+// Size: 0xc68
 // Has VTable
 // Is Abstract
 class CCitadelBaseYamatoAbility : public C_CitadelBaseAbility

@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc50
+// Size: 0xc60
 // Has VTable
 // Is Abstract
 // 

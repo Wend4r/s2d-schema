@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcc0
+// Size: 0xcd0
 // Has VTable
 class CCitadel_Ability_Nikuman : public C_CitadelBaseAbility
 {
