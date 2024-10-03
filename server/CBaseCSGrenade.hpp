@@ -6,7 +6,7 @@ struct GameTime_t;
 struct GameTick_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xed0
+// Size: 0xf48
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bRedraw"
@@ -27,40 +27,40 @@ class CBaseCSGrenade : public CCSWeaponBase
 {
 public:
 	// MNetworkEnable
-	bool m_bRedraw; // 0xe98	
+	bool m_bRedraw; // 0xf10	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnGrenadeStateChanged"
-	bool m_bIsHeldByPlayer; // 0xe99	
+	bool m_bIsHeldByPlayer; // 0xf11	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnGrenadeStateChanged"
-	bool m_bPinPulled; // 0xe9a	
+	bool m_bPinPulled; // 0xf12	
 	// MNetworkEnable
-	bool m_bJumpThrow; // 0xe9b	
+	bool m_bJumpThrow; // 0xf13	
 	// MNetworkEnable
-	bool m_bThrowAnimating; // 0xe9c	
+	bool m_bThrowAnimating; // 0xf14	
 private:
-	[[maybe_unused]] uint8_t __pad0e9d[0x3]; // 0xe9d
+	[[maybe_unused]] uint8_t __pad0f15[0x3]; // 0xf15
 public:
 	// MNetworkEnable
-	GameTime_t m_fThrowTime; // 0xea0	
+	GameTime_t m_fThrowTime; // 0xf18	
 	// MNetworkEnable
-	float m_flThrowStrength; // 0xea4	
+	float m_flThrowStrength; // 0xf1c	
 	// MNetworkEnable
-	float m_flThrowStrengthApproach; // 0xea8	
+	float m_flThrowStrengthApproach; // 0xf20	
 	// MNetworkEnable
-	GameTime_t m_fDropTime; // 0xeac	
+	GameTime_t m_fDropTime; // 0xf24	
 	// MNetworkEnable
-	GameTime_t m_fPinPullTime; // 0xeb0	
+	GameTime_t m_fPinPullTime; // 0xf28	
 	// MNetworkEnable
-	bool m_bJustPulledPin; // 0xeb4	
+	bool m_bJustPulledPin; // 0xf2c	
 private:
-	[[maybe_unused]] uint8_t __pad0eb5[0x3]; // 0xeb5
+	[[maybe_unused]] uint8_t __pad0f2d[0x3]; // 0xf2d
 public:
 	// MNetworkEnable
-	GameTick_t m_nNextHoldTick; // 0xeb8	
+	GameTick_t m_nNextHoldTick; // 0xf30	
 	// MNetworkEnable
-	float m_flNextHoldFrac; // 0xebc	
+	float m_flNextHoldFrac; // 0xf34	
 	// MNetworkEnable
-	CHandle< CCSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0xec0	
+	CHandle< CCSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0xf38	
 };
 

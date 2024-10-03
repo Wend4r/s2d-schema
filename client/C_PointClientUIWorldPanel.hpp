@@ -5,9 +5,10 @@
 struct CPointOffScreenIndicatorUi;
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0xf30
+// Size: 0xf80
 // Has VTable
 // 
+// MEntityAllowsPortraitWorldSpawn
 // MNetworkVarNames "bool m_bIgnoreInput"
 // MNetworkVarNames "bool m_bLit"
 // MNetworkVarNames "bool m_bFollowPlayerAcrossTeleport"
@@ -34,76 +35,76 @@ struct CPointOffScreenIndicatorUi;
 class C_PointClientUIWorldPanel : public C_BaseClientUIEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0cf8[0x8]; // 0xcf8
+	[[maybe_unused]] uint8_t __pad0d50[0x8]; // 0xd50
 public:
-	bool m_bForceRecreateNextUpdate; // 0xd00	
-	bool m_bMoveViewToPlayerNextThink; // 0xd01	
-	bool m_bCheckCSSClasses; // 0xd02	
+	bool m_bForceRecreateNextUpdate; // 0xd58	
+	bool m_bMoveViewToPlayerNextThink; // 0xd59	
+	bool m_bCheckCSSClasses; // 0xd5a	
 private:
-	[[maybe_unused]] uint8_t __pad0d03[0xd]; // 0xd03
+	[[maybe_unused]] uint8_t __pad0d5b[0x5]; // 0xd5b
 public:
-	CTransform m_anchorDeltaTransform; // 0xd10	
+	CTransform m_anchorDeltaTransform; // 0xd60	
 private:
-	[[maybe_unused]] uint8_t __pad0d30[0x178]; // 0xd30
+	[[maybe_unused]] uint8_t __pad0d80[0x178]; // 0xd80
 public:
-	CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // 0xea8	
+	CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // 0xef8	
 private:
-	[[maybe_unused]] uint8_t __pad0eb0[0x20]; // 0xeb0
+	[[maybe_unused]] uint8_t __pad0f00[0x20]; // 0xf00
 public:
 	// MNetworkEnable
-	bool m_bIgnoreInput; // 0xed0	
+	bool m_bIgnoreInput; // 0xf20	
 	// MNetworkEnable
-	bool m_bLit; // 0xed1	
+	bool m_bLit; // 0xf21	
 	// MNetworkEnable
-	bool m_bFollowPlayerAcrossTeleport; // 0xed2	
+	bool m_bFollowPlayerAcrossTeleport; // 0xf22	
 private:
-	[[maybe_unused]] uint8_t __pad0ed3[0x1]; // 0xed3
+	[[maybe_unused]] uint8_t __pad0f23[0x1]; // 0xf23
 public:
 	// MNetworkEnable
-	float m_flWidth; // 0xed4	
+	float m_flWidth; // 0xf24	
 	// MNetworkEnable
-	float m_flHeight; // 0xed8	
+	float m_flHeight; // 0xf28	
 	// MNetworkEnable
-	float m_flDPI; // 0xedc	
+	float m_flDPI; // 0xf2c	
 	// MNetworkEnable
-	float m_flInteractDistance; // 0xee0	
+	float m_flInteractDistance; // 0xf30	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0xee4	
+	float m_flDepthOffset; // 0xf34	
 	// MNetworkEnable
-	uint32_t m_unOwnerContext; // 0xee8	
+	uint32_t m_unOwnerContext; // 0xf38	
 	// MNetworkEnable
-	uint32_t m_unHorizontalAlign; // 0xeec	
+	uint32_t m_unHorizontalAlign; // 0xf3c	
 	// MNetworkEnable
-	uint32_t m_unVerticalAlign; // 0xef0	
+	uint32_t m_unVerticalAlign; // 0xf40	
 	// MNetworkEnable
-	uint32_t m_unOrientation; // 0xef4	
+	uint32_t m_unOrientation; // 0xf44	
 	// MNetworkEnable
-	bool m_bAllowInteractionFromAllSceneWorlds; // 0xef8	
+	bool m_bAllowInteractionFromAllSceneWorlds; // 0xf48	
 private:
-	[[maybe_unused]] uint8_t __pad0ef9[0x7]; // 0xef9
+	[[maybe_unused]] uint8_t __pad0f49[0x7]; // 0xf49
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0xf00	
+	C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0xf50	
 	// MNetworkEnable
-	bool m_bOpaque; // 0xf18	
+	bool m_bOpaque; // 0xf68	
 	// MNetworkEnable
-	bool m_bNoDepth; // 0xf19	
+	bool m_bNoDepth; // 0xf69	
 	// MNetworkEnable
-	bool m_bRenderBackface; // 0xf1a	
+	bool m_bRenderBackface; // 0xf6a	
 	// MNetworkEnable
-	bool m_bUseOffScreenIndicator; // 0xf1b	
+	bool m_bUseOffScreenIndicator; // 0xf6b	
 	// MNetworkEnable
-	bool m_bExcludeFromSaveGames; // 0xf1c	
+	bool m_bExcludeFromSaveGames; // 0xf6c	
 	// MNetworkEnable
-	bool m_bGrabbable; // 0xf1d	
+	bool m_bGrabbable; // 0xf6d	
 	// MNetworkEnable
-	bool m_bOnlyRenderToTexture; // 0xf1e	
+	bool m_bOnlyRenderToTexture; // 0xf6e	
 	// MNetworkEnable
-	bool m_bDisableMipGen; // 0xf1f	
+	bool m_bDisableMipGen; // 0xf6f	
 	// MNetworkEnable
-	int32_t m_nExplicitImageLayout; // 0xf20	
+	int32_t m_nExplicitImageLayout; // 0xf70	
 	
 	// Datamap fields:
-	// CStrongHandle< InfoForResourceTypeIMaterial2 > m_hPanelOverrideMaterial; // 0xea0
+	// CStrongHandle< InfoForResourceTypeIMaterial2 > m_hPanelOverrideMaterial; // 0xef0
 };
 

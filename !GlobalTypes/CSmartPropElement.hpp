@@ -8,7 +8,7 @@
 // Has VTable
 // 
 // MGetKV3ClassDefaults
-// MVDataRoot
+// MVDataBase
 // MVDataNodeType
 // MVDataAnonymousNode
 // MPropertyFriendlyName "Smart Prop Element"

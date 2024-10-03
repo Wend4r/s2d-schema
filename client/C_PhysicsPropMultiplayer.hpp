@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1048
+// Size: 0x1110
 // Has VTable
 class C_PhysicsPropMultiplayer : public C_PhysicsProp
 {

@@ -8,7 +8,7 @@ struct CountdownTimer;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2ca8
+// Size: 0x2d20
 // Has VTable
 // 
 // MNetworkVarNames "EntitySpottedState_t m_entitySpottedState"
@@ -31,92 +31,92 @@ struct GameTime_t;
 class CHostage : public CHostageExpresserShim
 {
 private:
-	[[maybe_unused]] uint8_t __pad0a10[0x10]; // 0xa10
+	[[maybe_unused]] uint8_t __pad0a88[0x10]; // 0xa88
 public:
-	CEntityIOOutput m_OnHostageBeginGrab; // 0xa20	
-	CEntityIOOutput m_OnFirstPickedUp; // 0xa48	
-	CEntityIOOutput m_OnDroppedNotRescued; // 0xa70	
-	CEntityIOOutput m_OnRescued; // 0xa98	
+	CEntityIOOutput m_OnHostageBeginGrab; // 0xa98	
+	CEntityIOOutput m_OnFirstPickedUp; // 0xac0	
+	CEntityIOOutput m_OnDroppedNotRescued; // 0xae8	
+	CEntityIOOutput m_OnRescued; // 0xb10	
 	// MNetworkEnable
-	EntitySpottedState_t m_entitySpottedState; // 0xac0	
-	int32_t m_nSpotRules; // 0xad8	
-	uint32_t m_uiHostageSpawnExclusionGroupMask; // 0xadc	
-	uint32_t m_nHostageSpawnRandomFactor; // 0xae0	
-	bool m_bRemove; // 0xae4	
+	EntitySpottedState_t m_entitySpottedState; // 0xb38	
+	int32_t m_nSpotRules; // 0xb50	
+	uint32_t m_uiHostageSpawnExclusionGroupMask; // 0xb54	
+	uint32_t m_nHostageSpawnRandomFactor; // 0xb58	
+	bool m_bRemove; // 0xb5c	
 private:
-	[[maybe_unused]] uint8_t __pad0ae5[0x3]; // 0xae5
+	[[maybe_unused]] uint8_t __pad0b5d[0x3]; // 0xb5d
 public:
 	// MNetworkEnable
-	Vector m_vel; // 0xae8	
+	Vector m_vel; // 0xb60	
 	// MNetworkEnable
-	bool m_isRescued; // 0xaf4	
+	bool m_isRescued; // 0xb6c	
 	// MNetworkEnable
-	bool m_jumpedThisFrame; // 0xaf5	
+	bool m_jumpedThisFrame; // 0xb6d	
 private:
-	[[maybe_unused]] uint8_t __pad0af6[0x2]; // 0xaf6
+	[[maybe_unused]] uint8_t __pad0b6e[0x2]; // 0xb6e
 public:
 	// MNetworkEnable
-	int32_t m_nHostageState; // 0xaf8	
+	int32_t m_nHostageState; // 0xb70	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_leader; // 0xafc	
-	CHandle< CCSPlayerPawnBase > m_lastLeader; // 0xb00	
+	CHandle< CBaseEntity > m_leader; // 0xb74	
+	CHandle< CCSPlayerPawnBase > m_lastLeader; // 0xb78	
 private:
-	[[maybe_unused]] uint8_t __pad0b04[0x4]; // 0xb04
-public:
-	// MNetworkEnable
-	CountdownTimer m_reuseTimer; // 0xb08	
-	bool m_hasBeenUsed; // 0xb20	
-private:
-	[[maybe_unused]] uint8_t __pad0b21[0x3]; // 0xb21
-public:
-	Vector m_accel; // 0xb24	
-	bool m_isRunning; // 0xb30	
-	bool m_isCrouching; // 0xb31	
-private:
-	[[maybe_unused]] uint8_t __pad0b32[0x6]; // 0xb32
-public:
-	CountdownTimer m_jumpTimer; // 0xb38	
-	bool m_isWaitingForLeader; // 0xb50	
-private:
-	[[maybe_unused]] uint8_t __pad0b51[0x200f]; // 0xb51
-public:
-	CountdownTimer m_repathTimer; // 0x2b60	
-	CountdownTimer m_inhibitDoorTimer; // 0x2b78	
-private:
-	[[maybe_unused]] uint8_t __pad2b90[0x78]; // 0x2b90
-public:
-	CountdownTimer m_inhibitObstacleAvoidanceTimer; // 0x2c08	
-private:
-	[[maybe_unused]] uint8_t __pad2c20[0x8]; // 0x2c20
-public:
-	CountdownTimer m_wiggleTimer; // 0x2c28	
-private:
-	[[maybe_unused]] uint8_t __pad2c40[0x4]; // 0x2c40
-public:
-	bool m_isAdjusted; // 0x2c44	
-	// MNetworkEnable
-	bool m_bHandsHaveBeenCut; // 0x2c45	
-private:
-	[[maybe_unused]] uint8_t __pad2c46[0x2]; // 0x2c46
+	[[maybe_unused]] uint8_t __pad0b7c[0x4]; // 0xb7c
 public:
 	// MNetworkEnable
-	CHandle< CCSPlayerPawn > m_hHostageGrabber; // 0x2c48	
-	GameTime_t m_fLastGrabTime; // 0x2c4c	
-	Vector m_vecPositionWhenStartedDroppingToGround; // 0x2c50	
-	Vector m_vecGrabbedPos; // 0x2c5c	
-	// MNetworkEnable
-	GameTime_t m_flRescueStartTime; // 0x2c68	
-	// MNetworkEnable
-	GameTime_t m_flGrabSuccessTime; // 0x2c6c	
-	// MNetworkEnable
-	GameTime_t m_flDropStartTime; // 0x2c70	
-	int32_t m_nApproachRewardPayouts; // 0x2c74	
-	int32_t m_nPickupEventCount; // 0x2c78	
-	Vector m_vecSpawnGroundPos; // 0x2c7c	
+	CountdownTimer m_reuseTimer; // 0xb80	
+	bool m_hasBeenUsed; // 0xb98	
 private:
-	[[maybe_unused]] uint8_t __pad2c88[0x14]; // 0x2c88
+	[[maybe_unused]] uint8_t __pad0b99[0x3]; // 0xb99
 public:
-	Vector m_vecHostageResetPosition; // 0x2c9c	
+	Vector m_accel; // 0xb9c	
+	bool m_isRunning; // 0xba8	
+	bool m_isCrouching; // 0xba9	
+private:
+	[[maybe_unused]] uint8_t __pad0baa[0x6]; // 0xbaa
+public:
+	CountdownTimer m_jumpTimer; // 0xbb0	
+	bool m_isWaitingForLeader; // 0xbc8	
+private:
+	[[maybe_unused]] uint8_t __pad0bc9[0x200f]; // 0xbc9
+public:
+	CountdownTimer m_repathTimer; // 0x2bd8	
+	CountdownTimer m_inhibitDoorTimer; // 0x2bf0	
+private:
+	[[maybe_unused]] uint8_t __pad2c08[0x78]; // 0x2c08
+public:
+	CountdownTimer m_inhibitObstacleAvoidanceTimer; // 0x2c80	
+private:
+	[[maybe_unused]] uint8_t __pad2c98[0x8]; // 0x2c98
+public:
+	CountdownTimer m_wiggleTimer; // 0x2ca0	
+private:
+	[[maybe_unused]] uint8_t __pad2cb8[0x4]; // 0x2cb8
+public:
+	bool m_isAdjusted; // 0x2cbc	
+	// MNetworkEnable
+	bool m_bHandsHaveBeenCut; // 0x2cbd	
+private:
+	[[maybe_unused]] uint8_t __pad2cbe[0x2]; // 0x2cbe
+public:
+	// MNetworkEnable
+	CHandle< CCSPlayerPawn > m_hHostageGrabber; // 0x2cc0	
+	GameTime_t m_fLastGrabTime; // 0x2cc4	
+	Vector m_vecPositionWhenStartedDroppingToGround; // 0x2cc8	
+	Vector m_vecGrabbedPos; // 0x2cd4	
+	// MNetworkEnable
+	GameTime_t m_flRescueStartTime; // 0x2ce0	
+	// MNetworkEnable
+	GameTime_t m_flGrabSuccessTime; // 0x2ce4	
+	// MNetworkEnable
+	GameTime_t m_flDropStartTime; // 0x2ce8	
+	int32_t m_nApproachRewardPayouts; // 0x2cec	
+	int32_t m_nPickupEventCount; // 0x2cf0	
+	Vector m_vecSpawnGroundPos; // 0x2cf4	
+private:
+	[[maybe_unused]] uint8_t __pad2d00[0x14]; // 0x2d00
+public:
+	Vector m_vecHostageResetPosition; // 0x2d14	
 	
 	// Datamap fields:
 	// void HostageRescueZoneTouch; // 0x0

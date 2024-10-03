@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5d0
+// Size: 0x5f0
 // Has VTable
 class C_CSGO_EndOfMatchCamera : public C_CSGO_TeamPreviewCamera
 {

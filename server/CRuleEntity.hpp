@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x718
+// Size: 0x758
 // Has VTable
 class CRuleEntity : public CBaseModelEntity
 {
 public:
-	CUtlSymbolLarge m_iszMaster; // 0x710	
+	CUtlSymbolLarge m_iszMaster; // 0x750	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: resourcecompiler.dll (project 'sounddoc_lib')
 // Alignment: 8
-// Size: 0x20
+// Size: 0x28
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,5 +13,7 @@
 class CMixRemapVsndToImpulseResponse : public CMixPropertyBase
 {
 public:
+	// MPropertyFriendlyName "PreDelayMS"
+	float m_flPreDelayMS; // 0x20	
 };
 

@@ -5,14 +5,14 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xaa0
+// Size: 0xb18
 // Has VTable
 class CSensorGrenadeProjectile : public CBaseCSGrenadeProjectile
 {
 public:
-	GameTime_t m_fExpireTime; // 0xa90	
-	GameTime_t m_fNextDetectPlayerSound; // 0xa94	
-	CHandle< CBaseEntity > m_hDisplayGrenade; // 0xa98	
+	GameTime_t m_fExpireTime; // 0xb08	
+	GameTime_t m_fNextDetectPlayerSound; // 0xb0c	
+	CHandle< CBaseEntity > m_hDisplayGrenade; // 0xb10	
 	
 	// Datamap fields:
 	// void CSensorGrenadeProjectileThink_Arm; // 0x0

@@ -14,6 +14,7 @@
 // MPropertyFriendlyName "Limit Count"
 // MPropertyDescription "Skip this node after the limit. Check Type does not apply, the limit will always be checked."
 // MPulseRequirementPass
+// MPulseRequirementSummaryExpr
 class CPulseCell_LimitCount : public CPulseCell_BaseRequirement
 {
 public:

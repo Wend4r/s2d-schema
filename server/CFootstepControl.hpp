@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x8f0
+// Size: 0x930
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_source"
@@ -13,8 +13,8 @@ class CFootstepControl : public CBaseTrigger
 {
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_source; // 0x8e0	
+	CUtlSymbolLarge m_source; // 0x920	
 	// MNetworkEnable
-	CUtlSymbolLarge m_destination; // 0x8e8	
+	CUtlSymbolLarge m_destination; // 0x928	
 };
 

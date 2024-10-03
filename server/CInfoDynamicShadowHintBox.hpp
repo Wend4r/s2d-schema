@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4f0
+// Size: 0x510
 // Has VTable
 class CInfoDynamicShadowHintBox : public CInfoDynamicShadowHint
 {
 public:
-	Vector m_vBoxMins; // 0x4d8	
-	Vector m_vBoxMaxs; // 0x4e4	
+	Vector m_vBoxMins; // 0x4f8	
+	Vector m_vBoxMaxs; // 0x504	
 };
 

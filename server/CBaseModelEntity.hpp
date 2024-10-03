@@ -11,7 +11,7 @@ struct CGlowProperty;
 struct CNetworkViewOffsetVector;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x710
+// Size: 0x750
 // Has VTable
 // 
 // MNetworkVarNames "CRenderComponent::Storage_t m_CRenderComponent"
@@ -21,6 +21,7 @@ struct CNetworkViewOffsetVector;
 // MNetworkVarNames "Color m_clrRender"
 // MNetworkVarNames "EntityRenderAttribute_t m_vecRenderAttributes"
 // MNetworkVarNames "bool m_bRenderToCubemaps"
+// MNetworkVarNames "bool m_bNoInterpolate"
 // MNetworkVarNames "CCollisionProperty m_Collision"
 // MNetworkVarNames "CGlowProperty m_Glow"
 // MNetworkVarNames "float m_flGlowBackfaceMult"
@@ -43,74 +44,79 @@ public:
 	// MNetworkUserGroup "CRenderComponent"
 	// MNetworkAlias "CRenderComponent"
 	// MNetworkTypeAlias "CRenderComponent"
-	CRenderComponent* m_CRenderComponent; // 0x4c0	
+	CRenderComponent* m_CRenderComponent; // 0x4e0	
 	// MNetworkEnable
 	// MNetworkUserGroup "CHitboxComponent"
 	// MNetworkAlias "CHitboxComponent"
 	// MNetworkTypeAlias "CHitboxComponent"
-	CHitboxComponent m_CHitboxComponent; // 0x4c8	
-	GameTime_t m_flDissolveStartTime; // 0x4f0	
+	CHitboxComponent m_CHitboxComponent; // 0x4e8	
+	GameTime_t m_flDissolveStartTime; // 0x510	
 private:
-	[[maybe_unused]] uint8_t __pad04f4[0x4]; // 0x4f4
+	[[maybe_unused]] uint8_t __pad0514[0x4]; // 0x514
 public:
-	CEntityIOOutput m_OnIgnite; // 0x4f8	
+	CEntityIOOutput m_OnIgnite; // 0x518	
 	// MNetworkEnable
-	RenderMode_t m_nRenderMode; // 0x520	
+	RenderMode_t m_nRenderMode; // 0x540	
 	// MNetworkEnable
-	RenderFx_t m_nRenderFX; // 0x521	
-	bool m_bAllowFadeInView; // 0x522	
+	RenderFx_t m_nRenderFX; // 0x541	
+	bool m_bAllowFadeInView; // 0x542	
+private:
+	[[maybe_unused]] uint8_t __pad0543[0x1d]; // 0x543
+public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnColorChanged"
-	Color m_clrRender; // 0x523	
+	Color m_clrRender; // 0x560	
 private:
-	[[maybe_unused]] uint8_t __pad0527[0x1]; // 0x527
+	[[maybe_unused]] uint8_t __pad0564[0x4]; // 0x564
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRenderAttributesChanged"
-	CUtlVectorEmbeddedNetworkVar< EntityRenderAttribute_t > m_vecRenderAttributes; // 0x528	
+	CUtlVectorEmbeddedNetworkVar< EntityRenderAttribute_t > m_vecRenderAttributes; // 0x568	
 	// MNetworkEnable
-	bool m_bRenderToCubemaps; // 0x578	
+	bool m_bRenderToCubemaps; // 0x5b8	
+	// MNetworkEnable
+	bool m_bNoInterpolate; // 0x5b9	
 private:
-	[[maybe_unused]] uint8_t __pad0579[0x7]; // 0x579
+	[[maybe_unused]] uint8_t __pad05ba[0x6]; // 0x5ba
 public:
 	// MNetworkEnable
-	CCollisionProperty m_Collision; // 0x580	
+	CCollisionProperty m_Collision; // 0x5c0	
 	// MNetworkEnable
-	CGlowProperty m_Glow; // 0x630	
+	CGlowProperty m_Glow; // 0x670	
 	// MNetworkEnable
-	float m_flGlowBackfaceMult; // 0x688	
+	float m_flGlowBackfaceMult; // 0x6c8	
 	// MNetworkEnable
-	float m_fadeMinDist; // 0x68c	
+	float m_fadeMinDist; // 0x6cc	
 	// MNetworkEnable
-	float m_fadeMaxDist; // 0x690	
+	float m_fadeMaxDist; // 0x6d0	
 	// MNetworkEnable
-	float m_flFadeScale; // 0x694	
+	float m_flFadeScale; // 0x6d4	
 	// MNetworkEnable
-	float m_flShadowStrength; // 0x698	
+	float m_flShadowStrength; // 0x6d8	
 	// MNetworkEnable
-	uint8_t m_nObjectCulling; // 0x69c	
+	uint8_t m_nObjectCulling; // 0x6dc	
 private:
-	[[maybe_unused]] uint8_t __pad069d[0x3]; // 0x69d
+	[[maybe_unused]] uint8_t __pad06dd[0x3]; // 0x6dd
 public:
 	// MNetworkEnable
-	int32_t m_nAddDecal; // 0x6a0	
+	int32_t m_nAddDecal; // 0x6e0	
 	// MNetworkEnable
-	Vector m_vDecalPosition; // 0x6a4	
+	Vector m_vDecalPosition; // 0x6e4	
 	// MNetworkEnable
-	Vector m_vDecalForwardAxis; // 0x6b0	
+	Vector m_vDecalForwardAxis; // 0x6f0	
 	// MNetworkEnable
-	float m_flDecalHealBloodRate; // 0x6bc	
+	float m_flDecalHealBloodRate; // 0x6fc	
 	// MNetworkEnable
-	float m_flDecalHealHeightRate; // 0x6c0	
+	float m_flDecalHealHeightRate; // 0x700	
 private:
-	[[maybe_unused]] uint8_t __pad06c4[0x4]; // 0x6c4
+	[[maybe_unused]] uint8_t __pad0704[0x4]; // 0x704
 public:
 	// MNetworkEnable
-	CNetworkUtlVectorBase< CHandle< CBaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0x6c8	
+	CNetworkUtlVectorBase< CHandle< CBaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0x708	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkUserGroup "Player"
-	CNetworkViewOffsetVector m_vecViewOffset; // 0x6e0	
+	CNetworkViewOffsetVector m_vecViewOffset; // 0x720	
 	
 	// Datamap fields:
 	// int32_t InputAlpha; // 0x0

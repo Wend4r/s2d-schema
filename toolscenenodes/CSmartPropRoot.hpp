@@ -4,7 +4,7 @@
 
 // Registered binary: toolscenenodes.dll (project 'smartprops')
 // Alignment: 8
-// Size: 0xb0
+// Size: 0xc8
 // 
 // MGetKV3ClassDefaults
 // MSmartPropClassVersion
@@ -14,7 +14,7 @@
 // MVDataPreviewWidget
 // MVDataGroupNodeClass
 // MVDataUsesComponentEditor
-// MPropertyFriendlyName "Smart Prop"
+// MPropertyFriendlyName "Smart Prop Root"
 // MPropertyDescription "Root of a smart prop, contains a list of elements to evaluate."
 class CSmartPropRoot
 {
@@ -32,5 +32,8 @@ public:
 	// MPropertyDescription "List of the root level elements making up the smart prop definition, each element may be an entire tree."
 	// MVDataPromoteField
 	CUtlVector< CSmartPropElement* > m_Children; // 0x78	
+	// MPropertyFriendlyName "Modifiers"
+	// MVDataPromoteField
+	CUtlVector< CSmartPropModifier* > m_Modifiers; // 0x90	
 };
 

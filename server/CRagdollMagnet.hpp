@@ -4,18 +4,18 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4d8
+// Size: 0x4f8
 // Has VTable
 class CRagdollMagnet : public CPointEntity
 {
 public:
-	bool m_bDisabled; // 0x4c0	
+	bool m_bDisabled; // 0x4e0	
 private:
-	[[maybe_unused]] uint8_t __pad04c1[0x3]; // 0x4c1
+	[[maybe_unused]] uint8_t __pad04e1[0x3]; // 0x4e1
 public:
-	float m_radius; // 0x4c4	
-	float m_force; // 0x4c8	
-	Vector m_axis; // 0x4cc	
+	float m_radius; // 0x4e4	
+	float m_force; // 0x4e8	
+	Vector m_axis; // 0x4ec	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

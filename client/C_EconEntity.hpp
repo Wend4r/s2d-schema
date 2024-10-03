@@ -5,7 +5,7 @@
 struct C_AttributeContainer;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x15b0
+// Size: 0x1660
 // Has VTable
 // 
 // MNetworkVarNames "CAttributeContainer m_AttributeManager"
@@ -18,55 +18,52 @@ struct C_AttributeContainer;
 class C_EconEntity : public C_BaseFlex
 {
 private:
-	[[maybe_unused]] uint8_t __pad1068[0x10]; // 0x1068
+	[[maybe_unused]] uint8_t __pad1118[0x10]; // 0x1118
 public:
-	float m_flFlexDelayTime; // 0x1078	
+	float m_flFlexDelayTime; // 0x1128	
 private:
-	[[maybe_unused]] uint8_t __pad107c[0x4]; // 0x107c
+	[[maybe_unused]] uint8_t __pad112c[0x4]; // 0x112c
 public:
-	float32* m_flFlexDelayedWeight; // 0x1080	
-	bool m_bAttributesInitialized; // 0x1088	
+	float32* m_flFlexDelayedWeight; // 0x1130	
+	bool m_bAttributesInitialized; // 0x1138	
 private:
-	[[maybe_unused]] uint8_t __pad1089[0x7]; // 0x1089
+	[[maybe_unused]] uint8_t __pad1139[0x7]; // 0x1139
 public:
 	// MNetworkEnable
-	// -> m_Item - 0x10e0
-	// -> m_iExternalItemProviderRegisteredToken - 0x1528
-	// -> m_ullRegisteredAsItemID - 0x1530
-	C_AttributeContainer m_AttributeManager; // 0x1090	
+	C_AttributeContainer m_AttributeManager; // 0x1140	
 	// MNetworkEnable
-	uint32_t m_OriginalOwnerXuidLow; // 0x1538	
+	uint32_t m_OriginalOwnerXuidLow; // 0x15e8	
 	// MNetworkEnable
-	uint32_t m_OriginalOwnerXuidHigh; // 0x153c	
+	uint32_t m_OriginalOwnerXuidHigh; // 0x15ec	
 	// MNetworkEnable
-	int32_t m_nFallbackPaintKit; // 0x1540	
+	int32_t m_nFallbackPaintKit; // 0x15f0	
 	// MNetworkEnable
-	int32_t m_nFallbackSeed; // 0x1544	
+	int32_t m_nFallbackSeed; // 0x15f4	
 	// MNetworkEnable
-	float m_flFallbackWear; // 0x1548	
+	float m_flFallbackWear; // 0x15f8	
 	// MNetworkEnable
-	int32_t m_nFallbackStatTrak; // 0x154c	
-	bool m_bClientside; // 0x1550	
-	bool m_bParticleSystemsCreated; // 0x1551	
+	int32_t m_nFallbackStatTrak; // 0x15fc	
+	bool m_bClientside; // 0x1600	
+	bool m_bParticleSystemsCreated; // 0x1601	
 private:
-	[[maybe_unused]] uint8_t __pad1552[0x6]; // 0x1552
+	[[maybe_unused]] uint8_t __pad1602[0x6]; // 0x1602
 public:
-	CUtlVector< int32 > m_vecAttachedParticles; // 0x1558	
-	CHandle< CBaseAnimGraph > m_hViewmodelAttachment; // 0x1570	
-	int32_t m_iOldTeam; // 0x1574	
-	bool m_bAttachmentDirty; // 0x1578	
+	CUtlVector< int32 > m_vecAttachedParticles; // 0x1608	
+	CHandle< CBaseAnimGraph > m_hViewmodelAttachment; // 0x1620	
+	int32_t m_iOldTeam; // 0x1624	
+	bool m_bAttachmentDirty; // 0x1628	
 private:
-	[[maybe_unused]] uint8_t __pad1579[0x3]; // 0x1579
+	[[maybe_unused]] uint8_t __pad1629[0x3]; // 0x1629
 public:
-	int32_t m_nUnloadedModelIndex; // 0x157c	
-	int32_t m_iNumOwnerValidationRetries; // 0x1580	
+	int32_t m_nUnloadedModelIndex; // 0x162c	
+	int32_t m_iNumOwnerValidationRetries; // 0x1630	
 private:
-	[[maybe_unused]] uint8_t __pad1584[0xc]; // 0x1584
+	[[maybe_unused]] uint8_t __pad1634[0xc]; // 0x1634
 public:
-	CHandle< C_BaseEntity > m_hOldProvidee; // 0x1590	
+	CHandle< C_BaseEntity > m_hOldProvidee; // 0x1640	
 private:
-	[[maybe_unused]] uint8_t __pad1594[0x4]; // 0x1594
+	[[maybe_unused]] uint8_t __pad1644[0x4]; // 0x1644
 public:
-	CUtlVector< C_EconEntity::AttachedModelData_t > m_vecAttachedModels; // 0x1598	
+	CUtlVector< C_EconEntity::AttachedModelData_t > m_vecAttachedModels; // 0x1648	
 };
 

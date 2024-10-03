@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xfb0
+// Size: 0x1008
 // Has VTable
 class C_EnvProjectedTexture : public C_ModelPointEntity
 {

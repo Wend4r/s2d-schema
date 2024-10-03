@@ -5,7 +5,7 @@
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particleslib')
 // Alignment: 8
-// Size: 0x158
+// Size: 0x160
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -72,8 +72,12 @@ public:
 	float m_flNotchedRangeMax; // 0x104	
 	float m_flNotchedOutputOutside; // 0x108	
 	float m_flNotchedOutputInside; // 0x10c	
-	ParticleFloatBiasType_t m_nBiasType; // 0x110	
-	float m_flBiasParameter; // 0x114	
-	CPiecewiseCurve m_Curve; // 0x118	
+	ParticleFloatRoundType_t m_nRoundType; // 0x110	
+	ParticleFloatBiasType_t m_nBiasType; // 0x114	
+	float m_flBiasParameter; // 0x118	
+private:
+	[[maybe_unused]] uint8_t __pad011c[0x4]; // 0x11c
+public:
+	CPiecewiseCurve m_Curve; // 0x120	
 };
 

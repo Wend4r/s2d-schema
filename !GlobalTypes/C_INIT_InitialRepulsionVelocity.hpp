@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x278
+// Size: 0x280
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,38 +12,38 @@ class C_INIT_InitialRepulsionVelocity : public CParticleFunctionInitializer
 {
 public:
 	// MPropertyFriendlyName "collision group"
-	char m_CollisionGroupName[128]; // 0x1c0	
+	char m_CollisionGroupName[128]; // 0x1c8	
 	// MPropertyFriendlyName "Trace Set"
-	ParticleTraceSet_t m_nTraceSet; // 0x240	
+	ParticleTraceSet_t m_nTraceSet; // 0x248	
 	// MPropertyFriendlyName "minimum velocity"
 	// MVectorIsCoordinate
-	Vector m_vecOutputMin; // 0x244	
+	Vector m_vecOutputMin; // 0x24c	
 	// MPropertyFriendlyName "maximum velocity"
 	// MVectorIsCoordinate
-	Vector m_vecOutputMax; // 0x250	
+	Vector m_vecOutputMax; // 0x258	
 	// MPropertyFriendlyName "control point number"
-	int32_t m_nControlPointNumber; // 0x25c	
+	int32_t m_nControlPointNumber; // 0x264	
 	// MPropertyFriendlyName "per particle world collision tests"
-	bool m_bPerParticle; // 0x260	
+	bool m_bPerParticle; // 0x268	
 	// MPropertyFriendlyName "offset instead of accelerate"
-	bool m_bTranslate; // 0x261	
+	bool m_bTranslate; // 0x269	
 	// MPropertyFriendlyName "offset proportional to radius 0/1"
-	bool m_bProportional; // 0x262	
+	bool m_bProportional; // 0x26a	
 private:
-	[[maybe_unused]] uint8_t __pad0263[0x1]; // 0x263
+	[[maybe_unused]] uint8_t __pad026b[0x1]; // 0x26b
 public:
 	// MPropertyFriendlyName "trace length"
-	float m_flTraceLength; // 0x264	
+	float m_flTraceLength; // 0x26c	
 	// MPropertyFriendlyName "use radius for per particle trace length"
-	bool m_bPerParticleTR; // 0x268	
+	bool m_bPerParticleTR; // 0x270	
 	// MPropertyFriendlyName "inherit from parent"
-	bool m_bInherit; // 0x269	
+	bool m_bInherit; // 0x271	
 private:
-	[[maybe_unused]] uint8_t __pad026a[0x2]; // 0x26a
+	[[maybe_unused]] uint8_t __pad0272[0x2]; // 0x272
 public:
 	// MPropertyFriendlyName "control points to broadcast to children (n + 1)"
-	int32_t m_nChildCP; // 0x26c	
+	int32_t m_nChildCP; // 0x274	
 	// MPropertyFriendlyName "child group ID to affect"
-	int32_t m_nChildGroupID; // 0x270	
+	int32_t m_nChildGroupID; // 0x278	
 };
 

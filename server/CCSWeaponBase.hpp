@@ -9,7 +9,7 @@ struct GameTick_t;
 struct CIronSightController;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe98
+// Size: 0xf10
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flTimeWeaponIdle"
@@ -44,153 +44,153 @@ struct CIronSightController;
 class CCSWeaponBase : public CBasePlayerWeapon
 {
 private:
-	[[maybe_unused]] uint8_t __pad0cb8[0x28]; // 0xcb8
+	[[maybe_unused]] uint8_t __pad0d30[0x28]; // 0xd30
 public:
-	bool m_bRemoveable; // 0xce0	
+	bool m_bRemoveable; // 0xd58	
 private:
-	[[maybe_unused]] uint8_t __pad0ce1[0x7]; // 0xce1
+	[[maybe_unused]] uint8_t __pad0d59[0x7]; // 0xd59
 public:
 	// MNetworkEnable
-	float m_flFireSequenceStartTime; // 0xce8	
+	float m_flFireSequenceStartTime; // 0xd60	
 	// MNetworkEnable
-	int32_t m_nFireSequenceStartTimeChange; // 0xcec	
-	int32_t m_nFireSequenceStartTimeAck; // 0xcf0	
+	int32_t m_nFireSequenceStartTimeChange; // 0xd64	
+	int32_t m_nFireSequenceStartTimeAck; // 0xd68	
 	// MNetworkEnable
-	PlayerAnimEvent_t m_ePlayerFireEvent; // 0xcf4	
+	PlayerAnimEvent_t m_ePlayerFireEvent; // 0xd6c	
 	// MNetworkEnable
-	WeaponAttackType_t m_ePlayerFireEventAttackType; // 0xcf8	
-	HSequence m_seqIdle; // 0xcfc	
-	HSequence m_seqFirePrimary; // 0xd00	
-	HSequence m_seqFireSecondary; // 0xd04	
-	CUtlVector< HSequence > m_thirdPersonFireSequences; // 0xd08	
-	HSequence m_hCurrentThirdPersonSequence; // 0xd20	
-	int32_t m_nSilencerBoneIndex; // 0xd24	
-	HSequence m_thirdPersonSequences[7]; // 0xd28	
+	WeaponAttackType_t m_ePlayerFireEventAttackType; // 0xd70	
+	HSequence m_seqIdle; // 0xd74	
+	HSequence m_seqFirePrimary; // 0xd78	
+	HSequence m_seqFireSecondary; // 0xd7c	
+	CUtlVector< HSequence > m_thirdPersonFireSequences; // 0xd80	
+	HSequence m_hCurrentThirdPersonSequence; // 0xd98	
+	int32_t m_nSilencerBoneIndex; // 0xd9c	
+	HSequence m_thirdPersonSequences[7]; // 0xda0	
 private:
-	[[maybe_unused]] uint8_t __pad0d44[0xc]; // 0xd44
+	[[maybe_unused]] uint8_t __pad0dbc[0xc]; // 0xdbc
 public:
-	bool m_bPlayerAmmoStockOnPickup; // 0xd50	
-	bool m_bRequireUseToTouch; // 0xd51	
+	bool m_bPlayerAmmoStockOnPickup; // 0xdc8	
+	bool m_bRequireUseToTouch; // 0xdc9	
 private:
-	[[maybe_unused]] uint8_t __pad0d52[0x2]; // 0xd52
+	[[maybe_unused]] uint8_t __pad0dca[0x2]; // 0xdca
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnWeaponStateNetworkChange"
-	CSWeaponState_t m_iState; // 0xd54	
-	GameTime_t m_flLastTimeInAir; // 0xd58	
-	GameTime_t m_flLastDeployTime; // 0xd5c	
-	int32_t m_nLastEmptySoundCmdNum; // 0xd60	
+	CSWeaponState_t m_iState; // 0xdcc	
+	GameTime_t m_flLastTimeInAir; // 0xdd0	
+	GameTime_t m_flLastDeployTime; // 0xdd4	
+	int32_t m_nLastEmptySoundCmdNum; // 0xdd8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	uint32_t m_nViewModelIndex; // 0xd64	
-	bool m_bReloadsWithClips; // 0xd68	
+	uint32_t m_nViewModelIndex; // 0xddc	
+	bool m_bReloadsWithClips; // 0xde0	
 private:
-	[[maybe_unused]] uint8_t __pad0d69[0x1f]; // 0xd69
+	[[maybe_unused]] uint8_t __pad0de1[0x1f]; // 0xde1
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
 	// MNetworkPriority "32"
-	GameTime_t m_flTimeWeaponIdle; // 0xd88	
-	bool m_bFireOnEmpty; // 0xd8c	
+	GameTime_t m_flTimeWeaponIdle; // 0xe00	
+	bool m_bFireOnEmpty; // 0xe04	
 private:
-	[[maybe_unused]] uint8_t __pad0d8d[0x3]; // 0xd8d
+	[[maybe_unused]] uint8_t __pad0e05[0x3]; // 0xe05
 public:
-	CEntityIOOutput m_OnPlayerPickup; // 0xd90	
+	CEntityIOOutput m_OnPlayerPickup; // 0xe08	
 	// MNetworkEnable
-	CSWeaponMode m_weaponMode; // 0xdb8	
-	float m_flTurningInaccuracyDelta; // 0xdbc	
-	Vector m_vecTurningInaccuracyEyeDirLast; // 0xdc0	
-	float m_flTurningInaccuracy; // 0xdcc	
+	CSWeaponMode m_weaponMode; // 0xe30	
+	float m_flTurningInaccuracyDelta; // 0xe34	
+	Vector m_vecTurningInaccuracyEyeDirLast; // 0xe38	
+	float m_flTurningInaccuracy; // 0xe44	
 	// MNetworkEnable
-	float m_fAccuracyPenalty; // 0xdd0	
-	GameTime_t m_flLastAccuracyUpdateTime; // 0xdd4	
-	float m_fAccuracySmoothedForZoom; // 0xdd8	
-	GameTime_t m_fScopeZoomEndTime; // 0xddc	
+	float m_fAccuracyPenalty; // 0xe48	
+	GameTime_t m_flLastAccuracyUpdateTime; // 0xe4c	
+	float m_fAccuracySmoothedForZoom; // 0xe50	
+	GameTime_t m_fScopeZoomEndTime; // 0xe54	
 	// MNetworkEnable
-	int32_t m_iRecoilIndex; // 0xde0	
+	int32_t m_iRecoilIndex; // 0xe58	
 	// MNetworkEnable
-	float m_flRecoilIndex; // 0xde4	
+	float m_flRecoilIndex; // 0xe5c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnWeaponBurstModeNetworkChange"
-	bool m_bBurstMode; // 0xde8	
+	bool m_bBurstMode; // 0xe60	
 private:
-	[[maybe_unused]] uint8_t __pad0de9[0x3]; // 0xde9
+	[[maybe_unused]] uint8_t __pad0e61[0x3]; // 0xe61
 public:
 	// MNetworkEnable
-	GameTick_t m_nPostponeFireReadyTicks; // 0xdec	
+	GameTick_t m_nPostponeFireReadyTicks; // 0xe64	
 	// MNetworkEnable
-	float m_flPostponeFireReadyFrac; // 0xdf0	
+	float m_flPostponeFireReadyFrac; // 0xe68	
 	// MNetworkEnable
-	bool m_bInReload; // 0xdf4	
+	bool m_bInReload; // 0xe6c	
 	// MNetworkEnable
-	bool m_bReloadVisuallyComplete; // 0xdf5	
+	bool m_bReloadVisuallyComplete; // 0xe6d	
 private:
-	[[maybe_unused]] uint8_t __pad0df6[0x2]; // 0xdf6
+	[[maybe_unused]] uint8_t __pad0e6e[0x2]; // 0xe6e
 public:
 	// MNetworkEnable
-	GameTime_t m_flDroppedAtTime; // 0xdf8	
+	GameTime_t m_flDroppedAtTime; // 0xe70	
 	// MNetworkEnable
-	bool m_bIsHauledBack; // 0xdfc	
+	bool m_bIsHauledBack; // 0xe74	
 	// MNetworkEnable
-	bool m_bSilencerOn; // 0xdfd	
+	bool m_bSilencerOn; // 0xe75	
 private:
-	[[maybe_unused]] uint8_t __pad0dfe[0x2]; // 0xdfe
+	[[maybe_unused]] uint8_t __pad0e76[0x2]; // 0xe76
 public:
 	// MNetworkEnable
-	GameTime_t m_flTimeSilencerSwitchComplete; // 0xe00	
+	GameTime_t m_flTimeSilencerSwitchComplete; // 0xe78	
 	// MNetworkEnable
-	int32_t m_iOriginalTeamNumber; // 0xe04	
+	int32_t m_iOriginalTeamNumber; // 0xe7c	
 	// MNetworkEnable
-	int32_t m_iMostRecentTeamNumber; // 0xe08	
+	int32_t m_iMostRecentTeamNumber; // 0xe80	
 	// MNetworkEnable
-	bool m_bDroppedNearBuyZone; // 0xe0c	
+	bool m_bDroppedNearBuyZone; // 0xe84	
 private:
-	[[maybe_unused]] uint8_t __pad0e0d[0x3]; // 0xe0d
+	[[maybe_unused]] uint8_t __pad0e85[0x3]; // 0xe85
 public:
-	float m_flNextAttackRenderTimeOffset; // 0xe10	
+	float m_flNextAttackRenderTimeOffset; // 0xe88	
 private:
-	[[maybe_unused]] uint8_t __pad0e14[0x14]; // 0xe14
+	[[maybe_unused]] uint8_t __pad0e8c[0x14]; // 0xe8c
 public:
-	bool m_bCanBePickedUp; // 0xe28	
-	bool m_bUseCanOverrideNextOwnerTouchTime; // 0xe29	
+	bool m_bCanBePickedUp; // 0xea0	
+	bool m_bUseCanOverrideNextOwnerTouchTime; // 0xea1	
 private:
-	[[maybe_unused]] uint8_t __pad0e2a[0x2]; // 0xe2a
+	[[maybe_unused]] uint8_t __pad0ea2[0x2]; // 0xea2
 public:
-	GameTime_t m_nextOwnerTouchTime; // 0xe2c	
-	GameTime_t m_nextPrevOwnerTouchTime; // 0xe30	
+	GameTime_t m_nextOwnerTouchTime; // 0xea4	
+	GameTime_t m_nextPrevOwnerTouchTime; // 0xea8	
 private:
-	[[maybe_unused]] uint8_t __pad0e34[0x4]; // 0xe34
-public:
-	// MNetworkEnable
-	CHandle< CCSPlayerPawn > m_hPrevOwner; // 0xe38	
-	// MNetworkEnable
-	GameTick_t m_nDropTick; // 0xe3c	
-private:
-	[[maybe_unused]] uint8_t __pad0e40[0x1c]; // 0xe40
-public:
-	bool m_donated; // 0xe5c	
-private:
-	[[maybe_unused]] uint8_t __pad0e5d[0x3]; // 0xe5d
+	[[maybe_unused]] uint8_t __pad0eac[0x4]; // 0xeac
 public:
 	// MNetworkEnable
-	GameTime_t m_fLastShotTime; // 0xe60	
-	bool m_bWasOwnedByCT; // 0xe64	
-	bool m_bWasOwnedByTerrorist; // 0xe65	
-	bool m_bFiredOutOfAmmoEvent; // 0xe66	
-private:
-	[[maybe_unused]] uint8_t __pad0e67[0x1]; // 0xe67
-public:
-	int32_t m_numRemoveUnownedWeaponThink; // 0xe68	
-private:
-	[[maybe_unused]] uint8_t __pad0e6c[0x4]; // 0xe6c
-public:
-	CIronSightController m_IronSightController; // 0xe70	
+	CHandle< CCSPlayerPawn > m_hPrevOwner; // 0xeb0	
 	// MNetworkEnable
-	int32_t m_iIronSightMode; // 0xe88	
-	GameTime_t m_flLastLOSTraceFailureTime; // 0xe8c	
+	GameTick_t m_nDropTick; // 0xeb4	
+private:
+	[[maybe_unused]] uint8_t __pad0eb8[0x1c]; // 0xeb8
+public:
+	bool m_donated; // 0xed4	
+private:
+	[[maybe_unused]] uint8_t __pad0ed5[0x3]; // 0xed5
+public:
 	// MNetworkEnable
-	int32_t m_iNumEmptyAttacks; // 0xe90	
-	float m_flWatTickOffset; // 0xe94	
+	GameTime_t m_fLastShotTime; // 0xed8	
+	bool m_bWasOwnedByCT; // 0xedc	
+	bool m_bWasOwnedByTerrorist; // 0xedd	
+	bool m_bFiredOutOfAmmoEvent; // 0xede	
+private:
+	[[maybe_unused]] uint8_t __pad0edf[0x1]; // 0xedf
+public:
+	int32_t m_numRemoveUnownedWeaponThink; // 0xee0	
+private:
+	[[maybe_unused]] uint8_t __pad0ee4[0x4]; // 0xee4
+public:
+	CIronSightController m_IronSightController; // 0xee8	
+	// MNetworkEnable
+	int32_t m_iIronSightMode; // 0xf00	
+	GameTime_t m_flLastLOSTraceFailureTime; // 0xf04	
+	// MNetworkEnable
+	int32_t m_iNumEmptyAttacks; // 0xf08	
+	float m_flWatTickOffset; // 0xf0c	
 	
 	// Datamap fields:
 	// void CCSWeaponBaseDefaultTouch; // 0x0

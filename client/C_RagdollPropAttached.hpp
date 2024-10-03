@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf80
+// Size: 0x1030
 // Has VTable
 // 
 // MNetworkVarNames "uint32 m_boneIndexAttached"
@@ -15,17 +15,17 @@ class C_RagdollPropAttached : public C_RagdollProp
 {
 public:
 	// MNetworkEnable
-	uint32_t m_boneIndexAttached; // 0xf48	
+	uint32_t m_boneIndexAttached; // 0xff8	
 	// MNetworkEnable
-	uint32_t m_ragdollAttachedObjectIndex; // 0xf4c	
-	// MNetworkEnable
-	// MNetworkEncoder "coord"
-	Vector m_attachmentPointBoneSpace; // 0xf50	
+	uint32_t m_ragdollAttachedObjectIndex; // 0xffc	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_attachmentPointRagdollSpace; // 0xf5c	
-	Vector m_vecOffset; // 0xf68	
-	float m_parentTime; // 0xf74	
-	bool m_bHasParent; // 0xf78	
+	Vector m_attachmentPointBoneSpace; // 0x1000	
+	// MNetworkEnable
+	// MNetworkEncoder "coord"
+	Vector m_attachmentPointRagdollSpace; // 0x100c	
+	Vector m_vecOffset; // 0x1018	
+	float m_parentTime; // 0x1024	
+	bool m_bHasParent; // 0x1028	
 };
 

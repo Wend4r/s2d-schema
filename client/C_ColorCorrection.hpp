@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x790
+// Size: 0x7b0
 // Has VTable
 // 
 // MNetworkIncludeByUserGroup "Origin"
@@ -22,40 +22,40 @@
 class C_ColorCorrection : public C_BaseEntity
 {
 public:
-	Vector m_vecOrigin; // 0x548	
+	Vector m_vecOrigin; // 0x568	
 	// MNetworkEnable
-	float m_MinFalloff; // 0x554	
+	float m_MinFalloff; // 0x574	
 	// MNetworkEnable
-	float m_MaxFalloff; // 0x558	
+	float m_MaxFalloff; // 0x578	
 	// MNetworkEnable
-	float m_flFadeInDuration; // 0x55c	
+	float m_flFadeInDuration; // 0x57c	
 	// MNetworkEnable
-	float m_flFadeOutDuration; // 0x560	
+	float m_flFadeOutDuration; // 0x580	
 	// MNetworkEnable
-	float m_flMaxWeight; // 0x564	
+	float m_flMaxWeight; // 0x584	
 	// MNetworkEnable
-	float m_flCurWeight; // 0x568	
+	float m_flCurWeight; // 0x588	
 	// MNetworkEnable
-	char m_netlookupFilename[512]; // 0x56c	
+	char m_netlookupFilename[512]; // 0x58c	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x76c	
+	bool m_bEnabled; // 0x78c	
 	// MNetworkEnable
-	bool m_bMaster; // 0x76d	
+	bool m_bMaster; // 0x78d	
 	// MNetworkEnable
-	bool m_bClientSide; // 0x76e	
+	bool m_bClientSide; // 0x78e	
 	// MNetworkEnable
-	bool m_bExclusive; // 0x76f	
-	bool m_bEnabledOnClient[1]; // 0x770	
+	bool m_bExclusive; // 0x78f	
+	bool m_bEnabledOnClient[1]; // 0x790	
 private:
-	[[maybe_unused]] uint8_t __pad0771[0x3]; // 0x771
+	[[maybe_unused]] uint8_t __pad0791[0x3]; // 0x791
 public:
-	float m_flCurWeightOnClient[1]; // 0x774	
-	bool m_bFadingIn[1]; // 0x778	
+	float m_flCurWeightOnClient[1]; // 0x794	
+	bool m_bFadingIn[1]; // 0x798	
 private:
-	[[maybe_unused]] uint8_t __pad0779[0x3]; // 0x779
+	[[maybe_unused]] uint8_t __pad0799[0x3]; // 0x799
 public:
-	float m_flFadeStartWeight[1]; // 0x77c	
-	float m_flFadeStartTime[1]; // 0x780	
-	float m_flFadeDuration[1]; // 0x784	
+	float m_flFadeStartWeight[1]; // 0x79c	
+	float m_flFadeStartTime[1]; // 0x7a0	
+	float m_flFadeDuration[1]; // 0x7a4	
 };
 

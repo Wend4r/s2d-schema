@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x780
+// Size: 0x7c0
 // Has VTable
 class CSpriteAlias_env_glow : public CSprite
 {

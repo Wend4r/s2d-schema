@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x598
+// Size: 0x5b8
 // Has VTable
 // 
 // MNetworkVarNames "float m_flEndDistance"
@@ -28,46 +28,46 @@ class C_EnvCubemapFog : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_flEndDistance; // 0x548	
+	float m_flEndDistance; // 0x568	
 	// MNetworkEnable
-	float m_flStartDistance; // 0x54c	
+	float m_flStartDistance; // 0x56c	
 	// MNetworkEnable
-	float m_flFogFalloffExponent; // 0x550	
+	float m_flFogFalloffExponent; // 0x570	
 	// MNetworkEnable
-	bool m_bHeightFogEnabled; // 0x554	
+	bool m_bHeightFogEnabled; // 0x574	
 private:
-	[[maybe_unused]] uint8_t __pad0555[0x3]; // 0x555
+	[[maybe_unused]] uint8_t __pad0575[0x3]; // 0x575
 public:
 	// MNetworkEnable
-	float m_flFogHeightWidth; // 0x558	
+	float m_flFogHeightWidth; // 0x578	
 	// MNetworkEnable
-	float m_flFogHeightEnd; // 0x55c	
+	float m_flFogHeightEnd; // 0x57c	
 	// MNetworkEnable
-	float m_flFogHeightStart; // 0x560	
+	float m_flFogHeightStart; // 0x580	
 	// MNetworkEnable
-	float m_flFogHeightExponent; // 0x564	
+	float m_flFogHeightExponent; // 0x584	
 	// MNetworkEnable
-	float m_flLODBias; // 0x568	
+	float m_flLODBias; // 0x588	
 	// MNetworkEnable
-	bool m_bActive; // 0x56c	
+	bool m_bActive; // 0x58c	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x56d	
+	bool m_bStartDisabled; // 0x58d	
 private:
-	[[maybe_unused]] uint8_t __pad056e[0x2]; // 0x56e
+	[[maybe_unused]] uint8_t __pad058e[0x2]; // 0x58e
 public:
 	// MNetworkEnable
-	float m_flFogMaxOpacity; // 0x570	
+	float m_flFogMaxOpacity; // 0x590	
 	// MNetworkEnable
-	int32_t m_nCubemapSourceType; // 0x574	
+	int32_t m_nCubemapSourceType; // 0x594	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0x578	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0x598	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszSkyEntity; // 0x580	
+	CUtlSymbolLarge m_iszSkyEntity; // 0x5a0	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hFogCubemapTexture; // 0x588	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hFogCubemapTexture; // 0x5a8	
 	// MNetworkEnable
-	bool m_bHasHeightFogEnd; // 0x590	
-	bool m_bFirstTime; // 0x591	
+	bool m_bHasHeightFogEnd; // 0x5b0	
+	bool m_bFirstTime; // 0x5b1	
 	
 	// Datamap fields:
 	// bool InputEnable; // 0x0

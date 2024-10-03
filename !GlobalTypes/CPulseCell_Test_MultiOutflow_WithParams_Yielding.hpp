@@ -17,10 +17,15 @@ class CPulseCell_Test_MultiOutflow_WithParams_Yielding : public CPulseCell_BaseY
 {
 public:
 	// MPulseCellOutflow_IsDefault
+	// MPulseSignatureName
 	SignatureOutflow_Continue m_Out1; // 0x48	
+	// MPulseSignatureName
 	SignatureOutflow_Continue m_AsyncChild1; // 0x78	
+	// MPulseSignatureName
 	SignatureOutflow_Continue m_AsyncChild2; // 0xa8	
+	// MPulseSignatureName
 	SignatureOutflow_Resume m_YieldResume1; // 0xd8	
+	// MPulseSignatureName
 	SignatureOutflow_Resume m_YieldResume2; // 0x108	
 };
 

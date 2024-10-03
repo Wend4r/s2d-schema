@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1c8
+// Size: 0x1d0
 // Has VTable
 // Is Abstract
 // 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4c0
+// Size: 0x4e0
 // Has VTable
 class CFuncPropRespawnZone : public CBaseEntity
 {

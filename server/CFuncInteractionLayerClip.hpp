@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x728
+// Size: 0x768
 // Has VTable
 class CFuncInteractionLayerClip : public CBaseModelEntity
 {
 public:
-	bool m_bDisabled; // 0x710	
+	bool m_bDisabled; // 0x750	
 private:
-	[[maybe_unused]] uint8_t __pad0711[0x7]; // 0x711
+	[[maybe_unused]] uint8_t __pad0751[0x7]; // 0x751
 public:
-	CUtlSymbolLarge m_iszInteractsAs; // 0x718	
-	CUtlSymbolLarge m_iszInteractsWith; // 0x720	
+	CUtlSymbolLarge m_iszInteractsAs; // 0x758	
+	CUtlSymbolLarge m_iszInteractsWith; // 0x760	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

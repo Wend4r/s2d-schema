@@ -4,13 +4,13 @@
 
 // Registered binary: animationsystem.dll (project 'animlib')
 // Alignment: 8
-// Size: 0x18
+// Size: 0x20
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CNmFrameSnapEvent : public CNmEvent
 {
 public:
-	NmFrameSnapEventMode_t m_frameSnapMode; // 0x10	
+	NmFrameSnapEventMode_t m_frameSnapMode; // 0x18	
 };
 

@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16b0
+// Size: 0x1760
 // Has VTable
 class C_Item : public C_EconEntity
 {
 public:
-	char m_pReticleHintTextName[256]; // 0x15b0	
+	char m_pReticleHintTextName[256]; // 0x1660	
 };
 

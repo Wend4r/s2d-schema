@@ -14,16 +14,16 @@ struct CPathParameters;
 class C_OP_LockToSavedSequentialPath : public CParticleFunctionOperator
 {
 private:
-	[[maybe_unused]] uint8_t __pad01b8[0x4]; // 0x1b8
+	[[maybe_unused]] uint8_t __pad01c0[0x4]; // 0x1c0
 public:
 	// MPropertyFriendlyName "start fade time"
-	float m_flFadeStart; // 0x1bc	
+	float m_flFadeStart; // 0x1c4	
 	// MPropertyFriendlyName "end fade time"
-	float m_flFadeEnd; // 0x1c0	
+	float m_flFadeEnd; // 0x1c8	
 	// MPropertyFriendlyName "Use sequential CP pairs between start and end point"
-	bool m_bCPPairs; // 0x1c4	
+	bool m_bCPPairs; // 0x1cc	
 private:
-	[[maybe_unused]] uint8_t __pad01c5[0xb]; // 0x1c5
+	[[maybe_unused]] uint8_t __pad01cd[0x3]; // 0x1cd
 public:
 	CPathParameters m_PathParams; // 0x1d0	
 };

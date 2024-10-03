@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x978
+// Size: 0x9b8
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CBaseEntity> m_hTargetEntity"
@@ -41,82 +41,82 @@ class CEnvProjectedTexture : public CModelPointEntity
 {
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetEntity; // 0x710	
+	CHandle< CBaseEntity > m_hTargetEntity; // 0x750	
 	// MNetworkEnable
-	bool m_bState; // 0x714	
+	bool m_bState; // 0x754	
 	// MNetworkEnable
-	bool m_bAlwaysUpdate; // 0x715	
+	bool m_bAlwaysUpdate; // 0x755	
 private:
-	[[maybe_unused]] uint8_t __pad0716[0x2]; // 0x716
+	[[maybe_unused]] uint8_t __pad0756[0x2]; // 0x756
 public:
 	// MNetworkEnable
-	float m_flLightFOV; // 0x718	
+	float m_flLightFOV; // 0x758	
 	// MNetworkEnable
-	bool m_bEnableShadows; // 0x71c	
+	bool m_bEnableShadows; // 0x75c	
 	// MNetworkEnable
-	bool m_bSimpleProjection; // 0x71d	
+	bool m_bSimpleProjection; // 0x75d	
 	// MNetworkEnable
-	bool m_bLightOnlyTarget; // 0x71e	
+	bool m_bLightOnlyTarget; // 0x75e	
 	// MNetworkEnable
-	bool m_bLightWorld; // 0x71f	
+	bool m_bLightWorld; // 0x75f	
 	// MNetworkEnable
-	bool m_bCameraSpace; // 0x720	
+	bool m_bCameraSpace; // 0x760	
 private:
-	[[maybe_unused]] uint8_t __pad0721[0x3]; // 0x721
+	[[maybe_unused]] uint8_t __pad0761[0x3]; // 0x761
 public:
 	// MNetworkEnable
-	float m_flBrightnessScale; // 0x724	
+	float m_flBrightnessScale; // 0x764	
 	// MNetworkEnable
-	Color m_LightColor; // 0x728	
+	Color m_LightColor; // 0x768	
 	// MNetworkEnable
-	float m_flIntensity; // 0x72c	
+	float m_flIntensity; // 0x76c	
 	// MNetworkEnable
-	float m_flLinearAttenuation; // 0x730	
+	float m_flLinearAttenuation; // 0x770	
 	// MNetworkEnable
-	float m_flQuadraticAttenuation; // 0x734	
+	float m_flQuadraticAttenuation; // 0x774	
 	// MNetworkEnable
-	bool m_bVolumetric; // 0x738	
+	bool m_bVolumetric; // 0x778	
 private:
-	[[maybe_unused]] uint8_t __pad0739[0x3]; // 0x739
+	[[maybe_unused]] uint8_t __pad0779[0x3]; // 0x779
 public:
 	// MNetworkEnable
-	float m_flNoiseStrength; // 0x73c	
+	float m_flNoiseStrength; // 0x77c	
 	// MNetworkEnable
-	float m_flFlashlightTime; // 0x740	
+	float m_flFlashlightTime; // 0x780	
 	// MNetworkEnable
-	uint32_t m_nNumPlanes; // 0x744	
+	uint32_t m_nNumPlanes; // 0x784	
 	// MNetworkEnable
-	float m_flPlaneOffset; // 0x748	
+	float m_flPlaneOffset; // 0x788	
 	// MNetworkEnable
-	float m_flVolumetricIntensity; // 0x74c	
+	float m_flVolumetricIntensity; // 0x78c	
 	// MNetworkEnable
-	float m_flColorTransitionTime; // 0x750	
+	float m_flColorTransitionTime; // 0x790	
 	// MNetworkEnable
-	float m_flAmbient; // 0x754	
+	float m_flAmbient; // 0x794	
 	// MNetworkEnable
-	char m_SpotlightTextureName[512]; // 0x758	
+	char m_SpotlightTextureName[512]; // 0x798	
 	// MNetworkEnable
-	int32_t m_nSpotlightTextureFrame; // 0x958	
+	int32_t m_nSpotlightTextureFrame; // 0x998	
 	// MNetworkEnable
-	uint32_t m_nShadowQuality; // 0x95c	
+	uint32_t m_nShadowQuality; // 0x99c	
 	// MNetworkEnable
 	// MNetworkBitCount "16"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "500.000000"
 	// MNetworkEncodeFlags "1"
-	float m_flNearZ; // 0x960	
+	float m_flNearZ; // 0x9a0	
 	// MNetworkEnable
 	// MNetworkBitCount "18"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1500.000000"
 	// MNetworkEncodeFlags "1"
-	float m_flFarZ; // 0x964	
+	float m_flFarZ; // 0x9a4	
 	// MNetworkEnable
-	float m_flProjectionSize; // 0x968	
+	float m_flProjectionSize; // 0x9a8	
 	// MNetworkEnable
-	float m_flRotation; // 0x96c	
+	float m_flRotation; // 0x9ac	
 	// MNetworkEnable
-	bool m_bFlipHorizontal; // 0x970	
+	bool m_bFlipHorizontal; // 0x9b0	
 	
 	// Datamap fields:
 	// void InputTurnOn; // 0x0

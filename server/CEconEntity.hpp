@@ -5,7 +5,7 @@
 struct CAttributeContainer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc70
+// Size: 0xce8
 // Has VTable
 // 
 // MNetworkVarNames "CAttributeContainer m_AttributeManager"
@@ -18,23 +18,23 @@ struct CAttributeContainer;
 class CEconEntity : public CBaseFlex
 {
 private:
-	[[maybe_unused]] uint8_t __pad0978[0x10]; // 0x978
+	[[maybe_unused]] uint8_t __pad09f0[0x10]; // 0x9f0
 public:
 	// MNetworkEnable
-	CAttributeContainer m_AttributeManager; // 0x988	
+	CAttributeContainer m_AttributeManager; // 0xa00	
 	// MNetworkEnable
-	uint32_t m_OriginalOwnerXuidLow; // 0xc50	
+	uint32_t m_OriginalOwnerXuidLow; // 0xcc8	
 	// MNetworkEnable
-	uint32_t m_OriginalOwnerXuidHigh; // 0xc54	
+	uint32_t m_OriginalOwnerXuidHigh; // 0xccc	
 	// MNetworkEnable
-	int32_t m_nFallbackPaintKit; // 0xc58	
+	int32_t m_nFallbackPaintKit; // 0xcd0	
 	// MNetworkEnable
-	int32_t m_nFallbackSeed; // 0xc5c	
+	int32_t m_nFallbackSeed; // 0xcd4	
 	// MNetworkEnable
-	float m_flFallbackWear; // 0xc60	
+	float m_flFallbackWear; // 0xcd8	
 	// MNetworkEnable
-	int32_t m_nFallbackStatTrak; // 0xc64	
-	CHandle< CBaseEntity > m_hOldProvidee; // 0xc68	
-	int32_t m_iOldOwnerClass; // 0xc6c	
+	int32_t m_nFallbackStatTrak; // 0xcdc	
+	CHandle< CBaseEntity > m_hOldProvidee; // 0xce0	
+	int32_t m_iOldOwnerClass; // 0xce4	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: resourcecompiler.dll (project 'animdoclib')
 // Alignment: 8
-// Size: 0x40
+// Size: 0x58
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -19,5 +19,7 @@ private:
 public:
 	CUtlVector< CNmGraphDocNode* > m_nodes; // 0x20	
 	NmGraphDocGraphType_t m_graphType; // 0x38	
+	Vector2D m_viewOffset; // 0x3c	
+	float m_flViewZoom; // 0x44	
 };
 

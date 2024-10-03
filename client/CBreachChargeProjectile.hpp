@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x10b8
+// Size: 0x1168
 // Has VTable
 class CBreachChargeProjectile : public C_BaseGrenade
 {

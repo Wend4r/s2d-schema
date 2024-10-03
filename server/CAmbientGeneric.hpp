@@ -5,27 +5,27 @@
 struct dynpitchvol_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x558
+// Size: 0x578
 // Has VTable
 class CAmbientGeneric : public CPointEntity
 {
 public:
-	float m_radius; // 0x4c0	
-	float m_flMaxRadius; // 0x4c4	
-	soundlevel_t m_iSoundLevel; // 0x4c8	
-	dynpitchvol_t m_dpv; // 0x4cc	
-	bool m_fActive; // 0x530	
-	bool m_fLooping; // 0x531	
+	float m_radius; // 0x4e0	
+	float m_flMaxRadius; // 0x4e4	
+	soundlevel_t m_iSoundLevel; // 0x4e8	
+	dynpitchvol_t m_dpv; // 0x4ec	
+	bool m_fActive; // 0x550	
+	bool m_fLooping; // 0x551	
 private:
-	[[maybe_unused]] uint8_t __pad0532[0x6]; // 0x532
+	[[maybe_unused]] uint8_t __pad0552[0x6]; // 0x552
 public:
-	CUtlSymbolLarge m_iszSound; // 0x538	
-	CUtlSymbolLarge m_sSourceEntName; // 0x540	
-	CHandle< CBaseEntity > m_hSoundSource; // 0x548	
-	CEntityIndex m_nSoundSourceEntIndex; // 0x54c	
+	CUtlSymbolLarge m_iszSound; // 0x558	
+	CUtlSymbolLarge m_sSourceEntName; // 0x560	
+	CHandle< CBaseEntity > m_hSoundSource; // 0x568	
+	CEntityIndex m_nSoundSourceEntIndex; // 0x56c	
 	
 	// Datamap fields:
-	// void m_nGUID; // 0x550
+	// void m_nGUID; // 0x570
 	// void CAmbientGenericRampThink; // 0x0
 	// void InputPlaySound; // 0x0
 	// void InputStopSound; // 0x0

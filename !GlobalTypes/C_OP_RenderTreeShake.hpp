@@ -5,7 +5,7 @@
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x230
+// Size: 0x238
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,26 +13,26 @@ class C_OP_RenderTreeShake : public CParticleFunctionRenderer
 {
 public:
 	// MPropertyFriendlyName "peak strength"
-	float m_flPeakStrength; // 0x208	
+	float m_flPeakStrength; // 0x210	
 	// MPropertyFriendlyName "peak strength field override"
 	// MPropertyAttributeChoiceName "particlefield_scalar"
-	ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; // 0x20c	
+	ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; // 0x214	
 	// MPropertyFriendlyName "radius"
-	float m_flRadius; // 0x210	
+	float m_flRadius; // 0x218	
 	// MPropertyFriendlyName "strength field override"
 	// MPropertyAttributeChoiceName "particlefield_scalar"
-	ParticleAttributeIndex_t m_nRadiusFieldOverride; // 0x214	
+	ParticleAttributeIndex_t m_nRadiusFieldOverride; // 0x21c	
 	// MPropertyFriendlyName "shake duration after end"
-	float m_flShakeDuration; // 0x218	
+	float m_flShakeDuration; // 0x220	
 	// MPropertyFriendlyName "amount of time taken to smooth between different shake parameters"
-	float m_flTransitionTime; // 0x21c	
+	float m_flTransitionTime; // 0x224	
 	// MPropertyFriendlyName "Twist amount (-1..1)"
-	float m_flTwistAmount; // 0x220	
+	float m_flTwistAmount; // 0x228	
 	// MPropertyFriendlyName "Radial Amount (-1..1)"
-	float m_flRadialAmount; // 0x224	
+	float m_flRadialAmount; // 0x22c	
 	// MPropertyFriendlyName "Control Point Orientation Amount (-1..1)"
-	float m_flControlPointOrientationAmount; // 0x228	
+	float m_flControlPointOrientationAmount; // 0x230	
 	// MPropertyFriendlyName "Control Point for Orientation Amount"
-	int32_t m_nControlPointForLinearDirection; // 0x22c	
+	int32_t m_nControlPointForLinearDirection; // 0x234	
 };
 

@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x830
+// Size: 0x850
 // Has VTable
 class CLogicNPCCounterAABB : public CLogicNPCCounter
 {
 public:
-	Vector m_vDistanceOuterMins; // 0x800	
-	Vector m_vDistanceOuterMaxs; // 0x80c	
-	Vector m_vOuterMins; // 0x818	
-	Vector m_vOuterMaxs; // 0x824	
+	Vector m_vDistanceOuterMins; // 0x820	
+	Vector m_vDistanceOuterMaxs; // 0x82c	
+	Vector m_vOuterMins; // 0x838	
+	Vector m_vOuterMaxs; // 0x844	
 };
 

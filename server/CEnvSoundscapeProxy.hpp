@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x560
+// Size: 0x580
 // Has VTable
 class CEnvSoundscapeProxy : public CEnvSoundscape
 {
 public:
-	CUtlSymbolLarge m_MainSoundscapeName; // 0x558	
+	CUtlSymbolLarge m_MainSoundscapeName; // 0x578	
 };
 

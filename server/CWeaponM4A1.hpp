@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xeb8
+// Size: 0xf30
 // Has VTable
 class CWeaponM4A1 : public CCSWeaponBaseGun
 {

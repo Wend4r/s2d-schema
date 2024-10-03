@@ -4,7 +4,7 @@
 
 // Registered binary: resourcecompiler.dll (project 'sounddoc_lib')
 // Alignment: 8
-// Size: 0x20
+// Size: 0x28
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,5 +13,8 @@
 class CMixImpulseResponseInput : public CMixPropertyBase
 {
 public:
+	// MPropertyFriendlyName "Default Value"
+	// MPropertyAttributeEditor "AssetBrowse( vsnd )"
+	CUtlString m_defaultValue; // 0x20	
 };
 

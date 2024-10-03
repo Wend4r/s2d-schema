@@ -5,7 +5,7 @@
 struct C_EconItemView;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1278
+// Size: 0x1298
 // Has VTable
 // Is Abstract
 // 
@@ -21,23 +21,23 @@ class C_CSGO_TeamPreviewCharacterPosition : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	int32_t m_nVariant; // 0x548	
+	int32_t m_nVariant; // 0x568	
 	// MNetworkEnable
-	int32_t m_nRandom; // 0x54c	
+	int32_t m_nRandom; // 0x56c	
 	// MNetworkEnable
-	int32_t m_nOrdinal; // 0x550	
+	int32_t m_nOrdinal; // 0x570	
 private:
-	[[maybe_unused]] uint8_t __pad0554[0x4]; // 0x554
+	[[maybe_unused]] uint8_t __pad0574[0x4]; // 0x574
 public:
 	// MNetworkEnable
-	CUtlString m_sWeaponName; // 0x558	
+	CUtlString m_sWeaponName; // 0x578	
 	// MNetworkEnable
-	uint64_t m_xuid; // 0x560	
+	uint64_t m_xuid; // 0x580	
 	// MNetworkEnable
-	C_EconItemView m_agentItem; // 0x568	
+	C_EconItemView m_agentItem; // 0x588	
 	// MNetworkEnable
-	C_EconItemView m_glovesItem; // 0x9b0	
+	C_EconItemView m_glovesItem; // 0x9d0	
 	// MNetworkEnable
-	C_EconItemView m_weaponItem; // 0xdf8	
+	C_EconItemView m_weaponItem; // 0xe18	
 };
 

@@ -10,8 +10,8 @@ enum class AnimVectorSource : uint32_t
 {
 	// MPropertyFriendlyName "Move Direction"
 	MoveDirection = 0x0,
-	// MPropertyFriendlyName "Facing Direction"
-	FacingDirection = 0x1,
+	// MPropertyFriendlyName "Facing Position"
+	FacingPosition = 0x1,
 	// MPropertyFriendlyName "Look Direction"
 	LookDirection = 0x2,
 	// MPropertyFriendlyName "Parameter"

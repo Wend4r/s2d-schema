@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x208
+// Size: 0x210
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,24 +12,24 @@ class C_OP_TurbulenceForce : public CParticleFunctionForce
 {
 public:
 	// MPropertyFriendlyName "noise scale 0"
-	float m_flNoiseCoordScale0; // 0x1c8	
+	float m_flNoiseCoordScale0; // 0x1d0	
 	// MPropertyFriendlyName "noise scale 1"
-	float m_flNoiseCoordScale1; // 0x1cc	
+	float m_flNoiseCoordScale1; // 0x1d4	
 	// MPropertyFriendlyName "noise scale 2"
-	float m_flNoiseCoordScale2; // 0x1d0	
+	float m_flNoiseCoordScale2; // 0x1d8	
 	// MPropertyFriendlyName "noise scale 3"
-	float m_flNoiseCoordScale3; // 0x1d4	
+	float m_flNoiseCoordScale3; // 0x1dc	
 	// MPropertyFriendlyName "noise amount 0"
 	// MVectorIsCoordinate
-	Vector m_vecNoiseAmount0; // 0x1d8	
+	Vector m_vecNoiseAmount0; // 0x1e0	
 	// MPropertyFriendlyName "noise amount 1"
 	// MVectorIsCoordinate
-	Vector m_vecNoiseAmount1; // 0x1e4	
+	Vector m_vecNoiseAmount1; // 0x1ec	
 	// MPropertyFriendlyName "noise amount 2"
 	// MVectorIsCoordinate
-	Vector m_vecNoiseAmount2; // 0x1f0	
+	Vector m_vecNoiseAmount2; // 0x1f8	
 	// MPropertyFriendlyName "noise amount 3"
 	// MVectorIsCoordinate
-	Vector m_vecNoiseAmount3; // 0x1fc	
+	Vector m_vecNoiseAmount3; // 0x204	
 };
 

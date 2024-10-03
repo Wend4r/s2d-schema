@@ -68,10 +68,11 @@ public:
 	int32_t m_iEntityQuantity; // 0x1ec	
 	int32_t m_iRarityOverride; // 0x1f0	
 	int32_t m_iQualityOverride; // 0x1f4	
-	uint8_t m_unClientFlags; // 0x1f8	
-	uint8_t m_unOverrideStyle; // 0x1f9	
+	int32_t m_iOriginOverride; // 0x1f8	
+	uint8_t m_unClientFlags; // 0x1fc	
+	uint8_t m_unOverrideStyle; // 0x1fd	
 private:
-	[[maybe_unused]] uint8_t __pad01fa[0x16]; // 0x1fa
+	[[maybe_unused]] uint8_t __pad01fe[0x12]; // 0x1fe
 public:
 	// MNetworkEnable
 	// -> m_Attributes - 0x218

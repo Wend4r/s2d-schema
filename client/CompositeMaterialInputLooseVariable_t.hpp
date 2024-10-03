@@ -119,7 +119,7 @@ private:
 	[[maybe_unused]] uint8_t __pad008c[0x4]; // 0x8c
 public:
 	// MPropertyFriendlyName "Material"
-	// MPropertyAttributeEditor "AssetBrowse( vmat )"
+	// MPropertyAttributeEditor "AssetBrowse( vmat, *IncrementalUpdate )"
 	// MPropertyAttrStateCallback
 	CResourceName m_strResourceMaterial; // 0x90	
 	// MPropertyFriendlyName "Texture"

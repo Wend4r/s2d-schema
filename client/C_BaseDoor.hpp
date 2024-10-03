@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcd0
+// Size: 0xd28
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIsUsable"
@@ -12,6 +12,6 @@ class C_BaseDoor : public C_BaseToggle
 {
 public:
 	// MNetworkEnable
-	bool m_bIsUsable; // 0xcc8	
+	bool m_bIsUsable; // 0xd20	
 };
 

@@ -4,11 +4,11 @@
 
 // Registered binary: resourcecompiler.dll (project 'animdoclib')
 // Alignment: 8
-// Size: 0x40
+// Size: 0xf8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
-class CNmGraphDocStateMachineNode : public CNmGraphDocNode
+class CNmGraphDocStateMachineNode : public CNmGraphDocFlowNode
 {
 public:
 };

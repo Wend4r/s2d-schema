@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4d0
+// Size: 0x4f0
 // Has VTable
 class CInfoPlayerTerrorist : public SpawnPoint
 {

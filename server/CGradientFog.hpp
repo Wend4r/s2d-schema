@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x520
 // Has VTable
 // 
 // MNetworkVarNames "HRenderTextureStrong m_hGradientFogTexture"
@@ -26,51 +26,51 @@ class CGradientFog : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hGradientFogTexture; // 0x4c0	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hGradientFogTexture; // 0x4e0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogStartDistance; // 0x4c8	
+	float m_flFogStartDistance; // 0x4e8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogEndDistance; // 0x4cc	
+	float m_flFogEndDistance; // 0x4ec	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	bool m_bHeightFogEnabled; // 0x4d0	
+	bool m_bHeightFogEnabled; // 0x4f0	
 private:
-	[[maybe_unused]] uint8_t __pad04d1[0x3]; // 0x4d1
+	[[maybe_unused]] uint8_t __pad04f1[0x3]; // 0x4f1
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogStartHeight; // 0x4d4	
+	float m_flFogStartHeight; // 0x4f4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogEndHeight; // 0x4d8	
+	float m_flFogEndHeight; // 0x4f8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFarZ; // 0x4dc	
+	float m_flFarZ; // 0x4fc	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogMaxOpacity; // 0x4e0	
+	float m_flFogMaxOpacity; // 0x500	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogFalloffExponent; // 0x4e4	
+	float m_flFogFalloffExponent; // 0x504	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogVerticalExponent; // 0x4e8	
+	float m_flFogVerticalExponent; // 0x508	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	Color m_fogColor; // 0x4ec	
+	Color m_fogColor; // 0x50c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogStrength; // 0x4f0	
+	float m_flFogStrength; // 0x510	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFadeTime; // 0x4f4	
+	float m_flFadeTime; // 0x514	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x4f8	
+	bool m_bStartDisabled; // 0x518	
 	// MNetworkEnable
-	bool m_bIsEnabled; // 0x4f9	
-	bool m_bGradientFogNeedsTextures; // 0x4fa	
+	bool m_bIsEnabled; // 0x519	
+	bool m_bGradientFogNeedsTextures; // 0x51a	
 	
 	// Datamap fields:
 	// bool InputEnable; // 0x0

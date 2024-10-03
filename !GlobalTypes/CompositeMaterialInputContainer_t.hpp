@@ -19,7 +19,7 @@ public:
 	// MPropertyAttrStateCallback
 	CompositeMaterialInputContainerSourceType_t m_nCompositeMaterialInputContainerSourceType; // 0x4	
 	// MPropertyFriendlyName "Specific Material"
-	// MPropertyAttributeEditor "AssetBrowse( vmat )"
+	// MPropertyAttributeEditor "AssetBrowse( vmat, *IncrementalUpdate )"
 	// MPropertyAttrStateCallback
 	CResourceName m_strSpecificContainerMaterial; // 0x8	
 	// MPropertyFriendlyName "Attribute Name"

@@ -8,7 +8,7 @@ struct CParticleTransformInput;
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1ab8
+// Size: 0x1b40
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,47 +16,47 @@ class C_INIT_CreateWithinSphereTransform : public CParticleFunctionInitializer
 {
 public:
 	// MPropertyFriendlyName "distance min"
-	CPerParticleFloatInput m_fRadiusMin; // 0x1c0	
+	CPerParticleFloatInput m_fRadiusMin; // 0x1c8	
 	// MPropertyFriendlyName "distance max"
-	CPerParticleFloatInput m_fRadiusMax; // 0x318	
+	CPerParticleFloatInput m_fRadiusMax; // 0x328	
 	// MPropertyFriendlyName "distance bias"
 	// MVectorIsCoordinate
-	CPerParticleVecInput m_vecDistanceBias; // 0x470	
+	CPerParticleVecInput m_vecDistanceBias; // 0x488	
 	// MPropertyFriendlyName "distance bias absolute value"
 	// MVectorIsCoordinate
-	Vector m_vecDistanceBiasAbs; // 0xac8	
+	Vector m_vecDistanceBiasAbs; // 0xb00	
 private:
-	[[maybe_unused]] uint8_t __pad0ad4[0x4]; // 0xad4
+	[[maybe_unused]] uint8_t __pad0b0c[0x4]; // 0xb0c
 public:
 	// MPropertyFriendlyName "input position transform"
-	CParticleTransformInput m_TransformInput; // 0xad8	
+	CParticleTransformInput m_TransformInput; // 0xb10	
 	// MPropertyFriendlyName "speed min"
-	CPerParticleFloatInput m_fSpeedMin; // 0xb40	
+	CPerParticleFloatInput m_fSpeedMin; // 0xb78	
 	// MPropertyFriendlyName "speed max"
-	CPerParticleFloatInput m_fSpeedMax; // 0xc98	
+	CPerParticleFloatInput m_fSpeedMax; // 0xcd8	
 	// MPropertyFriendlyName "speed random exponent"
-	float m_fSpeedRandExp; // 0xdf0	
+	float m_fSpeedRandExp; // 0xe38	
 	// MPropertyFriendlyName "bias in local system"
-	bool m_bLocalCoords; // 0xdf4	
+	bool m_bLocalCoords; // 0xe3c	
 private:
-	[[maybe_unused]] uint8_t __pad0df5[0x3]; // 0xdf5
+	[[maybe_unused]] uint8_t __pad0e3d[0x3]; // 0xe3d
 public:
 	// MPropertyFriendlyName "randomly distribution growth time"
-	float m_flEndCPGrowthTime; // 0xdf8	
+	float m_flEndCPGrowthTime; // 0xe40	
 private:
-	[[maybe_unused]] uint8_t __pad0dfc[0x4]; // 0xdfc
+	[[maybe_unused]] uint8_t __pad0e44[0x4]; // 0xe44
 public:
 	// MPropertyFriendlyName "speed in local coordinate system min"
 	// MVectorIsCoordinate
-	CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0xe00	
+	CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0xe48	
 	// MPropertyFriendlyName "speed in local coordinate system max"
 	// MVectorIsCoordinate
-	CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0x1458	
+	CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0x14c0	
 	// MPropertyFriendlyName "Output vector"
 	// MPropertyAttributeChoiceName "particlefield_vector"
-	ParticleAttributeIndex_t m_nFieldOutput; // 0x1ab0	
+	ParticleAttributeIndex_t m_nFieldOutput; // 0x1b38	
 	// MPropertyFriendlyName "Velocity vector"
 	// MPropertyAttributeChoiceName "particlefield_vector"
-	ParticleAttributeIndex_t m_nFieldVelocity; // 0x1ab4	
+	ParticleAttributeIndex_t m_nFieldVelocity; // 0x1b3c	
 };
 

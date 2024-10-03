@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf20
+// Size: 0x1078
 // Has VTable
 // 
 // MNetworkVarNames "float m_flInnerAngle"
@@ -15,12 +15,12 @@ class C_OmniLight : public C_BarnLight
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flInnerAngle; // 0xf10	
+	float m_flInnerAngle; // 0x1068	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flOuterAngle; // 0xf14	
+	float m_flOuterAngle; // 0x106c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bShowLight; // 0xf18	
+	bool m_bShowLight; // 0x1070	
 };
 

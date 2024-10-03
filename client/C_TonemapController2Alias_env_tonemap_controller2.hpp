@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x570
+// Size: 0x590
 // Has VTable
 class C_TonemapController2Alias_env_tonemap_controller2 : public C_TonemapController2
 {

@@ -11,6 +11,8 @@ struct CCSPointScriptEntity;
 // MPulseInstanceDomainInfo
 // MPulseDomainHookInfo
 // MPulseLibraryBindings
+// MSourceTSDomain
+// MPulseDomainHiddenInTool
 // MPulseDomainOptInFeatureTag
 class CCSPointScript : public CBasePulseGraphInstance
 {

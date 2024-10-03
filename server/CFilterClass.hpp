@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x520
+// Size: 0x540
 // Has VTable
 class CFilterClass : public CBaseFilter
 {
 public:
-	CUtlSymbolLarge m_iFilterClass; // 0x518	
+	CUtlSymbolLarge m_iFilterClass; // 0x538	
 };
 

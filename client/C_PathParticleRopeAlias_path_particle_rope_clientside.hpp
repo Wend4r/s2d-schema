@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x650
+// Size: 0x678
 // Has VTable
 class C_PathParticleRopeAlias_path_particle_rope_clientside : public C_PathParticleRope
 {

@@ -8,7 +8,7 @@
 // Has VTable
 // 
 // MGetKV3ClassDefaults
-// MPropertyFriendlyName "Smart Prop"
+// MPropertyFriendlyName "Smart Prop Reference"
 // MPropertyDescription "Evaluates a specified smart prop as a child of the current element."
 // MVDataOutlinerAssetNameExpr
 class CSmartPropElement_SmartProp : public CSmartPropElement

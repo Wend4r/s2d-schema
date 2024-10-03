@@ -4,18 +4,18 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x940
+// Size: 0x980
 // Has VTable
 class CTriggerImpact : public CTriggerMultiple
 {
 public:
-	float m_flMagnitude; // 0x908	
-	float m_flNoise; // 0x90c	
-	float m_flViewkick; // 0x910	
+	float m_flMagnitude; // 0x948	
+	float m_flNoise; // 0x94c	
+	float m_flViewkick; // 0x950	
 private:
-	[[maybe_unused]] uint8_t __pad0914[0x4]; // 0x914
+	[[maybe_unused]] uint8_t __pad0954[0x4]; // 0x954
 public:
-	CEntityOutputTemplate< Vector > m_pOutputForce; // 0x918	
+	CEntityOutputTemplate< Vector > m_pOutputForce; // 0x958	
 	
 	// Datamap fields:
 	// void InputImpact; // 0x0

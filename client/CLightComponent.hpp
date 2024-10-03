@@ -6,7 +6,7 @@ struct CNetworkVarChainer;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1b0
+// Size: 0x1e8
 // Has VTable
 // 
 // MNetworkVarNames "Color m_Color"
@@ -293,5 +293,15 @@ public:
 	// Datamap fields:
 	// SHIM m_bRenderSpecular; // 0xc4
 	// SHIM m_bCastShadows; // 0xb4
+	// bool m_bAmbientOcclusionProxyOverride; // 0x1a0
+	// float m_flAmbientOcclusionProxyStrength0; // 0x1b4
+	// float m_flAmbientOcclusionProxyStrength1; // 0x1b8
+	// float m_flAmbientOcclusionProxyStrength2; // 0x1bc
+	// float m_flAmbientOcclusionProxyStrength3; // 0x1c0
+	// float m_flAmbientOcclusionProxyAmbientStrength; // 0x1c4
+	// float m_flAmbientOcclusionProxyConeAngle0; // 0x1c8
+	// float m_flAmbientOcclusionProxyConeAngle1; // 0x1cc
+	// float m_flAmbientOcclusionProxyConeAngle2; // 0x1d0
+	// float m_flAmbientOcclusionProxyConeAngle3; // 0x1d4
 };
 

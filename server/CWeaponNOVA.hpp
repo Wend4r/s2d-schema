@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe98
+// Size: 0xf10
 // Has VTable
 class CWeaponNOVA : public CCSWeaponBase
 {

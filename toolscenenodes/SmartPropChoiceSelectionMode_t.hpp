@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: toolscenenodes.dll (project 'smartprops')
-// Enumerator count: 2
+// Enumerator count: 3
 // Alignment: 4
 // Size: 0x4
 enum class SmartPropChoiceSelectionMode_t : uint32_t
@@ -14,5 +14,8 @@ enum class SmartPropChoiceSelectionMode_t : uint32_t
 	// MPropertyFriendlyName "First"
 	// MPropertyDescription "Pick the first valid choice. Selection criteria may be added to a choice to determine if it is valid."
 	FIRST = 0x1,
+	// MPropertyFriendlyName "Specific"
+	// MPropertyDescription "Pick a choice specified by an additional authored value."
+	SPECIFIC = 0x2,
 };
 

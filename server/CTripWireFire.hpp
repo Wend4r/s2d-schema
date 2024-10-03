@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xed0
+// Size: 0xf48
 // Has VTable
 class CTripWireFire : public CBaseCSGrenade
 {

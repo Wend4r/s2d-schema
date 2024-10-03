@@ -5,7 +5,7 @@
 struct CAnimKeyData;
 // Registered binary: animationsystem.dll (project 'animationsystem')
 // Alignment: 8
-// Size: 0x130
+// Size: 0x148
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -36,5 +36,6 @@ public:
 	// -> m_dataChannelArray - 0xf8
 	CAnimKeyData m_decodeKey; // 0x98	
 	CUtlVector< CBufferString > m_szScripts; // 0x110	
+	CUtlVector< CStrongHandleVoid > m_AdditionalExtRefs; // 0x128	
 };
 

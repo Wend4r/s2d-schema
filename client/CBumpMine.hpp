@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0x1a70
+// Size: 0x1b00
 // Has VTable
 class CBumpMine : public C_CSWeaponBase
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1d0
+// Size: 0x1d8
 // Has VTable
 // Is Abstract
 // 
@@ -13,14 +13,14 @@ class C_OP_RemapDistanceToLineSegmentBase : public CParticleFunctionOperator
 {
 public:
 	// MPropertyFriendlyName "control point 0"
-	int32_t m_nCP0; // 0x1b8	
+	int32_t m_nCP0; // 0x1c0	
 	// MPropertyFriendlyName "control point 1"
-	int32_t m_nCP1; // 0x1bc	
+	int32_t m_nCP1; // 0x1c4	
 	// MPropertyFriendlyName "min distance value"
-	float m_flMinInputValue; // 0x1c0	
+	float m_flMinInputValue; // 0x1c8	
 	// MPropertyFriendlyName "max distance value"
-	float m_flMaxInputValue; // 0x1c4	
+	float m_flMaxInputValue; // 0x1cc	
 	// MPropertyFriendlyName "use distance to an infinite line instead of a finite line segment"
-	bool m_bInfiniteLine; // 0x1c8	
+	bool m_bInfiniteLine; // 0x1d0	
 };
 

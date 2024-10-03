@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0x70
+// Size: 0x68
 // Has VTable
 // 
 // MGetKV3ClassDefaults

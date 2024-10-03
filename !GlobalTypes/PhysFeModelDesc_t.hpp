@@ -4,7 +4,7 @@
 
 // Registered binary: vphysics2.dll (project 'physicslib')
 // Alignment: 8
-// Size: 0x620
+// Size: 0x680
 // 
 // MGetKV3ClassDefaults
 struct PhysFeModelDesc_t
@@ -43,76 +43,81 @@ public:
 	CUtlVector< CTransform > m_InitPose; // 0x120	
 	CUtlVector< FeRodConstraint_t > m_Rods; // 0x138	
 	CUtlVector< FeTwistConstraint_t > m_Twists; // 0x150	
-	CUtlVector< FeAxialEdgeBend_t > m_AxialEdges; // 0x168	
-	CUtlVector< float32 > m_NodeInvMasses; // 0x180	
-	CUtlVector< FeCtrlOffset_t > m_CtrlOffsets; // 0x198	
-	CUtlVector< FeCtrlOsOffset_t > m_CtrlOsOffsets; // 0x1b0	
-	CUtlVector< FeFollowNode_t > m_FollowNodes; // 0x1c8	
-	CUtlVector< FeCollisionPlane_t > m_CollisionPlanes; // 0x1e0	
-	CUtlVector< FeNodeIntegrator_t > m_NodeIntegrator; // 0x1f8	
-	CUtlVector< FeSpringIntegrator_t > m_SpringIntegrator; // 0x210	
-	CUtlVector< FeSimdSpringIntegrator_t > m_SimdSpringIntegrator; // 0x228	
-	CUtlVector< FeWorldCollisionParams_t > m_WorldCollisionParams; // 0x240	
-	CUtlVector< float32 > m_LegacyStretchForce; // 0x258	
-	CUtlVector< float32 > m_NodeCollisionRadii; // 0x270	
-	CUtlVector< float32 > m_DynNodeFriction; // 0x288	
-	CUtlVector< float32 > m_LocalRotation; // 0x2a0	
-	CUtlVector< float32 > m_LocalForce; // 0x2b8	
-	CUtlVector< FeTaperedCapsuleStretch_t > m_TaperedCapsuleStretches; // 0x2d0	
-	CUtlVector< FeTaperedCapsuleRigid_t > m_TaperedCapsuleRigids; // 0x2e8	
-	CUtlVector< FeSphereRigid_t > m_SphereRigids; // 0x300	
-	CUtlVector< uint16 > m_WorldCollisionNodes; // 0x318	
-	CUtlVector< uint16 > m_TreeParents; // 0x330	
-	CUtlVector< uint16 > m_TreeCollisionMasks; // 0x348	
-	CUtlVector< FeTreeChildren_t > m_TreeChildren; // 0x360	
-	CUtlVector< uint16 > m_FreeNodes; // 0x378	
-	CUtlVector< FeFitMatrix_t > m_FitMatrices; // 0x390	
-	CUtlVector< FeFitWeight_t > m_FitWeights; // 0x3a8	
-	CUtlVector< FeNodeReverseOffset_t > m_ReverseOffsets; // 0x3c0	
-	CUtlVector< FeAnimStrayRadius_t > m_AnimStrayRadii; // 0x3d8	
-	CUtlVector< FeSimdAnimStrayRadius_t > m_SimdAnimStrayRadii; // 0x3f0	
-	CUtlVector< FeKelagerBend2_t > m_KelagerBends; // 0x408	
-	CUtlVector< FeCtrlSoftOffset_t > m_CtrlSoftOffsets; // 0x420	
-	CUtlVector< CFeIndexedJiggleBone > m_JiggleBones; // 0x438	
-	CUtlVector< uint16 > m_SourceElems; // 0x450	
-	CUtlVector< uint32 > m_GoalDampedSpringIntegrators; // 0x468	
-	CUtlVector< FeTri_t > m_Tris; // 0x480	
-	uint16_t m_nTriCount1; // 0x498	
-	uint16_t m_nTriCount2; // 0x49a	
-	uint8_t m_nReservedUint8; // 0x49c	
-	uint8_t m_nExtraPressureIterations; // 0x49d	
-	uint8_t m_nExtraGoalIterations; // 0x49e	
-	uint8_t m_nExtraIterations; // 0x49f	
-	CUtlVector< FeBoxRigid_t > m_BoxRigids; // 0x4a0	
-	CUtlVector< uint8 > m_DynNodeVertexSet; // 0x4b8	
-	CUtlVector< uint32 > m_VertexSetNames; // 0x4d0	
-	CUtlVector< FeRigidColliderIndices_t > m_RigidColliderPriorities; // 0x4e8	
-	CUtlVector< FeMorphLayerDepr_t > m_MorphLayers; // 0x500	
-	CUtlVector< uint8 > m_MorphSetData; // 0x518	
-	CUtlVector< FeVertexMapDesc_t > m_VertexMaps; // 0x530	
-	CUtlVector< uint8 > m_VertexMapValues; // 0x548	
-	CUtlVector< FeEffectDesc_t > m_Effects; // 0x560	
-	CUtlVector< FeCtrlOffset_t > m_LockToParent; // 0x578	
-	CUtlVector< uint16 > m_LockToGoal; // 0x590	
-	CUtlVector< int16 > m_SkelParents; // 0x5a8	
-	CUtlVector< FeNodeWindBase_t > m_DynNodeWindBases; // 0x5c0	
-	float m_flInternalPressure; // 0x5d8	
-	float m_flDefaultTimeDilation; // 0x5dc	
-	float m_flWindage; // 0x5e0	
-	float m_flWindDrag; // 0x5e4	
-	float m_flDefaultSurfaceStretch; // 0x5e8	
-	float m_flDefaultThreadStretch; // 0x5ec	
-	float m_flDefaultGravityScale; // 0x5f0	
-	float m_flDefaultVelAirDrag; // 0x5f4	
-	float m_flDefaultExpAirDrag; // 0x5f8	
-	float m_flDefaultVelQuadAirDrag; // 0x5fc	
-	float m_flDefaultExpQuadAirDrag; // 0x600	
-	float m_flRodVelocitySmoothRate; // 0x604	
-	float m_flQuadVelocitySmoothRate; // 0x608	
-	float m_flAddWorldCollisionRadius; // 0x60c	
-	float m_flDefaultVolumetricSolveAmount; // 0x610	
-	float m_flMotionSmoothCDT; // 0x614	
-	uint16_t m_nRodVelocitySmoothIterations; // 0x618	
-	uint16_t m_nQuadVelocitySmoothIterations; // 0x61a	
+	CUtlVector< FeHingeLimit_t > m_HingeLimits; // 0x168	
+	CUtlVector< FeAntiTunnelProbe_t > m_AntiTunnelProbes; // 0x180	
+	CUtlVector< uint16 > m_AntiTunnelTargetNodes; // 0x198	
+	CUtlVector< FeAxialEdgeBend_t > m_AxialEdges; // 0x1b0	
+	CUtlVector< float32 > m_NodeInvMasses; // 0x1c8	
+	CUtlVector< FeCtrlOffset_t > m_CtrlOffsets; // 0x1e0	
+	CUtlVector< FeCtrlOsOffset_t > m_CtrlOsOffsets; // 0x1f8	
+	CUtlVector< FeFollowNode_t > m_FollowNodes; // 0x210	
+	CUtlVector< FeCollisionPlane_t > m_CollisionPlanes; // 0x228	
+	CUtlVector< FeNodeIntegrator_t > m_NodeIntegrator; // 0x240	
+	CUtlVector< FeSpringIntegrator_t > m_SpringIntegrator; // 0x258	
+	CUtlVector< FeSimdSpringIntegrator_t > m_SimdSpringIntegrator; // 0x270	
+	CUtlVector< FeWorldCollisionParams_t > m_WorldCollisionParams; // 0x288	
+	CUtlVector< float32 > m_LegacyStretchForce; // 0x2a0	
+	CUtlVector< float32 > m_NodeCollisionRadii; // 0x2b8	
+	CUtlVector< float32 > m_DynNodeFriction; // 0x2d0	
+	CUtlVector< float32 > m_LocalRotation; // 0x2e8	
+	CUtlVector< float32 > m_LocalForce; // 0x300	
+	CUtlVector< FeTaperedCapsuleStretch_t > m_TaperedCapsuleStretches; // 0x318	
+	CUtlVector< FeTaperedCapsuleRigid_t > m_TaperedCapsuleRigids; // 0x330	
+	CUtlVector< FeSphereRigid_t > m_SphereRigids; // 0x348	
+	CUtlVector< uint16 > m_WorldCollisionNodes; // 0x360	
+	CUtlVector< uint16 > m_TreeParents; // 0x378	
+	CUtlVector< uint16 > m_TreeCollisionMasks; // 0x390	
+	CUtlVector< FeTreeChildren_t > m_TreeChildren; // 0x3a8	
+	CUtlVector< uint16 > m_FreeNodes; // 0x3c0	
+	CUtlVector< FeFitMatrix_t > m_FitMatrices; // 0x3d8	
+	CUtlVector< FeFitWeight_t > m_FitWeights; // 0x3f0	
+	CUtlVector< FeNodeReverseOffset_t > m_ReverseOffsets; // 0x408	
+	CUtlVector< FeAnimStrayRadius_t > m_AnimStrayRadii; // 0x420	
+	CUtlVector< FeSimdAnimStrayRadius_t > m_SimdAnimStrayRadii; // 0x438	
+	CUtlVector< FeKelagerBend2_t > m_KelagerBends; // 0x450	
+	CUtlVector< FeCtrlSoftOffset_t > m_CtrlSoftOffsets; // 0x468	
+	CUtlVector< CFeIndexedJiggleBone > m_JiggleBones; // 0x480	
+	CUtlVector< uint16 > m_SourceElems; // 0x498	
+	CUtlVector< uint32 > m_GoalDampedSpringIntegrators; // 0x4b0	
+	CUtlVector< FeTri_t > m_Tris; // 0x4c8	
+	uint16_t m_nTriCount1; // 0x4e0	
+	uint16_t m_nTriCount2; // 0x4e2	
+	uint8_t m_nReservedUint8; // 0x4e4	
+	uint8_t m_nExtraPressureIterations; // 0x4e5	
+	uint8_t m_nExtraGoalIterations; // 0x4e6	
+	uint8_t m_nExtraIterations; // 0x4e7	
+	CUtlVector< FeSDFRigid_t > m_SDFRigids; // 0x4e8	
+	CUtlVector< FeBoxRigid_t > m_BoxRigids; // 0x500	
+	CUtlVector< uint8 > m_DynNodeVertexSet; // 0x518	
+	CUtlVector< uint32 > m_VertexSetNames; // 0x530	
+	CUtlVector< FeRigidColliderIndices_t > m_RigidColliderPriorities; // 0x548	
+	CUtlVector< FeMorphLayerDepr_t > m_MorphLayers; // 0x560	
+	CUtlVector< uint8 > m_MorphSetData; // 0x578	
+	CUtlVector< FeVertexMapDesc_t > m_VertexMaps; // 0x590	
+	CUtlVector< uint8 > m_VertexMapValues; // 0x5a8	
+	CUtlVector< FeEffectDesc_t > m_Effects; // 0x5c0	
+	CUtlVector< FeCtrlOffset_t > m_LockToParent; // 0x5d8	
+	CUtlVector< uint16 > m_LockToGoal; // 0x5f0	
+	CUtlVector< int16 > m_SkelParents; // 0x608	
+	CUtlVector< FeNodeWindBase_t > m_DynNodeWindBases; // 0x620	
+	float m_flInternalPressure; // 0x638	
+	float m_flDefaultTimeDilation; // 0x63c	
+	float m_flWindage; // 0x640	
+	float m_flWindDrag; // 0x644	
+	float m_flDefaultSurfaceStretch; // 0x648	
+	float m_flDefaultThreadStretch; // 0x64c	
+	float m_flDefaultGravityScale; // 0x650	
+	float m_flDefaultVelAirDrag; // 0x654	
+	float m_flDefaultExpAirDrag; // 0x658	
+	float m_flDefaultVelQuadAirDrag; // 0x65c	
+	float m_flDefaultExpQuadAirDrag; // 0x660	
+	float m_flRodVelocitySmoothRate; // 0x664	
+	float m_flQuadVelocitySmoothRate; // 0x668	
+	float m_flAddWorldCollisionRadius; // 0x66c	
+	float m_flDefaultVolumetricSolveAmount; // 0x670	
+	float m_flMotionSmoothCDT; // 0x674	
+	float m_flLocalDrag1; // 0x678	
+	uint16_t m_nRodVelocitySmoothIterations; // 0x67c	
+	uint16_t m_nQuadVelocitySmoothIterations; // 0x67e	
 };
 

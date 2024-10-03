@@ -4,21 +4,21 @@
 
 // Registered binary: resourcecompiler.dll (project 'animdoclib')
 // Alignment: 8
-// Size: 0x120
+// Size: 0x128
 // Has VTable
 // 
 // MGetKV3ClassDefaults
-class CNmGraphDocParameterReferenceNode : public CNmGraphDocFlowGraphNode
+class CNmGraphDocParameterReferenceNode : public CNmGraphDocFlowNode
 {
 private:
-	[[maybe_unused]] uint8_t __pad00f0[0x8]; // 0xf0
+	[[maybe_unused]] uint8_t __pad00f8[0x8]; // 0xf8
 public:
-	V_uuid_t m_parameterUUID; // 0xf8	
-	NmGraphValueType_t m_parameterValueType; // 0x108	
+	V_uuid_t m_parameterUUID; // 0x100	
+	NmGraphValueType_t m_parameterValueType; // 0x110	
 private:
-	[[maybe_unused]] uint8_t __pad0109[0x7]; // 0x109
+	[[maybe_unused]] uint8_t __pad0111[0x7]; // 0x111
 public:
-	CUtlString m_parameterName; // 0x110	
-	CUtlString m_parameterGroupName; // 0x118	
+	CUtlString m_parameterName; // 0x118	
+	CUtlString m_parameterGroupName; // 0x120	
 };
 

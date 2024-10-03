@@ -5,7 +5,7 @@
 struct AmmoIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa8
+// Size: 0xb8
 // Has VTable
 class CTakeDamageInfo
 {
@@ -21,26 +21,31 @@ public:
 	CHandle< CBaseEntity > m_hAbility; // 0x40	
 	float m_flDamage; // 0x44	
 	float m_flTotalledDamage; // 0x48	
-	int32_t m_bitsDamageType; // 0x4c	
-	int32_t m_iDamageCustom; // 0x50	
-	AmmoIndex_t m_iAmmoType; // 0x54	
+	float m_flTotalledDamageAbsorbed; // 0x4c	
+	DamageTypes_t m_bitsDamageType; // 0x50	
+	int32_t m_iDamageCustom; // 0x54	
+	AmmoIndex_t m_iAmmoType; // 0x58	
 private:
-	[[maybe_unused]] uint8_t __pad0055[0xb]; // 0x55
+	[[maybe_unused]] uint8_t __pad0059[0xf]; // 0x59
 public:
-	float m_flOriginalDamage; // 0x60	
-	bool m_bShouldBleed; // 0x64	
-	bool m_bShouldSpark; // 0x65	
+	float m_flOriginalDamage; // 0x68	
+	bool m_bShouldBleed; // 0x6c	
+	bool m_bShouldSpark; // 0x6d	
 private:
-	[[maybe_unused]] uint8_t __pad0066[0xa]; // 0x66
+	[[maybe_unused]] uint8_t __pad006e[0x2]; // 0x6e
 public:
-	TakeDamageFlags_t m_nDamageFlags; // 0x70	
-	int32_t m_nNumObjectsPenetrated; // 0x78	
-	float m_flFriendlyFireDamageReductionRatio; // 0x7c	
-	HSCRIPT m_hScriptInstance; // 0x80	
+	float m_flDamageAbsorbed; // 0x70	
 private:
-	[[maybe_unused]] uint8_t __pad0088[0x14]; // 0x88
+	[[maybe_unused]] uint8_t __pad0074[0xc]; // 0x74
 public:
-	bool m_bInTakeDamageFlow; // 0x9c	
+	TakeDamageFlags_t m_nDamageFlags; // 0x80	
+	int32_t m_nNumObjectsPenetrated; // 0x88	
+	float m_flFriendlyFireDamageReductionRatio; // 0x8c	
+	HSCRIPT m_hScriptInstance; // 0x90	
+private:
+	[[maybe_unused]] uint8_t __pad0098[0x14]; // 0x98
+public:
+	bool m_bInTakeDamageFlow; // 0xac	
 	
 	// Static fields:
 	static CTakeDamageInfo &Get_EmptyInfo(){return *reinterpret_cast<CTakeDamageInfo*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CTakeDamageInfo")->m_static_fields[0]->m_instance);};

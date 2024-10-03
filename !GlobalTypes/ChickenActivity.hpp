@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 7
+// Enumerator count: 9
 // Alignment: 4
 // Size: 0x4
 enum class ChickenActivity : uint32_t
@@ -15,5 +15,7 @@ enum class ChickenActivity : uint32_t
 	GLIDE = 0x4,
 	LAND = 0x5,
 	PANIC = 0x6,
+	TRICK = 0x7,
+	TURN_IN_PLACE = 0x8,
 };
 

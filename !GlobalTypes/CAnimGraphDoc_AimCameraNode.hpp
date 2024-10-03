@@ -6,7 +6,7 @@ struct CAnimGraphDoc_NodeConnection;
 struct AnimParamID;
 // Registered binary: assetrename.dll (project 'animgraphdoclib')
 // Alignment: 8
-// Size: 0xb0
+// Size: 0xb8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -46,20 +46,26 @@ public:
 	// MPropertyFriendlyName "Use IK Parameter"
 	// MPropertyAttributeChoiceName "BoolParameter"
 	AnimParamID m_parameterUseIK; // 0x80	
+	// MPropertyFriendlyName "Camera Only Parameter"
+	// MPropertyAttributeChoiceName "BoolParameter"
+	AnimParamID m_parameterCameraOnly; // 0x84	
 	// MPropertyFriendlyName "Clearance Distance"
 	// MPropertyAttributeChoiceName "FloatParameter"
-	AnimParamID m_parameterCameraClearanceDistance; // 0x84	
+	AnimParamID m_parameterCameraClearanceDistance; // 0x88	
 	// MPropertyFriendlyName "Weapon De-Penetration Distance"
 	// MPropertyAttributeChoiceName "FloatParameter"
-	AnimParamID m_parameterWeaponDepenetrationDistance; // 0x88	
+	AnimParamID m_parameterWeaponDepenetrationDistance; // 0x8c	
+	// MPropertyFriendlyName "Weapon De-Penetration Delta"
+	// MPropertyAttributeChoiceName "VectorParameter"
+	AnimParamID m_parameterWeaponDepenetrationDelta; // 0x90	
 private:
-	[[maybe_unused]] uint8_t __pad008c[0x4]; // 0x8c
+	[[maybe_unused]] uint8_t __pad0094[0x4]; // 0x94
 public:
 	// MPropertyFriendlyName "Depenetration Joint"
 	// MPropertyAttributeChoiceName "Bone"
-	CUtlString m_depenetrationJointName; // 0x90	
+	CUtlString m_depenetrationJointName; // 0x98	
 	// MPropertyFriendlyName "Prop Joints"
 	// MPropertyDescription "These joints will maintain their offset relative to the camera joint."
-	CUtlVector< CAnimGraphDoc_AimCameraNode_PropJoint > m_propJoints; // 0x98	
+	CUtlVector< CAnimGraphDoc_AimCameraNode_PropJoint > m_propJoints; // 0xa0	
 };
 

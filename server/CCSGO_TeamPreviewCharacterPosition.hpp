@@ -5,7 +5,7 @@
 struct CEconItemView;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc48
+// Size: 0xc68
 // Has VTable
 // Is Abstract
 // 
@@ -21,23 +21,23 @@ class CCSGO_TeamPreviewCharacterPosition : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	int32_t m_nVariant; // 0x4c0	
+	int32_t m_nVariant; // 0x4e0	
 	// MNetworkEnable
-	int32_t m_nRandom; // 0x4c4	
+	int32_t m_nRandom; // 0x4e4	
 	// MNetworkEnable
-	int32_t m_nOrdinal; // 0x4c8	
+	int32_t m_nOrdinal; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04cc[0x4]; // 0x4cc
+	[[maybe_unused]] uint8_t __pad04ec[0x4]; // 0x4ec
 public:
 	// MNetworkEnable
-	CUtlString m_sWeaponName; // 0x4d0	
+	CUtlString m_sWeaponName; // 0x4f0	
 	// MNetworkEnable
-	uint64_t m_xuid; // 0x4d8	
+	uint64_t m_xuid; // 0x4f8	
 	// MNetworkEnable
-	CEconItemView m_agentItem; // 0x4e0	
+	CEconItemView m_agentItem; // 0x500	
 	// MNetworkEnable
-	CEconItemView m_glovesItem; // 0x758	
+	CEconItemView m_glovesItem; // 0x778	
 	// MNetworkEnable
-	CEconItemView m_weaponItem; // 0x9d0	
+	CEconItemView m_weaponItem; // 0x9f0	
 };
 

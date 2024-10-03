@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9c8
+// Size: 0xa40
 // Has VTable
 // 
 // MNetworkVarNames "CHandle<CCSPlayerPawn> m_OwningPlayer"
@@ -13,8 +13,8 @@ class CItemDogtags : public CItem
 {
 public:
 	// MNetworkEnable
-	CHandle< CCSPlayerPawn > m_OwningPlayer; // 0x9c0	
+	CHandle< CCSPlayerPawn > m_OwningPlayer; // 0xa38	
 	// MNetworkEnable
-	CHandle< CCSPlayerPawn > m_KillingPlayer; // 0x9c4	
+	CHandle< CCSPlayerPawn > m_KillingPlayer; // 0xa3c	
 };
 

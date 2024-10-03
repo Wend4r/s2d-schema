@@ -6,7 +6,7 @@ struct CBaseAnimGraph;
 struct PhysicsRagdollPose_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xed0
+// Size: 0xf80
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bClientSideRagdoll"
@@ -14,54 +14,54 @@ struct PhysicsRagdollPose_t;
 // MNetworkVarNames "bool m_bAnimGraphUpdateEnabled"
 // MNetworkVarNames "Vector m_vecForce"
 // MNetworkVarNames "int32 m_nForceBone"
-// MNetworkVarNames "PhysicsRagdollPose_t* m_pRagdollPose"
+// MNetworkVarNames "PhysicsRagdollPose_t m_RagdollPose"
 // MNetworkVarNames "bool m_bRagdollClientSide"
 class CBaseAnimGraph : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0cc8[0x78]; // 0xcc8
+	[[maybe_unused]] uint8_t __pad0d20[0x78]; // 0xd20
 public:
 	// MNetworkEnable
-	bool m_bInitiallyPopulateInterpHistory; // 0xd40	
+	bool m_bInitiallyPopulateInterpHistory; // 0xd98	
 private:
-	[[maybe_unused]] uint8_t __pad0d41[0x1]; // 0xd41
+	[[maybe_unused]] uint8_t __pad0d99[0x1]; // 0xd99
 public:
-	bool m_bSuppressAnimEventSounds; // 0xd42	
+	bool m_bSuppressAnimEventSounds; // 0xd9a	
 private:
-	[[maybe_unused]] uint8_t __pad0d43[0xd]; // 0xd43
-public:
-	// MNetworkEnable
-	bool m_bAnimGraphUpdateEnabled; // 0xd50	
-private:
-	[[maybe_unused]] uint8_t __pad0d51[0x3]; // 0xd51
-public:
-	float m_flMaxSlopeDistance; // 0xd54	
-	Vector m_vLastSlopeCheckPos; // 0xd58	
-	bool m_bAnimationUpdateScheduled; // 0xd64	
-private:
-	[[maybe_unused]] uint8_t __pad0d65[0x3]; // 0xd65
+	[[maybe_unused]] uint8_t __pad0d9b[0xd]; // 0xd9b
 public:
 	// MNetworkEnable
-	Vector m_vecForce; // 0xd68	
-	// MNetworkEnable
-	int32_t m_nForceBone; // 0xd74	
-	CBaseAnimGraph* m_pClientsideRagdoll; // 0xd78	
-	bool m_bBuiltRagdoll; // 0xd80	
+	bool m_bAnimGraphUpdateEnabled; // 0xda8	
 private:
-	[[maybe_unused]] uint8_t __pad0d81[0x17]; // 0xd81
+	[[maybe_unused]] uint8_t __pad0da9[0x3]; // 0xda9
+public:
+	float m_flMaxSlopeDistance; // 0xdac	
+	Vector m_vLastSlopeCheckPos; // 0xdb0	
+	bool m_bAnimationUpdateScheduled; // 0xdbc	
+private:
+	[[maybe_unused]] uint8_t __pad0dbd[0x3]; // 0xdbd
 public:
 	// MNetworkEnable
-	PhysicsRagdollPose_t* m_pRagdollPose; // 0xd98	
+	Vector m_vecForce; // 0xdc0	
+	// MNetworkEnable
+	int32_t m_nForceBone; // 0xdcc	
+	CBaseAnimGraph* m_pClientsideRagdoll; // 0xdd0	
+	bool m_bBuiltRagdoll; // 0xdd8	
+private:
+	[[maybe_unused]] uint8_t __pad0dd9[0x17]; // 0xdd9
+public:
+	// MNetworkEnable
+	PhysicsRagdollPose_t m_RagdollPose; // 0xdf0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnClientRagdollChanged"
-	bool m_bRagdollClientSide; // 0xda0	
+	bool m_bRagdollClientSide; // 0xe38	
 private:
-	[[maybe_unused]] uint8_t __pad0da1[0xf]; // 0xda1
+	[[maybe_unused]] uint8_t __pad0e39[0xf]; // 0xe39
 public:
-	bool m_bHasAnimatedMaterialAttributes; // 0xdb0	
+	bool m_bHasAnimatedMaterialAttributes; // 0xe48	
 	
 	// Datamap fields:
-	// void m_pMainGraphController; // 0xd38
+	// void m_pMainGraphController; // 0xd90
 	// float InputSetPlaybackRate; // 0x0
 	// CUtlSymbolLarge InputSetBodyGroup; // 0x0
 	// bool InputDisableAnimEventSounds; // 0x0

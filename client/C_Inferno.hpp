@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0x82d0
+// Size: 0x8330
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_firePositions"
@@ -20,52 +20,52 @@ struct ParticleIndex_t;
 class C_Inferno : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0cc8[0x40]; // 0xcc8
+	[[maybe_unused]] uint8_t __pad0d20[0x40]; // 0xd20
 public:
-	ParticleIndex_t m_nfxFireDamageEffect; // 0xd08	
+	ParticleIndex_t m_nfxFireDamageEffect; // 0xd60	
 private:
-	[[maybe_unused]] uint8_t __pad0d0c[0x4]; // 0xd0c
+	[[maybe_unused]] uint8_t __pad0d64[0x4]; // 0xd64
 public:
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoPointsSnapshot; // 0xd10	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoFillerPointsSnapshot; // 0xd18	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoOutlinePointsSnapshot; // 0xd20	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoClimbingOutlinePointsSnapshot; // 0xd28	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoDecalsSnapshot; // 0xd30	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoPointsSnapshot; // 0xd68	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoFillerPointsSnapshot; // 0xd70	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoOutlinePointsSnapshot; // 0xd78	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoClimbingOutlinePointsSnapshot; // 0xd80	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoDecalsSnapshot; // 0xd88	
 	// MNetworkEnable
-	Vector m_firePositions[64]; // 0xd38	
+	Vector m_firePositions[64]; // 0xd90	
 	// MNetworkEnable
-	Vector m_fireParentPositions[64]; // 0x1038	
+	Vector m_fireParentPositions[64]; // 0x1090	
 	// MNetworkEnable
-	bool m_bFireIsBurning[64]; // 0x1338	
+	bool m_bFireIsBurning[64]; // 0x1390	
 	// MNetworkEnable
-	Vector m_BurnNormal[64]; // 0x1378	
+	Vector m_BurnNormal[64]; // 0x13d0	
 	// MNetworkEnable
-	int32_t m_fireCount; // 0x1678	
+	int32_t m_fireCount; // 0x16d0	
 	// MNetworkEnable
-	int32_t m_nInfernoType; // 0x167c	
+	int32_t m_nInfernoType; // 0x16d4	
 	// MNetworkEnable
-	float m_nFireLifetime; // 0x1680	
+	float m_nFireLifetime; // 0x16d8	
 	// MNetworkEnable
-	bool m_bInPostEffectTime; // 0x1684	
+	bool m_bInPostEffectTime; // 0x16dc	
 private:
-	[[maybe_unused]] uint8_t __pad1685[0x3]; // 0x1685
+	[[maybe_unused]] uint8_t __pad16dd[0x3]; // 0x16dd
 public:
-	int32_t m_lastFireCount; // 0x1688	
+	int32_t m_lastFireCount; // 0x16e0	
 	// MNetworkEnable
-	int32_t m_nFireEffectTickBegin; // 0x168c	
+	int32_t m_nFireEffectTickBegin; // 0x16e4	
 private:
-	[[maybe_unused]] uint8_t __pad1690[0x6c00]; // 0x1690
+	[[maybe_unused]] uint8_t __pad16e8[0x6c08]; // 0x16e8
 public:
-	int32_t m_drawableCount; // 0x8290	
-	bool m_blosCheck; // 0x8294	
+	int32_t m_drawableCount; // 0x82f0	
+	bool m_blosCheck; // 0x82f4	
 private:
-	[[maybe_unused]] uint8_t __pad8295[0x3]; // 0x8295
+	[[maybe_unused]] uint8_t __pad82f5[0x3]; // 0x82f5
 public:
-	int32_t m_nlosperiod; // 0x8298	
-	float m_maxFireHalfWidth; // 0x829c	
-	float m_maxFireHeight; // 0x82a0	
-	Vector m_minBounds; // 0x82a4	
-	Vector m_maxBounds; // 0x82b0	
-	float m_flLastGrassBurnThink; // 0x82bc	
+	int32_t m_nlosperiod; // 0x82f8	
+	float m_maxFireHalfWidth; // 0x82fc	
+	float m_maxFireHeight; // 0x8300	
+	Vector m_minBounds; // 0x8304	
+	Vector m_maxBounds; // 0x8310	
+	float m_flLastGrassBurnThink; // 0x831c	
 };
 

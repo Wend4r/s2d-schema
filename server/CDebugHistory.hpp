@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1f54a8
+// Size: 0x3e94c8
 // Has VTable
 class CDebugHistory : public CBaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04c0[0x1f4040]; // 0x4c0
+	[[maybe_unused]] uint8_t __pad04e0[0x3e8040]; // 0x4e0
 public:
-	int32_t m_nNpcEvents; // 0x1f4500	
+	int32_t m_nNpcEvents; // 0x3e8520	
 };
 

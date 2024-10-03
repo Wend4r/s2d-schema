@@ -4,30 +4,25 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1000
+// Size: 0x10a8
 // Has VTable
 // 
-// MNetworkOverride "m_hWeapon"
 // MNetworkVarNames "bool m_bShouldIgnoreOffsetAndAccuracy"
-// MNetworkVarNames "uint32 m_nWeaponParity"
 class C_CSGOViewModel : public C_PredictedViewModel
 {
 private:
-	[[maybe_unused]] uint8_t __pad0f60[0x8]; // 0xf60
+	[[maybe_unused]] uint8_t __pad1010[0x9]; // 0x1010
 public:
 	// MNetworkEnable
-	bool m_bShouldIgnoreOffsetAndAccuracy; // 0xf68	
+	bool m_bShouldIgnoreOffsetAndAccuracy; // 0x1019	
 private:
-	[[maybe_unused]] uint8_t __pad0f69[0x3]; // 0xf69
+	[[maybe_unused]] uint8_t __pad101a[0x2]; // 0x101a
 public:
-	// MNetworkEnable
-	uint32_t m_nWeaponParity; // 0xf6c	
-	uint32_t m_nOldWeaponParity; // 0xf70	
-	CEntityIndex m_nLastKnownAssociatedWeaponEntIndex; // 0xf74	
-	bool m_bNeedToQueueHighResComposite; // 0xf78	
+	CEntityIndex m_nLastKnownAssociatedWeaponEntIndex; // 0x101c	
+	bool m_bNeedToQueueHighResComposite; // 0x1020	
 private:
-	[[maybe_unused]] uint8_t __pad0f79[0x4f]; // 0xf79
+	[[maybe_unused]] uint8_t __pad1021[0x4f]; // 0x1021
 public:
-	QAngle m_vLoweredWeaponOffset; // 0xfc8	
+	QAngle m_vLoweredWeaponOffset; // 0x1070	
 };
 

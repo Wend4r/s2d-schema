@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa20
+// Size: 0xa98
 // Has VTable
 class CBreachChargeProjectile : public CBaseGrenade
 {

@@ -7,7 +7,7 @@ struct CCSGameModeRules;
 struct C_RetakeGameRules;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8ed8
+// Size: 0x8f28
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFreezePeriod"
@@ -292,82 +292,82 @@ private:
 public:
 	bool m_bMarkClientStopRecordAtRoundEnd; // 0xcd0	
 private:
-	[[maybe_unused]] uint8_t __pad0cd1[0x57]; // 0xcd1
+	[[maybe_unused]] uint8_t __pad0cd1[0xa7]; // 0xcd1
 public:
 	// MNetworkEnable
-	int32_t m_nMatchAbortedEarlyReason; // 0xd28	
-	bool m_bHasTriggeredRoundStartMusic; // 0xd2c	
-	bool m_bSwitchingTeamsAtRoundReset; // 0xd2d	
+	int32_t m_nMatchAbortedEarlyReason; // 0xd78	
+	bool m_bHasTriggeredRoundStartMusic; // 0xd7c	
+	bool m_bSwitchingTeamsAtRoundReset; // 0xd7d	
 private:
-	[[maybe_unused]] uint8_t __pad0d2e[0x1a]; // 0xd2e
+	[[maybe_unused]] uint8_t __pad0d7e[0x1a]; // 0xd7e
 public:
 	// MNetworkEnable
 	// MNetworkPolymorphic
-	CCSGameModeRules* m_pGameModeRules; // 0xd48	
+	CCSGameModeRules* m_pGameModeRules; // 0xd98	
 	// MNetworkEnable
-	C_RetakeGameRules m_RetakeRules; // 0xd50	
+	C_RetakeGameRules m_RetakeRules; // 0xda0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnMatchEndCountChanged"
-	uint8_t m_nMatchEndCount; // 0xe68	
+	uint8_t m_nMatchEndCount; // 0xeb8	
 private:
-	[[maybe_unused]] uint8_t __pad0e69[0x3]; // 0xe69
+	[[maybe_unused]] uint8_t __pad0eb9[0x3]; // 0xeb9
 public:
 	// MNetworkEnable
-	int32_t m_nTTeamIntroVariant; // 0xe6c	
+	int32_t m_nTTeamIntroVariant; // 0xebc	
 	// MNetworkEnable
-	int32_t m_nCTTeamIntroVariant; // 0xe70	
+	int32_t m_nCTTeamIntroVariant; // 0xec0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnTeamIntroPeriodChanged"
-	bool m_bTeamIntroPeriod; // 0xe74	
+	bool m_bTeamIntroPeriod; // 0xec4	
 private:
-	[[maybe_unused]] uint8_t __pad0e75[0x3]; // 0xe75
+	[[maybe_unused]] uint8_t __pad0ec5[0x3]; // 0xec5
 public:
 	// MNetworkEnable
-	int32_t m_iRoundEndWinnerTeam; // 0xe78	
+	int32_t m_iRoundEndWinnerTeam; // 0xec8	
 	// MNetworkEnable
-	int32_t m_eRoundEndReason; // 0xe7c	
+	int32_t m_eRoundEndReason; // 0xecc	
 	// MNetworkEnable
-	bool m_bRoundEndShowTimerDefend; // 0xe80	
+	bool m_bRoundEndShowTimerDefend; // 0xed0	
 private:
-	[[maybe_unused]] uint8_t __pad0e81[0x3]; // 0xe81
+	[[maybe_unused]] uint8_t __pad0ed1[0x3]; // 0xed1
 public:
 	// MNetworkEnable
-	int32_t m_iRoundEndTimerTime; // 0xe84	
+	int32_t m_iRoundEndTimerTime; // 0xed4	
 	// MNetworkEnable
-	CUtlString m_sRoundEndFunFactToken; // 0xe88	
+	CUtlString m_sRoundEndFunFactToken; // 0xed8	
 	// MNetworkEnable
-	CPlayerSlot m_iRoundEndFunFactPlayerSlot; // 0xe90	
+	CPlayerSlot m_iRoundEndFunFactPlayerSlot; // 0xee0	
 	// MNetworkEnable
-	int32_t m_iRoundEndFunFactData1; // 0xe94	
+	int32_t m_iRoundEndFunFactData1; // 0xee4	
 	// MNetworkEnable
-	int32_t m_iRoundEndFunFactData2; // 0xe98	
+	int32_t m_iRoundEndFunFactData2; // 0xee8	
 	// MNetworkEnable
-	int32_t m_iRoundEndFunFactData3; // 0xe9c	
+	int32_t m_iRoundEndFunFactData3; // 0xeec	
 	// MNetworkEnable
-	CUtlString m_sRoundEndMessage; // 0xea0	
+	CUtlString m_sRoundEndMessage; // 0xef0	
 	// MNetworkEnable
-	int32_t m_iRoundEndPlayerCount; // 0xea8	
+	int32_t m_iRoundEndPlayerCount; // 0xef8	
 	// MNetworkEnable
-	bool m_bRoundEndNoMusic; // 0xeac	
+	bool m_bRoundEndNoMusic; // 0xefc	
 private:
-	[[maybe_unused]] uint8_t __pad0ead[0x3]; // 0xead
+	[[maybe_unused]] uint8_t __pad0efd[0x3]; // 0xefd
 public:
 	// MNetworkEnable
-	int32_t m_iRoundEndLegacy; // 0xeb0	
+	int32_t m_iRoundEndLegacy; // 0xf00	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRoundEndCountChanged"
-	uint8_t m_nRoundEndCount; // 0xeb4	
+	uint8_t m_nRoundEndCount; // 0xf04	
 private:
-	[[maybe_unused]] uint8_t __pad0eb5[0x3]; // 0xeb5
+	[[maybe_unused]] uint8_t __pad0f05[0x3]; // 0xf05
 public:
 	// MNetworkEnable
-	int32_t m_iRoundStartRoundNumber; // 0xeb8	
+	int32_t m_iRoundStartRoundNumber; // 0xf08	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRoundStartCountChanged"
-	uint8_t m_nRoundStartCount; // 0xebc	
+	uint8_t m_nRoundStartCount; // 0xf0c	
 private:
-	[[maybe_unused]] uint8_t __pad0ebd[0x400b]; // 0xebd
+	[[maybe_unused]] uint8_t __pad0f0d[0x400b]; // 0xf0d
 public:
-	double m_flLastPerfSampleTime; // 0x4ec8	
+	double m_flLastPerfSampleTime; // 0x4f18	
 };
 

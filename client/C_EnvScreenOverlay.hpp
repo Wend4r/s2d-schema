@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5d8
+// Size: 0x5f8
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_iszOverlayNames"
@@ -17,24 +17,24 @@ class C_EnvScreenOverlay : public C_PointEntity
 {
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOverlayNames[10]; // 0x548	
+	CUtlSymbolLarge m_iszOverlayNames[10]; // 0x568	
 	// MNetworkEnable
 	// MNetworkBitCount "11"
 	// MNetworkMinValue "-1.000000"
 	// MNetworkMaxValue "63.000000"
-	float m_flOverlayTimes[10]; // 0x598	
+	float m_flOverlayTimes[10]; // 0x5b8	
 	// MNetworkEnable
-	GameTime_t m_flStartTime; // 0x5c0	
+	GameTime_t m_flStartTime; // 0x5e0	
 	// MNetworkEnable
-	int32_t m_iDesiredOverlay; // 0x5c4	
+	int32_t m_iDesiredOverlay; // 0x5e4	
 	// MNetworkEnable
-	bool m_bIsActive; // 0x5c8	
-	bool m_bWasActive; // 0x5c9	
+	bool m_bIsActive; // 0x5e8	
+	bool m_bWasActive; // 0x5e9	
 private:
-	[[maybe_unused]] uint8_t __pad05ca[0x2]; // 0x5ca
+	[[maybe_unused]] uint8_t __pad05ea[0x2]; // 0x5ea
 public:
-	int32_t m_iCachedDesiredOverlay; // 0x5cc	
-	int32_t m_iCurrentOverlay; // 0x5d0	
-	GameTime_t m_flCurrentOverlayTime; // 0x5d4	
+	int32_t m_iCachedDesiredOverlay; // 0x5ec	
+	int32_t m_iCurrentOverlay; // 0x5f0	
+	GameTime_t m_flCurrentOverlayTime; // 0x5f4	
 };
 

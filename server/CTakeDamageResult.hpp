@@ -5,7 +5,7 @@
 struct CTakeDamageInfo;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x18
+// Size: 0x20
 // Has Trivial Destructor
 class CTakeDamageResult
 {
@@ -15,6 +15,7 @@ public:
 	int32_t m_nDamageTaken; // 0xc	
 	int32_t m_nTotalledHealthLost; // 0x10	
 	int32_t m_nTotalledDamageTaken; // 0x14	
+	float m_flTotalledDamageAbsorbed; // 0x18	
 	
 	// Static fields:
 	static CTakeDamageResult &Get_EmptyResult(){return *reinterpret_cast<CTakeDamageResult*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CTakeDamageResult")->m_static_fields[0]->m_instance);};

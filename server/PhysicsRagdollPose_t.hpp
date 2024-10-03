@@ -2,10 +2,9 @@
 
 #include <cstdint>
 
-struct CNetworkVarChainer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x50
+// Size: 0x28
 // Has VTable
 // 
 // MNetworkVarNames "CTransform m_Transforms"
@@ -15,13 +14,10 @@ struct PhysicsRagdollPose_t
 private:
 	[[maybe_unused]] uint8_t __pad0000[0x8]; // 0x0
 public:
-	// MNetworkDisable
-	// MNetworkChangeAccessorFieldPathIndex
-	CNetworkVarChainer __m_pChainEntity; // 0x8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnTransformChanged"
-	CNetworkUtlVectorBase< CTransform > m_Transforms; // 0x30	
+	CNetworkUtlVectorBase< CTransform > m_Transforms; // 0x8	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hOwner; // 0x48	
+	CHandle< CBaseEntity > m_hOwner; // 0x20	
 };
 

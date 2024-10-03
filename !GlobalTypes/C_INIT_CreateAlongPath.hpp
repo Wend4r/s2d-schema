@@ -13,9 +13,9 @@ class C_INIT_CreateAlongPath : public CParticleFunctionInitializer
 {
 public:
 	// MPropertyFriendlyName "maximum distance"
-	float m_fMaxDistance; // 0x1c0	
+	float m_fMaxDistance; // 0x1c8	
 private:
-	[[maybe_unused]] uint8_t __pad01c4[0xc]; // 0x1c4
+	[[maybe_unused]] uint8_t __pad01cc[0x4]; // 0x1cc
 public:
 	CPathParameters m_PathParams; // 0x1d0	
 	// MPropertyFriendlyName "randomly select sequential CP pairs between start and end points"

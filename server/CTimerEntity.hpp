@@ -5,30 +5,30 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x560
+// Size: 0x580
 // Has VTable
 class CTimerEntity : public CLogicalEntity
 {
 public:
-	CEntityIOOutput m_OnTimer; // 0x4c0	
-	CEntityIOOutput m_OnTimerHigh; // 0x4e8	
-	CEntityIOOutput m_OnTimerLow; // 0x510	
-	int32_t m_iDisabled; // 0x538	
-	float m_flInitialDelay; // 0x53c	
-	float m_flRefireTime; // 0x540	
-	bool m_bUpDownState; // 0x544	
+	CEntityIOOutput m_OnTimer; // 0x4e0	
+	CEntityIOOutput m_OnTimerHigh; // 0x508	
+	CEntityIOOutput m_OnTimerLow; // 0x530	
+	int32_t m_iDisabled; // 0x558	
+	float m_flInitialDelay; // 0x55c	
+	float m_flRefireTime; // 0x560	
+	bool m_bUpDownState; // 0x564	
 private:
-	[[maybe_unused]] uint8_t __pad0545[0x3]; // 0x545
+	[[maybe_unused]] uint8_t __pad0565[0x3]; // 0x565
 public:
-	int32_t m_iUseRandomTime; // 0x548	
-	bool m_bPauseAfterFiring; // 0x54c	
+	int32_t m_iUseRandomTime; // 0x568	
+	bool m_bPauseAfterFiring; // 0x56c	
 private:
-	[[maybe_unused]] uint8_t __pad054d[0x3]; // 0x54d
+	[[maybe_unused]] uint8_t __pad056d[0x3]; // 0x56d
 public:
-	float m_flLowerRandomBound; // 0x550	
-	float m_flUpperRandomBound; // 0x554	
-	float m_flRemainingTime; // 0x558	
-	bool m_bPaused; // 0x55c	
+	float m_flLowerRandomBound; // 0x570	
+	float m_flUpperRandomBound; // 0x574	
+	float m_flRemainingTime; // 0x578	
+	bool m_bPaused; // 0x57c	
 	
 	// Datamap fields:
 	// float InputRefireTime; // 0x0

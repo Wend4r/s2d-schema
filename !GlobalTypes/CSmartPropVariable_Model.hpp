@@ -9,6 +9,7 @@
 // 
 // MGetKV3ClassDefaults
 // MPropertyFriendlyName "Model"
+// MPropertyDescription "Model Asset Variable"
 class CSmartPropVariable_Model : public CSmartPropVariable
 {
 public:

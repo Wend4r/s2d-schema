@@ -6,7 +6,7 @@ struct IChoreoServices;
 struct PhysicsRagdollPose_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x8e8
+// Size: 0x960
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bClientSideRagdoll"
@@ -14,45 +14,45 @@ struct PhysicsRagdollPose_t;
 // MNetworkVarNames "bool m_bAnimGraphUpdateEnabled"
 // MNetworkVarNames "Vector m_vecForce"
 // MNetworkVarNames "int32 m_nForceBone"
-// MNetworkVarNames "PhysicsRagdollPose_t* m_pRagdollPose"
+// MNetworkVarNames "PhysicsRagdollPose_t m_RagdollPose"
 // MNetworkVarNames "bool m_bRagdollClientSide"
 class CBaseAnimGraph : public CBaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0710[0x78]; // 0x710
+	[[maybe_unused]] uint8_t __pad0750[0x78]; // 0x750
 public:
 	// MNetworkEnable
-	bool m_bInitiallyPopulateInterpHistory; // 0x788	
+	bool m_bInitiallyPopulateInterpHistory; // 0x7c8	
 private:
-	[[maybe_unused]] uint8_t __pad0789[0x7]; // 0x789
+	[[maybe_unused]] uint8_t __pad07c9[0x7]; // 0x7c9
 public:
-	IChoreoServices* m_pChoreoServices; // 0x790	
+	IChoreoServices* m_pChoreoServices; // 0x7d0	
 	// MNetworkEnable
-	bool m_bAnimGraphUpdateEnabled; // 0x798	
+	bool m_bAnimGraphUpdateEnabled; // 0x7d8	
 private:
-	[[maybe_unused]] uint8_t __pad0799[0x3]; // 0x799
+	[[maybe_unused]] uint8_t __pad07d9[0x3]; // 0x7d9
 public:
-	float m_flMaxSlopeDistance; // 0x79c	
-	Vector m_vLastSlopeCheckPos; // 0x7a0	
-	bool m_bAnimationUpdateScheduled; // 0x7ac	
+	float m_flMaxSlopeDistance; // 0x7dc	
+	Vector m_vLastSlopeCheckPos; // 0x7e0	
+	bool m_bAnimationUpdateScheduled; // 0x7ec	
 private:
-	[[maybe_unused]] uint8_t __pad07ad[0x3]; // 0x7ad
+	[[maybe_unused]] uint8_t __pad07ed[0x3]; // 0x7ed
 public:
 	// MNetworkEnable
-	Vector m_vecForce; // 0x7b0	
+	Vector m_vecForce; // 0x7f0	
 	// MNetworkEnable
-	int32_t m_nForceBone; // 0x7bc	
+	int32_t m_nForceBone; // 0x7fc	
 private:
-	[[maybe_unused]] uint8_t __pad07c0[0x10]; // 0x7c0
+	[[maybe_unused]] uint8_t __pad0800[0x10]; // 0x800
 public:
 	// MNetworkEnable
-	PhysicsRagdollPose_t* m_pRagdollPose; // 0x7d0	
+	PhysicsRagdollPose_t m_RagdollPose; // 0x810	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnClientRagdollChanged"
-	bool m_bRagdollClientSide; // 0x7d8	
+	bool m_bRagdollClientSide; // 0x838	
 	
 	// Datamap fields:
-	// void m_pMainGraphController; // 0x780
+	// void m_pMainGraphController; // 0x7c0
 	// void CBaseAnimGraphChoreoServicesThink; // 0x0
 	// float InputSetPlaybackRate; // 0x0
 	// CUtlSymbolLarge InputSetBodyGroup; // 0x0

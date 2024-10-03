@@ -5,7 +5,7 @@
 struct CModelState;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x410
+// Size: 0x440
 // Has VTable
 // 
 // MNetworkVarNames "CModelState m_modelState"

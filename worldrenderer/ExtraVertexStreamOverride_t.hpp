@@ -5,7 +5,7 @@
 struct CRenderBufferBinding;
 // Registered binary: worldrenderer.dll (project 'worldrenderer')
 // Alignment: 8
-// Size: 0x28
+// Size: 0x30
 // Has Trivial Destructor
 // 
 // MGetKV3ClassDefaults

@@ -4,13 +4,13 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xee0
+// Size: 0xf90
 // Has VTable
 class C_Multimeter : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ed0[0x8]; // 0xed0
+	[[maybe_unused]] uint8_t __pad0f80[0x8]; // 0xf80
 public:
-	CHandle< C_PlantedC4 > m_hTargetC4; // 0xed8	
+	CHandle< C_PlantedC4 > m_hTargetC4; // 0xf88	
 };
 

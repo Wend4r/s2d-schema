@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x210
+// Size: 0x218
 // Has VTable
 // 
 // MObsoleteParticleFunction
@@ -12,6 +12,6 @@
 class C_OP_RenderPoints : public CParticleFunctionRenderer
 {
 public:
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x208	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x210	
 };
 

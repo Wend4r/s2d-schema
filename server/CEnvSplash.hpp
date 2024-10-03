@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4c8
+// Size: 0x4e8
 // Has VTable
 class CEnvSplash : public CPointEntity
 {
 public:
-	float m_flScale; // 0x4c0	
+	float m_flScale; // 0x4e0	
 	
 	// Datamap fields:
 	// void InputSplash; // 0x0

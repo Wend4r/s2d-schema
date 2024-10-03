@@ -7,44 +7,44 @@ struct CEntityIOOutput;
 struct constraint_hingeparams_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x6d8
+// Size: 0x6f8
 // Has VTable
 class CPhysHinge : public CPhysConstraint
 {
 private:
-	[[maybe_unused]] uint8_t __pad0538[0x8]; // 0x538
+	[[maybe_unused]] uint8_t __pad0558[0x8]; // 0x558
 public:
-	ConstraintSoundInfo m_soundInfo; // 0x540	
-	CEntityIOOutput m_NotifyMinLimitReached; // 0x5c8	
-	CEntityIOOutput m_NotifyMaxLimitReached; // 0x5f0	
-	bool m_bAtMinLimit; // 0x618	
-	bool m_bAtMaxLimit; // 0x619	
+	ConstraintSoundInfo m_soundInfo; // 0x560	
+	CEntityIOOutput m_NotifyMinLimitReached; // 0x5e8	
+	CEntityIOOutput m_NotifyMaxLimitReached; // 0x610	
+	bool m_bAtMinLimit; // 0x638	
+	bool m_bAtMaxLimit; // 0x639	
 private:
-	[[maybe_unused]] uint8_t __pad061a[0x2]; // 0x61a
+	[[maybe_unused]] uint8_t __pad063a[0x2]; // 0x63a
 public:
-	constraint_hingeparams_t m_hinge; // 0x61c	
-	float m_hingeFriction; // 0x65c	
-	float m_systemLoadScale; // 0x660	
-	bool m_bIsAxisLocal; // 0x664	
+	constraint_hingeparams_t m_hinge; // 0x63c	
+	float m_hingeFriction; // 0x67c	
+	float m_systemLoadScale; // 0x680	
+	bool m_bIsAxisLocal; // 0x684	
 private:
-	[[maybe_unused]] uint8_t __pad0665[0x3]; // 0x665
+	[[maybe_unused]] uint8_t __pad0685[0x3]; // 0x685
 public:
-	float m_flMinRotation; // 0x668	
-	float m_flMaxRotation; // 0x66c	
-	float m_flInitialRotation; // 0x670	
-	float m_flMotorFrequency; // 0x674	
-	float m_flMotorDampingRatio; // 0x678	
-	float m_flAngleSpeed; // 0x67c	
-	float m_flAngleSpeedThreshold; // 0x680	
+	float m_flMinRotation; // 0x688	
+	float m_flMaxRotation; // 0x68c	
+	float m_flInitialRotation; // 0x690	
+	float m_flMotorFrequency; // 0x694	
+	float m_flMotorDampingRatio; // 0x698	
+	float m_flAngleSpeed; // 0x69c	
+	float m_flAngleSpeedThreshold; // 0x6a0	
 private:
-	[[maybe_unused]] uint8_t __pad0684[0x4]; // 0x684
+	[[maybe_unused]] uint8_t __pad06a4[0x4]; // 0x6a4
 public:
-	CEntityIOOutput m_OnStartMoving; // 0x688	
-	CEntityIOOutput m_OnStopMoving; // 0x6b0	
+	CEntityIOOutput m_OnStartMoving; // 0x6a8	
+	CEntityIOOutput m_OnStopMoving; // 0x6d0	
 	
 	// Datamap fields:
-	// Vector m_hinge.worldPosition; // 0x61c
-	// Vector m_hinge.worldAxisDirection; // 0x628
+	// Vector m_hinge.worldPosition; // 0x63c
+	// Vector m_hinge.worldAxisDirection; // 0x648
 	// float InputSetMotorTargetAngle; // 0x0
 	// float InputSetVelocity; // 0x0
 	// float InputSetHingeFriction; // 0x0

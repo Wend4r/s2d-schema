@@ -4,11 +4,12 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x548
+// Size: 0x568
 // Has VTable
+// 
+// MEntityAllowsPortraitWorldSpawn
 class CInfoParticleTarget : public C_PointEntity
 {
 public:
-	// No schema binary for binding
 };
 

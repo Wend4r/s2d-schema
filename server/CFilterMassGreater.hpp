@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x520
+// Size: 0x540
 // Has VTable
 class CFilterMassGreater : public CBaseFilter
 {
 public:
-	float m_fFilterMass; // 0x518	
+	float m_fFilterMass; // 0x538	
 };
 

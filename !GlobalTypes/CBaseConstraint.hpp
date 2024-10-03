@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0x70
+// Size: 0x68
 // Has VTable
 // Is Abstract
 // 
@@ -17,7 +17,7 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad003c[0x4]; // 0x3c
 public:
-	CUtlVector< CConstraintSlave > m_slaves; // 0x40	
-	CUtlVector< CConstraintTarget > m_targets; // 0x58	
+	CUtlLeanVector< CConstraintSlave > m_slaves; // 0x40	
+	CUtlVector< CConstraintTarget > m_targets; // 0x50	
 };
 

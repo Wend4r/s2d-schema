@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2d78
+// Size: 0x2df0
 // Has VTable
 // 
 // MNetworkVarNames "int m_nSmokeEffectTickBegin"
@@ -17,32 +17,32 @@ struct GameTime_t;
 class CSmokeGrenadeProjectile : public CBaseCSGrenadeProjectile
 {
 private:
-	[[maybe_unused]] uint8_t __pad0a90[0x18]; // 0xa90
+	[[maybe_unused]] uint8_t __pad0b08[0x18]; // 0xb08
 public:
 	// MNetworkEnable
-	int32_t m_nSmokeEffectTickBegin; // 0xaa8	
+	int32_t m_nSmokeEffectTickBegin; // 0xb20	
 	// MNetworkEnable
-	bool m_bDidSmokeEffect; // 0xaac	
+	bool m_bDidSmokeEffect; // 0xb24	
 private:
-	[[maybe_unused]] uint8_t __pad0aad[0x3]; // 0xaad
+	[[maybe_unused]] uint8_t __pad0b25[0x3]; // 0xb25
 public:
 	// MNetworkEnable
-	int32_t m_nRandomSeed; // 0xab0	
+	int32_t m_nRandomSeed; // 0xb28	
 	// MNetworkEnable
-	Vector m_vSmokeColor; // 0xab4	
+	Vector m_vSmokeColor; // 0xb2c	
 	// MNetworkEnable
-	Vector m_vSmokeDetonationPos; // 0xac0	
+	Vector m_vSmokeDetonationPos; // 0xb38	
 private:
-	[[maybe_unused]] uint8_t __pad0acc[0x4]; // 0xacc
+	[[maybe_unused]] uint8_t __pad0b44[0x4]; // 0xb44
 public:
 	// MNetworkEnable
-	CUtlVector< uint8 > m_VoxelFrameData; // 0xad0	
-	GameTime_t m_flLastBounce; // 0xae8	
-	GameTime_t m_fllastSimulationTime; // 0xaec	
+	CUtlVector< uint8 > m_VoxelFrameData; // 0xb48	
+	GameTime_t m_flLastBounce; // 0xb60	
+	GameTime_t m_fllastSimulationTime; // 0xb64	
 private:
-	[[maybe_unused]] uint8_t __pad0af0[0x2280]; // 0xaf0
+	[[maybe_unused]] uint8_t __pad0b68[0x2280]; // 0xb68
 public:
-	bool m_bExplodeFromInferno; // 0x2d70	
+	bool m_bExplodeFromInferno; // 0x2de8	
 	
 	// Datamap fields:
 	// void CSmokeGrenadeProjectileThink_Detonate; // 0x0

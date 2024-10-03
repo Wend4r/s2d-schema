@@ -5,10 +5,11 @@
 struct CLightComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcd0
+// Size: 0xd28
 // Has VTable
 // 
 // MNetworkVarNames "CLightComponent::Storage_t m_CLightComponent"
+// MEntityAllowsPortraitWorldSpawn
 class C_LightEntity : public C_BaseModelEntity
 {
 public:
@@ -16,6 +17,6 @@ public:
 	// MNetworkUserGroup "CLightComponent"
 	// MNetworkAlias "CLightComponent"
 	// MNetworkTypeAlias "CLightComponent"
-	CLightComponent* m_CLightComponent; // 0xcc8	
+	CLightComponent* m_CLightComponent; // 0xd20	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc48
+// Size: 0xc68
 // Has VTable
 class CCSGO_WingmanIntroCharacterPosition : public CCSGO_TeamIntroCharacterPosition
 {

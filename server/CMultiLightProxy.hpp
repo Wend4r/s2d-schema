@@ -4,25 +4,25 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x520
 // Has VTable
 class CMultiLightProxy : public CLogicalEntity
 {
 public:
-	CUtlSymbolLarge m_iszLightNameFilter; // 0x4c0	
-	CUtlSymbolLarge m_iszLightClassFilter; // 0x4c8	
-	float m_flLightRadiusFilter; // 0x4d0	
-	float m_flBrightnessDelta; // 0x4d4	
-	bool m_bPerformScreenFade; // 0x4d8	
+	CUtlSymbolLarge m_iszLightNameFilter; // 0x4e0	
+	CUtlSymbolLarge m_iszLightClassFilter; // 0x4e8	
+	float m_flLightRadiusFilter; // 0x4f0	
+	float m_flBrightnessDelta; // 0x4f4	
+	bool m_bPerformScreenFade; // 0x4f8	
 private:
-	[[maybe_unused]] uint8_t __pad04d9[0x3]; // 0x4d9
+	[[maybe_unused]] uint8_t __pad04f9[0x3]; // 0x4f9
 public:
-	float m_flTargetBrightnessMultiplier; // 0x4dc	
-	float m_flCurrentBrightnessMultiplier; // 0x4e0	
+	float m_flTargetBrightnessMultiplier; // 0x4fc	
+	float m_flCurrentBrightnessMultiplier; // 0x500	
 private:
-	[[maybe_unused]] uint8_t __pad04e4[0x4]; // 0x4e4
+	[[maybe_unused]] uint8_t __pad0504[0x4]; // 0x504
 public:
-	CUtlVector< CHandle< CLightEntity > > m_vecLights; // 0x4e8	
+	CUtlVector< CHandle< CLightEntity > > m_vecLights; // 0x508	
 	
 	// Datamap fields:
 	// float InputFlickerLights; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x580
+// Size: 0x5a0
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< C_BaseEntity> m_hEntAttached"
@@ -13,15 +13,15 @@ class C_EntityFlame : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hEntAttached; // 0x548	
+	CHandle< C_BaseEntity > m_hEntAttached; // 0x568	
 private:
-	[[maybe_unused]] uint8_t __pad054c[0x24]; // 0x54c
+	[[maybe_unused]] uint8_t __pad056c[0x24]; // 0x56c
 public:
-	CHandle< C_BaseEntity > m_hOldAttached; // 0x570	
+	CHandle< C_BaseEntity > m_hOldAttached; // 0x590	
 	// MNetworkEnable
-	bool m_bCheapEffect; // 0x574	
+	bool m_bCheapEffect; // 0x594	
 	
 	// Datamap fields:
-	// void m_hEffect; // 0x550
+	// void m_hEffect; // 0x570
 };
 

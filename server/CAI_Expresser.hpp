@@ -32,6 +32,6 @@ public:
 	
 	// Datamap fields:
 	// void m_pSink; // 0x8
-	// void m_ConceptHistories; // 0x10
+	// void m_conceptCooldowns; // 0x10
 };
 

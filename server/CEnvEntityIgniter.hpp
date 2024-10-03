@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4c8
+// Size: 0x4e8
 // Has VTable
 class CEnvEntityIgniter : public CBaseEntity
 {
 public:
-	float m_flLifetime; // 0x4c0	
+	float m_flLifetime; // 0x4e0	
 	
 	// Datamap fields:
 	// void InputIgnite; // 0x0

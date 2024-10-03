@@ -6,7 +6,7 @@ struct CEntityIOOutput;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbe8
+// Size: 0xcb8
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flAnimTime"
@@ -20,51 +20,58 @@ struct GameTime_t;
 class CPhysicsProp : public CBreakableProp
 {
 private:
-	[[maybe_unused]] uint8_t __pad0a80[0x8]; // 0xa80
+	[[maybe_unused]] uint8_t __pad0b10[0x8]; // 0xb10
 public:
-	CEntityIOOutput m_MotionEnabled; // 0xa88	
-	CEntityIOOutput m_OnAwakened; // 0xab0	
-	CEntityIOOutput m_OnAwake; // 0xad8	
-	CEntityIOOutput m_OnAsleep; // 0xb00	
-	CEntityIOOutput m_OnPlayerUse; // 0xb28	
-	CEntityIOOutput m_OnOutOfWorld; // 0xb50	
-	CEntityIOOutput m_OnPlayerPickup; // 0xb78	
-	bool m_bForceNavIgnore; // 0xba0	
-	bool m_bNoNavmeshBlocker; // 0xba1	
-	bool m_bForceNpcExclude; // 0xba2	
+	CEntityIOOutput m_MotionEnabled; // 0xb18	
+	CEntityIOOutput m_OnAwakened; // 0xb40	
+	CEntityIOOutput m_OnAwake; // 0xb68	
+	CEntityIOOutput m_OnAsleep; // 0xb90	
+	CEntityIOOutput m_OnPlayerUse; // 0xbb8	
+	CEntityIOOutput m_OnOutOfWorld; // 0xbe0	
+	CEntityIOOutput m_OnPlayerPickup; // 0xc08	
+	bool m_bForceNavIgnore; // 0xc30	
+	bool m_bNoNavmeshBlocker; // 0xc31	
+	bool m_bForceNpcExclude; // 0xc32	
 private:
-	[[maybe_unused]] uint8_t __pad0ba3[0x1]; // 0xba3
+	[[maybe_unused]] uint8_t __pad0c33[0x1]; // 0xc33
 public:
-	float m_massScale; // 0xba4	
-	float m_inertiaScale; // 0xba8	
-	float m_buoyancyScale; // 0xbac	
-	int32_t m_damageType; // 0xbb0	
-	int32_t m_damageToEnableMotion; // 0xbb4	
-	float m_flForceToEnableMotion; // 0xbb8	
-	bool m_bThrownByPlayer; // 0xbbc	
-	bool m_bDroppedByPlayer; // 0xbbd	
-	bool m_bTouchedByPlayer; // 0xbbe	
-	bool m_bFirstCollisionAfterLaunch; // 0xbbf	
-	int32_t m_iExploitableByPlayer; // 0xbc0	
-	bool m_bHasBeenAwakened; // 0xbc4	
-	bool m_bIsOverrideProp; // 0xbc5	
+	float m_massScale; // 0xc34	
+	float m_inertiaScale; // 0xc38	
+	float m_buoyancyScale; // 0xc3c	
+	int32_t m_damageType; // 0xc40	
+	int32_t m_damageToEnableMotion; // 0xc44	
+	float m_flForceToEnableMotion; // 0xc48	
+	bool m_bThrownByPlayer; // 0xc4c	
+	bool m_bDroppedByPlayer; // 0xc4d	
+	bool m_bTouchedByPlayer; // 0xc4e	
+	bool m_bFirstCollisionAfterLaunch; // 0xc4f	
+	int32_t m_iExploitableByPlayer; // 0xc50	
+	bool m_bHasBeenAwakened; // 0xc54	
+	bool m_bIsOverrideProp; // 0xc55	
 private:
-	[[maybe_unused]] uint8_t __pad0bc6[0x2]; // 0xbc6
+	[[maybe_unused]] uint8_t __pad0c56[0x2]; // 0xc56
 public:
-	GameTime_t m_fNextCheckDisableMotionContactsTime; // 0xbc8	
-	int32_t m_iInitialGlowState; // 0xbcc	
-	int32_t m_nGlowRange; // 0xbd0	
-	int32_t m_nGlowRangeMin; // 0xbd4	
-	Color m_glowColor; // 0xbd8	
-	bool m_bShouldAutoConvertBackFromDebris; // 0xbdc	
-	bool m_bMuteImpactEffects; // 0xbdd	
+	GameTime_t m_fNextCheckDisableMotionContactsTime; // 0xc58	
+	int32_t m_iInitialGlowState; // 0xc5c	
+	int32_t m_nGlowRange; // 0xc60	
+	int32_t m_nGlowRangeMin; // 0xc64	
+	Color m_glowColor; // 0xc68	
+	bool m_bShouldAutoConvertBackFromDebris; // 0xc6c	
+	bool m_bMuteImpactEffects; // 0xc6d	
 private:
-	[[maybe_unused]] uint8_t __pad0bde[0x6]; // 0xbde
+	[[maybe_unused]] uint8_t __pad0c6e[0x9]; // 0xc6e
 public:
-	bool m_bAcceptDamageFromHeldObjects; // 0xbe4	
-	bool m_bEnableUseOutput; // 0xbe5	
+	bool m_bAcceptDamageFromHeldObjects; // 0xc77	
+	bool m_bEnableUseOutput; // 0xc78	
+private:
+	[[maybe_unused]] uint8_t __pad0c79[0x3]; // 0xc79
+public:
+	CPhysicsProp::CrateType_t m_CrateType; // 0xc7c	
+	CUtlSymbolLarge m_strItemClass[4]; // 0xc80	
+	int32_t m_nItemCount[4]; // 0xca0	
+	bool m_bRemovableForAmmoBalancing; // 0xcb0	
 	// MNetworkEnable
-	bool m_bAwake; // 0xbe6	
+	bool m_bAwake; // 0xcb1	
 	
 	// Datamap fields:
 	// void InputEnableMotion; // 0x0
@@ -87,7 +94,10 @@ public:
 	// bool forcemotiondisabled; // 0x7fffffff
 	// bool phys_start_asleep; // 0x7fffffff
 	// void CPhysicsPropClearFlagsThink; // 0x0
-	// int32_t m_nNavObstacleType; // 0xbe0
+	// int32_t m_nNavObstacleType; // 0xc70
+	// bool m_bUpdateNavWhenMoving; // 0xc74
+	// bool m_bForceNavObstacleCut; // 0xc75
+	// bool m_bAllowObstacleConvexHullMerging; // 0xc76
 	// int32_t health; // 0x7fffffff
 };
 

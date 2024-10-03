@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1c0
+// Size: 0x1c8
 // Has VTable
 // Is Abstract
 // 
@@ -13,6 +13,6 @@ class CParticleFunctionInitializer : public CParticleFunction
 {
 public:
 	// MPropertyFriendlyName "Associated emitter Index"
-	int32_t m_nAssociatedEmitterIndex; // 0x1b8	
+	int32_t m_nAssociatedEmitterIndex; // 0x1c0	
 };
 

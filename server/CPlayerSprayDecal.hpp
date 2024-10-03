@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7e8
+// Size: 0x828
 // Has VTable
 // 
 // MNetworkVarNames "int m_nUniqueID"
@@ -26,35 +26,35 @@ class CPlayerSprayDecal : public CModelPointEntity
 {
 public:
 	// MNetworkEnable
-	int32_t m_nUniqueID; // 0x710	
+	int32_t m_nUniqueID; // 0x750	
 	// MNetworkEnable
-	uint32_t m_unAccountID; // 0x714	
+	uint32_t m_unAccountID; // 0x754	
 	// MNetworkEnable
-	uint32_t m_unTraceID; // 0x718	
+	uint32_t m_unTraceID; // 0x758	
 	// MNetworkEnable
-	uint32_t m_rtGcTime; // 0x71c	
+	uint32_t m_rtGcTime; // 0x75c	
 	// MNetworkEnable
-	Vector m_vecEndPos; // 0x720	
+	Vector m_vecEndPos; // 0x760	
 	// MNetworkEnable
-	Vector m_vecStart; // 0x72c	
+	Vector m_vecStart; // 0x76c	
 	// MNetworkEnable
-	Vector m_vecLeft; // 0x738	
+	Vector m_vecLeft; // 0x778	
 	// MNetworkEnable
-	Vector m_vecNormal; // 0x744	
+	Vector m_vecNormal; // 0x784	
 	// MNetworkEnable
-	int32_t m_nPlayer; // 0x750	
+	int32_t m_nPlayer; // 0x790	
 	// MNetworkEnable
-	int32_t m_nEntity; // 0x754	
+	int32_t m_nEntity; // 0x794	
 	// MNetworkEnable
-	int32_t m_nHitbox; // 0x758	
+	int32_t m_nHitbox; // 0x798	
 	// MNetworkEnable
-	float m_flCreationTime; // 0x75c	
+	float m_flCreationTime; // 0x79c	
 	// MNetworkEnable
-	int32_t m_nTintID; // 0x760	
+	int32_t m_nTintID; // 0x7a0	
 	// MNetworkEnable
-	uint8_t m_nVersion; // 0x764	
+	uint8_t m_nVersion; // 0x7a4	
 	// MNetworkEnable
-	uint8_t m_ubSignature[128]; // 0x765	
+	uint8_t m_ubSignature[128]; // 0x7a5	
 	
 	// Static fields:
 	static CUtlVector< CPlayerSprayDecal* > &Get_s_arrFEPlayerDecals(){return *reinterpret_cast<CUtlVector< CPlayerSprayDecal* >*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CPlayerSprayDecal")->m_static_fields[0]->m_instance);};

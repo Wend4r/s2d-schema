@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf40
+// Size: 0xf98
 // Has VTable
 // 
 // MNetworkVarNames "char m_messageText"
@@ -21,37 +21,37 @@
 class C_PointWorldText : public C_ModelPointEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0cc8[0x8]; // 0xcc8
+	[[maybe_unused]] uint8_t __pad0d20[0x8]; // 0xd20
 public:
-	bool m_bForceRecreateNextUpdate; // 0xcd0	
+	bool m_bForceRecreateNextUpdate; // 0xd28	
 private:
-	[[maybe_unused]] uint8_t __pad0cd1[0xf]; // 0xcd1
+	[[maybe_unused]] uint8_t __pad0d29[0xf]; // 0xd29
 public:
 	// MNetworkEnable
-	char m_messageText[512]; // 0xce0	
+	char m_messageText[512]; // 0xd38	
 	// MNetworkEnable
-	char m_FontName[64]; // 0xee0	
+	char m_FontName[64]; // 0xf38	
 	// MNetworkEnable
-	bool m_bEnabled; // 0xf20	
+	bool m_bEnabled; // 0xf78	
 	// MNetworkEnable
-	bool m_bFullbright; // 0xf21	
+	bool m_bFullbright; // 0xf79	
 private:
-	[[maybe_unused]] uint8_t __pad0f22[0x2]; // 0xf22
+	[[maybe_unused]] uint8_t __pad0f7a[0x2]; // 0xf7a
 public:
 	// MNetworkEnable
-	float m_flWorldUnitsPerPx; // 0xf24	
+	float m_flWorldUnitsPerPx; // 0xf7c	
 	// MNetworkEnable
-	float m_flFontSize; // 0xf28	
+	float m_flFontSize; // 0xf80	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0xf2c	
+	float m_flDepthOffset; // 0xf84	
 	// MNetworkEnable
-	Color m_Color; // 0xf30	
+	Color m_Color; // 0xf88	
 	// MNetworkEnable
-	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xf34	
+	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xf8c	
 	// MNetworkEnable
-	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xf38	
+	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xf90	
 	// MNetworkEnable
-	PointWorldTextReorientMode_t m_nReorientMode; // 0xf3c	
+	PointWorldTextReorientMode_t m_nReorientMode; // 0xf94	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

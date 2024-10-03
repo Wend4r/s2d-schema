@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x10f8
+// Size: 0x11a0
 // Has VTable
 class C_NetTestBaseCombatCharacter : public C_BaseCombatCharacter
 {

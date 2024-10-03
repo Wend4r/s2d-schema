@@ -4,7 +4,7 @@
 
 // Registered binary: resourcecompiler.dll (project 'animdoclib')
 // Alignment: 8
-// Size: 0x40
+// Size: 0x48
 // Has VTable
 // Is Abstract
 // 

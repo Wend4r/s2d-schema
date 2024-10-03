@@ -18,5 +18,7 @@ public:
 	AnimTagID m_tagID; // 0x28	
 	// MPropertyFriendlyName "Value"
 	bool m_comparisonValue; // 0x2c	
+	// MPropertyFriendlyName "Lastest Value"
+	bool m_latestValue; // 0x2d	
 };
 

@@ -4,21 +4,21 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x928
+// Size: 0x9a0
 // Has VTable
 class CBaseProp : public CBaseAnimGraph
 {
 public:
-	bool m_bModelOverrodeBlockLOS; // 0x8e8	
+	bool m_bModelOverrodeBlockLOS; // 0x960	
 private:
-	[[maybe_unused]] uint8_t __pad08e9[0x3]; // 0x8e9
+	[[maybe_unused]] uint8_t __pad0961[0x3]; // 0x961
 public:
-	int32_t m_iShapeType; // 0x8ec	
-	bool m_bConformToCollisionBounds; // 0x8f0	
+	int32_t m_iShapeType; // 0x964	
+	bool m_bConformToCollisionBounds; // 0x968	
 private:
-	[[maybe_unused]] uint8_t __pad08f1[0x3]; // 0x8f1
+	[[maybe_unused]] uint8_t __pad0969[0x3]; // 0x969
 public:
-	matrix3x4_t m_mPreferredCatchTransform; // 0x8f4	
+	matrix3x4_t m_mPreferredCatchTransform; // 0x96c	
 	
 	// Datamap fields:
 	// void health; // 0x7fffffff

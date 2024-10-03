@@ -6,7 +6,7 @@ struct CParticleCollectionVecInput;
 struct CPerParticleFloatInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x11f8
+// Size: 0x13b8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -14,41 +14,46 @@ class C_OP_RenderOmni2Light : public CParticleFunctionRenderer
 {
 public:
 	// MPropertyFriendlyName "Type"
-	ParticleOmni2LightTypeChoiceList_t m_nLightType; // 0x208	
+	ParticleOmni2LightTypeChoiceList_t m_nLightType; // 0x210	
 private:
-	[[maybe_unused]] uint8_t __pad020c[0x4]; // 0x20c
+	[[maybe_unused]] uint8_t __pad0214[0x4]; // 0x214
 public:
 	// MPropertyFriendlyName "Color Blend"
-	CParticleCollectionVecInput m_vColorBlend; // 0x210	
+	CParticleCollectionVecInput m_vColorBlend; // 0x218	
 	// MPropertyFriendlyName "Color Blend Type"
 	// MPropertySortPriority "700"
-	ParticleColorBlendType_t m_nColorBlendType; // 0x868	
-	ParticleLightUnitChoiceList_t m_nBrightnessUnit; // 0x86c	
+	ParticleColorBlendType_t m_nColorBlendType; // 0x890	
+	ParticleLightUnitChoiceList_t m_nBrightnessUnit; // 0x894	
 	// MPropertyFriendlyName "Lumens"
 	// MPropertySuppressExpr "m_nBrightnessUnit != PARTICLE_LIGHT_UNIT_LUMENS"
-	CPerParticleFloatInput m_flBrightnessLumens; // 0x870	
+	CPerParticleFloatInput m_flBrightnessLumens; // 0x898	
 	// MPropertyFriendlyName "Candelas"
 	// MPropertySuppressExpr "m_nBrightnessUnit != PARTICLE_LIGHT_UNIT_CANDELAS"
-	CPerParticleFloatInput m_flBrightnessCandelas; // 0x9c8	
+	CPerParticleFloatInput m_flBrightnessCandelas; // 0x9f8	
 	// MPropertyFriendlyName "Shadows"
 	// MPropertySuppressExpr "mod == csgo"
-	bool m_bCastShadows; // 0xb20	
+	bool m_bCastShadows; // 0xb58	
+	// MPropertyFriendlyName "Fog"
+	bool m_bFog; // 0xb59	
 private:
-	[[maybe_unused]] uint8_t __pad0b21[0x7]; // 0xb21
+	[[maybe_unused]] uint8_t __pad0b5a[0x6]; // 0xb5a
 public:
+	// MPropertyFriendlyName "Fog Scale"
+	// MPropertySuppressExpr "!m_bFog"
+	CPerParticleFloatInput m_flFogScale; // 0xb60	
 	// MPropertyFriendlyName "Light Radius"
-	CPerParticleFloatInput m_flLuminaireRadius; // 0xb28	
+	CPerParticleFloatInput m_flLuminaireRadius; // 0xcc0	
 	// MPropertyFriendlyName "Skirt"
-	CPerParticleFloatInput m_flSkirt; // 0xc80	
+	CPerParticleFloatInput m_flSkirt; // 0xe20	
 	// MPropertyFriendlyName "Range"
-	CPerParticleFloatInput m_flRange; // 0xdd8	
+	CPerParticleFloatInput m_flRange; // 0xf80	
 	// MPropertyFriendlyName "Inner Cone Angle"
-	CPerParticleFloatInput m_flInnerConeAngle; // 0xf30	
+	CPerParticleFloatInput m_flInnerConeAngle; // 0x10e0	
 	// MPropertyFriendlyName "Outer Cone Angle"
-	CPerParticleFloatInput m_flOuterConeAngle; // 0x1088	
+	CPerParticleFloatInput m_flOuterConeAngle; // 0x1240	
 	// MPropertyFriendlyName "Cookie"
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x11e0	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x13a0	
 	// MPropertyFriendlyName "Cookie is Spherically Mapped"
-	bool m_bSphericalCookie; // 0x11e8	
+	bool m_bSphericalCookie; // 0x13a8	
 };
 

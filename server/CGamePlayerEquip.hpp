@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x738
+// Size: 0x778
 // Has VTable
 class CGamePlayerEquip : public CRulePointEntity
 {

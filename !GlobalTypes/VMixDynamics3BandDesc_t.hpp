@@ -5,7 +5,6 @@
 // Registered binary: soundsystem.dll (project 'soundsystem_lowlevel')
 // Alignment: 4
 // Size: 0x90
-// Has Trivial Constructor
 // Has Trivial Destructor
 // 
 // MGetKV3ClassDefaults

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
-// Enumerator count: 20
+// Enumerator count: 21
 // Alignment: 4
 // Size: 0x4
 enum class PulseValueType_t : uint32_t
@@ -28,25 +28,27 @@ enum class PulseValueType_t : uint32_t
 	PVAL_EHANDLE = 0x7,
 	// MPropertyFriendlyName "Resource"
 	PVAL_RESOURCE = 0x8,
-	// MPropertyFriendlyName "SoundEvent Handle"
+	// MPropertyFriendlyName "SoundEvent Instance Handle"
 	PVAL_SNDEVT_GUID = 0x9,
+	// MPropertyFriendlyName "SoundEvent"
+	PVAL_SNDEVT_NAME = 0xa,
 	// MPropertyFriendlyName "Entity Name"
-	PVAL_ENTITY_NAME = 0xa,
+	PVAL_ENTITY_NAME = 0xb,
 	// MPropertyFriendlyName "Opaque Handle"
-	PVAL_OPAQUE_HANDLE = 0xb,
+	PVAL_OPAQUE_HANDLE = 0xc,
 	// MPropertyFriendlyName "Typesafe Int"
-	PVAL_TYPESAFE_INT = 0xc,
+	PVAL_TYPESAFE_INT = 0xd,
 	// MPropertySuppressEnumerator
-	PVAL_CURSOR_FLOW = 0xd,
+	PVAL_CURSOR_FLOW = 0xe,
 	// MPropertyFriendlyName "Any"
-	PVAL_ANY = 0xe,
+	PVAL_ANY = 0xf,
 	// MPropertyFriendlyName "Schema Enum"
-	PVAL_SCHEMA_ENUM = 0xf,
+	PVAL_SCHEMA_ENUM = 0x10,
 	// MPropertyFriendlyName "Panorama Panel Handle"
-	PVAL_PANORAMA_PANEL_HANDLE = 0x10,
+	PVAL_PANORAMA_PANEL_HANDLE = 0x11,
 	// MPropertyFriendlyName "Test Handle"
-	PVAL_TEST_HANDLE = 0x11,
+	PVAL_TEST_HANDLE = 0x12,
 	// MPropertySuppressEnumerator
-	PVAL_COUNT = 0x12,
+	PVAL_COUNT = 0x13,
 };
 

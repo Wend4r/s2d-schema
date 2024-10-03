@@ -5,7 +5,7 @@
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1e8
+// Size: 0x1f0
 // Has VTable
 // Is Abstract
 // 
@@ -13,20 +13,20 @@ struct ParticleAttributeIndex_t;
 class C_INIT_RandomNamedModelElement : public CParticleFunctionInitializer
 {
 public:
-	CStrongHandle< InfoForResourceTypeCModel > m_hModel; // 0x1c0	
+	CStrongHandle< InfoForResourceTypeCModel > m_hModel; // 0x1c8	
 	// MPropertyFriendlyName "names"
-	CUtlVector< CUtlString > m_names; // 0x1c8	
+	CUtlVector< CUtlString > m_names; // 0x1d0	
 	// MPropertyFriendlyName "shuffle"
-	bool m_bShuffle; // 0x1e0	
+	bool m_bShuffle; // 0x1e8	
 	// MPropertyFriendlyName "linear"
-	bool m_bLinear; // 0x1e1	
+	bool m_bLinear; // 0x1e9	
 	// MPropertyFriendlyName "model from renderer"
-	bool m_bModelFromRenderer; // 0x1e2	
+	bool m_bModelFromRenderer; // 0x1ea	
 private:
-	[[maybe_unused]] uint8_t __pad01e3[0x1]; // 0x1e3
+	[[maybe_unused]] uint8_t __pad01eb[0x1]; // 0x1eb
 public:
 	// MPropertyFriendlyName "output field"
 	// MPropertyAttributeChoiceName "particlefield_scalar"
-	ParticleAttributeIndex_t m_nFieldOutput; // 0x1e4	
+	ParticleAttributeIndex_t m_nFieldOutput; // 0x1ec	
 };
 

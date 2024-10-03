@@ -5,26 +5,26 @@
 struct CEntityIOOutput;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5d8
+// Size: 0x5f8
 // Has VTable
 class CPointTemplate : public CLogicalEntity
 {
 public:
-	CUtlSymbolLarge m_iszWorldName; // 0x548	
-	CUtlSymbolLarge m_iszSource2EntityLumpName; // 0x550	
-	CUtlSymbolLarge m_iszEntityFilterName; // 0x558	
-	float m_flTimeoutInterval; // 0x560	
-	bool m_bAsynchronouslySpawnEntities; // 0x564	
+	CUtlSymbolLarge m_iszWorldName; // 0x568	
+	CUtlSymbolLarge m_iszSource2EntityLumpName; // 0x570	
+	CUtlSymbolLarge m_iszEntityFilterName; // 0x578	
+	float m_flTimeoutInterval; // 0x580	
+	bool m_bAsynchronouslySpawnEntities; // 0x584	
 private:
-	[[maybe_unused]] uint8_t __pad0565[0x3]; // 0x565
+	[[maybe_unused]] uint8_t __pad0585[0x3]; // 0x585
 public:
-	CEntityIOOutput m_pOutputOnSpawned; // 0x568	
-	PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior; // 0x590	
-	PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; // 0x594	
-	CUtlVector< uint32 > m_createdSpawnGroupHandles; // 0x598	
-	CUtlVector< CEntityHandle > m_SpawnedEntityHandles; // 0x5b0	
-	HSCRIPT m_ScriptSpawnCallback; // 0x5c8	
-	HSCRIPT m_ScriptCallbackScope; // 0x5d0	
+	CEntityIOOutput m_pOutputOnSpawned; // 0x588	
+	PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior; // 0x5b0	
+	PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; // 0x5b4	
+	CUtlVector< uint32 > m_createdSpawnGroupHandles; // 0x5b8	
+	CUtlVector< CEntityHandle > m_SpawnedEntityHandles; // 0x5d0	
+	HSCRIPT m_ScriptSpawnCallback; // 0x5e8	
+	HSCRIPT m_ScriptCallbackScope; // 0x5f0	
 	
 	// Datamap fields:
 	// void InputForceSpawn; // 0x0

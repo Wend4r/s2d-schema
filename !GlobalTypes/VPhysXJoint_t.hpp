@@ -5,7 +5,7 @@
 struct VPhysXRange_t;
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 16
-// Size: 0xb0
+// Size: 0xc0
 // Has Trivial Destructor
 // 
 // MGetKV3ClassDefaults
@@ -54,5 +54,8 @@ public:
 	float m_flAngularFrequency; // 0xa4	
 	float m_flAngularDampingRatio; // 0xa8	
 	float m_flFriction; // 0xac	
+	float m_flElasticity; // 0xb0	
+	float m_flElasticDamping; // 0xb4	
+	float m_flPlasticity; // 0xb8	
 };
 

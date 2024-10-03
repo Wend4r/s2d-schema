@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1390
+// Size: 0x13d8
 // Has VTable
 class CFireCrackerBlast : public CInferno
 {

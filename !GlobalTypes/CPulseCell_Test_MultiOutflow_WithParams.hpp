@@ -16,7 +16,9 @@ class CPulseCell_Test_MultiOutflow_WithParams : public CPulseCell_BaseFlow
 {
 public:
 	// MPulseCellOutflow_IsDefault
+	// MPulseSignatureName
 	SignatureOutflow_Continue m_Out1; // 0x48	
+	// MPulseSignatureName
 	SignatureOutflow_Continue m_Out2; // 0x78	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0xf8
+// Size: 0xc0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,8 +13,5 @@
 class CVoiceContainerDefault : public CVoiceContainerBase
 {
 public:
-	// MPropertyFriendlyName "Vsnd"
-	// MPropertyDescription "Load the audio content into the kv3 content"
-	CStrongHandle< InfoForResourceTypeCVoiceContainerBase > m_vsndReference; // 0xf0	
 };
 

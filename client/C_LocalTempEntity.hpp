@@ -5,41 +5,41 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf78
+// Size: 0x1028
 // Has VTable
 class C_LocalTempEntity : public CBaseAnimGraph
 {
 public:
-	int32_t flags; // 0xed0	
-	GameTime_t die; // 0xed4	
-	float m_flFrameMax; // 0xed8	
-	float x; // 0xedc	
-	float y; // 0xee0	
-	float fadeSpeed; // 0xee4	
-	float bounceFactor; // 0xee8	
-	int32_t hitSound; // 0xeec	
-	int32_t priority; // 0xef0	
-	Vector tentOffset; // 0xef4	
-	QAngle m_vecTempEntAngVelocity; // 0xf00	
-	int32_t tempent_renderamt; // 0xf0c	
-	Vector m_vecNormal; // 0xf10	
-	float m_flSpriteScale; // 0xf1c	
-	int32_t m_nFlickerFrame; // 0xf20	
-	float m_flFrameRate; // 0xf24	
-	float m_flFrame; // 0xf28	
+	int32_t flags; // 0xf80	
+	GameTime_t die; // 0xf84	
+	float m_flFrameMax; // 0xf88	
+	float x; // 0xf8c	
+	float y; // 0xf90	
+	float fadeSpeed; // 0xf94	
+	float bounceFactor; // 0xf98	
+	int32_t hitSound; // 0xf9c	
+	int32_t priority; // 0xfa0	
+	Vector tentOffset; // 0xfa4	
+	QAngle m_vecTempEntAngVelocity; // 0xfb0	
+	int32_t tempent_renderamt; // 0xfbc	
+	Vector m_vecNormal; // 0xfc0	
+	float m_flSpriteScale; // 0xfcc	
+	int32_t m_nFlickerFrame; // 0xfd0	
+	float m_flFrameRate; // 0xfd4	
+	float m_flFrame; // 0xfd8	
 private:
-	[[maybe_unused]] uint8_t __pad0f2c[0x4]; // 0xf2c
+	[[maybe_unused]] uint8_t __pad0fdc[0x4]; // 0xfdc
 public:
-	char* m_pszImpactEffect; // 0xf30	
-	char* m_pszParticleEffect; // 0xf38	
-	bool m_bParticleCollision; // 0xf40	
+	char* m_pszImpactEffect; // 0xfe0	
+	char* m_pszParticleEffect; // 0xfe8	
+	bool m_bParticleCollision; // 0xff0	
 private:
-	[[maybe_unused]] uint8_t __pad0f41[0x3]; // 0xf41
+	[[maybe_unused]] uint8_t __pad0ff1[0x3]; // 0xff1
 public:
-	int32_t m_iLastCollisionFrame; // 0xf44	
-	Vector m_vLastCollisionOrigin; // 0xf48	
-	Vector m_vecTempEntVelocity; // 0xf54	
-	Vector m_vecPrevAbsOrigin; // 0xf60	
-	Vector m_vecTempEntAcceleration; // 0xf6c	
+	int32_t m_iLastCollisionFrame; // 0xff4	
+	Vector m_vLastCollisionOrigin; // 0xff8	
+	Vector m_vecTempEntVelocity; // 0x1004	
+	Vector m_vecPrevAbsOrigin; // 0x1010	
+	Vector m_vecTempEntAcceleration; // 0x101c	
 };
 

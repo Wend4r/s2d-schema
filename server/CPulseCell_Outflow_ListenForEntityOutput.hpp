@@ -21,6 +21,7 @@ class CPulseCell_Outflow_ListenForEntityOutput : public CPulseCell_BaseYieldingI
 {
 public:
 	// MPulseCellOutflow_IsDefault
+	// MPulseSignatureName
 	SignatureOutflow_Resume m_OnFired; // 0x48	
 	CPulse_ResumePoint m_OnCanceled; // 0x78	
 	// MPulseDocCustomAttr

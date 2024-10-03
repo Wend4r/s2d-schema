@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x838
+// Size: 0x858
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bSurrendered"
@@ -20,35 +20,35 @@
 class CCSTeam : public CTeam
 {
 public:
-	int32_t m_nLastRecievedShorthandedRoundBonus; // 0x578	
-	int32_t m_nShorthandedRoundBonusStartRound; // 0x57c	
+	int32_t m_nLastRecievedShorthandedRoundBonus; // 0x598	
+	int32_t m_nShorthandedRoundBonusStartRound; // 0x59c	
 	// MNetworkEnable
-	bool m_bSurrendered; // 0x580	
+	bool m_bSurrendered; // 0x5a0	
 	// MNetworkEnable
-	char m_szTeamMatchStat[512]; // 0x581	
+	char m_szTeamMatchStat[512]; // 0x5a1	
 private:
-	[[maybe_unused]] uint8_t __pad0781[0x3]; // 0x781
+	[[maybe_unused]] uint8_t __pad07a1[0x3]; // 0x7a1
 public:
 	// MNetworkEnable
-	int32_t m_numMapVictories; // 0x784	
+	int32_t m_numMapVictories; // 0x7a4	
 	// MNetworkEnable
-	int32_t m_scoreFirstHalf; // 0x788	
+	int32_t m_scoreFirstHalf; // 0x7a8	
 	// MNetworkEnable
-	int32_t m_scoreSecondHalf; // 0x78c	
+	int32_t m_scoreSecondHalf; // 0x7ac	
 	// MNetworkEnable
-	int32_t m_scoreOvertime; // 0x790	
+	int32_t m_scoreOvertime; // 0x7b0	
 	// MNetworkEnable
-	char m_szClanTeamname[129]; // 0x794	
+	char m_szClanTeamname[129]; // 0x7b4	
 private:
-	[[maybe_unused]] uint8_t __pad0815[0x3]; // 0x815
+	[[maybe_unused]] uint8_t __pad0835[0x3]; // 0x835
 public:
 	// MNetworkEnable
-	uint32_t m_iClanID; // 0x818	
+	uint32_t m_iClanID; // 0x838	
 	// MNetworkEnable
-	char m_szTeamFlagImage[8]; // 0x81c	
+	char m_szTeamFlagImage[8]; // 0x83c	
 	// MNetworkEnable
-	char m_szTeamLogoImage[8]; // 0x824	
-	float m_flNextResourceTime; // 0x82c	
-	int32_t m_iLastUpdateSentAt; // 0x830	
+	char m_szTeamLogoImage[8]; // 0x844	
+	float m_flNextResourceTime; // 0x84c	
+	int32_t m_iLastUpdateSentAt; // 0x850	
 };
 

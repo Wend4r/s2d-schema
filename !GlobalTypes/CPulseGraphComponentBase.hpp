@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x28
+// Size: 0x30
 // Has VTable
 // Is Abstract
 class CPulseGraphComponentBase
@@ -20,6 +20,7 @@ public:
 	CUtlSymbolLarge m_sNameFixupStaticPrefix; // 0x10	
 	CUtlSymbolLarge m_sNameFixupParent; // 0x18	
 	CUtlSymbolLarge m_sNameFixupLocal; // 0x20	
+	CUtlSymbolLarge m_sProceduralWorldNameForRelays; // 0x28	
 	
 	// Datamap fields:
 	// void CPulseGraphComponentBaseCallPulse_OnThink; // 0x0

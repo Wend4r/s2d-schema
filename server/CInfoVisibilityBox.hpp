@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4d8
+// Size: 0x4f8
 // Has VTable
 // 
 // MNetworkVarNames "int m_nMode"
@@ -13,14 +13,14 @@
 class CInfoVisibilityBox : public CBaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04c0[0x4]; // 0x4c0
+	[[maybe_unused]] uint8_t __pad04e0[0x4]; // 0x4e0
 public:
 	// MNetworkEnable
-	int32_t m_nMode; // 0x4c4	
+	int32_t m_nMode; // 0x4e4	
 	// MNetworkEnable
-	Vector m_vBoxSize; // 0x4c8	
+	Vector m_vBoxSize; // 0x4e8	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x4d4	
+	bool m_bEnabled; // 0x4f4	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

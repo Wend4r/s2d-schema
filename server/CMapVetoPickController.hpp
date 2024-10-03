@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xee8
+// Size: 0xf08
 // Has VTable
 // 
 // MNetworkVarNames "int m_nDraftType"
@@ -25,54 +25,54 @@
 class CMapVetoPickController : public CBaseEntity
 {
 public:
-	bool m_bPlayedIntroVcd; // 0x4c0	
-	bool m_bNeedToPlayFiveSecondsRemaining; // 0x4c1	
+	bool m_bPlayedIntroVcd; // 0x4e0	
+	bool m_bNeedToPlayFiveSecondsRemaining; // 0x4e1	
 private:
-	[[maybe_unused]] uint8_t __pad04c2[0x1e]; // 0x4c2
+	[[maybe_unused]] uint8_t __pad04e2[0x1e]; // 0x4e2
 public:
-	double m_dblPreMatchDraftSequenceTime; // 0x4e0	
-	bool m_bPreMatchDraftStateChanged; // 0x4e8	
+	double m_dblPreMatchDraftSequenceTime; // 0x500	
+	bool m_bPreMatchDraftStateChanged; // 0x508	
 private:
-	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
+	[[maybe_unused]] uint8_t __pad0509[0x3]; // 0x509
 public:
 	// MNetworkEnable
-	int32_t m_nDraftType; // 0x4ec	
+	int32_t m_nDraftType; // 0x50c	
 	// MNetworkEnable
-	int32_t m_nTeamWinningCoinToss; // 0x4f0	
+	int32_t m_nTeamWinningCoinToss; // 0x510	
 	// MNetworkEnable
-	int32_t m_nTeamWithFirstChoice[64]; // 0x4f4	
+	int32_t m_nTeamWithFirstChoice[64]; // 0x514	
 	// MNetworkEnable
-	int32_t m_nVoteMapIdsList[7]; // 0x5f4	
+	int32_t m_nVoteMapIdsList[7]; // 0x614	
 	// MNetworkEnable
-	int32_t m_nAccountIDs[64]; // 0x610	
+	int32_t m_nAccountIDs[64]; // 0x630	
 	// MNetworkEnable
-	int32_t m_nMapId0[64]; // 0x710	
+	int32_t m_nMapId0[64]; // 0x730	
 	// MNetworkEnable
-	int32_t m_nMapId1[64]; // 0x810	
+	int32_t m_nMapId1[64]; // 0x830	
 	// MNetworkEnable
-	int32_t m_nMapId2[64]; // 0x910	
+	int32_t m_nMapId2[64]; // 0x930	
 	// MNetworkEnable
-	int32_t m_nMapId3[64]; // 0xa10	
+	int32_t m_nMapId3[64]; // 0xa30	
 	// MNetworkEnable
-	int32_t m_nMapId4[64]; // 0xb10	
+	int32_t m_nMapId4[64]; // 0xb30	
 	// MNetworkEnable
-	int32_t m_nMapId5[64]; // 0xc10	
+	int32_t m_nMapId5[64]; // 0xc30	
 	// MNetworkEnable
-	int32_t m_nStartingSide0[64]; // 0xd10	
+	int32_t m_nStartingSide0[64]; // 0xd30	
 	// MNetworkEnable
-	int32_t m_nCurrentPhase; // 0xe10	
+	int32_t m_nCurrentPhase; // 0xe30	
 	// MNetworkEnable
-	int32_t m_nPhaseStartTick; // 0xe14	
+	int32_t m_nPhaseStartTick; // 0xe34	
 	// MNetworkEnable
-	int32_t m_nPhaseDurationTicks; // 0xe18	
+	int32_t m_nPhaseDurationTicks; // 0xe38	
 private:
-	[[maybe_unused]] uint8_t __pad0e1c[0x4]; // 0xe1c
+	[[maybe_unused]] uint8_t __pad0e3c[0x4]; // 0xe3c
 public:
-	CEntityOutputTemplate< CUtlSymbolLarge > m_OnMapVetoed; // 0xe20	
-	CEntityOutputTemplate< CUtlSymbolLarge > m_OnMapPicked; // 0xe48	
-	CEntityOutputTemplate< int32 > m_OnSidesPicked; // 0xe70	
-	CEntityOutputTemplate< int32 > m_OnNewPhaseStarted; // 0xe98	
-	CEntityOutputTemplate< int32 > m_OnLevelTransition; // 0xec0	
+	CEntityOutputTemplate< CUtlSymbolLarge > m_OnMapVetoed; // 0xe40	
+	CEntityOutputTemplate< CUtlSymbolLarge > m_OnMapPicked; // 0xe68	
+	CEntityOutputTemplate< int32 > m_OnSidesPicked; // 0xe90	
+	CEntityOutputTemplate< int32 > m_OnNewPhaseStarted; // 0xeb8	
+	CEntityOutputTemplate< int32 > m_OnLevelTransition; // 0xee0	
 	
 	// Datamap fields:
 	// void CMapVetoPickControllerVoteControllerThink; // 0x0

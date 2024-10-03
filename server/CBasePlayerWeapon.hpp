@@ -6,7 +6,7 @@ struct GameTick_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcb8
+// Size: 0xd30
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flexWeight"
@@ -28,28 +28,28 @@ class CBasePlayerWeapon : public CEconEntity
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	GameTick_t m_nNextPrimaryAttackTick; // 0xc70	
+	GameTick_t m_nNextPrimaryAttackTick; // 0xce8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	float m_flNextPrimaryAttackTickRatio; // 0xc74	
+	float m_flNextPrimaryAttackTickRatio; // 0xcec	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	GameTick_t m_nNextSecondaryAttackTick; // 0xc78	
+	GameTick_t m_nNextSecondaryAttackTick; // 0xcf0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	float m_flNextSecondaryAttackTickRatio; // 0xc7c	
+	float m_flNextSecondaryAttackTickRatio; // 0xcf4	
 	// MNetworkEnable
 	// MNetworkSerializer "minusone"
 	// MNetworkPriority "32"
-	int32_t m_iClip1; // 0xc80	
+	int32_t m_iClip1; // 0xcf8	
 	// MNetworkEnable
 	// MNetworkSerializer "minusone"
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	int32_t m_iClip2; // 0xc84	
+	int32_t m_iClip2; // 0xcfc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	int32_t m_pReserveAmmo[2]; // 0xc88	
-	CEntityIOOutput m_OnPlayerUse; // 0xc90	
+	int32_t m_pReserveAmmo[2]; // 0xd00	
+	CEntityIOOutput m_OnPlayerUse; // 0xd08	
 	
 	// Datamap fields:
 	// int32_t InputSetClipPrimary; // 0x0

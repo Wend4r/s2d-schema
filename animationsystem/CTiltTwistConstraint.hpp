@@ -11,7 +11,7 @@
 class CTiltTwistConstraint : public CBaseConstraint
 {
 public:
-	int32_t m_nTargetAxis; // 0x70	
-	int32_t m_nSlaveAxis; // 0x74	
+	int32_t m_nTargetAxis; // 0x68	
+	int32_t m_nSlaveAxis; // 0x6c	
 };
 

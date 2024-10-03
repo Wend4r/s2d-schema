@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x12f0
+// Size: 0x13a0
 // Has VTable
 // 
 // MNetworkVarNames "int m_nSmokeEffectTickBegin"
@@ -16,28 +16,28 @@
 class C_SmokeGrenadeProjectile : public C_BaseCSGrenadeProjectile
 {
 private:
-	[[maybe_unused]] uint8_t __pad1150[0x8]; // 0x1150
+	[[maybe_unused]] uint8_t __pad1200[0x8]; // 0x1200
 public:
 	// MNetworkEnable
-	int32_t m_nSmokeEffectTickBegin; // 0x1158	
+	int32_t m_nSmokeEffectTickBegin; // 0x1208	
 	// MNetworkEnable
-	bool m_bDidSmokeEffect; // 0x115c	
+	bool m_bDidSmokeEffect; // 0x120c	
 private:
-	[[maybe_unused]] uint8_t __pad115d[0x3]; // 0x115d
+	[[maybe_unused]] uint8_t __pad120d[0x3]; // 0x120d
 public:
 	// MNetworkEnable
-	int32_t m_nRandomSeed; // 0x1160	
+	int32_t m_nRandomSeed; // 0x1210	
 	// MNetworkEnable
-	Vector m_vSmokeColor; // 0x1164	
+	Vector m_vSmokeColor; // 0x1214	
 	// MNetworkEnable
-	Vector m_vSmokeDetonationPos; // 0x1170	
+	Vector m_vSmokeDetonationPos; // 0x1220	
 private:
-	[[maybe_unused]] uint8_t __pad117c[0x4]; // 0x117c
+	[[maybe_unused]] uint8_t __pad122c[0x4]; // 0x122c
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnSimulationChanged"
-	CUtlVector< uint8 > m_VoxelFrameData; // 0x1180	
-	bool m_bSmokeVolumeDataReceived; // 0x1198	
-	bool m_bSmokeEffectSpawned; // 0x1199	
+	CUtlVector< uint8 > m_VoxelFrameData; // 0x1230	
+	bool m_bSmokeVolumeDataReceived; // 0x1248	
+	bool m_bSmokeEffectSpawned; // 0x1249	
 };
 

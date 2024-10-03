@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x2460
+// Size: 0x2580
 // Has VTable
 class C_CSGO_TeamPreviewModel : public C_CSGO_PreviewPlayer
 {

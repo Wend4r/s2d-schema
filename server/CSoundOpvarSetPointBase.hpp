@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x558
+// Size: 0x578
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_iszStackName"
@@ -15,32 +15,32 @@
 class CSoundOpvarSetPointBase : public CBaseEntity
 {
 public:
-	bool m_bDisabled; // 0x4c0	
+	bool m_bDisabled; // 0x4e0	
 private:
-	[[maybe_unused]] uint8_t __pad04c1[0x3]; // 0x4c1
+	[[maybe_unused]] uint8_t __pad04e1[0x3]; // 0x4e1
 public:
-	CEntityHandle m_hSource; // 0x4c4	
+	CEntityHandle m_hSource; // 0x4e4	
 private:
-	[[maybe_unused]] uint8_t __pad04c8[0x8]; // 0x4c8
+	[[maybe_unused]] uint8_t __pad04e8[0x8]; // 0x4e8
 public:
-	CUtlSymbolLarge m_iszSourceEntityName; // 0x4d0	
+	CUtlSymbolLarge m_iszSourceEntityName; // 0x4f0	
 private:
-	[[maybe_unused]] uint8_t __pad04d8[0x50]; // 0x4d8
+	[[maybe_unused]] uint8_t __pad04f8[0x50]; // 0x4f8
 public:
-	Vector m_vLastPosition; // 0x528	
+	Vector m_vLastPosition; // 0x548	
 private:
-	[[maybe_unused]] uint8_t __pad0534[0x4]; // 0x534
+	[[maybe_unused]] uint8_t __pad0554[0x4]; // 0x554
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszStackName; // 0x538	
+	CUtlSymbolLarge m_iszStackName; // 0x558	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOperatorName; // 0x540	
+	CUtlSymbolLarge m_iszOperatorName; // 0x560	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOpvarName; // 0x548	
+	CUtlSymbolLarge m_iszOpvarName; // 0x568	
 	// MNetworkEnable
-	int32_t m_iOpvarIndex; // 0x550	
+	int32_t m_iOpvarIndex; // 0x570	
 	// MNetworkEnable
-	bool m_bUseAutoCompare; // 0x554	
+	bool m_bUseAutoCompare; // 0x574	
 	
 	// Datamap fields:
 	// uint64_t InputSetEventGuid; // 0x0
@@ -52,7 +52,7 @@ public:
 	// void InputEnable; // 0x0
 	// void InputDisable; // 0x0
 	// void CSoundOpvarSetPointBaseSetOpvarThink; // 0x0
-	// void m_nGUID; // 0x4c8
-	// void m_hOpvarData; // 0x4d8
+	// void m_nGUID; // 0x4e8
+	// void m_hOpvarData; // 0x4f8
 };
 

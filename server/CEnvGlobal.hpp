@@ -4,16 +4,16 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x520
 // Has VTable
 class CEnvGlobal : public CLogicalEntity
 {
 public:
-	CEntityOutputTemplate< int32 > m_outCounter; // 0x4c0	
-	CUtlSymbolLarge m_globalstate; // 0x4e8	
-	int32_t m_triggermode; // 0x4f0	
-	int32_t m_initialstate; // 0x4f4	
-	int32_t m_counter; // 0x4f8	
+	CEntityOutputTemplate< int32 > m_outCounter; // 0x4e0	
+	CUtlSymbolLarge m_globalstate; // 0x508	
+	int32_t m_triggermode; // 0x510	
+	int32_t m_initialstate; // 0x514	
+	int32_t m_counter; // 0x518	
 	
 	// Datamap fields:
 	// void InputTurnOn; // 0x0

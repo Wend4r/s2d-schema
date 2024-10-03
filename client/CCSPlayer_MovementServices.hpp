@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x4e0
+// Size: 0x4e8
 // Has VTable
 // 
 // MNetworkVarNames "float m_flMaxFallVelocity"
@@ -80,35 +80,40 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0479[0x3]; // 0x479
 public:
-	int32_t m_nOldWaterLevel; // 0x47c	
-	float m_flWaterEntryTime; // 0x480	
-	Vector m_vecForward; // 0x484	
-	Vector m_vecLeft; // 0x490	
-	Vector m_vecUp; // 0x49c	
+	float m_flGroundMoveEfficiency; // 0x47c	
+	int32_t m_nOldWaterLevel; // 0x480	
+	float m_flWaterEntryTime; // 0x484	
+	Vector m_vecForward; // 0x488	
+	Vector m_vecLeft; // 0x494	
+	Vector m_vecUp; // 0x4a0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x4a8	
+	int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x4ac	
 	// MNetworkEnable
-	bool m_bOldJumpPressed; // 0x4ac	
+	bool m_bOldJumpPressed; // 0x4b0	
 private:
-	[[maybe_unused]] uint8_t __pad04ad[0x3]; // 0x4ad
+	[[maybe_unused]] uint8_t __pad04b1[0x3]; // 0x4b1
 public:
-	float m_flJumpPressedTime; // 0x4b0	
+	float m_flJumpPressedTime; // 0x4b4	
 	// MNetworkEnable
-	float m_flJumpUntil; // 0x4b4	
+	float m_flJumpUntil; // 0x4b8	
 	// MNetworkEnable
-	float m_flJumpVel; // 0x4b8	
+	float m_flJumpVel; // 0x4bc	
 	// MNetworkEnable
-	GameTime_t m_fStashGrenadeParameterWhen; // 0x4bc	
+	GameTime_t m_fStashGrenadeParameterWhen; // 0x4c0	
+private:
+	[[maybe_unused]] uint8_t __pad04c4[0x4]; // 0x4c4
+public:
 	// MNetworkEnable
-	uint64_t m_nButtonDownMaskPrev; // 0x4c0	
+	uint64_t m_nButtonDownMaskPrev; // 0x4c8	
 	// MNetworkEnable
-	float m_flOffsetTickCompleteTime; // 0x4c8	
+	float m_flOffsetTickCompleteTime; // 0x4d0	
 	// MNetworkEnable
-	float m_flOffsetTickStashedSpeed; // 0x4cc	
+	float m_flOffsetTickStashedSpeed; // 0x4d4	
 	// MNetworkEnable
-	float m_flStamina; // 0x4d0	
-	float m_flHeightAtJumpStart; // 0x4d4	
-	float m_flMaxJumpHeightThisJump; // 0x4d8	
+	float m_flStamina; // 0x4d8	
+	float m_flHeightAtJumpStart; // 0x4dc	
+	float m_flMaxJumpHeightThisJump; // 0x4e0	
+	float m_flMaxJumpHeightLastJump; // 0x4e4	
 };
 

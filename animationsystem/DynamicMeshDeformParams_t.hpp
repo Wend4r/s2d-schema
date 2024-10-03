@@ -15,5 +15,6 @@ public:
 	float m_flTensionStretchScale; // 0x4	
 	bool m_bRecomputeSmoothNormalsAfterAnimation; // 0x8	
 	bool m_bComputeDynamicMeshTensionAfterAnimation; // 0x9	
+	bool m_bSmoothNormalsAcrossUvSeams; // 0xa	
 };
 

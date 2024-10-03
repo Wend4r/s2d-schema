@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x750
+// Size: 0x790
 // Has VTable
 class CMarkupVolumeTagged_Nav : public CMarkupVolumeTagged
 {

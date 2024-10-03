@@ -4,7 +4,7 @@
 
 // Registered binary: resourcecompiler.dll (project 'sounddoc_lib')
 // Alignment: 8
-// Size: 0x40
+// Size: 0x60
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -29,5 +29,21 @@ public:
 	float m_flWeight6; // 0x38	
 	// MPropertyFriendlyName "Weight:7"
 	float m_flWeight7; // 0x3c	
+	// MPropertyFriendlyName "PreDelayMS:0"
+	float m_flPreDelayMS0; // 0x40	
+	// MPropertyFriendlyName "PreDelayMS:1"
+	float m_flPreDelayMS1; // 0x44	
+	// MPropertyFriendlyName "PreDelayMS:2"
+	float m_flPreDelayMS2; // 0x48	
+	// MPropertyFriendlyName "PreDelayMS:3"
+	float m_flPreDelayMS3; // 0x4c	
+	// MPropertyFriendlyName "PreDelayMS:4"
+	float m_flPreDelayMS4; // 0x50	
+	// MPropertyFriendlyName "PreDelayMS:5"
+	float m_flPreDelayMS5; // 0x54	
+	// MPropertyFriendlyName "PreDelayMS:6"
+	float m_flPreDelayMS6; // 0x58	
+	// MPropertyFriendlyName "PreDelayMS:7"
+	float m_flPreDelayMS7; // 0x5c	
 };
 

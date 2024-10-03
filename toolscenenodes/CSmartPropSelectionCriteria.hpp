@@ -9,7 +9,7 @@
 // Is Abstract
 // 
 // MGetKV3ClassDefaults
-// MVDataRoot
+// MVDataBase
 // MVDataNodeType
 // MVDataAnonymousNode
 class CSmartPropSelectionCriteria

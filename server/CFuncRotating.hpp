@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7f8
+// Size: 0x838
 // Has VTable
 // 
 // MNetworkOverride "m_angRotation CGameSceneNode"
@@ -13,35 +13,36 @@ struct CEntityIOOutput;
 class CFuncRotating : public CBaseModelEntity
 {
 public:
-	CEntityIOOutput m_OnStopped; // 0x710	
-	CEntityIOOutput m_OnStarted; // 0x738	
-	CEntityIOOutput m_OnReachedStart; // 0x760	
-	RotationVector m_localRotationVector; // 0x788	
-	float m_flFanFriction; // 0x794	
-	float m_flAttenuation; // 0x798	
-	float m_flVolume; // 0x79c	
-	float m_flTargetSpeed; // 0x7a0	
-	float m_flMaxSpeed; // 0x7a4	
-	float m_flBlockDamage; // 0x7a8	
+	CEntityIOOutput m_OnStopped; // 0x750	
+	CEntityIOOutput m_OnStarted; // 0x778	
+	CEntityIOOutput m_OnReachedStart; // 0x7a0	
+	RotationVector m_localRotationVector; // 0x7c8	
+	float m_flFanFriction; // 0x7d4	
+	float m_flAttenuation; // 0x7d8	
+	float m_flVolume; // 0x7dc	
+	float m_flTargetSpeed; // 0x7e0	
+	float m_flMaxSpeed; // 0x7e4	
+	float m_flBlockDamage; // 0x7e8	
 private:
-	[[maybe_unused]] uint8_t __pad07ac[0x4]; // 0x7ac
+	[[maybe_unused]] uint8_t __pad07ec[0x4]; // 0x7ec
 public:
-	CUtlSymbolLarge m_NoiseRunning; // 0x7b0	
-	bool m_bReversed; // 0x7b8	
-	bool m_bAccelDecel; // 0x7b9	
+	CUtlSymbolLarge m_NoiseRunning; // 0x7f0	
+	bool m_bReversed; // 0x7f8	
+	bool m_bAccelDecel; // 0x7f9	
 private:
-	[[maybe_unused]] uint8_t __pad07ba[0xa]; // 0x7ba
+	[[maybe_unused]] uint8_t __pad07fa[0xa]; // 0x7fa
 public:
-	QAngle m_prevLocalAngles; // 0x7c4	
-	QAngle m_angStart; // 0x7d0	
-	bool m_bStopAtStartPos; // 0x7dc	
+	QAngle m_prevLocalAngles; // 0x804	
+	QAngle m_angStart; // 0x810	
+	bool m_bStopAtStartPos; // 0x81c	
 private:
-	[[maybe_unused]] uint8_t __pad07dd[0x3]; // 0x7dd
+	[[maybe_unused]] uint8_t __pad081d[0x3]; // 0x81d
 public:
-	Vector m_vecClientOrigin; // 0x7e0	
-	QAngle m_vecClientAngles; // 0x7ec	
+	Vector m_vecClientOrigin; // 0x820	
+	QAngle m_vecClientAngles; // 0x82c	
 	
 	// Datamap fields:
+	// bool movewithoutpushingblockers; // 0x7fffffff
 	// void CFuncRotatingSpinUpMove; // 0x0
 	// void CFuncRotatingSpinDownMove; // 0x0
 	// void CFuncRotatingHurtTouch; // 0x0
@@ -60,7 +61,7 @@ public:
 	// Vector InputSetStartPos; // 0x0
 	// void InputEnableAccelDecel; // 0x0
 	// void InputDisableAccelDecel; // 0x0
-	// void m_nNoiseRunningGuid; // 0x7bc
+	// void m_nNoiseRunningGuid; // 0x7fc
 	// int32_t fanfriction; // 0x7fffffff
 	// int32_t Volume; // 0x7fffffff
 };

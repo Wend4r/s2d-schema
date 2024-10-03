@@ -4,18 +4,18 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4d0
+// Size: 0x4f0
 // Has VTable
 class CLogicNavigation : public CLogicalEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04c0[0x8]; // 0x4c0
+	[[maybe_unused]] uint8_t __pad04e0[0x8]; // 0x4e0
 public:
-	bool m_isOn; // 0x4c8	
+	bool m_isOn; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04c9[0x3]; // 0x4c9
+	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
 public:
-	navproperties_t m_navProperty; // 0x4cc	
+	navproperties_t m_navProperty; // 0x4ec	
 	
 	// Datamap fields:
 	// void InputTurnOn; // 0x0

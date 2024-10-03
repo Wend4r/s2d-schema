@@ -5,15 +5,15 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7b8
+// Size: 0x7f8
 // Has VTable
 class CGamePlayerZone : public CRuleBrushEntity
 {
 public:
-	CEntityIOOutput m_OnPlayerInZone; // 0x718	
-	CEntityIOOutput m_OnPlayerOutZone; // 0x740	
-	CEntityOutputTemplate< int32 > m_PlayersInCount; // 0x768	
-	CEntityOutputTemplate< int32 > m_PlayersOutCount; // 0x790	
+	CEntityIOOutput m_OnPlayerInZone; // 0x758	
+	CEntityIOOutput m_OnPlayerOutZone; // 0x780	
+	CEntityOutputTemplate< int32 > m_PlayersInCount; // 0x7a8	
+	CEntityOutputTemplate< int32 > m_PlayersOutCount; // 0x7d0	
 	
 	// Datamap fields:
 	// void InputCountPlayersInZone; // 0x0

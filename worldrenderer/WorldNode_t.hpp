@@ -5,7 +5,7 @@
 struct BakedLightingInfo_t;
 // Registered binary: worldrenderer.dll (project 'worldrenderer')
 // Alignment: 8
-// Size: 0x140
+// Size: 0x148
 // 
 // MGetKV3ClassDefaults
 struct WorldNode_t
@@ -24,5 +24,6 @@ public:
 	CUtlVector< uint8 > m_overlayLayerIndices; // 0xf0	
 	CUtlString m_grassFileName; // 0x108	
 	BakedLightingInfo_t m_nodeLightingInfo; // 0x110	
+	bool m_bHasBakedGeometryFlag; // 0x140	
 };
 

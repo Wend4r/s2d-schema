@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'animlib')
 // Alignment: 8
-// Size: 0x48
+// Size: 0x50
 // 
 // MGetKV3ClassDefaults
 class CNmGraphDataSet

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
-// Enumerator count: 4
+// Enumerator count: 5
 // Alignment: 4
 // Size: 0x4
 enum class PlayBackMode_t : uint32_t
@@ -16,5 +16,7 @@ enum class PlayBackMode_t : uint32_t
 	RandomAvoidLast = 0x2,
 	// MPropertyFriendlyName "Sequential"
 	Sequential = 0x3,
+	// MPropertyFriendlyName "Random With Weights"
+	RandomWeights = 0x4,
 };
 

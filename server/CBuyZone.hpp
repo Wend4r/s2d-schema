@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x8e8
+// Size: 0x928
 // Has VTable
 class CBuyZone : public CBaseTrigger
 {
 public:
-	int32_t m_LegacyTeamNum; // 0x8e0	
+	int32_t m_LegacyTeamNum; // 0x920	
 	
 	// Datamap fields:
 	// void InputSetTeam_TerroristOnly; // 0x0

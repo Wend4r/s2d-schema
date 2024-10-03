@@ -5,7 +5,7 @@
 struct GameTick_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x760
+// Size: 0x7a0
 // Has VTable
 // 
 // MNetworkIncludeByName "m_fFlags"
@@ -23,24 +23,24 @@ struct GameTick_t;
 class CFuncConveyor : public CBaseModelEntity
 {
 public:
-	CUtlSymbolLarge m_szConveyorModels; // 0x710	
-	float m_flTransitionDurationSeconds; // 0x718	
-	QAngle m_angMoveEntitySpace; // 0x71c	
+	CUtlSymbolLarge m_szConveyorModels; // 0x750	
+	float m_flTransitionDurationSeconds; // 0x758	
+	QAngle m_angMoveEntitySpace; // 0x75c	
 	// MNetworkEnable
-	Vector m_vecMoveDirEntitySpace; // 0x728	
+	Vector m_vecMoveDirEntitySpace; // 0x768	
 	// MNetworkEnable
-	float m_flTargetSpeed; // 0x734	
+	float m_flTargetSpeed; // 0x774	
 	// MNetworkEnable
-	GameTick_t m_nTransitionStartTick; // 0x738	
+	GameTick_t m_nTransitionStartTick; // 0x778	
 	// MNetworkEnable
-	int32_t m_nTransitionDurationTicks; // 0x73c	
+	int32_t m_nTransitionDurationTicks; // 0x77c	
 	// MNetworkEnable
-	float m_flTransitionStartSpeed; // 0x740	
+	float m_flTransitionStartSpeed; // 0x780	
 private:
-	[[maybe_unused]] uint8_t __pad0744[0x4]; // 0x744
+	[[maybe_unused]] uint8_t __pad0784[0x4]; // 0x784
 public:
 	// MNetworkEnable
-	CNetworkUtlVectorBase< CHandle< CBaseEntity > > m_hConveyorModels; // 0x748	
+	CNetworkUtlVectorBase< CHandle< CBaseEntity > > m_hConveyorModels; // 0x788	
 	
 	// Datamap fields:
 	// void InputToggleDirection; // 0x0

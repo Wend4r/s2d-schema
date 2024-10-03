@@ -8,7 +8,7 @@
 // Has Trivial Constructor
 // Has Trivial Destructor
 // 
-// MResourceTypeForInfoType "vanmgrpheconitemp"
+// MResourceTypeForInfoType "vanmgrpheconitemvents"
 class InfoForResourceTypeIAnimGraphModelBinding
 {
 private:

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: soundsystem.dll (project 'soundsystem')
-// Enumerator count: 8
+// Enumerator count: 10
 // Alignment: 4
 // Size: 0x4
 enum class ActionType_t : uint32_t
@@ -24,5 +24,9 @@ enum class ActionType_t : uint32_t
 	SOS_ACTION_SOUNDEVENT_PRIORITY = 0x6,
 	// MPropertyFriendlyName "Count Envelope"
 	SOS_ACTION_COUNT_ENVELOPE = 0x7,
+	// MPropertyFriendlyName "Soundevent Count"
+	SOS_ACTION_SOUNDEVENT_COUNT = 0x8,
+	// MPropertyFriendlyName "Soundevent Min/Max Values"
+	SOS_ACTION_SOUNDEVENT_MIN_MAX_VALUES = 0x9,
 };
 

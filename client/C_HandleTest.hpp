@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x550
+// Size: 0x570
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CBaseEntity> m_Handle"
@@ -13,8 +13,8 @@ class C_HandleTest : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_Handle; // 0x548	
+	CHandle< C_BaseEntity > m_Handle; // 0x568	
 	// MNetworkEnable
-	bool m_bSendHandle; // 0x54c	
+	bool m_bSendHandle; // 0x56c	
 };
 

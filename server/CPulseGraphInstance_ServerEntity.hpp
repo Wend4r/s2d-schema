@@ -5,7 +5,7 @@
 struct CPulseGraphComponentBase;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x150
+// Size: 0x158
 // Has VTable
 // 
 // MPulseInstanceDomainInfo

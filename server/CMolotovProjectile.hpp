@@ -5,7 +5,7 @@
 struct IntervalTimer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb88
+// Size: 0xc00
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIsIncGrenade"
@@ -13,18 +13,18 @@ class CMolotovProjectile : public CBaseCSGrenadeProjectile
 {
 public:
 	// MNetworkEnable
-	bool m_bIsIncGrenade; // 0xa90	
+	bool m_bIsIncGrenade; // 0xb08	
 private:
-	[[maybe_unused]] uint8_t __pad0a91[0xb]; // 0xa91
+	[[maybe_unused]] uint8_t __pad0b09[0xb]; // 0xb09
 public:
-	bool m_bDetonated; // 0xa9c	
+	bool m_bDetonated; // 0xb14	
 private:
-	[[maybe_unused]] uint8_t __pad0a9d[0x3]; // 0xa9d
+	[[maybe_unused]] uint8_t __pad0b15[0x3]; // 0xb15
 public:
-	IntervalTimer m_stillTimer; // 0xaa0	
+	IntervalTimer m_stillTimer; // 0xb18	
 private:
-	[[maybe_unused]] uint8_t __pad0ab0[0xd0]; // 0xab0
+	[[maybe_unused]] uint8_t __pad0b28[0xd0]; // 0xb28
 public:
-	bool m_bHasBouncedOffPlayer; // 0xb80	
+	bool m_bHasBouncedOffPlayer; // 0xbf8	
 };
 

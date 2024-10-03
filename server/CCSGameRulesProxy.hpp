@@ -5,7 +5,7 @@
 struct CCSGameRules;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4c8
+// Size: 0x4e8
 // Has VTable
 // 
 // MNetworkVarNames "CCSGameRules* m_pGameRules"
@@ -15,6 +15,6 @@ public:
 	// MNetworkEnable
 	// MNetworkTypeAlias "CCSGameRules*"
 	// MNetworkPriority "32"
-	CCSGameRules* m_pGameRules; // 0x4c0	
+	CCSGameRules* m_pGameRules; // 0x4e0	
 };
 

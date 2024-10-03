@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7c0
+// Size: 0x800
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecLadderDir"
@@ -18,30 +18,30 @@ class CFuncLadder : public CBaseModelEntity
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecLadderDir; // 0x710	
+	Vector m_vecLadderDir; // 0x750	
 private:
-	[[maybe_unused]] uint8_t __pad071c[0x4]; // 0x71c
+	[[maybe_unused]] uint8_t __pad075c[0x4]; // 0x75c
 public:
-	CUtlVector< CHandle< CInfoLadderDismount > > m_Dismounts; // 0x720	
-	Vector m_vecLocalTop; // 0x738	
+	CUtlVector< CHandle< CInfoLadderDismount > > m_Dismounts; // 0x760	
+	Vector m_vecLocalTop; // 0x778	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecPlayerMountPositionTop; // 0x744	
+	Vector m_vecPlayerMountPositionTop; // 0x784	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecPlayerMountPositionBottom; // 0x750	
+	Vector m_vecPlayerMountPositionBottom; // 0x790	
 	// MNetworkEnable
-	float m_flAutoRideSpeed; // 0x75c	
-	bool m_bDisabled; // 0x760	
+	float m_flAutoRideSpeed; // 0x79c	
+	bool m_bDisabled; // 0x7a0	
 	// MNetworkEnable
-	bool m_bFakeLadder; // 0x761	
-	bool m_bHasSlack; // 0x762	
+	bool m_bFakeLadder; // 0x7a1	
+	bool m_bHasSlack; // 0x7a2	
 private:
-	[[maybe_unused]] uint8_t __pad0763[0x5]; // 0x763
+	[[maybe_unused]] uint8_t __pad07a3[0x5]; // 0x7a3
 public:
-	CUtlSymbolLarge m_surfacePropName; // 0x768	
-	CEntityIOOutput m_OnPlayerGotOnLadder; // 0x770	
-	CEntityIOOutput m_OnPlayerGotOffLadder; // 0x798	
+	CUtlSymbolLarge m_surfacePropName; // 0x7a8	
+	CEntityIOOutput m_OnPlayerGotOnLadder; // 0x7b0	
+	CEntityIOOutput m_OnPlayerGotOffLadder; // 0x7d8	
 	
 	// Static fields:
 	static CUtlVector< CFuncLadder* > &Get_s_Ladders(){return *reinterpret_cast<CUtlVector< CFuncLadder* >*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CFuncLadder")->m_static_fields[0]->m_instance);};

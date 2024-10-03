@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x838
+// Size: 0x878
 // Has VTable
 // 
 // MNetworkIncludeByName "m_fFlags"
@@ -14,27 +14,28 @@ struct CEntityIOOutput;
 class CFuncMoveLinear : public CBaseToggle
 {
 public:
-	MoveLinearAuthoredPos_t m_authoredPosition; // 0x790	
-	QAngle m_angMoveEntitySpace; // 0x794	
-	Vector m_vecMoveDirParentSpace; // 0x7a0	
+	MoveLinearAuthoredPos_t m_authoredPosition; // 0x7d0	
+	QAngle m_angMoveEntitySpace; // 0x7d4	
+	Vector m_vecMoveDirParentSpace; // 0x7e0	
 private:
-	[[maybe_unused]] uint8_t __pad07ac[0x4]; // 0x7ac
+	[[maybe_unused]] uint8_t __pad07ec[0x4]; // 0x7ec
 public:
-	CUtlSymbolLarge m_soundStart; // 0x7b0	
-	CUtlSymbolLarge m_soundStop; // 0x7b8	
-	CUtlSymbolLarge m_currentSound; // 0x7c0	
-	float m_flBlockDamage; // 0x7c8	
-	float m_flStartPosition; // 0x7cc	
+	CUtlSymbolLarge m_soundStart; // 0x7f0	
+	CUtlSymbolLarge m_soundStop; // 0x7f8	
+	CUtlSymbolLarge m_currentSound; // 0x800	
+	float m_flBlockDamage; // 0x808	
+	float m_flStartPosition; // 0x80c	
 private:
-	[[maybe_unused]] uint8_t __pad07d0[0x8]; // 0x7d0
+	[[maybe_unused]] uint8_t __pad0810[0x8]; // 0x810
 public:
-	CEntityIOOutput m_OnFullyOpen; // 0x7d8	
-	CEntityIOOutput m_OnFullyClosed; // 0x800	
-	bool m_bCreateMovableNavMesh; // 0x828	
-	bool m_bCreateNavObstacle; // 0x829	
+	CEntityIOOutput m_OnFullyOpen; // 0x818	
+	CEntityIOOutput m_OnFullyClosed; // 0x840	
+	bool m_bCreateMovableNavMesh; // 0x868	
+	bool m_bCreateNavObstacle; // 0x869	
 	
 	// Datamap fields:
-	// float m_flMoveDistance; // 0x714
+	// float m_flMoveDistance; // 0x754
+	// bool movewithoutpushingblockers; // 0x7fffffff
 	// void CFuncMoveLinearNavObstacleThink; // 0x0
 	// void CFuncMoveLinearNavMovableThink; // 0x0
 	// void InputOpen; // 0x0

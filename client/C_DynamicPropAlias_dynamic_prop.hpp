@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1158
+// Size: 0x1220
 // Has VTable
 class C_DynamicPropAlias_dynamic_prop : public C_DynamicProp
 {

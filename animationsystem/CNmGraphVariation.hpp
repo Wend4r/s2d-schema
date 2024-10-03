@@ -5,7 +5,7 @@
 struct CNmGraphDataSet;
 // Registered binary: animationsystem.dll (project 'animlib')
 // Alignment: 8
-// Size: 0x50
+// Size: 0x58
 // 
 // MGetKV3ClassDefaults
 class CNmGraphVariation

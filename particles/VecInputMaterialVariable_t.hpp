@@ -5,7 +5,7 @@
 struct CParticleCollectionVecInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x660
+// Size: 0x680
 // 
 // MGetKV3ClassDefaults
 struct VecInputMaterialVariable_t

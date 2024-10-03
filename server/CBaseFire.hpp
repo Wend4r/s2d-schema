@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4d0
+// Size: 0x4f0
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flScale"
@@ -15,12 +15,12 @@ class CBaseFire : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_flScale; // 0x4c0	
+	float m_flScale; // 0x4e0	
 	// MNetworkEnable
-	float m_flStartScale; // 0x4c4	
+	float m_flStartScale; // 0x4e4	
 	// MNetworkEnable
-	float m_flScaleTime; // 0x4c8	
+	float m_flScaleTime; // 0x4e8	
 	// MNetworkEnable
-	uint32_t m_nFlags; // 0x4cc	
+	uint32_t m_nFlags; // 0x4ec	
 };
 

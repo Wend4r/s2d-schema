@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x970
+// Size: 0x9b0
 // Has VTable
 // 
 // MNetworkVarNames "char m_messageText"
@@ -22,30 +22,30 @@ class CPointWorldText : public CModelPointEntity
 {
 public:
 	// MNetworkEnable
-	char m_messageText[512]; // 0x710	
+	char m_messageText[512]; // 0x750	
 	// MNetworkEnable
-	char m_FontName[64]; // 0x910	
+	char m_FontName[64]; // 0x950	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x950	
+	bool m_bEnabled; // 0x990	
 	// MNetworkEnable
-	bool m_bFullbright; // 0x951	
+	bool m_bFullbright; // 0x991	
 private:
-	[[maybe_unused]] uint8_t __pad0952[0x2]; // 0x952
+	[[maybe_unused]] uint8_t __pad0992[0x2]; // 0x992
 public:
 	// MNetworkEnable
-	float m_flWorldUnitsPerPx; // 0x954	
+	float m_flWorldUnitsPerPx; // 0x994	
 	// MNetworkEnable
-	float m_flFontSize; // 0x958	
+	float m_flFontSize; // 0x998	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0x95c	
+	float m_flDepthOffset; // 0x99c	
 	// MNetworkEnable
-	Color m_Color; // 0x960	
+	Color m_Color; // 0x9a0	
 	// MNetworkEnable
-	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0x964	
+	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0x9a4	
 	// MNetworkEnable
-	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0x968	
+	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0x9a8	
 	// MNetworkEnable
-	PointWorldTextReorientMode_t m_nReorientMode; // 0x96c	
+	PointWorldTextReorientMode_t m_nReorientMode; // 0x9ac	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

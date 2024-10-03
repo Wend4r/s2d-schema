@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x90
+// Size: 0xa0
 // 
 // MPropertyElementNameFn
 struct CompositeMaterial_t
@@ -25,9 +25,9 @@ public:
 	// MPropertyAttributeEditor "CompositeMaterialKVInspector"
 	KeyValues3 m_FinalKVs; // 0x58	
 private:
-	[[maybe_unused]] uint8_t __pad0068[0x8]; // 0x68
+	[[maybe_unused]] uint8_t __pad0068[0x18]; // 0x68
 public:
 	// MPropertyFriendlyName "Generated Textures"
-	CUtlVector< GeneratedTextureHandle_t > m_vecGeneratedTextures; // 0x70	
+	CUtlVector< GeneratedTextureHandle_t > m_vecGeneratedTextures; // 0x80	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4d8
+// Size: 0x4f8
 // Has VTable
 // 
 // MNetworkVarNames "int32 m_nFlameModelIndex"
@@ -13,8 +13,8 @@ class CFireSmoke : public CBaseFire
 {
 public:
 	// MNetworkEnable
-	int32_t m_nFlameModelIndex; // 0x4d0	
+	int32_t m_nFlameModelIndex; // 0x4f0	
 	// MNetworkEnable
-	int32_t m_nFlameFromAboveModelIndex; // 0x4d4	
+	int32_t m_nFlameFromAboveModelIndex; // 0x4f4	
 };
 

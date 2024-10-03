@@ -9,6 +9,7 @@ struct CPulse_ResumePoint;
 // Has VTable
 // 
 // MGetKV3ClassDefaults
+// MPulseEditorIsControlFlowNode
 class CPulseCell_WaitForCursorsWithTagBase : public CPulseCell_BaseYieldingInflow
 {
 public:

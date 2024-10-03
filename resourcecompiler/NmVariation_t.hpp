@@ -16,5 +16,6 @@ public:
 	
 	// Static fields:
 	static CGlobalSymbol &Get_s_defaultVariationID(){return *reinterpret_cast<CGlobalSymbol*>(interfaces::g_schema->FindTypeScopeForModule("resourcecompiler.dll")->FindDeclaredClass("NmVariation_t")->m_static_fields[0]->m_instance);};
+	static char* &Get_s_delimiter(){return *reinterpret_cast<char**>(interfaces::g_schema->FindTypeScopeForModule("resourcecompiler.dll")->FindDeclaredClass("NmVariation_t")->m_static_fields[1]->m_instance);};
 };
 

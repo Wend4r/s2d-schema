@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x8e0
+// Size: 0x920
 // Has VTable
 class CTriggerTripWire : public CBaseTrigger
 {

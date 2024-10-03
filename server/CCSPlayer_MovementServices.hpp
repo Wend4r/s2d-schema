@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4f8
+// Size: 0x500
 // Has VTable
 // 
 // MNetworkVarNames "float m_flMaxFallVelocity"
@@ -80,40 +80,45 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0489[0x3]; // 0x489
 public:
-	int32_t m_nOldWaterLevel; // 0x48c	
-	float m_flWaterEntryTime; // 0x490	
-	Vector m_vecForward; // 0x494	
-	Vector m_vecLeft; // 0x4a0	
-	Vector m_vecUp; // 0x4ac	
+	float m_flGroundMoveEfficiency; // 0x48c	
+	int32_t m_nOldWaterLevel; // 0x490	
+	float m_flWaterEntryTime; // 0x494	
+	Vector m_vecForward; // 0x498	
+	Vector m_vecLeft; // 0x4a4	
+	Vector m_vecUp; // 0x4b0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x4b8	
-	bool m_bMadeFootstepNoise; // 0x4bc	
+	int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x4bc	
+	bool m_bMadeFootstepNoise; // 0x4c0	
 private:
-	[[maybe_unused]] uint8_t __pad04bd[0x3]; // 0x4bd
+	[[maybe_unused]] uint8_t __pad04c1[0x3]; // 0x4c1
 public:
-	int32_t m_iFootsteps; // 0x4c0	
+	int32_t m_iFootsteps; // 0x4c4	
 	// MNetworkEnable
-	bool m_bOldJumpPressed; // 0x4c4	
+	bool m_bOldJumpPressed; // 0x4c8	
 private:
-	[[maybe_unused]] uint8_t __pad04c5[0x3]; // 0x4c5
+	[[maybe_unused]] uint8_t __pad04c9[0x3]; // 0x4c9
 public:
-	float m_flJumpPressedTime; // 0x4c8	
+	float m_flJumpPressedTime; // 0x4cc	
 	// MNetworkEnable
-	float m_flJumpUntil; // 0x4cc	
+	float m_flJumpUntil; // 0x4d0	
 	// MNetworkEnable
-	float m_flJumpVel; // 0x4d0	
+	float m_flJumpVel; // 0x4d4	
 	// MNetworkEnable
-	GameTime_t m_fStashGrenadeParameterWhen; // 0x4d4	
+	GameTime_t m_fStashGrenadeParameterWhen; // 0x4d8	
+private:
+	[[maybe_unused]] uint8_t __pad04dc[0x4]; // 0x4dc
+public:
 	// MNetworkEnable
-	uint64_t m_nButtonDownMaskPrev; // 0x4d8	
+	uint64_t m_nButtonDownMaskPrev; // 0x4e0	
 	// MNetworkEnable
-	float m_flOffsetTickCompleteTime; // 0x4e0	
+	float m_flOffsetTickCompleteTime; // 0x4e8	
 	// MNetworkEnable
-	float m_flOffsetTickStashedSpeed; // 0x4e4	
+	float m_flOffsetTickStashedSpeed; // 0x4ec	
 	// MNetworkEnable
-	float m_flStamina; // 0x4e8	
-	float m_flHeightAtJumpStart; // 0x4ec	
-	float m_flMaxJumpHeightThisJump; // 0x4f0	
+	float m_flStamina; // 0x4f0	
+	float m_flHeightAtJumpStart; // 0x4f4	
+	float m_flMaxJumpHeightThisJump; // 0x4f8	
+	float m_flMaxJumpHeightLastJump; // 0x4fc	
 };
 
