@@ -4,15 +4,15 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x98
+// Size: 0xe0
 // Has VTable
 class CChicken_GraphController : public CAnimGraphControllerBase
 {
 public:
-	CAnimGraphParamRef< char* > m_paramActivity; // 0x18	
-	CAnimGraphParamRef< bool > m_paramEndActivityImmediately; // 0x40	
-	CAnimGraphTagRef m_sActivityFinished; // 0x60	
-	CAnimGraphParamRef< float32 > m_paramTurnAngle; // 0x78	
+	CAnimGraphParamRef< char* > m_paramActivity; // 0x60	
+	CAnimGraphParamRef< bool > m_paramEndActivityImmediately; // 0x88	
+	CAnimGraphTagRef m_sActivityFinished; // 0xa8	
+	CAnimGraphParamRef< float32 > m_paramTurnAngle; // 0xc0	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CChicken_GraphController")->m_static_fields[0]->m_instance);};

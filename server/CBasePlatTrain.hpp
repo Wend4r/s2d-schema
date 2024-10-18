@@ -4,22 +4,22 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7f8
+// Size: 0x838
 // Has VTable
 class CBasePlatTrain : public CBaseToggle
 {
 public:
-	CUtlSymbolLarge m_NoiseMoving; // 0x7d0	
-	CUtlSymbolLarge m_NoiseArrived; // 0x7d8	
+	CUtlSymbolLarge m_NoiseMoving; // 0x810	
+	CUtlSymbolLarge m_NoiseArrived; // 0x818	
 private:
-	[[maybe_unused]] uint8_t __pad07e0[0x8]; // 0x7e0
+	[[maybe_unused]] uint8_t __pad0820[0x8]; // 0x820
 public:
-	float m_volume; // 0x7e8	
-	float m_flTWidth; // 0x7ec	
-	float m_flTLength; // 0x7f0	
+	float m_volume; // 0x828	
+	float m_flTWidth; // 0x82c	
+	float m_flTLength; // 0x830	
 	
 	// Datamap fields:
-	// void m_pMovementSound; // 0x7e0
+	// void m_pMovementSound; // 0x820
 	// float rotation; // 0x7fffffff
 };
 

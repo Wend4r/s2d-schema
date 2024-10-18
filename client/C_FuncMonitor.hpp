@@ -19,23 +19,23 @@ class C_FuncMonitor : public C_FuncBrush
 {
 public:
 	// MNetworkEnable
-	CUtlString m_targetCamera; // 0xd20	
+	CUtlString m_targetCamera; // 0xd28	
 	// MNetworkEnable
-	int32_t m_nResolutionEnum; // 0xd28	
+	int32_t m_nResolutionEnum; // 0xd30	
 	// MNetworkEnable
-	bool m_bRenderShadows; // 0xd2c	
+	bool m_bRenderShadows; // 0xd34	
 	// MNetworkEnable
-	bool m_bUseUniqueColorTarget; // 0xd2d	
+	bool m_bUseUniqueColorTarget; // 0xd35	
 private:
-	[[maybe_unused]] uint8_t __pad0d2e[0x2]; // 0xd2e
+	[[maybe_unused]] uint8_t __pad0d36[0x2]; // 0xd36
 public:
 	// MNetworkEnable
-	CUtlString m_brushModelName; // 0xd30	
+	CUtlString m_brushModelName; // 0xd38	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTargetCamera; // 0xd38	
+	CHandle< C_BaseEntity > m_hTargetCamera; // 0xd40	
 	// MNetworkEnable
-	bool m_bEnabled; // 0xd3c	
+	bool m_bEnabled; // 0xd44	
 	// MNetworkEnable
-	bool m_bDraw3DSkybox; // 0xd3d	
+	bool m_bDraw3DSkybox; // 0xd45	
 };
 

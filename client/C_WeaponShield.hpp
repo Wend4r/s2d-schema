@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0x1b30
+// Size: 0x1b40
 // Has VTable
 // 
 // MNetworkVarNames "float m_flDisplayHealth"
@@ -12,6 +12,6 @@ class C_WeaponShield : public C_CSWeaponBaseGun
 {
 public:
 	// MNetworkEnable
-	float m_flDisplayHealth; // 0x1b20	
+	float m_flDisplayHealth; // 0x1b30	
 };
 

@@ -15,7 +15,7 @@ struct sky3dparams_t;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1340
+// Size: 0x1348
 // Has VTable
 // 
 // MNetworkUserGroupProxy "C_BasePlayerPawn"
@@ -54,63 +54,63 @@ class C_BasePlayerPawn : public C_BaseCombatCharacter
 {
 public:
 	// MNetworkEnable
-	CPlayer_WeaponServices* m_pWeaponServices; // 0x11a0	
+	CPlayer_WeaponServices* m_pWeaponServices; // 0x11a8	
 	// MNetworkEnable
-	CPlayer_ItemServices* m_pItemServices; // 0x11a8	
+	CPlayer_ItemServices* m_pItemServices; // 0x11b0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	CPlayer_AutoaimServices* m_pAutoaimServices; // 0x11b0	
+	CPlayer_AutoaimServices* m_pAutoaimServices; // 0x11b8	
 	// MNetworkEnable
-	CPlayer_ObserverServices* m_pObserverServices; // 0x11b8	
+	CPlayer_ObserverServices* m_pObserverServices; // 0x11c0	
 	// MNetworkEnable
-	CPlayer_WaterServices* m_pWaterServices; // 0x11c0	
+	CPlayer_WaterServices* m_pWaterServices; // 0x11c8	
 	// MNetworkEnable
-	CPlayer_UseServices* m_pUseServices; // 0x11c8	
+	CPlayer_UseServices* m_pUseServices; // 0x11d0	
 	// MNetworkEnable
-	CPlayer_FlashlightServices* m_pFlashlightServices; // 0x11d0	
+	CPlayer_FlashlightServices* m_pFlashlightServices; // 0x11d8	
 	// MNetworkEnable
-	CPlayer_CameraServices* m_pCameraServices; // 0x11d8	
+	CPlayer_CameraServices* m_pCameraServices; // 0x11e0	
 	// MNetworkEnable
-	CPlayer_MovementServices* m_pMovementServices; // 0x11e0	
+	CPlayer_MovementServices* m_pMovementServices; // 0x11e8	
 private:
-	[[maybe_unused]] uint8_t __pad11e8[0x8]; // 0x11e8
+	[[maybe_unused]] uint8_t __pad11f0[0x8]; // 0x11f0
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	C_UtlVectorEmbeddedNetworkVar< ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0x11f0	
-	uint32_t m_nHighestConsumedServerViewAngleChangeIndex; // 0x1240	
-	QAngle v_angle; // 0x1244	
-	QAngle v_anglePrevious; // 0x1250	
+	C_UtlVectorEmbeddedNetworkVar< ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0x11f8	
+	uint32_t m_nHighestConsumedServerViewAngleChangeIndex; // 0x1248	
+	QAngle v_angle; // 0x124c	
+	QAngle v_anglePrevious; // 0x1258	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	uint32_t m_iHideHUD; // 0x125c	
+	uint32_t m_iHideHUD; // 0x1264	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	// -> scale - 0x1268
-	// -> origin - 0x126c
-	// -> bClip3DSkyBoxNearToWorldFar - 0x1278
-	// -> flClip3DSkyBoxNearToWorldFarOffset - 0x127c
-	// -> fog - 0x1280
-	// -> m_nWorldGroupID - 0x12e8
-	sky3dparams_t m_skybox3d; // 0x1260	
+	// -> scale - 0x1270
+	// -> origin - 0x1274
+	// -> bClip3DSkyBoxNearToWorldFar - 0x1280
+	// -> flClip3DSkyBoxNearToWorldFarOffset - 0x1284
+	// -> fog - 0x1288
+	// -> m_nWorldGroupID - 0x12f0
+	sky3dparams_t m_skybox3d; // 0x1268	
 	// MNetworkEnable
-	GameTime_t m_flDeathTime; // 0x12f0	
-	Vector m_vecPredictionError; // 0x12f4	
-	GameTime_t m_flPredictionErrorTime; // 0x1300	
-	Vector m_vecLastCameraSetupLocalOrigin; // 0x1304	
-	GameTime_t m_flLastCameraSetupTime; // 0x1310	
-	float m_flFOVSensitivityAdjust; // 0x1314	
-	float m_flMouseSensitivity; // 0x1318	
-	Vector m_vOldOrigin; // 0x131c	
-	float m_flOldSimulationTime; // 0x1328	
-	int32_t m_nLastExecutedCommandNumber; // 0x132c	
-	int32_t m_nLastExecutedCommandTick; // 0x1330	
+	GameTime_t m_flDeathTime; // 0x12f8	
+	Vector m_vecPredictionError; // 0x12fc	
+	GameTime_t m_flPredictionErrorTime; // 0x1308	
+	Vector m_vecLastCameraSetupLocalOrigin; // 0x130c	
+	GameTime_t m_flLastCameraSetupTime; // 0x1318	
+	float m_flFOVSensitivityAdjust; // 0x131c	
+	float m_flMouseSensitivity; // 0x1320	
+	Vector m_vOldOrigin; // 0x1324	
+	float m_flOldSimulationTime; // 0x1330	
+	int32_t m_nLastExecutedCommandNumber; // 0x1334	
+	int32_t m_nLastExecutedCommandTick; // 0x1338	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnControllerChanged"
-	CHandle< CBasePlayerController > m_hController; // 0x1334	
-	bool m_bIsSwappingToPredictableController; // 0x1338	
+	CHandle< CBasePlayerController > m_hController; // 0x133c	
+	bool m_bIsSwappingToPredictableController; // 0x1340	
 	
 	// Datamap fields:
-	// void m_hPawnListEntry; // 0x133a
+	// void m_hPawnListEntry; // 0x1342
 };
 

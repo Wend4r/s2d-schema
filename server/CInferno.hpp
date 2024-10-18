@@ -7,7 +7,7 @@ struct CountdownTimer;
 struct IntervalTimer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x13d8
+// Size: 0x1418
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_firePositions"
@@ -22,51 +22,51 @@ struct IntervalTimer;
 class CInferno : public CBaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0750[0x10]; // 0x750
+	[[maybe_unused]] uint8_t __pad0790[0x10]; // 0x790
 public:
 	// MNetworkEnable
-	Vector m_firePositions[64]; // 0x760	
+	Vector m_firePositions[64]; // 0x7a0	
 	// MNetworkEnable
-	Vector m_fireParentPositions[64]; // 0xa60	
+	Vector m_fireParentPositions[64]; // 0xaa0	
 	// MNetworkEnable
-	bool m_bFireIsBurning[64]; // 0xd60	
+	bool m_bFireIsBurning[64]; // 0xda0	
 	// MNetworkEnable
-	Vector m_BurnNormal[64]; // 0xda0	
+	Vector m_BurnNormal[64]; // 0xde0	
 	// MNetworkEnable
-	int32_t m_fireCount; // 0x10a0	
+	int32_t m_fireCount; // 0x10e0	
 	// MNetworkEnable
-	int32_t m_nInfernoType; // 0x10a4	
+	int32_t m_nInfernoType; // 0x10e4	
 	// MNetworkEnable
-	int32_t m_nFireEffectTickBegin; // 0x10a8	
+	int32_t m_nFireEffectTickBegin; // 0x10e8	
 	// MNetworkEnable
-	float m_nFireLifetime; // 0x10ac	
+	float m_nFireLifetime; // 0x10ec	
 	// MNetworkEnable
-	bool m_bInPostEffectTime; // 0x10b0	
+	bool m_bInPostEffectTime; // 0x10f0	
 private:
-	[[maybe_unused]] uint8_t __pad10b1[0x3]; // 0x10b1
+	[[maybe_unused]] uint8_t __pad10f1[0x3]; // 0x10f1
 public:
-	int32_t m_nFiresExtinguishCount; // 0x10b4	
-	bool m_bWasCreatedInSmoke; // 0x10b8	
+	int32_t m_nFiresExtinguishCount; // 0x10f4	
+	bool m_bWasCreatedInSmoke; // 0x10f8	
 private:
-	[[maybe_unused]] uint8_t __pad10b9[0x207]; // 0x10b9
+	[[maybe_unused]] uint8_t __pad10f9[0x207]; // 0x10f9
 public:
-	Extent m_extent; // 0x12c0	
-	CountdownTimer m_damageTimer; // 0x12d8	
-	CountdownTimer m_damageRampTimer; // 0x12f0	
-	Vector m_splashVelocity; // 0x1308	
-	Vector m_InitialSplashVelocity; // 0x1314	
-	Vector m_startPos; // 0x1320	
-	Vector m_vecOriginalSpawnLocation; // 0x132c	
-	IntervalTimer m_activeTimer; // 0x1338	
-	int32_t m_fireSpawnOffset; // 0x1348	
-	int32_t m_nMaxFlames; // 0x134c	
-	int32_t m_nSpreadCount; // 0x1350	
+	Extent m_extent; // 0x1300	
+	CountdownTimer m_damageTimer; // 0x1318	
+	CountdownTimer m_damageRampTimer; // 0x1330	
+	Vector m_splashVelocity; // 0x1348	
+	Vector m_InitialSplashVelocity; // 0x1354	
+	Vector m_startPos; // 0x1360	
+	Vector m_vecOriginalSpawnLocation; // 0x136c	
+	IntervalTimer m_activeTimer; // 0x1378	
+	int32_t m_fireSpawnOffset; // 0x1388	
+	int32_t m_nMaxFlames; // 0x138c	
+	int32_t m_nSpreadCount; // 0x1390	
 private:
-	[[maybe_unused]] uint8_t __pad1354[0x4]; // 0x1354
+	[[maybe_unused]] uint8_t __pad1394[0x4]; // 0x1394
 public:
-	CountdownTimer m_BookkeepingTimer; // 0x1358	
-	CountdownTimer m_NextSpreadTimer; // 0x1370	
-	uint16_t m_nSourceItemDefIndex; // 0x1388	
+	CountdownTimer m_BookkeepingTimer; // 0x1398	
+	CountdownTimer m_NextSpreadTimer; // 0x13b0	
+	uint16_t m_nSourceItemDefIndex; // 0x13c8	
 	
 	// Static fields:
 	static float &Get_InfernoFire_Radius(){return *reinterpret_cast<float*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CInferno")->m_static_fields[0]->m_instance);};

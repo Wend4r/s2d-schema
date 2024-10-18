@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0x1b40
+// Size: 0x1b50
 // Has VTable
 class C_SensorGrenade : public C_BaseCSGrenade
 {

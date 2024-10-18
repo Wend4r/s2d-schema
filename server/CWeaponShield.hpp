@@ -5,16 +5,16 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf40
+// Size: 0xf88
 // Has VTable
 // 
 // MNetworkVarNames "float m_flDisplayHealth"
 class CWeaponShield : public CCSWeaponBaseGun
 {
 public:
-	float m_flBulletDamageAbsorbed; // 0xf30	
-	GameTime_t m_flLastBulletHitSoundTime; // 0xf34	
+	float m_flBulletDamageAbsorbed; // 0xf78	
+	GameTime_t m_flLastBulletHitSoundTime; // 0xf7c	
 	// MNetworkEnable
-	float m_flDisplayHealth; // 0xf38	
+	float m_flDisplayHealth; // 0xf80	
 };
 

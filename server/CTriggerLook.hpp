@@ -6,31 +6,31 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9e0
+// Size: 0xa20
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bTestOcclusion"
 class CTriggerLook : public CTriggerOnce
 {
 public:
-	CHandle< CBaseEntity > m_hLookTarget; // 0x948	
-	float m_flFieldOfView; // 0x94c	
-	float m_flLookTime; // 0x950	
-	float m_flLookTimeTotal; // 0x954	
-	GameTime_t m_flLookTimeLast; // 0x958	
-	float m_flTimeoutDuration; // 0x95c	
-	bool m_bTimeoutFired; // 0x960	
-	bool m_bIsLooking; // 0x961	
-	bool m_b2DFOV; // 0x962	
-	bool m_bUseVelocity; // 0x963	
+	CHandle< CBaseEntity > m_hLookTarget; // 0x988	
+	float m_flFieldOfView; // 0x98c	
+	float m_flLookTime; // 0x990	
+	float m_flLookTimeTotal; // 0x994	
+	GameTime_t m_flLookTimeLast; // 0x998	
+	float m_flTimeoutDuration; // 0x99c	
+	bool m_bTimeoutFired; // 0x9a0	
+	bool m_bIsLooking; // 0x9a1	
+	bool m_b2DFOV; // 0x9a2	
+	bool m_bUseVelocity; // 0x9a3	
 	// MNetworkEnable
-	bool m_bTestOcclusion; // 0x964	
+	bool m_bTestOcclusion; // 0x9a4	
 private:
-	[[maybe_unused]] uint8_t __pad0965[0x3]; // 0x965
+	[[maybe_unused]] uint8_t __pad09a5[0x3]; // 0x9a5
 public:
-	CEntityIOOutput m_OnTimeout; // 0x968	
-	CEntityIOOutput m_OnStartLook; // 0x990	
-	CEntityIOOutput m_OnEndLook; // 0x9b8	
+	CEntityIOOutput m_OnTimeout; // 0x9a8	
+	CEntityIOOutput m_OnStartLook; // 0x9d0	
+	CEntityIOOutput m_OnEndLook; // 0x9f8	
 	
 	// Datamap fields:
 	// void CTriggerLookTimeoutThink; // 0x0

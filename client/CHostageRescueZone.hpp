@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd30
+// Size: 0xd38
 // Has VTable
 class CHostageRescueZone : public CHostageRescueZoneShim
 {

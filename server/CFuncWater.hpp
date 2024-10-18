@@ -5,11 +5,11 @@
 struct CBuoyancyHelper;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7d0
+// Size: 0x810
 // Has VTable
 class CFuncWater : public CBaseModelEntity
 {
 public:
-	CBuoyancyHelper m_BuoyancyHelper; // 0x750	
+	CBuoyancyHelper m_BuoyancyHelper; // 0x790	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xdb0
+// Size: 0xdf0
 // Has VTable
 // 
 // MNetworkVarTypeOverride "CCSObserver_ObserverServices m_pObserverServices"
@@ -21,10 +21,10 @@ class CCSObserverPawn : public CCSPlayerPawnBase
 {
 public:
 	// Datamap fields:
-	// CCSObserver_ObserverServices m_pObserverServices; // 0xa98
-	// CCSObserver_MovementServices m_pMovementServices; // 0xac0
-	// CCSObserver_UseServices m_pUseServices; // 0xaa8
-	// CCSObserver_ViewModelServices m_pViewModelServices; // 0xc80
-	// CCSObserver_CameraServices m_pCameraServices; // 0xab8
+	// CCSObserver_ObserverServices m_pObserverServices; // 0xad8
+	// CCSObserver_MovementServices m_pMovementServices; // 0xb00
+	// CCSObserver_UseServices m_pUseServices; // 0xae8
+	// CCSObserver_ViewModelServices m_pViewModelServices; // 0xcc0
+	// CCSObserver_CameraServices m_pCameraServices; // 0xaf8
 };
 

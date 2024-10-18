@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1200
+// Size: 0x1208
 // Has VTable
 class C_HEGrenadeProjectile : public C_BaseCSGrenadeProjectile
 {

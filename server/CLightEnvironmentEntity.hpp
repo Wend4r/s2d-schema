@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x758
+// Size: 0x798
 // Has VTable
 class CLightEnvironmentEntity : public CLightDirectionalEntity
 {

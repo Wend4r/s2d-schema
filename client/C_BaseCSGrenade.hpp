@@ -6,7 +6,7 @@ struct GameTime_t;
 struct GameTick_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1b40
+// Size: 0x1b50
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bRedraw"
@@ -26,42 +26,42 @@ struct GameTick_t;
 class C_BaseCSGrenade : public C_CSWeaponBase
 {
 public:
-	bool m_bClientPredictDelete; // 0x1b00	
+	bool m_bClientPredictDelete; // 0x1b10	
 	// MNetworkEnable
-	bool m_bRedraw; // 0x1b01	
-	// MNetworkEnable
-	// MNetworkChangeCallback "OnGrenadeStateChanged"
-	bool m_bIsHeldByPlayer; // 0x1b02	
+	bool m_bRedraw; // 0x1b11	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnGrenadeStateChanged"
-	bool m_bPinPulled; // 0x1b03	
+	bool m_bIsHeldByPlayer; // 0x1b12	
 	// MNetworkEnable
-	bool m_bJumpThrow; // 0x1b04	
+	// MNetworkChangeCallback "OnGrenadeStateChanged"
+	bool m_bPinPulled; // 0x1b13	
 	// MNetworkEnable
-	bool m_bThrowAnimating; // 0x1b05	
+	bool m_bJumpThrow; // 0x1b14	
+	// MNetworkEnable
+	bool m_bThrowAnimating; // 0x1b15	
 private:
-	[[maybe_unused]] uint8_t __pad1b06[0x2]; // 0x1b06
+	[[maybe_unused]] uint8_t __pad1b16[0x2]; // 0x1b16
 public:
 	// MNetworkEnable
-	GameTime_t m_fThrowTime; // 0x1b08	
+	GameTime_t m_fThrowTime; // 0x1b18	
 	// MNetworkEnable
-	float m_flThrowStrength; // 0x1b0c	
+	float m_flThrowStrength; // 0x1b1c	
 	// MNetworkEnable
-	float m_flThrowStrengthApproach; // 0x1b10	
+	float m_flThrowStrengthApproach; // 0x1b20	
 	// MNetworkEnable
-	GameTime_t m_fDropTime; // 0x1b14	
+	GameTime_t m_fDropTime; // 0x1b24	
 	// MNetworkEnable
-	GameTime_t m_fPinPullTime; // 0x1b18	
+	GameTime_t m_fPinPullTime; // 0x1b28	
 	// MNetworkEnable
-	bool m_bJustPulledPin; // 0x1b1c	
+	bool m_bJustPulledPin; // 0x1b2c	
 private:
-	[[maybe_unused]] uint8_t __pad1b1d[0x3]; // 0x1b1d
+	[[maybe_unused]] uint8_t __pad1b2d[0x3]; // 0x1b2d
 public:
 	// MNetworkEnable
-	GameTick_t m_nNextHoldTick; // 0x1b20	
+	GameTick_t m_nNextHoldTick; // 0x1b30	
 	// MNetworkEnable
-	float m_flNextHoldFrac; // 0x1b24	
+	float m_flNextHoldFrac; // 0x1b34	
 	// MNetworkEnable
-	CHandle< C_CSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0x1b28	
+	CHandle< C_CSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0x1b38	
 };
 

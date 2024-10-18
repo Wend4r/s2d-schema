@@ -5,7 +5,7 @@
 struct CPlayerSprayDecalRenderHelper;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe30
+// Size: 0xe38
 // Has VTable
 // 
 // MNetworkVarNames "int m_nUniqueID"
@@ -27,38 +27,38 @@ class C_PlayerSprayDecal : public C_ModelPointEntity
 {
 public:
 	// MNetworkEnable
-	int32_t m_nUniqueID; // 0xd20	
+	int32_t m_nUniqueID; // 0xd28	
 	// MNetworkEnable
-	uint32_t m_unAccountID; // 0xd24	
+	uint32_t m_unAccountID; // 0xd2c	
 	// MNetworkEnable
-	uint32_t m_unTraceID; // 0xd28	
+	uint32_t m_unTraceID; // 0xd30	
 	// MNetworkEnable
-	uint32_t m_rtGcTime; // 0xd2c	
+	uint32_t m_rtGcTime; // 0xd34	
 	// MNetworkEnable
-	Vector m_vecEndPos; // 0xd30	
+	Vector m_vecEndPos; // 0xd38	
 	// MNetworkEnable
-	Vector m_vecStart; // 0xd3c	
+	Vector m_vecStart; // 0xd44	
 	// MNetworkEnable
-	Vector m_vecLeft; // 0xd48	
+	Vector m_vecLeft; // 0xd50	
 	// MNetworkEnable
-	Vector m_vecNormal; // 0xd54	
+	Vector m_vecNormal; // 0xd5c	
 	// MNetworkEnable
-	int32_t m_nPlayer; // 0xd60	
+	int32_t m_nPlayer; // 0xd68	
 	// MNetworkEnable
-	int32_t m_nEntity; // 0xd64	
+	int32_t m_nEntity; // 0xd6c	
 	// MNetworkEnable
-	int32_t m_nHitbox; // 0xd68	
+	int32_t m_nHitbox; // 0xd70	
 	// MNetworkEnable
-	float m_flCreationTime; // 0xd6c	
+	float m_flCreationTime; // 0xd74	
 	// MNetworkEnable
-	int32_t m_nTintID; // 0xd70	
+	int32_t m_nTintID; // 0xd78	
 	// MNetworkEnable
-	uint8_t m_nVersion; // 0xd74	
+	uint8_t m_nVersion; // 0xd7c	
 	// MNetworkEnable
-	uint8_t m_ubSignature[128]; // 0xd75	
+	uint8_t m_ubSignature[128]; // 0xd7d	
 private:
-	[[maybe_unused]] uint8_t __pad0df5[0xb]; // 0xdf5
+	[[maybe_unused]] uint8_t __pad0dfd[0xb]; // 0xdfd
 public:
-	CPlayerSprayDecalRenderHelper m_SprayRenderHelper; // 0xe00	
+	CPlayerSprayDecalRenderHelper m_SprayRenderHelper; // 0xe08	
 };
 

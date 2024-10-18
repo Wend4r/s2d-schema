@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x970
+// Size: 0x9b0
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -27,42 +27,42 @@
 class CPostProcessingVolume : public CBaseTrigger
 {
 private:
-	[[maybe_unused]] uint8_t __pad0920[0x10]; // 0x920
+	[[maybe_unused]] uint8_t __pad0960[0x10]; // 0x960
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x930	
+	CStrongHandle< InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x970	
 	// MNetworkEnable
-	float m_flFadeDuration; // 0x938	
+	float m_flFadeDuration; // 0x978	
 	// MNetworkEnable
-	float m_flMinLogExposure; // 0x93c	
+	float m_flMinLogExposure; // 0x97c	
 	// MNetworkEnable
-	float m_flMaxLogExposure; // 0x940	
+	float m_flMaxLogExposure; // 0x980	
 	// MNetworkEnable
-	float m_flMinExposure; // 0x944	
+	float m_flMinExposure; // 0x984	
 	// MNetworkEnable
-	float m_flMaxExposure; // 0x948	
+	float m_flMaxExposure; // 0x988	
 	// MNetworkEnable
-	float m_flExposureCompensation; // 0x94c	
+	float m_flExposureCompensation; // 0x98c	
 	// MNetworkEnable
-	float m_flExposureFadeSpeedUp; // 0x950	
+	float m_flExposureFadeSpeedUp; // 0x990	
 	// MNetworkEnable
-	float m_flExposureFadeSpeedDown; // 0x954	
+	float m_flExposureFadeSpeedDown; // 0x994	
 	// MNetworkEnable
-	float m_flTonemapEVSmoothingRange; // 0x958	
+	float m_flTonemapEVSmoothingRange; // 0x998	
 	// MNetworkEnable
-	bool m_bMaster; // 0x95c	
+	bool m_bMaster; // 0x99c	
 	// MNetworkEnable
-	bool m_bExposureControl; // 0x95d	
+	bool m_bExposureControl; // 0x99d	
 private:
-	[[maybe_unused]] uint8_t __pad095e[0x2]; // 0x95e
+	[[maybe_unused]] uint8_t __pad099e[0x2]; // 0x99e
 public:
 	// MNetworkEnable
-	float m_flRate; // 0x960	
+	float m_flRate; // 0x9a0	
 	// MNetworkEnable
-	float m_flTonemapPercentTarget; // 0x964	
+	float m_flTonemapPercentTarget; // 0x9a4	
 	// MNetworkEnable
-	float m_flTonemapPercentBrightPixels; // 0x968	
+	float m_flTonemapPercentBrightPixels; // 0x9a8	
 	// MNetworkEnable
-	float m_flTonemapMinAvgLum; // 0x96c	
+	float m_flTonemapMinAvgLum; // 0x9ac	
 };
 

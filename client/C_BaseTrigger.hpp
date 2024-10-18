@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd28
+// Size: 0xd30
 // Has VTable
 // 
 // MNetworkIncludeByName "m_spawnflags"
@@ -14,8 +14,8 @@ class C_BaseTrigger : public C_BaseToggle
 {
 public:
 	// MNetworkEnable
-	bool m_bDisabled; // 0xd20	
+	bool m_bDisabled; // 0xd28	
 	// MNetworkEnable
-	bool m_bClientSidePredicted; // 0xd21	
+	bool m_bClientSidePredicted; // 0xd29	
 };
 

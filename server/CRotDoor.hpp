@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9e0
+// Size: 0xa20
 // Has VTable
 class CRotDoor : public CBaseDoor
 {
 public:
-	bool m_bSolidBsp; // 0x9d8	
+	bool m_bSolidBsp; // 0xa18	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd30
+// Size: 0xd38
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< C_BaseModelEntity> m_glowEntity"
@@ -14,13 +14,13 @@ class C_BaseButton : public C_BaseToggle
 {
 public:
 	// MNetworkEnable
-	CHandle< C_BaseModelEntity > m_glowEntity; // 0xd20	
+	CHandle< C_BaseModelEntity > m_glowEntity; // 0xd28	
 	// MNetworkEnable
-	bool m_usable; // 0xd24	
+	bool m_usable; // 0xd2c	
 private:
-	[[maybe_unused]] uint8_t __pad0d25[0x3]; // 0xd25
+	[[maybe_unused]] uint8_t __pad0d2d[0x3]; // 0xd2d
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_szDisplayText; // 0xd28	
+	CUtlSymbolLarge m_szDisplayText; // 0xd30	
 };
 

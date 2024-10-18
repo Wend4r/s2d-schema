@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc10
+// Size: 0xc58
 // Has VTable
 class CDynamicPropAlias_cable_dynamic : public CDynamicProp
 {

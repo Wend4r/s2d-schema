@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x920
+// Size: 0x960
 // Has VTable
 // 
 // MNetworkIncludeByName "m_spawnflags"
@@ -15,25 +15,25 @@ class CBaseTrigger : public CBaseToggle
 {
 public:
 	// MNetworkEnable
-	bool m_bDisabled; // 0x7d0	
+	bool m_bDisabled; // 0x810	
 private:
-	[[maybe_unused]] uint8_t __pad07d1[0x7]; // 0x7d1
+	[[maybe_unused]] uint8_t __pad0811[0x7]; // 0x811
 public:
-	CUtlSymbolLarge m_iFilterName; // 0x7d8	
-	CHandle< CBaseFilter > m_hFilter; // 0x7e0	
+	CUtlSymbolLarge m_iFilterName; // 0x818	
+	CHandle< CBaseFilter > m_hFilter; // 0x820	
 private:
-	[[maybe_unused]] uint8_t __pad07e4[0x4]; // 0x7e4
+	[[maybe_unused]] uint8_t __pad0824[0x4]; // 0x824
 public:
-	CEntityIOOutput m_OnStartTouch; // 0x7e8	
-	CEntityIOOutput m_OnStartTouchAll; // 0x810	
-	CEntityIOOutput m_OnEndTouch; // 0x838	
-	CEntityIOOutput m_OnEndTouchAll; // 0x860	
-	CEntityIOOutput m_OnTouching; // 0x888	
-	CEntityIOOutput m_OnTouchingEachEntity; // 0x8b0	
-	CEntityIOOutput m_OnNotTouching; // 0x8d8	
-	CUtlVector< CHandle< CBaseEntity > > m_hTouchingEntities; // 0x900	
+	CEntityIOOutput m_OnStartTouch; // 0x828	
+	CEntityIOOutput m_OnStartTouchAll; // 0x850	
+	CEntityIOOutput m_OnEndTouch; // 0x878	
+	CEntityIOOutput m_OnEndTouchAll; // 0x8a0	
+	CEntityIOOutput m_OnTouching; // 0x8c8	
+	CEntityIOOutput m_OnTouchingEachEntity; // 0x8f0	
+	CEntityIOOutput m_OnNotTouching; // 0x918	
+	CUtlVector< CHandle< CBaseEntity > > m_hTouchingEntities; // 0x940	
 	// MNetworkEnable
-	bool m_bClientSidePredicted; // 0x918	
+	bool m_bClientSidePredicted; // 0x958	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

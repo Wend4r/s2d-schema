@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa38
+// Size: 0xa80
 // Has VTable
 class CItemKevlar : public CItem
 {

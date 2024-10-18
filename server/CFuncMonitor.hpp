@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x790
+// Size: 0x7d0
 // Has VTable
 // 
 // MNetworkVarNames "CUtlString m_targetCamera"
@@ -19,25 +19,25 @@ class CFuncMonitor : public CFuncBrush
 {
 public:
 	// MNetworkEnable
-	CUtlString m_targetCamera; // 0x770	
+	CUtlString m_targetCamera; // 0x7b0	
 	// MNetworkEnable
-	int32_t m_nResolutionEnum; // 0x778	
+	int32_t m_nResolutionEnum; // 0x7b8	
 	// MNetworkEnable
-	bool m_bRenderShadows; // 0x77c	
+	bool m_bRenderShadows; // 0x7bc	
 	// MNetworkEnable
-	bool m_bUseUniqueColorTarget; // 0x77d	
+	bool m_bUseUniqueColorTarget; // 0x7bd	
 private:
-	[[maybe_unused]] uint8_t __pad077e[0x2]; // 0x77e
+	[[maybe_unused]] uint8_t __pad07be[0x2]; // 0x7be
 public:
 	// MNetworkEnable
-	CUtlString m_brushModelName; // 0x780	
+	CUtlString m_brushModelName; // 0x7c0	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetCamera; // 0x788	
+	CHandle< CBaseEntity > m_hTargetCamera; // 0x7c8	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x78c	
+	bool m_bEnabled; // 0x7cc	
 	// MNetworkEnable
-	bool m_bDraw3DSkybox; // 0x78d	
-	bool m_bStartEnabled; // 0x78e	
+	bool m_bDraw3DSkybox; // 0x7cd	
+	bool m_bStartEnabled; // 0x7ce	
 	
 	// Datamap fields:
 	// void InputToggle; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa80
+// Size: 0xac0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flInnerAngle"
@@ -15,12 +15,12 @@ class COmniLight : public CBarnLight
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flInnerAngle; // 0xa70	
+	float m_flInnerAngle; // 0xab0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flOuterAngle; // 0xa74	
+	float m_flOuterAngle; // 0xab4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bShowLight; // 0xa78	
+	bool m_bShowLight; // 0xab8	
 };
 

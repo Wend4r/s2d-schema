@@ -18,6 +18,7 @@ private:
 public:
 	int32_t m_iMaxRagdollCount; // 0x4e4	
 	bool m_bSaveImportant; // 0x4e8	
+	bool m_bCanTakeDamage; // 0x4e9	
 	
 	// Datamap fields:
 	// int32_t InputSetMaxRagdollCount; // 0x0

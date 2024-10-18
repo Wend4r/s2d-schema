@@ -5,12 +5,12 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x948
+// Size: 0x988
 // Has VTable
 class CTriggerMultiple : public CBaseTrigger
 {
 public:
-	CEntityIOOutput m_OnTrigger; // 0x920	
+	CEntityIOOutput m_OnTrigger; // 0x960	
 	
 	// Datamap fields:
 	// void CTriggerMultipleMultiTouch; // 0x0

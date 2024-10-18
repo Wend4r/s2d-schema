@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb08
+// Size: 0xb50
 // Has VTable
 class CHEGrenadeProjectile : public CBaseCSGrenadeProjectile
 {

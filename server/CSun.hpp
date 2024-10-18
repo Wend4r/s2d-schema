@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x798
+// Size: 0x7d8
 // Has VTable
 // 
 // MNetworkIncludeByName "m_clrRender"
@@ -26,52 +26,52 @@ class CSun : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	Vector m_vDirection; // 0x750	
+	Vector m_vDirection; // 0x790	
 	// MNetworkEnable
-	Color m_clrOverlay; // 0x75c	
+	Color m_clrOverlay; // 0x79c	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszEffectName; // 0x760	
+	CUtlSymbolLarge m_iszEffectName; // 0x7a0	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszSSEffectName; // 0x768	
+	CUtlSymbolLarge m_iszSSEffectName; // 0x7a8	
 	// MNetworkEnable
-	bool m_bOn; // 0x770	
+	bool m_bOn; // 0x7b0	
 	// MNetworkEnable
-	bool m_bmaxColor; // 0x771	
+	bool m_bmaxColor; // 0x7b1	
 private:
-	[[maybe_unused]] uint8_t __pad0772[0x2]; // 0x772
+	[[maybe_unused]] uint8_t __pad07b2[0x2]; // 0x7b2
 public:
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "100.000000"
-	float m_flSize; // 0x774	
+	float m_flSize; // 0x7b4	
 	// MNetworkEnable
 	// MNetworkMinValue "-360.000000"
 	// MNetworkMaxValue "360.000000"
-	float m_flRotation; // 0x778	
+	float m_flRotation; // 0x7b8	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "100.000000"
-	float m_flHazeScale; // 0x77c	
+	float m_flHazeScale; // 0x7bc	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flAlphaHaze; // 0x780	
+	float m_flAlphaHaze; // 0x7c0	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flAlphaHdr; // 0x784	
+	float m_flAlphaHdr; // 0x7c4	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "2.000000"
-	float m_flAlphaScale; // 0x788	
+	float m_flAlphaScale; // 0x7c8	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "100.000000"
-	float m_flHDRColorScale; // 0x78c	
+	float m_flHDRColorScale; // 0x7cc	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
-	float m_flFarZScale; // 0x790	
+	float m_flFarZScale; // 0x7d0	
 	
 	// Datamap fields:
 	// void InputTurnOn; // 0x0

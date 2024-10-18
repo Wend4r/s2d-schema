@@ -5,7 +5,7 @@
 struct GameTick_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd68
+// Size: 0xd70
 // Has VTable
 // 
 // MNetworkIncludeByName "m_fFlags"
@@ -23,24 +23,24 @@ struct GameTick_t;
 class C_FuncConveyor : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0d20[0x8]; // 0xd20
+	[[maybe_unused]] uint8_t __pad0d28[0x8]; // 0xd28
 public:
 	// MNetworkEnable
-	Vector m_vecMoveDirEntitySpace; // 0xd28	
+	Vector m_vecMoveDirEntitySpace; // 0xd30	
 	// MNetworkEnable
-	float m_flTargetSpeed; // 0xd34	
+	float m_flTargetSpeed; // 0xd3c	
 	// MNetworkEnable
-	GameTick_t m_nTransitionStartTick; // 0xd38	
+	GameTick_t m_nTransitionStartTick; // 0xd40	
 	// MNetworkEnable
-	int32_t m_nTransitionDurationTicks; // 0xd3c	
+	int32_t m_nTransitionDurationTicks; // 0xd44	
 	// MNetworkEnable
-	float m_flTransitionStartSpeed; // 0xd40	
+	float m_flTransitionStartSpeed; // 0xd48	
 private:
-	[[maybe_unused]] uint8_t __pad0d44[0x4]; // 0xd44
+	[[maybe_unused]] uint8_t __pad0d4c[0x4]; // 0xd4c
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_hConveyorModels; // 0xd48	
-	float m_flCurrentConveyorOffset; // 0xd60	
-	float m_flCurrentConveyorSpeed; // 0xd64	
+	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_hConveyorModels; // 0xd50	
+	float m_flCurrentConveyorOffset; // 0xd68	
+	float m_flCurrentConveyorSpeed; // 0xd6c	
 };
 

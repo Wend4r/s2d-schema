@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x858
+// Size: 0x898
 // Has VTable
 class CFuncTrackAuto : public CFuncTrackChange
 {

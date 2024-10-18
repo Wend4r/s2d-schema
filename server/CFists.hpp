@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf28
+// Size: 0xf70
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bPlayingUninterruptableAct"
@@ -13,20 +13,20 @@ class CFists : public CCSWeaponBase
 {
 public:
 	// MNetworkEnable
-	bool m_bPlayingUninterruptableAct; // 0xf10	
+	bool m_bPlayingUninterruptableAct; // 0xf58	
 private:
-	[[maybe_unused]] uint8_t __pad0f11[0x3]; // 0xf11
+	[[maybe_unused]] uint8_t __pad0f59[0x3]; // 0xf59
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnUninterruptChanged"
-	PlayerAnimEvent_t m_nUninterruptableActivity; // 0xf14	
-	bool m_bRestorePrevWep; // 0xf18	
+	PlayerAnimEvent_t m_nUninterruptableActivity; // 0xf5c	
+	bool m_bRestorePrevWep; // 0xf60	
 private:
-	[[maybe_unused]] uint8_t __pad0f19[0x3]; // 0xf19
+	[[maybe_unused]] uint8_t __pad0f61[0x3]; // 0xf61
 public:
-	CHandle< CBasePlayerWeapon > m_hWeaponBeforePrevious; // 0xf1c	
-	CHandle< CBasePlayerWeapon > m_hWeaponPrevious; // 0xf20	
-	bool m_bDelayedHardPunchIncoming; // 0xf24	
-	bool m_bDestroyAfterTaunt; // 0xf25	
+	CHandle< CBasePlayerWeapon > m_hWeaponBeforePrevious; // 0xf64	
+	CHandle< CBasePlayerWeapon > m_hWeaponPrevious; // 0xf68	
+	bool m_bDelayedHardPunchIncoming; // 0xf6c	
+	bool m_bDestroyAfterTaunt; // 0xf6d	
 };
 

@@ -8,7 +8,7 @@ struct CEntityIOOutput;
 struct EntitySpottedState_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd30
+// Size: 0xd78
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bBombTicking"
@@ -29,74 +29,74 @@ struct EntitySpottedState_t;
 class CPlantedC4 : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0960[0x8]; // 0x960
+	[[maybe_unused]] uint8_t __pad09a8[0x8]; // 0x9a8
 public:
 	// MNetworkEnable
-	bool m_bBombTicking; // 0x968	
+	bool m_bBombTicking; // 0x9b0	
 private:
-	[[maybe_unused]] uint8_t __pad0969[0x3]; // 0x969
+	[[maybe_unused]] uint8_t __pad09b1[0x3]; // 0x9b1
 public:
 	// MNetworkEnable
-	GameTime_t m_flC4Blow; // 0x96c	
+	GameTime_t m_flC4Blow; // 0x9b4	
 	// MNetworkEnable
-	int32_t m_nBombSite; // 0x970	
+	int32_t m_nBombSite; // 0x9b8	
 	// MNetworkEnable
-	int32_t m_nSourceSoundscapeHash; // 0x974	
+	int32_t m_nSourceSoundscapeHash; // 0x9bc	
 	// MNetworkEnable
-	CAttributeContainer m_AttributeManager; // 0x978	
-	CEntityIOOutput m_OnBombDefused; // 0xc40	
-	CEntityIOOutput m_OnBombBeginDefuse; // 0xc68	
-	CEntityIOOutput m_OnBombDefuseAborted; // 0xc90	
+	CAttributeContainer m_AttributeManager; // 0x9c0	
+	CEntityIOOutput m_OnBombDefused; // 0xc88	
+	CEntityIOOutput m_OnBombBeginDefuse; // 0xcb0	
+	CEntityIOOutput m_OnBombDefuseAborted; // 0xcd8	
 	// MNetworkEnable
-	bool m_bCannotBeDefused; // 0xcb8	
+	bool m_bCannotBeDefused; // 0xd00	
 private:
-	[[maybe_unused]] uint8_t __pad0cb9[0x7]; // 0xcb9
+	[[maybe_unused]] uint8_t __pad0d01[0x7]; // 0xd01
 public:
 	// MNetworkEnable
-	EntitySpottedState_t m_entitySpottedState; // 0xcc0	
-	int32_t m_nSpotRules; // 0xcd8	
-	bool m_bTrainingPlacedByPlayer; // 0xcdc	
+	EntitySpottedState_t m_entitySpottedState; // 0xd08	
+	int32_t m_nSpotRules; // 0xd20	
+	bool m_bTrainingPlacedByPlayer; // 0xd24	
 	// MNetworkEnable
-	bool m_bHasExploded; // 0xcdd	
+	bool m_bHasExploded; // 0xd25	
 private:
-	[[maybe_unused]] uint8_t __pad0cde[0x2]; // 0xcde
+	[[maybe_unused]] uint8_t __pad0d26[0x2]; // 0xd26
 public:
 	// MNetworkEnable
-	float m_flTimerLength; // 0xce0	
+	float m_flTimerLength; // 0xd28	
 	// MNetworkEnable
-	bool m_bBeingDefused; // 0xce4	
+	bool m_bBeingDefused; // 0xd2c	
 private:
-	[[maybe_unused]] uint8_t __pad0ce5[0x7]; // 0xce5
+	[[maybe_unused]] uint8_t __pad0d2d[0x7]; // 0xd2d
 public:
-	GameTime_t m_fLastDefuseTime; // 0xcec	
+	GameTime_t m_fLastDefuseTime; // 0xd34	
 private:
-	[[maybe_unused]] uint8_t __pad0cf0[0x4]; // 0xcf0
+	[[maybe_unused]] uint8_t __pad0d38[0x4]; // 0xd38
 public:
 	// MNetworkEnable
-	float m_flDefuseLength; // 0xcf4	
+	float m_flDefuseLength; // 0xd3c	
 	// MNetworkEnable
-	GameTime_t m_flDefuseCountDown; // 0xcf8	
+	GameTime_t m_flDefuseCountDown; // 0xd40	
 	// MNetworkEnable
-	bool m_bBombDefused; // 0xcfc	
+	bool m_bBombDefused; // 0xd44	
 private:
-	[[maybe_unused]] uint8_t __pad0cfd[0x3]; // 0xcfd
+	[[maybe_unused]] uint8_t __pad0d45[0x3]; // 0xd45
 public:
 	// MNetworkEnable
-	CHandle< CCSPlayerPawn > m_hBombDefuser; // 0xd00	
+	CHandle< CCSPlayerPawn > m_hBombDefuser; // 0xd48	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hControlPanel; // 0xd04	
-	int32_t m_iProgressBarTime; // 0xd08	
-	bool m_bVoiceAlertFired; // 0xd0c	
-	bool m_bVoiceAlertPlayed[4]; // 0xd0d	
+	CHandle< CBaseEntity > m_hControlPanel; // 0xd4c	
+	int32_t m_iProgressBarTime; // 0xd50	
+	bool m_bVoiceAlertFired; // 0xd54	
+	bool m_bVoiceAlertPlayed[4]; // 0xd55	
 private:
-	[[maybe_unused]] uint8_t __pad0d11[0x3]; // 0xd11
+	[[maybe_unused]] uint8_t __pad0d59[0x3]; // 0xd59
 public:
-	GameTime_t m_flNextBotBeepTime; // 0xd14	
+	GameTime_t m_flNextBotBeepTime; // 0xd5c	
 private:
-	[[maybe_unused]] uint8_t __pad0d18[0x4]; // 0xd18
+	[[maybe_unused]] uint8_t __pad0d60[0x4]; // 0xd60
 public:
-	QAngle m_angCatchUpToPlayerEye; // 0xd1c	
-	GameTime_t m_flLastSpinDetectionTime; // 0xd28	
+	QAngle m_angCatchUpToPlayerEye; // 0xd64	
+	GameTime_t m_flLastSpinDetectionTime; // 0xd70	
 	
 	// Datamap fields:
 	// void CPlantedC4C4Think; // 0x0

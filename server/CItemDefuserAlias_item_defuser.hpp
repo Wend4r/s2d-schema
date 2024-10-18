@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa58
+// Size: 0xaa0
 // Has VTable
 class CItemDefuserAlias_item_defuser : public CItemDefuser
 {

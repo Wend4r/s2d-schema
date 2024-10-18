@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf10
+// Size: 0xf58
 // Has VTable
 class CMelee : public CCSWeaponBase
 {

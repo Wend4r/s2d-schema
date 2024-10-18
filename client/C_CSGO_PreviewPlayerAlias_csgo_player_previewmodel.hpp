@@ -3,8 +3,8 @@
 #include <cstdint>
 
 // Registered binary: client.dll (project 'client')
-// Alignment: 8
-// Size: 0x2580
+// Alignment: 16
+// Size: 0x3ad0
 // Has VTable
 class C_CSGO_PreviewPlayerAlias_csgo_player_previewmodel : public C_CSGO_PreviewPlayer
 {

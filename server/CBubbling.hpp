@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x760
+// Size: 0x7a0
 // Has VTable
 class CBubbling : public CBaseModelEntity
 {
 public:
-	int32_t m_density; // 0x750	
-	int32_t m_frequency; // 0x754	
-	int32_t m_state; // 0x758	
+	int32_t m_density; // 0x790	
+	int32_t m_frequency; // 0x794	
+	int32_t m_state; // 0x798	
 	
 	// Datamap fields:
 	// float m_flSpeed; // 0x344

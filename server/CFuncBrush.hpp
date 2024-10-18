@@ -4,20 +4,20 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x770
+// Size: 0x7b0
 // Has VTable
 class CFuncBrush : public CBaseModelEntity
 {
 public:
-	BrushSolidities_e m_iSolidity; // 0x750	
-	int32_t m_iDisabled; // 0x754	
-	bool m_bSolidBsp; // 0x758	
+	BrushSolidities_e m_iSolidity; // 0x790	
+	int32_t m_iDisabled; // 0x794	
+	bool m_bSolidBsp; // 0x798	
 private:
-	[[maybe_unused]] uint8_t __pad0759[0x7]; // 0x759
+	[[maybe_unused]] uint8_t __pad0799[0x7]; // 0x799
 public:
-	CUtlSymbolLarge m_iszExcludedClass; // 0x760	
-	bool m_bInvertExclusion; // 0x768	
-	bool m_bScriptedMovement; // 0x769	
+	CUtlSymbolLarge m_iszExcludedClass; // 0x7a0	
+	bool m_bInvertExclusion; // 0x7a8	
+	bool m_bScriptedMovement; // 0x7a9	
 	
 	// Datamap fields:
 	// void InputTurnOn; // 0x0

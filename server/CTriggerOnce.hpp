@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x948
+// Size: 0x988
 // Has VTable
 class CTriggerOnce : public CTriggerMultiple
 {

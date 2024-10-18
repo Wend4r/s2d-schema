@@ -5,11 +5,11 @@
 struct CAI_Expresser;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa88
+// Size: 0xac8
 // Has VTable
 class CHostageExpresserShim : public CBaseCombatCharacter
 {
 public:
-	CAI_Expresser* m_pExpresser; // 0xa80	
+	CAI_Expresser* m_pExpresser; // 0xac0	
 };
 

@@ -6,7 +6,7 @@ struct CEntityIOOutput;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcb8
+// Size: 0xd00
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flAnimTime"
@@ -20,58 +20,58 @@ struct GameTime_t;
 class CPhysicsProp : public CBreakableProp
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b10[0x8]; // 0xb10
+	[[maybe_unused]] uint8_t __pad0b58[0x8]; // 0xb58
 public:
-	CEntityIOOutput m_MotionEnabled; // 0xb18	
-	CEntityIOOutput m_OnAwakened; // 0xb40	
-	CEntityIOOutput m_OnAwake; // 0xb68	
-	CEntityIOOutput m_OnAsleep; // 0xb90	
-	CEntityIOOutput m_OnPlayerUse; // 0xbb8	
-	CEntityIOOutput m_OnOutOfWorld; // 0xbe0	
-	CEntityIOOutput m_OnPlayerPickup; // 0xc08	
-	bool m_bForceNavIgnore; // 0xc30	
-	bool m_bNoNavmeshBlocker; // 0xc31	
-	bool m_bForceNpcExclude; // 0xc32	
+	CEntityIOOutput m_MotionEnabled; // 0xb60	
+	CEntityIOOutput m_OnAwakened; // 0xb88	
+	CEntityIOOutput m_OnAwake; // 0xbb0	
+	CEntityIOOutput m_OnAsleep; // 0xbd8	
+	CEntityIOOutput m_OnPlayerUse; // 0xc00	
+	CEntityIOOutput m_OnOutOfWorld; // 0xc28	
+	CEntityIOOutput m_OnPlayerPickup; // 0xc50	
+	bool m_bForceNavIgnore; // 0xc78	
+	bool m_bNoNavmeshBlocker; // 0xc79	
+	bool m_bForceNpcExclude; // 0xc7a	
 private:
-	[[maybe_unused]] uint8_t __pad0c33[0x1]; // 0xc33
+	[[maybe_unused]] uint8_t __pad0c7b[0x1]; // 0xc7b
 public:
-	float m_massScale; // 0xc34	
-	float m_inertiaScale; // 0xc38	
-	float m_buoyancyScale; // 0xc3c	
-	int32_t m_damageType; // 0xc40	
-	int32_t m_damageToEnableMotion; // 0xc44	
-	float m_flForceToEnableMotion; // 0xc48	
-	bool m_bThrownByPlayer; // 0xc4c	
-	bool m_bDroppedByPlayer; // 0xc4d	
-	bool m_bTouchedByPlayer; // 0xc4e	
-	bool m_bFirstCollisionAfterLaunch; // 0xc4f	
-	int32_t m_iExploitableByPlayer; // 0xc50	
-	bool m_bHasBeenAwakened; // 0xc54	
-	bool m_bIsOverrideProp; // 0xc55	
+	float m_massScale; // 0xc7c	
+	float m_inertiaScale; // 0xc80	
+	float m_buoyancyScale; // 0xc84	
+	int32_t m_damageType; // 0xc88	
+	int32_t m_damageToEnableMotion; // 0xc8c	
+	float m_flForceToEnableMotion; // 0xc90	
+	bool m_bThrownByPlayer; // 0xc94	
+	bool m_bDroppedByPlayer; // 0xc95	
+	bool m_bTouchedByPlayer; // 0xc96	
+	bool m_bFirstCollisionAfterLaunch; // 0xc97	
+	int32_t m_iExploitableByPlayer; // 0xc98	
+	bool m_bHasBeenAwakened; // 0xc9c	
+	bool m_bIsOverrideProp; // 0xc9d	
 private:
-	[[maybe_unused]] uint8_t __pad0c56[0x2]; // 0xc56
+	[[maybe_unused]] uint8_t __pad0c9e[0x2]; // 0xc9e
 public:
-	GameTime_t m_fNextCheckDisableMotionContactsTime; // 0xc58	
-	int32_t m_iInitialGlowState; // 0xc5c	
-	int32_t m_nGlowRange; // 0xc60	
-	int32_t m_nGlowRangeMin; // 0xc64	
-	Color m_glowColor; // 0xc68	
-	bool m_bShouldAutoConvertBackFromDebris; // 0xc6c	
-	bool m_bMuteImpactEffects; // 0xc6d	
+	GameTime_t m_fNextCheckDisableMotionContactsTime; // 0xca0	
+	int32_t m_iInitialGlowState; // 0xca4	
+	int32_t m_nGlowRange; // 0xca8	
+	int32_t m_nGlowRangeMin; // 0xcac	
+	Color m_glowColor; // 0xcb0	
+	bool m_bShouldAutoConvertBackFromDebris; // 0xcb4	
+	bool m_bMuteImpactEffects; // 0xcb5	
 private:
-	[[maybe_unused]] uint8_t __pad0c6e[0x9]; // 0xc6e
+	[[maybe_unused]] uint8_t __pad0cb6[0x9]; // 0xcb6
 public:
-	bool m_bAcceptDamageFromHeldObjects; // 0xc77	
-	bool m_bEnableUseOutput; // 0xc78	
+	bool m_bAcceptDamageFromHeldObjects; // 0xcbf	
+	bool m_bEnableUseOutput; // 0xcc0	
 private:
-	[[maybe_unused]] uint8_t __pad0c79[0x3]; // 0xc79
+	[[maybe_unused]] uint8_t __pad0cc1[0x3]; // 0xcc1
 public:
-	CPhysicsProp::CrateType_t m_CrateType; // 0xc7c	
-	CUtlSymbolLarge m_strItemClass[4]; // 0xc80	
-	int32_t m_nItemCount[4]; // 0xca0	
-	bool m_bRemovableForAmmoBalancing; // 0xcb0	
+	CPhysicsProp::CrateType_t m_CrateType; // 0xcc4	
+	CUtlSymbolLarge m_strItemClass[4]; // 0xcc8	
+	int32_t m_nItemCount[4]; // 0xce8	
+	bool m_bRemovableForAmmoBalancing; // 0xcf8	
 	// MNetworkEnable
-	bool m_bAwake; // 0xcb1	
+	bool m_bAwake; // 0xcf9	
 	
 	// Datamap fields:
 	// void InputEnableMotion; // 0x0
@@ -94,10 +94,10 @@ public:
 	// bool forcemotiondisabled; // 0x7fffffff
 	// bool phys_start_asleep; // 0x7fffffff
 	// void CPhysicsPropClearFlagsThink; // 0x0
-	// int32_t m_nNavObstacleType; // 0xc70
-	// bool m_bUpdateNavWhenMoving; // 0xc74
-	// bool m_bForceNavObstacleCut; // 0xc75
-	// bool m_bAllowObstacleConvexHullMerging; // 0xc76
+	// int32_t m_nNavObstacleType; // 0xcb8
+	// bool m_bUpdateNavWhenMoving; // 0xcbc
+	// bool m_bForceNavObstacleCut; // 0xcbd
+	// bool m_bAllowObstacleConvexHullMerging; // 0xcbe
 	// int32_t health; // 0x7fffffff
 };
 

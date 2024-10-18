@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x40
+// Size: 0x48
 // Has VTable
 class CCSPlayer_DamageReactServices : public CPlayerPawnComponent
 {

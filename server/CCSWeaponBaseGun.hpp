@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf30
+// Size: 0xf78
 // Has VTable
 // 
 // MNetworkVarNames "int m_zoomLevel"
@@ -14,19 +14,19 @@ class CCSWeaponBaseGun : public CCSWeaponBase
 {
 public:
 	// MNetworkEnable
-	int32_t m_zoomLevel; // 0xf10	
+	int32_t m_zoomLevel; // 0xf58	
 	// MNetworkEnable
-	int32_t m_iBurstShotsRemaining; // 0xf14	
+	int32_t m_iBurstShotsRemaining; // 0xf5c	
 private:
-	[[maybe_unused]] uint8_t __pad0f18[0x8]; // 0xf18
+	[[maybe_unused]] uint8_t __pad0f60[0x8]; // 0xf60
 public:
-	int32_t m_silencedModelIndex; // 0xf20	
-	bool m_inPrecache; // 0xf24	
+	int32_t m_silencedModelIndex; // 0xf68	
+	bool m_inPrecache; // 0xf6c	
 	// MNetworkEnable
-	bool m_bNeedsBoltAction; // 0xf25	
-	bool m_bSkillReloadAvailable; // 0xf26	
-	bool m_bSkillReloadLiftedReloadKey; // 0xf27	
-	bool m_bSkillBoltInterruptAvailable; // 0xf28	
-	bool m_bSkillBoltLiftedFireKey; // 0xf29	
+	bool m_bNeedsBoltAction; // 0xf6d	
+	bool m_bSkillReloadAvailable; // 0xf6e	
+	bool m_bSkillReloadLiftedReloadKey; // 0xf6f	
+	bool m_bSkillBoltInterruptAvailable; // 0xf70	
+	bool m_bSkillBoltLiftedFireKey; // 0xf71	
 };
 

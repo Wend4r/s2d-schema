@@ -5,7 +5,7 @@
 struct HSequence;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9a8
+// Size: 0x9f0
 // Has VTable
 // 
 // MNetworkIncludeByName "m_nModelIndex"
@@ -30,26 +30,26 @@ struct HSequence;
 class CBaseViewModel : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0960[0x8]; // 0x960
+	[[maybe_unused]] uint8_t __pad09a8[0x8]; // 0x9a8
 public:
-	Vector m_vecLastFacing; // 0x968	
+	Vector m_vecLastFacing; // 0x9b0	
 	// MNetworkEnable
-	uint32_t m_nViewModelIndex; // 0x974	
+	uint32_t m_nViewModelIndex; // 0x9bc	
 	// MNetworkEnable
-	uint32_t m_nAnimationParity; // 0x978	
+	uint32_t m_nAnimationParity; // 0x9c0	
 	// MNetworkEnable
-	float m_flAnimationStartTime; // 0x97c	
+	float m_flAnimationStartTime; // 0x9c4	
 	// MNetworkEnable
-	CHandle< CBasePlayerWeapon > m_hWeapon; // 0x980	
+	CHandle< CBasePlayerWeapon > m_hWeapon; // 0x9c8	
 private:
-	[[maybe_unused]] uint8_t __pad0984[0x4]; // 0x984
+	[[maybe_unused]] uint8_t __pad09cc[0x4]; // 0x9cc
 public:
-	CUtlSymbolLarge m_sVMName; // 0x988	
-	CUtlSymbolLarge m_sAnimationPrefix; // 0x990	
-	HSequence m_hOldLayerSequence; // 0x998	
-	int32_t m_oldLayer; // 0x99c	
-	float m_oldLayerStartTime; // 0x9a0	
+	CUtlSymbolLarge m_sVMName; // 0x9d0	
+	CUtlSymbolLarge m_sAnimationPrefix; // 0x9d8	
+	HSequence m_hOldLayerSequence; // 0x9e0	
+	int32_t m_oldLayer; // 0x9e4	
+	float m_oldLayerStartTime; // 0x9e8	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hControlPanel; // 0x9a4	
+	CHandle< CBaseEntity > m_hControlPanel; // 0x9ec	
 };
 

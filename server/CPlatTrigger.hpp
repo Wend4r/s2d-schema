@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x758
+// Size: 0x798
 // Has VTable
 class CPlatTrigger : public CBaseModelEntity
 {
 public:
-	CHandle< CFuncPlat > m_pPlatform; // 0x750	
+	CHandle< CFuncPlat > m_pPlatform; // 0x790	
 };
 

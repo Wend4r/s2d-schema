@@ -6,7 +6,7 @@ struct CEntityIOOutput;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa98
+// Size: 0xae0
 // Has VTable
 // 
 // MNetworkIncludeByName "m_fFlags"
@@ -29,50 +29,50 @@ struct GameTime_t;
 class CBaseGrenade : public CBaseFlex
 {
 private:
-	[[maybe_unused]] uint8_t __pad09f0[0x8]; // 0x9f0
+	[[maybe_unused]] uint8_t __pad0a38[0x8]; // 0xa38
 public:
-	CEntityIOOutput m_OnPlayerPickup; // 0x9f8	
-	CEntityIOOutput m_OnExplode; // 0xa20	
-	bool m_bHasWarnedAI; // 0xa48	
-	bool m_bIsSmokeGrenade; // 0xa49	
+	CEntityIOOutput m_OnPlayerPickup; // 0xa40	
+	CEntityIOOutput m_OnExplode; // 0xa68	
+	bool m_bHasWarnedAI; // 0xa90	
+	bool m_bIsSmokeGrenade; // 0xa91	
 	// MNetworkEnable
-	bool m_bIsLive; // 0xa4a	
+	bool m_bIsLive; // 0xa92	
 private:
-	[[maybe_unused]] uint8_t __pad0a4b[0x1]; // 0xa4b
+	[[maybe_unused]] uint8_t __pad0a93[0x1]; // 0xa93
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1024.000000"
 	// MNetworkEncodeFlags "1"
-	float m_DmgRadius; // 0xa4c	
+	float m_DmgRadius; // 0xa94	
 	// MNetworkEnable
-	GameTime_t m_flDetonateTime; // 0xa50	
-	float m_flWarnAITime; // 0xa54	
+	GameTime_t m_flDetonateTime; // 0xa98	
+	float m_flWarnAITime; // 0xa9c	
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "256.000000"
 	// MNetworkEncodeFlags "1"
-	float m_flDamage; // 0xa58	
+	float m_flDamage; // 0xaa0	
 private:
-	[[maybe_unused]] uint8_t __pad0a5c[0x4]; // 0xa5c
+	[[maybe_unused]] uint8_t __pad0aa4[0x4]; // 0xaa4
 public:
-	CUtlSymbolLarge m_iszBounceSound; // 0xa60	
-	CUtlString m_ExplosionSound; // 0xa68	
+	CUtlSymbolLarge m_iszBounceSound; // 0xaa8	
+	CUtlString m_ExplosionSound; // 0xab0	
 private:
-	[[maybe_unused]] uint8_t __pad0a70[0x4]; // 0xa70
+	[[maybe_unused]] uint8_t __pad0ab8[0x4]; // 0xab8
 public:
 	// MNetworkEnable
-	CHandle< CCSPlayerPawn > m_hThrower; // 0xa74	
+	CHandle< CCSPlayerPawn > m_hThrower; // 0xabc	
 private:
-	[[maybe_unused]] uint8_t __pad0a78[0x14]; // 0xa78
+	[[maybe_unused]] uint8_t __pad0ac0[0x14]; // 0xac0
 public:
-	GameTime_t m_flNextAttack; // 0xa8c	
-	CHandle< CCSPlayerPawn > m_hOriginalThrower; // 0xa90	
+	GameTime_t m_flNextAttack; // 0xad4	
+	CHandle< CCSPlayerPawn > m_hOriginalThrower; // 0xad8	
 	
 	// Datamap fields:
-	// int32_t m_nExplosionType; // 0xa70
+	// int32_t m_nExplosionType; // 0xab8
 	// void CBaseGrenadeSmoke; // 0x0
 	// void CBaseGrenadeBounceTouch; // 0x0
 	// void CBaseGrenadeSlideTouch; // 0x0

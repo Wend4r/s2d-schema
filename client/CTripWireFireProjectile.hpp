@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1168
+// Size: 0x1170
 // Has VTable
 class CTripWireFireProjectile : public C_BaseGrenade
 {

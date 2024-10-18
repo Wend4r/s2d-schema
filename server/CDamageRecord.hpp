@@ -41,17 +41,18 @@ public:
 	uint64_t m_DamagerXuid; // 0x48	
 	// MNetworkEnable
 	uint64_t m_RecipientXuid; // 0x50	
+	int32_t m_iBulletsDamage; // 0x58	
 	// MNetworkEnable
-	int32_t m_iDamage; // 0x58	
+	int32_t m_iDamage; // 0x5c	
 	// MNetworkEnable
-	int32_t m_iActualHealthRemoved; // 0x5c	
+	int32_t m_iActualHealthRemoved; // 0x60	
 	// MNetworkEnable
-	int32_t m_iNumHits; // 0x60	
+	int32_t m_iNumHits; // 0x64	
 	// MNetworkEnable
-	int32_t m_iLastBulletUpdate; // 0x64	
+	int32_t m_iLastBulletUpdate; // 0x68	
 	// MNetworkEnable
-	bool m_bIsOtherEnemy; // 0x68	
+	bool m_bIsOtherEnemy; // 0x6c	
 	// MNetworkEnable
-	EKillTypes_t m_killType; // 0x69	
+	EKillTypes_t m_killType; // 0x6d	
 };
 

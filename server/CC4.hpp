@@ -6,7 +6,7 @@ struct GameTime_t;
 struct EntitySpottedState_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf90
+// Size: 0xfd8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bStartedArming"
@@ -17,29 +17,29 @@ struct EntitySpottedState_t;
 class CC4 : public CCSWeaponBase
 {
 private:
-	[[maybe_unused]] uint8_t __pad0f10[0x30]; // 0xf10
+	[[maybe_unused]] uint8_t __pad0f58[0x30]; // 0xf58
 public:
-	Vector m_vecLastValidPlayerHeldPosition; // 0xf40	
-	Vector m_vecLastValidDroppedPosition; // 0xf4c	
-	bool m_bDoValidDroppedPositionCheck; // 0xf58	
+	Vector m_vecLastValidPlayerHeldPosition; // 0xf88	
+	Vector m_vecLastValidDroppedPosition; // 0xf94	
+	bool m_bDoValidDroppedPositionCheck; // 0xfa0	
 	// MNetworkEnable
-	bool m_bStartedArming; // 0xf59	
+	bool m_bStartedArming; // 0xfa1	
 private:
-	[[maybe_unused]] uint8_t __pad0f5a[0x2]; // 0xf5a
+	[[maybe_unused]] uint8_t __pad0fa2[0x2]; // 0xfa2
 public:
 	// MNetworkEnable
-	GameTime_t m_fArmedTime; // 0xf5c	
+	GameTime_t m_fArmedTime; // 0xfa4	
 	// MNetworkEnable
-	bool m_bBombPlacedAnimation; // 0xf60	
+	bool m_bBombPlacedAnimation; // 0xfa8	
 	// MNetworkEnable
-	bool m_bIsPlantingViaUse; // 0xf61	
+	bool m_bIsPlantingViaUse; // 0xfa9	
 private:
-	[[maybe_unused]] uint8_t __pad0f62[0x6]; // 0xf62
+	[[maybe_unused]] uint8_t __pad0faa[0x6]; // 0xfaa
 public:
 	// MNetworkEnable
-	EntitySpottedState_t m_entitySpottedState; // 0xf68	
-	int32_t m_nSpotRules; // 0xf80	
-	bool m_bPlayedArmingBeeps[7]; // 0xf84	
-	bool m_bBombPlanted; // 0xf8b	
+	EntitySpottedState_t m_entitySpottedState; // 0xfb0	
+	int32_t m_nSpotRules; // 0xfc8	
+	bool m_bPlayedArmingBeeps[7]; // 0xfcc	
+	bool m_bBombPlanted; // 0xfd3	
 };
 

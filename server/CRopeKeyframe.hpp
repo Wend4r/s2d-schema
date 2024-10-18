@@ -5,7 +5,7 @@
 struct AttachmentHandle_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7a8
+// Size: 0x7e8
 // Has VTable
 // 
 // MNetworkIncludeByUserGroup "Origin"
@@ -34,63 +34,63 @@ struct AttachmentHandle_t;
 class CRopeKeyframe : public CBaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0750[0x8]; // 0x750
+	[[maybe_unused]] uint8_t __pad0790[0x8]; // 0x790
 public:
 	// MNetworkEnable
-	uint16_t m_RopeFlags; // 0x758	
+	uint16_t m_RopeFlags; // 0x798	
 private:
-	[[maybe_unused]] uint8_t __pad075a[0x6]; // 0x75a
+	[[maybe_unused]] uint8_t __pad079a[0x6]; // 0x79a
 public:
-	CUtlSymbolLarge m_iNextLinkName; // 0x760	
+	CUtlSymbolLarge m_iNextLinkName; // 0x7a0	
 	// MNetworkEnable
-	int16_t m_Slack; // 0x768	
+	int16_t m_Slack; // 0x7a8	
 private:
-	[[maybe_unused]] uint8_t __pad076a[0x2]; // 0x76a
+	[[maybe_unused]] uint8_t __pad07aa[0x2]; // 0x7aa
 public:
 	// MNetworkEnable
-	float m_Width; // 0x76c	
+	float m_Width; // 0x7ac	
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.100000"
 	// MNetworkMaxValue "10.000000"
-	float m_TextureScale; // 0x770	
+	float m_TextureScale; // 0x7b0	
 	// MNetworkEnable
-	uint8_t m_nSegments; // 0x774	
+	uint8_t m_nSegments; // 0x7b4	
 	// MNetworkEnable
-	bool m_bConstrainBetweenEndpoints; // 0x775	
+	bool m_bConstrainBetweenEndpoints; // 0x7b5	
 private:
-	[[maybe_unused]] uint8_t __pad0776[0x2]; // 0x776
+	[[maybe_unused]] uint8_t __pad07b6[0x2]; // 0x7b6
 public:
-	CUtlSymbolLarge m_strRopeMaterialModel; // 0x778	
+	CUtlSymbolLarge m_strRopeMaterialModel; // 0x7b8	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0x780	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0x7c0	
 	// MNetworkEnable
-	uint8_t m_Subdiv; // 0x788	
+	uint8_t m_Subdiv; // 0x7c8	
 	// MNetworkEnable
-	uint8_t m_nChangeCount; // 0x789	
+	uint8_t m_nChangeCount; // 0x7c9	
 	// MNetworkEnable
-	int16_t m_RopeLength; // 0x78a	
+	int16_t m_RopeLength; // 0x7ca	
 	// MNetworkEnable
-	uint8_t m_fLockedPoints; // 0x78c	
-	bool m_bCreatedFromMapFile; // 0x78d	
+	uint8_t m_fLockedPoints; // 0x7cc	
+	bool m_bCreatedFromMapFile; // 0x7cd	
 private:
-	[[maybe_unused]] uint8_t __pad078e[0x2]; // 0x78e
-public:
-	// MNetworkEnable
-	float m_flScrollSpeed; // 0x790	
-	bool m_bStartPointValid; // 0x794	
-	bool m_bEndPointValid; // 0x795	
-private:
-	[[maybe_unused]] uint8_t __pad0796[0x2]; // 0x796
+	[[maybe_unused]] uint8_t __pad07ce[0x2]; // 0x7ce
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hStartPoint; // 0x798	
+	float m_flScrollSpeed; // 0x7d0	
+	bool m_bStartPointValid; // 0x7d4	
+	bool m_bEndPointValid; // 0x7d5	
+private:
+	[[maybe_unused]] uint8_t __pad07d6[0x2]; // 0x7d6
+public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hEndPoint; // 0x79c	
+	CHandle< CBaseEntity > m_hStartPoint; // 0x7d8	
 	// MNetworkEnable
-	AttachmentHandle_t m_iStartAttachment; // 0x7a0	
+	CHandle< CBaseEntity > m_hEndPoint; // 0x7dc	
 	// MNetworkEnable
-	AttachmentHandle_t m_iEndAttachment; // 0x7a1	
+	AttachmentHandle_t m_iStartAttachment; // 0x7e0	
+	// MNetworkEnable
+	AttachmentHandle_t m_iEndAttachment; // 0x7e1	
 	
 	// Datamap fields:
 	// float InputSetScrollSpeed; // 0x0

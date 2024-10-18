@@ -4,13 +4,13 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1010
+// Size: 0x1018
 // Has VTable
 class C_PredictedViewModel : public C_BaseViewModel
 {
 public:
-	Vector m_vPredictedLagOffset; // 0xfe8	
-	QAngle m_targetSpeed; // 0xff4	
-	QAngle m_currentSpeed; // 0x1000	
+	Vector m_vPredictedLagOffset; // 0xff0	
+	QAngle m_targetSpeed; // 0xffc	
+	QAngle m_currentSpeed; // 0x1008	
 };
 

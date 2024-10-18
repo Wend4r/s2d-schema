@@ -20,41 +20,41 @@ struct ParticleIndex_t;
 class C_Inferno : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0d20[0x40]; // 0xd20
+	[[maybe_unused]] uint8_t __pad0d28[0x40]; // 0xd28
 public:
-	ParticleIndex_t m_nfxFireDamageEffect; // 0xd60	
+	ParticleIndex_t m_nfxFireDamageEffect; // 0xd68	
 private:
-	[[maybe_unused]] uint8_t __pad0d64[0x4]; // 0xd64
+	[[maybe_unused]] uint8_t __pad0d6c[0x4]; // 0xd6c
 public:
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoPointsSnapshot; // 0xd68	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoFillerPointsSnapshot; // 0xd70	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoOutlinePointsSnapshot; // 0xd78	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoClimbingOutlinePointsSnapshot; // 0xd80	
-	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoDecalsSnapshot; // 0xd88	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoPointsSnapshot; // 0xd70	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoFillerPointsSnapshot; // 0xd78	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoOutlinePointsSnapshot; // 0xd80	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoClimbingOutlinePointsSnapshot; // 0xd88	
+	CStrongHandle< InfoForResourceTypeIParticleSnapshot > m_hInfernoDecalsSnapshot; // 0xd90	
 	// MNetworkEnable
-	Vector m_firePositions[64]; // 0xd90	
+	Vector m_firePositions[64]; // 0xd98	
 	// MNetworkEnable
-	Vector m_fireParentPositions[64]; // 0x1090	
+	Vector m_fireParentPositions[64]; // 0x1098	
 	// MNetworkEnable
-	bool m_bFireIsBurning[64]; // 0x1390	
+	bool m_bFireIsBurning[64]; // 0x1398	
 	// MNetworkEnable
-	Vector m_BurnNormal[64]; // 0x13d0	
+	Vector m_BurnNormal[64]; // 0x13d8	
 	// MNetworkEnable
-	int32_t m_fireCount; // 0x16d0	
+	int32_t m_fireCount; // 0x16d8	
 	// MNetworkEnable
-	int32_t m_nInfernoType; // 0x16d4	
+	int32_t m_nInfernoType; // 0x16dc	
 	// MNetworkEnable
-	float m_nFireLifetime; // 0x16d8	
+	float m_nFireLifetime; // 0x16e0	
 	// MNetworkEnable
-	bool m_bInPostEffectTime; // 0x16dc	
+	bool m_bInPostEffectTime; // 0x16e4	
 private:
-	[[maybe_unused]] uint8_t __pad16dd[0x3]; // 0x16dd
+	[[maybe_unused]] uint8_t __pad16e5[0x3]; // 0x16e5
 public:
-	int32_t m_lastFireCount; // 0x16e0	
+	int32_t m_lastFireCount; // 0x16e8	
 	// MNetworkEnable
-	int32_t m_nFireEffectTickBegin; // 0x16e4	
+	int32_t m_nFireEffectTickBegin; // 0x16ec	
 private:
-	[[maybe_unused]] uint8_t __pad16e8[0x6c08]; // 0x16e8
+	[[maybe_unused]] uint8_t __pad16f0[0x6c00]; // 0x16f0
 public:
 	int32_t m_drawableCount; // 0x82f0	
 	bool m_blosCheck; // 0x82f4	

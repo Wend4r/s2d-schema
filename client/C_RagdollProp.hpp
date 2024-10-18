@@ -5,7 +5,7 @@
 struct AttachmentHandle_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xff8
+// Size: 0x1000
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_ragPos"
@@ -15,31 +15,31 @@ struct AttachmentHandle_t;
 class C_RagdollProp : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0f80[0x8]; // 0xf80
+	[[maybe_unused]] uint8_t __pad0f88[0x8]; // 0xf88
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
 	// MNetworkChangeCallback "ragAnglesChanged"
-	C_NetworkUtlVectorBase< Vector > m_ragPos; // 0xf88	
+	C_NetworkUtlVectorBase< Vector > m_ragPos; // 0xf90	
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
 	// MNetworkBitCount "13"
 	// MNetworkChangeCallback "ragAnglesChanged"
-	C_NetworkUtlVectorBase< QAngle > m_ragAngles; // 0xfa0	
+	C_NetworkUtlVectorBase< QAngle > m_ragAngles; // 0xfa8	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
 	// MNetworkEncodeFlags "1"
-	float m_flBlendWeight; // 0xfb8	
+	float m_flBlendWeight; // 0xfc0	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hRagdollSource; // 0xfbc	
-	AttachmentHandle_t m_iEyeAttachment; // 0xfc0	
+	CHandle< C_BaseEntity > m_hRagdollSource; // 0xfc4	
+	AttachmentHandle_t m_iEyeAttachment; // 0xfc8	
 private:
-	[[maybe_unused]] uint8_t __pad0fc1[0x3]; // 0xfc1
+	[[maybe_unused]] uint8_t __pad0fc9[0x3]; // 0xfc9
 public:
-	float m_flBlendWeightCurrent; // 0xfc4	
-	CUtlVector< int32 > m_parentPhysicsBoneIndices; // 0xfc8	
-	CUtlVector< int32 > m_worldSpaceBoneComputationOrder; // 0xfe0	
+	float m_flBlendWeightCurrent; // 0xfcc	
+	CUtlVector< int32 > m_parentPhysicsBoneIndices; // 0xfd0	
+	CUtlVector< int32 > m_worldSpaceBoneComputationOrder; // 0xfe8	
 };
 

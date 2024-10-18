@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x878
+// Size: 0x8b8
 // Has VTable
 class CFuncMoveLinearAlias_momentary_door : public CFuncMoveLinear
 {

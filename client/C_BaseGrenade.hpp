@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1168
+// Size: 0x1170
 // Has VTable
 // 
 // MNetworkIncludeByName "m_fFlags"
@@ -28,45 +28,45 @@ struct GameTime_t;
 class C_BaseGrenade : public C_BaseFlex
 {
 public:
-	bool m_bHasWarnedAI; // 0x1118	
-	bool m_bIsSmokeGrenade; // 0x1119	
+	bool m_bHasWarnedAI; // 0x1120	
+	bool m_bIsSmokeGrenade; // 0x1121	
 	// MNetworkEnable
-	bool m_bIsLive; // 0x111a	
+	bool m_bIsLive; // 0x1122	
 private:
-	[[maybe_unused]] uint8_t __pad111b[0x1]; // 0x111b
+	[[maybe_unused]] uint8_t __pad1123[0x1]; // 0x1123
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1024.000000"
 	// MNetworkEncodeFlags "1"
-	float m_DmgRadius; // 0x111c	
+	float m_DmgRadius; // 0x1124	
 	// MNetworkEnable
-	GameTime_t m_flDetonateTime; // 0x1120	
-	float m_flWarnAITime; // 0x1124	
+	GameTime_t m_flDetonateTime; // 0x1128	
+	float m_flWarnAITime; // 0x112c	
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "256.000000"
 	// MNetworkEncodeFlags "1"
-	float m_flDamage; // 0x1128	
+	float m_flDamage; // 0x1130	
 private:
-	[[maybe_unused]] uint8_t __pad112c[0x4]; // 0x112c
+	[[maybe_unused]] uint8_t __pad1134[0x4]; // 0x1134
 public:
-	CUtlSymbolLarge m_iszBounceSound; // 0x1130	
-	CUtlString m_ExplosionSound; // 0x1138	
+	CUtlSymbolLarge m_iszBounceSound; // 0x1138	
+	CUtlString m_ExplosionSound; // 0x1140	
 private:
-	[[maybe_unused]] uint8_t __pad1140[0x4]; // 0x1140
+	[[maybe_unused]] uint8_t __pad1148[0x4]; // 0x1148
 public:
 	// MNetworkEnable
-	CHandle< C_CSPlayerPawn > m_hThrower; // 0x1144	
+	CHandle< C_CSPlayerPawn > m_hThrower; // 0x114c	
 private:
-	[[maybe_unused]] uint8_t __pad1148[0x14]; // 0x1148
+	[[maybe_unused]] uint8_t __pad1150[0x14]; // 0x1150
 public:
-	GameTime_t m_flNextAttack; // 0x115c	
-	CHandle< C_CSPlayerPawn > m_hOriginalThrower; // 0x1160	
+	GameTime_t m_flNextAttack; // 0x1164	
+	CHandle< C_CSPlayerPawn > m_hOriginalThrower; // 0x1168	
 	
 	// Datamap fields:
-	// int32_t m_nExplosionType; // 0x1140
+	// int32_t m_nExplosionType; // 0x1148
 };
 
