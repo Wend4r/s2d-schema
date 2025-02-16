@@ -6,7 +6,7 @@ struct GameTime_t;
 struct HeroID_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x220
+// Size: 0x288
 // Has VTable
 // 
 // MNetworkVarNames "int32 m_iLevel"
@@ -51,6 +51,7 @@ struct HeroID_t;
 // MNetworkVarNames "ItemImbuementPair_t m_vecImbuements"
 // MNetworkVarNames "DynamicAbilityValues_t m_vecDynamicAbilityValues"
 // MNetworkVarNames "StatViewerModifierValues_t m_vecStatViewerModifierValues"
+// MNetworkVarNames "StolenAbilityPair_t m_vecStolenAbilities"
 struct PlayerDataGlobal_t
 {
 private:
@@ -161,5 +162,9 @@ public:
 	CUtlVectorEmbeddedNetworkVar< DynamicAbilityValues_t > m_vecDynamicAbilityValues; // 0x150	
 	// MNetworkEnable
 	CUtlVectorEmbeddedNetworkVar< StatViewerModifierValues_t > m_vecStatViewerModifierValues; // 0x1b8	
+	// MNetworkEnable
+	// MNetworkUserGroup "Abilities"
+	// MNetworkChangeCallback "pdgAbilitiesChanged"
+	CUtlVectorEmbeddedNetworkVar< StolenAbilityPair_t > m_vecStolenAbilities; // 0x220	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1578
+// Size: 0x15a0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CAbilityCadenceLullabyVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SleepAOEModifier; // 0x1568	
+	CEmbeddedSubclass< CCitadelModifier > m_SleepAOEModifier; // 0x1590	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1970
+// Size: 0x1998
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,25 +12,25 @@ class CAbilityHornetSnipeVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AssassinateShotParticle; // 0x1568	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AssassinateShotParticleOwnerOnly; // 0x1648	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserSightParticle; // 0x1728	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserSightParticleOwnerOnly; // 0x1808	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AssassinateShotParticle; // 0x1590	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AssassinateShotParticleOwnerOnly; // 0x1670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserSightParticle; // 0x1750	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserSightParticleOwnerOnly; // 0x1830	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SnipeModifier; // 0x18e8	
-	CEmbeddedSubclass< CCitadelModifier > m_BuffOnKillModifier; // 0x18f8	
-	CEmbeddedSubclass< CCitadelModifier > m_GlowEnemyModifier; // 0x1908	
+	CEmbeddedSubclass< CCitadelModifier > m_SnipeModifier; // 0x1910	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffOnKillModifier; // 0x1920	
+	CEmbeddedSubclass< CCitadelModifier > m_GlowEnemyModifier; // 0x1930	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strSnipeImpactSound; // 0x1918	
-	CSoundEventName m_strZoomIn; // 0x1928	
-	CSoundEventName m_strZoomOut; // 0x1938	
+	CSoundEventName m_strSnipeImpactSound; // 0x1940	
+	CSoundEventName m_strZoomIn; // 0x1950	
+	CSoundEventName m_strZoomOut; // 0x1960	
 	// MPropertyStartGroup "+Snipe Properties"
-	float m_flMinScopeTimeToShoot; // 0x1948	
-	float m_flFadeToBlackTime; // 0x194c	
-	float m_flFoVChangeTime; // 0x1950	
+	float m_flMinScopeTimeToShoot; // 0x1970	
+	float m_flFadeToBlackTime; // 0x1974	
+	float m_flFoVChangeTime; // 0x1978	
 private:
-	[[maybe_unused]] uint8_t __pad1954[0x4]; // 0x1954
+	[[maybe_unused]] uint8_t __pad197c[0x4]; // 0x197c
 public:
-	CUtlVector< float32 > m_ScopeFoV; // 0x1958	
+	CUtlVector< float32 > m_ScopeFoV; // 0x1980	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15a0
+// Size: 0x15c8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Ability_Nano_ShadowVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ShadowModifier; // 0x1568	
-	CEmbeddedSubclass< CCitadelModifier > m_PurgeModifier; // 0x1578	
-	CEmbeddedSubclass< CCitadelModifier > m_EnemyAura; // 0x1588	
+	CEmbeddedSubclass< CCitadelModifier > m_ShadowModifier; // 0x1590	
+	CEmbeddedSubclass< CCitadelModifier > m_PurgeModifier; // 0x15a0	
+	CEmbeddedSubclass< CCitadelModifier > m_EnemyAura; // 0x15b0	
 	// MPropertyGroupName "GamePlay"
-	float m_flAuraRadius; // 0x1598	
+	float m_flAuraRadius; // 0x15c0	
 };
 

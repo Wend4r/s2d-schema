@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x690
+// Size: 0x698
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_Fathom_ScaldingSpray_Aura_VData : public CCitadelModifie
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x680	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x688	
 };
 

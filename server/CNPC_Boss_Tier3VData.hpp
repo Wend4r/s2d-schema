@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1a08
+// Size: 0x1a18
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -37,27 +37,28 @@ public:
 	CEmbeddedSubclass< CBaseModifier > m_Phase1Modifier; // 0x15f0	
 	CEmbeddedSubclass< CBaseModifier > m_Phase2Modifier; // 0x1600	
 	CEmbeddedSubclass< CBaseModifier > m_BackdoorProtection; // 0x1610	
-	CEmbeddedSubclass< CBaseModifier > m_ObjectiveRegen; // 0x1620	
-	CEmbeddedSubclass< CBaseModifier > m_ObjectiveHealthGrowthPhase1; // 0x1630	
-	CEmbeddedSubclass< CBaseModifier > m_ObjectiveHealthGrowthPhase2; // 0x1640	
+	CEmbeddedSubclass< CBaseModifier > m_RangedArmorModifier; // 0x1620	
+	CEmbeddedSubclass< CBaseModifier > m_ObjectiveRegen; // 0x1630	
+	CEmbeddedSubclass< CBaseModifier > m_ObjectiveHealthGrowthPhase1; // 0x1640	
+	CEmbeddedSubclass< CBaseModifier > m_ObjectiveHealthGrowthPhase2; // 0x1650	
 	// MPropertyStartGroup "Laser"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserChargingParticle; // 0x1650	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserBeamEffect; // 0x1730	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserPreviewEffect; // 0x1810	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserDamageEffect; // 0x18f0	
-	float m_flLaserTargetingZOffset; // 0x19d0	
-	float m_flLaserTrackingSpeed; // 0x19d4	
-	float m_flLaserTrackingMaxSpeed; // 0x19d8	
-	float m_flLaserCastingTrackSpeed; // 0x19dc	
-	float m_flLaserCastingTrackMaxSpeed; // 0x19e0	
-	float m_flLaserDPSToPlayers; // 0x19e4	
-	float m_flLaserDPSToNPCs; // 0x19e8	
-	float m_flLaserDPSMaxHealth; // 0x19ec	
-	float m_flNoShieldLaserTrackingSpeed; // 0x19f0	
-	float m_flNoShieldLaserTrackingMaxSpeed; // 0x19f4	
-	float m_flNoShieldLaserCastingTrackSpeed; // 0x19f8	
-	float m_flNoShieldLaserCastingTrackMaxSpeed; // 0x19fc	
-	float m_flNoShieldLaserDPSToPlayers; // 0x1a00	
-	float m_flNoShieldLaserDPSToNPCs; // 0x1a04	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserChargingParticle; // 0x1660	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserBeamEffect; // 0x1740	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserPreviewEffect; // 0x1820	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserDamageEffect; // 0x1900	
+	float m_flLaserTargetingZOffset; // 0x19e0	
+	float m_flLaserTrackingSpeed; // 0x19e4	
+	float m_flLaserTrackingMaxSpeed; // 0x19e8	
+	float m_flLaserCastingTrackSpeed; // 0x19ec	
+	float m_flLaserCastingTrackMaxSpeed; // 0x19f0	
+	float m_flLaserDPSToPlayers; // 0x19f4	
+	float m_flLaserDPSToNPCs; // 0x19f8	
+	float m_flLaserDPSMaxHealth; // 0x19fc	
+	float m_flNoShieldLaserTrackingSpeed; // 0x1a00	
+	float m_flNoShieldLaserTrackingMaxSpeed; // 0x1a04	
+	float m_flNoShieldLaserCastingTrackSpeed; // 0x1a08	
+	float m_flNoShieldLaserCastingTrackMaxSpeed; // 0x1a0c	
+	float m_flNoShieldLaserDPSToPlayers; // 0x1a10	
+	float m_flNoShieldLaserDPSToNPCs; // 0x1a14	
 };
 

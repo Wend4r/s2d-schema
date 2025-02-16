@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15c8
+// Size: 0x15f8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CAbilityCadencePrimaryWeaponVData : public CCitadel_Ability_PrimaryWeaponV
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x15b8	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x15e8	
 };
 

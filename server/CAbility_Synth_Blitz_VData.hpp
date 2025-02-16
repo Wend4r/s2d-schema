@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1678
+// Size: 0x16a0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CAbility_Synth_Blitz_VData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BlitzModifier; // 0x1568	
-	CEmbeddedSubclass< CCitadelModifier > m_TechAmpModifier; // 0x1578	
+	CEmbeddedSubclass< CCitadelModifier > m_BlitzModifier; // 0x1590	
+	CEmbeddedSubclass< CCitadelModifier > m_TechAmpModifier; // 0x15a0	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SlowParticle; // 0x1588	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SlowParticle; // 0x15b0	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strProcSound; // 0x1668	
+	CSoundEventName m_strProcSound; // 0x1690	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdc8
+// Size: 0xdd0
 // Has VTable
 class CCitadel_Item_CheatDeath : public CCitadel_Item
 {

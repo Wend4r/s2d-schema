@@ -10,8 +10,9 @@ class CCitadel_Modifier_Tech_Bleed : public CCitadelModifier
 {
 public:
 	bool m_bNoDeath; // 0xc0	
+	bool m_bDamageInProgress; // 0xc1	
 private:
-	[[maybe_unused]] uint8_t __pad00c1[0x3]; // 0xc1
+	[[maybe_unused]] uint8_t __pad00c2[0x2]; // 0xc2
 public:
 	float m_flDamage; // 0xc4	
 };

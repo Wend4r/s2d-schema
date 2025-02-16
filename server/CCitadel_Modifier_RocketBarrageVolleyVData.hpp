@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x648
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_RocketBarrageVolleyVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strFireSound; // 0x630	
+	CSoundEventName m_strFireSound; // 0x638	
 };
 

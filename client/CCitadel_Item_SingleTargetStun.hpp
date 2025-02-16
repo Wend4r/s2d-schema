@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcb0
+// Size: 0xcb8
 // Has VTable
 class CCitadel_Item_SingleTargetStun : public CCitadel_Item
 {

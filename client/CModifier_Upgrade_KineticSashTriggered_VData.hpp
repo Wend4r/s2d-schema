@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x648
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CModifier_Upgrade_KineticSashTriggered_VData : public CCitadelModifierVDat
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_TriggeredSound; // 0x630	
+	CSoundEventName m_TriggeredSound; // 0x638	
 };
 

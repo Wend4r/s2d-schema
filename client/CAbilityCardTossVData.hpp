@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1758
+// Size: 0x1780
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,15 +12,15 @@ class CAbilityCardTossVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x1568	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SummonedCard; // 0x1648	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x1590	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SummonedCard; // 0x1670	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strCardTossSound; // 0x1728	
-	CSoundEventName m_strCardSummonSound; // 0x1738	
+	CSoundEventName m_strCardTossSound; // 0x1750	
+	CSoundEventName m_strCardSummonSound; // 0x1760	
 	// MPropertyStartGroup "+Card Toss Properties"
-	float m_flSummonedCardStartSideOffset; // 0x1748	
-	float m_flSummonedCardSideOffsetStep; // 0x174c	
-	float m_flSummonedCardForwardOffset; // 0x1750	
-	float m_flSummonedCardVerticalOffset; // 0x1754	
+	float m_flSummonedCardStartSideOffset; // 0x1770	
+	float m_flSummonedCardSideOffsetStep; // 0x1774	
+	float m_flSummonedCardForwardOffset; // 0x1778	
+	float m_flSummonedCardVerticalOffset; // 0x177c	
 };
 

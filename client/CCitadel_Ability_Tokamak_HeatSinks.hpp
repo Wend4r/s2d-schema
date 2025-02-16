@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe58
+// Size: 0xe60
 // Has VTable
 class CCitadel_Ability_Tokamak_HeatSinks : public C_CitadelBaseAbility
 {

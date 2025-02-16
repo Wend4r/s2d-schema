@@ -7,7 +7,7 @@ struct PlayerDataGlobal_t;
 struct CitadelLobbyPlayerSlot_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa60
+// Size: 0xac8
 // Has VTable
 // 
 // MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -111,13 +111,13 @@ public:
 	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x830	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int8_t m_nDeathReplayAvailable; // 0xa50	
+	int8_t m_nDeathReplayAvailable; // 0xab8	
 	// MNetworkEnable
-	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa51	
-	bool m_bHasCheckedFriendName; // 0xa52	
+	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xab9	
+	bool m_bHasCheckedFriendName; // 0xaba	
 private:
-	[[maybe_unused]] uint8_t __pad0a53[0x5]; // 0xa53
+	[[maybe_unused]] uint8_t __pad0abb[0x5]; // 0xabb
 public:
-	CUtlString m_sFriendName; // 0xa58	
+	CUtlString m_sFriendName; // 0xac0	
 };
 

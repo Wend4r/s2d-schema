@@ -55,12 +55,12 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad05ec[0x4]; // 0x5ec
 public:
-	CUtlString m_strSeasonalBodygroup; // 0x5f0	
 	// MPropertyDescription "If specified, this model will be used if convar citadel_use_wip_models is true."
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x5f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x5f0	
 	// MPropertyDescription "If specified, this model will be used in main instead of 'Model Name'."
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strMainOnlyModelName; // 0x6d8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strMainOnlyModelName; // 0x6d0	
 	// MPropertyStartGroup "UI"
+	uint64_t m_iAddedTime; // 0x7b0	
 	// MPropertyDescription "AnimGraph for UI"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCNmGraphVariation > > m_sAG2VariationName; // 0x7b8	
 	// MPropertyAttributeEditor "AssetBrowse( vmap )"

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb0
+// Size: 0xa0
 // Has VTable
 // Is Abstract
 // Has Trivial Destructor
@@ -24,108 +24,96 @@ private:
 public:
 	float m_flDelay; // 0x10	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Maintain"
-	// MPropertyDescription "How long to hold the current value"
+	// MPropertyDescription "How long to hold the current value.  A value <= 0 is forever"
 	float m_flMaintainDuration; // 0x14	
-	// MPropertySuppressExpr "m_bMaintainCurrent == true || m_eCameraOperation != k_ECameraOp_Maintain"
-	// MPropertyDescription "What float value to maintain"
-	float m_flMaintainFloat; // 0x18	
-	// MPropertySuppressExpr "m_bMaintainCurrent == true || m_eCameraOperation != k_ECameraOp_Maintain"
-	// MPropertyDescription "What vector value to maintain"
-	Vector m_vecMaintainVector; // 0x1c	
-	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Maintain"
-	// MPropertyDescription "Maintain the current value. NOTE: This should only really be used for positions, when wanting to stay at a certain spot, like after guided arrow, otherwise it will break when multiple contexts change."
-	bool m_bMaintainCurrent; // 0x28	
-private:
-	[[maybe_unused]] uint8_t __pad0029[0x3]; // 0x29
-public:
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
 	// MPropertyDescription "How fast to approach the target value"
-	float m_flApproachSpeed; // 0x2c	
+	float m_flApproachSpeed; // 0x18	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
 	// MPropertyDescription "Acceleration as we approach the target value"
-	float m_flApproachAcceleration; // 0x30	
+	float m_flApproachAcceleration; // 0x1c	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
 	// MPropertyDescription "Minimum time to try approaching"
-	float m_flApproachMinDuration; // 0x34	
+	float m_flApproachMinDuration; // 0x20	
 	// MPropertySuppressExpr "m_bApproachDefault == true || m_eCameraOperation != k_ECameraOp_Approach || m_nCameraParam == 4"
 	// MPropertyDescription "The target value"
-	float m_flApproachTarget; // 0x38	
+	float m_flApproachTarget; // 0x24	
 	// MPropertySuppressExpr "m_bApproachDefault == true || m_eCameraOperation != k_ECameraOp_Approach || m_nCameraParam != 4"
 	// MPropertyDescription "The target value"
-	Vector m_vApproachTarget; // 0x3c	
+	Vector m_vApproachTarget; // 0x28	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Approach"
 	// MPropertyDescription "If true, approaches the dafault value.  If false, allows specifying a target value"
-	bool m_bApproachDefault; // 0x48	
+	bool m_bApproachDefault; // 0x34	
 private:
-	[[maybe_unused]] uint8_t __pad0049[0x3]; // 0x49
+	[[maybe_unused]] uint8_t __pad0035[0x3]; // 0x35
 public:
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
 	// MPropertyDescription "Strength of the spring.  Larger is stronger"
-	float m_flSpringStrength; // 0x4c	
+	float m_flSpringStrength; // 0x38	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
 	// MPropertyDescription "Minimum speed of the spring.  Useful is the spring strength is low or the target is near."
-	float m_flSpringMinSpeed; // 0x50	
+	float m_flSpringMinSpeed; // 0x3c	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
 	// MPropertyDescription "Maximum time to spring to the target"
-	float m_flSpringMaxDuration; // 0x54	
+	float m_flSpringMaxDuration; // 0x40	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Spring"
 	// MPropertyDescription "If true, spring to the default value.  If false, allows specifing the target value"
-	bool m_bSpringToDefault; // 0x58	
+	bool m_bSpringToDefault; // 0x44	
 private:
-	[[maybe_unused]] uint8_t __pad0059[0x3]; // 0x59
+	[[maybe_unused]] uint8_t __pad0045[0x3]; // 0x45
 public:
 	// MPropertySuppressExpr "m_bSpringToDefault == true || m_eCameraOperation != k_ECameraOp_Spring || m_nCameraParam == 4"
 	// MPropertyDescription "The target value to spring to"
-	float m_flSpringTarget; // 0x5c	
+	float m_flSpringTarget; // 0x48	
 	// MPropertySuppressExpr "m_bSpringToDefault == true || m_eCameraOperation != k_ECameraOp_Spring || m_nCameraParam != 4"
 	// MPropertyDescription "The target value to spring to"
-	Vector m_vSpringTarget; // 0x60	
+	Vector m_vSpringTarget; // 0x4c	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
 	// MPropertyDescription "If true, start lerping from the current value.  If false, allows specifying the start lerp value"
-	bool m_bLerpStartAtCurrent; // 0x6c	
+	bool m_bLerpStartAtCurrent; // 0x58	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
 	// MPropertyDescription "If true, lerp to the default value.  If false, allows specifying the end lerp value"
-	bool m_bLerpEndAtDefault; // 0x6d	
+	bool m_bLerpEndAtDefault; // 0x59	
 private:
-	[[maybe_unused]] uint8_t __pad006e[0x2]; // 0x6e
+	[[maybe_unused]] uint8_t __pad005a[0x2]; // 0x5a
 public:
 	// MPropertySuppressExpr "m_bLerpStartAtCurrent == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam == 4"
 	// MPropertyDescription "The start lerp value"
-	float m_flLerpStart; // 0x70	
+	float m_flLerpStart; // 0x5c	
 	// MPropertySuppressExpr "m_bLerpEndAtDefault == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam == 4"
 	// MPropertyDescription "The end lerp value"
-	float m_flLerpEnd; // 0x74	
+	float m_flLerpEnd; // 0x60	
 	// MPropertySuppressExpr "m_bLerpStartAtCurrent == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam != 4"
 	// MPropertyDescription "The start lerp value"
-	Vector m_vLerpStart; // 0x78	
+	Vector m_vLerpStart; // 0x64	
 	// MPropertySuppressExpr "m_bLerpEndAtDefault == true || m_eCameraOperation != k_ECameraOp_Lerp || m_nCameraParam != 4"
 	// MPropertyDescription "The end lerp value"
-	Vector m_vLerpEnd; // 0x84	
+	Vector m_vLerpEnd; // 0x70	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
 	// MPropertyAttributeRange "0 1"
 	// MPropertyDescription "A bias on the lerp"
-	float m_flLerpBias; // 0x90	
+	float m_flLerpBias; // 0x7c	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
 	// MPropertyAttributeRange "0 1"
 	// MPropertyDescription "A gain on the lerp"
-	float m_flLerpGain; // 0x94	
+	float m_flLerpGain; // 0x80	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lerp"
 	// MPropertyDescription "How long to lerp from start to end"
-	float m_flLerpDuration; // 0x98	
+	float m_flLerpDuration; // 0x84	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
 	// MPropertyDescription "Minimum time to have the spring active"
-	float m_flLagMinDuration; // 0x9c	
+	float m_flLagMinDuration; // 0x88	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
 	// MPropertyDescription "How long to let the value lag behind before springing to the default value"
-	float m_flLagTime; // 0xa0	
+	float m_flLagTime; // 0x8c	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
 	// MPropertyDescription "While lagging behind, the max value we can approach the target value."
-	float m_flLagMaxSpeed; // 0xa4	
+	float m_flLagMaxSpeed; // 0x90	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
 	// MPropertyDescription "Once the lag period is over, how strong the spring is that pulls the current value to the default value"
-	float m_flLagSpringStrength; // 0xa8	
+	float m_flLagSpringStrength; // 0x94	
 	// MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
 	// MPropertyDescription "When true, the spring strength will scale up to try to keep the target on screen"
-	bool m_bIncreaseSpringStrengthToKeepTargetOnScreen; // 0xac	
+	bool m_bIncreaseSpringStrengthToKeepTargetOnScreen; // 0x98	
 };
 

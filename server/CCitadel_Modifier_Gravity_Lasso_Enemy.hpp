@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x220
+// Size: 0x300
 // Has VTable
 class CCitadel_Modifier_Gravity_Lasso_Enemy : public CCitadel_Modifier_Stunned
 {

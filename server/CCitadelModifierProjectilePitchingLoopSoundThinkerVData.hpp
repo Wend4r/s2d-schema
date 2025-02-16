@@ -5,7 +5,7 @@
 struct CRemapFloat;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x648
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -14,6 +14,6 @@ class CCitadelModifierProjectilePitchingLoopSoundThinkerVData : public CCitadelM
 public:
 	// MPropertyGroupName "Audio"
 	// MPropertyDescription "Remap values from Speed to Pitch (MinSpeed, MaxSpeed, MinSpeedPitch, MaxSpeedPitch)"
-	CRemapFloat m_speedToPitchRemap; // 0x630	
+	CRemapFloat m_speedToPitchRemap; // 0x638	
 };
 

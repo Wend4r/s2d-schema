@@ -5,7 +5,7 @@
 struct CCitadelAbilityComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1460
+// Size: 0x1420
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -39,25 +39,25 @@ public:
 	// MNetworkChangeCallback "OnEyeBeamTargetChanged"
 	Vector m_vEyeBeamTarget; // 0xd40	
 private:
-	[[maybe_unused]] uint8_t __pad0d4c[0x4b4]; // 0xd4c
+	[[maybe_unused]] uint8_t __pad0d4c[0x474]; // 0xd4c
 public:
-	int32_t m_nPlayerTeamEvent; // 0x1200	
+	int32_t m_nPlayerTeamEvent; // 0x11c0	
 private:
-	[[maybe_unused]] uint8_t __pad1204[0x4c]; // 0x1204
+	[[maybe_unused]] uint8_t __pad11c4[0x4c]; // 0x11c4
 public:
 	// MNetworkEnable
-	C_UtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0x1250	
+	C_UtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0x1210	
 	// MNetworkEnable
-	bool m_bMinion; // 0x12b8	
+	bool m_bMinion; // 0x1278	
 private:
-	[[maybe_unused]] uint8_t __pad12b9[0x3]; // 0x12b9
+	[[maybe_unused]] uint8_t __pad1279[0x3]; // 0x1279
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hLookTarget; // 0x12bc	
+	CHandle< C_BaseEntity > m_hLookTarget; // 0x127c	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x12c0	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1280	
 };
 

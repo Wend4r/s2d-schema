@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x50
+// Size: 0x70
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -17,5 +17,7 @@ public:
 	// MPropertyStartGroup "Modifiers"
 	CEmbeddedSubclass< CCitadelModifier > m_ObjectiveRegen; // 0x30	
 	CEmbeddedSubclass< CCitadelModifier > m_BackdoorBulletResistModifier; // 0x40	
+	CEmbeddedSubclass< CCitadelModifier > m_BackdoorProtectionModifier; // 0x50	
+	CEmbeddedSubclass< CCitadelModifier > m_RangedArmorModifier; // 0x60	
 };
 

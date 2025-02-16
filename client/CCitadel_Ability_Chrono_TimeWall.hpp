@@ -5,17 +5,17 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe40
+// Size: 0xe48
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bAirCast"
 class CCitadel_Ability_Chrono_TimeWall : public C_CitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_hChargingParticle; // 0xc98	
-	Vector m_vSpawnPos; // 0xc9c	
-	QAngle m_qAngles; // 0xca8	
+	ParticleIndex_t m_hChargingParticle; // 0xca0	
+	Vector m_vSpawnPos; // 0xca4	
+	QAngle m_qAngles; // 0xcb0	
 	// MNetworkEnable
-	bool m_bAirCast; // 0xcb4	
+	bool m_bAirCast; // 0xcbc	
 };
 

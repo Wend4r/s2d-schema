@@ -171,7 +171,9 @@ public:
 	bool m_bAnimGraphMovementDisableGravity; // 0x1371	
 	// MNetworkEnable
 	bool m_bAnimGraphMovementDirectAirControl; // 0x1372	
-	bool m_bLastMoveWasAnimGraph; // 0x1373	
+private:
+	[[maybe_unused]] uint8_t __pad1373[0x1]; // 0x1373
+public:
 	// MNetworkEnable
 	GameTime_t m_flPredTimeSlowedStart; // 0x1374	
 	// MNetworkEnable

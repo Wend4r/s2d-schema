@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb98
+// Size: 0xba0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIcePathing"
@@ -14,20 +14,20 @@
 class CCitadel_Ability_IcePath : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x70]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x70]; // 0xb00
 public:
-	Vector m_vInitialPosition; // 0xb68	
+	Vector m_vInitialPosition; // 0xb70	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bIcePathing; // 0xb74	
+	bool m_bIcePathing; // 0xb7c	
 private:
-	[[maybe_unused]] uint8_t __pad0b75[0x3]; // 0xb75
+	[[maybe_unused]] uint8_t __pad0b7d[0x3]; // 0xb7d
 public:
 	// MNetworkEnable
-	QAngle m_qLastAngles; // 0xb78	
+	QAngle m_qLastAngles; // 0xb80	
 	// MNetworkEnable
-	Vector m_vLastVelocity; // 0xb84	
+	Vector m_vLastVelocity; // 0xb8c	
 	// MNetworkEnable
-	bool m_bFirstMovementTick; // 0xb90	
+	bool m_bFirstMovementTick; // 0xb98	
 };
 

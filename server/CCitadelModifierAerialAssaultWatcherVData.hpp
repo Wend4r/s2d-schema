@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x648
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadelModifierAerialAssaultWatcherVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_AssaultModifier; // 0x630	
+	CEmbeddedSubclass< CCitadelModifier > m_AssaultModifier; // 0x638	
 };
 

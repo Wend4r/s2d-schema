@@ -18,7 +18,6 @@ public:
 	// MNetworkTypeAlias "CCitadelHeroComponent"
 	// -> m_nHeroID - 0x574
 	// -> m_nHeroLoading - 0x578
-	// -> m_bIsUsingSeasonalSkin - 0x57c
 	CCitadelHeroComponent m_CCitadelHeroComponent; // 0x560	
 };
 

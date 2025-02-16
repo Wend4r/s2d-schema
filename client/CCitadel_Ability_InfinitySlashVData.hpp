@@ -5,30 +5,30 @@
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x17f8
+// Size: 0x1820
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Ability_InfinitySlashVData : public CCitadelYamatoBaseVData
 {
 public:
-	float m_flRiseSpeed; // 0x1570	
-	float m_flRiseDuration; // 0x1574	
-	float m_flSpeedDecayScale; // 0x1578	
-	float m_flExplodeHoldTime; // 0x157c	
-	float m_flExplosionShakeAmplitude; // 0x1580	
-	float m_flExplosionShakeFrequency; // 0x1584	
-	float m_flExplosionShakeDuration; // 0x1588	
+	float m_flRiseSpeed; // 0x1598	
+	float m_flRiseDuration; // 0x159c	
+	float m_flSpeedDecayScale; // 0x15a0	
+	float m_flExplodeHoldTime; // 0x15a4	
+	float m_flExplosionShakeAmplitude; // 0x15a8	
+	float m_flExplosionShakeFrequency; // 0x15ac	
+	float m_flExplosionShakeDuration; // 0x15b0	
 private:
-	[[maybe_unused]] uint8_t __pad158c[0x4]; // 0x158c
+	[[maybe_unused]] uint8_t __pad15b4[0x4]; // 0x15b4
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AOERangeEffect; // 0x1590	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AnimCastEffect; // 0x1670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AOERangeEffect; // 0x15b8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AnimCastEffect; // 0x1698	
 	// MPropertyStartGroup "Camera"
-	CitadelCameraOperationsSequence_t m_cameraSequenceExplosion; // 0x1750	
+	CitadelCameraOperationsSequence_t m_cameraSequenceExplosion; // 0x1778	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x17d8	
-	CEmbeddedSubclass< CCitadelModifier > m_BuffTimerModifier; // 0x17e8	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x1800	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffTimerModifier; // 0x1810	
 };
 

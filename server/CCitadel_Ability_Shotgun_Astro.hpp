@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd90
+// Size: 0xd98
 // Has VTable
 class CCitadel_Ability_Shotgun_Astro : public CCitadel_Ability_PrimaryWeapon
 {

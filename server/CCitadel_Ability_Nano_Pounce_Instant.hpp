@@ -7,7 +7,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd98
+// Size: 0xda0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bActive"
@@ -22,39 +22,39 @@ struct ParticleIndex_t;
 class CCitadel_Ability_Nano_Pounce_Instant : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x230]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x230]; // 0xb00
 public:
 	// MNetworkEnable
-	bool m_bActive; // 0xd28	
+	bool m_bActive; // 0xd30	
 private:
-	[[maybe_unused]] uint8_t __pad0d29[0x3]; // 0xd29
+	[[maybe_unused]] uint8_t __pad0d31[0x3]; // 0xd31
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hCurrentTarget; // 0xd2c	
+	CHandle< CBaseEntity > m_hCurrentTarget; // 0xd34	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hLastCastTarget; // 0xd30	
+	CHandle< CBaseEntity > m_hLastCastTarget; // 0xd38	
 	// MNetworkEnable
-	Vector m_vStartPosition; // 0xd34	
+	Vector m_vStartPosition; // 0xd3c	
 	// MNetworkEnable
-	Vector m_vDeparturePosition; // 0xd40	
+	Vector m_vDeparturePosition; // 0xd48	
 private:
-	[[maybe_unused]] uint8_t __pad0d4c[0x4]; // 0xd4c
+	[[maybe_unused]] uint8_t __pad0d54[0x4]; // 0xd54
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flDepartureTime; // 0xd50	
+	CCitadelAutoScaledTime m_flDepartureTime; // 0xd58	
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flArrivalTime; // 0xd68	
-	Vector m_vLastKnownSafePos; // 0xd80	
+	CCitadelAutoScaledTime m_flArrivalTime; // 0xd70	
+	Vector m_vLastKnownSafePos; // 0xd88	
 private:
-	[[maybe_unused]] uint8_t __pad0d8c[0x2]; // 0xd8c
+	[[maybe_unused]] uint8_t __pad0d94[0x2]; // 0xd94
 public:
 	// MNetworkEnable
-	bool m_bIsFirstCastCompleted; // 0xd8e	
+	bool m_bIsFirstCastCompleted; // 0xd96	
 private:
-	[[maybe_unused]] uint8_t __pad0d8f[0x1]; // 0xd8f
+	[[maybe_unused]] uint8_t __pad0d97[0x1]; // 0xd97
 public:
 	// MNetworkEnable
-	GameTime_t m_tDoubleCastWindow; // 0xd90	
-	ParticleIndex_t m_CastStartParticle; // 0xd94	
+	GameTime_t m_tDoubleCastWindow; // 0xd98	
+	ParticleIndex_t m_CastStartParticle; // 0xd9c	
 };
 

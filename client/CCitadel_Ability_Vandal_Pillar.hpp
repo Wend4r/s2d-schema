@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd78
+// Size: 0xd80
 // Has VTable
 class CCitadel_Ability_Vandal_Pillar : public C_CitadelBaseAbility
 {

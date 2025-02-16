@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x650
+// Size: 0x658
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_BerserkerVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_BerserkerSound; // 0x630	
+	CSoundEventName m_BerserkerSound; // 0x638	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_StackModifier; // 0x640	
+	CEmbeddedSubclass< CCitadelModifier > m_StackModifier; // 0x648	
 };
 

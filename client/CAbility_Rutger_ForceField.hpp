@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe20
+// Size: 0xe28
 // Has VTable
 class CAbility_Rutger_ForceField : public C_CitadelBaseAbility
 {

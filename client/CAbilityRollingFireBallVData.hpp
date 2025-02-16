@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1580
+// Size: 0x15a8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -15,11 +15,11 @@ public:
 	// MPropertyStartGroup "Sounds"
 	// MPropertyStartGroup "Modifiers"
 	// MPropertyStartGroup "Gameplay"
-	float m_flBallLifetime; // 0x1568	
-	float m_flBallStepUpHeight; // 0x156c	
-	float m_flBallDistAboveGround; // 0x1570	
-	float m_flBallFloatDownRate; // 0x1574	
-	float m_flBallSpeed; // 0x1578	
-	float m_flBallTraceRadius; // 0x157c	
+	float m_flBallLifetime; // 0x1590	
+	float m_flBallStepUpHeight; // 0x1594	
+	float m_flBallDistAboveGround; // 0x1598	
+	float m_flBallFloatDownRate; // 0x159c	
+	float m_flBallSpeed; // 0x15a0	
+	float m_flBallTraceRadius; // 0x15a4	
 };
 

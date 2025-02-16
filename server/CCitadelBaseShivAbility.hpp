@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xaf8
+// Size: 0xb00
 // Has VTable
 // Is Abstract
 class CCitadelBaseShivAbility : public CCitadelBaseAbility

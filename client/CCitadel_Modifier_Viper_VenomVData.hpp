@@ -4,14 +4,12 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x728
+// Size: 0x638
 // Has VTable
 // 
 // MGetKV3ClassDefaults
-class CCitadel_Modifier_Viper_VenomVData : public CCitadel_Modifier_Base_BuildupVData
+class CCitadel_Modifier_Viper_VenomVData : public CCitadelModifierVData
 {
 public:
-	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x648	
 };
 

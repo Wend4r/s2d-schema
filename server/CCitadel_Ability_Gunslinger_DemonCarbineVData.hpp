@@ -5,21 +5,21 @@
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1618
+// Size: 0x1640
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Ability_Gunslinger_DemonCarbineVData : public CitadelAbilityVData
 {
 public:
-	float m_flShotTimeScaleLingerDuration; // 0x1568	
+	float m_flShotTimeScaleLingerDuration; // 0x1590	
 private:
-	[[maybe_unused]] uint8_t __pad156c[0x4]; // 0x156c
+	[[maybe_unused]] uint8_t __pad1594[0x4]; // 0x1594
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ChargingModifier; // 0x1570	
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1580	
+	CEmbeddedSubclass< CCitadelModifier > m_ChargingModifier; // 0x1598	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x15a8	
 	// MPropertyStartGroup "Camera"
-	CitadelCameraOperationsSequence_t m_cameraDemonCarbineShotFired; // 0x1590	
+	CitadelCameraOperationsSequence_t m_cameraDemonCarbineShotFired; // 0x15b8	
 };
 

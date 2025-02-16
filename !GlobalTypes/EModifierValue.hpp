@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 215
+// Enumerator count: 217
 // Alignment: 4
 // Size: 0x4
 enum class EModifierValue : uint32_t
@@ -331,8 +331,10 @@ enum class EModifierValue : uint32_t
 	MODIFIER_VALUE_BOON_COUNT = 0xd2,
 	MODIFIER_VALUE_FOOTSTEP_ADDITIONAL = 0xd3,
 	MODIFIER_VALUE_FOOTSTEP_OVERRIDE = 0xd4,
+	MODIFIER_VALUE_MODEL_SCALE = 0xd5,
+	MODIFIER_VALUE_MODEL_CHANGE = 0xd6,
 	// MPropertySuppressEnumerator
-	MODIFIER_VALUE_COUNT = 0xd5,
+	MODIFIER_VALUE_COUNT = 0xd7,
 	// MPropertySuppressEnumerator
 	MODIFIER_VALUE_INVALID = 0xff,
 };

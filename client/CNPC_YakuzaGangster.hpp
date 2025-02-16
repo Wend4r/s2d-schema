@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1460
+// Size: 0x1420
 // Has VTable
 class CNPC_YakuzaGangster : public C_AI_CitadelNPC
 {

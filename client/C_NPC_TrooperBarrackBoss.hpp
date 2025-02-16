@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x14e0
+// Size: 0x14a0
 // Has VTable
 class C_NPC_TrooperBarrackBoss : public C_NPC_TrooperBoss
 {

@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x18a0
+// Size: 0x18a8
 // Has VTable
 // 
 // MNetworkVarNames "int m_iLane"
@@ -20,31 +20,31 @@ public:
 	// MNetworkEnable
 	int32_t m_iLane; // 0x17e8	
 private:
-	[[maybe_unused]] uint8_t __pad17ec[0x30]; // 0x17ec
+	[[maybe_unused]] uint8_t __pad17ec[0x34]; // 0x17ec
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
-	QAngle m_angTargeting1; // 0x181c	
+	QAngle m_angTargeting1; // 0x1820	
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
-	QAngle m_angTargeting2; // 0x1828	
+	QAngle m_angTargeting2; // 0x182c	
 	// MNetworkEnable
-	int32_t m_nElectricBeamCasts; // 0x1834	
+	int32_t m_nElectricBeamCasts; // 0x1838	
 private:
-	[[maybe_unused]] uint8_t __pad1838[0x20]; // 0x1838
+	[[maybe_unused]] uint8_t __pad183c[0x24]; // 0x183c
 public:
-	CEntityIOOutput m_eventOnBossKilled; // 0x1858	
-	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1880	
-private:
-	[[maybe_unused]] uint8_t __pad1888[0x4]; // 0x1888
-public:
-	// MNetworkEnable
-	ETier3State_t m_eAliveState; // 0x188c	
+	CEntityIOOutput m_eventOnBossKilled; // 0x1860	
+	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1888	
 private:
 	[[maybe_unused]] uint8_t __pad1890[0x4]; // 0x1890
 public:
 	// MNetworkEnable
-	ETier3Phase_t m_ePhase; // 0x1894	
+	ETier3State_t m_eAliveState; // 0x1894	
+private:
+	[[maybe_unused]] uint8_t __pad1898[0x4]; // 0x1898
+public:
+	// MNetworkEnable
+	ETier3Phase_t m_ePhase; // 0x189c	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_T3BOSS_CAN_ELECTRIC_BEAM(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier3")->m_static_fields[0]->m_instance);};

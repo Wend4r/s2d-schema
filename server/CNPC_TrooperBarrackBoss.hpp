@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1b20
+// Size: 0x1b10
 // Has VTable
 class CNPC_TrooperBarrackBoss : public CNPC_TrooperBoss
 {

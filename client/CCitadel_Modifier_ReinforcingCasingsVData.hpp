@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x648
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_ReinforcingCasingsVData : public CCitadel_Modifier_Intri
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x630	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x638	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15c0
+// Size: 0x15f0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Ability_ShivWeapon_VData : public CCitadel_Ability_PrimaryWeaponV
 {
 public:
 	// MPropertyStartGroup "+Gun Properties"
-	float m_flPushForce; // 0x15b8	
+	float m_flPushForce; // 0x15e8	
 };
 

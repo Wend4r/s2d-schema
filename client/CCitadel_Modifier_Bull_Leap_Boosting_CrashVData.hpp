@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x728
+// Size: 0x730
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_Bull_Leap_Boosting_CrashVData : public CCitadelModifierV
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DragModifier; // 0x630	
+	CEmbeddedSubclass< CCitadelModifier > m_DragModifier; // 0x638	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CrashTrailParticle; // 0x640	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CrashTrailParticle; // 0x648	
 	// MPropertyStartGroup "Gameplay"
-	float m_flCollideRadius; // 0x720	
+	float m_flCollideRadius; // 0x728	
 };
 

@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb58
+// Size: 0xb60
 // Has VTable
 class CCitadel_Item_PowerShard : public CCitadel_Item
 {
 public:
-	CHandle< CCitadelBaseAbility > m_hLastSignatureToActivate; // 0xb18	
+	CHandle< CCitadelBaseAbility > m_hLastSignatureToActivate; // 0xb20	
 };
 

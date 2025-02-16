@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x638
+// Size: 0x640
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_SpeedBoostVData : public CCitadelModifierVData
 {
 public:
-	float m_flMoveSpeedBoost; // 0x630	
+	float m_flMoveSpeedBoost; // 0x638	
 };
 

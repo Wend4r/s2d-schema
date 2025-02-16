@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcb8
+// Size: 0xcc0
 // Has VTable
 class CCitadel_Item_RescueBeam : public CCitadel_Item
 {
 public:
-	bool m_bCanPull; // 0xcb0	
+	bool m_bCanPull; // 0xcb8	
 };
 

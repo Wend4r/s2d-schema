@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x688
+// Size: 0x690
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_HeldItemPickupAuraVData : public CCitadelModifierAuraVData
 {
 public:
-	CSubclassName< 4 > m_strFilterAbilityName; // 0x678	
+	CSubclassName< 4 > m_strFilterAbilityName; // 0x680	
 };
 

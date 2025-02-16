@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe50
+// Size: 0xe58
 // Has VTable
 // 
 // MNetworkVarNames "ECatStatueState_t m_eState"
@@ -14,17 +14,17 @@ class CCitadel_Ability_ProximityRitual : public C_CitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	ECatStatueState_t m_eState; // 0xc98	
+	ECatStatueState_t m_eState; // 0xca0	
 private:
-	[[maybe_unused]] uint8_t __pad0c99[0x3]; // 0xc99
+	[[maybe_unused]] uint8_t __pad0ca1[0x3]; // 0xca1
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CHandle< C_BaseEntity > m_hStatue; // 0xc9c	
+	CHandle< C_BaseEntity > m_hStatue; // 0xca4	
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x8]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0ca8[0x8]; // 0xca8
 public:
-	Vector m_vLaunchPosition; // 0xca8	
-	QAngle m_qLaunchAngle; // 0xcb4	
+	Vector m_vLaunchPosition; // 0xcb0	
+	QAngle m_qLaunchAngle; // 0xcbc	
 };
 

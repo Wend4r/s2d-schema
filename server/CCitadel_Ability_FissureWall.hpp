@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc00
+// Size: 0xc08
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecStartPos"
@@ -20,28 +20,28 @@ struct GameTime_t;
 class CCitadel_Ability_FissureWall : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0xb8]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0xb8]; // 0xb00
 public:
 	// MNetworkEnable
-	Vector m_vecStartPos; // 0xbb0	
+	Vector m_vecStartPos; // 0xbb8	
 	// MNetworkEnable
-	Vector m_vecPosition; // 0xbbc	
+	Vector m_vecPosition; // 0xbc4	
 	// MNetworkEnable
-	Vector m_vecInitialPosition; // 0xbc8	
+	Vector m_vecInitialPosition; // 0xbd0	
 	// MNetworkEnable
-	GameTime_t m_CastTime; // 0xbd4	
+	GameTime_t m_CastTime; // 0xbdc	
 	// MNetworkEnable
-	Vector m_vecDirection; // 0xbd8	
+	Vector m_vecDirection; // 0xbe0	
 	// MNetworkEnable
-	Vector m_vecLeft; // 0xbe4	
+	Vector m_vecLeft; // 0xbec	
 	// MNetworkEnable
-	float m_Length; // 0xbf0	
+	float m_Length; // 0xbf8	
 private:
-	[[maybe_unused]] uint8_t __pad0bf4[0xa]; // 0xbf4
+	[[maybe_unused]] uint8_t __pad0bfc[0xa]; // 0xbfc
 public:
 	// MNetworkEnable
-	bool m_bTraveling; // 0xbfe	
+	bool m_bTraveling; // 0xc06	
 	// MNetworkEnable
-	bool m_bPreview; // 0xbff	
+	bool m_bPreview; // 0xc07	
 };
 

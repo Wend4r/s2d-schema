@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x380
+// Size: 0x3a0
 // 
 // MGetKV3ClassDefaults
 struct ProjectileInfo_t
@@ -56,20 +56,28 @@ private:
 	[[maybe_unused]] uint8_t __pad0314[0x4]; // 0x314
 public:
 	// MPropertyStartGroup "Sounds"
+	// MPropertyDescription "Plays when a projectile hits a valid target - or the world. Not the same as detonating, just colliding."
 	CSoundEventName m_HitSound; // 0x318	
-	CSoundEventName m_DetonateSound; // 0x328	
-	CSoundEventName m_LoopingSound; // 0x338	
-	CSoundEventName m_WarningSound; // 0x348	
+	// MPropertyDescription "Plays when a projectile hits a valid target ONLY."
+	CSoundEventName m_HitTargetSound; // 0x328	
+	// MPropertyDescription "Plays when a projectile hits the world ONLY."
+	CSoundEventName m_HitWorldSound; // 0x338	
+	// MPropertyDescription "Plays when a projectile detonates. Not all projectiles detonate."
+	CSoundEventName m_DetonateSound; // 0x348	
+	// MPropertyDescription "Plays while a projectile is alive."
+	CSoundEventName m_LoopingSound; // 0x358	
+	// MPropertyDescription "Plays a warning sound when a projectile hits a surface, but before it detonates. Plays ONLY if a warning particle is also created."
+	CSoundEventName m_WarningSound; // 0x368	
 	// MPropertyStartGroup "Tracking"
-	float m_flTrackingDampingCoefficient; // 0x358	
-	float m_flTrackingDuration; // 0x35c	
-	float m_flTrackingStartTime; // 0x360	
-	float m_flTrackingEndTime; // 0x364	
-	float m_flTrackingStopDuration; // 0x368	
+	float m_flTrackingDampingCoefficient; // 0x378	
+	float m_flTrackingDuration; // 0x37c	
+	float m_flTrackingStartTime; // 0x380	
+	float m_flTrackingEndTime; // 0x384	
+	float m_flTrackingStopDuration; // 0x388	
 private:
-	[[maybe_unused]] uint8_t __pad036c[0x4]; // 0x36c
+	[[maybe_unused]] uint8_t __pad038c[0x4]; // 0x38c
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_AutoProjectileModifier; // 0x370	
+	CEmbeddedSubclass< CBaseModifier > m_AutoProjectileModifier; // 0x390	
 };
 

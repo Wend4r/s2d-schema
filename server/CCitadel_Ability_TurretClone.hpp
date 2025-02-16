@@ -6,24 +6,26 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc38
+// Size: 0xd88
 // Has VTable
+// 
+// MNetworkVarNames "EHANDLE m_pActiveTurret"
 class CCitadel_Ability_TurretClone : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x118]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x118]; // 0xb00
 public:
-	GameTime_t m_flTurretExpireTime; // 0xc10	
+	bool m_bHasTurretReady; // 0xc18	
 private:
-	[[maybe_unused]] uint8_t __pad0c14[0x4]; // 0xc14
-public:
-	bool m_bTeleported; // 0xc18	
-	bool m_bHasTurretReady; // 0xc19	
-private:
-	[[maybe_unused]] uint8_t __pad0c1a[0x2]; // 0xc1a
+	[[maybe_unused]] uint8_t __pad0c19[0x3]; // 0xc19
 public:
 	int32_t m_iCurrentSwapCount; // 0xc1c	
-	Vector m_vecTurretPosition; // 0xc20	
-	ParticleIndex_t m_nFXIndex; // 0xc2c	
+	GameTime_t m_flTurretExpireTime; // 0xc20	
+private:
+	[[maybe_unused]] uint8_t __pad0c24[0x4]; // 0xc24
+public:
+	// MNetworkEnable
+	CHandle< CBaseEntity > m_pActiveTurret; // 0xc28	
+	ParticleIndex_t m_nTurretFXIndex; // 0xc2c	
 };
 

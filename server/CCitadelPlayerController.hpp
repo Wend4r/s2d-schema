@@ -8,7 +8,7 @@ struct CitadelLobbyPlayerSlot_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbf0
+// Size: 0xc58
 // Has VTable
 // 
 // MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -115,22 +115,22 @@ public:
 	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x978	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int8_t m_nDeathReplayAvailable; // 0xb98	
+	int8_t m_nDeathReplayAvailable; // 0xc00	
 	// MNetworkEnable
-	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xb99	
+	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xc01	
 private:
-	[[maybe_unused]] uint8_t __pad0b9a[0x2]; // 0xb9a
+	[[maybe_unused]] uint8_t __pad0c02[0x2]; // 0xc02
 public:
-	GameTime_t m_flLastCommsTime; // 0xb9c	
-	GameTime_t m_flLastFailedCommsTime; // 0xba0	
-	bool m_bLastCommsWasDoublePing; // 0xba4	
+	GameTime_t m_flLastCommsTime; // 0xc04	
+	GameTime_t m_flLastFailedCommsTime; // 0xc08	
+	bool m_bLastCommsWasDoublePing; // 0xc0c	
 private:
-	[[maybe_unused]] uint8_t __pad0ba5[0x3]; // 0xba5
+	[[maybe_unused]] uint8_t __pad0c0d[0x3]; // 0xc0d
 public:
-	int32_t m_nGuideBotNumTasksComplete; // 0xba8	
-	bool m_bHasBeenReportedAsCheater; // 0xbac	
-	bool m_bHasGCACKedCheaterReport; // 0xbad	
-	bool m_bHasBeenLoggedAsCheater; // 0xbae	
+	int32_t m_nGuideBotNumTasksComplete; // 0xc10	
+	bool m_bHasBeenReportedAsCheater; // 0xc14	
+	bool m_bHasGCACKedCheaterReport; // 0xc15	
+	bool m_bHasBeenLoggedAsCheater; // 0xc16	
 	
 	// Datamap fields:
 	// void CCitadelPlayerControllerResourceDataThink; // 0x0

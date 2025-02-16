@@ -6,7 +6,7 @@ struct GameTime_t;
 struct MatchID_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x9ee0
+// Size: 0x9ee8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFreezePeriod"
@@ -41,7 +41,7 @@ struct MatchID_t;
 // MNetworkVarNames "int m_eGGTeam"
 // MNetworkVarNames "GameTime_t m_flGGEndsAtTime"
 // MNetworkVarNames "MatchID_t m_unMatchID"
-// MNetworkVarNames "int m_nExperimentalGameplayState"
+// MNetworkVarNames "CUtlString m_sGameplayExperiment"
 // MNetworkVarNames "GameTime_t m_flHeroDiedTime"
 class C_CitadelGameRules : public C_TeamplayRules
 {
@@ -149,14 +149,14 @@ public:
 	// MNetworkEnable
 	MatchID_t m_unMatchID; // 0x9ea0	
 	// MNetworkEnable
-	int32_t m_nExperimentalGameplayState; // 0x9ea8	
-	int32_t m_nPlayerDeathEventID; // 0x9eac	
-	int32_t m_nReplayChangedEvent; // 0x9eb0	
-	int32_t m_nGameOverEvent; // 0x9eb4	
+	CUtlString m_sGameplayExperiment; // 0x9ea8	
+	int32_t m_nPlayerDeathEventID; // 0x9eb0	
+	int32_t m_nReplayChangedEvent; // 0x9eb4	
+	int32_t m_nGameOverEvent; // 0x9eb8	
 private:
-	[[maybe_unused]] uint8_t __pad9eb8[0x20]; // 0x9eb8
+	[[maybe_unused]] uint8_t __pad9ebc[0x24]; // 0x9ebc
 public:
 	// MNetworkEnable
-	GameTime_t m_flHeroDiedTime; // 0x9ed8	
+	GameTime_t m_flHeroDiedTime; // 0x9ee0	
 };
 

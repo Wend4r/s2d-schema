@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 53
+// Enumerator count: 52
 // Alignment: 4
 // Size: 0x4
 enum class GameAnimEventIndex_t : uint32_t
@@ -57,9 +57,8 @@ enum class GameAnimEventIndex_t : uint32_t
 	AE_NPC_RAGDOLL = 0x2e,
 	AE_NPC_ATTACK_BROADCAST = 0x2f,
 	AE_NPC_GIB = 0x30,
-	AE_HURDLE_RISE_START = 0x31,
-	AE_HURDLE_DROP_START = 0x32,
-	AE_RAGDOLL_WINDOW = 0x33,
-	AE_MELEE_ATTACK = 0x34,
+	AE_PREDICTED_PLAYSOUND = 0x31,
+	AE_RAGDOLL_WINDOW = 0x32,
+	AE_MELEE_ATTACK = 0x33,
 };
 

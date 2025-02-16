@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x680
+// Size: 0x688
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CModifierAirRaidVData : public CCitadel_Modifier_BaseEventProcVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x660	
+	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x668	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strWeaponShootSound; // 0x670	
+	CSoundEventName m_strWeaponShootSound; // 0x678	
 };
 

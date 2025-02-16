@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x660
+// Size: 0x668
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_TargetPracticeDebuffVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x630	
-	CEmbeddedSubclass< CCitadelModifier > m_BulletResistModifier; // 0x640	
-	CEmbeddedSubclass< CCitadelModifier > m_EMPModifier; // 0x650	
+	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x638	
+	CEmbeddedSubclass< CCitadelModifier > m_BulletResistModifier; // 0x648	
+	CEmbeddedSubclass< CCitadelModifier > m_EMPModifier; // 0x658	
 };
 

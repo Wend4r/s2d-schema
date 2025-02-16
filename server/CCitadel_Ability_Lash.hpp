@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc48
+// Size: 0xc50
 // Has VTable
 class CCitadel_Ability_Lash : public CCitadelBaseAbility
 {

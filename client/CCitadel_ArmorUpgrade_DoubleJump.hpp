@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd60
+// Size: 0xd68
 // Has VTable
 class CCitadel_ArmorUpgrade_DoubleJump : public CCitadel_Item
 {
 public:
-	int32_t m_nTickJumped; // 0xcb0	
+	int32_t m_nTickJumped; // 0xcb8	
 };
 

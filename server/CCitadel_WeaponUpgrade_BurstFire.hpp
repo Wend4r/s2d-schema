@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb58
+// Size: 0xb60
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_nFastFireEndTime"
@@ -13,6 +13,6 @@ class CCitadel_WeaponUpgrade_BurstFire : public CCitadel_Item
 {
 public:
 	// MNetworkEnable
-	GameTime_t m_nFastFireEndTime; // 0xb18	
+	GameTime_t m_nFastFireEndTime; // 0xb20	
 };
 

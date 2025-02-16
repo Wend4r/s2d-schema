@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd70
+// Size: 0xd78
 // Has VTable
 class CCitadel_Ability_Shotgun_Astro_Backwards : public CCitadel_Ability_PrimaryWeapon
 {

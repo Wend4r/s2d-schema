@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x820
+// Size: 0x828
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadel_Modifier_TeleportToObjectiveVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TeleportOriginParticle; // 0x630	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TeleportDestinationParticle; // 0x710	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TeleportOriginParticle; // 0x638	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TeleportDestinationParticle; // 0x718	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_TeleportStartSound; // 0x7f0	
-	CSoundEventName m_TeleportCompleteSound; // 0x800	
-	CSoundEventName m_TeleportArriveSound; // 0x810	
+	CSoundEventName m_TeleportStartSound; // 0x7f8	
+	CSoundEventName m_TeleportCompleteSound; // 0x808	
+	CSoundEventName m_TeleportArriveSound; // 0x818	
 };
 

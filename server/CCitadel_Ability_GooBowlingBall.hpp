@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xfe0
+// Size: 0xfa0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIsRolling"
@@ -19,39 +19,39 @@ struct GameTime_t;
 class CCitadel_Ability_GooBowlingBall : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x348]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x310]; // 0xb00
 public:
-	int32_t m_nAirJumpsLeft; // 0xe40	
+	int32_t m_nAirJumpsLeft; // 0xe10	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
 	// MNetworkChangeCallback "OnIsRollingChanged"
-	bool m_bIsRolling; // 0xe44	
+	bool m_bIsRolling; // 0xe14	
 private:
-	[[maybe_unused]] uint8_t __pad0e45[0x3]; // 0xe45
+	[[maybe_unused]] uint8_t __pad0e15[0x3]; // 0xe15
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CHandle< CCitadelViscousBall > m_hBall; // 0xe48	
+	CHandle< CCitadelViscousBall > m_hBall; // 0xe18	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	EViscousBowlingBallState_t m_eRollingState; // 0xe4c	
+	EViscousBowlingBallState_t m_eRollingState; // 0xe1c	
 private:
-	[[maybe_unused]] uint8_t __pad0e4d[0x3]; // 0xe4d
+	[[maybe_unused]] uint8_t __pad0e1d[0x3]; // 0xe1d
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flNextStateTime; // 0xe50	
+	GameTime_t m_flNextStateTime; // 0xe20	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flNextWallCheck; // 0xe54	
+	GameTime_t m_flNextWallCheck; // 0xe24	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flRollStartTime; // 0xe58	
+	GameTime_t m_flRollStartTime; // 0xe28	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flWallExitTime; // 0xe5c	
+	GameTime_t m_flWallExitTime; // 0xe2c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	Vector m_vecWallExitVelocity; // 0xe60	
+	Vector m_vecWallExitVelocity; // 0xe30	
 };
 

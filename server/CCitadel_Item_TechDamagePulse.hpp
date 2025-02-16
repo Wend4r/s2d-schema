@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb88
+// Size: 0xb90
 // Has VTable
 class CCitadel_Item_TechDamagePulse : public CCitadel_Item
 {

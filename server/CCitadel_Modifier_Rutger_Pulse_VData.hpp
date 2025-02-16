@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x648
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_Rutger_Pulse_VData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_strSilenceTargetSound; // 0x630	
+	CSoundEventName m_strSilenceTargetSound; // 0x638	
 };
 

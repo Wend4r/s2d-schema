@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcf0
+// Size: 0xcf8
 // Has VTable
 class CCitadel_Item_PowerShard : public CCitadel_Item
 {
 public:
-	CHandle< C_CitadelBaseAbility > m_hLastSignatureToActivate; // 0xcb0	
+	CHandle< C_CitadelBaseAbility > m_hLastSignatureToActivate; // 0xcb8	
 };
 

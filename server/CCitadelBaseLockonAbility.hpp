@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc80
+// Size: 0xc88
 // Has VTable
 // 
 // MNetworkVarNames "LockonTarget_t m_vecLockonTargets"
@@ -13,12 +13,12 @@ struct GameTime_t;
 class CCitadelBaseLockonAbility : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x118]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x118]; // 0xb00
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CUtlVectorEmbeddedNetworkVar< LockonTarget_t > m_vecLockonTargets; // 0xc10	
+	CUtlVectorEmbeddedNetworkVar< LockonTarget_t > m_vecLockonTargets; // 0xc18	
 	// MNetworkEnable
-	GameTime_t m_LockOnStartTime; // 0xc78	
+	GameTime_t m_LockOnStartTime; // 0xc80	
 };
 

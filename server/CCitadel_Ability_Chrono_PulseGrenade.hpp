@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc28
+// Size: 0xbf8
 // Has VTable
 class CCitadel_Ability_Chrono_PulseGrenade : public CCitadelBaseAbility
 {
 public:
-	Vector m_vLaunchPosition; // 0xaf8	
-	QAngle m_qLaunchAngle; // 0xb04	
+	Vector m_vLaunchPosition; // 0xb00	
+	QAngle m_qLaunchAngle; // 0xb0c	
 };
 

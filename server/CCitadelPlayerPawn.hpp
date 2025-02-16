@@ -13,7 +13,7 @@ struct CCitadelPlayerBot;
 struct GameTick_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1718
+// Size: 0x16f8
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -257,7 +257,9 @@ public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	bool m_bAnimGraphMovementDirectAirControl; // 0x14ee	
-	bool m_bLastMoveWasAnimGraph; // 0x14ef	
+private:
+	[[maybe_unused]] uint8_t __pad14ef[0x1]; // 0x14ef
+public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	GameTime_t m_flPredTimeSlowedStart; // 0x14f0	
@@ -294,12 +296,12 @@ private:
 public:
 	CCitadelPlayerBot* m_pBot; // 0x1570	
 private:
-	[[maybe_unused]] uint8_t __pad1578[0x168]; // 0x1578
+	[[maybe_unused]] uint8_t __pad1578[0x158]; // 0x1578
 public:
-	Vector m_vShootTestOffsetStanding; // 0x16e0	
-	Vector m_vShootTestOffsetCrouching; // 0x16ec	
-	GameTime_t m_leanStartTime; // 0x16f8	
-	GameTick_t m_nLastUnpredictableMovementTick; // 0x16fc	
+	Vector m_vShootTestOffsetStanding; // 0x16d0	
+	Vector m_vShootTestOffsetCrouching; // 0x16dc	
+	GameTime_t m_leanStartTime; // 0x16e8	
+	GameTick_t m_nLastUnpredictableMovementTick; // 0x16ec	
 	
 	// Datamap fields:
 	// CCitadelPlayer_CameraServices m_pCameraServices; // 0xb88

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1578
+// Size: 0x15a0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CAbilityCadenceCrescendoVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifierAura > m_CrescendoAOEModifier; // 0x1568	
+	CEmbeddedSubclass< CCitadelModifierAura > m_CrescendoAOEModifier; // 0x1590	
 };
 

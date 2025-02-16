@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CCitadelAutoScaledTime;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe90
+// Size: 0xe98
 // Has VTable
 // 
 // MNetworkVarNames "float m_flDashAngle"
@@ -23,38 +23,38 @@ class CCitadel_Ability_Dash : public C_CitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flDashAngle; // 0xc98	
-	GameTime_t m_GroundDashExecuteTime; // 0xc9c	
+	float m_flDashAngle; // 0xca0	
+	GameTime_t m_GroundDashExecuteTime; // 0xca4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int32_t m_nLastGroundDashTick; // 0xca0	
+	int32_t m_nLastGroundDashTick; // 0xca8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flGroundDashCastTime; // 0xca4	
-	bool m_bTagCanActivateGroundDash; // 0xca8	
+	GameTime_t m_flGroundDashCastTime; // 0xcac	
+	bool m_bTagCanActivateGroundDash; // 0xcb0	
 private:
-	[[maybe_unused]] uint8_t __pad0ca9[0x7]; // 0xca9
+	[[maybe_unused]] uint8_t __pad0cb1[0x7]; // 0xcb1
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xcb0	
+	CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xcb8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flAirDashCastTime; // 0xcc8	
+	GameTime_t m_flAirDashCastTime; // 0xcd0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flAirDashDragStartTime; // 0xccc	
+	GameTime_t m_flAirDashDragStartTime; // 0xcd4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int8_t m_nConsecutiveAirDashes; // 0xcd0	
+	int8_t m_nConsecutiveAirDashes; // 0xcd8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int8_t m_nConsecutiveDownDashes; // 0xcd1	
+	int8_t m_nConsecutiveDownDashes; // 0xcd9	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bDownAirDash; // 0xcd2	
+	bool m_bDownAirDash; // 0xcda	
 private:
-	[[maybe_unused]] uint8_t __pad0cd3[0x1b5]; // 0xcd3
+	[[maybe_unused]] uint8_t __pad0cdb[0x1b5]; // 0xcdb
 public:
-	CHandle< CCitadel_Ability_Jump > m_hJumpAbility; // 0xe88	
+	CHandle< CCitadel_Ability_Jump > m_hJumpAbility; // 0xe90	
 };
 

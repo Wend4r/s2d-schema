@@ -5,11 +5,11 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xb08
 // Has VTable
 class CCitadel_Ability_WingBlast : public CCitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_Particle; // 0xaf8	
+	ParticleIndex_t m_Particle; // 0xb00	
 };
 

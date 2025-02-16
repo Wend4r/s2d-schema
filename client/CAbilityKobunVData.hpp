@@ -4,18 +4,18 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1588
+// Size: 0x15b0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CAbilityKobunVData : public CitadelAbilityVData
 {
 public:
-	Vector m_vSummonFollowOffset; // 0x1568	
+	Vector m_vSummonFollowOffset; // 0x1590	
 private:
-	[[maybe_unused]] uint8_t __pad1574[0x4]; // 0x1574
+	[[maybe_unused]] uint8_t __pad159c[0x4]; // 0x159c
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_CloneModifier; // 0x1578	
+	CEmbeddedSubclass< CCitadelModifier > m_CloneModifier; // 0x15a0	
 };
 

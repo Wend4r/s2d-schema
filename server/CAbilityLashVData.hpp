@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1668
+// Size: 0x1690
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CAbilityLashVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LashParticle; // 0x1568	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LashParticle; // 0x1590	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x1648	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x1670	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strVictimCastSound; // 0x1658	
+	CSoundEventName m_strVictimCastSound; // 0x1680	
 };
 

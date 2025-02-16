@@ -57,11 +57,8 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad16b4[0x4]; // 0x16b4
 public:
-	CEmbeddedSubclass< CCitadelModifier > m_FriendlyAuraModifier; // 0x16b8	
-	float m_flRangeArmorMaxResist; // 0x16c8	
-	float m_flRangeArmorMinResist; // 0x16cc	
-	float m_flRangeArmorMaxDist; // 0x16d0	
-	float m_flRangeArmorMinDist; // 0x16d4	
+	CEmbeddedSubclass< CCitadelModifier > m_RangedArmorModifier; // 0x16b8	
+	CEmbeddedSubclass< CCitadelModifier > m_FriendlyAuraModifier; // 0x16c8	
 	CEmbeddedSubclass< CCitadelModifier > m_NearbyEnemyResist; // 0x16d8	
 };
 

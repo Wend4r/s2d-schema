@@ -7,7 +7,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xba0
+// Size: 0xba8
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAutoScaledTime m_flGroundDashSlideTime"
@@ -26,49 +26,49 @@ struct ParticleIndex_t;
 class CCitadel_Ability_Slide : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x58]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x58]; // 0xb00
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flGroundDashSlideTime; // 0xb50	
+	CCitadelAutoScaledTime m_flGroundDashSlideTime; // 0xb58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flSlowGetupStartTime; // 0xb68	
+	GameTime_t m_flSlowGetupStartTime; // 0xb70	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bShouldTriggerSlowGetup; // 0xb6c	
+	bool m_bShouldTriggerSlowGetup; // 0xb74	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bWantsSlide; // 0xb6d	
+	bool m_bWantsSlide; // 0xb75	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bAirborneWhenDuckPressed; // 0xb6e	
+	bool m_bAirborneWhenDuckPressed; // 0xb76	
 	// MNetworkEnable
-	bool m_bIsSliding; // 0xb6f	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flSpeedAdjust; // 0xb70	
+	bool m_bIsSliding; // 0xb77	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flDuckPressedTime; // 0xb74	
+	float m_flSpeedAdjust; // 0xb78	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flSlideChangeTime; // 0xb78	
+	GameTime_t m_flDuckPressedTime; // 0xb7c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flSlidingOnFlatStartTime; // 0xb7c	
+	GameTime_t m_flSlideChangeTime; // 0xb80	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int32_t m_nJumpsThisSlideSession; // 0xb80	
+	GameTime_t m_flSlidingOnFlatStartTime; // 0xb84	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flOnGroundStartTime; // 0xb84	
+	int32_t m_nJumpsThisSlideSession; // 0xb88	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flDashSlideStartTime; // 0xb88	
-	bool m_bStartedSlideViaProbeSlope; // 0xb8c	
+	GameTime_t m_flOnGroundStartTime; // 0xb8c	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flDashSlideStartTime; // 0xb90	
+	bool m_bStartedSlideViaProbeSlope; // 0xb94	
 private:
-	[[maybe_unused]] uint8_t __pad0b8d[0x3]; // 0xb8d
+	[[maybe_unused]] uint8_t __pad0b95[0x3]; // 0xb95
 public:
-	ParticleIndex_t m_nSlideEffectIndex; // 0xb90	
+	ParticleIndex_t m_nSlideEffectIndex; // 0xb98	
 };
 

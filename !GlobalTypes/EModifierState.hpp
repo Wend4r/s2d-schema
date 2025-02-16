@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 191
+// Enumerator count: 195
 // Alignment: 4
 // Size: 0x4
 enum class EModifierState : uint32_t
@@ -197,8 +197,12 @@ enum class EModifierState : uint32_t
 	MODIFIER_STATE_IN_SELF_BUBBLE = 0xba,
 	MODIFIER_STATE_GUNSLINGER_MARK = 0xbb,
 	MODIFIER_STATE_GHOST_LIFEDRAINED = 0xbc,
+	MODIFIER_STATE_INVISIBLE_ON_MINIMAP = 0xbd,
+	MODIFIER_STATE_ULTING = 0xbe,
+	MODIFIER_STATE_VIPER_VENOM = 0xbf,
+	MODIFIER_STATE_MAGICIAN_ULT = 0xc0,
 	// MPropertySuppressEnumerator
-	MODIFIER_STATE_COUNT = 0xbd,
+	MODIFIER_STATE_COUNT = 0xc1,
 	// MPropertySuppressEnumerator
 	MODIFIER_STATE_INVALID = 0xff,
 };

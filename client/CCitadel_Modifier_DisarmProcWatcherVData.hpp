@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x770
+// Size: 0x778
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_DisarmProcWatcherVData : public CCitadel_Modifier_BaseEv
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x660	
-	CEmbeddedSubclass< CCitadelModifier > m_DisarmProcModifier; // 0x670	
-	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x680	
+	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x668	
+	CEmbeddedSubclass< CCitadelModifier > m_DisarmProcModifier; // 0x678	
+	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x688	
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x690	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x698	
 };
 

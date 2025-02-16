@@ -6,7 +6,7 @@ struct CNetworkOriginQuantizedVector;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb88
+// Size: 0xb90
 // Has VTable
 // 
 // MNetworkVarNames "CNetworkOriginQuantizedVector m_vTop"
@@ -21,39 +21,39 @@ class CCitadel_Ability_Climb_Rope : public CCitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CNetworkOriginQuantizedVector m_vTop; // 0xaf8	
+	CNetworkOriginQuantizedVector m_vTop; // 0xb00	
 private:
-	[[maybe_unused]] uint8_t __pad0b20[0x8]; // 0xb20
+	[[maybe_unused]] uint8_t __pad0b28[0x8]; // 0xb28
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CNetworkOriginQuantizedVector m_vBottom; // 0xb28	
+	CNetworkOriginQuantizedVector m_vBottom; // 0xb30	
 private:
-	[[maybe_unused]] uint8_t __pad0b50[0x8]; // 0xb50
+	[[maybe_unused]] uint8_t __pad0b58[0x8]; // 0xb58
 public:
-	GameTime_t m_flActivatePressTime; // 0xb58	
-	GameTime_t m_flDisconnectTime; // 0xb5c	
-	GameTime_t m_flClimbStartTime; // 0xb60	
-	Vector m_vLastPos; // 0xb64	
+	GameTime_t m_flActivatePressTime; // 0xb60	
+	GameTime_t m_flDisconnectTime; // 0xb64	
+	GameTime_t m_flClimbStartTime; // 0xb68	
+	Vector m_vLastPos; // 0xb6c	
 private:
-	[[maybe_unused]] uint8_t __pad0b70[0x8]; // 0xb70
-public:
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bRequestStopClimbing; // 0xb78	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bRequestJumpToRoof; // 0xb79	
-private:
-	[[maybe_unused]] uint8_t __pad0b7a[0x2]; // 0xb7a
+	[[maybe_unused]] uint8_t __pad0b78[0x8]; // 0xb78
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flLastMoveTime; // 0xb7c	
+	bool m_bRequestStopClimbing; // 0xb80	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flMoveDownStartTime; // 0xb80	
+	bool m_bRequestJumpToRoof; // 0xb81	
+private:
+	[[maybe_unused]] uint8_t __pad0b82[0x2]; // 0xb82
+public:
 	// MNetworkEnable
-	EClimbRopeState_t m_eClimbState; // 0xb84	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flLastMoveTime; // 0xb84	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flMoveDownStartTime; // 0xb88	
+	// MNetworkEnable
+	EClimbRopeState_t m_eClimbState; // 0xb8c	
 };
 

@@ -7,7 +7,7 @@ struct CNetworkVelocityVector;
 struct AttachmentHandle_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf78
+// Size: 0xf80
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flTimeStartZipping"
@@ -29,63 +29,63 @@ struct AttachmentHandle_t;
 class CCitadel_Ability_ZipLine : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x3f0]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x3f0]; // 0xb00
 public:
-	GameTime_t m_flActivatePressTime; // 0xee8	
-	bool m_bThinking; // 0xeec	
-	bool m_bMoveCollidedPushUp; // 0xeed	
+	GameTime_t m_flActivatePressTime; // 0xef0	
+	bool m_bThinking; // 0xef4	
+	bool m_bMoveCollidedPushUp; // 0xef5	
 private:
-	[[maybe_unused]] uint8_t __pad0eee[0x6]; // 0xeee
+	[[maybe_unused]] uint8_t __pad0ef6[0x6]; // 0xef6
 public:
 	// MNetworkEnable
-	GameTime_t m_flTimeStartZipping; // 0xef4	
+	GameTime_t m_flTimeStartZipping; // 0xefc	
 	// MNetworkEnable
-	GameTime_t m_flTimeForKnockdownProtection; // 0xef8	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flTimeStopZipping; // 0xefc	
+	GameTime_t m_flTimeForKnockdownProtection; // 0xf00	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flCasterSpeed; // 0xf00	
+	GameTime_t m_flTimeStopZipping; // 0xf04	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CNetworkVelocityVector m_vecInitialVel; // 0xf04	
+	float m_flCasterSpeed; // 0xf08	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	CNetworkVelocityVector m_vecInitialVel; // 0xf0c	
 private:
-	[[maybe_unused]] uint8_t __pad0f2c[0xc]; // 0xf2c
+	[[maybe_unused]] uint8_t __pad0f34[0xc]; // 0xf34
 public:
 	// MNetworkEnable
-	Vector m_vecAttachPoint; // 0xf38	
+	Vector m_vecAttachPoint; // 0xf40	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CHandle< CBaseEntity > m_pPrevNode; // 0xf44	
+	CHandle< CBaseEntity > m_pPrevNode; // 0xf4c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CHandle< CBaseEntity > m_pNextNode; // 0xf48	
+	CHandle< CBaseEntity > m_pNextNode; // 0xf50	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flTimeEnterState; // 0xf4c	
+	GameTime_t m_flTimeEnterState; // 0xf54	
 	// MNetworkEnable
-	GameTime_t m_flLatchTime; // 0xf50	
+	GameTime_t m_flLatchTime; // 0xf58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flDamagedTime; // 0xf54	
+	GameTime_t m_flDamagedTime; // 0xf5c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ZiplingAttachStateChanged"
-	EAttachState_t m_eAttachState; // 0xf58	
+	EAttachState_t m_eAttachState; // 0xf60	
 	// MNetworkEnable
-	int32_t m_iAttachedZipLineLane; // 0xf5c	
+	int32_t m_iAttachedZipLineLane; // 0xf64	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bDroppedFromZipline; // 0xf60	
-	AttachmentHandle_t m_hAttachZipLine; // 0xf61	
+	bool m_bDroppedFromZipline; // 0xf68	
+	AttachmentHandle_t m_hAttachZipLine; // 0xf69	
 private:
-	[[maybe_unused]] uint8_t __pad0f62[0x2]; // 0xf62
+	[[maybe_unused]] uint8_t __pad0f6a[0x2]; // 0xf6a
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	Vector m_vAttachZipLineOffset; // 0xf64	
+	Vector m_vAttachZipLineOffset; // 0xf6c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flZiplineAirDrag; // 0xf70	
+	float m_flZiplineAirDrag; // 0xf78	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x760
+// Size: 0x768
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,25 +13,25 @@ class CCitadel_Modifier_BaseBulletPreRollProcVData : public CCitadel_Modifier_Ba
 {
 public:
 	// MPropertyDescription "When true, we roll for a proc once per shot and apply that result to all bullets in the shot.  When false, we roll independently for each bullet in the shot."
-	bool m_bRollOnceForAllBulletsInAShot; // 0x660	
+	bool m_bRollOnceForAllBulletsInAShot; // 0x668	
 private:
-	[[maybe_unused]] uint8_t __pad0661[0x3]; // 0x661
+	[[maybe_unused]] uint8_t __pad0669[0x3]; // 0x669
 public:
 	// MPropertyDescription "When not rolling once for all shots, what's the max number of times we can proc in a single shot? 0 means no limit."
-	float m_flMaxBulletsToProcInShot; // 0x664	
+	float m_flMaxBulletsToProcInShot; // 0x66c	
 	// MPropertyDescription "When true, each bullet can apply its proc to any entities hit.  When false, we only apply the first proc to the first entity."
-	bool m_bCanProcMultipleTimesFromSameShot; // 0x668	
+	bool m_bCanProcMultipleTimesFromSameShot; // 0x670	
 	// MPropertyDescription "When true, will only call OnProc if the target hit passes the unit filter."
-	bool m_bRequiresTargetFilter; // 0x669	
+	bool m_bRequiresTargetFilter; // 0x671	
 	// MPropertyDescription "When false, Proc'd bullets cannot be evaded"
-	bool m_bCanBeEvaded; // 0x66a	
+	bool m_bCanBeEvaded; // 0x672	
 private:
-	[[maybe_unused]] uint8_t __pad066b[0x5]; // 0x66b
+	[[maybe_unused]] uint8_t __pad0673[0x5]; // 0x673
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerAdditionParticle; // 0x670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerAdditionParticle; // 0x678	
 	// MPropertyStartGroup "Sounds"
 	// MPropertyDescription "Sound to play on the shooter when a bullet rolls a proc when fired."
-	CSoundEventName m_OnBulletRolledProcSound; // 0x750	
+	CSoundEventName m_OnBulletRolledProcSound; // 0x758	
 };
 

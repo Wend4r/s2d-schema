@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xce8
+// Size: 0xcf0
 // Has VTable
 class CItem_FleetfootBoots : public CCitadel_Item
 {

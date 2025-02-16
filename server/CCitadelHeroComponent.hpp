@@ -11,7 +11,6 @@ struct HeroID_t;
 // 
 // MNetworkVarNames "HeroID_t m_nHeroID"
 // MNetworkVarNames "HeroID_t m_nHeroLoading"
-// MNetworkVarNames "bool m_bIsUsingSeasonalSkin"
 class CCitadelHeroComponent : public CEntityComponent
 {
 private:
@@ -23,8 +22,6 @@ public:
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	HeroID_t m_nHeroLoading; // 0x18	
-	// MNetworkEnable
-	bool m_bIsUsingSeasonalSkin; // 0x1c	
 	
 	// Static fields:
 	static EntComponentInfo_t &Get_s_EntComponentInfo(){return *reinterpret_cast<EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadelHeroComponent")->m_static_fields[0]->m_instance);};

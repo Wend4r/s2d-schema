@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbd8
+// Size: 0xbe0
 // Has VTable
 class CCitadel_Ability_Vandal_Pillar : public CCitadelBaseAbility
 {

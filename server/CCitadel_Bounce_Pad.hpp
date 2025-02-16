@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbd0
+// Size: 0xbd8
 // Has VTable
 // 
 // MNetworkVarNames "float m_flUpFactor"

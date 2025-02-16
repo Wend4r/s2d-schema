@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x638
+// Size: 0x640
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CCitadel_Modifier_Neutral_Debuff_PushbackVData : public CCitadelModifierVD
 {
 public:
 	// MPropertyStartGroup "Gameplay"
-	float m_flPushSpeed; // 0x630	
-	float m_flPushRange; // 0x634	
+	float m_flPushSpeed; // 0x638	
+	float m_flPushRange; // 0x63c	
 };
 

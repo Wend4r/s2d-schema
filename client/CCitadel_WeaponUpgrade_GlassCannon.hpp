@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd28
+// Size: 0xd30
 // Has VTable
 // 
 // MNetworkVarNames "int m_nKillsEarned"
@@ -12,6 +12,6 @@ class CCitadel_WeaponUpgrade_GlassCannon : public CCitadel_Item
 {
 public:
 	// MNetworkEnable
-	int32_t m_nKillsEarned; // 0xcb0	
+	int32_t m_nKillsEarned; // 0xcb8	
 };
 

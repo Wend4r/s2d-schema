@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1580
+// Size: 0x15a8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CAbilityMantleVData : public CitadelAbilityVData
 {
 public:
-	CUtlVector< MantleType_t > m_vecMantleTypes; // 0x1568	
+	CUtlVector< MantleType_t > m_vecMantleTypes; // 0x1590	
 };
 

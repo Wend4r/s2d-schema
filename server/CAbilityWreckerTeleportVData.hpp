@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1940
+// Size: 0x1968
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,24 +12,24 @@ class CAbilityWreckerTeleportVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SpectatingProjectileParticle; // 0x1568	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x1648	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ChannelParticle; // 0x1728	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x1808	
-	float m_ArrowOffsetX; // 0x18e8	
-	float m_ArrowCameraDistance; // 0x18ec	
-	float m_ArrowCameraHeightOffset; // 0x18f0	
-	float m_ArrowInitialPitch; // 0x18f4	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SpectatingProjectileParticle; // 0x1590	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x1670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ChannelParticle; // 0x1750	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x1830	
+	float m_ArrowOffsetX; // 0x1910	
+	float m_ArrowCameraDistance; // 0x1914	
+	float m_ArrowCameraHeightOffset; // 0x1918	
+	float m_ArrowInitialPitch; // 0x191c	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_GuidingModifier; // 0x18f8	
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1908	
+	CEmbeddedSubclass< CCitadelModifier > m_GuidingModifier; // 0x1920	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1930	
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_strExplodeSound; // 0x1918	
+	CSoundEventName m_strExplodeSound; // 0x1940	
 	// MPropertyStartGroup "Gameplay"
-	float m_flTrackAmount; // 0x1928	
-	float m_flSpeedAccel; // 0x192c	
-	float m_flSpeedDeccel; // 0x1930	
-	float m_flBaseProjectileSpeed; // 0x1934	
-	float m_flMaxProjectileSpeed; // 0x1938	
+	float m_flTrackAmount; // 0x1950	
+	float m_flSpeedAccel; // 0x1954	
+	float m_flSpeedDeccel; // 0x1958	
+	float m_flBaseProjectileSpeed; // 0x195c	
+	float m_flMaxProjectileSpeed; // 0x1960	
 };
 

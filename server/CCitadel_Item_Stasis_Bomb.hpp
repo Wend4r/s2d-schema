@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc8
+// Size: 0xbd0
 // Has VTable
 class CCitadel_Item_Stasis_Bomb : public CCitadel_Item_Bubble
 {

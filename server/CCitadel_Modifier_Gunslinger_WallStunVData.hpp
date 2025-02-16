@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x730
+// Size: 0x738
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_Gunslinger_WallStunVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ProcEffect; // 0x630	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ProcEffect; // 0x638	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_StunModifier; // 0x710	
+	CEmbeddedSubclass< CCitadelModifier > m_StunModifier; // 0x718	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_CasterMarkTriggerSound; // 0x720	
+	CSoundEventName m_CasterMarkTriggerSound; // 0x728	
 };
 

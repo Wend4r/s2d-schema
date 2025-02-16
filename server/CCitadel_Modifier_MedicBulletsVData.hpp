@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x850
+// Size: 0x858
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_MedicBulletsVData : public CCitadel_Modifier_BaseBulletP
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x760	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x768	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ProcSound; // 0x840	
+	CSoundEventName m_ProcSound; // 0x848	
 };
 

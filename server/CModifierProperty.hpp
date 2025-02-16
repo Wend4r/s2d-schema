@@ -6,7 +6,7 @@ struct CNetworkVarChainer;
 struct ModifierPropRuntimeHandle_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x228
+// Size: 0x238
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_vecProviders"
@@ -22,40 +22,43 @@ public:
 	CNetworkVarChainer __m_pChainEntity; // 0x8	
 	CHandle< CBaseEntity > m_hOwner; // 0x30	
 private:
-	[[maybe_unused]] uint8_t __pad0034[0x169]; // 0x34
+	[[maybe_unused]] uint8_t __pad0034[0x16b]; // 0x34
 public:
-	uint8_t m_nProviderVisitedFlags; // 0x19d	
-	bool m_bModifierStatesDirty; // 0x19e	
-	bool m_bPredictedOwner; // 0x19f	
-	int8_t m_iLockRefCount; // 0x1a0	
+	uint8_t m_nProviderVisitedFlags; // 0x19f	
+	bool m_bModifierStatesDirty; // 0x1a0	
+	bool m_bPredictedOwner; // 0x1a1	
+	int8_t m_iLockRefCount; // 0x1a2	
 private:
-	[[maybe_unused]] uint8_t __pad01a1[0x1]; // 0x1a1
+	[[maybe_unused]] uint8_t __pad01a3[0x1]; // 0x1a3
 public:
-	ModifierPropRuntimeHandle_t m_hHandle; // 0x1a2	
-	uint32_t m_nBroadcastEventListenerMask; // 0x1a4	
+	ModifierPropRuntimeHandle_t m_hHandle; // 0x1a4	
 private:
-	[[maybe_unused]] uint8_t __pad01a8[0x8]; // 0x1a8
+	[[maybe_unused]] uint8_t __pad01a6[0x2]; // 0x1a6
+public:
+	uint32_t m_nBroadcastEventListenerMask; // 0x1a8	
+private:
+	[[maybe_unused]] uint8_t __pad01ac[0xc]; // 0x1ac
 public:
 	// MNetworkEnable
-	CNetworkUtlVectorBase< CHandle< CBaseEntity > > m_vecProviders; // 0x1b0	
+	CNetworkUtlVectorBase< CHandle< CBaseEntity > > m_vecProviders; // 0x1b8	
 	// MNetworkEnable
-	uint32_t m_nDisabledGroups; // 0x1c8	
+	uint32_t m_nDisabledGroups; // 0x1d0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "modifierStatesChanged"
-	uint32_t m_bvEnabledStateMask[6]; // 0x1cc	
+	uint32_t m_bvEnabledStateMask[7]; // 0x1d4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "modifierStatesChanged"
-	uint32_t m_bvDisabledStateMask[6]; // 0x1e4	
+	uint32_t m_bvDisabledStateMask[7]; // 0x1f0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "modifierStatesChanged"
-	uint32_t m_bvEnabledPredictedStateMask[6]; // 0x1fc	
+	uint32_t m_bvEnabledPredictedStateMask[7]; // 0x20c	
 private:
-	[[maybe_unused]] uint8_t __pad0214[0xc]; // 0x214
+	[[maybe_unused]] uint8_t __pad0228[0x8]; // 0x228
 public:
-	bool m_bParentWantsModifierStateChangeCallback; // 0x220	
+	bool m_bParentWantsModifierStateChangeCallback; // 0x230	
 	
 	// Datamap fields:
-	// void m_pNotifyOwnerEvents; // 0x1a8
+	// void m_pNotifyOwnerEvents; // 0x1b0
 	// void m_vecModifiers; // 0x38
 };
 

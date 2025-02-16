@@ -6,7 +6,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd40
+// Size: 0xd48
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bLeaping"
@@ -14,19 +14,19 @@ struct ParticleIndex_t;
 class CCitadel_Ability_HornetLeap : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x2]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b00[0x2]; // 0xb00
 public:
 	// MNetworkEnable
-	bool m_bLeaping; // 0xafa	
+	bool m_bLeaping; // 0xb02	
 private:
-	[[maybe_unused]] uint8_t __pad0afb[0x1]; // 0xafb
+	[[maybe_unused]] uint8_t __pad0b03[0x1]; // 0xb03
 public:
 	// MNetworkEnable
-	GameTime_t m_flLeapStartTime; // 0xafc	
-	ParticleIndex_t m_nFXIndex; // 0xb00	
+	GameTime_t m_flLeapStartTime; // 0xb04	
+	ParticleIndex_t m_nFXIndex; // 0xb08	
 private:
-	[[maybe_unused]] uint8_t __pad0b04[0x234]; // 0xb04
+	[[maybe_unused]] uint8_t __pad0b0c[0x234]; // 0xb0c
 public:
-	ParticleIndex_t m_TrailFX; // 0xd38	
+	ParticleIndex_t m_TrailFX; // 0xd40	
 };
 

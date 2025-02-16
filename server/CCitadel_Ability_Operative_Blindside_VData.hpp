@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1668
+// Size: 0x1690
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Ability_Operative_Blindside_VData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_EnemyDebuffModifier; // 0x1568	
+	CEmbeddedSubclass< CCitadelModifier > m_EnemyDebuffModifier; // 0x1590	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x1578	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x15a0	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ExplosionSound; // 0x1658	
+	CSoundEventName m_ExplosionSound; // 0x1680	
 };
 

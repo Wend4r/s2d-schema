@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x830
+// Size: 0x838
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,13 +12,13 @@ class CCitadel_Modifier_FissureWallVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DebrisParticle; // 0x630	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SpikeParticle; // 0x710	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DebrisParticle; // 0x638	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SpikeParticle; // 0x718	
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_WallSpawnSound; // 0x7f0	
+	CSoundEventName m_WallSpawnSound; // 0x7f8	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x800	
-	CEmbeddedSubclass< CCitadelModifier > m_EnemyVisionModifier; // 0x810	
-	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x820	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x808	
+	CEmbeddedSubclass< CCitadelModifier > m_EnemyVisionModifier; // 0x818	
+	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x828	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x15d0
+// Size: 0x15f8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_WeaponUpgrade_BurstFireVData : public CitadelItemVData
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ActivationSound; // 0x15b0	
+	CSoundEventName m_ActivationSound; // 0x15d8	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x15c0	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x15e8	
 };
 

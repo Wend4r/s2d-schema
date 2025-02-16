@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 91
+// Enumerator count: 92
 // Alignment: 4
 // Size: 0x4
 enum class Class_T : uint32_t
@@ -98,6 +98,7 @@ enum class Class_T : uint32_t
 	CLASS_TRAPPER_SPIDER = 0x57,
 	CLASS_TRAPPER_WEBWALL = 0x58,
 	CLASS_IMMOBILIZE_TRAP_PROJECTILE = 0x59,
-	NUM_CLASSIFY_CLASSES = 0x5a,
+	CLASS_MAGICIAN_TURRET = 0x5a,
+	NUM_CLASSIFY_CLASSES = 0x5b,
 };
 

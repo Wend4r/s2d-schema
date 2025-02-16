@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd60
+// Size: 0xd68
 // Has VTable
 // 
 // MNetworkVarNames "int m_iCurrentResistValue"
@@ -12,6 +12,6 @@ class CCitadel_ArmorUpgrade_AblativeCoat : public CCitadel_Item
 {
 public:
 	// MNetworkEnable
-	int32_t m_iCurrentResistValue; // 0xcb0	
+	int32_t m_iCurrentResistValue; // 0xcb8	
 };
 

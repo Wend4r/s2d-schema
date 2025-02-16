@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16c0
+// Size: 0x16e8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Item_Stasis_BombVData : public CCitadel_Item_BubbleVData
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_AuraModifier; // 0x16b0	
+	CEmbeddedSubclass< CBaseModifier > m_AuraModifier; // 0x16d8	
 };
 
