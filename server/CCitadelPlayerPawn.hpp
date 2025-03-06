@@ -13,7 +13,7 @@ struct CCitadelPlayerBot;
 struct GameTick_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x17d0
+// Size: 0x17e8
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -230,87 +230,87 @@ public:
 	CTakeDamageResult m_ragdollDamage; // 0x1410	
 	CUtlVector< CHandle< CBaseEntity > > m_vecThreats; // 0x1430	
 private:
-	[[maybe_unused]] uint8_t __pad1448[0x154]; // 0x1448
+	[[maybe_unused]] uint8_t __pad1448[0x16c]; // 0x1448
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	CMsgLaneColor m_eZipLineLaneColor; // 0x159c	
-	bool m_bCanBecomeRagdoll; // 0x15a0	
+	CMsgLaneColor m_eZipLineLaneColor; // 0x15b4	
+	bool m_bCanBecomeRagdoll; // 0x15b8	
 private:
-	[[maybe_unused]] uint8_t __pad15a1[0x3]; // 0x15a1
+	[[maybe_unused]] uint8_t __pad15b9[0x3]; // 0x15b9
 public:
-	float m_blindUntilTime; // 0x15a4	
-	float m_blindStartTime; // 0x15a8	
+	float m_blindUntilTime; // 0x15bc	
+	float m_blindStartTime; // 0x15c0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	int8_t m_nSuccessiveDucks; // 0x15ac	
+	int8_t m_nSuccessiveDucks; // 0x15c4	
 private:
-	[[maybe_unused]] uint8_t __pad15ad[0x3]; // 0x15ad
+	[[maybe_unused]] uint8_t __pad15c5[0x3]; // 0x15c5
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	GameTime_t m_flLastDuckTime; // 0x15b0	
+	GameTime_t m_flLastDuckTime; // 0x15c8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	bool m_bAnimGraphMovementClipped; // 0x15b4	
+	bool m_bAnimGraphMovementClipped; // 0x15cc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	bool m_bAnimGraphMovementDisableGravity; // 0x15b5	
+	bool m_bAnimGraphMovementDisableGravity; // 0x15cd	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	bool m_bAnimGraphMovementDirectAirControl; // 0x15b6	
+	bool m_bAnimGraphMovementDirectAirControl; // 0x15ce	
 private:
-	[[maybe_unused]] uint8_t __pad15b7[0x1]; // 0x15b7
+	[[maybe_unused]] uint8_t __pad15cf[0x1]; // 0x15cf
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	GameTime_t m_flPredTimeSlowedStart; // 0x15b8	
+	GameTime_t m_flPredTimeSlowedStart; // 0x15d0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	GameTime_t m_flPredTimeSlowedEnd; // 0x15bc	
+	GameTime_t m_flPredTimeSlowedEnd; // 0x15d4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	float m_flPredSlowSpeed; // 0x15c0	
+	float m_flPredSlowSpeed; // 0x15d8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	GameTime_t m_flTimeSlowedStart[4]; // 0x15c4	
+	GameTime_t m_flTimeSlowedStart[4]; // 0x15dc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	GameTime_t m_flTimeSlowedEnd[4]; // 0x15d4	
+	GameTime_t m_flTimeSlowedEnd[4]; // 0x15ec	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	float m_flSlowSpeed[4]; // 0x15e4	
+	float m_flSlowSpeed[4]; // 0x15fc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	GameTime_t m_flSprintAnimSuppressEndTime; // 0x15f4	
-	bool m_bPreventAbilityLearning; // 0x15f8	
+	GameTime_t m_flSprintAnimSuppressEndTime; // 0x160c	
+	bool m_bPreventAbilityLearning; // 0x1610	
 private:
-	[[maybe_unused]] uint8_t __pad15f9[0x3]; // 0x15f9
+	[[maybe_unused]] uint8_t __pad1611[0x3]; // 0x1611
 public:
-	int32_t m_iCurSlowSlot; // 0x15fc	
+	int32_t m_iCurSlowSlot; // 0x1614	
 private:
-	[[maybe_unused]] uint8_t __pad1600[0x4]; // 0x1600
+	[[maybe_unused]] uint8_t __pad1618[0x4]; // 0x1618
 public:
-	ParticleIndex_t m_nRespawnParticleIndex; // 0x1604	
-	ParticleIndex_t m_nShoppingParticle; // 0x1608	
+	ParticleIndex_t m_nRespawnParticleIndex; // 0x161c	
+	ParticleIndex_t m_nShoppingParticle; // 0x1620	
 private:
-	[[maybe_unused]] uint8_t __pad160c[0x2c]; // 0x160c
+	[[maybe_unused]] uint8_t __pad1624[0x2c]; // 0x1624
 public:
-	CCitadelPlayerBot* m_pBot; // 0x1638	
+	CCitadelPlayerBot* m_pBot; // 0x1650	
 private:
-	[[maybe_unused]] uint8_t __pad1640[0x158]; // 0x1640
+	[[maybe_unused]] uint8_t __pad1658[0x158]; // 0x1658
 public:
-	bool m_bLocoLeanTriggeredForDirection; // 0x1798	
-	bool m_bLocoRunToStopCanTrigger; // 0x1799	
+	bool m_bLocoLeanTriggeredForDirection; // 0x17b0	
+	bool m_bLocoRunToStopCanTrigger; // 0x17b1	
 private:
-	[[maybe_unused]] uint8_t __pad179a[0x2]; // 0x179a
+	[[maybe_unused]] uint8_t __pad17b2[0x2]; // 0x17b2
 public:
-	float m_flCrouchFraction; // 0x179c	
-	float m_flCrouchSpeed; // 0x17a0	
-	Vector m_vShootTestOffsetStanding; // 0x17a4	
-	Vector m_vShootTestOffsetCrouching; // 0x17b0	
-	GameTime_t m_leanStartTime; // 0x17bc	
-	GameTick_t m_nLastUnpredictableMovementTick; // 0x17c0	
+	float m_flCrouchFraction; // 0x17b4	
+	float m_flCrouchSpeed; // 0x17b8	
+	Vector m_vShootTestOffsetStanding; // 0x17bc	
+	Vector m_vShootTestOffsetCrouching; // 0x17c8	
+	GameTime_t m_leanStartTime; // 0x17d4	
+	GameTick_t m_nLastUnpredictableMovementTick; // 0x17d8	
 	
 	// Datamap fields:
 	// CCitadelPlayer_CameraServices m_pCameraServices; // 0xc20
