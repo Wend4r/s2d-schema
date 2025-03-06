@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb88
+// Size: 0xbc0
 // Has VTable
 class CCitadel_Ability_Trapper_PoisonJar : public CCitadelBaseAbility
 {

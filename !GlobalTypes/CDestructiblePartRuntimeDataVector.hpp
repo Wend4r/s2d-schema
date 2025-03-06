@@ -10,6 +10,6 @@
 class CDestructiblePartRuntimeDataVector
 {
 public:
-	CUtlVector< CDestructiblePartRuntimeData > m_DestructiblePartsRuntimeData; // 0x0	
+	CUtlVector< CDestructiblePartRuntimeData > m_Parts; // 0x0	
 };
 

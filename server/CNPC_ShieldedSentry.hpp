@@ -5,7 +5,7 @@
 struct CCitadelMinimapComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc40
+// Size: 0xca0
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -17,13 +17,13 @@ public:
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbd0	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xc28	
 	// MNetworkEnable
-	float m_flAttackRange; // 0xbe8	
-	float m_flAttackCone; // 0xbec	
-	float m_flLifeTime; // 0xbf0	
-	float m_flTrackingSpeed; // 0xbf4	
-	float m_flDeployTime; // 0xbf8	
-	float m_flAttackDelay; // 0xbfc	
+	float m_flAttackRange; // 0xc40	
+	float m_flAttackCone; // 0xc44	
+	float m_flLifeTime; // 0xc48	
+	float m_flTrackingSpeed; // 0xc4c	
+	float m_flDeployTime; // 0xc50	
+	float m_flAttackDelay; // 0xc54	
 };
 

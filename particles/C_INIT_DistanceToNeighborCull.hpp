@@ -5,7 +5,7 @@
 struct CPerParticleFloatInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x330
+// Size: 0x490
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,5 +16,10 @@ public:
 	CPerParticleFloatInput m_flDistance; // 0x1c8	
 	// MPropertyFriendlyName "include particle radius"
 	bool m_bIncludeRadii; // 0x328	
+private:
+	[[maybe_unused]] uint8_t __pad0329[0x7]; // 0x329
+public:
+	// MPropertyFriendlyName "lifespan overlap percentage"
+	CPerParticleFloatInput m_flLifespanOverlap; // 0x330	
 };
 

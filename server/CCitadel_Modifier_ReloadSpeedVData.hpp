@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x660
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_ReloadSpeedVData : public CCitadelModifierVData
 {
 public:
-	float m_flReloadSpeedPercent; // 0x638	
-	bool m_bDestroyAfterReload; // 0x63c	
+	float m_flReloadSpeedPercent; // 0x658	
+	bool m_bDestroyAfterReload; // 0x65c	
 };
 

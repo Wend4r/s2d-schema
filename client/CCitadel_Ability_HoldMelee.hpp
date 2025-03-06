@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd68
+// Size: 0xd20
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flParryWindowEndTime"
@@ -16,37 +16,48 @@ struct GameTime_t;
 // MNetworkVarNames "EMeleeHold_AttackType m_eCurrentAttackType"
 // MNetworkVarNames "Vector m_vAirDashDir"
 // MNetworkVarNames "bool m_bAttackStartedWhileSliding"
+// MNetworkVarNames "GameTime_t m_flLightChainEndTime"
+// MNetworkVarNames "int m_nLightChainCount"
 class CCitadel_Ability_HoldMelee : public CCitadel_Ability_Melee_Base
 {
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flParryWindowEndTime; // 0xd20	
+	GameTime_t m_flParryWindowEndTime; // 0xcd0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flNextParryTime; // 0xd24	
+	GameTime_t m_flNextParryTime; // 0xcd4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flStateStartTime; // 0xd28	
+	GameTime_t m_flStateStartTime; // 0xcd8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flDashStartTime; // 0xd2c	
+	GameTime_t m_flDashStartTime; // 0xcdc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	EMeleeHold_AttackState m_eCurrentAttackState; // 0xd30	
+	EMeleeHold_AttackState m_eCurrentAttackState; // 0xce0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	EMeleeHold_AttackType m_eCurrentAttackType; // 0xd34	
+	EMeleeHold_AttackType m_eCurrentAttackType; // 0xce4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	Vector m_vAirDashDir; // 0xd38	
+	Vector m_vAirDashDir; // 0xce8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bAttackStartedWhileSliding; // 0xd44	
-	bool m_bCreatedChargeEffects; // 0xd45	
+	bool m_bAttackStartedWhileSliding; // 0xcf4	
 private:
-	[[maybe_unused]] uint8_t __pad0d46[0x2]; // 0xd46
+	[[maybe_unused]] uint8_t __pad0cf5[0x3]; // 0xcf5
 public:
-	QAngle m_angForced; // 0xd48	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flLightChainEndTime; // 0xcf8	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	int32_t m_nLightChainCount; // 0xcfc	
+	bool m_bCreatedChargeEffects; // 0xd00	
+private:
+	[[maybe_unused]] uint8_t __pad0d01[0x3]; // 0xd01
+public:
+	QAngle m_angForced; // 0xd04	
 };
 

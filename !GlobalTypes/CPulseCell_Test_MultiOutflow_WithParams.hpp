@@ -5,7 +5,7 @@
 struct SignatureOutflow_Continue;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xb8
+// Size: 0xd8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,9 +16,7 @@ class CPulseCell_Test_MultiOutflow_WithParams : public CPulseCell_BaseFlow
 {
 public:
 	// MPulseCellOutflow_IsDefault
-	// MPulseSignatureName
 	SignatureOutflow_Continue m_Out1; // 0x48	
-	// MPulseSignatureName
-	SignatureOutflow_Continue m_Out2; // 0x80	
+	SignatureOutflow_Continue m_Out2; // 0x90	
 };
 

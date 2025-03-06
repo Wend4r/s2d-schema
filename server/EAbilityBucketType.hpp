@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 4
+// Enumerator count: 5
 // Alignment: 4
 // Size: 0x4
 enum class EAbilityBucketType : uint32_t
@@ -12,5 +12,6 @@ enum class EAbilityBucketType : uint32_t
 	EAbilityBucketWeapon = 0x0,
 	EAbilityBucketVitality = 0x1,
 	EAbilityBucketSpirit = 0x2,
+	EAbilityBucketCount = 0x3,
 };
 

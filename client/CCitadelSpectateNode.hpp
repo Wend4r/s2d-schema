@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x580
+// Size: 0x540
 // Has VTable
 class CCitadelSpectateNode : public C_BaseEntity
 {

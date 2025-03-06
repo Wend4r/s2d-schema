@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf68
+// Size: 0xf18
 // Has VTable
 // 
 // MNetworkVarNames "QAngle m_anglesCharging"
@@ -15,25 +15,25 @@ struct GameTime_t;
 class CCitadel_Ability_Bull_Charge : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x2a0]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c50[0x2a0]; // 0xc50
 public:
 	// MNetworkEnable
-	QAngle m_anglesCharging; // 0xf40	
+	QAngle m_anglesCharging; // 0xef0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnChargingStateChanged"
-	GameTime_t m_flChargeStartTime; // 0xf4c	
+	GameTime_t m_flChargeStartTime; // 0xefc	
 	// MNetworkEnable
-	GameTime_t m_flFastChargeEndTime; // 0xf50	
+	GameTime_t m_flFastChargeEndTime; // 0xf00	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bHitAPlayer; // 0xf54	
+	bool m_bHitAPlayer; // 0xf04	
 private:
-	[[maybe_unused]] uint8_t __pad0f55[0x3]; // 0xf55
+	[[maybe_unused]] uint8_t __pad0f05[0x3]; // 0xf05
 public:
-	bool m_bFirstTick; // 0xf58	
+	bool m_bFirstTick; // 0xf08	
 private:
-	[[maybe_unused]] uint8_t __pad0f59[0x3]; // 0xf59
+	[[maybe_unused]] uint8_t __pad0f09[0x3]; // 0xf09
 public:
-	Vector m_vGoalDir; // 0xf5c	
+	Vector m_vGoalDir; // 0xf0c	
 };
 

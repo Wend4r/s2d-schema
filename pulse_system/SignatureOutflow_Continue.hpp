@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x38
+// Size: 0x48
 class SignatureOutflow_Continue : public CPulse_OutflowConnection
 {
 public:

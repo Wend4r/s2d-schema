@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd90
+// Size: 0xdd8
 // Has VTable
 class CPhysicsPropOverride : public CPhysicsProp
 {

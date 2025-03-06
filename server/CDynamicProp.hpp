@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xce8
+// Size: 0xd38
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -14,38 +14,38 @@ struct CEntityIOOutput;
 class CDynamicProp : public CBreakableProp
 {
 private:
-	[[maybe_unused]] uint8_t __pad0be8[0x8]; // 0xbe8
+	[[maybe_unused]] uint8_t __pad0c38[0x8]; // 0xc38
 public:
-	bool m_bCreateNavObstacle; // 0xbf0	
-	bool m_bNavObstacleUpdatesOverridden; // 0xbf1	
+	bool m_bCreateNavObstacle; // 0xc40	
+	bool m_bNavObstacleUpdatesOverridden; // 0xc41	
 	// MNetworkEnable
-	bool m_bUseHitboxesForRenderBox; // 0xbf2	
+	bool m_bUseHitboxesForRenderBox; // 0xc42	
 	// MNetworkEnable
-	bool m_bUseAnimGraph; // 0xbf3	
+	bool m_bUseAnimGraph; // 0xc43	
 private:
-	[[maybe_unused]] uint8_t __pad0bf4[0x4]; // 0xbf4
+	[[maybe_unused]] uint8_t __pad0c44[0x4]; // 0xc44
 public:
-	CEntityIOOutput m_pOutputAnimBegun; // 0xbf8	
-	CEntityIOOutput m_pOutputAnimOver; // 0xc20	
-	CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xc48	
-	CEntityIOOutput m_OnAnimReachedStart; // 0xc70	
-	CEntityIOOutput m_OnAnimReachedEnd; // 0xc98	
-	CUtlSymbolLarge m_iszIdleAnim; // 0xcc0	
-	AnimLoopMode_t m_nIdleAnimLoopMode; // 0xcc8	
-	bool m_bRandomizeCycle; // 0xccc	
-	bool m_bStartDisabled; // 0xccd	
-	bool m_bFiredStartEndOutput; // 0xcce	
-	bool m_bForceNpcExclude; // 0xccf	
-	bool m_bCreateNonSolid; // 0xcd0	
-	bool m_bIsOverrideProp; // 0xcd1	
+	CEntityIOOutput m_pOutputAnimBegun; // 0xc48	
+	CEntityIOOutput m_pOutputAnimOver; // 0xc70	
+	CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xc98	
+	CEntityIOOutput m_OnAnimReachedStart; // 0xcc0	
+	CEntityIOOutput m_OnAnimReachedEnd; // 0xce8	
+	CUtlSymbolLarge m_iszIdleAnim; // 0xd10	
+	AnimLoopMode_t m_nIdleAnimLoopMode; // 0xd18	
+	bool m_bRandomizeCycle; // 0xd1c	
+	bool m_bStartDisabled; // 0xd1d	
+	bool m_bFiredStartEndOutput; // 0xd1e	
+	bool m_bForceNpcExclude; // 0xd1f	
+	bool m_bCreateNonSolid; // 0xd20	
+	bool m_bIsOverrideProp; // 0xd21	
 private:
-	[[maybe_unused]] uint8_t __pad0cd2[0x2]; // 0xcd2
+	[[maybe_unused]] uint8_t __pad0d22[0x2]; // 0xd22
 public:
-	int32_t m_iInitialGlowState; // 0xcd4	
-	int32_t m_nGlowRange; // 0xcd8	
-	int32_t m_nGlowRangeMin; // 0xcdc	
-	Color m_glowColor; // 0xce0	
-	int32_t m_nGlowTeam; // 0xce4	
+	int32_t m_iInitialGlowState; // 0xd24	
+	int32_t m_nGlowRange; // 0xd28	
+	int32_t m_nGlowRangeMin; // 0xd2c	
+	Color m_glowColor; // 0xd30	
+	int32_t m_nGlowTeam; // 0xd34	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge StartingAnim; // 0x7fffffff

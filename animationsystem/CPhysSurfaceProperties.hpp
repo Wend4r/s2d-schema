@@ -5,10 +5,9 @@
 struct CPhysSurfacePropertiesPhysics;
 struct CPhysSurfacePropertiesSoundNames;
 struct CPhysSurfacePropertiesAudio;
-struct CPhysSurfacePropertiesFlammability;
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0xd8
+// Size: 0xc8
 // 
 // MGetKV3ClassDefaults
 class CPhysSurfaceProperties
@@ -36,8 +35,6 @@ public:
 	// MKV3TransferName "audiosounds"
 	CPhysSurfacePropertiesSoundNames m_audioSounds; // 0x48	
 	// MKV3TransferName "audioparams"
-	CPhysSurfacePropertiesAudio m_audioParams; // 0xa0	
-	// MKV3TransferName "flammability"
-	CPhysSurfacePropertiesFlammability m_flammabilityParams; // 0xc0	
+	CPhysSurfacePropertiesAudio m_audioParams; // 0xa8	
 };
 

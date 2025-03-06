@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x658
+// Size: 0x678
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CCitadel_Modifier_StatStealBaseVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_StatStolenDebuffModifier; // 0x638	
-	CEmbeddedSubclass< CCitadelModifier > m_StatStolenBuffModifier; // 0x648	
+	CEmbeddedSubclass< CCitadelModifier > m_StatStolenDebuffModifier; // 0x658	
+	CEmbeddedSubclass< CCitadelModifier > m_StatStolenBuffModifier; // 0x668	
 };
 

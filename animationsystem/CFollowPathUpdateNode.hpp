@@ -6,7 +6,7 @@ struct CAnimInputDamping;
 struct CAnimParamHandle;
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0xb0
+// Size: 0xb8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -30,12 +30,12 @@ private:
 	[[maybe_unused]] uint8_t __pad008c[0x4]; // 0x8c
 public:
 	CAnimInputDamping m_turnDamping; // 0x90	
-	AnimValueSource m_facingTarget; // 0xa0	
-	CAnimParamHandle m_hParam; // 0xa4	
+	AnimValueSource m_facingTarget; // 0xa8	
+	CAnimParamHandle m_hParam; // 0xac	
 private:
-	[[maybe_unused]] uint8_t __pad00a6[0x2]; // 0xa6
+	[[maybe_unused]] uint8_t __pad00ae[0x2]; // 0xae
 public:
-	float m_flTurnToFaceOffset; // 0xa8	
-	bool m_bTurnToFace; // 0xac	
+	float m_flTurnToFaceOffset; // 0xb0	
+	bool m_bTurnToFace; // 0xb4	
 };
 

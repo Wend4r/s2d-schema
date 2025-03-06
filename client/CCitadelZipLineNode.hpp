@@ -4,10 +4,14 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8c8
+// Size: 0x898
 // Has VTable
 // 
 // MNetworkVarNames "CHandle<CCitadelZipLineNode> m_vecConnections"
+// MNetworkVarNames "Vector m_vTangentIn"
+// MNetworkVarNames "Vector m_vTangentOut"
+// MNetworkVarNames "float m_flCumulativeDistance"
+// MNetworkVarNames "int16 m_iNodeIndex"
 // MNetworkVarNames "int16 m_eCaptureState"
 // MNetworkVarNames "int16 m_iPrimaryLane"
 // MNetworkVarNames "int16 m_nRopesParity"
@@ -23,34 +27,45 @@
 class CCitadelZipLineNode : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0858[0x40]; // 0x858
+	[[maybe_unused]] uint8_t __pad0808[0x40]; // 0x808
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "connectionsChanged"
-	C_NetworkUtlVectorBase< CHandle< CCitadelZipLineNode > > m_vecConnections; // 0x898	
+	C_NetworkUtlVectorBase< CHandle< CCitadelZipLineNode > > m_vecConnections; // 0x848	
 	// MNetworkEnable
-	int16_t m_eCaptureState; // 0x8b0	
+	Vector m_vTangentIn; // 0x860	
 	// MNetworkEnable
-	int16_t m_iPrimaryLane; // 0x8b2	
+	Vector m_vTangentOut; // 0x86c	
 	// MNetworkEnable
-	int16_t m_nRopesParity; // 0x8b4	
+	float m_flCumulativeDistance; // 0x878	
 	// MNetworkEnable
-	bool m_bCornerNode; // 0x8b6	
+	int16_t m_iNodeIndex; // 0x87c	
 	// MNetworkEnable
-	bool m_bCapturable; // 0x8b7	
+	int16_t m_eCaptureState; // 0x87e	
 	// MNetworkEnable
-	bool m_bAlwaysUsable; // 0x8b8	
+	int16_t m_iPrimaryLane; // 0x880	
 	// MNetworkEnable
-	bool m_bOneWay; // 0x8b9	
+	int16_t m_nRopesParity; // 0x882	
 	// MNetworkEnable
-	bool m_bDisableZippingToByPlayers; // 0x8ba	
+	bool m_bCornerNode; // 0x884	
 	// MNetworkEnable
-	bool m_bUseForMinimapDrawing; // 0x8bb	
+	bool m_bCapturable; // 0x885	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hGuardingBoss; // 0x8bc	
+	bool m_bAlwaysUsable; // 0x886	
 	// MNetworkEnable
-	float m_flRopeRadius; // 0x8c0	
+	bool m_bOneWay; // 0x887	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x8c4	
+	bool m_bDisableZippingToByPlayers; // 0x888	
+	// MNetworkEnable
+	bool m_bUseForMinimapDrawing; // 0x889	
+private:
+	[[maybe_unused]] uint8_t __pad088a[0x2]; // 0x88a
+public:
+	// MNetworkEnable
+	CHandle< C_BaseEntity > m_hGuardingBoss; // 0x88c	
+	// MNetworkEnable
+	float m_flRopeRadius; // 0x890	
+	// MNetworkEnable
+	bool m_bEnabled; // 0x894	
 };
 

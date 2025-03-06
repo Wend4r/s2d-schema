@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x130
+// Size: 0x148
 // Has VTable
 // 
 // MPulseInstanceDomainInfo
@@ -14,6 +14,6 @@
 class CPulseGraphInstance_TestDomain_Derived : public CPulseGraphInstance_TestDomain
 {
 public:
-	int32_t m_nInstanceValueX; // 0x128	
+	int32_t m_nInstanceValueX; // 0x140	
 };
 

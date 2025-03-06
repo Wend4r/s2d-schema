@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1130
+// Size: 0x1110
 // Has VTable
 class CCitadel_Ability_TrooperZipLine : public CCitadel_Ability_ZipLine
 {

@@ -80,6 +80,8 @@ public:
 	// Datamap fields:
 	// void InputStart; // 0x0
 	// void InputStop; // 0x0
+	// float InputFreeze; // 0x0
+	// float InputThaw; // 0x0
 	// void InputStopEndCap; // 0x0
 	// void InputDestroy; // 0x0
 	// CUtlSymbolLarge InputSetControlPoint; // 0x0

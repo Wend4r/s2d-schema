@@ -13,5 +13,6 @@ struct FeBuildTaperedCapsuleRigid_t : public FeTaperedCapsuleRigid_t
 public:
 	int32_t m_nPriority; // 0x30	
 	uint32_t m_nVertexMapHash; // 0x34	
+	uint32_t m_nAntitunnelGroupBits; // 0x38	
 };
 

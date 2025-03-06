@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1690
+// Size: 0x16c8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CAbilityVandalOverflowVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_LiftModifier; // 0x1590	
+	CEmbeddedSubclass< CCitadelModifier > m_LiftModifier; // 0x15c8	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TargetParticle; // 0x15a0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TargetParticle; // 0x15d8	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_TargetCastSound; // 0x1680	
+	CSoundEventName m_TargetCastSound; // 0x16b8	
 };
 

@@ -5,7 +5,7 @@
 struct AABB_t;
 // Registered binary: worldrenderer.dll (project 'worldrenderer')
 // Alignment: 8
-// Size: 0xa0
+// Size: 0xa8
 // 
 // MGetKV3ClassDefaults
 struct ClutterSceneObject_t
@@ -25,5 +25,6 @@ public:
 	CUtlVector< Color > m_instanceTintSrgb; // 0x68	
 	CUtlVector< ClutterTile_t > m_tiles; // 0x80	
 	CStrongHandle< InfoForResourceTypeCModel > m_renderableModel; // 0x98	
+	CUtlStringToken m_materialGroup; // 0xa0	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x588
+// Size: 0x538
 // Has VTable
 // Is Abstract
 // 
@@ -15,20 +15,20 @@ class C_SoundAreaEntityBase : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bDisabled; // 0x560	
+	bool m_bDisabled; // 0x510	
 private:
-	[[maybe_unused]] uint8_t __pad0561[0x7]; // 0x561
+	[[maybe_unused]] uint8_t __pad0511[0x7]; // 0x511
 public:
-	bool m_bWasEnabled; // 0x568	
+	bool m_bWasEnabled; // 0x518	
 private:
-	[[maybe_unused]] uint8_t __pad0569[0x7]; // 0x569
+	[[maybe_unused]] uint8_t __pad0519[0x7]; // 0x519
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszSoundAreaType; // 0x570	
+	CUtlSymbolLarge m_iszSoundAreaType; // 0x520	
 	// MNetworkEnable
-	Vector m_vPos; // 0x578	
+	Vector m_vPos; // 0x528	
 	
 	// Datamap fields:
-	// void m_nGUID; // 0x564
+	// void m_nGUID; // 0x514
 };
 

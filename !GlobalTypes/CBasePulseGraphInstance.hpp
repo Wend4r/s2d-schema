@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xf8
+// Size: 0x110
 // Has VTable
 // 
 // MPulseInstanceDomainInfo
@@ -12,7 +12,7 @@
 class CBasePulseGraphInstance
 {
 private:
-	[[maybe_unused]] uint8_t __pad0000[0xf8]; // 0x0
+	[[maybe_unused]] uint8_t __pad0000[0x110]; // 0x0
 public:
 };
 

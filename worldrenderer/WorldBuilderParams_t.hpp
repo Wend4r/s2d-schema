@@ -13,7 +13,7 @@ struct WorldBuilderParams_t
 public:
 	float m_flMinDrawVolumeSize; // 0x0	
 	bool m_bBuildBakedLighting; // 0x4	
-	bool m_bLightmapPropInstances; // 0x5	
+	bool m_bAggregateInstanceStreams; // 0x5	
 private:
 	[[maybe_unused]] uint8_t __pad0006[0x2]; // 0x6
 public:

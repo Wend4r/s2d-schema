@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc88
+// Size: 0xc90
 // Has VTable
 class C_ItemParachute : public C_PhysicsProp
 {

@@ -25,5 +25,9 @@ public:
 	uint32_t m_nNavLinkAreaId; // 0x44	
 	NavGravity_t m_gravityOverride; // 0x48	
 	bool m_bGravityOverrideSet; // 0x58	
+private:
+	[[maybe_unused]] uint8_t __pad0059[0x3]; // 0x59
+public:
+	uint32_t m_nConstrainedToMovableMeshId; // 0x5c	
 };
 

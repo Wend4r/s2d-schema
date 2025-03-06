@@ -6,7 +6,7 @@ struct ParticleIndex_t;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcb8
+// Size: 0xc68
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bSprinting"
@@ -16,23 +16,23 @@ struct GameTime_t;
 class CCitadel_Ability_Sprint : public C_CitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_nSprintParticle; // 0xca0	
+	ParticleIndex_t m_nSprintParticle; // 0xc50	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnSprintingChanged"
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bSprinting; // 0xca4	
+	bool m_bSprinting; // 0xc54	
 private:
-	[[maybe_unused]] uint8_t __pad0ca5[0x3]; // 0xca5
+	[[maybe_unused]] uint8_t __pad0c55[0x3]; // 0xc55
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flInCombatStartTime; // 0xca8	
+	GameTime_t m_flInCombatStartTime; // 0xc58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flInCombatEndTime; // 0xcac	
+	GameTime_t m_flInCombatEndTime; // 0xc5c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flSprintStartTime; // 0xcb0	
-	bool m_bInCombat; // 0xcb4	
+	GameTime_t m_flSprintStartTime; // 0xc60	
+	bool m_bInCombat; // 0xc64	
 };
 

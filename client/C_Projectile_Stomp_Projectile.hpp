@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa00
+// Size: 0x9b0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flWidth"
@@ -14,8 +14,8 @@ class C_Projectile_Stomp_Projectile : public C_CitadelProjectile
 {
 public:
 	// MNetworkEnable
-	float m_flWidth; // 0x8e0	
+	float m_flWidth; // 0x890	
 	// MNetworkEnable
-	GameTime_t m_tDieTime; // 0x8e4	
+	GameTime_t m_tDieTime; // 0x894	
 };
 

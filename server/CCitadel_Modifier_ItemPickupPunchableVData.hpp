@@ -4,22 +4,22 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x8f0
+// Size: 0x910
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_ItemPickupPunchableVData : public CCitadelModifierVData
 {
 public:
-	float m_flPhysicsRadius; // 0x638	
+	float m_flPhysicsRadius; // 0x658	
 private:
-	[[maybe_unused]] uint8_t __pad063c[0x4]; // 0x63c
+	[[maybe_unused]] uint8_t __pad065c[0x4]; // 0x65c
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsDroppingParticle; // 0x640	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsPunchableParticle; // 0x720	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsFrozenParticle; // 0x800	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsDroppingParticle; // 0x660	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsPunchableParticle; // 0x740	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsFrozenParticle; // 0x820	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_NearRejuvAuraModifier; // 0x8e0	
+	CEmbeddedSubclass< CCitadelModifier > m_NearRejuvAuraModifier; // 0x900	
 };
 

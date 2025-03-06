@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcd8
+// Size: 0xc88
 // Has VTable
 class CAbility_Operative_Revelation : public C_CitadelBaseAbility
 {

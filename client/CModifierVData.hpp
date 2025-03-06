@@ -73,13 +73,11 @@ public:
 	// MPropertyDescription "Scripted Event Handlers"
 	CUtlVector< ModifierScriptedEventHandler_t > m_vecScriptEventHandlers; // 0x3a8	
 	ModifierDisableGroup_t m_nDisableGroupsMask; // 0x3c0	
-	// MPropertyDescription "When set, the modifier only provides data to requests made directly to the attached entity and not to other modifier properties that the owner provides to."
-	bool m_bPrivateAccess; // 0x3c4	
 	// MPropertyGroupName "UI"
 	// MPropertyDescription "When set, the modifier will not be visible to UI or visible modifier list."
-	bool m_bIsHidden; // 0x3c5	
+	bool m_bIsHidden; // 0x3c4	
 private:
-	[[maybe_unused]] uint8_t __pad03c6[0x2]; // 0x3c6
+	[[maybe_unused]] uint8_t __pad03c5[0x3]; // 0x3c5
 public:
 	// MPropertyGroupName "UI"
 	// MPropertySuppressExpr "m_bIsHidden != true"

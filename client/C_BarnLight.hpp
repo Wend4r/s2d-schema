@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xba0
+// Size: 0xb50
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -86,249 +86,249 @@ class C_BarnLight : public C_BaseModelEntity
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bEnabled; // 0x858	
+	bool m_bEnabled; // 0x808	
 private:
-	[[maybe_unused]] uint8_t __pad0859[0x3]; // 0x859
+	[[maybe_unused]] uint8_t __pad0809[0x3]; // 0x809
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nColorMode; // 0x85c	
+	int32_t m_nColorMode; // 0x80c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	Color m_Color; // 0x860	
+	Color m_Color; // 0x810	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flColorTemperature; // 0x864	
+	float m_flColorTemperature; // 0x814	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flBrightness; // 0x868	
+	float m_flBrightness; // 0x818	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flBrightnessScale; // 0x86c	
+	float m_flBrightnessScale; // 0x81c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nDirectLight; // 0x870	
+	int32_t m_nDirectLight; // 0x820	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nBakedShadowIndex; // 0x874	
+	int32_t m_nBakedShadowIndex; // 0x824	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nLuminaireShape; // 0x878	
+	int32_t m_nLuminaireShape; // 0x828	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flLuminaireSize; // 0x87c	
+	float m_flLuminaireSize; // 0x82c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flLuminaireAnisotropy; // 0x880	
+	float m_flLuminaireAnisotropy; // 0x830	
 private:
-	[[maybe_unused]] uint8_t __pad0884[0x4]; // 0x884
+	[[maybe_unused]] uint8_t __pad0834[0x4]; // 0x834
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "StyleChanged"
-	CUtlString m_LightStyleString; // 0x888	
+	CUtlString m_LightStyleString; // 0x838	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	GameTime_t m_flLightStyleStartTime; // 0x890	
+	GameTime_t m_flLightStyleStartTime; // 0x840	
 private:
-	[[maybe_unused]] uint8_t __pad0894[0x4]; // 0x894
+	[[maybe_unused]] uint8_t __pad0844[0x4]; // 0x844
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CUtlString > m_QueuedLightStyleStrings; // 0x898	
+	C_NetworkUtlVectorBase< CUtlString > m_QueuedLightStyleStrings; // 0x848	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CUtlString > m_LightStyleEvents; // 0x8b0	
+	C_NetworkUtlVectorBase< CUtlString > m_LightStyleEvents; // 0x860	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > > m_LightStyleTargets; // 0x8c8	
-	CEntityIOOutput m_StyleEvent[4]; // 0x8e0	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x980	
+	C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > > m_LightStyleTargets; // 0x878	
+	CEntityIOOutput m_StyleEvent[4]; // 0x890	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flShape; // 0x988	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x930	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flSoftX; // 0x98c	
+	float m_flShape; // 0x938	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flSoftY; // 0x990	
+	float m_flSoftX; // 0x93c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flSkirt; // 0x994	
+	float m_flSoftY; // 0x940	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flSkirtNear; // 0x998	
+	float m_flSkirt; // 0x944	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	float m_flSkirtNear; // 0x948	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
 	// MNetworkBitCount "32"
-	Vector m_vSizeParams; // 0x99c	
+	Vector m_vSizeParams; // 0x94c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
 	// MNetworkBitCount "32"
-	float m_flRange; // 0x9a8	
+	float m_flRange; // 0x958	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
 	// MNetworkBitCount "32"
-	Vector m_vShear; // 0x9ac	
+	Vector m_vShear; // 0x95c	
 	// MNetworkEnable
-	int32_t m_nBakeSpecularToCubemaps; // 0x9b8	
+	int32_t m_nBakeSpecularToCubemaps; // 0x968	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
 	// MNetworkBitCount "32"
-	Vector m_vBakeSpecularToCubemapsSize; // 0x9bc	
+	Vector m_vBakeSpecularToCubemapsSize; // 0x96c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nCastShadows; // 0x9c8	
+	int32_t m_nCastShadows; // 0x978	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nShadowMapSize; // 0x9cc	
+	int32_t m_nShadowMapSize; // 0x97c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nShadowPriority; // 0x9d0	
+	int32_t m_nShadowPriority; // 0x980	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bContactShadow; // 0x9d4	
+	bool m_bContactShadow; // 0x984	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bForceShadowsEnabled; // 0x9d5	
+	bool m_bForceShadowsEnabled; // 0x985	
 private:
-	[[maybe_unused]] uint8_t __pad09d6[0x2]; // 0x9d6
+	[[maybe_unused]] uint8_t __pad0986[0x2]; // 0x986
 public:
 	// MNetworkEnable
-	int32_t m_nBounceLight; // 0x9d8	
+	int32_t m_nBounceLight; // 0x988	
 	// MNetworkEnable
-	float m_flBounceScale; // 0x9dc	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	float m_flMinRoughness; // 0x9e0	
+	float m_flBounceScale; // 0x98c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vAlternateColor; // 0x9e4	
+	float m_flMinRoughness; // 0x990	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_fAlternateColorBrightness; // 0x9f0	
+	Vector m_vAlternateColor; // 0x994	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nFog; // 0x9f4	
+	float m_fAlternateColorBrightness; // 0x9a0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flFogStrength; // 0x9f8	
+	int32_t m_nFog; // 0x9a4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nFogShadows; // 0x9fc	
+	float m_flFogStrength; // 0x9a8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	float m_flFogScale; // 0xa00	
+	int32_t m_nFogShadows; // 0x9ac	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bFogMixedShadows; // 0xa04	
+	float m_flFogScale; // 0x9b0	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	bool m_bFogMixedShadows; // 0x9b4	
 private:
-	[[maybe_unused]] uint8_t __pad0a05[0x3]; // 0xa05
-public:
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	float m_flFadeSizeStart; // 0xa08	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	float m_flFadeSizeEnd; // 0xa0c	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	float m_flShadowFadeSizeStart; // 0xa10	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	float m_flShadowFadeSizeEnd; // 0xa14	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bPrecomputedFieldsValid; // 0xa18	
-private:
-	[[maybe_unused]] uint8_t __pad0a19[0x3]; // 0xa19
+	[[maybe_unused]] uint8_t __pad09b5[0x3]; // 0x9b5
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedBoundsMins; // 0xa1c	
+	float m_flFadeSizeStart; // 0x9b8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedBoundsMaxs; // 0xa28	
+	float m_flFadeSizeEnd; // 0x9bc	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBOrigin; // 0xa34	
+	float m_flShadowFadeSizeStart; // 0x9c0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	QAngle m_vPrecomputedOBBAngles; // 0xa40	
+	float m_flShadowFadeSizeEnd; // 0x9c4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBExtent; // 0xa4c	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	int32_t m_nPrecomputedSubFrusta; // 0xa58	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBOrigin0; // 0xa5c	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	QAngle m_vPrecomputedOBBAngles0; // 0xa68	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBExtent0; // 0xa74	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBOrigin1; // 0xa80	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	QAngle m_vPrecomputedOBBAngles1; // 0xa8c	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBExtent1; // 0xa98	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBOrigin2; // 0xaa4	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	QAngle m_vPrecomputedOBBAngles2; // 0xab0	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBExtent2; // 0xabc	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBOrigin3; // 0xac8	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	QAngle m_vPrecomputedOBBAngles3; // 0xad4	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBExtent3; // 0xae0	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBOrigin4; // 0xaec	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	QAngle m_vPrecomputedOBBAngles4; // 0xaf8	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBExtent4; // 0xb04	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBOrigin5; // 0xb10	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	QAngle m_vPrecomputedOBBAngles5; // 0xb1c	
-	// MNetworkEnable
-	// MNetworkChangeCallback "RenderingChanged"
-	Vector m_vPrecomputedOBBExtent5; // 0xb28	
+	bool m_bPrecomputedFieldsValid; // 0x9c8	
 private:
-	[[maybe_unused]] uint8_t __pad0b34[0x44]; // 0xb34
-public:
-	bool m_bInitialBoneSetup; // 0xb78	
-private:
-	[[maybe_unused]] uint8_t __pad0b79[0x7]; // 0xb79
+	[[maybe_unused]] uint8_t __pad09c9[0x3]; // 0x9c9
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	C_NetworkUtlVectorBase< uint16 > m_VisClusters; // 0xb80	
+	Vector m_vPrecomputedBoundsMins; // 0x9cc	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedBoundsMaxs; // 0x9d8	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin; // 0x9e4	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles; // 0x9f0	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent; // 0x9fc	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	int32_t m_nPrecomputedSubFrusta; // 0xa08	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin0; // 0xa0c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles0; // 0xa18	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent0; // 0xa24	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin1; // 0xa30	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles1; // 0xa3c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent1; // 0xa48	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin2; // 0xa54	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles2; // 0xa60	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent2; // 0xa6c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin3; // 0xa78	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles3; // 0xa84	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent3; // 0xa90	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin4; // 0xa9c	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles4; // 0xaa8	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent4; // 0xab4	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBOrigin5; // 0xac0	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	QAngle m_vPrecomputedOBBAngles5; // 0xacc	
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	Vector m_vPrecomputedOBBExtent5; // 0xad8	
+private:
+	[[maybe_unused]] uint8_t __pad0ae4[0x44]; // 0xae4
+public:
+	bool m_bInitialBoneSetup; // 0xb28	
+private:
+	[[maybe_unused]] uint8_t __pad0b29[0x7]; // 0xb29
+public:
+	// MNetworkEnable
+	// MNetworkChangeCallback "RenderingChanged"
+	C_NetworkUtlVectorBase< uint16 > m_VisClusters; // 0xb30	
 	
 	// Datamap fields:
-	// void m_StyleEvent[0]; // 0x8e0
-	// void m_StyleEvent[1]; // 0x908
-	// void m_StyleEvent[2]; // 0x930
-	// void m_StyleEvent[3]; // 0x958
+	// void m_StyleEvent[0]; // 0x890
+	// void m_StyleEvent[1]; // 0x8b8
+	// void m_StyleEvent[2]; // 0x8e0
+	// void m_StyleEvent[3]; // 0x908
 };
 

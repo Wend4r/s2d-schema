@@ -5,7 +5,7 @@
 struct CInButtonState;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1d8
+// Size: 0x1e8
 // Has VTable
 // 
 // MNetworkVarNames "ButtonBitMask_t m_nToggleButtonDownMask"
@@ -45,7 +45,8 @@ public:
 	float m_flLeftMove; // 0x1b0	
 	float m_flUpMove; // 0x1b4	
 	Vector m_vecLastMovementImpulses; // 0x1b8	
-	QAngle m_vecOldViewAngles; // 0x1c4	
+	QAngle m_vecLastFinishMoveViewAngles; // 0x1c4	
+	QAngle m_vecOldViewAngles; // 0x1d0	
 	
 	// Datamap fields:
 	// void m_pButtonPressedCmdNumber; // 0x80

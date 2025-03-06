@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xb08
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flTurnSolidTime"
@@ -13,6 +13,6 @@ class C_Citadel_Ice_Dome_Blocker : public CBaseAnimGraph
 {
 public:
 	// MNetworkEnable
-	GameTime_t m_flTurnSolidTime; // 0xaf8	
+	GameTime_t m_flTurnSolidTime; // 0xb00	
 };
 

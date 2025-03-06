@@ -9,7 +9,7 @@ struct CitadelStatsDisplay_t;
 struct CFootstepTableHandle;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xed0
+// Size: 0xed8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -29,40 +29,41 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad002c[0x4]; // 0x2c
 public:
+	// MPropertyStartGroup "AnimGraph2"
+	// MPropertyFriendlyName "AnimGraph2 Variant Name"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCNmGraphDefinition > > m_sAG2VariationName; // 0x30	
 	// MPropertyStartGroup "Screen Space Particle FX"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hDamageTakenParticle; // 0x30	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hGroundDamageTakenParticle; // 0x110	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hDeathParticle; // 0x1f0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hLowHealthParticle; // 0x2d0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hDamageTakenParticle; // 0x110	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hGroundDamageTakenParticle; // 0x1f0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hDeathParticle; // 0x2d0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hLowHealthParticle; // 0x3b0	
 	// MPropertyStartGroup "Visuals"
-	CPanoramaImageName m_strSelectionImage; // 0x3b0	
-	CPanoramaImageName m_strIconImageSmall; // 0x3c0	
-	CPanoramaImageName m_strIconHeroCard; // 0x3d0	
-	CPanoramaImageName m_strMinimapImage; // 0x3e0	
-	CPanoramaImageName m_strTopBarImage; // 0x3f0	
-	CPanoramaImageName m_strTopBarVertical; // 0x400	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hRespawnParticle; // 0x410	
-	Color m_colorUI; // 0x4f0	
-	Color m_colorGlowFriendly; // 0x4f4	
-	Color m_colorGlowEnemy; // 0x4f8	
-	Color m_colorGlowTeam1; // 0x4fc	
-	Color m_colorGlowTeam2; // 0x500	
+	CPanoramaImageName m_strSelectionImage; // 0x490	
+	CPanoramaImageName m_strIconImageSmall; // 0x4a0	
+	CPanoramaImageName m_strIconHeroCard; // 0x4b0	
+	CPanoramaImageName m_strMinimapImage; // 0x4c0	
+	CPanoramaImageName m_strTopBarImage; // 0x4d0	
+	CPanoramaImageName m_strTopBarVertical; // 0x4e0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hRespawnParticle; // 0x4f0	
+	Color m_colorUI; // 0x5d0	
+	Color m_colorGlowFriendly; // 0x5d4	
+	Color m_colorGlowEnemy; // 0x5d8	
+	Color m_colorGlowTeam1; // 0x5dc	
+	Color m_colorGlowTeam2; // 0x5e0	
 private:
-	[[maybe_unused]] uint8_t __pad0504[0x4]; // 0x504
+	[[maybe_unused]] uint8_t __pad05e4[0x4]; // 0x5e4
 public:
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strModelName; // 0x508	
-	int32_t m_nModelSkin; // 0x5e8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strModelName; // 0x5e8	
+	int32_t m_nModelSkin; // 0x6c8	
 private:
-	[[maybe_unused]] uint8_t __pad05ec[0x4]; // 0x5ec
+	[[maybe_unused]] uint8_t __pad06cc[0x4]; // 0x6cc
 public:
 	// MPropertyDescription "If specified, this model will be used if convar citadel_use_wip_models is true."
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x5f0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x6d0	
 	// MPropertyDescription "If specified, this model will be used in main instead of 'Model Name'."
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strMainOnlyModelName; // 0x6d0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strMainOnlyModelName; // 0x7b0	
 	// MPropertyStartGroup "UI"
-	uint64_t m_iAddedTime; // 0x7b0	
-	// MPropertyDescription "AnimGraph for UI"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCNmGraphVariation > > m_sAG2VariationName; // 0x7b8	
+	uint64_t m_iAddedTime; // 0x890	
 	// MPropertyAttributeEditor "AssetBrowse( vmap )"
 	CUtlString m_strUIPortraitMap; // 0x898	
 	// MPropertyAttributeEditor "AssetBrowse( vmap )"
@@ -93,59 +94,66 @@ public:
 	float m_flStepHeight; // 0xc70	
 	bool m_bInDevelopment; // 0xc74	
 	bool m_bAssignedPlayersOnly; // 0xc75	
-	bool m_bBotSelectable; // 0xc76	
-	bool m_bNewPlayerRecommended; // 0xc77	
-	bool m_bLaneTestingRecommended; // 0xc78	
-	bool m_bNeedsTesting; // 0xc79	
-	bool m_bLimitedTesting; // 0xc7a	
-	bool m_bDisabled; // 0xc7b	
-	bool m_bPlayerSelectable; // 0xc7c	
-	bool m_bAvailableInHeroLabs; // 0xc7d	
+	bool m_bNewPlayerRecommended; // 0xc76	
+	bool m_bLaneTestingRecommended; // 0xc77	
+	bool m_bNeedsTesting; // 0xc78	
+	bool m_bLimitedTesting; // 0xc79	
+	bool m_bDisabled; // 0xc7a	
+	bool m_bPlayerSelectable; // 0xc7b	
+	bool m_bAvailableInHeroLabs; // 0xc7c	
 private:
-	[[maybe_unused]] uint8_t __pad0c7e[0x2]; // 0xc7e
+	[[maybe_unused]] uint8_t __pad0c7d[0x3]; // 0xc7d
 public:
 	int32_t m_nComplexity; // 0xc80	
-	int32_t m_nReadability; // 0xc84	
+	// MPropertyDescription "Minimum bot match difficulty for this hero to appear as an ally bot. -1 = never."
+	// MPropertyAttributeRange "-1 4"
+	int32_t m_nAllyBotDifficulty; // 0xc84	
+	// MPropertyDescription "Minimum bot match difficulty for this hero to appear as an enemy bot. -1 = never."
+	// MPropertyAttributeRange "-1 4"
+	int32_t m_nEnemyBotDifficulty; // 0xc88	
 	// MPropertyStartGroup "Low Health Settings"
 	// MPropertyDescription "Percentage of health to be considered low health"
 	// MPropertyAttributeRange "0 1"
-	float m_flMinLowHealthPercentage; // 0xc88	
+	float m_flMinLowHealthPercentage; // 0xc8c	
 	// MPropertyDescription "Percentage of health to be considered low health when you have high max health."
 	// MPropertyAttributeRange "0 1"
-	float m_flMaxLowHealthPercentage; // 0xc8c	
+	float m_flMaxLowHealthPercentage; // 0xc90	
 	// MPropertyDescription "Percentage of health to be considered mid health"
 	// MPropertyAttributeRange "0 1"
-	float m_flMinMidHealthPercentage; // 0xc90	
+	float m_flMinMidHealthPercentage; // 0xc94	
 	// MPropertyDescription "Percentage of health to be considered mid health when you have high max health."
 	// MPropertyAttributeRange "0 1"
-	float m_flMaxMidHealthPercentage; // 0xc94	
+	float m_flMaxMidHealthPercentage; // 0xc98	
 	// MPropertyDescription "Min Max Health for Remapped Value"
-	float m_flMinHealthForThreshold; // 0xc98	
+	float m_flMinHealthForThreshold; // 0xc9c	
 	// MPropertyDescription "Max Max Health for remapped value"
-	float m_flMaxHealthForThreshold; // 0xc9c	
+	float m_flMaxHealthForThreshold; // 0xca0	
+private:
+	[[maybe_unused]] uint8_t __pad0ca4[0x4]; // 0xca4
+public:
 	// MPropertyStartGroup
-	CUtlOrderedMap< EStatsType, float32 > m_mapStartingStats; // 0xca0	
-	CUtlOrderedMap< EStatsType, HeroScalingStat_t > m_mapScalingStats; // 0xcc8	
+	CUtlOrderedMap< EStatsType, float32 > m_mapStartingStats; // 0xca8	
+	CUtlOrderedMap< EStatsType, HeroScalingStat_t > m_mapScalingStats; // 0xcd0	
 private:
-	[[maybe_unused]] uint8_t __pad0cf0[0x18]; // 0xcf0
+	[[maybe_unused]] uint8_t __pad0cf8[0x18]; // 0xcf8
 public:
-	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0xd08	
-	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapWIPAbilities; // 0xd30	
-	CUtlOrderedMap< EItemSlotTypes_t, ItemSlotInfo_t > m_mapItemSlotInfo; // 0xd58	
-	CUtlVector< CSubclassName< 4 > > m_RecommendedUpgrades; // 0xd80	
+	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0xd10	
+	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapWIPAbilities; // 0xd38	
+	CUtlOrderedMap< EItemSlotTypes_t, ItemSlotInfo_t > m_mapItemSlotInfo; // 0xd60	
+	CUtlVector< CSubclassName< 4 > > m_RecommendedUpgrades; // 0xd88	
 private:
-	[[maybe_unused]] uint8_t __pad0d98[0x70]; // 0xd98
+	[[maybe_unused]] uint8_t __pad0da0[0x70]; // 0xda0
 public:
-	CUtlVector< CSubclassName< 4 > > m_RecommendedAbilityOrder; // 0xe08	
+	CUtlVector< CSubclassName< 4 > > m_RecommendedAbilityOrder; // 0xe10	
 private:
-	[[maybe_unused]] uint8_t __pad0e20[0x18]; // 0xe20
+	[[maybe_unused]] uint8_t __pad0e28[0x18]; // 0xe28
 public:
-	EAbilityResourceType m_eAbilityResourceType; // 0xe38	
+	EAbilityResourceType m_eAbilityResourceType; // 0xe40	
 private:
-	[[maybe_unused]] uint8_t __pad0e3c[0x1c]; // 0xe3c
+	[[maybe_unused]] uint8_t __pad0e44[0x1c]; // 0xe44
 public:
-	CUtlOrderedMap< EModifierValue, float32 > m_mapStandardLevelUpUpgrades; // 0xe58	
-	CUtlOrderedMap< int32, HeroLevel_t > m_mapLevelInfo; // 0xe80	
-	CUtlOrderedMap< EItemSlotTypes_t, CUtlVector< HeroPurchaseBonus_t > > m_mapPurchaseBonuses; // 0xea8	
+	CUtlOrderedMap< EModifierValue, float32 > m_mapStandardLevelUpUpgrades; // 0xe60	
+	CUtlOrderedMap< int32, HeroLevel_t > m_mapLevelInfo; // 0xe88	
+	CUtlOrderedMap< EItemSlotTypes_t, CUtlVector< HeroPurchaseBonus_t > > m_mapPurchaseBonuses; // 0xeb0	
 };
 

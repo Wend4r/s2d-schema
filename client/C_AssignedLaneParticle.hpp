@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x880
+// Size: 0x830
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iTeamNum"
@@ -12,9 +12,9 @@
 class C_AssignedLaneParticle : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0858[0x20]; // 0x858
+	[[maybe_unused]] uint8_t __pad0808[0x20]; // 0x808
 public:
 	// MNetworkEnable
-	int32_t m_iLane; // 0x878	
+	int32_t m_iLane; // 0x828	
 };
 

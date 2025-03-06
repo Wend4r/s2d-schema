@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb38
+// Size: 0xb50
 // Has VTable
 class CCitadelItemPickupIdol : public C_CitadelItemPickup
 {

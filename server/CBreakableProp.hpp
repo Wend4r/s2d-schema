@@ -7,69 +7,66 @@ struct CEntityIOOutput;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbe8
+// Size: 0xc38
 // Has VTable
 // 
 // MNetworkVarNames "CPropDataComponent::Storage_t m_CPropDataComponent"
-// MNetworkVarNames "bool m_noGhostCollision"
 class CBreakableProp : public CBaseProp
 {
 private:
-	[[maybe_unused]] uint8_t __pad0a78[0x8]; // 0xa78
+	[[maybe_unused]] uint8_t __pad0ad0[0x8]; // 0xad0
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "CPropDataComponent"
 	// MNetworkAlias "CPropDataComponent"
 	// MNetworkTypeAlias "CPropDataComponent"
-	CPropDataComponent m_CPropDataComponent; // 0xa80	
-	CEntityIOOutput m_OnBreak; // 0xac0	
-	CEntityOutputTemplate< float32 > m_OnHealthChanged; // 0xae8	
-	CEntityIOOutput m_OnTakeDamage; // 0xb10	
-	float m_impactEnergyScale; // 0xb38	
-	int32_t m_iMinHealthDmg; // 0xb3c	
-	QAngle m_preferredCarryAngles; // 0xb40	
-	float m_flPressureDelay; // 0xb4c	
-	float m_flDefBurstScale; // 0xb50	
-	Vector m_vDefBurstOffset; // 0xb54	
-	CHandle< CBaseEntity > m_hBreaker; // 0xb60	
-	PerformanceMode_t m_PerformanceMode; // 0xb64	
-	GameTime_t m_flPreventDamageBeforeTime; // 0xb68	
-	BreakableContentsType_t m_BreakableContentsType; // 0xb6c	
-	CUtlString m_strBreakableContentsPropGroupOverride; // 0xb70	
-	CUtlString m_strBreakableContentsParticleOverride; // 0xb78	
-	bool m_bHasBreakPiecesOrCommands; // 0xb80	
+	CPropDataComponent m_CPropDataComponent; // 0xad8	
+	CEntityIOOutput m_OnBreak; // 0xb18	
+	CEntityOutputTemplate< float32 > m_OnHealthChanged; // 0xb40	
+	CEntityIOOutput m_OnTakeDamage; // 0xb68	
+	float m_impactEnergyScale; // 0xb90	
+	int32_t m_iMinHealthDmg; // 0xb94	
+	QAngle m_preferredCarryAngles; // 0xb98	
+	float m_flPressureDelay; // 0xba4	
+	float m_flDefBurstScale; // 0xba8	
+	Vector m_vDefBurstOffset; // 0xbac	
+	CHandle< CBaseEntity > m_hBreaker; // 0xbb8	
+	PerformanceMode_t m_PerformanceMode; // 0xbbc	
+	GameTime_t m_flPreventDamageBeforeTime; // 0xbc0	
+	BreakableContentsType_t m_BreakableContentsType; // 0xbc4	
+	CUtlString m_strBreakableContentsPropGroupOverride; // 0xbc8	
+	CUtlString m_strBreakableContentsParticleOverride; // 0xbd0	
+	bool m_bHasBreakPiecesOrCommands; // 0xbd8	
 private:
-	[[maybe_unused]] uint8_t __pad0b81[0x3]; // 0xb81
+	[[maybe_unused]] uint8_t __pad0bd9[0x3]; // 0xbd9
 public:
-	float m_explodeDamage; // 0xb84	
-	float m_explodeRadius; // 0xb88	
+	float m_explodeDamage; // 0xbdc	
+	float m_explodeRadius; // 0xbe0	
 private:
-	[[maybe_unused]] uint8_t __pad0b8c[0x4]; // 0xb8c
+	[[maybe_unused]] uint8_t __pad0be4[0x4]; // 0xbe4
 public:
-	float m_explosionDelay; // 0xb90	
+	float m_explosionDelay; // 0xbe8	
 private:
-	[[maybe_unused]] uint8_t __pad0b94[0x4]; // 0xb94
+	[[maybe_unused]] uint8_t __pad0bec[0x4]; // 0xbec
 public:
-	CUtlSymbolLarge m_explosionBuildupSound; // 0xb98	
-	CUtlSymbolLarge m_explosionCustomEffect; // 0xba0	
-	CUtlSymbolLarge m_explosionCustomSound; // 0xba8	
-	CUtlSymbolLarge m_explosionModifier; // 0xbb0	
-	CHandle< CBasePlayerPawn > m_hPhysicsAttacker; // 0xbb8	
-	GameTime_t m_flLastPhysicsInfluenceTime; // 0xbbc	
-	bool m_bOriginalBlockLOS; // 0xbc0	
+	CUtlSymbolLarge m_explosionBuildupSound; // 0xbf0	
+	CUtlSymbolLarge m_explosionCustomEffect; // 0xbf8	
+	CUtlSymbolLarge m_explosionCustomSound; // 0xc00	
+	CUtlSymbolLarge m_explosionModifier; // 0xc08	
+	int32_t m_explosionDangerSound; // 0xc10	
+	CHandle< CBasePlayerPawn > m_hPhysicsAttacker; // 0xc14	
+	GameTime_t m_flLastPhysicsInfluenceTime; // 0xc18	
+	bool m_bOriginalBlockLOS; // 0xc1c	
 private:
-	[[maybe_unused]] uint8_t __pad0bc1[0x3]; // 0xbc1
+	[[maybe_unused]] uint8_t __pad0c1d[0x3]; // 0xc1d
 public:
-	float m_flDefaultFadeScale; // 0xbc4	
-	CHandle< CBaseEntity > m_hLastAttacker; // 0xbc8	
-	CHandle< CBaseEntity > m_hFlareEnt; // 0xbcc	
-	bool m_bUsePuntSound; // 0xbd0	
+	float m_flDefaultFadeScale; // 0xc20	
+	CHandle< CBaseEntity > m_hLastAttacker; // 0xc24	
+	bool m_bUsePuntSound; // 0xc28	
 private:
-	[[maybe_unused]] uint8_t __pad0bd1[0x7]; // 0xbd1
+	[[maybe_unused]] uint8_t __pad0c29[0x7]; // 0xc29
 public:
-	CUtlSymbolLarge m_iszPuntSound; // 0xbd8	
-	// MNetworkEnable
-	bool m_noGhostCollision; // 0xbe0	
+	CUtlSymbolLarge m_iszPuntSound; // 0xc30	
 	
 	// Datamap fields:
 	// void InputBreak; // 0x0
@@ -81,6 +78,6 @@ public:
 	// void InputDisablePuntSound; // 0x0
 	// void CBreakablePropBreakThink; // 0x0
 	// void CBreakablePropRampToDefaultFadeScale; // 0x0
-	// uint32_t m_nExplosionType; // 0xb8c
+	// uint32_t m_nExplosionType; // 0xbe4
 };
 

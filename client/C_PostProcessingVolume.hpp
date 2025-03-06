@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x9d8
+// Size: 0x988
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -23,31 +23,31 @@
 class C_PostProcessingVolume : public C_BaseTrigger
 {
 private:
-	[[maybe_unused]] uint8_t __pad0998[0x10]; // 0x998
+	[[maybe_unused]] uint8_t __pad0948[0x10]; // 0x948
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x9a8	
+	CStrongHandle< InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x958	
 	// MNetworkEnable
-	float m_flFadeDuration; // 0x9b0	
+	float m_flFadeDuration; // 0x960	
 	// MNetworkEnable
-	float m_flMinLogExposure; // 0x9b4	
+	float m_flMinLogExposure; // 0x964	
 	// MNetworkEnable
-	float m_flMaxLogExposure; // 0x9b8	
+	float m_flMaxLogExposure; // 0x968	
 	// MNetworkEnable
-	float m_flMinExposure; // 0x9bc	
+	float m_flMinExposure; // 0x96c	
 	// MNetworkEnable
-	float m_flMaxExposure; // 0x9c0	
+	float m_flMaxExposure; // 0x970	
 	// MNetworkEnable
-	float m_flExposureCompensation; // 0x9c4	
+	float m_flExposureCompensation; // 0x974	
 	// MNetworkEnable
-	float m_flExposureFadeSpeedUp; // 0x9c8	
+	float m_flExposureFadeSpeedUp; // 0x978	
 	// MNetworkEnable
-	float m_flExposureFadeSpeedDown; // 0x9cc	
+	float m_flExposureFadeSpeedDown; // 0x97c	
 	// MNetworkEnable
-	float m_flTonemapEVSmoothingRange; // 0x9d0	
+	float m_flTonemapEVSmoothingRange; // 0x980	
 	// MNetworkEnable
-	bool m_bMaster; // 0x9d4	
+	bool m_bMaster; // 0x984	
 	// MNetworkEnable
-	bool m_bExposureControl; // 0x9d5	
+	bool m_bExposureControl; // 0x985	
 };
 

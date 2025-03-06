@@ -4,15 +4,15 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe50
+// Size: 0xe00
 // Has VTable
 class CCitadel_Ability_Gunslinger_KnockbackBlast : public C_CitadelBaseAbility
 {
 public:
-	Vector m_vecKnockbackDirection; // 0xca0	
+	Vector m_vecKnockbackDirection; // 0xc50	
 private:
-	[[maybe_unused]] uint8_t __pad0cac[0x4]; // 0xcac
+	[[maybe_unused]] uint8_t __pad0c5c[0x4]; // 0xc5c
 public:
-	CUtlVector< CHandle< C_BaseEntity > > m_vecKnockbackedUnits; // 0xcb0	
+	CUtlVector< CHandle< C_BaseEntity > > m_vecKnockbackedUnits; // 0xc60	
 };
 

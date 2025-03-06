@@ -5,7 +5,7 @@
 struct C_EnvWindShared;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x768
+// Size: 0x718
 // Has VTable
 // 
 // MNetworkVarNames "CEnvWindShared m_EnvWindShared"
@@ -13,6 +13,6 @@ class C_EnvWind : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	C_EnvWindShared m_EnvWindShared; // 0x560	
+	C_EnvWindShared m_EnvWindShared; // 0x510	
 };
 

@@ -22,9 +22,5 @@ public:
 	CAI_InterestTarget::Type_t m_eType; // 0x28	
 	WorldGroupId_t m_nWorldGroupId; // 0x2c	
 	GameTime_t m_flEndTime; // 0x30	
-	
-	// Static fields:
-	static float &Get_s_flDurationInfinite(){return *reinterpret_cast<float*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_InterestTarget")->m_static_fields[0]->m_instance);};
-	static float &Get_s_flDurationSingleTick(){return *reinterpret_cast<float*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_InterestTarget")->m_static_fields[1]->m_instance);};
 };
 

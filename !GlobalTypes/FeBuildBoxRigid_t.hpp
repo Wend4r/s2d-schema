@@ -13,5 +13,6 @@ struct FeBuildBoxRigid_t : public FeBoxRigid_t
 public:
 	int32_t m_nPriority; // 0x40	
 	uint32_t m_nVertexMapHash; // 0x44	
+	uint32_t m_nAntitunnelGroupBits; // 0x48	
 };
 

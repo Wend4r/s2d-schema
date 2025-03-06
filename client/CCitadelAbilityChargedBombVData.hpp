@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1698
+// Size: 0x16d0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,13 +12,13 @@ class CCitadelAbilityChargedBombVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ChargeBombModifier; // 0x1590	
+	CEmbeddedSubclass< CCitadelModifier > m_ChargeBombModifier; // 0x15c8	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x15a0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x15d8	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strExplodeSound; // 0x1680	
+	CSoundEventName m_strExplodeSound; // 0x16b8	
 	// MPropertyStartGroup "GamePlay"
-	float m_flChargeForMaxDamage; // 0x1690	
-	float m_flMinDamagePercent; // 0x1694	
+	float m_flChargeForMaxDamage; // 0x16c8	
+	float m_flMinDamagePercent; // 0x16cc	
 };
 

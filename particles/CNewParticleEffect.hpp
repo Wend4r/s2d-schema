@@ -30,11 +30,12 @@ public:
 		uint8_t m_bSimulate: 1; 		
 		uint8_t m_bShouldPerformCullCheck: 1; 		
 		uint8_t m_bForceNoDraw: 1; 		
+		uint8_t m_bSuppressScreenSpaceEffect: 1; 		
 		uint8_t m_bShouldSave: 1; 		
 		uint8_t m_bDisableAggregation: 1; 		
 		uint8_t m_bShouldSimulateDuringGamePaused: 1; 		
 		uint8_t m_bShouldCheckFoW: 1; 		
-		uint256_t __pad0: 179;
+		uint256_t __pad0: 178;
 	}; // 192 bits
 	Vector m_vSortOrigin; // 0x40	
 	float m_flScale; // 0x4c	

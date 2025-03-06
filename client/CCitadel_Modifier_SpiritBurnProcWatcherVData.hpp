@@ -1,0 +1,17 @@
+#pragma once
+
+#include <cstdint>
+
+// Registered binary: client.dll (project 'client')
+// Alignment: 8
+// Size: 0x698
+// Has VTable
+// 
+// MGetKV3ClassDefaults
+class CCitadel_Modifier_SpiritBurnProcWatcherVData : public CCitadel_Modifier_BaseEventProcVData
+{
+public:
+	// MPropertyGroupName "Modifiers"
+	CEmbeddedSubclass< CBaseModifier > m_DebuffModifier; // 0x688	
+};
+

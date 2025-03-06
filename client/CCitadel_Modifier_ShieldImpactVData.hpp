@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x728
+// Size: 0x748
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_ShieldImpactVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShieldBreakParticle; // 0x638	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShieldBreakParticle; // 0x658	
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_ShieldBreakSound; // 0x718	
+	CSoundEventName m_ShieldBreakSound; // 0x738	
 };
 

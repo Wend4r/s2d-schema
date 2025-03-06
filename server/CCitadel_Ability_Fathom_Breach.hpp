@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbe8
+// Size: 0xc20
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bInFlight"

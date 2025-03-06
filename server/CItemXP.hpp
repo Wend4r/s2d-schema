@@ -13,12 +13,12 @@ struct GameTime_t;
 class CItemXP : public CBaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad07b8[0x54]; // 0x7b8
+	[[maybe_unused]] uint8_t __pad07b8[0x58]; // 0x7b8
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnLaunchTimeChanged"
-	GameTime_t m_timeLaunch; // 0x80c	
+	GameTime_t m_timeLaunch; // 0x810	
 	// MNetworkEnable
-	GameTime_t m_flAttackableTime; // 0x810	
+	GameTime_t m_flAttackableTime; // 0x814	
 };
 

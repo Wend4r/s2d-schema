@@ -6,7 +6,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x9f0
+// Size: 0x9a0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flInitialRadius"
@@ -21,30 +21,30 @@ class CCitadelControlPointTrigger : public C_BaseTrigger
 {
 public:
 	// MNetworkEnable
-	float m_flInitialRadius; // 0x998	
+	float m_flInitialRadius; // 0x948	
 	// MNetworkEnable
-	float m_flEndRadius; // 0x99c	
+	float m_flEndRadius; // 0x94c	
 	// MNetworkEnable
-	float m_flProgress; // 0x9a0	
+	float m_flProgress; // 0x950	
 	// MNetworkEnable
-	float m_flCaptureTime; // 0x9a4	
+	float m_flCaptureTime; // 0x954	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hUnlockPrereq; // 0x9a8	
+	CHandle< C_BaseEntity > m_hUnlockPrereq; // 0x958	
 	// MNetworkEnable
-	bool m_bAvailable; // 0x9ac	
+	bool m_bAvailable; // 0x95c	
 	// MNetworkEnable
-	bool m_bIsBeingCaptured; // 0x9ad	
+	bool m_bIsBeingCaptured; // 0x95d	
 	// MNetworkEnable
-	bool m_bIsBeingBlocked; // 0x9ae	
+	bool m_bIsBeingBlocked; // 0x95e	
 private:
-	[[maybe_unused]] uint8_t __pad09af[0x9]; // 0x9af
+	[[maybe_unused]] uint8_t __pad095f[0x9]; // 0x95f
 public:
-	GameTime_t m_flLastTouchedTime; // 0x9b8	
-	Vector m_vecBeamTarget; // 0x9bc	
-	Vector m_vecBeamStart; // 0x9c8	
-	ParticleIndex_t m_nFXProgressBeam; // 0x9d4	
-	CUtlSymbolLarge m_strUnlockPrereq; // 0x9d8	
-	CUtlSymbolLarge m_strBeamStart; // 0x9e0	
-	CUtlSymbolLarge m_strBeamTarget; // 0x9e8	
+	GameTime_t m_flLastTouchedTime; // 0x968	
+	Vector m_vecBeamTarget; // 0x96c	
+	Vector m_vecBeamStart; // 0x978	
+	ParticleIndex_t m_nFXProgressBeam; // 0x984	
+	CUtlSymbolLarge m_strUnlockPrereq; // 0x988	
+	CUtlSymbolLarge m_strBeamStart; // 0x990	
+	CUtlSymbolLarge m_strBeamTarget; // 0x998	
 };
 

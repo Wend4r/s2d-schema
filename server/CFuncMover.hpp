@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 16
-// Size: 0x970
+// Size: 0xa40
 // Has VTable
 class CFuncMover : public CBaseModelEntity
 {
@@ -56,9 +56,10 @@ private:
 	[[maybe_unused]] uint8_t __pad0860[0x8]; // 0x860
 public:
 	CEntityIOOutput m_OnMovementEnd; // 0x868	
-	bool m_bStartAtEnd; // 0x890	
+	bool m_bStartAtClosestPoint; // 0x890	
+	bool m_bStartAtEnd; // 0x891	
 private:
-	[[maybe_unused]] uint8_t __pad0891[0x3]; // 0x891
+	[[maybe_unused]] uint8_t __pad0892[0x2]; // 0x892
 public:
 	CFuncMover::OrientationUpdate_t m_eOrientationUpdate; // 0x894	
 	GameTime_t m_flTimeStartOrientationChange; // 0x898	
@@ -88,6 +89,14 @@ public:
 	CFuncMover::TransitionToPathNodeAction_t m_eTransitionedToPathNodeAction; // 0x94c	
 	int32_t m_nDelayedTeleportToNode; // 0x950	
 	bool m_bIsVerboseLogging; // 0x954	
+private:
+	[[maybe_unused]] uint8_t __pad0955[0x3]; // 0x955
+public:
+	CEntityIOOutput m_OnStart; // 0x958	
+	CEntityIOOutput m_OnStartForward; // 0x980	
+	CEntityIOOutput m_OnStartReverse; // 0x9a8	
+	CEntityIOOutput m_OnStop; // 0x9d0	
+	CEntityIOOutput m_OnStopped; // 0x9f8	
 	
 	// Datamap fields:
 	// void InputStart; // 0x0

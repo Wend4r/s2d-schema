@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0x10
+// Size: 0x18
 // Has VTable
 // Has Trivial Destructor
 // 
@@ -19,5 +19,7 @@ public:
 	DampingSpeedFunction m_speedFunction; // 0x8	
 	// MPropertyFriendlyName "Speed Scale"
 	float m_fSpeedScale; // 0xc	
+	// MPropertyFriendlyName "Falling Speed Scale"
+	float m_fFallingSpeedScale; // 0x10	
 };
 

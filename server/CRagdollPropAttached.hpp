@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc18
+// Size: 0xc88
 // Has VTable
 // 
 // MNetworkVarNames "uint32 m_boneIndexAttached"
@@ -15,19 +15,19 @@ class CRagdollPropAttached : public CRagdollProp
 {
 public:
 	// MNetworkEnable
-	uint32_t m_boneIndexAttached; // 0xbd8	
+	uint32_t m_boneIndexAttached; // 0xc48	
 	// MNetworkEnable
-	uint32_t m_ragdollAttachedObjectIndex; // 0xbdc	
-	// MNetworkEnable
-	// MNetworkEncoder "coord"
-	Vector m_attachmentPointBoneSpace; // 0xbe0	
+	uint32_t m_ragdollAttachedObjectIndex; // 0xc4c	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_attachmentPointRagdollSpace; // 0xbec	
-	bool m_bShouldDetach; // 0xbf8	
+	Vector m_attachmentPointBoneSpace; // 0xc50	
+	// MNetworkEnable
+	// MNetworkEncoder "coord"
+	Vector m_attachmentPointRagdollSpace; // 0xc5c	
+	bool m_bShouldDetach; // 0xc68	
 private:
-	[[maybe_unused]] uint8_t __pad0bf9[0xf]; // 0xbf9
+	[[maybe_unused]] uint8_t __pad0c69[0xf]; // 0xc69
 public:
-	bool m_bShouldDeleteAttachedActivationRecord; // 0xc08	
+	bool m_bShouldDeleteAttachedActivationRecord; // 0xc78	
 };
 

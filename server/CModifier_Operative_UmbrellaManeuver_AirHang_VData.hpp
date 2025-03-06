@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x818
+// Size: 0x838
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,13 +12,13 @@ class CModifier_Operative_UmbrellaManeuver_AirHang_VData : public CCitadelModifi
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x638	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x718	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x658	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x738	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ExplodeSound; // 0x7f8	
+	CSoundEventName m_ExplodeSound; // 0x818	
 	// MPropertyStartGroup "Gameplay"
-	float m_flAirDrag; // 0x808	
-	float m_flAirSpeed; // 0x80c	
-	float m_flFallSpeed; // 0x810	
+	float m_flAirDrag; // 0x828	
+	float m_flAirSpeed; // 0x82c	
+	float m_flFallSpeed; // 0x830	
 };
 

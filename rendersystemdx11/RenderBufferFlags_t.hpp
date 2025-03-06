@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: rendersystemdx11.dll (project 'rendersystemdx11')
-// Enumerator count: 13
+// Enumerator count: 14
 // Alignment: 4
 // Size: 0x4
 enum class RenderBufferFlags_t : uint32_t
@@ -21,5 +21,6 @@ enum class RenderBufferFlags_t : uint32_t
 	RENDER_BUFFER_SHADER_BINDING_TABLE = 0x400,
 	RENDER_BUFFER_PER_FRAME_WRITE_ONCE = 0x800,
 	RENDER_BUFFER_POOL_ALLOCATED = 0x1000,
+	RENDER_BUFFER_USAGE_CONDITIONAL_RENDERING = 0x2000,
 };
 

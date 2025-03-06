@@ -10,7 +10,7 @@ struct CNetworkViewOffsetVector;
 struct CClientAlphaProperty;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x858
+// Size: 0x808
 // Has VTable
 // 
 // MNetworkVarNames "CRenderComponent::Storage_t m_CRenderComponent"
@@ -42,113 +42,113 @@ public:
 	// MNetworkUserGroup "CRenderComponent"
 	// MNetworkAlias "CRenderComponent"
 	// MNetworkTypeAlias "CRenderComponent"
-	CRenderComponent* m_CRenderComponent; // 0x560	
+	CRenderComponent* m_CRenderComponent; // 0x510	
 	// MNetworkEnable
 	// MNetworkUserGroup "CHitboxComponent"
 	// MNetworkAlias "CHitboxComponent"
 	// MNetworkTypeAlias "CHitboxComponent"
-	CHitboxComponent m_CHitboxComponent; // 0x568	
-	HitGroup_t m_LastHitGroup; // 0x590	
+	CHitboxComponent m_CHitboxComponent; // 0x518	
+	HitGroup_t m_LastHitGroup; // 0x540	
 private:
-	[[maybe_unused]] uint8_t __pad0594[0x24]; // 0x594
+	[[maybe_unused]] uint8_t __pad0544[0x24]; // 0x544
 public:
-	bool m_bInitModelEffects; // 0x5b8	
-	bool m_bIsStaticProp; // 0x5b9	
+	bool m_bInitModelEffects; // 0x568	
+	bool m_bIsStaticProp; // 0x569	
 private:
-	[[maybe_unused]] uint8_t __pad05ba[0x2]; // 0x5ba
+	[[maybe_unused]] uint8_t __pad056a[0x2]; // 0x56a
 public:
-	int32_t m_nLastAddDecal; // 0x5bc	
-	int32_t m_nDecalsAdded; // 0x5c0	
-	int32_t m_iOldHealth; // 0x5c4	
+	int32_t m_nLastAddDecal; // 0x56c	
+	int32_t m_nDecalsAdded; // 0x570	
+	int32_t m_iOldHealth; // 0x574	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRenderModeChanged"
-	RenderMode_t m_nRenderMode; // 0x5c8	
+	RenderMode_t m_nRenderMode; // 0x578	
 	// MNetworkEnable
-	RenderFx_t m_nRenderFX; // 0x5c9	
+	RenderFx_t m_nRenderFX; // 0x579	
 private:
-	[[maybe_unused]] uint8_t __pad05ca[0x6]; // 0x5ca
+	[[maybe_unused]] uint8_t __pad057a[0x6]; // 0x57a
 public:
-	CUtlString m_szAddModifier; // 0x5d0	
-	bool m_bAllowFadeInView; // 0x5d8	
+	CUtlString m_szAddModifier; // 0x580	
+	bool m_bAllowFadeInView; // 0x588	
 private:
-	[[maybe_unused]] uint8_t __pad05d9[0x1f]; // 0x5d9
+	[[maybe_unused]] uint8_t __pad0589[0x1f]; // 0x589
 public:
-	bool m_bHasCollision; // 0x5f8	
+	bool m_bHasCollision; // 0x5a8	
 private:
-	[[maybe_unused]] uint8_t __pad05f9[0x3]; // 0x5f9
+	[[maybe_unused]] uint8_t __pad05a9[0x3]; // 0x5a9
 public:
-	Vector m_vSupport; // 0x5fc	
+	Vector m_vSupport; // 0x5ac	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnColorChanged"
-	Color m_clrRender; // 0x608	
+	Color m_clrRender; // 0x5b8	
 private:
-	[[maybe_unused]] uint8_t __pad060c[0x4]; // 0x60c
+	[[maybe_unused]] uint8_t __pad05bc[0x4]; // 0x5bc
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnRenderAttributesChanged"
-	C_UtlVectorEmbeddedNetworkVar< EntityRenderAttribute_t > m_vecRenderAttributes; // 0x610	
+	C_UtlVectorEmbeddedNetworkVar< EntityRenderAttribute_t > m_vecRenderAttributes; // 0x5c0	
 private:
-	[[maybe_unused]] uint8_t __pad0678[0x18]; // 0x678
+	[[maybe_unused]] uint8_t __pad0628[0x18]; // 0x628
 public:
 	// MNetworkEnable
-	bool m_bRenderToCubemaps; // 0x690	
+	bool m_bRenderToCubemaps; // 0x640	
 	// MNetworkEnable
-	bool m_bNoInterpolate; // 0x691	
+	bool m_bNoInterpolate; // 0x641	
 private:
-	[[maybe_unused]] uint8_t __pad0692[0x6]; // 0x692
+	[[maybe_unused]] uint8_t __pad0642[0x6]; // 0x642
 public:
 	// MNetworkEnable
-	CCollisionProperty m_Collision; // 0x698	
+	CCollisionProperty m_Collision; // 0x648	
 	// MNetworkEnable
-	CGlowProperty m_Glow; // 0x748	
+	CGlowProperty m_Glow; // 0x6f8	
 	// MNetworkEnable
-	float m_flGlowBackfaceMult; // 0x7a0	
+	float m_flGlowBackfaceMult; // 0x750	
 	// MNetworkEnable
-	float m_fadeMinDist; // 0x7a4	
+	float m_fadeMinDist; // 0x754	
 	// MNetworkEnable
-	float m_fadeMaxDist; // 0x7a8	
+	float m_fadeMaxDist; // 0x758	
 	// MNetworkEnable
-	float m_flFadeScale; // 0x7ac	
+	float m_flFadeScale; // 0x75c	
 	// MNetworkEnable
-	float m_flShadowStrength; // 0x7b0	
+	float m_flShadowStrength; // 0x760	
 	// MNetworkEnable
-	uint8_t m_nObjectCulling; // 0x7b4	
+	uint8_t m_nObjectCulling; // 0x764	
 private:
-	[[maybe_unused]] uint8_t __pad07b5[0x3]; // 0x7b5
+	[[maybe_unused]] uint8_t __pad0765[0x3]; // 0x765
 public:
 	// MNetworkEnable
-	int32_t m_nAddDecal; // 0x7b8	
+	int32_t m_nAddDecal; // 0x768	
 	// MNetworkEnable
-	Vector m_vDecalPosition; // 0x7bc	
+	Vector m_vDecalPosition; // 0x76c	
 	// MNetworkEnable
-	Vector m_vDecalForwardAxis; // 0x7c8	
+	Vector m_vDecalForwardAxis; // 0x778	
 	// MNetworkEnable
-	float m_flDecalHealBloodRate; // 0x7d4	
+	float m_flDecalHealBloodRate; // 0x784	
 	// MNetworkEnable
-	float m_flDecalHealHeightRate; // 0x7d8	
+	float m_flDecalHealHeightRate; // 0x788	
 private:
-	[[maybe_unused]] uint8_t __pad07dc[0x4]; // 0x7dc
+	[[maybe_unused]] uint8_t __pad078c[0x4]; // 0x78c
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0x7e0	
+	C_NetworkUtlVectorBase< CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0x790	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkUserGroup "Player"
 	// MNetworkChangeCallback "OnViewOffsetChanged"
-	CNetworkViewOffsetVector m_vecViewOffset; // 0x7f8	
+	CNetworkViewOffsetVector m_vecViewOffset; // 0x7a8	
 private:
-	[[maybe_unused]] uint8_t __pad0820[0x8]; // 0x820
+	[[maybe_unused]] uint8_t __pad07d0[0x8]; // 0x7d0
 public:
-	CClientAlphaProperty* m_pClientAlphaProperty; // 0x828	
-	Color m_ClientOverrideTint; // 0x830	
-	bool m_bUseClientOverrideTint; // 0x834	
+	CClientAlphaProperty* m_pClientAlphaProperty; // 0x7d8	
+	Color m_ClientOverrideTint; // 0x7e0	
+	bool m_bUseClientOverrideTint; // 0x7e4	
 	
 	// Datamap fields:
 	// int32_t InputAlpha; // 0x0
 	// Color InputColor; // 0x0
 	// int32_t InputSkin; // 0x0
 	// CUtlString add_attribute; // 0x7fffffff
-	// void m_Ropes; // 0x598
+	// void m_Ropes; // 0x548
 	// Color rendercolor32; // 0x7fffffff
 	// Color rendercolor; // 0x7fffffff
 	// int32_t renderamt; // 0x7fffffff

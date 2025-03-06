@@ -6,7 +6,7 @@ struct CPerParticleVecInput;
 struct CRandomNumberGeneratorParameters;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0xec8
+// Size: 0xed0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -28,5 +28,7 @@ private:
 public:
 	// MPropertyFriendlyName "Random number generator controls"
 	CRandomNumberGeneratorParameters m_randomnessParameters; // 0xec0	
+	// MPropertyFriendlyName "use new code"
+	bool m_bUseNewCode; // 0xec8	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x648
+// Size: 0x5f8
 // Has VTable
 class C_EnvCubemapBox : public C_EnvCubemap
 {

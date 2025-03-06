@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x860
+// Size: 0x810
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iHealth"

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xde8
+// Size: 0xd98
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecCastPosition"
@@ -14,15 +14,15 @@
 class CCitadel_Ability_Trapper_WebWall : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x118]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c50[0x118]; // 0xc50
 public:
 	// MNetworkEnable
-	Vector m_vecCastPosition; // 0xdb8	
+	Vector m_vecCastPosition; // 0xd68	
 	// MNetworkEnable
-	Vector m_vecCastPositionNormal; // 0xdc4	
+	Vector m_vecCastPositionNormal; // 0xd74	
 	// MNetworkEnable
-	Vector m_vecEndPosition; // 0xdd0	
+	Vector m_vecEndPosition; // 0xd80	
 	// MNetworkEnable
-	Vector m_vecEndPositionNormal; // 0xddc	
+	Vector m_vecEndPositionNormal; // 0xd8c	
 };
 

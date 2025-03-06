@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x658
+// Size: 0x678
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadelModifierItemPickupTimerVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Timers"
-	float m_TimerToSilence; // 0x638	
-	float m_SilenceDuration; // 0x63c	
+	float m_TimerToSilence; // 0x658	
+	float m_SilenceDuration; // 0x65c	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SilenceModifier; // 0x640	
+	CEmbeddedSubclass< CCitadelModifier > m_SilenceModifier; // 0x660	
 	// MPropertyStartGroup "Gameplay"
-	bool m_bIsIdolPickup; // 0x650	
+	bool m_bIsIdolPickup; // 0x670	
 };
 

@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe48
+// Size: 0xdf8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bWantsSlow"
@@ -18,25 +18,25 @@ class CCitadel_Ability_Gunslinger_DemonCarbine : public C_CitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bWantsSlow; // 0xca0	
+	bool m_bWantsSlow; // 0xc50	
 private:
-	[[maybe_unused]] uint8_t __pad0ca1[0x3]; // 0xca1
+	[[maybe_unused]] uint8_t __pad0c51[0x3]; // 0xc51
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flLatchedTimeScaleFracChangeTime; // 0xca4	
+	GameTime_t m_flLatchedTimeScaleFracChangeTime; // 0xc54	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flLatchedTimeScaleFrac; // 0xca8	
+	float m_flLatchedTimeScaleFrac; // 0xc58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flSpeedBoostEndTime; // 0xcac	
+	GameTime_t m_flSpeedBoostEndTime; // 0xc5c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flShotTimeScaleEndTime; // 0xcb0	
+	GameTime_t m_flShotTimeScaleEndTime; // 0xc60	
 private:
-	[[maybe_unused]] uint8_t __pad0cb4[0x4]; // 0xcb4
+	[[maybe_unused]] uint8_t __pad0c64[0x4]; // 0xc64
 public:
-	float m_flStoredPowerPct; // 0xcb8	
+	float m_flStoredPowerPct; // 0xc68	
 };
 

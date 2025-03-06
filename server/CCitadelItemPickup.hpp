@@ -6,7 +6,7 @@ struct CCitadelMinimapComponent;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x64c0
+// Size: 0x6528
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -19,36 +19,36 @@ struct GameTime_t;
 class CCitadelItemPickup : public CCitadelAnimatingModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0bb8[0x8]; // 0xbb8
+	[[maybe_unused]] uint8_t __pad0c10[0x18]; // 0xc10
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbc0	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xc28	
 	// MNetworkEnable
-	int32_t m_eLootType; // 0xbd8	
+	int32_t m_eLootType; // 0xc40	
 	// MNetworkEnable
-	int32_t m_nCurrencyValue; // 0xbdc	
+	int32_t m_nCurrencyValue; // 0xc44	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszModelName; // 0xbe0	
+	CUtlSymbolLarge m_iszModelName; // 0xc48	
 	// MNetworkEnable
-	float m_flModelScale; // 0xbe8	
+	float m_flModelScale; // 0xc50	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetPlayer; // 0xbec	
+	CHandle< CBaseEntity > m_hTargetPlayer; // 0xc54	
 	// MNetworkEnable
-	float m_flFallRate; // 0xbf0	
+	float m_flFallRate; // 0xc58	
 private:
-	[[maybe_unused]] uint8_t __pad0bf4[0xc]; // 0xbf4
+	[[maybe_unused]] uint8_t __pad0c5c[0xc]; // 0xc5c
 public:
-	Vector m_vHomePosition; // 0xc00	
-	Vector m_vDropPosition; // 0xc0c	
-	GameTime_t m_tFirstPickupTime; // 0xc18	
+	Vector m_vHomePosition; // 0xc68	
+	Vector m_vDropPosition; // 0xc74	
+	GameTime_t m_tFirstPickupTime; // 0xc80	
 	
 	// Datamap fields:
-	// bool m_bRequireGroundForPickup; // 0xbf8
+	// bool m_bRequireGroundForPickup; // 0xc60
 	// bool from_crate; // 0x7fffffff
-	// int32_t m_eObjectivePosition; // 0xbf4
-	// int32_t m_nKillingTeamNumber; // 0xbfc
+	// int32_t m_eObjectivePosition; // 0xc5c
+	// int32_t m_nKillingTeamNumber; // 0xc64
 };
 

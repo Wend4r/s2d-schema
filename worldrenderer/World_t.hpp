@@ -14,7 +14,7 @@ struct World_t
 public:
 	// -> m_flMinDrawVolumeSize - 0x0
 	// -> m_bBuildBakedLighting - 0x4
-	// -> m_bLightmapPropInstances - 0x5
+	// -> m_bAggregateInstanceStreams - 0x5
 	// -> m_bakedLightingInfo - 0x8
 	// -> m_nCompileTimestamp - 0x38
 	// -> m_nCompileFingerprint - 0x40

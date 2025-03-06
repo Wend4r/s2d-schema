@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0xc0
+// Size: 0xd8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,9 +16,10 @@ public:
 	CUtlVector< int32 > m_boneIndices; // 0x60	
 	CUtlVector< CUtlString > m_boneNames; // 0x78	
 	CUtlVector< WeightList > m_weightLists; // 0x90	
-	float m_flSpringFrequencyMin; // 0xa8	
-	float m_flSpringFrequencyMax; // 0xac	
-	float m_flMaxStretch; // 0xb0	
-	bool m_bSolidCollisionAtZeroWeight; // 0xb4	
+	CUtlVector< int32 > m_boneToWeightIndices; // 0xa8	
+	float m_flSpringFrequencyMin; // 0xc0	
+	float m_flSpringFrequencyMax; // 0xc4	
+	float m_flMaxStretch; // 0xc8	
+	bool m_bSolidCollisionAtZeroWeight; // 0xcc	
 };
 

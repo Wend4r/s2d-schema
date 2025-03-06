@@ -14,7 +14,7 @@ struct CNetworkVelocityVector;
 struct CParticleProperty;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x560
+// Size: 0x510
 // Has VTable
 // 
 // MNetworkExcludeByName "m_bClientSideRagdoll"
@@ -251,7 +251,7 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0483[0x1]; // 0x483
 public:
-	CSplitScreenSlot m_nSplitUserPlayerPredictionSlot; // 0x484	
+	CPlayerSlot m_nPlayerPredictionSlot; // 0x484	
 	int32_t m_nFirstPredictableCommand; // 0x488	
 	int32_t m_nLastPredictableCommand; // 0x48c	
 	CHandle< C_BaseEntity > m_hOldMoveParent; // 0x490	
@@ -259,42 +259,22 @@ private:
 	[[maybe_unused]] uint8_t __pad0494[0x4]; // 0x494
 public:
 	CParticleProperty m_Particles; // 0x498	
-	CUtlVector< float32 > m_vecPredictedScriptFloats; // 0x4c0	
-	CUtlVector< int32 > m_vecPredictedScriptFloatIDs; // 0x4d8	
 private:
-	[[maybe_unused]] uint8_t __pad04f0[0x18]; // 0x4f0
+	[[maybe_unused]] uint8_t __pad04c0[0x8]; // 0x4c0
 public:
-	int32_t m_nNextScriptVarRecordID; // 0x508	
+	QAngle m_vecAngVelocity; // 0x4c8	
+	int32_t m_DataChangeEventRef; // 0x4d4	
+	CUtlVector< CEntityHandle > m_dependencies; // 0x4d8	
+	int32_t m_nCreationTick; // 0x4f0	
 private:
-	[[maybe_unused]] uint8_t __pad050c[0xc]; // 0x50c
+	[[maybe_unused]] uint8_t __pad04f4[0x9]; // 0x4f4
 public:
-	QAngle m_vecAngVelocity; // 0x518	
-	int32_t m_DataChangeEventRef; // 0x524	
-	CUtlVector< CEntityHandle > m_dependencies; // 0x528	
-	int32_t m_nCreationTick; // 0x540	
+	bool m_bAnimTimeChanged; // 0x4fd	
+	bool m_bSimulationTimeChanged; // 0x4fe	
 private:
-	[[maybe_unused]] uint8_t __pad0544[0x9]; // 0x544
+	[[maybe_unused]] uint8_t __pad04ff[0x9]; // 0x4ff
 public:
-	bool m_bAnimTimeChanged; // 0x54d	
-	bool m_bSimulationTimeChanged; // 0x54e	
-private:
-	[[maybe_unused]] uint8_t __pad054f[0x9]; // 0x54f
-public:
-	CUtlString m_sUniqueHammerID; // 0x558	
-	
-	// Static fields:
-	static bool &Get_sm_bDatadescValidating(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[0]->m_instance);};
-	static bool &Get_sm_bAccurateTriggerBboxChecks(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[1]->m_instance);};
-	static bool &Get_sm_bDisableTouchFuncs(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[2]->m_instance);};
-	static bool &Get_m_bAllowPrecache(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[3]->m_instance);};
-	static LatchDirtyPermission_t &Get_s_nLatchPermissions(){return *reinterpret_cast<LatchDirtyPermission_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[4]->m_instance);};
-	static int32_t &Get_m_nPredictionRandomSeed(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[5]->m_instance);};
-	static CBasePlayerController* &Get_m_pPredictionPlayerController(){return *reinterpret_cast<CBasePlayerController**>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[6]->m_instance);};
-	static bool &Get_s_bAbsQueriesValid(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[7]->m_instance);};
-	static bool &Get_s_bAbsRecomputationEnabled(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[8]->m_instance);};
-	static bool &Get_s_bComputingInterpolatedValues(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[9]->m_instance);};
-	static bool &Get_s_bPreventingSetAnimRunAnimEvents(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[10]->m_instance);};
-	static CUtlVector< C_BaseEntity* > &Get_gm_UsableObjects(){return *reinterpret_cast<CUtlVector< C_BaseEntity* >*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BaseEntity")->m_static_fields[11]->m_instance);};
+	CUtlString m_sUniqueHammerID; // 0x508	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge m_iszPrivateVScripts; // 0x8

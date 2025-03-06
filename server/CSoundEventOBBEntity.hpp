@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5b0
+// Size: 0x5c0
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vMins"

@@ -43,9 +43,6 @@ public:
 	CEntityIOOutput m_OnPlayerGotOnLadder; // 0x818	
 	CEntityIOOutput m_OnPlayerGotOffLadder; // 0x840	
 	
-	// Static fields:
-	static CUtlVector< CFuncLadder* > &Get_s_Ladders(){return *reinterpret_cast<CUtlVector< CFuncLadder* >*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CFuncLadder")->m_static_fields[0]->m_instance);};
-	
 	// Datamap fields:
 	// void InputEnable; // 0x0
 	// void InputDisable; // 0x0

@@ -2,12 +2,13 @@
 
 #include <cstdint>
 
+struct ParamAndPriority_t;
 struct CCitadelModifierResponseRules_t;
 struct CitadelCameraOperationsSequence_t;
 struct FootstepSound_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x638
+// Size: 0x658
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -44,46 +45,54 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0421[0x7]; // 0x421
 public:
-	// MPropertyStartGroup "Visuals"
+	// MPropertyStartGroup "AnimGraph1"
 	// MPropertyDescription "A list of AnimGraph parameters whose values will get set to a specific value when this modifier is applied, and restored when the modifier is destroyed."
 	CUtlVector< CCitadelTrackedAnimGraphModifierState_t > m_vecSetAndTrackedAnimGraphParams; // 0x428	
+	// MPropertyStartGroup "AnimGraph2"
+	// MPropertyFriendlyName "base_state value"
+	// MPropertyDescription "The value to set the parameter "base_state" to.  Should be used for states that are common to all heroes (ex. lifted, asleep)."
+	ParamAndPriority_t m_AG2BaseState; // 0x440	
+	// MPropertyFriendlyName "hero_state value"
+	// MPropertyDescription "The value to set the parameter "hero_state" to.  Should be used for states that are custom for the casting hero (ex. icepathing, flamedashing)."
+	ParamAndPriority_t m_AG2HeroState; // 0x450	
+	// MPropertyStartGroup "Visuals"
 	// MPropertyDescription "A list of Bodygroups whose values will get set to a specific value when this modifier is applied, and restored when the modifier is destroyed."
-	CUtlVector< CCitadelTrackedBodygroupModifierState_t > m_vecSetAndTrackedBodyGroups; // 0x440	
+	CUtlVector< CCitadelTrackedBodygroupModifierState_t > m_vecSetAndTrackedBodyGroups; // 0x460	
 	// MPropertyStartGroup "UI"
-	ModifierOverheadDrawType_t m_eDrawOverheadStatus; // 0x458	
-	bool m_bReverseHudProgressBar; // 0x45c	
+	ModifierOverheadDrawType_t m_eDrawOverheadStatus; // 0x478	
+	bool m_bReverseHudProgressBar; // 0x47c	
 private:
-	[[maybe_unused]] uint8_t __pad045d[0x3]; // 0x45d
+	[[maybe_unused]] uint8_t __pad047d[0x3]; // 0x47d
 public:
-	CUtlString m_strSmallIconCssClass; // 0x460	
-	CUtlString m_strHintText; // 0x468	
-	CPanoramaImageName m_strHudIcon; // 0x470	
-	HudDisplayLocation_t m_eHudDisplayLocation; // 0x480	
-private:
-	[[maybe_unused]] uint8_t __pad0484[0x4]; // 0x484
-public:
+	CUtlString m_strSmallIconCssClass; // 0x480	
+	CUtlString m_strHintText; // 0x488	
+	CPanoramaImageName m_strHudIcon; // 0x490	
+	HudDisplayLocation_t m_eHudDisplayLocation; // 0x4a0	
+	ModifiersDisplayLocation_t m_eModifierDisplayLocaiton; // 0x4a4	
 	// MPropertyDescription "When set, the message will appear in the middle of the HUD for the target player."
-	CUtlString m_strHudMessageText; // 0x488	
+	CUtlString m_strHudMessageText; // 0x4a8	
 	// MPropertyDescription "When set, the modifier will not be visible overhead of the casting player for the other players"
-	bool m_bIsHiddenOverhead; // 0x490	
+	bool m_bIsHiddenOverhead; // 0x4b0	
 private:
-	[[maybe_unused]] uint8_t __pad0491[0x7]; // 0x491
+	[[maybe_unused]] uint8_t __pad04b1[0x7]; // 0x4b1
 public:
 	// MPropertyDescription "A set of modifier values that will be forced tp show in the UI if they have a value (normally requires a limited duration set)"
-	CUtlVector< EModifierValue > m_vecAlwaysShowInStatModifierUI; // 0x498	
+	CUtlVector< EModifierValue > m_vecAlwaysShowInStatModifierUI; // 0x4b8	
 	// MPropertyStartGroup "Responses"
-	CCitadelModifierResponseRules_t m_OnCreateResponse; // 0x4b0	
+	CCitadelModifierResponseRules_t m_OnCreateResponse; // 0x4d0	
 	// MPropertyStartGroup "Camera"
-	CitadelCameraOperationsSequence_t m_cameraSequenceCreated; // 0x4e8	
+	CitadelCameraOperationsSequence_t m_cameraSequenceCreated; // 0x508	
 	// MPropertyDescription "By default, we stop the sequence from 'Sequence Created' once the modifier is removed.  Un-check this to allow it to continue past the modifier's lifetime."
-	bool m_bEndCreatedSequenceOnRemove; // 0x570	
+	bool m_bEndCreatedSequenceOnRemove; // 0x590	
 private:
-	[[maybe_unused]] uint8_t __pad0571[0x7]; // 0x571
+	[[maybe_unused]] uint8_t __pad0591[0x7]; // 0x591
 public:
-	CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x578	
+	CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x598	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_sExpiredSound; // 0x600	
-	FootstepSound_t m_FootstepOverride; // 0x610	
-	CSoundEventName m_FootstepAdditional; // 0x628	
+	CSoundEventName m_sExpiredSound; // 0x620	
+	// MPropertyDescription "Overrides the default footstep. The footstep with the greatest Priority is selected. It must have a priority greater than -1 to be selected!"
+	FootstepSound_t m_FootstepOverride; // 0x630	
+	// MPropertyDescription "Plays alongside the default footstep."
+	CSoundEventName m_FootstepAdditional; // 0x648	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0x58
+// Size: 0x60
 // 
 // MGetKV3ClassDefaults
 class CPhysSurfacePropertiesSoundNames
@@ -32,5 +32,7 @@ public:
 	CUtlString m_pushOff; // 0x48	
 	// MKV3TransferName "skidstop"
 	CUtlString m_skidStop; // 0x50	
+	// MKV3TransferName "resonant"
+	CUtlString m_resonant; // 0x58	
 };
 

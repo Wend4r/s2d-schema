@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1780
+// Size: 0x17b8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CAbilityTokamakHeatSinksInherentVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HotTracerParticle; // 0x1590	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HotWeaponFxParticle; // 0x1670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HotTracerParticle; // 0x15c8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HotWeaponFxParticle; // 0x16a8	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strHotWeaponShootSound; // 0x1750	
-	CSoundEventName m_strOverheatRed; // 0x1760	
-	CSoundEventName m_strOverheatFull; // 0x1770	
+	CSoundEventName m_strHotWeaponShootSound; // 0x1788	
+	CSoundEventName m_strOverheatRed; // 0x1798	
+	CSoundEventName m_strOverheatFull; // 0x17a8	
 };
 

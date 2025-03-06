@@ -22,8 +22,5 @@ private:
 	[[maybe_unused]] uint8_t __pad00d4[0x4]; // 0xd4
 public:
 	CUtlVector< CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_grainResources; // 0xd8	
-	
-	// Static fields:
-	static int32_t &Get_nInstancesFixed(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CVoiceContainerRandomSampler")->m_static_fields[0]->m_instance);};
 };
 

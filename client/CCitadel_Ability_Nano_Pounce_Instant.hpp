@@ -6,7 +6,7 @@ struct CCitadelAutoScaledTime;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf40
+// Size: 0xef0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bActive"
@@ -21,38 +21,38 @@ struct GameTime_t;
 class CCitadel_Ability_Nano_Pounce_Instant : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x230]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c50[0x230]; // 0xc50
 public:
 	// MNetworkEnable
-	bool m_bActive; // 0xed0	
+	bool m_bActive; // 0xe80	
 private:
-	[[maybe_unused]] uint8_t __pad0ed1[0x3]; // 0xed1
+	[[maybe_unused]] uint8_t __pad0e81[0x3]; // 0xe81
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hCurrentTarget; // 0xed4	
+	CHandle< C_BaseEntity > m_hCurrentTarget; // 0xe84	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hLastCastTarget; // 0xed8	
+	CHandle< C_BaseEntity > m_hLastCastTarget; // 0xe88	
 	// MNetworkEnable
-	Vector m_vStartPosition; // 0xedc	
+	Vector m_vStartPosition; // 0xe8c	
 	// MNetworkEnable
-	Vector m_vDeparturePosition; // 0xee8	
+	Vector m_vDeparturePosition; // 0xe98	
 private:
-	[[maybe_unused]] uint8_t __pad0ef4[0x4]; // 0xef4
+	[[maybe_unused]] uint8_t __pad0ea4[0x4]; // 0xea4
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flDepartureTime; // 0xef8	
+	CCitadelAutoScaledTime m_flDepartureTime; // 0xea8	
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flArrivalTime; // 0xf10	
-	Vector m_vLastKnownSafePos; // 0xf28	
+	CCitadelAutoScaledTime m_flArrivalTime; // 0xec0	
+	Vector m_vLastKnownSafePos; // 0xed8	
 private:
-	[[maybe_unused]] uint8_t __pad0f34[0x2]; // 0xf34
+	[[maybe_unused]] uint8_t __pad0ee4[0x2]; // 0xee4
 public:
 	// MNetworkEnable
-	bool m_bIsFirstCastCompleted; // 0xf36	
+	bool m_bIsFirstCastCompleted; // 0xee6	
 private:
-	[[maybe_unused]] uint8_t __pad0f37[0x1]; // 0xf37
+	[[maybe_unused]] uint8_t __pad0ee7[0x1]; // 0xee7
 public:
 	// MNetworkEnable
-	GameTime_t m_tDoubleCastWindow; // 0xf38	
+	GameTime_t m_tDoubleCastWindow; // 0xee8	
 };
 

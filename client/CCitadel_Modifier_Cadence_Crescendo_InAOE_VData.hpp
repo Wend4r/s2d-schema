@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x648
+// Size: 0x668
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_Cadence_Crescendo_InAOE_VData : public CCitadelModifierV
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_PostAOEModifier; // 0x638	
+	CEmbeddedSubclass< CCitadelModifier > m_PostAOEModifier; // 0x658	
 };
 

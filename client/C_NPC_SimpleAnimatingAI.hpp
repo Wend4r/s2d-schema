@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xb08
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -21,6 +21,6 @@ class C_NPC_SimpleAnimatingAI : public CBaseAnimGraph
 {
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hEnemy; // 0xaf8	
+	CHandle< C_BaseEntity > m_hEnemy; // 0xb00	
 };
 

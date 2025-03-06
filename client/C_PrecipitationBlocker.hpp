@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x858
+// Size: 0x808
 // Has VTable
 class C_PrecipitationBlocker : public C_BaseModelEntity
 {

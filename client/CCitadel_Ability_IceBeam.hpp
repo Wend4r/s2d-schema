@@ -3,36 +3,31 @@
 #include <cstdint>
 
 struct GameTime_t;
+struct CCitadelAbilityBeam_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1328
+// Size: 0x1378
 // Has VTable
 // 
-// MNetworkVarNames "Vector m_vBeamAimPos"
+// MNetworkVarNames "CCitadelAbilityBeam_t m_beam"
 class CCitadel_Ability_IceBeam : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x5e8]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c50[0x1c4]; // 0xc50
 public:
-	GameTime_t m_flNextDamageTick; // 0x1288	
-	Vector m_vStart; // 0x128c	
-	Vector m_vEnd; // 0x1298	
-private:
-	[[maybe_unused]] uint8_t __pad12a4[0x3c]; // 0x12a4
-public:
-	CUtlVector< CHandle< C_BaseEntity > > m_vecEntitiesHit; // 0x12e0	
+	GameTime_t m_flNextDamageTick; // 0xe14	
 	// MNetworkEnable
-	Vector m_vBeamAimPos; // 0x12f8	
+	// -> m_nActivateTime - 0xe20
+	// -> m_angBeamAngles - 0xe28
+	// -> m_vBeamAimPos - 0xe40
+	// -> m_bNeedsBeamReset - 0xe58
+	// -> m_hShooter - 0xe5c
+	// -> m_hPlayerShooter - 0xe60
+	// -> m_bEnforceLOSToShootPosition - 0x1320
+	CCitadelAbilityBeam_t m_beam; // 0xe18	
 private:
-	[[maybe_unused]] uint8_t __pad1304[0x4]; // 0x1304
+	[[maybe_unused]] uint8_t __pad1328[0x38]; // 0x1328
 public:
-	// MNetworkEnable
-	// MNetworkEncoder "qangle"
-	// MNetworkChangeCallback "OnBeamAnglesChanged"
-	QAngle m_angBeamAngles; // 0x1308	
-private:
-	[[maybe_unused]] uint8_t __pad1314[0xc]; // 0x1314
-public:
-	bool m_bNeedsBeamReset; // 0x1320	
+	CUtlVector< CHandle< C_BaseEntity > > m_vecEntitiesHit; // 0x1360	
 };
 

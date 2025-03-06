@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x678
+// Size: 0x698
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_SlowingBullets_ProcVData : public CCitadel_Modifier_Base
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x668	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x688	
 };
 

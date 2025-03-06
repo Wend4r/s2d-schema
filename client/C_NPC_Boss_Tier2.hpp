@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1458
+// Size: 0x1470
 // Has VTable
 // 
 // MNetworkVarNames "int m_iLane"
@@ -16,26 +16,26 @@ struct GameTime_t;
 class C_NPC_Boss_Tier2 : public C_AI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1420[0x8]; // 0x1420
+	[[maybe_unused]] uint8_t __pad1428[0x18]; // 0x1428
 public:
 	// MNetworkEnable
-	int32_t m_iLane; // 0x1428	
+	int32_t m_iLane; // 0x1440	
 	// MNetworkEnable
-	GameTime_t m_flFadeOutStart; // 0x142c	
+	GameTime_t m_flFadeOutStart; // 0x1444	
 	// MNetworkEnable
-	GameTime_t m_flFadeOutEnd; // 0x1430	
+	GameTime_t m_flFadeOutEnd; // 0x1448	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnBossTargetedEnemyChanged"
-	CHandle< C_BaseEntity > m_hTargetedEnemy; // 0x1434	
+	CHandle< C_BaseEntity > m_hTargetedEnemy; // 0x144c	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
 	// MNetworkChangeCallback "OnLookTargetChanged"
-	Vector m_vecElectricBeamLookTarget; // 0x1438	
+	Vector m_vecElectricBeamLookTarget; // 0x1450	
 private:
-	[[maybe_unused]] uint8_t __pad1444[0xc]; // 0x1444
+	[[maybe_unused]] uint8_t __pad145c[0xc]; // 0x145c
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnElectricBeamCastsChanged"
-	int32_t m_nElectricBeamCasts; // 0x1450	
+	int32_t m_nElectricBeamCasts; // 0x1468	
 };
 

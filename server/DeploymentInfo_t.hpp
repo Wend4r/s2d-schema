@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1e0
+// Size: 0x1e8
 // 
 // MGetKV3ClassDefaults
 struct DeploymentInfo_t
@@ -21,9 +21,10 @@ public:
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_previewModel; // 0x8	
 	// MPropertyDescription "CP0=caster origin, CP1=deploy target position, CP2=caster's ability_cast"
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_previewParticle; // 0xe8	
-	CUtlString m_strExraBodygroup; // 0x1c8	
-	CUtlString m_strPreviewClass; // 0x1d0	
-	float m_flPreviewModelScale; // 0x1d8	
-	float m_flGroundCheckHeightOffset; // 0x1dc	
+	CUtlString m_strPreviewParticleEffectConfig; // 0x1c8	
+	CUtlString m_strExraBodygroup; // 0x1d0	
+	CUtlString m_strPreviewClass; // 0x1d8	
+	float m_flPreviewModelScale; // 0x1e0	
+	float m_flGroundCheckHeightOffset; // 0x1e4	
 };
 

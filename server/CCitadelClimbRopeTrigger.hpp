@@ -6,9 +6,16 @@
 // Alignment: 8
 // Size: 0x980
 // Has VTable
+// 
+// MNetworkVarNames "bool m_bAlignCameraOnAutoDismount"
 class CCitadelClimbRopeTrigger : public CBaseTrigger
 {
 public:
-	CUtlStringToken m_tModifier; // 0x978	
+	// MNetworkEnable
+	bool m_bAlignCameraOnAutoDismount; // 0x978	
+private:
+	[[maybe_unused]] uint8_t __pad0979[0x3]; // 0x979
+public:
+	CUtlStringToken m_tModifier; // 0x97c	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa38
+// Size: 0xa90
 // Has VTable
 class CItemSoda : public CBaseAnimGraph
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8e0
+// Size: 0x890
 // Has VTable
 // 
 // MNetworkIncludeByName "m_flTimeScale"
@@ -21,45 +21,45 @@
 class C_CitadelProjectile : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0858[0xc]; // 0x858
+	[[maybe_unused]] uint8_t __pad0808[0xc]; // 0x808
 public:
-	float m_flMaxDistance; // 0x864	
-	float m_flArmingTime; // 0x868	
-	float m_flChargeAmount; // 0x86c	
-	bool m_bCollideWithThrower; // 0x870	
-	bool m_bNewCollideWithThrower; // 0x871	
+	float m_flMaxDistance; // 0x814	
+	float m_flArmingTime; // 0x818	
+	float m_flChargeAmount; // 0x81c	
+	bool m_bCollideWithThrower; // 0x820	
+	bool m_bNewCollideWithThrower; // 0x821	
 private:
-	[[maybe_unused]] uint8_t __pad0872[0xe]; // 0x872
+	[[maybe_unused]] uint8_t __pad0822[0xe]; // 0x822
 public:
-	float m_flTickSoundInterval; // 0x880	
+	float m_flTickSoundInterval; // 0x830	
 private:
-	[[maybe_unused]] uint8_t __pad0884[0x4]; // 0x884
+	[[maybe_unused]] uint8_t __pad0834[0x4]; // 0x834
 public:
 	// MNetworkEnable
-	Vector m_vInitialVelocity; // 0x888	
+	Vector m_vInitialVelocity; // 0x838	
 	// MNetworkEnable
-	Vector m_vInitialPosition; // 0x894	
+	Vector m_vInitialPosition; // 0x844	
 	// MNetworkEnable
-	CUtlStringToken m_abilityID; // 0x8a0	
+	CUtlStringToken m_abilityID; // 0x850	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hThrower; // 0x8a4	
+	CHandle< C_BaseEntity > m_hThrower; // 0x854	
 	// MNetworkEnable
-	CUtlSymbolLarge m_sParticleName; // 0x8a8	
+	CUtlSymbolLarge m_sParticleName; // 0x858	
 	// MNetworkEnable
-	Vector m_vecSpawnPosition; // 0x8b0	
+	Vector m_vecSpawnPosition; // 0x860	
 	// MNetworkEnable
-	float m_flProjectileSpeed; // 0x8bc	
+	float m_flProjectileSpeed; // 0x86c	
 	// MNetworkEnable
-	float m_flMaxLifetime; // 0x8c0	
+	float m_flMaxLifetime; // 0x870	
 private:
-	[[maybe_unused]] uint8_t __pad08c4[0x4]; // 0x8c4
+	[[maybe_unused]] uint8_t __pad0874[0x4]; // 0x874
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "ParticleRadiusChanged"
-	float m_flParticleRadius; // 0x8c8	
+	float m_flParticleRadius; // 0x878	
 private:
-	[[maybe_unused]] uint8_t __pad08cc[0xc]; // 0x8cc
+	[[maybe_unused]] uint8_t __pad087c[0xc]; // 0x87c
 public:
-	float m_flPreviousTimeScale; // 0x8d8	
+	float m_flPreviousTimeScale; // 0x888	
 };
 

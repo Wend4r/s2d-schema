@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5a8
+// Size: 0x558
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_worldName"
@@ -15,21 +15,21 @@ struct CEntityIOOutput;
 class CInfoWorldLayer : public C_BaseEntity
 {
 public:
-	CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x560	
+	CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x510	
 	// MNetworkEnable
-	CUtlSymbolLarge m_worldName; // 0x588	
+	CUtlSymbolLarge m_worldName; // 0x538	
 	// MNetworkEnable
-	CUtlSymbolLarge m_layerName; // 0x590	
+	CUtlSymbolLarge m_layerName; // 0x540	
 	// MNetworkEnable
-	bool m_bWorldLayerVisible; // 0x598	
+	bool m_bWorldLayerVisible; // 0x548	
 	// MNetworkEnable
-	bool m_bEntitiesSpawned; // 0x599	
-	bool m_bCreateAsChildSpawnGroup; // 0x59a	
+	bool m_bEntitiesSpawned; // 0x549	
+	bool m_bCreateAsChildSpawnGroup; // 0x54a	
 private:
-	[[maybe_unused]] uint8_t __pad059b[0x1]; // 0x59b
+	[[maybe_unused]] uint8_t __pad054b[0x1]; // 0x54b
 public:
-	uint32_t m_hLayerSpawnGroup; // 0x59c	
-	bool m_bWorldLayerActuallyVisible; // 0x5a0	
+	uint32_t m_hLayerSpawnGroup; // 0x54c	
+	bool m_bWorldLayerActuallyVisible; // 0x550	
 	
 	// Datamap fields:
 	// void ShowWorldLayer; // 0x0

@@ -13,5 +13,6 @@ struct FeBuildSphereRigid_t : public FeSphereRigid_t
 public:
 	int32_t m_nPriority; // 0x20	
 	uint32_t m_nVertexMapHash; // 0x24	
+	uint32_t m_nAntitunnelGroupBits; // 0x28	
 };
 

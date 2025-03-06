@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5c0
+// Size: 0x570
 // Has VTable
 class CFilterModifier : public CBaseFilter
 {
 public:
-	CUtlSymbolLarge m_iFilterModifier; // 0x5b8	
+	CUtlSymbolLarge m_iFilterModifier; // 0x568	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xb0
+// Size: 0xd8
 // Has VTable
 // 
 // MPulseLibraryBindings
@@ -12,7 +12,7 @@
 class CTestDomainDerived_Cursor : public CPulseExecCursor
 {
 public:
-	int32_t m_nCursorValueA; // 0xa8	
-	int32_t m_nCursorValueB; // 0xac	
+	int32_t m_nCursorValueA; // 0xd0	
+	int32_t m_nCursorValueB; // 0xd4	
 };
 

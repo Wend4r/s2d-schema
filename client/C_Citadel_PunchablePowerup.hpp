@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb28
+// Size: 0xb30
 // Has VTable
 class C_Citadel_PunchablePowerup : public C_Citadel_BreakblePropModifierPickup
 {

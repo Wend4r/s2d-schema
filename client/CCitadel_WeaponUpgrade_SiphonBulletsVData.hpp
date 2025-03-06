@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x15e8
+// Size: 0x1620
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_WeaponUpgrade_SiphonBulletsVData : public CitadelItemVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_PermanentHealthLoss; // 0x15d8	
+	CEmbeddedSubclass< CCitadelModifier > m_PermanentHealthLoss; // 0x1610	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa38
+// Size: 0xa58
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,13 +12,13 @@ class CCitadel_Modifier_EmpowerBulletVData : public CCitadel_Modifier_BaseBullet
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x768	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x788	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x778	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionVictimParticle; // 0x858	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EmpowerWeaponParticle; // 0x938	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x798	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionVictimParticle; // 0x878	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EmpowerWeaponParticle; // 0x958	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ShotVictimSound; // 0xa18	
-	CSoundEventName m_ShotConfirmationSound; // 0xa28	
+	CSoundEventName m_ShotVictimSound; // 0xa38	
+	CSoundEventName m_ShotConfirmationSound; // 0xa48	
 };
 

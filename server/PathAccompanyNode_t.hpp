@@ -4,14 +4,15 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x14
+// Size: 0x20
 // Has Trivial Constructor
 // Has Trivial Destructor
 struct PathAccompanyNode_t
 {
 public:
 	Vector m_vPosition; // 0x0	
-	float m_flRadius; // 0xc	
-	float m_flDistToNext; // 0x10	
+	Vector m_vLeft; // 0xc	
+	float m_flRadius; // 0x18	
+	float m_flDistToNext; // 0x1c	
 };
 

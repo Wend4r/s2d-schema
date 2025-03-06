@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x968
+// Size: 0x918
 // Has VTable
 class C_FireFromAboveSprite : public C_Sprite
 {

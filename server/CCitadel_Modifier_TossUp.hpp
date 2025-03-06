@@ -10,7 +10,7 @@ class CCitadel_Modifier_TossUp : public CCitadelModifier
 {
 public:
 	bool m_bForceApplied; // 0xc0	
-	bool m_bLandedOnGround; // 0xc1	
+	bool m_bRestrictMovement; // 0xc1	
 private:
 	[[maybe_unused]] uint8_t __pad00c2[0x2]; // 0xc2
 public:

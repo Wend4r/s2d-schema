@@ -15,6 +15,7 @@ class CPlayer_WeaponServices : public CPlayerPawnComponent
 {
 public:
 	// MNetworkEnable
+	// MNetworkChangeCallback "OnMyWeaponsChanged"
 	CNetworkUtlVectorBase< CHandle< CBasePlayerWeapon > > m_hMyWeapons; // 0x40	
 	// MNetworkEnable
 	CHandle< CBasePlayerWeapon > m_hActiveWeapon; // 0x58	

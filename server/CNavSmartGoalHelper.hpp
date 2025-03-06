@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc0
+// Size: 0xc8
 // Has VTable
 class CNavSmartGoalHelper
 {
 private:
-	[[maybe_unused]] uint8_t __pad0000[0xb8]; // 0x0
+	[[maybe_unused]] uint8_t __pad0000[0xc0]; // 0x0
 public:
-	bool m_bExecuteQueuedGoal; // 0xb8	
+	bool m_bExecuteQueuedGoal; // 0xc0	
 	
 	// Datamap fields:
 	// void m_pNPC; // 0x8

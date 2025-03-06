@@ -13,7 +13,7 @@ public:
 	CUtlString m_strLaneName; // 0x0	
 	CUtlString m_strCSSClass; // 0x8	
 	Color m_Color; // 0x10	
-	Color m_MinimapColorOverride; // 0x14	
-	Color m_MinimapZiplineColorOverride; // 0x18	
+	Color m_MinimapZiplineColorOverride; // 0x14	
+	Color m_Color4Lanes; // 0x18	
 };
 

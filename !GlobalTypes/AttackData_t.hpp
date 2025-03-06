@@ -27,19 +27,17 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0016[0x2]; // 0x16
 public:
-	// MPropertyDescription "How long the button needs to be held to trigger this attack"
-	float m_flHoldTimeRequired; // 0x18	
 	// MPropertyDescription "How long after triggering until we can perform another melee attack"
-	float m_flCooldownOnMiss; // 0x1c	
-	float m_flCooldownOnHit; // 0x20	
+	float m_flCooldownOnMiss; // 0x18	
+	float m_flCooldownOnHit; // 0x1c	
 	// MPropertyDescription "Half width of the cone at the player"
-	float m_flTraceConeHalfWidth; // 0x24	
+	float m_flTraceConeHalfWidth; // 0x20	
 	// MPropertyDescription "How much force to apply upward on hit"
-	float m_flKnockUpStrength; // 0x28	
+	float m_flKnockUpStrength; // 0x24	
 	// MPropertyDescription "Trigger a big screen shake when this attack hits"
-	bool m_bApplyScreenShake; // 0x2c	
+	bool m_bApplyScreenShake; // 0x28	
 private:
-	[[maybe_unused]] uint8_t __pad002d[0x3]; // 0x2d
+	[[maybe_unused]] uint8_t __pad0029[0x7]; // 0x29
 public:
 	// MPropertyDescription "The curve defining move speed bonus/penalty.  This is how we apply the post-movement controller movement slow."
 	CPiecewiseCurve m_SpeedBonusCurve; // 0x30	

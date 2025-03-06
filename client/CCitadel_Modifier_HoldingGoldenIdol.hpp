@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x138
+// Size: 0x140
 // Has VTable
 class CCitadel_Modifier_HoldingGoldenIdol : public CCitadelModifier
 {
@@ -14,5 +14,6 @@ private:
 public:
 	ParticleIndex_t m_iIdolParticle; // 0x130	
 	int32_t m_nGoldValue; // 0x134	
+	bool m_bRevealed; // 0x138	
 };
 

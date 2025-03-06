@@ -86,9 +86,10 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad060d[0x3]; // 0x60d
 public:
-	GameTime_t m_flCancelLockoutTime; // 0x610	
+	GameTime_t m_flCancelMashProtectionEndTime; // 0x610	
+	GameTime_t m_flCancelLockoutEndTime; // 0x614	
 private:
-	[[maybe_unused]] uint8_t __pad0614[0x1c]; // 0x614
+	[[maybe_unused]] uint8_t __pad0618[0x18]; // 0x618
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnChannelingChanged"

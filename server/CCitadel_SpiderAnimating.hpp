@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc0
+// Size: 0xc28
 // Has VTable
 class CCitadel_SpiderAnimating : public CCitadelAnimatingModelEntity
 {

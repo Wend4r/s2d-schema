@@ -6,7 +6,7 @@ struct IChoreoServices;
 struct PhysicsRagdollPose_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa38
+// Size: 0xa90
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bClientSideRagdoll"
@@ -15,9 +15,11 @@ struct PhysicsRagdollPose_t;
 // MNetworkVarNames "Vector m_vecForce"
 // MNetworkVarNames "int32 m_nForceBone"
 // MNetworkVarNames "PhysicsRagdollPose_t m_RagdollPose"
+// MNetworkVarNames "bool m_bRagdollEnabled"
 // MNetworkVarNames "bool m_bRagdollClientSide"
 // MNetworkVarNames "uint8 m_animGraph2SerializeData"
 // MNetworkVarNames "int m_nAnimGraph2SerializeDataSizeBytes"
+// MNetworkVarNames "int m_animGraph2ReloadCountSV"
 class CBaseAnimGraph : public CBaseModelEntity
 {
 private:
@@ -50,17 +52,22 @@ public:
 	// MNetworkEnable
 	PhysicsRagdollPose_t m_RagdollPose; // 0x880	
 	// MNetworkEnable
+	// MNetworkChangeCallback "OnClientRagdollEnabledChanged"
+	bool m_bRagdollEnabled; // 0x8a8	
+	// MNetworkEnable
 	// MNetworkChangeCallback "OnClientRagdollChanged"
-	bool m_bRagdollClientSide; // 0x8a8	
+	bool m_bRagdollClientSide; // 0x8a9	
 private:
-	[[maybe_unused]] uint8_t __pad08a9[0x16f]; // 0x8a9
+	[[maybe_unused]] uint8_t __pad08aa[0x196]; // 0x8aa
 public:
 	// MNetworkEnable
 	// MNetworkSendProxyRecipientsFilter
-	CNetworkUtlVectorBase< uint8 > m_animGraph2SerializeData; // 0xa18	
+	CNetworkUtlVectorBase< uint8 > m_animGraph2SerializeData; // 0xa40	
 	// MNetworkEnable
 	// MNetworkSendProxyRecipientsFilter
-	int32_t m_nAnimGraph2SerializeDataSizeBytes; // 0xa30	
+	int32_t m_nAnimGraph2SerializeDataSizeBytes; // 0xa58	
+	// MNetworkEnable
+	int32_t m_animGraph2ReloadCountSV; // 0xa5c	
 	
 	// Datamap fields:
 	// void m_pMainGraphController; // 0x830

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x170
+// Size: 0x1e8
 // Has VTable
 class CCitadel_Ability_PrimaryWeapon_GraphController : public CCitadelBaseAbilityGraphController
 {
@@ -16,9 +16,11 @@ public:
 	CAnimGraph1ParamOptionalRef< bool > m_bReloading; // 0x128	
 	CAnimGraph1ParamOptionalRef< bool > m_bShootAlt; // 0x140	
 	CAnimGraph1ParamOptionalRef< bool > m_bShoot; // 0x158	
-	
-	// Static fields:
-	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadel_Ability_PrimaryWeapon_GraphController")->m_static_fields[0]->m_instance);};
-	static bool &Get_s_bSchemaTest(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadel_Ability_PrimaryWeapon_GraphController")->m_static_fields[1]->m_instance);};
+	CAnimGraph2ParamRef< CGlobalSymbol > m_Shoot; // 0x170	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_ReloadState; // 0x190	
+	CAnimGraph2ParamRef< float32 > m_ReloadFraction; // 0x1b0	
+	CAnimGraph2ParamRef< float32 > m_AmmoFraction; // 0x1c8	
+	int32_t m_nShootPriority; // 0x1e0	
+	int32_t m_nReloadPriority; // 0x1e4	
 };
 

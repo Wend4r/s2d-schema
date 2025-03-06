@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 7
+// Enumerator count: 8
 // Alignment: 4
 // Size: 0x4
 enum class TrooperType_t : uint32_t
@@ -15,5 +15,6 @@ enum class TrooperType_t : uint32_t
 	TROOPER_NANO_BASIC = 0x4,
 	TROOPER_NANO_SUPER = 0x5,
 	TROOPER_ZIPLINE_CONTAINER = 0x6,
+	TROOPER_SIEGE = 0x7,
 };
 

@@ -164,7 +164,7 @@ public:
 	C_UtlVectorEmbeddedNetworkVar< StatViewerModifierValues_t > m_vecStatViewerModifierValues; // 0x1b8	
 	// MNetworkEnable
 	// MNetworkUserGroup "Abilities"
-	// MNetworkChangeCallback "pdgAbilitiesChanged"
+	// MNetworkChangeCallback "pdgStolenAbilityChanged"
 	C_UtlVectorEmbeddedNetworkVar< StolenAbilityPair_t > m_vecStolenAbilities; // 0x220	
 };
 

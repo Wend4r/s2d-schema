@@ -284,10 +284,6 @@ public:
 	// MNetworkChangeCallback "LightRenderingChanged"
 	float m_flMinRoughness; // 0x19c	
 	
-	// Static fields:
-	static EntComponentInfo_t &Get_s_EntComponentInfo(){return *reinterpret_cast<EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CLightComponent")->m_static_fields[0]->m_instance);};
-	static int32_t &Get_entity_component_error_class_decl_says_contained_but_impl_is_referenced(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CLightComponent")->m_static_fields[1]->m_instance);};
-	
 	// Datamap fields:
 	// SHIM m_bRenderSpecular; // 0xc4
 	// SHIM m_bCastShadows; // 0xb4

@@ -5,7 +5,7 @@
 struct VPhysics2ShapeDef_t;
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0xa0
+// Size: 0xb0
 // 
 // MGetKV3ClassDefaults
 struct VPhysXBodyPart_t
@@ -24,10 +24,13 @@ public:
 	float m_flInertiaScale; // 0x84	
 	float m_flLinearDamping; // 0x88	
 	float m_flAngularDamping; // 0x8c	
-	bool m_bOverrideMassCenter; // 0x90	
+	float m_flLinearDrag; // 0x90	
+	float m_flAngularDrag; // 0x94	
+	bool m_bOverrideMassCenter; // 0x98	
 private:
-	[[maybe_unused]] uint8_t __pad0091[0x3]; // 0x91
+	[[maybe_unused]] uint8_t __pad0099[0x3]; // 0x99
 public:
-	Vector m_vMassCenterOverride; // 0x94	
+	Vector m_vMassCenterOverride; // 0x9c	
+	CUtlString m_Tag; // 0xa8	
 };
 

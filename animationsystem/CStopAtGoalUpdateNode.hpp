@@ -5,7 +5,7 @@
 struct CAnimInputDamping;
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0x98
+// Size: 0xa0
 // Has VTable
 // 
 // MGetKV3ClassDefaults

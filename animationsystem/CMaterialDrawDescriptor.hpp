@@ -23,13 +23,17 @@ private:
 public:
 	uint32_t m_nFirstMeshlet; // 0x1c	
 	uint32_t m_nAppliedIndexOffset; // 0x20	
-	RenderPrimitiveType_t m_nPrimitiveType; // 0x24	
-	int32_t m_nBaseVertex; // 0x28	
-	int32_t m_nVertexCount; // 0x2c	
-	int32_t m_nStartIndex; // 0x30	
-	int32_t m_nIndexCount; // 0x34	
+	uint8_t m_nDepthVertexBufferIndex; // 0x24	
 private:
-	[[maybe_unused]] uint8_t __pad0038[0x68]; // 0x38
+	[[maybe_unused]] uint8_t __pad0025[0x3]; // 0x25
+public:
+	RenderPrimitiveType_t m_nPrimitiveType; // 0x28	
+	int32_t m_nBaseVertex; // 0x2c	
+	int32_t m_nVertexCount; // 0x30	
+	int32_t m_nStartIndex; // 0x34	
+	int32_t m_nIndexCount; // 0x38	
+private:
+	[[maybe_unused]] uint8_t __pad003c[0x64]; // 0x3c
 public:
 	CRenderBufferBinding m_indexBuffer; // 0xa0	
 private:

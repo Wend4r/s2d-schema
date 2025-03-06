@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb08
+// Size: 0xb10
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
@@ -13,8 +13,8 @@ class CCitadel_MobileResupply : public CCitadelAnimatingModelEntity
 {
 public:
 	// MNetworkEnable
-	CHandle< C_CitadelBaseAbility > m_hAbility; // 0xb00	
+	CHandle< C_CitadelBaseAbility > m_hAbility; // 0xb08	
 	// MNetworkEnable
-	bool m_bFloating; // 0xb04	
+	bool m_bFloating; // 0xb0c	
 };
 

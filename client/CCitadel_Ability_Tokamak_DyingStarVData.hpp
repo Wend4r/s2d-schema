@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1778
+// Size: 0x17b0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,13 +12,13 @@ class CCitadel_Ability_Tokamak_DyingStarVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x1590	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FlameAuraParticle; // 0x1670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x15c8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FlameAuraParticle; // 0x16a8	
 	// MPropertyLeafSuggestionProviderFn
-	CGlobalSymbol m_strInFlightAnimGraphParam; // 0x1750	
+	CGlobalSymbol m_strInFlightAnimGraphParam; // 0x1788	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strExplodeSound; // 0x1758	
+	CSoundEventName m_strExplodeSound; // 0x1790	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_InFlightModifier; // 0x1768	
+	CEmbeddedSubclass< CCitadelModifier > m_InFlightModifier; // 0x17a0	
 };
 

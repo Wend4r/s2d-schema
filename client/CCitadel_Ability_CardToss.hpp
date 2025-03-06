@@ -4,16 +4,16 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf28
+// Size: 0xed8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bCardIsFlying"
 class CCitadel_Ability_CardToss : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x280]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c50[0x280]; // 0xc50
 public:
 	// MNetworkEnable
-	bool m_bCardIsFlying; // 0xf20	
+	bool m_bCardIsFlying; // 0xed0	
 };
 

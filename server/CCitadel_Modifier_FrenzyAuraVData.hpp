@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x690
+// Size: 0x6b0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_FrenzyAuraVData : public CCitadelModifierAuraVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_KillModifier; // 0x680	
+	CEmbeddedSubclass< CCitadelModifier > m_KillModifier; // 0x6a0	
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 39
+// Enumerator count: 40
 // Alignment: 4
 // Size: 0x4
 enum class ECurrencySource : uint32_t
@@ -42,10 +42,11 @@ enum class ECurrencySource : uint32_t
 	EOrbDeployable = 0x1e,
 	EOrbTrophyKill = 0x1f,
 	EOrbTreasureChest = 0x20,
-	EOrbSpawner = 0x21,
-	ENeutralWorldPickup = 0x22,
-	EPlayerKillComeback = 0x23,
-	ETeamBonus = 0x24,
-	ECurrencySourceCount = 0x25,
+	EOrbSiegeTrooper = 0x21,
+	EOrbSpawner = 0x22,
+	ENeutralWorldPickup = 0x23,
+	EPlayerKillComeback = 0x24,
+	ETeamBonus = 0x25,
+	ECurrencySourceCount = 0x26,
 };
 

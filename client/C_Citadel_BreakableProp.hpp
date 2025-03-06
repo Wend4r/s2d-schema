@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb30
+// Size: 0xb38
 // Has VTable
 // 
 // MNetworkIncludeByName "m_lifeState"
@@ -15,6 +15,6 @@ class C_Citadel_BreakableProp : public CBaseAnimGraph
 {
 public:
 	// MNetworkEnable
-	int32_t m_nHitIndex; // 0xaf8	
+	int32_t m_nHitIndex; // 0xb00	
 };
 

@@ -4,16 +4,16 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcc8
+// Size: 0xc78
 // Has VTable
 class CCitadel_Ability_Teleport : public C_CitadelBaseAbility
 {
 public:
-	bool m_bTeleportingToTarget; // 0xca0	
+	bool m_bTeleportingToTarget; // 0xc50	
 private:
-	[[maybe_unused]] uint8_t __pad0ca1[0x3]; // 0xca1
+	[[maybe_unused]] uint8_t __pad0c51[0x3]; // 0xc51
 public:
-	Vector m_vTargetPosition; // 0xca4	
-	QAngle m_vTargetAngles; // 0xcb0	
+	Vector m_vTargetPosition; // 0xc54	
+	QAngle m_vTargetAngles; // 0xc60	
 };
 

@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe40
+// Size: 0xdf0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flFloat"
@@ -13,13 +13,13 @@ struct ParticleIndex_t;
 class CCitadel_Ability_StormCloud : public C_CitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_nTargetingParticleIndex; // 0xca0	
+	ParticleIndex_t m_nTargetingParticleIndex; // 0xc50	
 private:
-	[[maybe_unused]] uint8_t __pad0ca4[0x18c]; // 0xca4
+	[[maybe_unused]] uint8_t __pad0c54[0x18c]; // 0xc54
 public:
 	// MNetworkEnable
-	float m_flFloat; // 0xe30	
+	float m_flFloat; // 0xde0	
 	// MNetworkEnable
-	int32_t m_nLightningStrikesRemaining; // 0xe34	
+	int32_t m_nLightningStrikesRemaining; // 0xde4	
 };
 

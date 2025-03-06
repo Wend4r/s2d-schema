@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x11a0
+// Size: 0x1158
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flStartWindUpTime"
@@ -14,13 +14,13 @@ struct GameTime_t;
 class CCitadel_Ability_PrimaryWeapon_Bebop : public CCitadel_Ability_PrimaryWeapon_BeamWeapon
 {
 private:
-	[[maybe_unused]] uint8_t __pad0d78[0x2b8]; // 0xd78
+	[[maybe_unused]] uint8_t __pad0d30[0x2b8]; // 0xd30
 public:
 	// MNetworkEnable
-	GameTime_t m_flStartWindUpTime; // 0x1030	
+	GameTime_t m_flStartWindUpTime; // 0xfe8	
 	// MNetworkEnable
-	GameTime_t m_flStartFiringTime; // 0x1034	
+	GameTime_t m_flStartFiringTime; // 0xfec	
 	// MNetworkEnable
-	bool m_bFiring; // 0x1038	
+	bool m_bFiring; // 0xff0	
 };
 

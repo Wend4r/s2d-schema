@@ -4,15 +4,15 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x680
+// Size: 0x6a0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadelModifierAuraVData : public CModifierVData_BaseAura
 {
 public:
-	CITADEL_UNIT_TARGET_TYPE m_iAuraSearchType; // 0x670	
-	CITADEL_UNIT_TARGET_FLAGS m_iAuraSearchFlags; // 0x674	
-	ELOSCheck m_eLosCheck; // 0x678	
+	CITADEL_UNIT_TARGET_TYPE m_iAuraSearchType; // 0x690	
+	CITADEL_UNIT_TARGET_FLAGS m_iAuraSearchFlags; // 0x694	
+	ELOSCheck m_eLosCheck; // 0x698	
 };
 

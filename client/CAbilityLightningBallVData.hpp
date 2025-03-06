@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16a0
+// Size: 0x16d8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,12 +12,12 @@ class CAbilityLightningBallVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ZapModifier; // 0x1590	
+	CEmbeddedSubclass< CCitadelModifier > m_ZapModifier; // 0x15c8	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strHitSound; // 0x15a0	
+	CSoundEventName m_strHitSound; // 0x15d8	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strProjectileLoopingSound; // 0x15b0	
+	CSoundEventName m_strProjectileLoopingSound; // 0x15e8	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ZapParticle; // 0x15c0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ZapParticle; // 0x15f8	
 };
 

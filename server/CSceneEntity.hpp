@@ -115,9 +115,6 @@ public:
 	int32_t m_BusyActor; // 0xa30	
 	SceneOnPlayerDeath_t m_iPlayerDeathBehavior; // 0xa34	
 	
-	// Static fields:
-	static int32_t &Get_s_nSceneFlushCounter(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CSceneEntity")->m_static_fields[0]->m_instance);};
-	
 	// Datamap fields:
 	// void m_pScene; // 0x5f0
 	// void m_pRecipientFilter; // 0xa38

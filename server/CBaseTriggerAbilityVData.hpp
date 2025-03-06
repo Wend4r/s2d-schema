@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15a8
+// Size: 0x15e0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CBaseTriggerAbilityVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyDescription "Which ability to fire a MODIFIER_EVENT_ABILITY_TRIGGER_ACTIVATED event to when this ability is triggered"
-	CSubclassName< 4 > m_AbilityToTrigger; // 0x1590	
+	CSubclassName< 4 > m_AbilityToTrigger; // 0x15c8	
 	// MPropertyDescription "The mimumum amount of time after this ability has become active before the trigger can activate"
-	float m_flMinCancelTime; // 0x15a0	
+	float m_flMinCancelTime; // 0x15d8	
 	// MPropertyDescription "Which lesson to associate with activating this ability"
-	ECitadelHintFeature m_eHintFeatureToMarkUsedOnTrigger; // 0x15a4	
+	ECitadelHintFeature m_eHintFeatureToMarkUsedOnTrigger; // 0x15dc	
 };
 

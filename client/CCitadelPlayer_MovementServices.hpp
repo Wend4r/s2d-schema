@@ -5,7 +5,7 @@
 struct CNetworkVelocityVector;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x280
+// Size: 0x298
 // Has VTable
 // 
 // MNetworkVarNames "CNetworkVelocityVector m_vPositionDeltaVelocity"
@@ -16,21 +16,25 @@ public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	// MNetworkPriority "32"
-	CNetworkVelocityVector m_vPositionDeltaVelocity; // 0x218	
+	CNetworkVelocityVector m_vPositionDeltaVelocity; // 0x228	
 private:
-	[[maybe_unused]] uint8_t __pad0240[0x8]; // 0x240
+	[[maybe_unused]] uint8_t __pad0250[0x8]; // 0x250
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	// MNetworkPriority "32"
-	bool m_bToggleDuckActive; // 0x248	
+	bool m_bToggleDuckActive; // 0x258	
 private:
-	[[maybe_unused]] uint8_t __pad0249[0x3]; // 0x249
+	[[maybe_unused]] uint8_t __pad0259[0x3]; // 0x259
 public:
-	Vector m_vecPogoVelocity; // 0x24c	
-	Vector m_vecSupport; // 0x258	
-	bool m_bColliding; // 0x264	
-	bool m_bLandedOnGround; // 0x265	
-	bool m_bHasFreeCursor; // 0x266	
+	Vector m_vecPogoVelocity; // 0x25c	
+	Vector m_vecSupport; // 0x268	
+	bool m_bColliding; // 0x274	
+	bool m_bLandedOnGround; // 0x275	
+	bool m_bHasFreeCursor; // 0x276	
+private:
+	[[maybe_unused]] uint8_t __pad0277[0x1]; // 0x277
+public:
+	float m_flTurnSpringSpeed; // 0x278	
 };
 

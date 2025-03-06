@@ -5,11 +5,11 @@
 struct CPulse_ResumePoint;
 // Registered binary: pulse_system.dll (project 'pulse_system')
 // Alignment: 8
-// Size: 0x88
+// Size: 0x98
 // Has VTable
 // 
 // MGetKV3ClassDefaults
-// MPulseEditorIsControlFlowNode
+// MPulseEditorCanvasItemSpecKV3
 class CPulseCell_WaitForCursorsWithTagBase : public CPulseCell_BaseYieldingInflow
 {
 public:

@@ -14,7 +14,7 @@ class CDestructiblePartsSystemData_HitGroupInfoAndPartData
 public:
 	// MPropertyDescription "Data for this destructible part."
 	// MPropertyAutoExpandSelf
-	CUtlVector< CDestructiblePartsSystemData_PartData > m_DestructiblePartsData; // 0x0	
+	CUtlVector< CDestructiblePartsSystemData_PartData > m_PartsData; // 0x0	
 	// MPropertyStartGroup "+Hitgroup"
 	// MPropertyDescription "The hitgroup this is related to."
 	HitGroup_t m_nHitGroup; // 0x18	

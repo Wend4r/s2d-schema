@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbe0
+// Size: 0xbf0
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flParryWindowEndTime"
@@ -16,6 +16,8 @@ struct GameTime_t;
 // MNetworkVarNames "EMeleeHold_AttackType m_eCurrentAttackType"
 // MNetworkVarNames "Vector m_vAirDashDir"
 // MNetworkVarNames "bool m_bAttackStartedWhileSliding"
+// MNetworkVarNames "GameTime_t m_flLightChainEndTime"
+// MNetworkVarNames "int m_nLightChainCount"
 class CCitadel_Ability_HoldMelee : public CCitadel_Ability_Melee_Base
 {
 public:
@@ -43,10 +45,19 @@ public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
 	bool m_bAttackStartedWhileSliding; // 0xbc4	
-	bool m_bCreatedChargeEffects; // 0xbc5	
 private:
-	[[maybe_unused]] uint8_t __pad0bc6[0x2]; // 0xbc6
+	[[maybe_unused]] uint8_t __pad0bc5[0x3]; // 0xbc5
 public:
-	QAngle m_angForced; // 0xbc8	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flLightChainEndTime; // 0xbc8	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	int32_t m_nLightChainCount; // 0xbcc	
+	bool m_bCreatedChargeEffects; // 0xbd0	
+private:
+	[[maybe_unused]] uint8_t __pad0bd1[0x3]; // 0xbd1
+public:
+	QAngle m_angForced; // 0xbd4	
 };
 

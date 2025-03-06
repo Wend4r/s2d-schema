@@ -5,24 +5,24 @@
 struct CRemapFloat;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1950
+// Size: 0x1988
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadelAbilityHealingSlashVData : public CCitadelYamatoBaseVData
 {
 public:
-	float m_flEffectSize; // 0x1598	
-	float m_flMaxAttackAngle; // 0x159c	
-	CRemapFloat m_remapAngleToTime; // 0x15a0	
+	float m_flEffectSize; // 0x15d0	
+	float m_flMaxAttackAngle; // 0x15d4	
+	CRemapFloat m_remapAngleToTime; // 0x15d8	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_DebuffModifier; // 0x15b0	
+	CEmbeddedSubclass< CBaseModifier > m_DebuffModifier; // 0x15e8	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x15c0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealingSlashParticle; // 0x16a0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealingSlashSwordGlow; // 0x1780	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x1860	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x15f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealingSlashParticle; // 0x16d8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealingSlashSwordGlow; // 0x17b8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x1898	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strDamageTarget; // 0x1940	
+	CSoundEventName m_strDamageTarget; // 0x1978	
 };
 

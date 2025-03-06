@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x20
+// Size: 0x28
 // Has VTable
 // Has Trivial Destructor
 // 

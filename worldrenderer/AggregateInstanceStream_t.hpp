@@ -4,9 +4,9 @@
 
 // Registered binary: worldrenderer.dll (project 'worldrenderer')
 // Enumerator count: 4
-// Alignment: 2
-// Size: 0x2
-enum class AggregateInstanceStream_t : uint16_t
+// Alignment: 1
+// Size: 0x1
+enum class AggregateInstanceStream_t : uint8_t
 {
 	AGGREGATE_INSTANCE_STREAM_NONE = 0x0,
 	AGGREGATE_INSTANCE_STREAM_LIGHTMAPUV_UNORM16 = 0x1,

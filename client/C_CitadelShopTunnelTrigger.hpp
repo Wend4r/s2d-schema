@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x998
+// Size: 0x948
 // Has VTable
 class C_CitadelShopTunnelTrigger : public C_BaseTrigger
 {

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 52
+// Enumerator count: 51
 // Alignment: 4
 // Size: 0x4
 enum class EBaseUserMessages : uint32_t
@@ -44,7 +44,6 @@ enum class EBaseUserMessages : uint32_t
 	UM_AnimGraphUpdate = 0x95,
 	UM_HapticsManagerPulse = 0x96,
 	UM_HapticsManagerEffect = 0x97,
-	UM_CommandQueueState = 0x98,
 	UM_UpdateCssClasses = 0x99,
 	UM_ServerFrameTime = 0x9a,
 	UM_LagCompensationError = 0x9b,

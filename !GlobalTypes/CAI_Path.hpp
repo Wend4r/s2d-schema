@@ -7,7 +7,7 @@ struct NavGravity_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc8
+// Size: 0xe8
 // Has VTable
 class CAI_Path
 {
@@ -44,8 +44,18 @@ public:
 	GameTime_t m_flPathChangeTime; // 0xac	
 	float m_flDistAdvancedToCurWaypoint; // 0xb0	
 private:
-	[[maybe_unused]] uint8_t __pad00b4[0xc]; // 0xb4
+	[[maybe_unused]] uint8_t __pad00b4[0x10]; // 0xb4
 public:
-	uint32_t m_nConstrainedToMovableMeshId; // 0xc0	
+	bool m_bOnMovableNavMesh; // 0xc4	
+private:
+	[[maybe_unused]] uint8_t __pad00c5[0x3]; // 0xc5
+public:
+	uint32_t m_unGoalActualMovableMeshId; // 0xc8	
+	uint32_t m_unGoalBaseMovableMeshId; // 0xcc	
+	uint32_t m_unPrevWaypointMovableMeshId; // 0xd0	
+	uint32_t m_unPrevWaypointBaseMovableMeshId; // 0xd4	
+	uint32_t m_unGoalActualMovableMeshId_EntityInitial; // 0xd8	
+	uint32_t m_unGoalBaseMovableMeshId_EntityInitial; // 0xdc	
+	uint32_t m_unGoalPosBlockedMovableMeshId; // 0xe0	
 };
 

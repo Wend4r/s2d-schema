@@ -21,10 +21,6 @@ public:
 	TrackOrientationType_t m_eOrientationType; // 0x50c	
 	CEntityIOOutput m_OnPass; // 0x510	
 	
-	// Static fields:
-	static int32_t &Get_s_nCurrIterVal(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CPathTrack")->m_static_fields[0]->m_instance);};
-	static bool &Get_s_bIsIterating(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CPathTrack")->m_static_fields[1]->m_instance);};
-	
 	// Datamap fields:
 	// void InputPass; // 0x0
 	// void InputEnableAlternatePath; // 0x0

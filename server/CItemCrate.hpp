@@ -5,7 +5,7 @@
 struct CCitadelMinimapComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xdc0
+// Size: 0xe08
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iHealth"
@@ -19,16 +19,16 @@ public:
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xd90	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xdd8	
 private:
-	[[maybe_unused]] uint8_t __pad0da8[0x14]; // 0xda8
+	[[maybe_unused]] uint8_t __pad0df0[0x14]; // 0xdf0
 public:
 	// MNetworkEnable
-	int32_t m_eLootType; // 0xdbc	
+	int32_t m_eLootType; // 0xe04	
 	
 	// Datamap fields:
-	// CHandle< CBaseEntity > m_hSpawner; // 0xda8
-	// int32_t m_eObjectivePosition; // 0xdb4
+	// CHandle< CBaseEntity > m_hSpawner; // 0xdf0
+	// int32_t m_eObjectivePosition; // 0xdfc
 	// void InputAttachedToParachute; // 0x0
 	// void InputDetachedFromParachute; // 0x0
 };

@@ -25,7 +25,5 @@ public:
 	float m_flRepulsionMaxStrength; // 0x1e4	
 	// MPropertyFriendlyName "use aabbtree"
 	bool m_bUseAABB; // 0x1e8	
-	// MPropertyFriendlyName "thread pairwise collision"
-	bool m_bThreadIt; // 0x1e9	
 };
 

@@ -2,33 +2,26 @@
 
 #include <cstdint>
 
+struct CCitadelAbilityBeam_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xde8
+// Size: 0x14f0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bAirCast"
-// MNetworkVarNames "Vector m_vBeamAimPos"
+// MNetworkVarNames "CCitadelAbilityBeam_t m_beam"
 class CCitadel_Ability_Bebop_LaserBeam : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x118]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c50[0x380]; // 0xc50
 public:
-	bool m_bZoomed; // 0xdb8	
+	bool m_bZoomed; // 0xfd0	
 	// MNetworkEnable
-	bool m_bAirCast; // 0xdb9	
+	bool m_bAirCast; // 0xfd1	
 private:
-	[[maybe_unused]] uint8_t __pad0dba[0x2]; // 0xdba
+	[[maybe_unused]] uint8_t __pad0fd2[0x6]; // 0xfd2
 public:
 	// MNetworkEnable
-	Vector m_vBeamAimPos; // 0xdbc	
-	// MNetworkEnable
-	// MNetworkEncoder "qangle"
-	// MNetworkChangeCallback "OnBebopBeamAnglesChanged"
-	QAngle m_angBeamAngles; // 0xdc8	
-private:
-	[[maybe_unused]] uint8_t __pad0dd4[0xc]; // 0xdd4
-public:
-	bool m_bNeedsBeamReset; // 0xde0	
+	CCitadelAbilityBeam_t m_beam; // 0xfd8	
 };
 

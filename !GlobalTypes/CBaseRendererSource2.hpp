@@ -7,7 +7,7 @@ struct ParticleAttributeIndex_t;
 struct CParticleCollectionRendererVecInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x2c10
+// Size: 0x2c08
 // Has VTable
 // Is Abstract
 // 
@@ -114,7 +114,7 @@ public:
 	bool m_bGammaCorrectVertexColors; // 0x1694	
 	// MPropertyFriendlyName "Saturate color pre alphablend"
 	// MPropertySortPriority "300"
-	// MPropertySuppressExpr "mod!=dota"
+	// MPropertySuppressExpr "mod != dota && mod != hlx"
 	bool m_bSaturateColorPreAlphaBlend; // 0x1695	
 private:
 	[[maybe_unused]] uint8_t __pad1696[0x2]; // 0x1696

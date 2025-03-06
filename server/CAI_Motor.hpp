@@ -8,7 +8,7 @@ struct CAI_MotorTransition;
 struct CAI_MotorGroundAnimGraph;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x578
+// Size: 0x4c8
 // Has VTable
 class CAI_Motor : public CAI_Component
 {
@@ -16,39 +16,30 @@ private:
 	[[maybe_unused]] uint8_t __pad0040[0x10]; // 0x40
 public:
 	float m_flMoveInterval; // 0x50	
-	Vector m_vIdealEntityFacing; // 0x54	
-	float m_flYawSpeed; // 0x60	
-	Vector m_vMoveVel; // 0x64	
-	Vector m_vMoveVelNavigation; // 0x70	
-	Vector m_vecAngularVelocity; // 0x7c	
-	CSimpleSimTimer m_timerFloorPointCached; // 0x88	
-	Vector m_vFloorPointCached; // 0x90	
-	bool m_bFloorPointCachingEnabled; // 0x9c	
+	float m_flYawSpeed; // 0x54	
+	Vector m_vMoveVel; // 0x58	
+	Vector m_vMoveVelNavigation; // 0x64	
+	Vector m_vecAngularVelocity; // 0x70	
+	CSimpleSimTimer m_timerFloorPointCached; // 0x7c	
+	Vector m_vFloorPointCached; // 0x84	
+	bool m_bFloorPointCachingEnabled; // 0x90	
+	bool m_bAllowFlyingAnimMovement; // 0x91	
 private:
-	[[maybe_unused]] uint8_t __pad009d[0x27]; // 0x9d
+	[[maybe_unused]] uint8_t __pad0092[0x2a]; // 0x92
 public:
-	float m_flSpeed; // 0xc4	
-	bool m_bMovementActive; // 0xc8	
-	bool m_bEmbeddedRecoveryEnabled; // 0xc9	
-	bool m_pEnableForceFacing[2]; // 0xca	
-	uint8_t m_nEntityFacingLockCount; // 0xcc	
+	float m_flSpeed; // 0xbc	
+	bool m_bMovementActive; // 0xc0	
 private:
-	[[maybe_unused]] uint8_t __pad00cd[0x3]; // 0xcd
+	[[maybe_unused]] uint8_t __pad00c1[0x3]; // 0xc1
 public:
-	CUtlVector< ChoreoEntityFacing_t > m_vecChoreoEntityFacings; // 0xd0	
-	Vector m_vBoundaryDistCachedPos; // 0xe8	
-	float m_flBoundaryDistCached; // 0xf4	
-	CAI_MotorNavLink m_motorNavLink; // 0xf8	
-	CAI_MotorTransition m_motorTransition; // 0x170	
-	CAI_MotorGroundAnimGraph m_motorGroundAnimgraph; // 0x1d0	
-	bool m_bIsExecutingMoveSolve; // 0x468	
+	Vector m_vBoundaryDistCachedPos; // 0xc4	
+	float m_flBoundaryDistCached; // 0xd0	
 private:
-	[[maybe_unused]] uint8_t __pad0469[0x3]; // 0x469
+	[[maybe_unused]] uint8_t __pad00d4[0x4]; // 0xd4
 public:
-	CAI_InterestTarget m_pEntityFacingRequests[5]; // 0x46c	
-	AI_ScheduleFacingTargetPriority_t m_eScheduleFacingRequestPriority; // 0x570	
-	AI_Motor_MovementFacingMode_t m_movementFacingModeRequests[4]; // 0x571	
-	AI_Motor_DefaultFacing_t m_eDefaultFacing; // 0x575	
-	AI_Motor_DefaultFacing_t m_eScheduleDefaultFacing; // 0x576	
+	CAI_MotorNavLink m_motorNavLink; // 0xd8	
+	CAI_MotorTransition m_motorTransition; // 0x150	
+	CAI_MotorGroundAnimGraph m_motorGroundAnimgraph; // 0x1b0	
+	bool m_bIsExecutingMoveSolve; // 0x4c0	
 };
 

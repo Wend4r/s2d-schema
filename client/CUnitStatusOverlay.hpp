@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xac0
+// Size: 0xa70
 // Has VTable
 class CUnitStatusOverlay : public C_PointClientUIWorldPanel
 {

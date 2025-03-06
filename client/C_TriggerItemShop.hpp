@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x9a0
+// Size: 0x950
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_iszSoundName"
@@ -12,6 +12,6 @@ class C_TriggerItemShop : public C_BaseTrigger
 {
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszSoundName; // 0x998	
+	CUtlSymbolLarge m_iszSoundName; // 0x948	
 };
 

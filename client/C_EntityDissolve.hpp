@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8a0
+// Size: 0x850
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flStartTime"
@@ -21,30 +21,30 @@ struct GameTime_t;
 class C_EntityDissolve : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0858[0x8]; // 0x858
+	[[maybe_unused]] uint8_t __pad0808[0x8]; // 0x808
 public:
 	// MNetworkEnable
-	GameTime_t m_flStartTime; // 0x860	
+	GameTime_t m_flStartTime; // 0x810	
 	// MNetworkEnable
-	float m_flFadeInStart; // 0x864	
+	float m_flFadeInStart; // 0x814	
 	// MNetworkEnable
-	float m_flFadeInLength; // 0x868	
+	float m_flFadeInLength; // 0x818	
 	// MNetworkEnable
-	float m_flFadeOutModelStart; // 0x86c	
+	float m_flFadeOutModelStart; // 0x81c	
 	// MNetworkEnable
-	float m_flFadeOutModelLength; // 0x870	
+	float m_flFadeOutModelLength; // 0x820	
 	// MNetworkEnable
-	float m_flFadeOutStart; // 0x874	
+	float m_flFadeOutStart; // 0x824	
 	// MNetworkEnable
-	float m_flFadeOutLength; // 0x878	
-	GameTime_t m_flNextSparkTime; // 0x87c	
+	float m_flFadeOutLength; // 0x828	
+	GameTime_t m_flNextSparkTime; // 0x82c	
 	// MNetworkEnable
-	EntityDisolveType_t m_nDissolveType; // 0x880	
+	EntityDisolveType_t m_nDissolveType; // 0x830	
 	// MNetworkEnable
-	Vector m_vDissolverOrigin; // 0x884	
+	Vector m_vDissolverOrigin; // 0x834	
 	// MNetworkEnable
-	uint32_t m_nMagnitude; // 0x890	
-	bool m_bCoreExplode; // 0x894	
-	bool m_bLinkedToServerEnt; // 0x895	
+	uint32_t m_nMagnitude; // 0x840	
+	bool m_bCoreExplode; // 0x844	
+	bool m_bLinkedToServerEnt; // 0x845	
 };
 

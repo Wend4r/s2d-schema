@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9a0
+// Size: 0x9a8
 // Has VTable
 class CPhysBox : public CBreakable
 {
@@ -13,30 +13,31 @@ public:
 	int32_t m_damageType; // 0x890	
 	int32_t m_damageToEnableMotion; // 0x894	
 	float m_flForceToEnableMotion; // 0x898	
-	QAngle m_angPreferredCarryAngles; // 0x89c	
-	bool m_bNotSolidToWorld; // 0x8a8	
-	bool m_bEnableUseOutput; // 0x8a9	
+	Vector m_vHoverPosePosition; // 0x89c	
+	QAngle m_angHoverPoseAngles; // 0x8a8	
+	bool m_bNotSolidToWorld; // 0x8b4	
+	bool m_bEnableUseOutput; // 0x8b5	
+	HoverPoseFlags_t m_nHoverPoseFlags; // 0x8b6	
 private:
-	[[maybe_unused]] uint8_t __pad08aa[0x2]; // 0x8aa
+	[[maybe_unused]] uint8_t __pad08b7[0x1]; // 0x8b7
 public:
-	int32_t m_iExploitableByPlayer; // 0x8ac	
-	float m_flTouchOutputPerEntityDelay; // 0x8b0	
+	float m_flTouchOutputPerEntityDelay; // 0x8b8	
 private:
-	[[maybe_unused]] uint8_t __pad08b4[0x4]; // 0x8b4
+	[[maybe_unused]] uint8_t __pad08bc[0x4]; // 0x8bc
 public:
-	CEntityIOOutput m_OnDamaged; // 0x8b8	
-	CEntityIOOutput m_OnAwakened; // 0x8e0	
-	CEntityIOOutput m_OnMotionEnabled; // 0x908	
-	CEntityIOOutput m_OnPlayerUse; // 0x930	
-	CEntityIOOutput m_OnStartTouch; // 0x958	
-	CHandle< CBasePlayerPawn > m_hCarryingPlayer; // 0x980	
+	CEntityIOOutput m_OnDamaged; // 0x8c0	
+	CEntityIOOutput m_OnAwakened; // 0x8e8	
+	CEntityIOOutput m_OnMotionEnabled; // 0x910	
+	CEntityIOOutput m_OnPlayerUse; // 0x938	
+	CEntityIOOutput m_OnStartTouch; // 0x960	
+	CHandle< CBasePlayerPawn > m_hCarryingPlayer; // 0x988	
 	
 	// Datamap fields:
+	// QAngle preferredcarryangles; // 0x7fffffff
 	// void InputWake; // 0x0
 	// void InputSleep; // 0x0
 	// void InputEnableMotion; // 0x0
 	// void InputDisableMotion; // 0x0
 	// void InputForceDrop; // 0x0
-	// void InputDisableFloating; // 0x0
 };
 

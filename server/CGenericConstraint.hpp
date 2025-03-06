@@ -69,6 +69,24 @@ public:
 	CEntityIOOutput m_NotifyForceReachedZ; // 0x660	
 	
 	// Datamap fields:
+	// bool InputSetLinearMotionLockedX; // 0x0
+	// bool InputSetLinearMotionLockedY; // 0x0
+	// bool InputSetLinearMotionLockedZ; // 0x0
+	// float InputSetLinearFrequencyX; // 0x0
+	// float InputSetLinearFrequencyY; // 0x0
+	// float InputSetLinearFrequencyZ; // 0x0
+	// float InputSetLinearDampingRatioX; // 0x0
+	// float InputSetLinearDampingRatioY; // 0x0
+	// float InputSetLinearDampingRatioZ; // 0x0
+	// bool InputSetAngularMotionLockedX; // 0x0
+	// bool InputSetAngularMotionLockedY; // 0x0
+	// bool InputSetAngularMotionLockedZ; // 0x0
+	// float InputSetAngularFrequencyX; // 0x0
+	// float InputSetAngularFrequencyY; // 0x0
+	// float InputSetAngularFrequencyZ; // 0x0
+	// float InputSetAngularDampingRatioX; // 0x0
+	// float InputSetAngularDampingRatioY; // 0x0
+	// float InputSetAngularDampingRatioZ; // 0x0
 	// void CGenericConstraintUpdateThink; // 0x0
 };
 

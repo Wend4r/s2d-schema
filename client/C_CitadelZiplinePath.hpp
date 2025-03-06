@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x678
+// Size: 0x628
 // Has VTable
 class C_CitadelZiplinePath : public C_PathParticleRope
 {
 public:
-	int32_t m_iLaneNumber; // 0x670	
+	int32_t m_iLaneNumber; // 0x620	
 };
 

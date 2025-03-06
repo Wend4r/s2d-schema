@@ -32,7 +32,6 @@ struct GameTime_t;
 // MNetworkVarNames "float32 locallightscale"
 // MNetworkVarNames "bool enable"
 // MNetworkVarNames "bool blend"
-// MNetworkVarNames "bool m_bNoReflectionFog"
 struct fogparams_t
 {
 private:
@@ -98,8 +97,7 @@ public:
 	bool enable; // 0x64	
 	// MNetworkEnable
 	bool blend; // 0x65	
-	// MNetworkEnable
-	bool m_bNoReflectionFog; // 0x66	
+	bool m_bPadding2; // 0x66	
 	bool m_bPadding; // 0x67	
 };
 

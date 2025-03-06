@@ -22,9 +22,6 @@ private:
 public:
 	CUtlString m_sInterruptText; // 0xa0	
 	
-	// Static fields:
-	static int32_t &Get_ms_nTasksRun(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_Scheduler")->m_static_fields[0]->m_instance);};
-	
 	// Datamap fields:
 	// void m_pSchedule; // 0x60
 	// void m_pFailedSchedule; // 0x80

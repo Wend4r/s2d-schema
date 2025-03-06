@@ -2,33 +2,36 @@
 
 #include <cstdint>
 
-struct ParticleIndex_t;
 struct GameTime_t;
+struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xeb8
+// Size: 0xea0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIsVisibleOnMinimap"
 // MNetworkVarNames "GameTime_t m_flStoppedMovingStartTime"
 class CAbility_Fathom_LurkersAmbush : public C_CitadelBaseAbility
 {
-public:
-	ParticleIndex_t m_ChargeUpParticle; // 0xca0	
 private:
-	[[maybe_unused]] uint8_t __pad0ca4[0x1c4]; // 0xca4
+	[[maybe_unused]] uint8_t __pad0c50[0x1f8]; // 0xc50
 public:
-	CModifierHandleTyped< CCitadelModifier > m_hRegenModifier; // 0xe68	
-	CModifierHandleTyped< CCitadelModifier > m_hInvisModifier; // 0xe80	
+	CModifierHandleTyped< CCitadelModifier > m_hRegenModifier; // 0xe48	
+	CModifierHandleTyped< CCitadelModifier > m_hInvisModifier; // 0xe60	
 	// MNetworkEnable
-	bool m_bIsVisibleOnMinimap; // 0xe98	
+	bool m_bIsVisibleOnMinimap; // 0xe78	
 private:
-	[[maybe_unused]] uint8_t __pad0e99[0x3]; // 0xe99
+	[[maybe_unused]] uint8_t __pad0e79[0x3]; // 0xe79
 public:
 	// MNetworkEnable
-	GameTime_t m_flStoppedMovingStartTime; // 0xe9c	
-	Vector m_vLastPos; // 0xea0	
-	float m_flImmobilizeDuration; // 0xeac	
-	GameTime_t m_flChannelTimeStarted; // 0xeb0	
+	GameTime_t m_flStoppedMovingStartTime; // 0xe7c	
+	Vector m_vLastPos; // 0xe80	
+	float m_flDebuffDuration; // 0xe8c	
+	GameTime_t m_flChannelTimeStarted; // 0xe90	
+	bool m_bWasLatchedWhenCast; // 0xe94	
+private:
+	[[maybe_unused]] uint8_t __pad0e95[0x3]; // 0xe95
+public:
+	ParticleIndex_t m_ChargeUpParticle; // 0xe98	
 };
 

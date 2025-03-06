@@ -18,9 +18,12 @@ struct MatchID_t;
 // MNetworkVarNames "EHANDLE m_hTowerSapphire"
 // MNetworkVarNames "bool m_bEnemyInAmberBase"
 // MNetworkVarNames "bool m_bEnemyInSapphireBase"
+// MNetworkVarNames "bool m_bEnemyPlayersInAmberBase"
+// MNetworkVarNames "bool m_bEnemyPlayersInSapphireBase"
 // MNetworkVarNames "Vector m_vMinimapMins"
 // MNetworkVarNames "Vector m_vMinimapMaxs"
 // MNetworkVarNames "bool m_bMatchSafeToAbandon"
+// MNetworkVarNames "bool m_bMatchNotScored"
 // MNetworkVarNames "bool m_bNoDeathEnabled"
 // MNetworkVarNames "bool m_bFastCooldownsEnabled"
 // MNetworkVarNames "bool m_bStaminaCooldownsEnabled"
@@ -69,9 +72,10 @@ public:
 	bool m_bEnemyInAmberBase; // 0x74	
 	// MNetworkEnable
 	bool m_bEnemyInSapphireBase; // 0x75	
-private:
-	[[maybe_unused]] uint8_t __pad0076[0x2]; // 0x76
-public:
+	// MNetworkEnable
+	bool m_bEnemyPlayersInAmberBase; // 0x76	
+	// MNetworkEnable
+	bool m_bEnemyPlayersInSapphireBase; // 0x77	
 	// MNetworkEnable
 	Vector m_vMinimapMins; // 0x78	
 	// MNetworkEnable
@@ -79,20 +83,19 @@ public:
 	// MNetworkEnable
 	bool m_bMatchSafeToAbandon; // 0x90	
 	// MNetworkEnable
-	bool m_bNoDeathEnabled; // 0x91	
+	bool m_bMatchNotScored; // 0x91	
 	// MNetworkEnable
-	bool m_bFastCooldownsEnabled; // 0x92	
+	bool m_bNoDeathEnabled; // 0x92	
 	// MNetworkEnable
-	bool m_bStaminaCooldownsEnabled; // 0x93	
+	bool m_bFastCooldownsEnabled; // 0x93	
 	// MNetworkEnable
-	bool m_bUnlimitedAmmoEnabled; // 0x94	
+	bool m_bStaminaCooldownsEnabled; // 0x94	
 	// MNetworkEnable
-	bool m_bInfiniteResourcesEnabled; // 0x95	
+	bool m_bUnlimitedAmmoEnabled; // 0x95	
 	// MNetworkEnable
-	bool m_bFlexSlotsForcedUnlocked; // 0x96	
-private:
-	[[maybe_unused]] uint8_t __pad0097[0x1]; // 0x97
-public:
+	bool m_bInfiniteResourcesEnabled; // 0x96	
+	// MNetworkEnable
+	bool m_bFlexSlotsForcedUnlocked; // 0x97	
 	// MNetworkEnable
 	ECitadelMatchMode m_eMatchMode; // 0x98	
 	// MNetworkEnable

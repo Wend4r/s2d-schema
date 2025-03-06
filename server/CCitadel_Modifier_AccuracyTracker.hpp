@@ -13,8 +13,5 @@ private:
 public:
 	float m_flInterval; // 0xd8	
 	float m_flProgress; // 0xdc	
-	
-	// Static fields:
-	static float &Get_sm_flHighestAccuracy(){return *reinterpret_cast<float*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadel_Modifier_AccuracyTracker")->m_static_fields[0]->m_instance);};
 };
 

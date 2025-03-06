@@ -18,9 +18,6 @@ public:
 	int32_t m_nLightChoice; // 0x4ec	
 	CHandle< CBaseEntity > m_hLight; // 0x4f0	
 	
-	// Static fields:
-	static CUtlVector< CInfoDynamicShadowHint* > &Get_m_AllHints(){return *reinterpret_cast<CUtlVector< CInfoDynamicShadowHint* >*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CInfoDynamicShadowHint")->m_static_fields[0]->m_instance);};
-	
 	// Datamap fields:
 	// void InputEnable; // 0x0
 	// void InputDisable; // 0x0

@@ -5,7 +5,7 @@
 struct AmmoIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe8
+// Size: 0xf0
 // Has VTable
 class CTakeDamageInfo
 {
@@ -55,15 +55,13 @@ public:
 	int32_t m_iBatchCount; // 0xb4	
 	float m_flEffectiveness; // 0xb8	
 	float m_timeDamage; // 0xbc	
+	float m_flCritDamage; // 0xc0	
 private:
-	[[maybe_unused]] uint8_t __pad00c0[0x1c]; // 0xc0
+	[[maybe_unused]] uint8_t __pad00c4[0x20]; // 0xc4
 public:
-	bool m_bInTakeDamageFlow; // 0xdc	
-	
-	// Static fields:
-	static CTakeDamageInfo &Get_EmptyInfo(){return *reinterpret_cast<CTakeDamageInfo*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CTakeDamageInfo")->m_static_fields[0]->m_instance);};
+	bool m_bInTakeDamageFlow; // 0xe4	
 	
 	// Datamap fields:
-	// void m_hScriptInstance; // 0xc0
+	// void m_hScriptInstance; // 0xc8
 };
 

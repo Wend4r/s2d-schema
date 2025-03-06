@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8e0
+// Size: 0x890
 // Has VTable
 class CCitadel_Projectile_Petrify : public C_CitadelProjectile
 {

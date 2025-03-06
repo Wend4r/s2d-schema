@@ -7,7 +7,7 @@ struct GameTime_t;
 struct SatVolumeIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe08
+// Size: 0xdb8
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAutoScaledTime m_flFlurryEndTime"
@@ -16,18 +16,18 @@ class CCitadel_Ability_BulletFlurry : public C_CitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flFlurryEndTime; // 0xca0	
+	CCitadelAutoScaledTime m_flFlurryEndTime; // 0xc50	
 	// MNetworkEnable
-	GameTime_t m_flNextAttackTime; // 0xcb8	
+	GameTime_t m_flNextAttackTime; // 0xc68	
 private:
-	[[maybe_unused]] uint8_t __pad0cbc[0x11c]; // 0xcbc
+	[[maybe_unused]] uint8_t __pad0c6c[0x11c]; // 0xc6c
 public:
-	CUtlVector< CHandle< C_BaseEntity > > m_vecShootTargets; // 0xdd8	
-	int32_t m_nNumPlayersKilled; // 0xdf0	
-	int32_t m_nShootIndex; // 0xdf4	
-	int32_t m_nShootIndexNPC; // 0xdf8	
-	int32_t m_nBurstShots; // 0xdfc	
-	SatVolumeIndex_t m_nSatVolumeIndex; // 0xe00	
-	bool m_bHasCameraOverride; // 0xe04	
+	CUtlVector< CHandle< C_BaseEntity > > m_vecShootTargets; // 0xd88	
+	int32_t m_nNumPlayersKilled; // 0xda0	
+	int32_t m_nShootIndex; // 0xda4	
+	int32_t m_nShootIndexNPC; // 0xda8	
+	int32_t m_nBurstShots; // 0xdac	
+	SatVolumeIndex_t m_nSatVolumeIndex; // 0xdb0	
+	bool m_bHasCameraOverride; // 0xdb4	
 };
 

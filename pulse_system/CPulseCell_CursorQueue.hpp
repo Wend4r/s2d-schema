@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_system')
 // Alignment: 8
-// Size: 0x90
+// Size: 0xa0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -18,6 +18,6 @@ class CPulseCell_CursorQueue : public CPulseCell_WaitForCursorsWithTagBase
 {
 public:
 	// MPropertyDescription "Any cursors above this count will wait, up to the limit."
-	int32_t m_nCursorsAllowedToRunParallel; // 0x88	
+	int32_t m_nCursorsAllowedToRunParallel; // 0x98	
 };
 

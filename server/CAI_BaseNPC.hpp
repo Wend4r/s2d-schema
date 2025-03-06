@@ -9,6 +9,7 @@ struct CAI_EnemyServices;
 struct CRandStopwatch;
 struct CSimpleSimTimer;
 struct CUnreachableTargetList;
+struct CAI_FacingServices;
 struct CAI_AnimGraphServices;
 struct CAI_Scheduler;
 struct CAI_Navigator;
@@ -17,7 +18,7 @@ struct CTakeDamageResult;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1278
+// Size: 0x1320
 // Has VTable
 // 
 // MNetworkIncludeByName "m_lifeState"
@@ -28,169 +29,170 @@ struct CEntityIOOutput;
 class CAI_BaseNPC : public CBaseCombatCharacter
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b50[0x10]; // 0xb50
+	[[maybe_unused]] uint8_t __pad0be8[0x10]; // 0xbe8
 public:
-	bool m_bCheckContacts; // 0xb60	
-	bool m_bIsUsingSmallHull; // 0xb61	
-	bool m_bForceDynamicHull; // 0xb62	
+	bool m_bCheckContacts; // 0xbf8	
+	bool m_bIsUsingSmallHull; // 0xbf9	
+	bool m_bForceDynamicHull; // 0xbfa	
 private:
-	[[maybe_unused]] uint8_t __pad0b63[0x1]; // 0xb63
+	[[maybe_unused]] uint8_t __pad0bfb[0x1]; // 0xbfb
 public:
-	Vector m_vecLastPosition; // 0xb64	
-	float m_flLastPositionTolerance; // 0xb70	
-	CHandle< CAI_BaseNPC > m_hSynchronizedPrimaryNPC; // 0xb74	
-	CUtlVector< CHandle< CAI_BaseNPC > > m_vecSynchronizedSecondaryNPCs; // 0xb78	
+	Vector m_vecLastPosition; // 0xbfc	
+	float m_flLastPositionTolerance; // 0xc08	
+	CHandle< CAI_BaseNPC > m_hSynchronizedPrimaryNPC; // 0xc0c	
+	CUtlVector< CHandle< CAI_BaseNPC > > m_vecSynchronizedSecondaryNPCs; // 0xc10	
 	// MNetworkEnable
-	NPC_STATE m_NPCState; // 0xb90	
-	NPC_STATE m_nPreModifierNPCState; // 0xb94	
-	NPC_STATE m_IdealNPCState; // 0xb98	
-	GameTime_t m_flLastStateChangeTime; // 0xb9c	
+	NPC_STATE m_NPCState; // 0xc28	
+	NPC_STATE m_nPreModifierNPCState; // 0xc2c	
+	NPC_STATE m_IdealNPCState; // 0xc30	
+	GameTime_t m_flLastStateChangeTime; // 0xc34	
 private:
-	[[maybe_unused]] uint8_t __pad0ba0[0x8]; // 0xba0
+	[[maybe_unused]] uint8_t __pad0c38[0x8]; // 0xc38
 public:
-	CAI_ScheduleBits m_Conditions; // 0xba8	
-	CAI_ScheduleBits m_NonGatherConditions; // 0xbcc	
-	CAI_ScheduleBits m_CustomInterruptConditions; // 0xbf0	
-	bool m_bForceConditionsGather; // 0xc14	
-	bool m_bConditionsGathered; // 0xc15	
-	bool m_bDoPostRestoreRefindPath; // 0xc16	
+	CAI_ScheduleBits m_Conditions; // 0xc40	
+	CAI_ScheduleBits m_NonGatherConditions; // 0xc64	
+	CAI_ScheduleBits m_CustomInterruptConditions; // 0xc88	
+	bool m_bForceConditionsGather; // 0xcac	
+	bool m_bConditionsGathered; // 0xcad	
+	bool m_bDoPostRestoreRefindPath; // 0xcae	
 private:
-	[[maybe_unused]] uint8_t __pad0c17[0x1]; // 0xc17
+	[[maybe_unused]] uint8_t __pad0caf[0x1]; // 0xcaf
 public:
-	CAI_BehaviorHost* m_pBehaviorHost; // 0xc18	
+	CAI_BehaviorHost* m_pBehaviorHost; // 0xcb0	
 private:
-	[[maybe_unused]] uint8_t __pad0c20[0x8]; // 0xc20
+	[[maybe_unused]] uint8_t __pad0cb8[0x8]; // 0xcb8
 public:
-	GameTime_t m_flBlinkTime; // 0xc28	
+	GameTime_t m_flBlinkTime; // 0xcc0	
 private:
-	[[maybe_unused]] uint8_t __pad0c2c[0x4]; // 0xc2c
+	[[maybe_unused]] uint8_t __pad0cc4[0x4]; // 0xcc4
 public:
-	CAI_EnemyServices* m_pEnemyServices; // 0xc30	
-	CRandStopwatch m_GiveUpOnDeadEnemyTimer; // 0xc38	
-	CSimpleSimTimer m_FailChooseEnemyTimer; // 0xc4c	
-	GameTime_t m_flAcceptableTimeSeenEnemy; // 0xc54	
-	bool m_bSkippedChooseEnemy; // 0xc58	
-	bool m_bIgnoreUnseenEnemies; // 0xc59	
+	CAI_EnemyServices* m_pEnemyServices; // 0xcc8	
+	CRandStopwatch m_GiveUpOnDeadEnemyTimer; // 0xcd0	
+	CSimpleSimTimer m_FailChooseEnemyTimer; // 0xce4	
+	GameTime_t m_flAcceptableTimeSeenEnemy; // 0xcec	
+	bool m_bSkippedChooseEnemy; // 0xcf0	
+	bool m_bIgnoreUnseenEnemies; // 0xcf1	
 private:
-	[[maybe_unused]] uint8_t __pad0c5a[0x2]; // 0xc5a
+	[[maybe_unused]] uint8_t __pad0cf2[0x2]; // 0xcf2
 public:
-	CHandle< CBaseFilter > m_hEnemyFilter; // 0xc5c	
-	CUtlSymbolLarge m_iszEnemyFilterName; // 0xc60	
-	CHandle< CBaseEntity > m_hTargetEnt; // 0xc68	
-	bool m_bClearTargetOnScheduleEnd; // 0xc6c	
+	CHandle< CBaseFilter > m_hEnemyFilter; // 0xcf4	
+	CUtlSymbolLarge m_iszEnemyFilterName; // 0xcf8	
+	CHandle< CBaseEntity > m_hTargetEnt; // 0xd00	
+	bool m_bClearTargetOnScheduleEnd; // 0xd04	
 private:
-	[[maybe_unused]] uint8_t __pad0c6d[0x3]; // 0xc6d
+	[[maybe_unused]] uint8_t __pad0d05[0x3]; // 0xd05
 public:
-	GameTime_t m_flSoundWaitTime; // 0xc70	
-	int32_t m_nSoundPriority; // 0xc74	
-	bool m_bSuppressFootsteps; // 0xc78	
+	GameTime_t m_flSoundWaitTime; // 0xd08	
+	int32_t m_nSoundPriority; // 0xd0c	
+	bool m_bSuppressFootsteps; // 0xd10	
 private:
-	[[maybe_unused]] uint8_t __pad0c79[0x3]; // 0xc79
+	[[maybe_unused]] uint8_t __pad0d11[0x3]; // 0xd11
 public:
-	int32_t m_afCapability; // 0xc7c	
+	int32_t m_afCapability; // 0xd14	
 private:
-	[[maybe_unused]] uint8_t __pad0c80[0x170]; // 0xc80
+	[[maybe_unused]] uint8_t __pad0d18[0x170]; // 0xd18
 public:
-	float m_flGroundSpeed; // 0xdf0	
-	GameTime_t m_flMoveWaitFinished; // 0xdf4	
-	CHandle< CBaseEntity > m_hOpeningDoor; // 0xdf8	
+	float m_flGroundSpeed; // 0xe88	
+	GameTime_t m_flMoveWaitFinished; // 0xe8c	
+	CHandle< CBaseEntity > m_hOpeningDoor; // 0xe90	
 private:
-	[[maybe_unused]] uint8_t __pad0dfc[0x4]; // 0xdfc
+	[[maybe_unused]] uint8_t __pad0e94[0x4]; // 0xe94
 public:
-	CUnreachableTargetList m_UnreachableTargets; // 0xe00	
-	CHandle< CBaseEntity > m_hPathObstructor; // 0xe20	
-	float m_flJumpMaxRise; // 0xe24	
-	float m_flJumpMaxDrop; // 0xe28	
-	float m_flJumpMaxDist; // 0xe2c	
-	float m_flJumpMinDist; // 0xe30	
+	CUnreachableTargetList m_UnreachableTargets; // 0xe98	
+	CHandle< CBaseEntity > m_hPathObstructor; // 0xeb8	
+	float m_flJumpMaxRise; // 0xebc	
+	float m_flJumpMaxDrop; // 0xec0	
+	float m_flJumpMaxDist; // 0xec4	
+	float m_flJumpMinDist; // 0xec8	
 private:
-	[[maybe_unused]] uint8_t __pad0e34[0x4]; // 0xe34
+	[[maybe_unused]] uint8_t __pad0ecc[0x4]; // 0xecc
 public:
-	CAI_AnimGraphServices* m_pAnimGraphServices; // 0xe38	
-	bool m_bAnimGraphIsAnimatingDeath; // 0xe40	
-	bool m_bDeferredNavigation; // 0xe41	
+	CAI_FacingServices* m_pFacingServices; // 0xed0	
+	CAI_AnimGraphServices* m_pAnimGraphServices; // 0xed8	
+	bool m_bAnimGraphIsAnimatingDeath; // 0xee0	
+	bool m_bDeferredNavigation; // 0xee1	
 private:
-	[[maybe_unused]] uint8_t __pad0e42[0x6]; // 0xe42
+	[[maybe_unused]] uint8_t __pad0ee2[0x6]; // 0xee2
 public:
-	CAI_Scheduler m_Scheduler; // 0xe48	
-	CAI_Navigator* m_pNavigatorNavmesh; // 0xef0	
+	CAI_Scheduler m_Scheduler; // 0xee8	
+	CAI_Navigator* m_pNavigatorNavmesh; // 0xf90	
 private:
-	[[maybe_unused]] uint8_t __pad0ef8[0x18]; // 0xef8
+	[[maybe_unused]] uint8_t __pad0f98[0x18]; // 0xf98
 public:
-	CAI_Motor* m_pMotor; // 0xf10	
-	GameTime_t m_flTimeLastMovement; // 0xf18	
-	GameTime_t m_flTimeLastFootstep; // 0xf1c	
-	CSimpleSimTimer m_CheckOnGroundTimer; // 0xf20	
-	CUtlSymbolLarge m_strNavRestrictionVolume; // 0xf28	
-	Vector m_vDefaultEyeOffset; // 0xf30	
-	int32_t m_afMemory; // 0xf3c	
-	GameTime_t m_flLastAttackTime; // 0xf40	
-	GameTime_t m_flLastTookDamageTime; // 0xf44	
-	GameTime_t m_flLastTookDamageFromPlayerTime; // 0xf48	
-	Vector m_vecLastTookDamageAttackVector; // 0xf4c	
-	CUtlSymbolLarge m_iszSquadName; // 0xf58	
-	CUtlVector< SquadSlotNPCEntry_t > m_vecMySquadSlots; // 0xf60	
+	CAI_Motor* m_pMotor; // 0xfb0	
+	GameTime_t m_flTimeLastMovement; // 0xfb8	
+	GameTime_t m_flTimeLastFootstep; // 0xfbc	
+	CSimpleSimTimer m_CheckOnGroundTimer; // 0xfc0	
+	CUtlSymbolLarge m_strNavRestrictionVolume; // 0xfc8	
+	Vector m_vDefaultEyeOffset; // 0xfd0	
+	int32_t m_afMemory; // 0xfdc	
+	GameTime_t m_flLastAttackTime; // 0xfe0	
+	GameTime_t m_flLastTookDamageTime; // 0xfe4	
+	GameTime_t m_flLastTookDamageFromPlayerTime; // 0xfe8	
+	Vector m_vecLastTookDamageAttackVector; // 0xfec	
+	CUtlSymbolLarge m_iszSquadName; // 0xff8	
+	CUtlVector< SquadSlotNPCEntry_t > m_vecMySquadSlots; // 0x1000	
 private:
-	[[maybe_unused]] uint8_t __pad0f78[0x8]; // 0xf78
+	[[maybe_unused]] uint8_t __pad1018[0x8]; // 0x1018
 public:
-	int32_t m_nPrevHealthDuringModifyDamage; // 0xf80	
+	int32_t m_nPrevHealthDuringModifyDamage; // 0x1020	
 private:
-	[[maybe_unused]] uint8_t __pad0f84[0x4]; // 0xf84
+	[[maybe_unused]] uint8_t __pad1024[0x4]; // 0x1024
 public:
 	// MNetworkEnable
-	bool m_bFadeCorpse; // 0xf88	
+	bool m_bFadeCorpse; // 0x1028	
 	// MNetworkEnable
-	bool m_bImportantRagdoll; // 0xf89	
+	bool m_bImportantRagdoll; // 0x1029	
 private:
-	[[maybe_unused]] uint8_t __pad0f8a[0x6]; // 0xf8a
+	[[maybe_unused]] uint8_t __pad102a[0x6]; // 0x102a
 public:
-	CTakeDamageResult m_deathBlowResult; // 0xf90	
-	bool m_bDidDeathCleanup; // 0xfb0	
-	bool m_bReceivedEnemyDeadNotification; // 0xfb1	
+	CTakeDamageResult m_deathBlowResult; // 0x1030	
+	bool m_bDidDeathCleanup; // 0x1050	
+	bool m_bReceivedEnemyDeadNotification; // 0x1051	
 private:
-	[[maybe_unused]] uint8_t __pad0fb2[0x2]; // 0xfb2
+	[[maybe_unused]] uint8_t __pad1052[0x2]; // 0x1052
 public:
-	GameTime_t m_flWaitFinished; // 0xfb4	
-	bool m_fNoDamageDecal; // 0xfb8	
+	GameTime_t m_flWaitFinished; // 0x1054	
+	bool m_fNoDamageDecal; // 0x1058	
 private:
-	[[maybe_unused]] uint8_t __pad0fb9[0x7]; // 0xfb9
+	[[maybe_unused]] uint8_t __pad1059[0x7]; // 0x1059
 public:
-	CUtlVector< CHandle< CBaseEntity > >* m_pVecAttachments; // 0xfc0	
-	CEntityIOOutput m_OnDamaged; // 0xfc8	
-	CEntityIOOutput m_OnDeath; // 0xff0	
-	CEntityIOOutput m_OnQuarterHealth; // 0x1018	
-	CEntityIOOutput m_OnHalfHealth; // 0x1040	
-	CEntityIOOutput m_OnThreeQuarterHealth; // 0x1068	
-	CEntityOutputTemplate< CHandle< CBaseEntity > > m_OnFoundEnemy; // 0x1090	
-	CEntityIOOutput m_OnLostEnemy; // 0x10b8	
-	CEntityIOOutput m_OnLostPlayer; // 0x10e0	
-	CEntityIOOutput m_OnDamagedByPlayer; // 0x1108	
-	CEntityIOOutput m_OnDamagedByPlayerSquad; // 0x1130	
-	CEntityIOOutput m_OnPlayerUse; // 0x1158	
-	CEntityIOOutput m_OnUse; // 0x1180	
-	CEntityIOOutput m_OnStartTouchMaterial; // 0x11a8	
-	CEntityIOOutput m_OnEndTouchMaterial; // 0x11d0	
-	CEntityIOOutput m_OnLostEnemyLOS; // 0x11f8	
-	CEntityIOOutput m_OnLostPlayerLOS; // 0x1220	
-	uint64_t m_nAITraceMask; // 0x1248	
-	float m_flThinkTime; // 0x1250	
+	CUtlVector< CHandle< CBaseEntity > >* m_pVecAttachments; // 0x1060	
+	CEntityIOOutput m_OnDamaged; // 0x1068	
+	CEntityIOOutput m_OnDeath; // 0x1090	
+	CEntityIOOutput m_OnQuarterHealth; // 0x10b8	
+	CEntityIOOutput m_OnHalfHealth; // 0x10e0	
+	CEntityIOOutput m_OnThreeQuarterHealth; // 0x1108	
+	CEntityOutputTemplate< CHandle< CBaseEntity > > m_OnFoundEnemy; // 0x1130	
+	CEntityIOOutput m_OnLostEnemy; // 0x1158	
+	CEntityIOOutput m_OnLostPlayer; // 0x1180	
+	CEntityIOOutput m_OnDamagedByPlayer; // 0x11a8	
+	CEntityIOOutput m_OnDamagedByPlayerSquad; // 0x11d0	
+	CEntityIOOutput m_OnPlayerUse; // 0x11f8	
+	CEntityIOOutput m_OnUse; // 0x1220	
+	CEntityIOOutput m_OnStartTouchMaterial; // 0x1248	
+	CEntityIOOutput m_OnEndTouchMaterial; // 0x1270	
+	CEntityIOOutput m_OnLostEnemyLOS; // 0x1298	
+	CEntityIOOutput m_OnLostPlayerLOS; // 0x12c0	
+	uint64_t m_nAITraceMask; // 0x12e8	
+	bool m_bDynamicAILOD; // 0x12f0	
 private:
-	[[maybe_unused]] uint8_t __pad1254[0x1c]; // 0x1254
+	[[maybe_unused]] uint8_t __pad12f1[0x3]; // 0x12f1
 public:
-	int32_t m_nDebugCurIndex; // 0x1270	
-	
-	// Static fields:
-	static CUtlSymbolLarge &Get_sm_iszPlayerSquad(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_BaseNPC")->m_static_fields[0]->m_instance);};
-	static int32_t &Get_sm_nDebugBits(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_BaseNPC")->m_static_fields[1]->m_instance);};
-	static int32_t &Get_sm_nDebugPauseIndex(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_BaseNPC")->m_static_fields[2]->m_instance);};
+	AILOD_t m_aiLOD; // 0x12f4	
+	float m_flThinkTime; // 0x12f8	
+private:
+	[[maybe_unused]] uint8_t __pad12fc[0x1c]; // 0x12fc
+public:
+	int32_t m_nDebugCurIndex; // 0x1318	
 	
 	// Datamap fields:
-	// CAI_Senses m_pSenses; // 0xba0
-	// void m_pSquad; // 0xf78
+	// CAI_Senses m_pSenses; // 0xc38
+	// void m_pSquad; // 0x1018
 	// void CAI_BaseNPCForceSelectedGoLoopThink; // 0x0
-	// void m_vecTaskThinkTimes; // 0x1258
-	// CAI_Pathfinder m_pPathfinderNavmesh; // 0xef8
-	// void m_hDamagedFX; // 0xf84
+	// void m_vecTaskThinkTimes; // 0x1300
+	// CAI_Pathfinder m_pPathfinderNavmesh; // 0xf98
+	// void m_hDamagedFX; // 0x1024
 	// CUtlSymbolLarge InputSetEnemyFilter; // 0x0
 	// int32_t InputOverrideHealth; // 0x0
 	// int32_t InputSetHealth; // 0x0

@@ -20,8 +20,5 @@ private:
 public:
 	uint32_t m_nToolMaterialHash; // 0x14	
 	CGlobalSymbol m_sHitGroupName; // 0x18	
-	
-	// Static fields:
-	static CGlobalSymbol &Get_DefaultHitgroupName(){return *reinterpret_cast<CGlobalSymbol*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("RnShapeDesc_t")->m_static_fields[0]->m_instance);};
 };
 

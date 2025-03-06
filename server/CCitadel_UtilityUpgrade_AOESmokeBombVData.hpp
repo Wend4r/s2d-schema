@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x16d8
+// Size: 0x1710
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_UtilityUpgrade_AOESmokeBombVData : public CitadelItemVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastCompleteParticle; // 0x15d8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastCompleteParticle; // 0x1610	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strBuffGainedSound; // 0x16b8	
+	CSoundEventName m_strBuffGainedSound; // 0x16f0	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_InvisModifier; // 0x16c8	
+	CEmbeddedSubclass< CCitadelModifier > m_InvisModifier; // 0x1700	
 };
 

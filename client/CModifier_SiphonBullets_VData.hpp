@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x858
+// Size: 0x878
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,12 +12,12 @@ class CModifier_SiphonBullets_VData : public CCitadel_Modifier_BaseEventProcVDat
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_StealWatcherModifier; // 0x668	
-	CEmbeddedSubclass< CCitadelModifier > m_HealModifier; // 0x678	
+	CEmbeddedSubclass< CCitadelModifier > m_StealWatcherModifier; // 0x688	
+	CEmbeddedSubclass< CCitadelModifier > m_HealModifier; // 0x698	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x688	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x768	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x6a8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x788	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ExplodeSound; // 0x848	
+	CSoundEventName m_ExplodeSound; // 0x868	
 };
 

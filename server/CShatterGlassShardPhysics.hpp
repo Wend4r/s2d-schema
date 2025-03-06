@@ -5,7 +5,7 @@
 struct shard_model_desc_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe18
+// Size: 0xe60
 // Has VTable
 // 
 // MNetworkExcludeByName "m_hModel"
@@ -13,12 +13,12 @@ struct shard_model_desc_t;
 class CShatterGlassShardPhysics : public CPhysicsProp
 {
 public:
-	bool m_bDebris; // 0xd90	
+	bool m_bDebris; // 0xdd8	
 private:
-	[[maybe_unused]] uint8_t __pad0d91[0x3]; // 0xd91
+	[[maybe_unused]] uint8_t __pad0dd9[0x3]; // 0xdd9
 public:
-	uint32_t m_hParentShard; // 0xd94	
+	uint32_t m_hParentShard; // 0xddc	
 	// MNetworkEnable
-	shard_model_desc_t m_ShardDesc; // 0xd98	
+	shard_model_desc_t m_ShardDesc; // 0xde0	
 };
 

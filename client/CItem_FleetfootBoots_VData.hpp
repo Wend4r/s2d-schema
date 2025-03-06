@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x15f8
+// Size: 0x1630
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CItem_FleetfootBoots_VData : public CitadelItemVData
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_FleetfootBootsModifier; // 0x15d8	
-	CEmbeddedSubclass< CCitadelModifier > m_FleetfootBootsBonusClipModifier; // 0x15e8	
+	CEmbeddedSubclass< CCitadelModifier > m_FleetfootBootsModifier; // 0x1610	
+	CEmbeddedSubclass< CCitadelModifier > m_FleetfootBootsBonusClipModifier; // 0x1620	
 };
 

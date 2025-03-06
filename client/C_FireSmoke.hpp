@@ -4,10 +4,9 @@
 
 struct GameTime_t;
 struct TimedEvent;
-struct CFireOverlay;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5d8
+// Size: 0x580
 // Has VTable
 // 
 // MNetworkOverride "m_flScale"
@@ -18,25 +17,24 @@ class C_FireSmoke : public C_BaseFire
 {
 public:
 	// MNetworkEnable
-	int32_t m_nFlameModelIndex; // 0x570	
+	int32_t m_nFlameModelIndex; // 0x520	
 	// MNetworkEnable
-	int32_t m_nFlameFromAboveModelIndex; // 0x574	
-	float m_flScaleRegister; // 0x578	
-	float m_flScaleStart; // 0x57c	
-	float m_flScaleEnd; // 0x580	
-	GameTime_t m_flScaleTimeStart; // 0x584	
-	GameTime_t m_flScaleTimeEnd; // 0x588	
-	float m_flChildFlameSpread; // 0x58c	
+	int32_t m_nFlameFromAboveModelIndex; // 0x524	
+	float m_flScaleRegister; // 0x528	
+	float m_flScaleStart; // 0x52c	
+	float m_flScaleEnd; // 0x530	
+	GameTime_t m_flScaleTimeStart; // 0x534	
+	GameTime_t m_flScaleTimeEnd; // 0x538	
+	float m_flChildFlameSpread; // 0x53c	
 private:
-	[[maybe_unused]] uint8_t __pad0590[0x10]; // 0x590
+	[[maybe_unused]] uint8_t __pad0540[0x10]; // 0x540
 public:
-	float m_flClipPerc; // 0x5a0	
-	bool m_bClipTested; // 0x5a4	
-	bool m_bFadingOut; // 0x5a5	
+	float m_flClipPerc; // 0x550	
+	bool m_bClipTested; // 0x554	
+	bool m_bFadingOut; // 0x555	
 private:
-	[[maybe_unused]] uint8_t __pad05a6[0x2]; // 0x5a6
+	[[maybe_unused]] uint8_t __pad0556[0x2]; // 0x556
 public:
-	TimedEvent m_tParticleSpawn; // 0x5a8	
-	CFireOverlay* m_pFireOverlay; // 0x5b0	
+	TimedEvent m_tParticleSpawn; // 0x558	
 };
 

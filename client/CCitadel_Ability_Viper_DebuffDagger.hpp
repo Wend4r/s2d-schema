@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd80
+// Size: 0xd30
 // Has VTable
 class CCitadel_Ability_Viper_DebuffDagger : public C_CitadelBaseAbility
 {

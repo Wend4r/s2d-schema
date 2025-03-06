@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x650
+// Size: 0x670
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CModifierItemPickupAuraTargetVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Timers"
-	float m_PickupTimer; // 0x638	
+	float m_PickupTimer; // 0x658	
 private:
-	[[maybe_unused]] uint8_t __pad063c[0x4]; // 0x63c
+	[[maybe_unused]] uint8_t __pad065c[0x4]; // 0x65c
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_PickupTimerModifier; // 0x640	
+	CEmbeddedSubclass< CCitadelModifier > m_PickupTimerModifier; // 0x660	
 };
 

@@ -2,13 +2,14 @@
 
 #include <cstdint>
 
+struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbb0
+// Size: 0xc90
 // Has VTable
 class CAbility_Operative_UmbrellaManeuver : public CCitadelBaseAbility
 {
 public:
-	// No schema binary for binding
+	ParticleIndex_t m_ChannelParticle; // 0xb00	
 };
 

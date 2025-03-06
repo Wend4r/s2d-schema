@@ -4,40 +4,40 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1ab0
+// Size: 0x1ae8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CAbilityPowerSlashVData : public CCitadelYamatoBaseVData
 {
 public:
-	float m_flAirDrag; // 0x1598	
-	float m_flMaxPowerPadding; // 0x159c	
-	float m_flEffectGroundTrace; // 0x15a0	
-	float m_flWhizbyMaxRange; // 0x15a4	
-	float m_flStartPosTestCapsuleLength; // 0x15a8	
-	float m_flCoverLOSBackDist; // 0x15ac	
+	float m_flAirDrag; // 0x15d0	
+	float m_flMaxPowerPadding; // 0x15d4	
+	float m_flEffectGroundTrace; // 0x15d8	
+	float m_flWhizbyMaxRange; // 0x15dc	
+	float m_flStartPosTestCapsuleLength; // 0x15e0	
+	float m_flCoverLOSBackDist; // 0x15e4	
 	// MPropertyDescription "Visual offset for the origin of the long-slash particle effect"
-	Vector m_vecLongEffectOffset; // 0x15b0	
+	Vector m_vecLongEffectOffset; // 0x15e8	
 private:
-	[[maybe_unused]] uint8_t __pad15bc[0x4]; // 0x15bc
+	[[maybe_unused]] uint8_t __pad15f4[0x4]; // 0x15f4
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PowerSlashParticle; // 0x15c0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PowerSlashFullParticle; // 0x16a0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x1780	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x1860	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PowerUpParticle; // 0x1940	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PowerSlashParticle; // 0x15f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PowerSlashFullParticle; // 0x16d8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x17b8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x1898	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PowerUpParticle; // 0x1978	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strStartSound; // 0x1a20	
-	CSoundEventName m_strHitConfirmSound; // 0x1a30	
-	CSoundEventName m_strPowerUp1Sounds; // 0x1a40	
-	CSoundEventName m_strPowerUp2Sounds; // 0x1a50	
-	CSoundEventName m_strPowerUp3Sounds; // 0x1a60	
-	CSoundEventName m_strWhizbySound; // 0x1a70	
-	CSoundEventName m_strSlashSound; // 0x1a80	
-	CSoundEventName m_strSlashFullSound; // 0x1a90	
+	CSoundEventName m_strStartSound; // 0x1a58	
+	CSoundEventName m_strHitConfirmSound; // 0x1a68	
+	CSoundEventName m_strPowerUp1Sounds; // 0x1a78	
+	CSoundEventName m_strPowerUp2Sounds; // 0x1a88	
+	CSoundEventName m_strPowerUp3Sounds; // 0x1a98	
+	CSoundEventName m_strWhizbySound; // 0x1aa8	
+	CSoundEventName m_strSlashSound; // 0x1ab8	
+	CSoundEventName m_strSlashFullSound; // 0x1ac8	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_SlowModifier; // 0x1aa0	
+	CEmbeddedSubclass< CBaseModifier > m_SlowModifier; // 0x1ad8	
 };
 

@@ -5,7 +5,7 @@
 struct CPulse_ResumePoint;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xd8
+// Size: 0xf8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -22,9 +22,6 @@ private:
 	[[maybe_unused]] uint8_t __pad0061[0x7]; // 0x61
 public:
 	CPulse_ResumePoint m_OnFinished; // 0x68	
-	CPulse_ResumePoint m_OnCanceled; // 0xa0	
-	
-	// Static fields:
-	static char* &Get_m_pTagName(){return *reinterpret_cast<char**>(interfaces::g_schema->FindTypeScopeForModule("pulse_system.dll")->FindDeclaredClass("CPulseCell_FireCursors")->m_static_fields[0]->m_instance);};
+	CPulse_ResumePoint m_OnCanceled; // 0xb0	
 };
 

@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5e0
+// Size: 0x5e8
 // Has VTable
 // Is Abstract
 class CBaseNPCMaker : public CBaseEntity
@@ -34,11 +34,13 @@ public:
 	CHandle< CBaseEntity > m_hIgnoreEntity; // 0x5ac	
 	CUtlSymbolLarge m_iszIgnoreEnt; // 0x5b0	
 	CUtlSymbolLarge m_iszDestinationGroup; // 0x5b8	
-	CHandle< CBaseEntity > m_hSpawnEntity; // 0x5c0	
+	CHandle< CNPCSpawnDestination > m_hSpawnEntity; // 0x5c0	
 	CHandle< CAI_BaseNPC > m_hSpawnedNPC; // 0x5c4	
 	int32_t m_nCurrentBatchCount; // 0x5c8	
-	CBaseNPCMaker::VisibilityCriterion_t m_CriterionVisibility; // 0x5cc	
-	CBaseNPCMaker::ThreeStateDist_t m_CriterionDistance; // 0x5d0	
+	int32_t m_nNumSpawnDestinations; // 0x5cc	
+	int32_t m_nNumValidDestinations; // 0x5d0	
+	CBaseNPCMaker::VisibilityCriterion_t m_CriterionVisibility; // 0x5d4	
+	CBaseNPCMaker::ThreeStateDist_t m_CriterionDistance; // 0x5d8	
 	
 	// Datamap fields:
 	// void InputSpawn; // 0x0

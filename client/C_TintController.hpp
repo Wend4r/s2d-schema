@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x578
+// Size: 0x528
 // Has VTable
 class C_TintController : public C_BaseEntity
 {

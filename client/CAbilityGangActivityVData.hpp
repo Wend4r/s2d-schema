@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x15a0
+// Size: 0x15d8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CAbilityGangActivityVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_AbilitySwap; // 0x1590	
+	CEmbeddedSubclass< CCitadelModifier > m_AbilitySwap; // 0x15c8	
 };
 

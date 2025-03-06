@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x120
+// Size: 0x118
 // Has VTable
 class CBuoyancyHelper
 {

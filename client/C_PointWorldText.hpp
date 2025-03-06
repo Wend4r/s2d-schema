@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb28
+// Size: 0xad8
 // Has VTable
 // 
 // MNetworkVarNames "char m_messageText"
@@ -26,50 +26,50 @@
 class C_PointWorldText : public C_ModelPointEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0858[0x8]; // 0x858
+	[[maybe_unused]] uint8_t __pad0808[0x8]; // 0x808
 public:
-	bool m_bForceRecreateNextUpdate; // 0x860	
+	bool m_bForceRecreateNextUpdate; // 0x810	
 private:
-	[[maybe_unused]] uint8_t __pad0861[0x17]; // 0x861
+	[[maybe_unused]] uint8_t __pad0811[0x17]; // 0x811
 public:
 	// MNetworkEnable
-	char m_messageText[512]; // 0x878	
+	char m_messageText[512]; // 0x828	
 	// MNetworkEnable
-	char m_FontName[64]; // 0xa78	
+	char m_FontName[64]; // 0xa28	
 	// MNetworkEnable
-	char m_BackgroundMaterialName[64]; // 0xab8	
+	char m_BackgroundMaterialName[64]; // 0xa68	
 	// MNetworkEnable
-	bool m_bEnabled; // 0xaf8	
+	bool m_bEnabled; // 0xaa8	
 	// MNetworkEnable
-	bool m_bFullbright; // 0xaf9	
+	bool m_bFullbright; // 0xaa9	
 private:
-	[[maybe_unused]] uint8_t __pad0afa[0x2]; // 0xafa
+	[[maybe_unused]] uint8_t __pad0aaa[0x2]; // 0xaaa
 public:
 	// MNetworkEnable
-	float m_flWorldUnitsPerPx; // 0xafc	
+	float m_flWorldUnitsPerPx; // 0xaac	
 	// MNetworkEnable
-	float m_flFontSize; // 0xb00	
+	float m_flFontSize; // 0xab0	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0xb04	
+	float m_flDepthOffset; // 0xab4	
 	// MNetworkEnable
-	bool m_bDrawBackground; // 0xb08	
+	bool m_bDrawBackground; // 0xab8	
 private:
-	[[maybe_unused]] uint8_t __pad0b09[0x3]; // 0xb09
+	[[maybe_unused]] uint8_t __pad0ab9[0x3]; // 0xab9
 public:
 	// MNetworkEnable
-	float m_flBackgroundBorderWidth; // 0xb0c	
+	float m_flBackgroundBorderWidth; // 0xabc	
 	// MNetworkEnable
-	float m_flBackgroundBorderHeight; // 0xb10	
+	float m_flBackgroundBorderHeight; // 0xac0	
 	// MNetworkEnable
-	float m_flBackgroundWorldToUV; // 0xb14	
+	float m_flBackgroundWorldToUV; // 0xac4	
 	// MNetworkEnable
-	Color m_Color; // 0xb18	
+	Color m_Color; // 0xac8	
 	// MNetworkEnable
-	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xb1c	
+	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xacc	
 	// MNetworkEnable
-	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xb20	
+	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xad0	
 	// MNetworkEnable
-	PointWorldTextReorientMode_t m_nReorientMode; // 0xb24	
+	PointWorldTextReorientMode_t m_nReorientMode; // 0xad4	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

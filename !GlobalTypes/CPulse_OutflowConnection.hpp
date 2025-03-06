@@ -6,7 +6,7 @@ struct PulseRuntimeChunkIndex_t;
 struct PulseRegisterMap_t;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x38
+// Size: 0x48
 class CPulse_OutflowConnection
 {
 public:

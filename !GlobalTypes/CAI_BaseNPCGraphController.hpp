@@ -4,21 +4,21 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa88
+// Size: 0xad0
 // Has VTable
 class CAI_BaseNPCGraphController : public CBaseAnimGraphAnimGraphController
 {
 public:
-	CAnimGraph1ParamRef< char* > m_sCurrScheduleName; // 0xc8	
-	CAnimGraph1ParamRef< char* > m_sCurrTaskName; // 0xe8	
-	CAnimGraphParamOptionalRef< char* > m_sTaskHandshakeType; // 0x108	
-	CAnimGraph1ParamRef< char* > m_sTaskHandshakeTypeShared; // 0x130	
+	CAnimGraph1ParamRef< CGlobalSymbol > m_sCurrScheduleName; // 0xc8	
+	CAnimGraph1ParamRef< CGlobalSymbol > m_sCurrTaskName; // 0xe8	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sTaskHandshakeType; // 0x108	
+	CAnimGraph1ParamRef< CGlobalSymbol > m_sTaskHandshakeTypeShared; // 0x130	
 	CAnimGraph1ParamRef< bool > m_bTaskHandshakeRestart; // 0x150	
-	CAnimGraphParamOptionalRef< char* > m_sMovementHandshakeType; // 0x168	
-	CAnimGraph1ParamRef< char* > m_sMovementHandshakeTypeShared; // 0x190	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementHandshakeType; // 0x168	
+	CAnimGraph1ParamRef< CGlobalSymbol > m_sMovementHandshakeTypeShared; // 0x190	
 	CAnimGraph1ParamRef< bool > m_bMovementHandshakeRestart; // 0x1b0	
-	CAnimGraphParamOptionalRef< char* > m_sNavLinkType; // 0x1c8	
-	CAnimGraph1ParamRef< char* > m_sNavLinkTypeShared; // 0x1f0	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sNavLinkType; // 0x1c8	
+	CAnimGraph1ParamRef< CGlobalSymbol > m_sNavLinkTypeShared; // 0x1f0	
 	CAnimGraphParamOptionalRef< float32 > m_flPathDistanceToNavLink; // 0x210	
 	CAnimGraphParamOptionalRef< bool > m_bNavLinkIsOnPath; // 0x230	
 	CAnimGraphParamOptionalRef< Vector > m_vecNavLinkTarget; // 0x250	
@@ -31,67 +31,65 @@ public:
 	CAnimGraphParamOptionalRef< Vector > m_vMovementPlantedTurnFacePosition; // 0x330	
 	CAnimGraphParamOptionalRef< Vector > m_vMovementDirection; // 0x350	
 	CAnimGraphParamOptionalRef< bool > m_bMovementCodeDriven; // 0x370	
-	CAnimGraphParamOptionalRef< float32 > m_flMovementLean; // 0x390	
-	CAnimGraphParamOptionalRef< float32 > m_flMovementDesiredHeading; // 0x3b0	
-	CAnimGraphParamOptionalRef< float32 > m_flMovementDesiredHeadingDelta; // 0x3d0	
-	CAnimGraphParamOptionalRef< float32 > m_flMovementHeading; // 0x3f0	
-	CAnimGraphParamOptionalRef< float32 > m_flMovementTargetSpeed; // 0x410	
-	CAnimGraphParamOptionalRef< float32 > m_flMovementCurrentSpeed; // 0x430	
-	CAnimGraphParamOptionalRef< char* > m_sMovementHeading; // 0x450	
-	CAnimGraphParamOptionalRef< char* > m_sMovementDesiredHeading; // 0x478	
-	CAnimGraphParamOptionalRef< char* > m_sMovementStopType; // 0x4a0	
-	CAnimGraphParamOptionalRef< char* > m_sMovementState; // 0x4c8	
-	CAnimGraphParamOptionalRef< char* > m_sMovementHandshakeState; // 0x4f0	
-	CAnimGraphParamOptionalRef< char* > m_sMovementBadZoneState; // 0x518	
-	CAnimGraphTagOptionalRef m_sMovementStopsEnabled; // 0x540	
-	CAnimGraphTagOptionalRef m_sMovementInstantStopsEnabled; // 0x558	
-	CAnimGraphTagOptionalRef m_sMovementStartsEnabled; // 0x570	
-	CAnimGraphTagOptionalRef m_sMovementIdleTurnsEnabled; // 0x588	
-	CAnimGraphTagOptionalRef m_sMovementHopsEnabled; // 0x5a0	
-	CAnimGraphTagOptionalRef m_sMovementPlantedTurnsEnabled; // 0x5b8	
-	CAnimGraphTagOptionalRef m_sMovementStrafeSupported; // 0x5d0	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockAll; // 0x5e8	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdle; // 0x600	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockLoop; // 0x618	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdleTurn; // 0x630	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockStart; // 0x648	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockStop; // 0x660	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockHop; // 0x678	
-	CAnimGraphTagOptionalRef m_sMovementTransitionBlockPlantedTurn; // 0x690	
-	CAnimGraphTagOptionalRef m_sMovementRightFootDown; // 0x6a8	
-	CAnimGraphTagOptionalRef m_sMovementLeftFootDown; // 0x6c0	
-	CAnimGraphTagOptionalRef m_sMovementRightBadZonePassAllowed; // 0x6d8	
-	CAnimGraphTagOptionalRef m_sMovementLeftBadZonePassAllowed; // 0x6f0	
-	CAnimGraphParamOptionalRef< float32 > m_flEnemyDistance; // 0x708	
-	CAnimGraphParamOptionalRef< float32 > m_flEnemyDirection; // 0x728	
-	CAnimGraphParamOptionalRef< bool > m_bCanSeeEnemy; // 0x748	
-	CAnimGraphParamOptionalRef< bool > m_bEnemyFacingMe; // 0x768	
-	CAnimGraphParamOptionalRef< bool > m_bHitTrigger; // 0x788	
-	CAnimGraphParamOptionalRef< Vector > m_vecHitDirection; // 0x7a8	
-	CAnimGraphParamOptionalRef< float32 > m_flHitHeading; // 0x7c8	
-	CAnimGraphParamOptionalRef< Vector > m_vecHitOffset; // 0x7e8	
-	CAnimGraphParamOptionalRef< float32 > m_flHitStrength; // 0x808	
-	CAnimGraphParamOptionalRef< char* > m_pszHitDamageType; // 0x828	
-	CAnimGraphParamOptionalRef< char* > m_pszDeathHitLocation; // 0x850	
-	CAnimGraphParamOptionalRef< int32 > m_nHitBone; // 0x878	
-	CAnimGraphParamOptionalRef< char* > m_pszNPCState; // 0x898	
-	CAnimGraphParamOptionalRef< bool > m_bStunned; // 0x8c0	
-	CAnimGraphParamOptionalRef< bool > m_bLookTargetChargedAutoclear; // 0x8e0	
-	CAnimGraphParamOptionalRef< char* > m_sBodyIdle; // 0x900	
-	CAnimGraphParamOptionalRef< char* > m_sFlashlightMode; // 0x928	
-	CAnimGraphParamOptionalRef< char* > m_sFacingReason; // 0x950	
-	CAnimGraphTagOptionalRef m_sFacingModeUsePath; // 0x978	
-	CAnimGraphTagOptionalRef m_sAllowMovementOffPath; // 0x990	
-	CAnimGraphTagOptionalRef m_sKeepPathActiveStop; // 0x9a8	
-	CAnimGraphParamOptionalRef< bool > m_bMoveSolveNudgeActive; // 0x9c0	
-	CAnimGraphParamOptionalRef< float32 > m_flMoveSolveNudgeYaw; // 0x9e0	
-	CAnimGraphParamOptionalRef< char* > m_pszDoorOpenAction; // 0xa00	
-	CAnimGraphParamOptionalRef< float32 > m_flDistanceToDoor; // 0xa28	
-	CAnimGraphParamOptionalRef< bool > m_bDoorLeft; // 0xa48	
-	CAnimGraphParamOptionalRef< float32 > m_flBlinkAmount; // 0xa68	
-	
-	// Static fields:
-	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CAI_BaseNPCGraphController")->m_static_fields[0]->m_instance);};
-	static bool &Get_s_bSchemaTest(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CAI_BaseNPCGraphController")->m_static_fields[1]->m_instance);};
+	CAnimGraphParamOptionalRef< bool > m_bMovementShouldMove; // 0x390	
+	CAnimGraphParamOptionalRef< float32 > m_flMovementLean; // 0x3b0	
+	CAnimGraphParamOptionalRef< float32 > m_flMovementDesiredHeading; // 0x3d0	
+	CAnimGraphParamOptionalRef< float32 > m_flMovementDesiredHeadingDelta; // 0x3f0	
+	CAnimGraphParamOptionalRef< float32 > m_flMovementHeading; // 0x410	
+	CAnimGraphParamOptionalRef< float32 > m_flMovementTargetSpeed; // 0x430	
+	CAnimGraphParamOptionalRef< float32 > m_flMovementCurrentSpeed; // 0x450	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementHeading; // 0x470	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementDesiredHeading; // 0x498	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementStopType; // 0x4c0	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementState; // 0x4e8	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementHandshakeState; // 0x510	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementBadZoneState; // 0x538	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sMovementStrafingState; // 0x560	
+	CAnimGraphTagOptionalRef m_sMovementStopsEnabled; // 0x588	
+	CAnimGraphTagOptionalRef m_sMovementInstantStopsEnabled; // 0x5a0	
+	CAnimGraphTagOptionalRef m_sMovementStartsEnabled; // 0x5b8	
+	CAnimGraphTagOptionalRef m_sMovementIdleTurnsEnabled; // 0x5d0	
+	CAnimGraphTagOptionalRef m_sMovementHopsEnabled; // 0x5e8	
+	CAnimGraphTagOptionalRef m_sMovementPlantedTurnsEnabled; // 0x600	
+	CAnimGraphTagOptionalRef m_sMovementStrafeSupported; // 0x618	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockAll; // 0x630	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdle; // 0x648	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockLoop; // 0x660	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdleTurn; // 0x678	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockStart; // 0x690	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockStop; // 0x6a8	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockHop; // 0x6c0	
+	CAnimGraphTagOptionalRef m_sMovementTransitionBlockPlantedTurn; // 0x6d8	
+	CAnimGraphTagOptionalRef m_sMovementRightFootDown; // 0x6f0	
+	CAnimGraphTagOptionalRef m_sMovementLeftFootDown; // 0x708	
+	CAnimGraphTagOptionalRef m_sMovementRightBadZonePassAllowed; // 0x720	
+	CAnimGraphTagOptionalRef m_sMovementLeftBadZonePassAllowed; // 0x738	
+	CAnimGraphParamOptionalRef< float32 > m_flEnemyDistance; // 0x750	
+	CAnimGraphParamOptionalRef< float32 > m_flEnemyDirection; // 0x770	
+	CAnimGraphParamOptionalRef< bool > m_bCanSeeEnemy; // 0x790	
+	CAnimGraphParamOptionalRef< bool > m_bEnemyFacingMe; // 0x7b0	
+	CAnimGraphParamOptionalRef< bool > m_bHitTrigger; // 0x7d0	
+	CAnimGraphParamOptionalRef< Vector > m_vecHitDirection; // 0x7f0	
+	CAnimGraphParamOptionalRef< float32 > m_flHitHeading; // 0x810	
+	CAnimGraphParamOptionalRef< Vector > m_vecHitOffset; // 0x830	
+	CAnimGraphParamOptionalRef< float32 > m_flHitStrength; // 0x850	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_pszHitDamageType; // 0x870	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_pszDeathHitLocation; // 0x898	
+	CAnimGraphParamOptionalRef< int32 > m_nHitBone; // 0x8c0	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_pszNPCState; // 0x8e0	
+	CAnimGraphParamOptionalRef< bool > m_bStunned; // 0x908	
+	CAnimGraphParamOptionalRef< bool > m_bLookTargetChargedAutoclear; // 0x928	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sBodyIdle; // 0x948	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sFlashlightMode; // 0x970	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_sFacingReason; // 0x998	
+	CAnimGraphTagOptionalRef m_sFacingModeUsePath; // 0x9c0	
+	CAnimGraphTagOptionalRef m_sAllowMovementOffPath; // 0x9d8	
+	CAnimGraphTagOptionalRef m_sKeepPathActiveStop; // 0x9f0	
+	CAnimGraphParamOptionalRef< bool > m_bMoveSolveNudgeActive; // 0xa08	
+	CAnimGraphParamOptionalRef< float32 > m_flMoveSolveNudgeYaw; // 0xa28	
+	CAnimGraphParamOptionalRef< CGlobalSymbol > m_pszDoorOpenAction; // 0xa48	
+	CAnimGraphParamOptionalRef< float32 > m_flDistanceToDoor; // 0xa70	
+	CAnimGraphParamOptionalRef< bool > m_bDoorLeft; // 0xa90	
+	CAnimGraphParamOptionalRef< float32 > m_flBlinkAmount; // 0xab0	
 };
 

@@ -15,23 +15,19 @@ public:
 	// MPropertyDescription "Why type of input is required for this hint"
 	EHUDElementButtonType_t m_eButtonHintType; // 0xc	
 	// MPropertyDescription "What button is used in this hint"
+	// MPropertySuppressExpr "m_bButton1IsSlot == true"
 	InputBitMask_t m_nButton1; // 0x10	
 	bool m_bButton1IsSlot; // 0x18	
 private:
-	[[maybe_unused]] uint8_t __pad0019[0x7]; // 0x19
+	[[maybe_unused]] uint8_t __pad0019[0xf]; // 0x19
 public:
-	// MPropertySuppressExpr "m_eButton != EButtonHint_AbilityKey"
-	// MPropertyDescription "The default slot's binding might not be right, so you can set an override button to use here"
-	CUtlString m_strBindingOverride1; // 0x20	
 	// MPropertyDescription "What's the 2nd button used in this hint"
+	// MPropertySuppressExpr "m_bButton2IsSlot == true"
 	InputBitMask_t m_nButton2; // 0x28	
 	bool m_bButton2IsSlot; // 0x30	
 private:
-	[[maybe_unused]] uint8_t __pad0031[0x7]; // 0x31
+	[[maybe_unused]] uint8_t __pad0031[0xf]; // 0x31
 public:
-	// MPropertySuppressExpr "m_eButton != EButtonHint_AbilityKey || m_eButtonHintType != EButtonHintType_TwoButtonCombination"
-	// MPropertyDescription "The default slot's binding might not be right, so you can set an override button to use here"
-	CUtlString m_strBindingOverride2; // 0x38	
 	// MPropertyDescription "'Cast' and 'Alt-Cast' will look at the ability vdata for the loc tokens for casting.  'Custom' allows entering a loc token on this hint"
 	EHUDElementButtonHintLocType_t m_eHintLocType; // 0x40	
 private:

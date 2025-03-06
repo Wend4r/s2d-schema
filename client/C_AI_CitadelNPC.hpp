@@ -5,7 +5,7 @@
 struct CCitadelAbilityComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1420
+// Size: 0x1428
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -26,38 +26,38 @@ struct CCitadelAbilityComponent;
 class C_AI_CitadelNPC : public C_AI_BaseNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad0d20[0x1c]; // 0xd20
+	[[maybe_unused]] uint8_t __pad0d28[0x1c]; // 0xd28
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnEyeBeamActiveChanged"
-	bool m_bBeamActive; // 0xd3c	
+	bool m_bBeamActive; // 0xd44	
 private:
-	[[maybe_unused]] uint8_t __pad0d3d[0x3]; // 0xd3d
+	[[maybe_unused]] uint8_t __pad0d45[0x3]; // 0xd45
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
 	// MNetworkChangeCallback "OnEyeBeamTargetChanged"
-	Vector m_vEyeBeamTarget; // 0xd40	
+	Vector m_vEyeBeamTarget; // 0xd48	
 private:
-	[[maybe_unused]] uint8_t __pad0d4c[0x474]; // 0xd4c
+	[[maybe_unused]] uint8_t __pad0d54[0x474]; // 0xd54
 public:
-	int32_t m_nPlayerTeamEvent; // 0x11c0	
+	int32_t m_nPlayerTeamEvent; // 0x11c8	
 private:
-	[[maybe_unused]] uint8_t __pad11c4[0x4c]; // 0x11c4
-public:
-	// MNetworkEnable
-	C_UtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0x1210	
-	// MNetworkEnable
-	bool m_bMinion; // 0x1278	
-private:
-	[[maybe_unused]] uint8_t __pad1279[0x3]; // 0x1279
+	[[maybe_unused]] uint8_t __pad11cc[0x4c]; // 0x11cc
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hLookTarget; // 0x127c	
+	C_UtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0x1218	
+	// MNetworkEnable
+	bool m_bMinion; // 0x1280	
+private:
+	[[maybe_unused]] uint8_t __pad1281[0x3]; // 0x1281
+public:
+	// MNetworkEnable
+	CHandle< C_BaseEntity > m_hLookTarget; // 0x1284	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1280	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1288	
 };
 

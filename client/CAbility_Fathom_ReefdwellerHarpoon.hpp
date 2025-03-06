@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xde8
+// Size: 0xd98
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bBulletFlying"
@@ -19,29 +19,29 @@ struct GameTime_t;
 class CAbility_Fathom_ReefdwellerHarpoon : public C_CitadelBaseAbility
 {
 public:
-	bool m_bHitTarget; // 0xca0	
+	bool m_bHitTarget; // 0xc50	
 private:
-	[[maybe_unused]] uint8_t __pad0ca1[0x3]; // 0xca1
+	[[maybe_unused]] uint8_t __pad0c51[0x3]; // 0xc51
 public:
-	Vector m_vPrevPos; // 0xca4	
+	Vector m_vPrevPos; // 0xc54	
 	// MNetworkEnable
-	bool m_bBulletFlying; // 0xcb0	
+	bool m_bBulletFlying; // 0xc60	
 	// MNetworkEnable
-	bool m_bHasLatchedOnce; // 0xcb1	
+	bool m_bHasLatchedOnce; // 0xc61	
 	// MNetworkEnable
-	bool m_bLatched; // 0xcb2	
+	bool m_bLatched; // 0xc62	
 private:
-	[[maybe_unused]] uint8_t __pad0cb3[0x1]; // 0xcb3
+	[[maybe_unused]] uint8_t __pad0c63[0x1]; // 0xc63
 public:
 	// MNetworkEnable
-	Vector m_vHarpoonTarget; // 0xcb4	
+	Vector m_vHarpoonTarget; // 0xc64	
 	// MNetworkEnable
-	float m_flLatchedYaw; // 0xcc0	
+	float m_flLatchedYaw; // 0xc70	
 	// MNetworkEnable
-	GameTime_t m_flCloseEnoughStartTime; // 0xcc4	
+	GameTime_t m_flCloseEnoughStartTime; // 0xc74	
 	// MNetworkEnable
-	GameTime_t m_flStuckStartTime; // 0xcc8	
+	GameTime_t m_flStuckStartTime; // 0xc78	
 	// MNetworkEnable
-	GameTime_t m_flReelStartTime; // 0xccc	
+	GameTime_t m_flReelStartTime; // 0xc7c	
 };
 

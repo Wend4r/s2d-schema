@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x568
+// Size: 0x518
 // Has VTable
 // 
 // MNetworkVarNames "int8 m_iCurrentMaxRagdollCount"
@@ -12,6 +12,6 @@ class CRagdollManager : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	int8_t m_iCurrentMaxRagdollCount; // 0x560	
+	int8_t m_iCurrentMaxRagdollCount; // 0x510	
 };
 

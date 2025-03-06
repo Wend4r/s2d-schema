@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8b0
+// Size: 0x860
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecLadderDir"
@@ -17,26 +17,23 @@ class C_FuncLadder : public C_BaseModelEntity
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecLadderDir; // 0x858	
+	Vector m_vecLadderDir; // 0x808	
 private:
-	[[maybe_unused]] uint8_t __pad0864[0x4]; // 0x864
+	[[maybe_unused]] uint8_t __pad0814[0x4]; // 0x814
 public:
-	CUtlVector< CHandle< C_InfoLadderDismount > > m_Dismounts; // 0x868	
-	Vector m_vecLocalTop; // 0x880	
+	CUtlVector< CHandle< C_InfoLadderDismount > > m_Dismounts; // 0x818	
+	Vector m_vecLocalTop; // 0x830	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecPlayerMountPositionTop; // 0x88c	
+	Vector m_vecPlayerMountPositionTop; // 0x83c	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecPlayerMountPositionBottom; // 0x898	
+	Vector m_vecPlayerMountPositionBottom; // 0x848	
 	// MNetworkEnable
-	float m_flAutoRideSpeed; // 0x8a4	
-	bool m_bDisabled; // 0x8a8	
+	float m_flAutoRideSpeed; // 0x854	
+	bool m_bDisabled; // 0x858	
 	// MNetworkEnable
-	bool m_bFakeLadder; // 0x8a9	
-	bool m_bHasSlack; // 0x8aa	
-	
-	// Static fields:
-	static CUtlVector< C_FuncLadder* > &Get_s_Ladders(){return *reinterpret_cast<CUtlVector< C_FuncLadder* >*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_FuncLadder")->m_static_fields[0]->m_instance);};
+	bool m_bFakeLadder; // 0x859	
+	bool m_bHasSlack; // 0x85a	
 };
 

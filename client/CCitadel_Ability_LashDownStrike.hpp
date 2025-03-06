@@ -6,7 +6,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf30
+// Size: 0xee0
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vStrikeVel"
@@ -14,22 +14,22 @@ struct ParticleIndex_t;
 class CCitadel_Ability_LashDownStrike : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0xa8]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c50[0xa8]; // 0xc50
 public:
-	GameTime_t m_ImpactTime; // 0xd48	
-	Vector m_vDamagePos; // 0xd4c	
+	GameTime_t m_ImpactTime; // 0xcf8	
+	Vector m_vDamagePos; // 0xcfc	
 private:
-	[[maybe_unused]] uint8_t __pad0d58[0x4]; // 0xd58
+	[[maybe_unused]] uint8_t __pad0d08[0x4]; // 0xd08
 public:
-	ParticleIndex_t m_PreviewEffect; // 0xd5c	
+	ParticleIndex_t m_PreviewEffect; // 0xd0c	
 private:
-	[[maybe_unused]] uint8_t __pad0d60[0x1c0]; // 0xd60
+	[[maybe_unused]] uint8_t __pad0d10[0x1c0]; // 0xd10
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	Vector m_vStrikeVel; // 0xf20	
+	Vector m_vStrikeVel; // 0xed0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flStartHeight; // 0xf2c	
+	float m_flStartHeight; // 0xedc	
 };
 

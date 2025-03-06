@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc40
+// Size: 0xc98
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd10
+// Size: 0xcc0
 // Has VTable
 class CCitadel_Ability_PowerSurge : public C_CitadelBaseAbility
 {

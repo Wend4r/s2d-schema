@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x588
+// Size: 0x590
 // Has VTable
 class CPhysWheelConstraint : public CPhysConstraint
 {

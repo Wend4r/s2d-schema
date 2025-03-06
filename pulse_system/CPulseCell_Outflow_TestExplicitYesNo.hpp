@@ -5,7 +5,7 @@
 struct CPulse_OutflowConnection;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xb8
+// Size: 0xd8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -20,6 +20,6 @@ public:
 	// MPropertyFriendlyName "Yes"
 	CPulse_OutflowConnection m_Yes; // 0x48	
 	// MPropertyFriendlyName "No"
-	CPulse_OutflowConnection m_No; // 0x80	
+	CPulse_OutflowConnection m_No; // 0x90	
 };
 

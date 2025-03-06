@@ -4,16 +4,16 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc10
+// Size: 0xc68
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
 class CCitadel_MagicianTurret : public CCitadelAnimatingModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0bb8[0x50]; // 0xbb8
+	[[maybe_unused]] uint8_t __pad0c10[0x50]; // 0xc10
 public:
 	// MNetworkEnable
-	CHandle< CCitadelBaseAbility > m_hAbility; // 0xc08	
+	CHandle< CCitadelBaseAbility > m_hAbility; // 0xc60	
 };
 

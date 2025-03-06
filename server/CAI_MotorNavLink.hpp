@@ -16,6 +16,6 @@ public:
 	CGlobalSymbol m_strNavLinkActiveMovement; // 0x68	
 	
 	// Datamap fields:
-	// CHandle< CBaseEntity > m_hNavLinkAreaEntity; // 0x70
+	// CHandle< CBaseEntity > m_hNavLinkEntity; // 0x70
 };
 

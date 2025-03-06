@@ -4,7 +4,7 @@
 
 // Registered binary: materialsystem2.dll (project 'materialsystem2')
 // Alignment: 4
-// Size: 0x70
+// Size: 0x80
 // Has Trivial Destructor
 // 
 // MGetKV3ClassDefaults
@@ -19,7 +19,11 @@ public:
 	float m_flBloomThresholdWidth; // 0x14	
 	float m_flSkyboxBloomStrength; // 0x18	
 	float m_flBloomStartValue; // 0x1c	
-	float m_flBlurWeight[5]; // 0x20	
-	Vector m_vBlurTint[5]; // 0x34	
+	float m_flComputeBloomStrength; // 0x20	
+	float m_flComputeBloomThreshold; // 0x24	
+	float m_flComputeBloomLensDirtStrength; // 0x28	
+	float m_flComputeBloomLensDirtBlackLevel; // 0x2c	
+	float m_flBlurWeight[5]; // 0x30	
+	Vector m_vBlurTint[5]; // 0x44	
 };
 

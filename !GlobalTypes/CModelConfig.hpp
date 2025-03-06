@@ -13,5 +13,6 @@ public:
 	CUtlString m_ConfigName; // 0x0	
 	CUtlVector< CModelConfigElement* > m_Elements; // 0x8	
 	bool m_bTopLevel; // 0x20	
+	bool m_bActiveInEditorByDefault; // 0x21	
 };
 

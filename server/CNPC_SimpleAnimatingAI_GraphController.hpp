@@ -10,9 +10,5 @@ class CNPC_SimpleAnimatingAI_GraphController : public CBaseAnimGraphAnimGraphCon
 {
 public:
 	CAnimGraphParamOptionalRef< bool > m_bHasTarget; // 0xc8	
-	
-	// Static fields:
-	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_SimpleAnimatingAI_GraphController")->m_static_fields[0]->m_instance);};
-	static bool &Get_s_bSchemaTest(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_SimpleAnimatingAI_GraphController")->m_static_fields[1]->m_instance);};
 };
 

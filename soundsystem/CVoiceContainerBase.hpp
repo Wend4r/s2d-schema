@@ -36,9 +36,5 @@ public:
 	CVSound m_vSound; // 0x38	
 	// MPropertySuppressExpr "true"
 	CVoiceContainerAnalysisBase* m_pEnvelopeAnalyzer; // 0xb8	
-	
-	// Static fields:
-	static bool &Get_bAudioFinishedPlaying(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("soundsystem.dll")->FindDeclaredClass("CVoiceContainerBase")->m_static_fields[0]->m_instance);};
-	static bool &Get_bAudioStillPlaying(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("soundsystem.dll")->FindDeclaredClass("CVoiceContainerBase")->m_static_fields[1]->m_instance);};
 };
 

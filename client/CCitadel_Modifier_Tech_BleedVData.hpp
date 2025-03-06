@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x718
+// Size: 0x748
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,7 @@ class CCitadel_Modifier_Tech_BleedVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DamageParticle; // 0x638	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DamageParticle; // 0x658	
+	CEmbeddedSubclass< CBaseModifier > m_SlowModifier; // 0x738	
 };
 

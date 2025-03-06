@@ -5,7 +5,7 @@
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1770
+// Size: 0x17a8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,12 +13,12 @@ class CCitadel_Ability_Nano_PrimaryWeaponVData : public CCitadel_Ability_Primary
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_EscapeModifier; // 0x15e8	
+	CEmbeddedSubclass< CCitadelModifier > m_EscapeModifier; // 0x1620	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SlashEffectParticle; // 0x15f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SlashEffectParticle; // 0x1630	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strExpireSound; // 0x16d8	
+	CSoundEventName m_strExpireSound; // 0x1710	
 	// MPropertyStartGroup "Camera"
-	CitadelCameraOperationsSequence_t m_cameraSequenceInShadow; // 0x16e8	
+	CitadelCameraOperationsSequence_t m_cameraSequenceInShadow; // 0x1720	
 };
 

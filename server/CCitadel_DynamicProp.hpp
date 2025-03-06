@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd18
+// Size: 0xd68
 // Has VTable
 // 
 // MNetworkVarNames "CUtlString m_strDefaultSkin"
@@ -14,16 +14,16 @@
 class CCitadel_DynamicProp : public CDynamicProp
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ce8[0x10]; // 0xce8
+	[[maybe_unused]] uint8_t __pad0d38[0x10]; // 0xd38
 public:
 	// MNetworkEnable
-	CUtlString m_strDefaultSkin; // 0xcf8	
+	CUtlString m_strDefaultSkin; // 0xd48	
 	// MNetworkEnable
-	CUtlString m_strFriendlySkin; // 0xd00	
+	CUtlString m_strFriendlySkin; // 0xd50	
 	// MNetworkEnable
-	CUtlString m_strEnemySkin; // 0xd08	
+	CUtlString m_strEnemySkin; // 0xd58	
 	// MNetworkEnable
-	bool m_bIsWorld; // 0xd10	
+	bool m_bIsWorld; // 0xd60	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge SetFriendlySkin; // 0x0

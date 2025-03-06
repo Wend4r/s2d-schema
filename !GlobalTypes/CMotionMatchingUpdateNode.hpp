@@ -7,7 +7,7 @@ struct CBlendCurve;
 struct CAnimInputDamping;
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0x140
+// Size: 0x148
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -50,10 +50,10 @@ private:
 	[[maybe_unused]] uint8_t __pad0114[0x4]; // 0x114
 public:
 	CAnimInputDamping m_distanceScale_Damping; // 0x118	
-	float m_flDistanceScale_OuterRadius; // 0x128	
-	float m_flDistanceScale_InnerRadius; // 0x12c	
-	float m_flDistanceScale_MaxScale; // 0x130	
-	float m_flDistanceScale_MinScale; // 0x134	
-	bool m_bEnableDistanceScaling; // 0x138	
+	float m_flDistanceScale_OuterRadius; // 0x130	
+	float m_flDistanceScale_InnerRadius; // 0x134	
+	float m_flDistanceScale_MaxScale; // 0x138	
+	float m_flDistanceScale_MinScale; // 0x13c	
+	bool m_bEnableDistanceScaling; // 0x140	
 };
 

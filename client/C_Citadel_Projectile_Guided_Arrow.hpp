@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8f0
+// Size: 0x8a0
 // Has VTable
 class C_Citadel_Projectile_Guided_Arrow : public C_CitadelProjectile
 {

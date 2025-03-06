@@ -51,5 +51,6 @@ public:
 	// int32_t propdata; // 0x7fffffff
 	// int64_t gamemass; // 0x7fffffff
 	// float massScale; // 0x7fffffff
+	// float buoyancyscale; // 0x7fffffff
 };
 

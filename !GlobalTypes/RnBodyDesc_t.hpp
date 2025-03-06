@@ -45,5 +45,6 @@ public:
 	bool m_bGravityDisabled; // 0xc8	
 	bool m_bSpeculativeEnabled; // 0xc9	
 	bool m_bHasShadowController; // 0xca	
+	DynamicContinuousContactBehavior_t m_nDynamicContinuousContactBehavior; // 0xcb	
 };
 

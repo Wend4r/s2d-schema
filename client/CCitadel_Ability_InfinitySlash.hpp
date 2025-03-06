@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdc8
+// Size: 0xd78
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flExplodeEndTime"
@@ -13,13 +13,13 @@ struct GameTime_t;
 class CCitadel_Ability_InfinitySlash : public CCitadelBaseYamatoAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca8[0x118]; // 0xca8
+	[[maybe_unused]] uint8_t __pad0c58[0x118]; // 0xc58
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flExplodeEndTime; // 0xdc0	
+	GameTime_t m_flExplodeEndTime; // 0xd70	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flBuffEndTime; // 0xdc4	
+	GameTime_t m_flBuffEndTime; // 0xd74	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x118
+// Size: 0x130
 // Has VTable
 // 
 // MPulseInstanceDomainInfo

@@ -20,5 +20,6 @@ public:
 	MovementGaitId_t m_movementGaitId; // 0x10	
 	bool m_bRequiresRightFootDown; // 0x18	
 	bool m_bRequiresLeftFootDown; // 0x19	
+	bool m_bCanInterruptOtherMovePerformance; // 0x1a	
 };
 

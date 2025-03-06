@@ -26,14 +26,14 @@ public:
 	// MPropertyDescription "Custom death handshake to set when this part is destroyed."
 	// MPropertySuppressExpr "m_bKillEntityOnDestruction == false"
 	CGlobalSymbol m_sCustomDeathHandshake; // 0x18	
-	// MPropertyDescription "Whether the part should fall off when the entity dies."
-	bool m_bShouldDiscardOnDeath; // 0x20	
+	// MPropertyDescription "Whether the part should be destroyed when the entity dies."
+	bool m_bShouldDestroyOnDeath; // 0x20	
 private:
 	[[maybe_unused]] uint8_t __pad0021[0x3]; // 0x21
 public:
-	// MPropertyDescription "Time after death the part should fall off"
-	// MPropertySuppressExpr "m_bShouldDiscardOnDeath == false"
-	CRangeFloat m_flDeathDiscardTime; // 0x24	
+	// MPropertyDescription "Time after death the part should be destroyed"
+	// MPropertySuppressExpr "m_bShouldDestroyOnDeath == false"
+	CRangeFloat m_flDeathDestroyTime; // 0x24	
 private:
 	[[maybe_unused]] uint8_t __pad002c[0x4]; // 0x2c
 public:

@@ -4,7 +4,7 @@
 
 // Registered binary: particles.dll (project 'particleslib')
 // Alignment: 8
-// Size: 0x120
+// Size: 0x138
 // Has VTable
 // 
 // MPulseInstanceDomainInfo

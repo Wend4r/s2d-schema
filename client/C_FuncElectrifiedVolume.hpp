@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x870
+// Size: 0x820
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_EffectName"
@@ -13,13 +13,13 @@ struct ParticleIndex_t;
 class C_FuncElectrifiedVolume : public C_FuncBrush
 {
 public:
-	ParticleIndex_t m_nAmbientEffect; // 0x858	
+	ParticleIndex_t m_nAmbientEffect; // 0x808	
 private:
-	[[maybe_unused]] uint8_t __pad085c[0x4]; // 0x85c
+	[[maybe_unused]] uint8_t __pad080c[0x4]; // 0x80c
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_EffectName; // 0x860	
+	CUtlSymbolLarge m_EffectName; // 0x810	
 	// MNetworkEnable
-	bool m_bState; // 0x868	
+	bool m_bState; // 0x818	
 };
 

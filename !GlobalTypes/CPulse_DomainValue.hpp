@@ -4,8 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x18
-// Has Trivial Destructor
+// Size: 0x30
 // 
 // MGetKV3ClassDefaults
 class CPulse_DomainValue
@@ -13,6 +12,6 @@ class CPulse_DomainValue
 public:
 	PulseDomainValueType_t m_nType; // 0x0	
 	CGlobalSymbolCaseSensitive m_Value; // 0x8	
-	CGlobalSymbolCaseSensitive m_ExpectedRuntimeType; // 0x10	
+	CPulseValueFullType m_RequiredRuntimeType; // 0x10	
 };
 

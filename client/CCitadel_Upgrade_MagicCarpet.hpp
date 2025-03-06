@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd70
+// Size: 0xd20
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFlying"
@@ -13,15 +13,15 @@ struct GameTime_t;
 class CCitadel_Upgrade_MagicCarpet : public CCitadel_Item
 {
 public:
-	GameTime_t m_flFlyingStartTime; // 0xcb8	
+	GameTime_t m_flFlyingStartTime; // 0xc68	
 private:
-	[[maybe_unused]] uint8_t __pad0cbc[0xac]; // 0xcbc
+	[[maybe_unused]] uint8_t __pad0c6c[0xac]; // 0xc6c
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bFlying; // 0xd68	
+	bool m_bFlying; // 0xd18	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bSummoning; // 0xd69	
+	bool m_bSummoning; // 0xd19	
 };
 

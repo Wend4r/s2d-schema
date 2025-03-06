@@ -12,12 +12,5 @@ struct MovementGaitId_t
 {
 public:
 	CGlobalSymbol m_sId; // 0x0	
-	
-	// Static fields:
-	static MovementGaitId_t &Get_Invalid(){return *reinterpret_cast<MovementGaitId_t*>(interfaces::g_schema->FindTypeScopeForModule("animationsystem.dll")->FindDeclaredClass("MovementGaitId_t")->m_static_fields[0]->m_instance);};
-	static MovementGaitId_t &Get_Slow(){return *reinterpret_cast<MovementGaitId_t*>(interfaces::g_schema->FindTypeScopeForModule("animationsystem.dll")->FindDeclaredClass("MovementGaitId_t")->m_static_fields[1]->m_instance);};
-	static MovementGaitId_t &Get_Medium(){return *reinterpret_cast<MovementGaitId_t*>(interfaces::g_schema->FindTypeScopeForModule("animationsystem.dll")->FindDeclaredClass("MovementGaitId_t")->m_static_fields[2]->m_instance);};
-	static MovementGaitId_t &Get_Fast(){return *reinterpret_cast<MovementGaitId_t*>(interfaces::g_schema->FindTypeScopeForModule("animationsystem.dll")->FindDeclaredClass("MovementGaitId_t")->m_static_fields[3]->m_instance);};
-	static MovementGaitId_t &Get_VeryFast(){return *reinterpret_cast<MovementGaitId_t*>(interfaces::g_schema->FindTypeScopeForModule("animationsystem.dll")->FindDeclaredClass("MovementGaitId_t")->m_static_fields[4]->m_instance);};
 };
 

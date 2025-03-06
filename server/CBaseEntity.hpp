@@ -255,22 +255,9 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad04ce[0x2]; // 0x4ce
 public:
-	float m_flOverriddenFriction; // 0x4d0	
-	CHandle< CBaseEntity > m_pBlocker; // 0x4d4	
-	float m_flLocalTime; // 0x4d8	
-	float m_flVPhysicsUpdateLocalTime; // 0x4dc	
-	
-	// Static fields:
-	static Relationship_t** &Get_sm_DefaultRelationship(){return *reinterpret_cast<Relationship_t***>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[0]->m_instance);};
-	static bool &Get_sm_bAccurateTriggerBboxChecks(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[1]->m_instance);};
-	static bool &Get_sm_bDisableTouchFuncs(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[2]->m_instance);};
-	static bool &Get_m_bAllowPrecache(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[3]->m_instance);};
-	static bool &Get_s_bAbsQueriesValid(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[4]->m_instance);};
-	static bool &Get_s_bPreventingSetAnimRunAnimEvents(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[5]->m_instance);};
-	static int32_t &Get_m_nPredictionRandomSeed(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[6]->m_instance);};
-	static int32_t &Get_m_nPredictionRandomSeedServer(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[7]->m_instance);};
-	static CBasePlayerController* &Get_m_pPredictionPlayerController(){return *reinterpret_cast<CBasePlayerController**>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[8]->m_instance);};
-	static bool &Get_sm_bDatadescValidating(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[9]->m_instance);};
+	CHandle< CBaseEntity > m_pBlocker; // 0x4d0	
+	float m_flLocalTime; // 0x4d4	
+	float m_flVPhysicsUpdateLocalTime; // 0x4d8	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge m_iszPrivateVScripts; // 0x8
@@ -320,7 +307,6 @@ public:
 	// void CBaseEntitySUB_CallUseToggle; // 0x0
 	// void CBaseEntitySUB_KillSelf; // 0x0
 	// void CBaseEntitySUB_KillSelfIfUncarried; // 0x0
-	// void CBaseEntityFrictionRevertThink; // 0x0
 	// void CBaseEntityFakeScriptThinkFunc; // 0x0
 	// void CBaseEntityClearNavIgnoreContentsThink; // 0x0
 	// void m_pGameSceneNode; // 0x270

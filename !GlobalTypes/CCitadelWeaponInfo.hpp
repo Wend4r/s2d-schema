@@ -6,7 +6,7 @@ struct CRangeFloat;
 struct CitadelWeaponRecoilData_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x680
+// Size: 0x690
 // 
 // MGetKV3ClassDefaults
 class CCitadelWeaponInfo
@@ -215,7 +215,7 @@ public:
 	float m_flRecoilShotIndexRecoveryTimeFactor; // 0x1b0	
 	int32_t m_nRecoilSeed; // 0x1b4	
 	// MPropertyStartGroup "Visuals"
-	// MPropertyDescription "Effect to actually fire into the world from this weapon"
+	// MPropertyDescription "Effect to actually fire into the world from this weapon. CP3.X = radius, CP3.Y = fire rate, CP3.Z = DPS."
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szBulletTravelTracerParticle; // 0x1b8	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szSelfBulletTravelTracerParticle; // 0x298	
 	bool m_bUseDesatForFriendlyNonHeroTracer; // 0x378	
@@ -234,27 +234,28 @@ public:
 	CUtlOrderedMap< CUtlStringToken, PerSurfaceImpactEffects_t > m_mapImpactEffects; // 0x548	
 	// MPropertyStartGroup "Sounds"
 	CSoundEventName m_strShootSound; // 0x570	
-	CSoundEventName m_strLowAmmoSound; // 0x580	
+	CSoundEventName m_strFirstShotSound; // 0x580	
+	CSoundEventName m_strShotReleaseSound; // 0x590	
 	// MPropertyDescription "Number of bullets at or below the low ammo indicator will begin to play."
-	int32_t m_nLowAmmoIndicatorThreshold; // 0x590	
+	int32_t m_nLowAmmoIndicatorThreshold; // 0x5a0	
 private:
-	[[maybe_unused]] uint8_t __pad0594[0x4]; // 0x594
+	[[maybe_unused]] uint8_t __pad05a4[0x4]; // 0x5a4
 public:
-	CSoundEventName m_strBulletLoopingSound; // 0x598	
-	CSoundEventName m_strBulletWhizSound; // 0x5a8	
-	CSoundEventName m_strBulletImpactSound; // 0x5b8	
-	float m_flBulletWhizDistance; // 0x5c8	
+	CSoundEventName m_strBulletLoopingSound; // 0x5a8	
+	CSoundEventName m_strBulletWhizSound; // 0x5b8	
+	CSoundEventName m_strBulletImpactSound; // 0x5c8	
+	float m_flBulletWhizDistance; // 0x5d8	
 private:
-	[[maybe_unused]] uint8_t __pad05cc[0x4]; // 0x5cc
+	[[maybe_unused]] uint8_t __pad05dc[0x4]; // 0x5dc
 public:
-	CSoundEventName m_strReloadSound; // 0x5d0	
-	CSoundEventName m_strReloadEndSound; // 0x5e0	
-	CSoundEventName m_strLocalPlayerBulletImpactSound; // 0x5f0	
-	CSoundEventName m_strLocalPlayerBulletImpactHeavySound; // 0x600	
-	CSoundEventName m_strZoomInSound; // 0x610	
-	CSoundEventName m_strZoomOutSound; // 0x620	
-	CSoundEventName m_strSpinUpSound; // 0x630	
-	CSoundEventName m_strSpinDownSound; // 0x640	
-	CSoundEventName m_strSpinUpLoopSound; // 0x650	
+	CSoundEventName m_strReloadSound; // 0x5e0	
+	CSoundEventName m_strReloadEndSound; // 0x5f0	
+	CSoundEventName m_strLocalPlayerBulletImpactSound; // 0x600	
+	CSoundEventName m_strLocalPlayerBulletImpactHeavySound; // 0x610	
+	CSoundEventName m_strZoomInSound; // 0x620	
+	CSoundEventName m_strZoomOutSound; // 0x630	
+	CSoundEventName m_strSpinUpSound; // 0x640	
+	CSoundEventName m_strSpinDownSound; // 0x650	
+	CSoundEventName m_strSpinUpLoopSound; // 0x660	
 };
 

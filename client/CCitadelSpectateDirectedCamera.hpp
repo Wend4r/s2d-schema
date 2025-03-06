@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x578
+// Size: 0x528
 // Has VTable
 // 
 // MNetworkVarNames "float m_flCameraDist"
@@ -14,16 +14,16 @@
 class CCitadelSpectateDirectedCamera : public C_BaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0560[0x4]; // 0x560
+	[[maybe_unused]] uint8_t __pad0510[0x4]; // 0x510
 public:
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	float m_flCameraDist; // 0x564	
+	float m_flCameraDist; // 0x514	
 	// MNetworkEnable
-	float m_flCameraPitch; // 0x568	
+	float m_flCameraPitch; // 0x518	
 	// MNetworkEnable
-	float m_flCameraHeight; // 0x56c	
+	float m_flCameraHeight; // 0x51c	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTarget; // 0x570	
+	CHandle< C_BaseEntity > m_hTarget; // 0x520	
 };
 

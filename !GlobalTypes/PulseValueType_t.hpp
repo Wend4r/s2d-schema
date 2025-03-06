@@ -55,7 +55,6 @@ enum class PulseValueType_t : uint32_t
 	// MPropertyFriendlyName "Test Handle"
 	PVAL_TEST_HANDLE = 0x15,
 	// MPropertyFriendlyName "Array"
-	// MPropertySuppressEnumerator
 	PVAL_ARRAY = 0x16,
 	// MPropertySuppressEnumerator
 	PVAL_COUNT = 0x17,

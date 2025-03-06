@@ -41,9 +41,6 @@ private:
 public:
 	CUtlSymbolLarge m_iszClassName; // 0x88	
 	
-	// Static fields:
-	static int32_t &Get_g_SoundPatchCount(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CSoundPatch")->m_static_fields[0]->m_instance);};
-	
 	// Datamap fields:
 	// void m_guid; // 0x28
 };

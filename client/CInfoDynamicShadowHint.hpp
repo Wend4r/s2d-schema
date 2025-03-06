@@ -4,22 +4,19 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x578
+// Size: 0x528
 // Has VTable
 class CInfoDynamicShadowHint : public C_PointEntity
 {
 public:
-	bool m_bDisabled; // 0x560	
+	bool m_bDisabled; // 0x510	
 private:
-	[[maybe_unused]] uint8_t __pad0561[0x3]; // 0x561
+	[[maybe_unused]] uint8_t __pad0511[0x3]; // 0x511
 public:
-	float m_flRange; // 0x564	
-	int32_t m_nImportance; // 0x568	
-	int32_t m_nLightChoice; // 0x56c	
-	CHandle< C_BaseEntity > m_hLight; // 0x570	
-	
-	// Static fields:
-	static CUtlVector< CInfoDynamicShadowHint* > &Get_m_AllHints(){return *reinterpret_cast<CUtlVector< CInfoDynamicShadowHint* >*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CInfoDynamicShadowHint")->m_static_fields[0]->m_instance);};
+	float m_flRange; // 0x514	
+	int32_t m_nImportance; // 0x518	
+	int32_t m_nLightChoice; // 0x51c	
+	CHandle< C_BaseEntity > m_hLight; // 0x520	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x818
+// Size: 0x838
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_Gunslinger_DemonCarbineVData : public CCitadelModifierVD
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x638	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FullyChargedParticle; // 0x718	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x658	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FullyChargedParticle; // 0x738	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strFullyCharged; // 0x7f8	
-	CSoundEventName m_strShotSound; // 0x808	
+	CSoundEventName m_strFullyCharged; // 0x818	
+	CSoundEventName m_strShotSound; // 0x828	
 };
 

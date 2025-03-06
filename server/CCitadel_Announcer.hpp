@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb68
+// Size: 0xc00
 // Has VTable
 class CCitadel_Announcer : public CCitadel_Announcer_Base
 {

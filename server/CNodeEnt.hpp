@@ -18,9 +18,6 @@ private:
 public:
 	HintNodeData m_NodeData; // 0x4f0	
 	
-	// Static fields:
-	static int32_t &Get_m_nNodeCount(){return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNodeEnt")->m_static_fields[0]->m_instance);};
-	
 	// Datamap fields:
 	// void m_pKeyValuesCopy; // 0x530
 };

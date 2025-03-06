@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x570
+// Size: 0x520
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flScale"
@@ -15,12 +15,12 @@ class C_BaseFire : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_flScale; // 0x560	
+	float m_flScale; // 0x510	
 	// MNetworkEnable
-	float m_flStartScale; // 0x564	
+	float m_flStartScale; // 0x514	
 	// MNetworkEnable
-	float m_flScaleTime; // 0x568	
+	float m_flScaleTime; // 0x518	
 	// MNetworkEnable
-	uint32_t m_nFlags; // 0x56c	
+	uint32_t m_nFlags; // 0x51c	
 };
 

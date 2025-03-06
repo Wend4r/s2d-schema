@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16a0
+// Size: 0x16d8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadel_Ability_Tier2Boss_RocketBarrageVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x1590	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x15c8	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ExplosionSound; // 0x1670	
-	CSoundEventName m_RocketFireSound; // 0x1680	
+	CSoundEventName m_ExplosionSound; // 0x16a8	
+	CSoundEventName m_RocketFireSound; // 0x16b8	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_AuraModifier; // 0x1690	
+	CEmbeddedSubclass< CCitadelModifier > m_AuraModifier; // 0x16c8	
 };
 
